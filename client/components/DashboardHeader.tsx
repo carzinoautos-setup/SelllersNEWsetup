@@ -15,7 +15,7 @@ export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { on
   ];
 
   return (
-    <div className={cn("flex items-center justify-between px-4 md:px-10 lg:px-[50px] py-3 border-b border-line bg-white", className)}>
+    <div className={cn("flex items-center justify-between px-5 py-3 border-b border-line bg-white", className)}>
       <div className="flex items-center gap-4">
         {/* Mobile menu button */}
         <button
