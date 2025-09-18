@@ -13,7 +13,22 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'albert': ['Albert Sans', 'Inter', 'system-ui', 'sans-serif'],
+        'dm': ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
+        'sans': ['Albert Sans', 'Inter', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        /* Carzino custom colors */
+        heading: "hsl(var(--heading))",
+        'main-color': "hsl(var(--main-color))",
+        'color-secondary': "hsl(var(--color-secondary))",
+        'text-muted': "hsl(var(--text))",
+        'line': "hsl(var(--line))",
+        'icon': "hsl(var(--icon))",
+        'success': "hsl(var(--success))",
+        'color-primary': "hsl(var(--color-primary))",
+        'bg-3': "hsl(var(--bg-3))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -62,6 +77,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        '12': '12px',
+        '14': '14px',
+        '16': '16px',
       },
       keyframes: {
         "accordion-down": {
