@@ -29,7 +29,7 @@ export function DashboardLayout() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col lg:pl-[280px]">
+      <div className="flex-1 flex flex-col px-5">
         {/* Header - pass toggler for mobile */}
         <div className="flex-shrink-0">
           <DashboardHeader onOpenSidebar={() => setMobileOpen(true)} />
@@ -37,7 +37,7 @@ export function DashboardLayout() {
 
         {/* Main Content Area */}
         <div className="flex-1 overflow-y-auto">
-          <div className="px-6 md:px-10 lg:px-[50px] py-6 md:py-10">
+          <div className="py-6 md:py-10">
             {/* Page Title */}
             <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-albert font-semibold text-black leading-tight mb-6 lg:mb-[50px]">
               Edit profile Dealer
