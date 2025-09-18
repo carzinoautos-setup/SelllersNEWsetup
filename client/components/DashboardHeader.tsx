@@ -4,10 +4,10 @@ interface HeaderProps {
   className?: string;
 }
 
-export function DashboardHeader({ className }: HeaderProps) {
+export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { onOpenSidebar?: () => void }) {
   const navItems = [
     "Home",
-    "Cars for Sale", 
+    "Cars for Sale",
     "Trucks for Sale",
     "Trade in your Car",
     "Dealers",
@@ -15,45 +15,51 @@ export function DashboardHeader({ className }: HeaderProps) {
   ];
 
   return (
-    <div className={cn("flex justify-between items-center px-[50px] py-3 border-b border-line bg-white", className)}>
-      {/* Navigation */}
-      <div className="flex items-center gap-10">
-        {navItems.map((item, index) => (
-          <div key={index} className="text-heading text-base font-medium font-albert cursor-pointer hover:text-main-color transition-colors">
-            {item}
-          </div>
-        ))}
+    <div className={cn("flex items-center justify-between px-4 md:px-10 lg:px-[50px] py-3 border-b border-line bg-white", className)}>
+      <div className="flex items-center gap-4">
+        {/* Mobile menu button */}
+        <button
+          className="lg:hidden p-2 rounded-md text-heading hover:bg-slate-100"
+          onClick={onOpenSidebar}
+          aria-label="Open menu"
+        >
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+
+        {/* Navigation - hidden on small screens */}
+        <nav className="hidden lg:flex items-center gap-10">
+          {navItems.map((item, index) => (
+            <div key={index} className="text-heading text-sm md:text-base font-medium font-albert cursor-pointer hover:text-main-color transition-colors">
+              {item}
+            </div>
+          ))}
+        </nav>
       </div>
 
       {/* Right side - User info and Add listing button */}
-      <div className="flex items-center gap-7">
-        {/* Credits */}
-        <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-3">
           <div className="w-[34px] h-[34px] rounded-full bg-gray-300 flex items-center justify-center">
             <UserIcon className="w-4 h-4 text-gray-600" />
           </div>
-          <div className="text-heading text-base font-medium font-albert">
-            25 Credits
-          </div>
+          <div className="text-heading text-sm font-medium font-albert">25 Credits</div>
         </div>
 
-        {/* User dropdown */}
-        <div className="flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-3">
           <div className="w-[34px] h-[34px] rounded-full bg-gray-300 flex items-center justify-center">
             <UserIcon className="w-4 h-4 text-gray-600" />
           </div>
           <div className="flex items-center gap-[6px]">
-            <div className="text-heading text-base font-medium font-albert">
-              Themesflat
-            </div>
+            <div className="text-heading text-sm font-medium font-albert">Themesflat</div>
             <ChevronDownIcon className="w-3 h-3 text-heading" />
           </div>
         </div>
 
-        {/* Add listing button */}
-        <button className="flex items-center gap-[10px] px-[10px] py-[10px] bg-main-color rounded-14 h-[50px] w-[160px] justify-center">
-          <AddListingIcon className="w-5 h-5 text-white" />
-          <span className="text-white text-base font-medium font-albert">Add listing</span>
+        <button className="flex items-center gap-[10px] px-[10px] py-[10px] bg-main-color rounded-14 h-[42px] sm:h-[50px] w-[120px] sm:w-[160px] justify-center text-white">
+          <AddListingIcon className="w-4 h-4 text-white" />
+          <span className="hidden sm:inline text-base font-medium font-albert">Add listing</span>
         </button>
       </div>
     </div>
