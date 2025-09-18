@@ -20,85 +20,83 @@ export function DashboardSidebar({ className }: SidebarProps) {
   ];
 
   return (
-    <div className={cn("w-[280px] h-screen bg-[#24272C] flex flex-col", className)}>
-      {/* Logo */}
-      <div className="flex justify-center items-center px-[30px] py-2">
-        <img 
-          src="https://api.builder.io/api/v1/image/assets/TEMP/9c0328289826e779cfbf3ddacf7dfe155dd2df54?width=444" 
-          alt="Carzino Logo"
-          className="w-[222px] h-[54px]"
-        />
-      </div>
+    <div className={cn("h-full flex flex-col bg-[#24272C]", className)}>
+      <div className="overflow-y-auto h-full">
+        {/* Logo */}
+        <div className="flex justify-center items-center px-6 py-4">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/9c0328289826e779cfbf3ddacf7dfe155dd2df54?width=444"
+            alt="Carzino Logo"
+            className="w-[180px] md:w-[222px] h-auto"
+          />
+        </div>
 
-      {/* Divider */}
-      <div className="w-[280px] h-px bg-white/5 mx-auto"></div>
+        {/* Divider */}
+        <div className="w-full h-px bg-white/5"></div>
 
-      {/* Profile Section */}
-      <div className="px-[30px] py-[0px] mt-[30px]">
-        <div className="text-white/40 text-sm font-albert mb-[9px]">Profile</div>
-        <div className="flex items-center gap-[10px]">
-          <div className="relative w-[52px] h-[52px]">
-            <div className="w-[52px] h-[52px] rounded-full bg-white/40 flex items-center justify-center">
-              <UserIcon className="w-[19px] h-[19px] text-white" />
+        {/* Profile Section */}
+        <div className="px-6 py-4 mt-4">
+          <div className="text-white/40 text-sm font-albert mb-2">Profile</div>
+          <div className="flex items-center gap-3">
+            <div className="relative w-[52px] h-[52px]">
+              <div className="w-[52px] h-[52px] rounded-full bg-white/40 flex items-center justify-center">
+                <UserIcon className="w-[19px] h-[19px] text-white" />
+              </div>
+            </div>
+            <div className="flex-1 truncate">
+              <div className="text-white/50 text-xs font-albert">Account</div>
+              <div className="text-white text-sm font-albert truncate">themesflat@gmail...</div>
             </div>
           </div>
-          <div className="flex-1">
-            <div className="text-white/50 text-xs font-albert">Account</div>
-            <div className="text-white text-sm font-albert">themesflat@gmail...</div>
+        </div>
+
+        {/* Divider */}
+        <div className="w-full h-px bg-white/5 mt-4"></div>
+
+        {/* Menu */}
+        <div className="px-2 mt-4">
+          <div className="px-3 mb-3">
+            <div className="text-white/40 text-sm font-albert">Menu</div>
+          </div>
+
+          <div className="space-y-2 px-2">
+            {menuItems.map((item, index) => (
+              <div
+                key={index}
+                className={cn(
+                  "flex items-center gap-3 px-4 py-3 rounded-[10px] cursor-pointer transition-colors",
+                  item.active
+                    ? "bg-main-color"
+                    : "hover:bg-white/5"
+                )}
+              >
+                <item.icon className={cn(
+                  "w-[22px] h-[22px] flex-shrink-0",
+                  item.active ? "text-white" : "text-white/20"
+                )} />
+                <span className={cn(
+                  "flex-1 text-sm font-albert truncate",
+                  item.active
+                    ? "text-white font-bold"
+                    : "text-white font-medium"
+                )}>
+                  {item.name}
+                </span>
+                {item.badge && (
+                  <div className="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-sm font-bold">{item.badge}</span>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
-      </div>
 
-      {/* Divider */}
-      <div className="w-[280px] h-px bg-white/5 mx-auto mt-[30px]"></div>
+        {/* Spacer to push copyright to bottom */}
+        <div className="mt-8" />
 
-      {/* Menu */}
-      <div className="px-4 mt-[30px] flex-1">
-        <div className="px-[14px] mb-[9px]">
-          <div className="text-white/40 text-sm font-albert">Menu</div>
-        </div>
-        
-        <div className="space-y-[6px]">
-          {menuItems.map((item, index) => (
-            <div
-              key={index}
-              className={cn(
-                "flex items-center gap-3 px-[14px] py-3 rounded-[10px] cursor-pointer transition-colors",
-                item.active 
-                  ? "bg-main-color" 
-                  : "hover:bg-white/5"
-              )}
-            >
-              <item.icon className={cn(
-                "w-[22px] h-[22px]",
-                item.active ? "text-white" : "text-white/20"
-              )} />
-              <span className={cn(
-                "flex-1 text-base font-albert",
-                item.active 
-                  ? "text-white font-bold" 
-                  : "text-white font-medium"
-              )}>
-                {item.name}
-              </span>
-              {item.badge && (
-                <div className="w-6 h-6 bg-success rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">{item.badge}</span>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Divider */}
-      <div className="w-[280px] h-px bg-white/5 mx-auto mt-auto"></div>
-
-      {/* Copyright */}
-      <div className="px-[30px] py-[30px]">
-        <div className="text-text-muted/80 text-sm font-albert">
-          Copyright © 2024 AutoDecar
-        </div>
+        {/* Copyright */}
+        <div className="px-6 py-6 text-text-muted/80 text-sm font-albert">Copyright © 2024 AutoDecar</div>
       </div>
     </div>
   );
