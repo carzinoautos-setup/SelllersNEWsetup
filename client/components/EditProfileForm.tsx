@@ -9,17 +9,17 @@ interface EditProfileFormProps {
 
 export function EditProfileForm({ className }: EditProfileFormProps) {
   return (
-    <div className={cn("w-full max-w-[1480px] mx-auto space-y-[50px]", className)}>
+    <div className={cn("w-full max-w-[1480px] mx-auto space-y-[50px] px-2 sm:px-4", className)}>
       {/* Profile Photo Section */}
       <div className="space-y-5">
-        <div className="border border-line rounded-16 p-[30px]">
+        <div className="border border-line rounded-16 p-4 md:p-[30px]">
           <div className="space-y-5">
             <div className="text-color-primary text-base font-dm font-medium">Profile Photo</div>
-            
-            <div className="flex items-start gap-6">
+
+            <div className="flex flex-col md:flex-row items-start gap-4 md:gap-6">
               {/* Existing photo */}
-              <div className="relative w-[191px] h-[167px] rounded-lg overflow-hidden">
-                <img 
+              <div className="relative w-full md:w-[191px] h-[167px] rounded-lg overflow-hidden">
+                <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/48ae84d3148c5e03705522982a1b07c6b4c2a73b?width=437"
                   alt="Profile"
                   className="w-full h-full object-cover"
@@ -35,14 +35,14 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </div>
 
               {/* Upload area */}
-              <div className="w-[191px] h-[167px] border border-dashed border-color-secondary rounded-lg bg-bg-3 flex flex-col items-center justify-center cursor-pointer hover:bg-bg-3/80 transition-colors">
+              <div className="w-full md:w-[191px] h-[167px] border border-dashed border-color-secondary rounded-lg bg-bg-3 flex flex-col items-center justify-center cursor-pointer hover:bg-bg-3/80 transition-colors">
                 <UploadIcon className="w-[34px] h-[34px] text-color-primary mb-3" />
                 <span className="text-color-primary text-[15px] font-dm">Upload</span>
               </div>
 
               {/* Account info */}
-              <div className="space-y-6 flex-1">
-                <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-6 flex-1 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label className="text-[13px] text-icon font-dm">Account Number</Label>
                     <div className="text-color-primary text-[15px] font-dm">auto generated</div>
@@ -54,7 +54,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 </div>
               </div>
             </div>
-            
+
             <div className="text-color-primary text-[15px] font-dm">
               Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png
             </div>
@@ -65,8 +65,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       {/* Enter your Details Section */}
       <div className="space-y-5">
         <h3 className="text-heading text-2xl font-albert font-medium">Enter your Details</h3>
-        <div className="border border-line rounded-16 p-[30px]">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="border border-line rounded-16 p-4 md:p-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FormField label="Seller name or Dealer Name" placeholder="Enter your full name" />
             <FormField label="City" placeholder="Enter your city" />
             <FormField label="State" placeholder="Enter your state" />
@@ -76,7 +76,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             <FormField label="List phone on ads" placeholder="Select Yes or No" type="select" />
             <FormField label="Seller Phone" placeholder="+77" />
             <div></div>
-            <FormField label="Enter your full address here and then select" placeholder="Enter address" className="col-span-1" />
+            <FormField label="Enter your full address here and then select" placeholder="Enter address" className="md:col-span-2 lg:col-span-2" />
             <FormField label="Longitude" placeholder="Auto populates from google maps" />
             <FormField label="Latitude" placeholder="Auto populates from google maps" />
           </div>
@@ -86,8 +86,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       {/* Dealer Ship Information Section */}
       <div className="space-y-5">
         <h3 className="text-heading text-2xl font-albert font-medium">Dealer Ship Information</h3>
-        <div className="border border-line rounded-16 p-[30px]">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="border border-line rounded-16 p-4 md:p-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FormField label="Do you sell new or used vehicles?" placeholder="Select new, used or both" />
             <FormField label="Dealership website" placeholder="Enter your website address" />
             <FormField label="XML or CSV vehicle Feed url" placeholder="Enter an additional alert email address" />
@@ -97,7 +97,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             <FormField label="Dealerships CRM provider" placeholder="Enter your Crm provider" />
             <FormField label="CRM Account #" placeholder="Enter your Crm account #" />
             <FormField label="Dealerships CRM email" placeholder="Enter your Crm alert email address" />
-            <FormField label="Website provider information" placeholder="Enter your inventory provider" className="col-span-1" />
+            <FormField label="Website provider information" placeholder="Enter your inventory provider" className="md:col-span-2 lg:col-span-1" />
           </div>
         </div>
       </div>
@@ -105,8 +105,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       {/* Billing Information Section */}
       <div className="space-y-5">
         <h3 className="text-heading text-2xl font-albert font-medium">Billing Information</h3>
-        <div className="border border-line rounded-16 p-[30px]">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="border border-line rounded-16 p-4 md:p-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FormField label="Billing contact" placeholder="Enter your full name" />
             <FormField label="Street address" placeholder="+77" />
             <FormField label="Zip code" placeholder="Enter your zip code" />
