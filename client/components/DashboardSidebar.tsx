@@ -20,7 +20,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
   ];
 
   return (
-    <div className={cn("w-[280px] h-screen bg-sidebar-background flex flex-col", className)}>
+    <div className={cn("w-[280px] h-screen bg-[#24272C] flex flex-col", className)}>
       {/* Logo */}
       <div className="flex justify-center items-center px-[30px] py-2">
         <img 
