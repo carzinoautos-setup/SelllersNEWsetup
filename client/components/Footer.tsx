@@ -2,14 +2,11 @@ export function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center relative py-3 px-4">
+        <div className="flex items-center justify-center relative py-3 px-4 bg-[#f8f8f8]">
           <div className="w-full text-center">
-            <div className="mb-2">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F2c48de389c614655b60a7c83a7b13cc9?format=webp&width=800" alt="Carzino promo" className="mx-auto h-12 object-contain" />
-            </div>
+            <div className="mb-2"></div>
             <div className="text-gray-700">"Find it. Love it. Drive it. Carzino it."</div>
             <div className="text-gray-500 mt-2">Dealers: Exclusive early access now available- enjoy three 3-6 months of free listings. Learn more.</div>
-            <div className="text-red-600 font-medium mt-2">Coming soon for Private sellers.</div>
           </div>
         </div>
 
