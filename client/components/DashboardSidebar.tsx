@@ -36,7 +36,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
 
         {/* Profile Section */}
         <div className="px-6 py-4 mt-4">
-          <div className="text-white/40 text-sm font-albert mb-2">Profile</div>
           <div className="flex items-center gap-3">
             <div className="relative w-[52px] h-[52px]">
               <div className="w-[52px] h-[52px] rounded-full bg-white/40 flex items-center justify-center">
