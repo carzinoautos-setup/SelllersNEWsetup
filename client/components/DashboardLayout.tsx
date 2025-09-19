@@ -8,52 +8,51 @@ export function DashboardLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <>
-      <div className="flex min-h-screen bg-white font-albert">
-      {/* Mobile Sidebar overlay */}
-      <div
-        className={`fixed inset-0 z-30 lg:hidden transition-opacity ${
-          mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
-        aria-hidden={!mobileOpen}
-        onClick={() => setMobileOpen(false)}
-      >
-        <div className={`absolute inset-0 ${mobileOpen ? 'bg-black' : 'bg-black/40'}`} />
-      </div>
-
-      {/* Sidebar - hidden on small screens unless toggled */}
-      <div
-        className={`fixed top-0 left-0 z-40 h-full w-[280px] transform bg-[#24272C] transition-transform lg:static lg:translate-x-0 ${
-          mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
-        }`}
-      >
-        <DashboardSidebar />
-      </div>
-
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col">
-        {/* Header - pass toggler for mobile */}
-        <div className="flex-shrink-0">
-          <DashboardHeader mobileOpen={mobileOpen} onOpenSidebar={() => setMobileOpen(true)} />
+    <div className="flex flex-col min-h-screen bg-white font-albert">
+      <div className="flex-1 flex">
+        {/* Mobile Sidebar overlay */}
+        <div
+          className={`fixed inset-0 z-30 lg:hidden transition-opacity ${
+            mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+          aria-hidden={!mobileOpen}
+          onClick={() => setMobileOpen(false)}
+        >
+          <div className={`absolute inset-0 ${mobileOpen ? 'bg-black' : 'bg-black/40'}`} />
         </div>
 
-        {/* Main Content Area */}
-        <div className="flex-1 overflow-y-auto">
-          <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
-            {/* Page Title */}
-            <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-albert font-semibold text-black leading-tight mb-6 lg:mb-[50px]">
-              Edit profile Dealer
-            </h1>
+        {/* Sidebar - hidden on small screens unless toggled */}
+        <div
+          className={`fixed top-0 left-0 z-40 h-full w-[280px] transform bg-[#24272C] transition-transform lg:static lg:translate-x-0 ${
+            mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+          }`}
+        >
+          <DashboardSidebar />
+        </div>
 
-            {/* Form Content */}
-            <EditProfileForm />
+        {/* Main Content */}
+        <div className="flex-1 flex flex-col">
+          {/* Header - pass toggler for mobile */}
+          <div className="flex-shrink-0">
+            <DashboardHeader mobileOpen={mobileOpen} onOpenSidebar={() => setMobileOpen(true)} />
+          </div>
+
+          {/* Main Content Area */}
+          <div className="flex-1 overflow-y-auto">
+            <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
+              {/* Page Title */}
+              <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-albert font-semibold text-black leading-tight mb-6 lg:mb-[50px]">
+                Edit profile Dealer
+              </h1>
+
+              {/* Form Content */}
+              <EditProfileForm />
+            </div>
           </div>
         </div>
       </div>
 
+      <Footer />
     </div>
-
-    <Footer />
-    </>
   );
 }
