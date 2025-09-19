@@ -48,10 +48,9 @@ export function DashboardLayout() {
             <EditProfileForm />
           </div>
         </div>
-
-        {/* Footer Template */}
-        <Footer />
       </div>
+
+      <Footer />
     </div>
   );
 }
