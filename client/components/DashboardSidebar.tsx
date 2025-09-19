@@ -67,9 +67,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
 
         {/* Menu */}
         <div className="px-2 mt-2">
-          <div className="px-3 mb-2">
-            <div className="text-white/40 text-sm font-albert">Menu</div>
-          </div>
+          <div className="px-3 mb-2" />
 
           <div className="space-y-2 px-2">
             {menuItems.map((item, index) => (
