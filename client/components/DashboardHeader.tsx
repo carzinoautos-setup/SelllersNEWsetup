@@ -14,21 +14,28 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
   ];
 
   const headerClasses = cn(
-    "flex items-center justify-between px-5 py-3 border-b border-line",
-    // small screens: black background, from 640px up use the gray / then white on lg
-    mobileOpen ? "bg-black border-black text-white h-[76px]" : "bg-black sm:bg-[#FBFBFB]/70 lg:bg-white text-black h-[76px] lg:h-auto",
+    "flex items-center justify-between px-5 py-3 relative",
+    // Mobile: white background with red top stripe when closed, black when menu open
+    // Desktop: keep the existing gray/white styling
+    mobileOpen
+      ? "bg-black border-black text-white h-[76px] sm:bg-[#FBFBFB]/70 lg:bg-white sm:text-black"
+      : "bg-white text-black h-[76px] sm:bg-[#FBFBFB]/70 lg:bg-white lg:h-auto border-b border-line",
     className
   );
 
   return (
     <div className={headerClasses}>
+      {/* Red stripe at top - only visible on mobile when menu is closed */}
+      {!mobileOpen && (
+        <div className="absolute top-0 left-0 right-0 h-[9px] bg-[#DE0707] sm:hidden" />
+      )}
       {/* Left: logo on mobile, nav on desktop */}
       <div className="flex items-center gap-4">
         {/* Mobile logo (visible on small screens) */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fe8f282a634274a1a92939ff6e966f46e?format=webp&width=800"
           alt="Carzino Logo"
-          className="block lg:hidden w-[175px] sm:w-[229px] h-[56px] object-contain"
+          className="block lg:hidden w-[120px] h-[40px] object-contain"
         />
 
         {/* Desktop nav (visible on lg+) */}
@@ -40,6 +47,13 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
           ))}
         </nav>
       </div>
+
+      {/* Center: Upload icon on mobile when menu is closed */}
+      {!mobileOpen && (
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:hidden">
+          <UploadIcon className="w-6 h-6 text-black" />
+        </div>
+      )}
 
       {/* Right: desktop user & button, mobile hamburger */}
       <div className="flex items-center gap-3">
@@ -64,10 +78,10 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
           onClick={onOpenSidebar}
           aria-label="Open menu"
         >
-          <svg width="21" height="15" viewBox="0 0 21 15" fill="none" className={mobileOpen ? "text-white" : "text-white sm:text-black"}>
-            <path d="M0.646484 0.121094H20.4194" stroke="currentColor" strokeWidth="2"/>
-            <path d="M0.646484 7.39062H20.4194" stroke="currentColor" strokeWidth="2"/>
-            <path d="M0.646484 14.6602H20.4194" stroke="currentColor" strokeWidth="2"/>
+          <svg width="28" height="21" viewBox="0 0 28 21" fill="none" className={mobileOpen ? "text-white" : "text-black sm:text-black"}>
+            <rect y="0" width="28" height="3.5" fill="currentColor"/>
+            <rect y="8.75" width="28" height="3.5" fill="currentColor"/>
+            <rect y="17.5" width="28" height="3.5" fill="currentColor"/>
           </svg>
         </button>
       </div>
