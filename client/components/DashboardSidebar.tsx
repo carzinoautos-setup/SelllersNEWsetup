@@ -108,7 +108,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
         <div className="mt-8" />
 
         {/* Copyright */}
-        <div className="px-6 py-6 text-text-muted/80 text-sm font-albert">Copyright © 2024 AutoDecar</div>
+        <div className="px-6 py-6 text-text-muted/80 text-sm font-albert">Copyright © 2025 Carzino</div>
       </div>
     </div>
   );
