@@ -15,8 +15,8 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
 
   const headerClasses = cn(
     "flex items-center justify-between px-5 py-3 border-b border-line",
-    // small-screen styles when mobile menu is open
-    mobileOpen ? "bg-black border-black text-white h-[76px]" : "bg-[#FBFBFB]/70 lg:bg-white text-black h-[76px] lg:h-auto",
+    // small screens: black background, from 640px up use the gray / then white on lg
+    mobileOpen ? "bg-black border-black text-white h-[76px]" : "bg-black sm:bg-[#FBFBFB]/70 lg:bg-white text-black h-[76px] lg:h-auto",
     className
   );
 
