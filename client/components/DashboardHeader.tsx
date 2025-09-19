@@ -61,22 +61,15 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
       </div>
 
       {/* Center: Upload icon on mobile when menu is closed */}
-      {!mobileOpen && (
-        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:hidden">
-          <UploadIcon className="w-6 h-6 text-black" />
-        </div>
-      )}
-
       {/* Design Tab Icon Slot - place an icon here via the design editor */}
-      <div
-        data-builder-slot="header-icon"
-        role="region"
-        aria-label="Header design icon slot"
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center gap-2"
-      >
-        {/* Empty placeholder — design editor can insert an icon here */}
-        <div className="w-6 h-6 bg-transparent" />
-      </div>
+    <div
+      data-builder-slot="header-icon"
+      role="region"
+      aria-label="Header design icon slot"
+      className="absolute left-4 top-1/2 transform translate-y-[-12px] flex items-center gap-2"
+    >
+      <div className="h-6 w-6" />
+    </div>
 
       {/* Right: desktop user & button, mobile hamburger */}
       <div className="flex items-center gap-3">
