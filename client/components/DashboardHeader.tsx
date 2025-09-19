@@ -4,7 +4,7 @@ interface HeaderProps {
   className?: string;
 }
 
-export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { onOpenSidebar?: () => void }) {
+export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: HeaderProps & { onOpenSidebar?: () => void; mobileOpen?: boolean }) {
   const navItems = [
     "Home",
     "Cars for Sale",
@@ -13,8 +13,15 @@ export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { on
     "Contact",
   ];
 
+  const headerClasses = cn(
+    "flex items-center justify-between px-5 py-3 border-b border-line",
+    // small-screen styles when mobile menu is open
+    mobileOpen ? "bg-black border-black text-white h-[76px]" : "bg-[#FBFBFB]/70 lg:bg-white text-black h-[76px] lg:h-auto",
+    className
+  );
+
   return (
-    <div className={cn("flex items-center justify-between bg-[#FBFBFB]/70 h-[76px] lg:bg-white lg:h-auto border-b border-line px-5 py-3", className)}>
+    <div className={headerClasses}>
       {/* Left: logo on mobile, nav on desktop */}
       <div className="flex items-center gap-4">
         {/* Mobile logo (visible on small screens) */}
