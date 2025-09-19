@@ -23,7 +23,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     <div className={cn("h-full flex flex-col bg-[#24272C]", className)}>
       <div className="overflow-y-auto h-full">
         {/* Logo */}
-        <div className="hidden sm:flex justify-center items-center px-6 py-4 bg-[#E3E1E1]">
+        <div className="hidden sm:flex justify-center items-center px-6 py-4 bg-[#E3E1E1] -mb-[5px]">
           <svg
             className="w-[180px] md:w-[222px] h-auto"
             viewBox="0 0 251 52"
