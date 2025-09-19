@@ -52,7 +52,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
           <div className="flex items-center gap-3">
             <div className="relative w-[52px] h-[52px]">
               <div className="w-[52px] h-[52px] rounded-full bg-white/40 flex items-center justify-center">
-                <UserIcon className="w-[19px] h-[19px] text-white" />
+                <UserIcon className="w-[19px] h-[19px] text-[rgba(255,255,255,0.85)]" />
               </div>
             </div>
             <div className="flex-1 truncate">
@@ -84,7 +84,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
               >
                 <item.icon className={cn(
                   "w-[22px] h-[22px] flex-shrink-0",
-                  item.active ? "text-white" : "text-white/20"
+                  item.active ? "text-white" : "text-[rgba(255,255,255,0.85)]"
                 )} />
                 <span className={cn(
                   "flex-1 text-sm font-albert truncate",
