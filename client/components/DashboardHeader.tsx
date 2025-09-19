@@ -74,9 +74,9 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
       <div className="flex items-center gap-3">
         {/* Desktop user info + add listing (hidden on small screens) */}
         <div className="hidden lg:flex items-center gap-3">
-          <div className="flex items-center gap-4">
-            <div className="w-[34px] h-[34px] rounded-full bg-gray-300 flex items-center justify-center">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fb622b05c94614d5fa10444bc8470754b?format=webp&width=800" className="w-4 h-4 object-contain" alt="Profile" />
+          <div className="flex items-center gap-[3px]">
+            <div className="w-[34px] h-[34px] rounded-full flex items-center justify-center">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fb622b05c94614d5fa10444bc8470754b?format=webp&width=800" className="w-6 h-6 object-contain" alt="Profile" />
             </div>
             <div className="text-heading text-sm font-medium font-albert">25 Credits</div>
           </div>
