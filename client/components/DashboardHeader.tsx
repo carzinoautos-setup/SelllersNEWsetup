@@ -54,7 +54,6 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
 
 
           <button className="flex items-center gap-[10px] px-[10px] py-[10px] bg-main-color rounded-14 h-[50px] w-[160px] justify-center text-white">
-            <AddListingIcon className="w-5 h-5 text-white" />
             <span className="text-base font-medium font-albert">Add listing</span>
           </button>
         </div>
