@@ -14,7 +14,7 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
   ];
 
   const headerClasses = cn(
-    "flex items-center justify-between px-5 py-3 relative",
+    "flex items-center justify-between px-5 py-3 relative shadow-sm",
     // Mobile: keep white (or black when menu open). Non-mobile: use a lighter grey background.
     mobileOpen
       ? "bg-black border-black text-white h-[76px] sm:bg-black sm:text-white"
