@@ -46,15 +46,6 @@ export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { on
             <div className="text-heading text-sm font-medium font-albert">25 Credits</div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-[34px] h-[34px] rounded-full bg-gray-300 flex items-center justify-center">
-              <UserIcon className="w-4 h-4 text-gray-600" />
-            </div>
-            <div className="flex items-center gap-[6px]">
-              <div className="text-heading text-sm font-medium font-albert">Themesflat</div>
-              <ChevronDownIcon className="w-3 h-3 text-heading" />
-            </div>
-          </div>
 
           <button className="flex items-center gap-[10px] px-[10px] py-[10px] bg-main-color rounded-14 h-[50px] w-[160px] justify-center text-white">
             <AddListingIcon className="w-5 h-5 text-white" />
