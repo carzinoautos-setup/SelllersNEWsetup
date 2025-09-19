@@ -2,6 +2,7 @@ import { useState } from "react";
 import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardHeader } from "./DashboardHeader";
 import { EditProfileForm } from "./EditProfileForm";
+import { Footer } from "./Footer";
 
 export function DashboardLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
