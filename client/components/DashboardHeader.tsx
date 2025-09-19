@@ -5,29 +5,76 @@ interface HeaderProps {
 }
 
 export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { onOpenSidebar?: () => void }) {
+  const navItems = [
+    "Home",
+    "Cars for Sale",
+    "Trucks for Sale",
+    "Trade in your Car",
+    "Dealers",
+    "Contact"
+  ];
+
   return (
-    <div className={cn("flex items-center justify-between h-[76px] px-[13px] bg-[#FBFBFB]/70", className)}>
-      {/* Logo on left */}
-      <div className="flex items-center">
+    <div className={cn("flex items-center justify-between bg-[#FBFBFB]/70 h-[76px] lg:bg-white lg:h-auto border-b border-line px-5 py-3", className)}>
+      {/* Left: logo on mobile, nav on desktop */}
+      <div className="flex items-center gap-4">
+        {/* Mobile logo (visible on small screens) */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fe8f282a634274a1a92939ff6e966f46e?format=webp&width=800"
           alt="Carzino Logo"
-          className="w-[229px] h-[56px] object-contain"
+          className="block lg:hidden w-[229px] h-[56px] object-contain"
         />
+
+        {/* Desktop nav (visible on lg+) */}
+        <nav className="hidden lg:flex items-center gap-10">
+          {navItems.map((item, index) => (
+            <div key={index} className="text-heading text-sm md:text-base font-medium font-albert cursor-pointer hover:text-main-color transition-colors">
+              {item}
+            </div>
+          ))}
+        </nav>
       </div>
 
-      {/* Hamburger menu on right */}
-      <button
-        className="p-2 hover:bg-black/5 rounded-md transition-colors"
-        onClick={onOpenSidebar}
-        aria-label="Open menu"
-      >
-        <svg width="21" height="15" viewBox="0 0 21 15" fill="none">
-          <path d="M0.646484 0.121094H20.4194" stroke="black" strokeWidth="2"/>
-          <path d="M0.646484 7.39062H20.4194" stroke="black" strokeWidth="2"/>
-          <path d="M0.646484 14.6602H20.4194" stroke="black" strokeWidth="2"/>
-        </svg>
-      </button>
+      {/* Right: desktop user & button, mobile hamburger */}
+      <div className="flex items-center gap-3">
+        {/* Desktop user info + add listing (hidden on small screens) */}
+        <div className="hidden lg:flex items-center gap-3">
+          <div className="flex items-center gap-4">
+            <div className="w-[34px] h-[34px] rounded-full bg-gray-300 flex items-center justify-center">
+              <UserIcon className="w-4 h-4 text-gray-600" />
+            </div>
+            <div className="text-heading text-sm font-medium font-albert">25 Credits</div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="w-[34px] h-[34px] rounded-full bg-gray-300 flex items-center justify-center">
+              <UserIcon className="w-4 h-4 text-gray-600" />
+            </div>
+            <div className="flex items-center gap-[6px]">
+              <div className="text-heading text-sm font-medium font-albert">Themesflat</div>
+              <ChevronDownIcon className="w-3 h-3 text-heading" />
+            </div>
+          </div>
+
+          <button className="flex items-center gap-[10px] px-[10px] py-[10px] bg-main-color rounded-14 h-[50px] w-[160px] justify-center text-white">
+            <AddListingIcon className="w-5 h-5 text-white" />
+            <span className="text-base font-medium font-albert">Add listing</span>
+          </button>
+        </div>
+
+        {/* Mobile hamburger (visible on small screens) */}
+        <button
+          className="lg:hidden p-2 hover:bg-black/5 rounded-md transition-colors"
+          onClick={onOpenSidebar}
+          aria-label="Open menu"
+        >
+          <svg width="21" height="15" viewBox="0 0 21 15" fill="none">
+            <path d="M0.646484 0.121094H20.4194" stroke="black" strokeWidth="2"/>
+            <path d="M0.646484 7.39062H20.4194" stroke="black" strokeWidth="2"/>
+            <path d="M0.646484 14.6602H20.4194" stroke="black" strokeWidth="2"/>
+          </svg>
+        </button>
+      </div>
     </div>
   );
 }
