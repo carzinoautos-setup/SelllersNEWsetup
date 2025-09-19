@@ -57,7 +57,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
             </div>
             <div className="flex-1 truncate">
               <div className="text-white/50 text-xs font-albert">Account</div>
-              <div className="text-white text-sm font-albert truncate">themesflat@gmail...</div>
+              <div className="text-white text-sm font-albert truncate">Username@gmail...</div>
             </div>
           </div>
         </div>
