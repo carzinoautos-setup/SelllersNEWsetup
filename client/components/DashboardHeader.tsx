@@ -15,11 +15,10 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
 
   const headerClasses = cn(
     "flex items-center justify-between px-5 py-3 relative",
-    // Mobile: white background with red top stripe when closed, black when menu open
-    // Desktop: keep the existing gray/white styling
+    // Mobile: keep white (or black when menu open). Non-mobile: use a lighter grey background.
     mobileOpen
-      ? "bg-black border-black text-white h-[76px] sm:bg-[#FBFBFB]/70 lg:bg-white sm:text-black"
-      : "bg-white text-black h-[76px] sm:bg-[#FBFBFB]/70 lg:bg-white lg:h-auto border-b border-line",
+      ? "bg-black border-black text-white h-[76px] sm:bg-black sm:text-white"
+      : "bg-white text-black h-[76px] sm:bg-[#F5F5F5] sm:text-black lg:h-auto border-b border-line",
     className
   );
 
