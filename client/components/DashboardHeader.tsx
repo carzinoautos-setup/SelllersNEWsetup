@@ -8,10 +8,9 @@ export function DashboardHeader({ className, onOpenSidebar }: HeaderProps & { on
   const navItems = [
     "Home",
     "Cars for Sale",
-    "Trucks for Sale",
     "Trade in your Car",
     "Dealers",
-    "Contact"
+    "Contact",
   ];
 
   return (
