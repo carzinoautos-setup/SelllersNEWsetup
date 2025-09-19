@@ -66,8 +66,8 @@ export function DashboardSidebar({ className }: SidebarProps) {
         <div className="w-full h-px bg-white/5 mt-4"></div>
 
         {/* Menu */}
-        <div className="px-2 mt-4">
-          <div className="px-3 mb-3">
+        <div className="px-2 mt-2">
+          <div className="px-3 mb-2">
             <div className="text-white/40 text-sm font-albert">Menu</div>
           </div>
 
@@ -76,7 +76,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
               <div
                 key={index}
                 className={cn(
-                  "flex items-center gap-3 px-4 py-3 rounded-[10px] cursor-pointer transition-colors",
+                  "flex items-center gap-3 px-4 py-2 rounded-[10px] cursor-pointer transition-colors",
                   item.active
                     ? "bg-main-color"
                     : "hover:bg-white/5"
