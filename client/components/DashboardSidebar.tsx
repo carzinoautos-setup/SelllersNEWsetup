@@ -195,10 +195,11 @@ function LogoutIcon({ className }: { className?: string }) {
 
 function CoinsIcon({ className }: { className?: string }) {
   return (
-    <img
-      className={className}
-      src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fc2fd791bc948415ab70c7166a0c15339?format=webp&width=80"
-      alt="coins"
-    />
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="12" cy="7" rx="6.5" ry="2.5" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M5.5 7v6c0 1.4 2.9 2.5 6.5 2.5s6.5-1.1 6.5-2.5V7" stroke="currentColor" strokeWidth="1.4" />
+      <ellipse cx="12" cy="13" rx="6.5" ry="2.5" stroke="currentColor" strokeWidth="1.2" />
+      <ellipse cx="12" cy="17" rx="4.2" ry="1.6" stroke="currentColor" strokeWidth="1.1" />
+    </svg>
   );
 }
