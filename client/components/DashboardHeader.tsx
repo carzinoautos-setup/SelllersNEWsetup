@@ -28,7 +28,7 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fe8f282a634274a1a92939ff6e966f46e?format=webp&width=800"
           alt="Carzino Logo"
-          className="block lg:hidden w-[229px] h-[56px] object-contain"
+          className="block lg:hidden w-[175px] sm:w-[229px] h-[56px] object-contain"
         />
 
         {/* Desktop nav (visible on lg+) */}
