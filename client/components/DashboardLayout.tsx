@@ -16,7 +16,7 @@ export function DashboardLayout() {
         aria-hidden={!mobileOpen}
         onClick={() => setMobileOpen(false)}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className={`absolute inset-0 ${mobileOpen ? 'bg-black' : 'bg-black/40'}`} />
       </div>
 
       {/* Sidebar - hidden on small screens unless toggled */}
