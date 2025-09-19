@@ -61,14 +61,14 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
 
         {/* Mobile hamburger (visible on small screens) */}
         <button
-          className="lg:hidden p-2 hover:bg-black/5 rounded-md transition-colors"
+          className={cn("lg:hidden p-2 rounded-md transition-colors", mobileOpen ? "bg-black" : "hover:bg-black/5")}
           onClick={onOpenSidebar}
           aria-label="Open menu"
         >
-          <svg width="21" height="15" viewBox="0 0 21 15" fill="none">
-            <path d="M0.646484 0.121094H20.4194" stroke="black" strokeWidth="2"/>
-            <path d="M0.646484 7.39062H20.4194" stroke="black" strokeWidth="2"/>
-            <path d="M0.646484 14.6602H20.4194" stroke="black" strokeWidth="2"/>
+          <svg width="21" height="15" viewBox="0 0 21 15" fill="none" className={mobileOpen ? "text-white" : "text-black"}>
+            <path d="M0.646484 0.121094H20.4194" stroke="currentColor" strokeWidth="2"/>
+            <path d="M0.646484 7.39062H20.4194" stroke="currentColor" strokeWidth="2"/>
+            <path d="M0.646484 14.6602H20.4194" stroke="currentColor" strokeWidth="2"/>
           </svg>
         </button>
       </div>
