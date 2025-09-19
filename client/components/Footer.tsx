@@ -2,7 +2,6 @@ export function Footer() {
   return (
     <footer className="left-0 w-screen relative">
       {/* Ensure left sidebar area matches footer background so they meet */}
-      <div className="absolute left-0 bottom-0 hidden lg:block w-[280px] bg-[#24272C] h-full pointer-events-none" aria-hidden="true" />
       {/* Full-bleed promo bar */}
       <div className="w-full bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
