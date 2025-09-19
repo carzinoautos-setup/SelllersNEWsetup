@@ -17,11 +17,6 @@ export function Footer() {
       {/* Dark footer section (full width background, centered content) */}
       <div className="w-full bg-[#24272C] text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-16 py-10">
-          {/* Logo */}
-          <div className="mb-10">
-            <img src="https://api.builder.io/api/v1/image/assets/TEMP/e421d674e9adf980588eb4900a3d949d9f0e742c?width=536" alt="Carzino Logo" className="h-16" />
-          </div>
-
           {/* Links grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
             <div>
