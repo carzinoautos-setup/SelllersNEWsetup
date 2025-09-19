@@ -23,7 +23,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     <div className={cn("h-full flex flex-col bg-[#24272C]", className)}>
       <div className="overflow-y-auto h-full">
         {/* Logo */}
-        <div className="flex justify-center items-center px-6 py-4">
+        <div className="hidden sm:flex justify-center items-center px-6 py-4">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/9c0328289826e779cfbf3ddacf7dfe155dd2df54?width=444"
             alt="Carzino Logo"
