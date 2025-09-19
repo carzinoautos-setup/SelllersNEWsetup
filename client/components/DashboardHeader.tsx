@@ -90,7 +90,7 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
 
         {/* Cloud upload icon (visible on mobile, left of hamburger) */}
         <button className="lg:hidden p-2 rounded-md transition-colors hover:bg-black/5">
-          <CloudUploadIcon className="w-6 h-6 text-black" />
+          <CloudUploadIcon className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
         </button>
 
         {/* Mobile hamburger (visible on small screens) */}
