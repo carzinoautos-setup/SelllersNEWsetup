@@ -8,7 +8,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
   const menuItems = [
     { name: "Dashboard", icon: DashboardIcon, active: false },
     { name: "Add a listing", icon: EditIcon, active: false },
-    { name: "Buy Credits (1)", icon: HeartIcon, active: false },
+    { name: "Buy Credits (1)", icon: CoinsIcon, active: false },
     { name: "Messages", icon: MessageIcon, active: false, badge: "7" },
     { name: "Your Listings", icon: MailIcon, active: true },
     { name: "Profile", icon: UserIcon, active: false },
@@ -190,5 +190,15 @@ function LogoutIcon({ className }: { className?: string }) {
       <path d="M19.4516 11.0208H8.41406" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M16.7656 8.34375L19.4496 11.0158L16.7656 13.6888" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
+  );
+}
+
+function CoinsIcon({ className }: { className?: string }) {
+  return (
+    <img
+      className={className}
+      src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fc2fd791bc948415ab70c7166a0c15339?format=webp&width=80"
+      alt="coins"
+    />
   );
 }
