@@ -11,11 +11,11 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Buy Credits (1)", icon: CoinsIcon, active: false },
     { name: "Messages", icon: MessageIcon, active: false, badge: "7" },
     { name: "Your Listings", icon: MailIcon, active: true },
-    { name: "Profile", icon: UserIcon, active: false },
     { name: "Account Settings", icon: SettingsIcon, active: false },
     { name: "Add your Payment", icon: BankIcon, active: false },
     { name: "Billing", icon: CurrencyDollarIcon, active: false },
     { name: "Help Center", icon: LifebuoyIcon, active: false },
+    { name: "Profile", icon: UserIcon, active: false },
     { name: "Logout", icon: LogoutIcon, active: false },
   ];
 
