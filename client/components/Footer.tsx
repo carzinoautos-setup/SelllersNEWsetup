@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="fixed left-0 bottom-0 inset-x-0 bg-white border-t border-gray-200 z-50">
+    <footer className="w-full bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between py-6">
           <div className="text-sm text-gray-600">© 2025 Carzino. All rights reserved.</div>
