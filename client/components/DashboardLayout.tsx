@@ -29,7 +29,7 @@ export function DashboardLayout() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col lg:px-5">
+      <div className="flex-1 flex flex-col">
         {/* Header - pass toggler for mobile */}
         <div className="flex-shrink-0">
           <DashboardHeader mobileOpen={mobileOpen} onOpenSidebar={() => setMobileOpen(true)} />
