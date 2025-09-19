@@ -9,7 +9,7 @@ export function DashboardLayout() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white font-albert">
-      <div className="flex-1 flex">
+      <div className="flex-1 flex items-stretch">
         {/* Mobile Sidebar overlay */}
         <div
           className={`fixed inset-0 z-30 lg:hidden transition-opacity ${
