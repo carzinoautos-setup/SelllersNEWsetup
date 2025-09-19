@@ -20,7 +20,7 @@ export function Footer() {
           {/* Links grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
             <div>
-              <h4 className="font-medium text-lg mb-4">Links</h4>
+              <h4 className="font-medium text-[18px] leading-7 mb-4">Links</h4>
               <nav className="space-y-3 text-sm opacity-80">
                 <a className="block">Trade in your Cars</a>
                 <a className="block">Careers With Us</a>
@@ -33,7 +33,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-medium text-lg mb-4">Popular used car</h4>
+              <h4 className="font-medium text-[18px] leading-7 mb-4">Popular used car</h4>
               <nav className="space-y-3 text-sm opacity-80">
                 <a className="block">Chevrolet</a>
                 <a className="block">Land Rover</a>
@@ -46,7 +46,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-medium text-lg mb-4">Other</h4>
+              <h4 className="font-medium text-[18px] leading-7 mb-4">Other</h4>
               <nav className="space-y-3 text-sm opacity-80">
                 <a className="block">How it work</a>
                 <a className="block">Terms and Conditions</a>
@@ -59,7 +59,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-medium text-lg mb-4">Newsletter</h4>
+              <h4 className="font-medium text-[18px] leading-7 mb-4">Newsletter</h4>
               <p className="text-sm opacity-80 mb-4">Stay on top of the latest car trends, tips, and tricks for selling your car.</p>
               <div className="space-y-3">
                 <input placeholder="Your email address" className="w-full rounded-lg h-12 px-4 bg-white/5 placeholder-white/60 text-white" />
