@@ -18,7 +18,7 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
     // Mobile: keep white (or black when menu open). Non-mobile: use a lighter grey background.
     mobileOpen
       ? "bg-black border-black text-white h-[76px] sm:bg-black sm:text-white"
-      : "bg-white text-black h-[76px] sm:bg-[#F5F5F5] sm:text-black lg:h-auto border-b border-line",
+      : "bg-white text-black h-[76px] sm:bg-[#FAFAFA] sm:text-black lg:h-auto border-b border-line",
     className
   );
 
