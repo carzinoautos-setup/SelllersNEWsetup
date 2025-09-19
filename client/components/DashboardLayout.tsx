@@ -8,7 +8,8 @@ export function DashboardLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-white font-albert">
+    <>
+      <div className="flex min-h-screen bg-white font-albert">
       {/* Mobile Sidebar overlay */}
       <div
         className={`fixed inset-0 z-30 lg:hidden transition-opacity ${
@@ -50,7 +51,9 @@ export function DashboardLayout() {
         </div>
       </div>
 
-      <Footer />
     </div>
+
+    <Footer />
+    </>
   );
 }
