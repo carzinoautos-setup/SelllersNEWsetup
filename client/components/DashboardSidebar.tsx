@@ -106,9 +106,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
 
         {/* Spacer to push copyright to bottom */}
         <div className="mt-8" />
-
-        {/* Copyright */}
-        <div className="px-6 py-6 text-text-muted/80 text-sm font-albert">Copyright © 2025 Carzino</div>
       </div>
     </div>
   );
