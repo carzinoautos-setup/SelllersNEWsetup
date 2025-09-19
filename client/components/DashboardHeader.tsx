@@ -33,7 +33,7 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
       <div className="flex items-center gap-4">
         {/* Mobile logo (visible on small screens) */}
         <svg
-          className="block lg:hidden w-[120px] h-[20px]"
+          className="block lg:hidden w-[180px] sm:w-[120px] h-[20px]"
           viewBox="0 0 214 19"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
