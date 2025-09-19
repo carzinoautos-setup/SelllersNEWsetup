@@ -5,7 +5,7 @@ export function Footer() {
       {/* Full-bleed promo bar */}
       <div className="w-full bg-[#f8f8f8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center relative py-3 px-4 mt-2">
+          <div className="flex items-center justify-center relative py-3 px-4">
             <div className="w-full text-center">
               <div className="mb-2"></div>
               <div className="text-gray-700">"Find it. Love it. Drive it. Carzino it."</div>
