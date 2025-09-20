@@ -570,6 +570,227 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
         </div>
       </div>
 
+      {/* Car Details Section */}
+      <div className="border border-[#EDEDED] rounded-2xl p-8">
+        <h2 className="text-2xl font-medium text-[#24272C] font-albert mb-8">
+          Car details
+        </h2>
+
+        <div className="space-y-8">
+          {/* Title */}
+          <div className="space-y-2">
+            <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              Title *
+            </Label>
+            <Input
+              placeholder="Title"
+              className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert"
+            />
+          </div>
+
+          {/* Row 1: Model, Type, Years, Condition */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Model *
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Type *
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Years *
+              </Label>
+              <Input
+                placeholder="Years"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Condition *
+              </Label>
+              <Input
+                placeholder="Years"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+          </div>
+
+          {/* Row 2: Stock Number, VIN Number, Mileage, Transmission */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Stock Number
+              </Label>
+              <Input
+                placeholder="Enter number"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                VIN Number
+              </Label>
+              <Input
+                placeholder="Enter VIN"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Mileage
+              </Label>
+              <Input
+                placeholder="Enter mileage"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Transmission
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+          </div>
+
+          {/* Row 3: Driver Type, Engine Size, Cylinders, Fuel Type */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Driver Type
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Engine Size
+              </Label>
+              <Input
+                placeholder="Enter engine"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Cylinders
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Fuel Type
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+          </div>
+
+          {/* Row 4: Doors, Color, Seats, City MPG */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Doors
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Color
+              </Label>
+              <Input
+                placeholder="Enter engine"
+                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Seats
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                City MPG
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+          </div>
+
+          {/* Description */}
+          <div className="space-y-2">
+            <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              Description
+            </Label>
+            <textarea
+              placeholder="Your description"
+              className="w-full h-[130px] border border-[#EDEDED] rounded-xl px-4 py-4 text-[14px] font-albert text-[#696665] resize-none"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Action Buttons */}
       <div className="flex gap-4 pt-4">
         <Button className="w-[161px] h-[51px] bg-[#CF0D0D] hover:bg-[#CF0D0D]/90 text-white rounded-xl font-dm text-[15px] font-medium">
