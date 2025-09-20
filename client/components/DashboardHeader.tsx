@@ -24,7 +24,8 @@ export function DashboardHeader({
     <div className={headerClasses}>
       {/* Red stripe at top - only visible on mobile when menu is closed */}
       {!mobileOpen && (
-        <div className="absolute top-0 left-0 right-0 h-[9px] bg-[#DE0707] sm:hidden" />
+        // Red stripe visible on screens below lg (mobile + tablet)
+        <div className="absolute top-0 left-0 right-0 h-[9px] bg-[#DE0707] lg:hidden" />
       )}
       {/* Left: logo on mobile, nav on desktop */}
       <div className="flex items-center gap-4">
