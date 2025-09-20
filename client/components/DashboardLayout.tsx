@@ -105,14 +105,7 @@ export function DashboardLayout() {
           {/* Main Content Area */}
           <div
             className={`flex-1 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
-          >
-            <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
-              {/* Page Title */}
-
-              {/* Form Content */}
-              <EditProfileForm />
-            </div>
-          </div>
+          />
         </div>
       </div>
 
