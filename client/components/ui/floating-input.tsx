@@ -15,12 +15,12 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
           {...props}
           placeholder={props.placeholder ?? " "}
           className={cn(
-            "peer w-full bg-white border border-[#B2B2B2] rounded-xl px-4 py-3 text-[15px] text-[#050B20] placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#E82121]",
+            "peer w-full bg-white border border-[#E1E1E1] rounded-xl px-4 py-3 text-[15px] text-[#050B20] placeholder-transparent focus:outline-none focus:ring-2 focus:ring-[#E82121]",
             className
           )}
         />
         <label
-          className="absolute left-4 top-[-10px] text-[13px] text-[#24272C] transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-[13px] peer-placeholder-shown:text-[#818181] peer-focus:top-[-10px] peer-focus:text-[13px] peer-focus:text-[#24272C] bg-white px-1"
+          className="absolute left-4 top-[-10px] text-[13px] text-[#818181] transition-all peer-placeholder-shown:top-[20px] peer-placeholder-shown:text-[13px] peer-placeholder-shown:text-[#818181] peer-focus:top-[-10px] peer-focus:text-[13px] peer-focus:text-[#818181] bg-white px-1"
         >
           {label}
         </label>
