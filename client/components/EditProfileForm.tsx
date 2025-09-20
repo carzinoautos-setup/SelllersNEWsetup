@@ -765,7 +765,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             </Label>
             <textarea
               placeholder="Your description"
-              className="w-full h-[130px] border border-[#EDEDED] rounded-xl px-4 py-4 text-[14px] font-albert text-[#696665] resize-none"
+              className="w-full h-[174px] border border-[#EDEDED] rounded-xl px-4 py-4 text-[14px] font-albert text-[#696665] resize-none"
             />
           </div>
         </div>
