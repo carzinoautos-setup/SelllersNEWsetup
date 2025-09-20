@@ -7,7 +7,7 @@ export function SocialProofTest() {
           <div className="flex-1 max-w-[640px] space-y-6">
             {/* Header Section */}
             <div className="space-y-3">
-              <div className="text-lg font-medium text-[#7E3AF2] font-sans">
+              <div className="text-lg font-semibold text-[#7E3AF2] font-sans">
                 Trusted Worldwide
               </div>
               <h2 className="text-4xl font-bold text-[#111928] font-sans leading-[125%] tracking-[-0.36px]">
