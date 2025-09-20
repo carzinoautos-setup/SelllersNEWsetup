@@ -116,33 +116,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-/* Debug: hide undesired fixed bottom bars (drawer/sheet/toast) */
-.fixed.inset-x-0.bottom-0,
-[class*="inset-x-0"][class*="bottom-0"] {
-  display: none !important;
-}
-
-/* If still present, hide short horizontal scrollbars/thin bottom bars */
-.scroll-area-horizontal,
-.scrollbar-horizontal,
-[role="region"][aria-label*="Notifications"],
-[role="region"][aria-label*="notifications"] {
-  display: none !important;
-}
-
-/* Prevent horizontal scrollbar across the site */
-html, body {
-  overflow-x: hidden !important;
-  max-width: 100% !important;
-}
-
-/* Hide horizontal scrollbar visuals (webkit) */
-::-webkit-scrollbar {
-  height: 0 !important;
-  width: 0 !important;
-  background: transparent !important;
-}
-::-webkit-scrollbar-thumb {
-  background: transparent !important;
-}
