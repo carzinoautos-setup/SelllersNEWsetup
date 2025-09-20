@@ -95,10 +95,6 @@ export function DashboardLayout() {
         {/* Main Content */}
         <div className="flex-1 flex flex-col">
           {/* Header - pass toggler for mobile */}
-          {/* Red stripe rendered as part of the header flow so it scrolls with the page */}
-          {!mobileOpen && (
-            <div className="w-full h-[9px] bg-[#DE0707]" />
-          )}
           <div className="flex-shrink-0">
             <DashboardHeader
               mobileOpen={mobileOpen}
