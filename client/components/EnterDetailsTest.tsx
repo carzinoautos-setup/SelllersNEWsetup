@@ -11,77 +11,62 @@ export function EnterDetailsTest() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Row 1 */}
           {/* Seller name or Dealer Name */}
-          <div className="w-full h-[60px] border border-[#696665] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[14px] text-[#818181] font-sans leading-[140%] mb-1">
-              Seller name or Delaer Name
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Enter your full name</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter your full name
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">
+              Seller name or Dealer Name
             </div>
           </div>
 
           {/* City */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              City
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Enter your city</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter your city
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">City</div>
           </div>
 
           {/* State */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              State
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Enter your state</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter your state
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">State</div>
           </div>
 
           {/* Row 2 */}
           {/* Zip code */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Zip code
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Enter your zip code</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter your zip code
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Zip code</div>
           </div>
 
           {/* Email Alert address */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Email Alert address
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Enter your email address</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter your email address
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Email Alert address</div>
           </div>
 
           {/* Account holder email Address */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Account holder email Adresss
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Enter your email address</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter your email address
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Account holder email Adresss</div>
           </div>
 
           {/* Row 3 */}
           {/* List phone on ads - Dropdown */}
           <div className="relative">
-            <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex items-center justify-between">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center justify-between">
               <div className="flex flex-col justify-center">
-                <div className="text-[13px] text-[#818181] font-dm mb-1">
-                  List phone on ads
-                </div>
-                <div className="text-[15px] text-[#050B20] font-dm">
-                  Yes
-                </div>
+                <div className="text-[15px] text-[#050B20] font-dm">Yes</div>
               </div>
               {/* Dropdown Arrow */}
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,16 +80,15 @@ export function EnterDetailsTest() {
                 </defs>
               </svg>
             </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">List phone on ads</div>
           </div>
 
           {/* Seller Phone */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Seller Phone
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">(206)</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              (206)
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Seller Phone</div>
           </div>
 
           {/* Empty cell for alignment */}
@@ -112,33 +96,25 @@ export function EnterDetailsTest() {
 
           {/* Row 4 - Full width fields */}
           {/* Enter your full address */}
-          <div className="lg:col-span-1 w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Enter your full address here and then select from the choices.
-            </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Enter address
-            </div>
+          <div className="lg:col-span-1 w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+            <div className="text-[15px] text-[#050B20] font-dm">Enter address</div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Enter your full address here and then select from the choices.</div>
           </div>
 
           {/* Longitude */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Longitude; Required
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Auto populates from google maps</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Auto populates from google maps
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Longitude; Required</div>
           </div>
 
           {/* Latitude */}
-          <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-            <div className="text-[13px] text-[#818181] font-dm mb-1">
-              Latitude: Required
+          <div className="relative">
+            <div className="w-full h-[60px] rounded-2xl border-2 border-[#E82121] bg-white px-4 py-3 flex items-center">
+              <div className="text-[15px] text-[#050B20] font-dm">Auto populates from google maps</div>
             </div>
-            <div className="text-[15px] text-[#050B20] font-dm">
-              Auto populates from google maps
-            </div>
+            <div className="absolute left-4 -top-3 bg-white px-2 text-sm text-[#24272C]">Latitude: Required</div>
           </div>
         </div>
       </div>
