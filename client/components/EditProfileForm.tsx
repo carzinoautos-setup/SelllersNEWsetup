@@ -2,31 +2,46 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useState } from "react";
 
 interface EditProfileFormProps {
   className?: string;
 }
 
 export function EditProfileForm({ className }: EditProfileFormProps) {
+  const [passwordRequirements, setPasswordRequirements] = useState({
+    hasNumber: false,
+    hasLowercase: false,
+    hasUppercase: false,
+    hasMinLength: false,
+  });
+
+  const handlePasswordChange = (password: string) => {
+    setPasswordRequirements({
+      hasNumber: /\d/.test(password),
+      hasLowercase: /[a-z]/.test(password),
+      hasUppercase: /[A-Z]/.test(password),
+      hasMinLength: password.length >= 8,
+    });
+  };
+
   return (
-    <div className={cn("w-full max-w-[1480px] mx-auto", className)}>
+    <div className={cn("w-full max-w-[1480px] mx-auto space-y-8", className)}>
       {/* Header */}
-      <div className="mb-16">
+      <div className="mb-8">
         <h1 className="text-2xl font-semibold text-black font-albert mb-2">
           Edit profile
         </h1>
         <div className="w-[121px] h-0.5 bg-[#E82121]"></div>
       </div>
 
-      {/* Profile Section */}
+      {/* Profile Photo Section */}
       <div className="border border-[#EDEDED] rounded-2xl p-6 lg:p-8">
-        {/* Profile Photo Header */}
         <div className="mb-6">
           <h2 className="text-base font-medium text-[#050B20] font-dm mb-6">
             Profile Photo
           </h2>
           
-          {/* Profile Photo Content */}
           <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
             {/* Existing Photo */}
             <div className="relative w-[122px] h-[107px] flex-shrink-0">
@@ -95,6 +110,474 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png
           </p>
         </div>
+      </div>
+
+      {/* Enter your Details Section */}
+      <div className="space-y-5">
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-medium text-[#24272C] font-albert">
+            Enter your Details
+          </h2>
+          <div className="w-[194px] h-0.5 bg-[#E82121] mt-1"></div>
+        </div>
+        
+        <div className="border border-[#B2B2B2] rounded-2xl p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Seller Name */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Seller name or Dealer Name
+              </Label>
+              <Input 
+                placeholder="Enter your full name"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* City */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                City
+              </Label>
+              <Input 
+                placeholder="Enter your city"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* State */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                State
+              </Label>
+              <Input 
+                placeholder="Enter your state"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Zip Code */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Zip code
+              </Label>
+              <Input 
+                placeholder="Enter your zip code"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Email Alert Address */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Email Alert address
+              </Label>
+              <Input 
+                placeholder="Enter your email address"
+                type="email"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Account Holder Email */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Account holder email Address
+              </Label>
+              <Input 
+                placeholder="Enter your email address"
+                type="email"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* List Phone on Ads */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                List phone on ads
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[60px] border border-[#B2B2B2] rounded-xl px-4 text-[15px] font-dm bg-white appearance-none">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+                <ChevronDownIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#050B20]" />
+              </div>
+            </div>
+
+            {/* Seller Phone */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Seller Phone
+              </Label>
+              <Input 
+                placeholder="(206)"
+                type="tel"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Address - Full Width */}
+            <div className="space-y-2 lg:col-span-3">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Enter your full address here and then select it from the choices.
+              </Label>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <Input 
+                  placeholder="Enter address"
+                  className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                />
+                <Input 
+                  placeholder="Auto populates from google maps"
+                  className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                  disabled
+                />
+                <Input 
+                  placeholder="Auto populates from google maps"
+                  className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Dealership Information Section */}
+      <div className="space-y-5">
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-medium text-[#24272C] font-albert">
+            Dealership Information
+          </h2>
+          <div className="w-[250px] h-0.5 bg-[#E82121] mt-1"></div>
+        </div>
+        
+        <div className="border border-[#B2B2B2] rounded-2xl p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Vehicle Type */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Do you sell new or used vehicles?
+              </Label>
+              <Input 
+                placeholder="Select new, used or both"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Email Lead Alerts User 1 */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Email lead alerts user 1
+              </Label>
+              <Input 
+                placeholder="Enter an additional alert email address"
+                type="email"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Dealerships CRM Provider */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Dealerships CRM provider
+              </Label>
+              <Input 
+                placeholder="Enter your Crm provider"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Dealership Website */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Dealership website
+              </Label>
+              <Input 
+                placeholder=""
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Email Lead Alerts User 2 */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Email lead alerts user 2
+              </Label>
+              <Input 
+                placeholder="Enter an additional alert email address"
+                type="email"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* CRM Account Number */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                CRM Account #:
+              </Label>
+              <Input 
+                placeholder="Enter your Crm account #"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* XML or CSV Vehicle Feed URL */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                XML or CSV vehicle Feed url
+              </Label>
+              <Input 
+                placeholder="Enter an additional alert email address"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Email Lead Alerts User 3 */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Email lead alerts user 3
+              </Label>
+              <Input 
+                placeholder="Enter an additional alert email address"
+                type="email"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Dealerships CRM Email */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Dealerships CRM email
+              </Label>
+              <Input 
+                placeholder="Enter your Crm alert email address"
+                type="email"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Website Provider Information */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm">
+                Website provider information
+              </Label>
+              <Input 
+                placeholder="Enter your inventory provider"
+                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Billing Information Section */}
+      <div className="space-y-5">
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-medium text-[#24272C] font-albert">
+            Billing Information
+          </h2>
+          <div className="w-[202px] h-0.5 bg-[#E82121] mt-1"></div>
+        </div>
+        
+        <div className="border border-[#B2B2B2] rounded-2xl p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Billing Contact */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                Billing contact
+              </Label>
+              <Input 
+                placeholder="Enter your full name"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Street Address */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                Street address
+              </Label>
+              <Input 
+                placeholder="+77"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Zip Code */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                Zip code
+              </Label>
+              <Input 
+                placeholder="Enter your zip code"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Billing Phone */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                Billing phone
+              </Label>
+              <Input 
+                placeholder="+77"
+                type="tel"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* City */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                City
+              </Label>
+              <Input 
+                placeholder="Enter your city"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Country */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                Country
+              </Label>
+              <Input 
+                value="USA"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* Billing Email Address */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                Billing email address
+              </Label>
+              <Input 
+                placeholder="+77"
+                type="email"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+
+            {/* State */}
+            <div className="space-y-2">
+              <Label className="text-[13px] text-[#818181] font-dm font-bold">
+                State
+              </Label>
+              <Input 
+                placeholder="Enter your state"
+                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Change Password Section */}
+      <div className="space-y-5">
+        <div className="flex flex-col">
+          <h2 className="text-2xl font-medium text-[#24272C] font-albert">
+            Change password
+          </h2>
+          <div className="w-[194px] h-0.5 bg-[#E82121] mt-1"></div>
+        </div>
+        
+        <div className="border border-[#B2B2B2] rounded-2xl p-8">
+          <div className="space-y-8">
+            {/* Old Password */}
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Old password
+              </Label>
+              <div className="relative">
+                <Input 
+                  type="password"
+                  placeholder="Old password"
+                  className="h-[54px] border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
+                />
+                <EyeIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px] text-[#B6B6B6]" />
+              </div>
+            </div>
+
+            {/* New Password */}
+            <div className="space-y-3">
+              <div className="space-y-2">
+                <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                  New password
+                </Label>
+                <div className="relative">
+                  <Input 
+                    type="password"
+                    placeholder="New password"
+                    className="h-[54px] border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
+                    onChange={(e) => handlePasswordChange(e.target.value)}
+                  />
+                  <EyeIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px] text-[#B6B6B6]" />
+                </div>
+              </div>
+
+              {/* Password Requirements */}
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-1.5">
+                  <div className={`w-2 h-2 rounded-full ${passwordRequirements.hasNumber ? 'bg-[#7ED321]' : 'bg-[#B6B6B6]'}`} />
+                  <span className={`text-xs font-albert ${passwordRequirements.hasNumber ? 'text-[#7ED321]' : 'text-[#B6B6B6]'}`}>
+                    One number
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <div className={`w-2 h-2 rounded-full ${passwordRequirements.hasLowercase ? 'bg-[#7ED321]' : 'bg-[#B6B6B6]'}`} />
+                  <span className={`text-xs font-albert ${passwordRequirements.hasLowercase ? 'text-[#7ED321]' : 'text-[#B6B6B6]'}`}>
+                    One lowercase character
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <div className={`w-2 h-2 rounded-full ${passwordRequirements.hasUppercase ? 'bg-[#7ED321]' : 'bg-[#B6B6B6]'}`} />
+                  <span className={`text-xs font-albert ${passwordRequirements.hasUppercase ? 'text-[#7ED321]' : 'text-[#B6B6B6]'}`}>
+                    One uppercase character
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <div className={`w-2 h-2 rounded-full ${passwordRequirements.hasMinLength ? 'bg-[#7ED321]' : 'bg-[#B6B6B6]'}`} />
+                  <span className={`text-xs font-albert ${passwordRequirements.hasMinLength ? 'text-[#7ED321]' : 'text-[#B6B6B6]'}`}>
+                    8 characters minimum
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Confirm Password */}
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Confirm password
+              </Label>
+              <div className="relative">
+                <Input 
+                  type="password"
+                  placeholder="Confirm password"
+                  className="h-[54px] border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
+                />
+                <EyeOffIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px] text-[#B6B6B6]" />
+              </div>
+            </div>
+
+            {/* Change Password Button */}
+            <Button className="w-[180px] h-[50px] bg-[#E82121] hover:bg-[#E82121]/90 text-white rounded-xl font-albert text-base font-medium">
+              Change passwords
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Action Buttons */}
+      <div className="flex gap-4 pt-4">
+        <Button className="w-[161px] h-[51px] bg-[#CF0D0D] hover:bg-[#CF0D0D]/90 text-white rounded-xl font-dm text-[15px] font-medium">
+          Save Profile
+        </Button>
+        <Button className="w-[162px] h-[51px] bg-[#24272C] hover:bg-[#24272C]/90 text-white rounded-xl font-dm text-[15px] font-medium">
+          Delete account
+        </Button>
       </div>
     </div>
   );
@@ -170,6 +653,31 @@ function UploadIcon({ className }: { className?: string }) {
         d="M4.47715 8.79299C5.00216 8.08973 5.86045 7.73817 7.44064 7.59359C7.81689 7.55917 8.09378 7.22852 8.0591 6.85506C8.02442 6.48161 7.69129 6.20677 7.31505 6.24119C5.62958 6.3954 4.26211 6.79986 3.37779 7.98441C2.52995 9.12011 2.24219 10.8312 2.24219 13.2553C2.24219 16.4694 2.74986 18.4456 4.41316 19.4596C5.20591 19.943 6.1877 20.1566 7.31161 20.2604C8.43111 20.3638 9.776 20.3638 11.3353 20.3638H11.393C12.9523 20.3638 14.2972 20.3638 15.4166 20.2604C16.5406 20.1566 17.5224 19.943 18.3151 19.4596C19.9784 18.4456 20.4861 16.4694 20.4861 13.2553C20.4861 10.8312 20.1983 9.12011 19.3505 7.98441C18.4661 6.79986 17.0987 6.3954 15.4132 6.24119C15.037 6.20677 14.7039 6.48161 14.6692 6.85506C14.6344 7.22852 14.9114 7.55917 15.2877 7.59359C16.8678 7.73817 17.7261 8.08973 18.2511 8.79299C18.8127 9.54511 19.1178 10.8536 19.1178 13.2553C19.1178 16.4707 18.5718 17.7092 17.5989 18.3024C17.0736 18.6228 16.3415 18.811 15.2899 18.9081C14.2407 19.005 12.9579 19.0057 11.3641 19.0057C9.77035 19.0057 8.48756 19.005 7.43838 18.9081C6.3867 18.811 5.65471 18.6228 5.12934 18.3024C4.15639 17.7092 3.61048 16.4707 3.61048 13.2553C3.61048 10.8536 3.91564 9.54511 4.47715 8.79299Z" 
         fill="currentColor"
       />
+    </svg>
+  );
+}
+
+function EyeIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 18 18" fill="none">
+      <path d="M1.5271 9.2415C1.47534 9.08594 1.47534 8.91781 1.5271 8.76225C2.56735 5.6325 5.5201 3.375 9.0001 3.375C12.4786 3.375 15.4298 5.63025 16.4723 8.7585C16.5248 8.91375 16.5248 9.08175 16.4723 9.23775C15.4328 12.3675 12.4801 14.625 9.0001 14.625C5.5216 14.625 2.5696 12.3697 1.5271 9.2415Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M11.25 9C11.25 9.59674 11.0129 10.169 10.591 10.591C10.169 11.0129 9.59674 11.25 9 11.25C8.40326 11.25 7.83097 11.0129 7.40901 10.591C6.98705 10.169 6.75 9.59674 6.75 9C6.75 8.40326 6.98705 7.83097 7.40901 7.40901C7.83097 6.98705 8.40326 6.75 9 6.75C9.59674 6.75 10.169 6.98705 10.591 7.40901C11.0129 7.83097 11.25 8.40326 11.25 9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}
+
+function EyeOffIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 18 18" fill="none">
+      <path d="M2.98567 6.16725C2.28401 6.99538 1.76153 7.9599 1.45117 9C2.42017 12.2535 5.43367 14.625 9.00067 14.625C9.74542 14.625 10.4654 14.5215 11.1479 14.3287M4.67167 4.671C5.95616 3.8234 7.46173 3.37266 9.00067 3.375C12.5677 3.375 15.5804 5.7465 16.5494 8.9985C16.0184 10.7755 14.8785 12.3087 13.3297 13.329M4.67167 4.671L2.25067 2.25M4.67167 4.671L7.40917 7.4085M13.3297 13.329L15.7507 15.75M13.3297 13.329L10.5922 10.5915C10.8011 10.3826 10.9669 10.1345 11.08 9.86149C11.193 9.58848 11.2512 9.29587 11.2512 9.00037C11.2512 8.70488 11.193 8.41227 11.08 8.13926C10.9669 7.86626 10.8011 7.6182 10.5922 7.40925C10.3832 7.2003 10.1352 7.03455 9.86216 6.92147C9.58915 6.80839 9.29655 6.75018 9.00105 6.75018C8.70555 6.75018 8.41294 6.80839 8.13994 6.92147C7.86693 7.03455 7.61887 7.2003 7.40992 7.40925M10.5914 10.5908L7.41067 7.41" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}
+
+function ChevronDownIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 10 10" fill="none">
+      <path d="M9.87722 2.52782C9.69674 2.33638 9.39483 2.32925 9.20434 2.50924L5.00757 6.48505L0.81128 2.50926C0.620796 2.32878 0.319357 2.3364 0.138405 2.52784C-0.0425481 2.71879 -0.0344624 3.02023 0.15651 3.20118L4.68043 7.487C4.77185 7.57368 4.88995 7.61748 5.00757 7.61748C5.12518 7.61748 5.24375 7.57368 5.3352 7.487L9.85911 3.20118C10.0501 3.02021 10.0582 2.71879 9.87722 2.52782Z" fill="currentColor"/>
     </svg>
   );
 }
