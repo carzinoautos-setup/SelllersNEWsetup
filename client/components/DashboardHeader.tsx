@@ -116,7 +116,7 @@ export function DashboardHeader({
             </div>
           </div>
 
-          <button className="flex items-center gap-[10px] px-4 py-2 bg-main-color rounded-14 h-[40px] w-[140px] justify-center text-white">
+          <button className="flex items-center gap-[10px] px-4 py-2 bg-main-color rounded-[8px] overflow-hidden h-[40px] w-[140px] justify-center text-white">
             <span className="text-[12px] font-medium font-albert">
               Add listing
             </span>
