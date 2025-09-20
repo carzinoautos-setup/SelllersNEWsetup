@@ -758,6 +758,55 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             </div>
           </div>
 
+          {/* Row 5: Doors, Color, Seats, City MPG (Compact Version) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Doors
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Color
+              </Label>
+              <Input
+                placeholder="Enter engine"
+                className="h-[45px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                Seats
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+                City MPG
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+              </div>
+            </div>
+          </div>
+
           {/* Description */}
           <div className="space-y-2">
             <Label className="text-[14px] text-[#24272C] font-albert font-medium">
