@@ -116,3 +116,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Prevent horizontal scrollbar across the site (fix for thin slider bar) */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+/* Hide horizontal scrollbar visuals (webkit) */
+::-webkit-scrollbar {
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
