@@ -76,7 +76,7 @@ export function DashboardHeader({
         </svg>
 
         {/* Desktop nav (visible on lg+) */}
-        <nav className="hidden lg:flex items-center gap-6 pl-10 font-medium">
+        <nav className="hidden lg:flex items-center gap-6 pl-6 font-medium">
           {navItems.map((item, index) => (
             <div
               key={index}
