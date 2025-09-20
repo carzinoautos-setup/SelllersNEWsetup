@@ -571,12 +571,12 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       </div>
 
       {/* Car Details Section */}
-      <div className="border border-[#EDEDED] rounded-2xl p-8">
-        <h2 className="text-2xl font-medium text-[#24272C] font-albert mb-8">
+      <div className="border border-[#EDEDED] rounded-2xl pt-4 px-8 pb-8">
+        <h2 className="text-2xl font-medium text-[#24272C] font-albert mb-5">
           Car details
         </h2>
 
-        <div className="space-y-8">
+        <div className="space-y-3">
           {/* Title */}
           <div className="space-y-2">
             <Label className="text-[14px] text-[#24272C] font-albert font-medium">
