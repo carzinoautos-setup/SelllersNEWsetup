@@ -130,3 +130,19 @@
 [role="region"][aria-label*="notifications"] {
   display: none !important;
 }
+
+/* Prevent horizontal scrollbar across the site */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+/* Hide horizontal scrollbar visuals (webkit) */
+::-webkit-scrollbar {
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
