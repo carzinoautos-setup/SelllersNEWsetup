@@ -13,7 +13,7 @@ export function Footer() {
               </div>
               <div className="text-gray-500 mt-2">
                 Dealers: Exclusive early access now available- enjoy three 3-6
-                months of free listings. Learn more.
+                months of free listings.
               </div>
             </div>
           </div>
