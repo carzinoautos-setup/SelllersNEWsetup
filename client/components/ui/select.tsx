@@ -34,7 +34,7 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
   };
 
   return (
-    <div ref={ref} className={`relative ${className.split(" ").filter(Boolean).includes("w-full") ? "w-full" : "inline-block"}`}>
+    <div ref={ref} className={`relative w-full`}>
       <button
         type="button"
         aria-haspopup="listbox"
