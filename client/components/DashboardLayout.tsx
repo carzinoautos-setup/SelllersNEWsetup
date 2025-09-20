@@ -4,7 +4,11 @@ import { DashboardHeader } from "./DashboardHeader";
 import { EditProfileForm } from "./EditProfileForm";
 import { Footer } from "./Footer";
 
-export function DashboardLayout() {
+interface DashboardLayoutProps {
+  children?: React.ReactNode;
+}
+
+export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -105,7 +109,9 @@ export function DashboardLayout() {
           {/* Main Content Area */}
           <div
             className={`flex-1 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
-          />
+          >
+            {children}
+          </div>
         </div>
       </div>
 
