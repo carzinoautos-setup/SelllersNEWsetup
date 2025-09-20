@@ -160,12 +160,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
 
             {/* Zip Code */}
             <div className="space-y-2">
-              <Label className="text-[13px] text-[#818181] font-dm">
-                Zip code
-              </Label>
-              <Input 
+              <FloatingInput
+                label="Zip code"
                 placeholder="Enter your zip code"
-                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12"
               />
             </div>
 
@@ -408,12 +406,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
 
             {/* Zip Code */}
             <div className="space-y-2">
-              <Label className="text-[13px] text-[#818181] font-dm font-bold">
-                Zip code
-              </Label>
-              <Input 
+              <FloatingInput
+                label="Zip code"
                 placeholder="Enter your zip code"
-                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12"
               />
             </div>
 
