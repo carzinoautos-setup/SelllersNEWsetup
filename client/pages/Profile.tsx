@@ -10,6 +10,7 @@ export default function Profile() {
         <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
           <EditProfileForm />
           <VehicleDetailsForm />
+          <WhyChooseUsTest />
         </div>
       </div>
     </DashboardLayout>
