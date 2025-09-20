@@ -102,7 +102,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
         </div>
 
         {/* Spacer to push copyright to bottom */}
-        <div className="mt-8" />
+        <div className="mt-0 lg:mt-8" />
       </div>
     </div>
   );
