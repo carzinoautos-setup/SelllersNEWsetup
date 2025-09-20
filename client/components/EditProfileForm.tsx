@@ -197,7 +197,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 List phone on ads
               </Label>
               <div className="relative">
-                <select className="w-full h-12 border border-[#B2B2B2] rounded-xl px-4 text-[15px] font-dm bg-white appearance-none">
+                <select className="w-full h-12 border border-[#D9D9D9] rounded-xl px-4 text-[15px] font-dm bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Yes</option>
                   <option>No</option>
                 </select>
@@ -595,10 +595,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Model *
               </Label>
               <div className="relative">
-                <select className="w-full h-[37px] border border-[#757575] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#E82121]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -609,10 +609,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Type *
               </Label>
               <div className="relative">
-                <select className="w-full h-[37px] border border-[#767676] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -656,10 +656,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Transmission
               </Label>
               <div className="relative">
-                <select className="w-full h-[37px] border border-[#696665] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -673,10 +673,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -687,10 +687,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -701,10 +701,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -718,10 +718,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -732,10 +732,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -746,10 +746,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -763,10 +763,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Doors
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[54px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 16" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 16" fill="none">
                   <path d="M13.25 5.5L8.25 10.5L3.25 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -787,10 +787,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Seats
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[54px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 16" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 16" fill="none">
                   <path d="M13.75 5.5L8.75 10.5L3.75 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -801,10 +801,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 City MPG
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[54px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 16" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 16" fill="none">
                   <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -818,10 +818,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Doors
               </Label>
               <div className="relative">
-                <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[45px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 17" fill="none">
                   <path d="M13.25 6L8.25 11L3.25 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -842,10 +842,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Seats
               </Label>
               <div className="relative">
-                <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[45px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 17" fill="none">
                   <path d="M13.75 6L8.75 11L3.75 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
@@ -856,10 +856,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 City MPG
               </Label>
               <div className="relative">
-                <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[45px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
                   <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
