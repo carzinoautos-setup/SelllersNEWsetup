@@ -16,6 +16,7 @@ export default function Profile() {
           <WhyChooseUsTest />
           <SocialProofTest />
           <GetStartedTest />
+          <EnterDetailsTest />
         </div>
       </div>
     </DashboardLayout>
