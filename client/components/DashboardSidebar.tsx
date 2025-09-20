@@ -28,7 +28,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     >
       <div className="flex-1 flex flex-col justify-start bg-[#212428] overflow-y-auto max-h-screen">
         {/* Logo */}
-        <div className="hidden sm:flex justify-center items-center px-6 pb-[13px] pt-[16px] bg-[#E3E1E1] lg:bg-white lg:border-0 lg:shadow-none -mb-[5px]">
+        <div className="hidden sm:flex justify-center items-center px-6 pb-[13px] pt-[16px] bg-[#E3E1E1] lg:bg-white lg:border-0 lg:shadow-none sm:-mb-[5px] lg:mb-0 lg:border-r-0">
           <svg
             className="w-[180px] md:w-[222px] h-auto"
             viewBox="0 0 251 52"
