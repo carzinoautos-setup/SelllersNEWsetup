@@ -20,14 +20,41 @@ export function DashboardLayout() {
   }, []);
 
   useEffect(() => {
-    // Lock body scroll on small screens while mobile sidebar is open
+    // Lock body scroll on small screens while mobile sidebar is open using fixed positioning
     if (typeof window === 'undefined') return;
+    let prevScrollY = 0;
     if (mobileOpen && isMobile) {
-      document.body.classList.add('overflow-hidden');
+      prevScrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${prevScrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.width = '100%';
     } else {
-      document.body.classList.remove('overflow-hidden');
+      const top = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      if (top) {
+        const prev = parseInt(top || '0') * -1;
+        window.scrollTo(0, prev);
+      }
     }
-    return () => document.body.classList.remove('overflow-hidden');
+
+    return () => {
+      const top = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      if (top) {
+        const prev = parseInt(top || '0') * -1;
+        window.scrollTo(0, prev);
+      }
+    };
   }, [mobileOpen, isMobile]);
 
   return (
