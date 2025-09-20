@@ -20,7 +20,7 @@ export const FloatingInput = React.forwardRef<HTMLInputElement, FloatingInputPro
           )}
         />
         <label
-          className="absolute left-4 top-3 text-[13px] text-[#818181] transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-[13px] peer-placeholder-shown:text-[#818181] peer-focus:top-[-10px] peer-focus:text-[13px] peer-focus:text-[#24272C] bg-white px-1"
+          className="absolute left-4 top-[-10px] text-[13px] text-[#24272C] transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-[13px] peer-placeholder-shown:text-[#818181] peer-focus:top-[-10px] peer-focus:text-[13px] peer-focus:text-[#24272C] bg-white px-1"
         >
           {label}
         </label>
