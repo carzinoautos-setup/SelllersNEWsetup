@@ -5,15 +5,15 @@ export function EnterDetailsTest() {
 
   return (
     <div className="mt-8 space-y-5">
-      <div className="bg-white border-[0.8px] border-[#E1E1E1] rounded-[10px] shadow-[0_1px_2px_0_rgba(0,0,0,0.30),0_2px_6px_2px_rgba(0,0,0,0.15)] p-7">
-        <div className="flex items-center justify-between pb-5">
+      <div className="bg-white border-[0.8px] border-[#E1E1E1] rounded-[10px] shadow-[0_1px_2px_0_rgba(0,0,0,0.30),0_2px_6px_2px_rgba(0,0,0,0.15)] py-3 px-7">
+        <div className="flex items-center justify-between">
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             className="flex items-center gap-3 bg-transparent border-0 p-0 focus:outline-none"
           >
-            <div className="text-2xl font-medium text-[#24272C] font-sans">Enter your Details</div>
+            <div className="text-[18px] font-semibold text-[#24272C] font-sans leading-8">Enter your Details</div>
             <svg
               width="18"
               height="18"
