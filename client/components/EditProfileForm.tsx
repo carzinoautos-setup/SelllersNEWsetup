@@ -649,16 +649,6 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
 
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Mileage
-              </Label>
-              <Input
-                placeholder="Enter mileage"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
                 Transmission
               </Label>
               <div className="relative">
