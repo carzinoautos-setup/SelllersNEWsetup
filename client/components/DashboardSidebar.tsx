@@ -9,7 +9,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Dashboard", icon: DashboardIcon, active: false },
     { name: "Add a listing", icon: EditIcon, active: false },
     { name: "Your Listings", icon: MailIcon, active: true },
-    { name: "Buy Credits (1)", icon: CoinsIcon, active: false },
+    { name: "Buy Credits (2)", icon: CoinsIcon, active: false },
     { name: "Messages", icon: MessageIcon, active: false, badge: "7" },
     { name: "Account Settings", icon: SettingsIcon, active: false },
     { name: "Add your Payment", icon: BankIcon, active: false },
