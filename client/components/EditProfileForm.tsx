@@ -595,7 +595,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Model *
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[49px] border border-[#757575] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
                 <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
@@ -607,7 +607,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Type *
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[49px] border border-[#767676] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
                 <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
@@ -620,20 +620,20 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Years"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[49px] border-[#767676] rounded-xl text-[14px] font-albert text-[#696665]"
               />
             </div>
           </div>
 
           {/* Row 2: Stock Number, VIN Number, Transmission */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
                 Stock Number
               </Label>
               <Input
                 placeholder="Enter number"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
               />
             </div>
 
@@ -643,7 +643,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Enter VIN"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
               />
             </div>
 
@@ -652,7 +652,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Transmission
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
                 <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
