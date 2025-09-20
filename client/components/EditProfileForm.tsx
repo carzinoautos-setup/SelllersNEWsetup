@@ -571,8 +571,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       </div>
 
       {/* Car Details Section */}
-      <div className="border border-[#EDEDED] rounded-2xl p-4 lg:p-8 space-y-5">
-        <h2 className="text-2xl font-medium text-[#24272C] font-albert">
+      <div className="border border-[#EDEDED] rounded-2xl p-4 lg:p-8">
+        <h2 className="text-2xl font-medium text-[#24272C] font-albert mb-5">
           Car details
         </h2>
 
@@ -584,7 +584,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             </Label>
             <Input
               placeholder="Title"
-              className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+              className="h-[54px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]"
             />
           </div>
 
@@ -624,7 +624,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Years"
-                className="h-[37px] border-[#767676] rounded-lg text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#767676] rounded-lg px-4 text-[14px] font-albert text-[#696665]"
               />
             </div>
           </div>
@@ -637,7 +637,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Enter number"
-                className="h-[37px] border-[#767676] rounded-lg text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#767676] rounded-lg px-4 text-[14px] font-albert text-[#696665]"
               />
             </div>
 
@@ -647,7 +647,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Enter VIN"
-                className="h-[37px] border-[#757575] rounded-lg text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#757575] rounded-lg px-4 text-[14px] font-albert text-[#696665]"
               />
             </div>
 
@@ -666,62 +666,97 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             </div>
           </div>
 
-          {/* Row 3: Driver Type, Engine Size, Cylinders, Fuel Type */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-2">
+          {/* Row 3: Driver Type Fields */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="space-y-1">
               <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[37px] border border-[#696665] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
-                  <path d="M13.25 6L8.25 11L3.25 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1">
               <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Engine Size
-              </Label>
-              <Input
-                placeholder="Enter engine"
-                className="h-[37px] border-[#696665] rounded-lg text-[14px] font-albert text-[#696665]"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Cylinders
+                Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[37px] border border-[#696665] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
-                  <path d="M13.75 6L8.75 11L3.75 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             </div>
 
-            <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Fuel Type
+            <div className="space-y-1">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
+                Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 16" fill="none">
-                  <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             </div>
           </div>
 
-          {/* Row 4: Doors, Color, Seats, City MPG */}
+          {/* Row 4: More Driver Type Fields */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="space-y-1">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
+                Driver Type
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-1">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
+                Driver Type
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-1">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
+                Driver Type
+              </Label>
+              <div className="relative">
+                <select className="w-full h-[39px] border border-[#696665] rounded-md px-4 text-[14px] font-albert bg-white appearance-none">
+                  <option>Select</option>
+                </select>
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Row 5: Doors, Color, Seats, City MPG (54px height) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
@@ -743,7 +778,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Enter engine"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[54px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]"
               />
             </div>
 
@@ -776,7 +811,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             </div>
           </div>
 
-          {/* Row 5: Doors, Color, Seats, City MPG (Different Heights) */}
+          {/* Row 6: Doors, Color, Seats, City MPG (45px height) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
@@ -798,7 +833,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Enter engine"
-                className="h-[45px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[45px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]"
               />
             </div>
 
