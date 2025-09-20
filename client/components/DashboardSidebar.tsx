@@ -169,7 +169,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
               <div
                 key={index}
                 className={cn(
-                  "flex items-center gap-3 px-4 py-2 rounded-[10px] cursor-pointer transition-colors",
+                  "flex items-center gap-3 px-4 py-2 rounded-[10px] cursor-pointer transition-colors overflow-hidden",
                   item.active ? "bg-main-color" : "hover:bg-white/5",
                 )}
               >
