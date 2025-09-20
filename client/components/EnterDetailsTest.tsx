@@ -5,30 +5,30 @@ export function EnterDetailsTest() {
 
   return (
     <div className="mt-8 space-y-5">
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          className="flex items-center gap-3 focus:outline-none"
-        >
-          <h2 className="text-2xl font-medium text-[#24272C] font-sans">Enter your Details</h2>
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={`transform transition-transform duration-200 text-[#E82121] ${open ? "rotate-90" : "rotate-0"}`}
-            aria-hidden
+      <div className="bg-white border-[0.8px] border-[#E1E1E1] rounded-[10px] shadow-[0_1px_2px_0_rgba(0,0,0,0.30),0_2px_6px_2px_rgba(0,0,0,0.15)] p-7">
+        <div className="flex items-center justify-between pb-5">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            className="flex items-center gap-3 bg-transparent border-0 p-0 focus:outline-none"
           >
-            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="#E82121" />
-          </svg>
-        </button>
-      </div>
+            <div className="text-2xl font-medium text-[#24272C] font-sans">Enter your Details</div>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className={`transform transition-transform duration-200 text-[#E82121] ${open ? "rotate-90" : "rotate-0"}`}
+              aria-hidden
+            >
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="#E82121" />
+            </svg>
+          </button>
+        </div>
 
-      {open && (
-        <div className="p-7 rounded-[10px] border border-[#E1E1E1] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.30),0_2px_6px_2px_rgba(0,0,0,0.15)]">
+        {open && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Seller name or Dealer Name */}
             <div className="relative">
@@ -181,8 +181,8 @@ export function EnterDetailsTest() {
               <div className="absolute left-4 -top-2 bg-white px-2 text-[12px] text-[#24272C]">Latitude: Required</div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
