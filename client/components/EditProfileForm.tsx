@@ -902,3 +902,11 @@ function ChevronDownIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+function ChevronRightIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 17 16" fill="none">
+      <path d="M13.25 5.5L8.25 10.5L3.25 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  );
+}
