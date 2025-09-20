@@ -571,8 +571,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       </div>
 
       {/* Car Details Section */}
-      <div className="border border-[#EDEDED] rounded-2xl pt-4 px-8 pb-8">
-        <h2 className="text-2xl font-medium text-[#24272C] font-albert mb-5">
+      <div className="border border-[#EDEDED] rounded-2xl p-4 lg:p-8 space-y-5">
+        <h2 className="text-2xl font-medium text-[#24272C] font-albert">
           Car details
         </h2>
 
@@ -584,21 +584,23 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             </Label>
             <Input
               placeholder="Title"
-              className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert"
+              className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
             />
           </div>
 
           {/* Row 1: Model, Type, Years */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Model *
               </Label>
               <div className="relative">
-                <select className="w-full h-[49px] border border-[#757575] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#757575] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#E82121]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -607,10 +609,12 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 Type *
               </Label>
               <div className="relative">
-                <select className="w-full h-[49px] border border-[#767676] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#767676] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -620,7 +624,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input
                 placeholder="Years"
-                className="h-[49px] border-[#767676] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#767676] rounded-lg text-[14px] font-albert text-[#696665]"
               />
             </div>
           </div>
@@ -628,34 +632,36 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
           {/* Row 2: Stock Number, VIN Number, Transmission */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Stock Number
               </Label>
               <Input
                 placeholder="Enter number"
-                className="h-[37px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#767676] rounded-lg text-[14px] font-albert text-[#696665]"
               />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 VIN Number
               </Label>
               <Input
                 placeholder="Enter VIN"
-                className="h-[37px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#757575] rounded-lg text-[14px] font-albert text-[#696665]"
               />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Transmission
               </Label>
               <div className="relative">
-                <select className="w-full h-[37px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#696665] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
           </div>
@@ -663,36 +669,40 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
           {/* Row 3: Driver Type, Engine Size, Cylinders, Fuel Type */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Driver Type
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#696665] rounded-lg px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
+                  <path d="M13.25 6L8.25 11L3.25 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Engine Size
               </Label>
               <Input
                 placeholder="Enter engine"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
+                className="h-[37px] border-[#696665] rounded-lg text-[14px] font-albert text-[#696665]"
               />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
                 Cylinders
               </Label>
               <div className="relative">
-                <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
+                <select className="w-full h-[37px] border border-[#696665] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
+                  <path d="M13.75 6L8.75 11L3.75 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -704,7 +714,9 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 16" fill="none">
+                  <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
           </div>
@@ -719,7 +731,9 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 16" fill="none">
+                  <path d="M13.25 5.5L8.25 10.5L3.25 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -741,7 +755,9 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 16" fill="none">
+                  <path d="M13.75 5.5L8.75 10.5L3.75 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -753,12 +769,14 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[54px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 16" fill="none">
+                  <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
           </div>
 
-          {/* Row 5: Doors, Color, Seats, City MPG (Compact Version) */}
+          {/* Row 5: Doors, Color, Seats, City MPG (Different Heights) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
@@ -768,7 +786,9 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
+                  <path d="M13.25 6L8.25 11L3.25 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -790,7 +810,9 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 17 17" fill="none">
+                  <path d="M13.75 6L8.75 11L3.75 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
 
@@ -802,7 +824,9 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <select className="w-full h-[45px] border border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none">
                   <option>Select</option>
                 </select>
-                <ChevronRightIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" />
+                <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 rotate-90 w-4 h-4 text-[#24272C]" viewBox="0 0 16 17" fill="none">
+                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
             </div>
           </div>
