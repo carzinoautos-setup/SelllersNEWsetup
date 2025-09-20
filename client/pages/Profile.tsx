@@ -1,6 +1,7 @@
 import { DashboardLayout } from "../components/DashboardLayout";
 import { EditProfileForm } from "../components/EditProfileForm";
 import { VehicleDetailsForm } from "../components/VehicleDetailsForm";
+import { WhyChooseUsTest } from "../components/WhyChooseUsTest";
 
 export default function Profile() {
   return (
