@@ -2,6 +2,7 @@ import { DashboardLayout } from "../components/DashboardLayout";
 import { EditProfileForm } from "../components/EditProfileForm";
 import { VehicleDetailsForm } from "../components/VehicleDetailsForm";
 import { WhyChooseUsTest } from "../components/WhyChooseUsTest";
+import { SocialProofTest } from "../components/SocialProofTest";
 
 export default function Profile() {
   return (
