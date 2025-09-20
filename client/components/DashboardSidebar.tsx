@@ -22,7 +22,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
   return (
     <div
       className={cn(
-        "w-[80%] lg:w-[280px] h-full flex flex-col justify-start bg-[#212428] pb-10",
+        "w-[80%] lg:w-[280px] h-full flex flex-col justify-start bg-[#212428] pb-10 mobile-sidebar",
         className,
       )}
     >
