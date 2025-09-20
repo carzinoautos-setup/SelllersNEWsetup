@@ -118,7 +118,8 @@
 }
 
 /* Prevent horizontal scrollbar across the site (fix for thin slider bar) */
-html, body {
+html,
+body {
   overflow-x: hidden !important;
   max-width: 100% !important;
 }
