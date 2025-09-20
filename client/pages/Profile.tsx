@@ -14,6 +14,7 @@ export default function Profile() {
           <VehicleDetailsForm />
           <WhyChooseUsTest />
           <SocialProofTest />
+          <GetStartedTest />
         </div>
       </div>
     </DashboardLayout>
