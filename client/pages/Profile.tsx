@@ -12,6 +12,7 @@ export default function Profile() {
           <EditProfileForm />
           <VehicleDetailsForm />
           <WhyChooseUsTest />
+          <SocialProofTest />
         </div>
       </div>
     </DashboardLayout>
