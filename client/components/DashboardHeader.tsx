@@ -10,7 +10,6 @@ export function DashboardHeader({ className, onOpenSidebar, mobileOpen }: Header
     "Cars for Sale",
     "Trade in your Car",
     "Dealers",
-    "Contact",
   ];
 
   const headerClasses = cn(
