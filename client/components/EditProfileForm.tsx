@@ -592,290 +592,125 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
           {/* Row 1: Model, Type, Years */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Model *
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[37px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Model *</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[37px] rounded-xl" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Type *
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[37px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Type *</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[37px] rounded-xl" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Years *
-              </Label>
-              <Input
-                placeholder="Years"
-                className="h-[37px] border-[#767676] rounded-lg px-4 text-[14px] font-albert text-[#696665]"
-              />
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Years *</Label>
+              <Input placeholder="Years" className="h-[37px] border-[#767676] rounded-lg px-4 text-[14px] font-albert text-[#696665]" />
             </div>
           </div>
 
           {/* Row 2: Stock Number, VIN Number, Transmission */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Stock Number
-              </Label>
-              <Input
-                placeholder="Enter number"
-                className="h-[37px] border-[#767676] rounded-lg px-4 text-[14px] font-albert text-[#696665]"
-              />
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Stock Number</Label>
+              <Input placeholder="Enter number" className="h-[37px] border-[#767676] rounded-lg px-4 text-[14px] font-albert text-[#696665]" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                VIN Number
-              </Label>
-              <Input
-                placeholder="Enter VIN"
-                className="h-[37px] border-[#757575] rounded-lg px-4 text-[14px] font-albert text-[#696665]"
-              />
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">VIN Number</Label>
+              <Input placeholder="Enter VIN" className="h-[37px] border-[#757575] rounded-lg px-4 text-[14px] font-albert text-[#696665]" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Transmission
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[37px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Transmission</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[37px] rounded-xl" />
             </div>
           </div>
 
           {/* Row 3: Driver Type Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-1">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Driver Type
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Driver Type</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[39px] rounded-md" />
             </div>
 
             <div className="space-y-1">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Driver Type
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Driver Type</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[39px] rounded-md" />
             </div>
 
             <div className="space-y-1">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Driver Type
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Driver Type</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[39px] rounded-md" />
             </div>
           </div>
 
           {/* Row 4: More Driver Type Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-1">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Driver Type
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Driver Type</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[39px] rounded-md" />
             </div>
 
             <div className="space-y-1">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Driver Type
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Driver Type</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[39px] rounded-md" />
             </div>
 
             <div className="space-y-1">
-              <Label className="text-[14px] text-[#24272C] font-albert font-bold">
-                Driver Type
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[39px] border border-[#D9D9D9] rounded-md px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-bold">Driver Type</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[39px] rounded-md" />
             </div>
           </div>
 
           {/* Row 5: Doors, Color, Seats, City MPG (54px height) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Doors
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[54px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 16" fill="none">
-                  <path d="M13.25 5.5L8.25 10.5L3.25 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Doors</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[54px] rounded-xl" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Color
-              </Label>
-              <Input
-                placeholder="Enter engine"
-                className="h-[54px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]"
-              />
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Color</Label>
+              <Input placeholder="Enter engine" className="h-[54px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Seats
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[54px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 16" fill="none">
-                  <path d="M13.75 5.5L8.75 10.5L3.75 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Seats</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[54px] rounded-xl" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                City MPG
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[54px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 16" fill="none">
-                  <path d="M13 5.5L8 10.5L3 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">City MPG</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[54px] rounded-xl" />
             </div>
           </div>
 
           {/* Row 6: Doors, Color, Seats, City MPG (45px height) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Doors
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[45px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 17" fill="none">
-                  <path d="M13.25 6L8.25 11L3.25 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Doors</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[45px] rounded-xl" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Color
-              </Label>
-              <Input
-                placeholder="Enter engine"
-                className="h-[45px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]"
-              />
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Color</Label>
+              <Input placeholder="Enter engine" className="h-[45px] border-[#EDEDED] rounded-xl px-4 text-[14px] font-albert text-[#696665]" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Seats
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[45px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 17 17" fill="none">
-                  <path d="M13.75 6L8.75 11L3.75 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">Seats</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[45px] rounded-xl" />
             </div>
 
             <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                City MPG
-              </Label>
-              <div className="relative">
-                <select className="w-full h-[45px] border border-[#D9D9D9] rounded-xl px-4 text-[14px] font-albert bg-white appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-[#E82121] transition">
-                  <option>Select</option>
-                </select>
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#9CA3AF] pointer-events-none" viewBox="0 0 16 17" fill="none">
-                  <path d="M13 6L8 11L3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <Label className="text-[14px] text-[#24272C] font-albert font-medium">City MPG</Label>
+              <Select options={["Select"]} placeholder="Select" className="h-[45px] rounded-xl" />
             </div>
           </div>
 
           {/* Description */}
           <div className="space-y-2">
-            <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-              Description
-            </Label>
-            <textarea
-              placeholder="Your description"
-              className="w-full h-[174px] border border-[#EDEDED] rounded-xl px-4 py-4 text-[14px] font-albert text-[#696665] resize-none"
-            />
+            <Label className="text-[14px] text-[#24272C] font-albert font-medium">Description</Label>
+            <textarea placeholder="Your description" className="w-full h-[174px] border border-[#EDEDED] rounded-xl px-4 py-4 text-[14px] font-albert text-[#696665] resize-none" />
           </div>
         </div>
       </div>
