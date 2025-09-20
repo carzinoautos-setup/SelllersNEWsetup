@@ -588,8 +588,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
             />
           </div>
 
-          {/* Row 1: Model, Type, Years, Condition */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Row 1: Model, Type, Years */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
                 Model *
@@ -623,20 +623,10 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
               />
             </div>
-
-            <div className="space-y-2">
-              <Label className="text-[14px] text-[#24272C] font-albert font-medium">
-                Condition *
-              </Label>
-              <Input
-                placeholder="Years"
-                className="h-[54px] border-[#EDEDED] rounded-xl text-[14px] font-albert text-[#696665]"
-              />
-            </div>
           </div>
 
-          {/* Row 2: Stock Number, VIN Number, Mileage, Transmission */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Row 2: Stock Number, VIN Number, Transmission */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-2">
               <Label className="text-[14px] text-[#24272C] font-albert font-medium">
                 Stock Number
