@@ -20,8 +20,8 @@ export function DashboardSidebar({ className }: SidebarProps) {
   ];
 
   return (
-    <div className={cn("w-[280px] h-screen flex flex-col justify-start bg-[#212428] pb-10", className)}>
-      <div className="flex-1 flex flex-col justify-between bg-[#212428]">
+    <div className={cn("w-[280px] h-screen flex flex-col justify-start bg-black pb-10", className)}>
+      <div className="flex-1 flex flex-col justify-between bg-black">
         {/* Logo */}
         <div className="hidden sm:flex justify-center items-center px-6 pb-[13px] pt-[16px] bg-[#E3E1E1] -mb-[5px]">
           <svg
