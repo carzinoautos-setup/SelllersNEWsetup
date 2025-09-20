@@ -108,7 +108,7 @@ export function DashboardLayout() {
           >
             <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
               {/* Page Title */}
-              <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-albert font-semibold text-black leading-tight mb-6 lg:mb-[50px]">
+              <h1 className="text-xl sm:text-xl lg:text-[22px] font-albert font-semibold text-black leading-tight mb-6 lg:mb-[50px]">
                 Edit profile Dealer
               </h1>
 
