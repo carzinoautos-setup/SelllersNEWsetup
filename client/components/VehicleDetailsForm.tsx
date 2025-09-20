@@ -1,6 +1,21 @@
 import { FloatingInput } from "@/components/ui/floating-input";
 import { Select } from "@/components/ui/select";
 
+function FloatingSelect({ label, options, placeholder, className }: { label: string; options: string[]; placeholder: string; className?: string }) {
+  return (
+    <div className="relative">
+      <Select
+        options={options}
+        placeholder={placeholder}
+        className={`${className} pr-10`}
+      />
+      <label className="absolute left-4 top-[-10px] text-[13px] text-[#818181] font-dm bg-white px-1">
+        {label}
+      </label>
+    </div>
+  );
+}
+
 export function VehicleDetailsForm() {
   return (
     <div className="mt-8">
@@ -11,7 +26,7 @@ export function VehicleDetailsForm() {
       <div className="border border-[#B2B2B2] rounded-2xl p-8 opacity-95">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Row 1: Year, Body Type, Cylinders */}
-          <div className="space-y-2">
+          <div>
             <FloatingInput
               label="Year"
               placeholder="Select Year"
@@ -19,18 +34,16 @@ export function VehicleDetailsForm() {
             />
           </div>
 
-          <div className="space-y-2">
-            <Select 
-              options={["Cars", "Trucks", "SUVs", "Motorcycles"]} 
-              placeholder="Cars" 
+          <div>
+            <FloatingSelect
+              label="Body Type"
+              options={["Cars", "Trucks", "SUVs", "Motorcycles"]}
+              placeholder="Cars"
               className="h-[60px] rounded-xl border-[#E1E1E1] text-[15px] font-dm"
             />
-            <div className="absolute top-3 left-4 text-[13px] text-[#818181] font-dm bg-white px-1">
-              Body Type
-            </div>
           </div>
 
-          <div className="space-y-2">
+          <div>
             <FloatingInput
               label="Cylinders"
               placeholder="Select Cylinders"
