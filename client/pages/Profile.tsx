@@ -8,6 +8,7 @@ export default function Profile() {
       <div className="flex-1 overflow-y-auto">
         <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
           <EditProfileForm />
+          <VehicleDetailsForm />
         </div>
       </div>
     </DashboardLayout>
