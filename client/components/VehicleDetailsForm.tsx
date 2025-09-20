@@ -9,7 +9,7 @@ function FloatingSelect({ label, options, placeholder, className }: { label: str
         placeholder={placeholder}
         className={`${className} pr-10`}
       />
-      <label className="absolute left-4 top-[-10px] text-[13px] text-[#818181] font-dm bg-white px-1">
+      <label className="absolute left-4 top-[-10px] text-[13px] text-[#818181] font-dm font-semibold bg-white px-1">
         {label}
       </label>
     </div>
