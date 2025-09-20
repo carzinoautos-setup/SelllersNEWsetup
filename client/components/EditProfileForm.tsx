@@ -36,13 +36,13 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       </div>
 
       {/* Profile Photo Section */}
-      <div className="border border-[#EDEDED] rounded-2xl p-6 lg:p-8">
-        <div className="mb-6">
+      <div className="border border-[#EDEDED] rounded-2xl p-4 lg:p-6 flex flex-row">
+        <div className="mb-6 flex flex-row flex-wrap">
           <h2 className="text-base font-medium text-[#050B20] font-dm mb-6">
             Profile Photo
           </h2>
           
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-start">
+          <div className="flex flex-row flex-wrap gap-8 items-start justify-start">
             {/* Existing Photo */}
             <div className="relative w-[122px] h-[107px] flex-shrink-0">
               <div className="w-full h-full rounded-lg bg-[#C4C4C4] overflow-hidden">
@@ -80,7 +80,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                   <Label className="text-[13px] text-[#818181] font-dm">
                     Select your Account type
                   </Label>
-                  <div className="h-[67px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
+                  <div className="h-[56px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
                     <span className="text-[15px] text-[#050B20] font-dm">
                       Private Seller
                     </span>
@@ -92,7 +92,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                   <Label className="text-[13px] text-[#818181] font-dm">
                     Account Number
                   </Label>
-                  <div className="h-[67px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
+                  <div className="h-[56px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
                     <span className="text-[15px] text-[#050B20] font-dm">
                       Account Number here
                     </span>
@@ -120,8 +120,8 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
           </h2>
           <div className="w-[194px] h-0.5 bg-[#E82121] mt-1"></div>
         </div>
-        
-        <div className="border border-[#B2B2B2] rounded-2xl p-8">
+
+        <div className="border border-[#B2B2B2] rounded-2xl p-3">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Seller Name */}
             <div className="space-y-2">
@@ -130,7 +130,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your full name"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -141,7 +141,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your city"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -152,7 +152,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your state"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -163,7 +163,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your zip code"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -175,7 +175,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="Enter your email address"
                 type="email"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -187,7 +187,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="Enter your email address"
                 type="email"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -197,7 +197,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 List phone on ads
               </Label>
               <div className="relative">
-                <select className="w-full h-[60px] border border-[#B2B2B2] rounded-xl px-4 text-[15px] font-dm bg-white appearance-none">
+                <select className="w-full h-12 border border-[#B2B2B2] rounded-xl px-4 text-[15px] font-dm bg-white appearance-none">
                   <option>Yes</option>
                   <option>No</option>
                 </select>
@@ -213,7 +213,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="(206)"
                 type="tel"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -225,16 +225,16 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                 <Input 
                   placeholder="Enter address"
-                  className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                  className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
                 />
                 <Input 
                   placeholder="Auto populates from google maps"
-                  className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                  className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
                   disabled
                 />
                 <Input 
                   placeholder="Auto populates from google maps"
-                  className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                  className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
                   disabled
                 />
               </div>
@@ -261,7 +261,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Select new, used or both"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -273,7 +273,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="Enter an additional alert email address"
                 type="email"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -284,7 +284,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your Crm provider"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -295,7 +295,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder=""
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -307,7 +307,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="Enter an additional alert email address"
                 type="email"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -318,7 +318,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your Crm account #"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -329,7 +329,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter an additional alert email address"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -341,7 +341,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="Enter an additional alert email address"
                 type="email"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -353,7 +353,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="Enter your Crm alert email address"
                 type="email"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -364,7 +364,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your inventory provider"
-                className="h-[60px] border-[#E1E1E1] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#E1E1E1] rounded-xl text-[15px] font-dm"
               />
             </div>
           </div>
@@ -389,7 +389,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your full name"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -400,7 +400,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="+77"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -411,7 +411,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your zip code"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -423,7 +423,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="+77"
                 type="tel"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -434,7 +434,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your city"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -445,7 +445,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 value="USA"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -457,7 +457,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               <Input 
                 placeholder="+77"
                 type="email"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
 
@@ -468,7 +468,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
               </Label>
               <Input 
                 placeholder="Enter your state"
-                className="h-[60px] border-[#B2B2B2] rounded-xl text-[15px] font-dm"
+                className="h-12 border-[#B2B2B2] rounded-xl text-[15px] font-dm"
               />
             </div>
           </div>
@@ -495,7 +495,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <Input 
                   type="password"
                   placeholder="Old password"
-                  className="h-[54px] border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
+                  className="h-12 border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
                 />
                 <EyeIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px] text-[#B6B6B6]" />
               </div>
@@ -511,7 +511,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                   <Input 
                     type="password"
                     placeholder="New password"
-                    className="h-[54px] border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
+                    className="h-12 border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
                     onChange={(e) => handlePasswordChange(e.target.value)}
                   />
                   <EyeIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px] text-[#B6B6B6]" />
@@ -556,7 +556,7 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
                 <Input 
                   type="password"
                   placeholder="Confirm password"
-                  className="h-[54px] border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
+                  className="h-12 border-[#B2B2B2] rounded-xl text-[14px] font-albert pr-12"
                 />
                 <EyeOffIcon className="absolute right-4 top-1/2 transform -translate-y-1/2 w-[18px] h-[18px] text-[#B6B6B6]" />
               </div>
