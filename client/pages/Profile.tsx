@@ -4,6 +4,7 @@ import { VehicleDetailsForm } from "../components/VehicleDetailsForm";
 import { WhyChooseUsTest } from "../components/WhyChooseUsTest";
 import { SocialProofTest } from "../components/SocialProofTest";
 import { GetStartedTest } from "../components/GetStartedTest";
+import { EnterDetailsTest } from "../components/EnterDetailsTest";
 
 export default function Profile() {
   return (
