@@ -16,7 +16,7 @@ export function DashboardHeader({
     // Mobile open -> dark header. Otherwise white background for tablet/desktop.
     mobileOpen
       ? "bg-black border-black text-white h-[76px] sm:bg-black sm:text-white"
-      : "bg-white text-black h-[76px] lg:h-auto border-b border-line",
+      : "bg-white text-black h-[76px] lg:h-auto border-b border-line lg:border-l-0",
     className,
   );
 
