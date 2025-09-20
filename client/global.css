@@ -139,6 +139,14 @@ body {
     .mobile-sidebar {
       width: 306px !important;
     }
+    /* Header logo: increase width on tablet sizes */
+    .header-logo {
+      width: 225px !important;
+    }
+  }
+
+  .header-logo {
+    width: 120px;
   }
 }
 
