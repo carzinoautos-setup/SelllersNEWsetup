@@ -67,6 +67,9 @@ export function DashboardLayout() {
           }`}
           aria-hidden={!mobileOpen}
           onClick={() => setMobileOpen(false)}
+          onTouchMove={(e) => { if (mobileOpen && isMobile) e.preventDefault(); }}
+          onWheel={(e) => { if (mobileOpen && isMobile) e.preventDefault(); }}
+          style={ mobileOpen && isMobile ? { touchAction: 'none' } : undefined }
         >
           <div className="absolute inset-0 bg-black/25" />
         </div>
