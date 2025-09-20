@@ -80,7 +80,7 @@ export function DashboardHeader({
           {navItems.map((item, index) => (
             <div
               key={index}
-              className="text-heading text-sm md:text-base font-medium font-albert cursor-pointer hover:text-main-color transition-colors"
+              className="text-heading text-sm md:text-base font-semibold font-albert cursor-pointer hover:text-main-color transition-colors"
             >
               {item}
             </div>
