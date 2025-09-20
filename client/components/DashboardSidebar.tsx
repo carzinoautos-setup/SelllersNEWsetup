@@ -28,7 +28,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     >
       <div className="flex-1 flex flex-col justify-start bg-[#212428] overflow-y-auto max-h-screen">
         {/* Logo */}
-        <div className="hidden sm:flex justify-center items-center px-[24px] py-[31px] bg-[#E3E1E1] lg:bg-white lg:border-0 lg:shadow-none sm:-mb-[5px] lg:mb-0 lg:border-r-0">
+        <div className="hidden sm:flex justify-center items-center px-[24px] py-[33px] bg-[#E3E1E1] lg:bg-white lg:border-0 lg:shadow-none sm:-mb-[5px] lg:mb-0 lg:border-r-0">
           {/* Mobile/Tablet Logo */}
           <svg
             className="w-[180px] md:w-[222px] h-auto lg:hidden"
