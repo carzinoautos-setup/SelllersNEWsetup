@@ -23,7 +23,7 @@ export function DashboardLayout() {
 
         {/* Sidebar - hidden on small screens unless toggled */}
         <div
-          className={`absolute top-0 left-0 z-40 h-full w-[210px] lg:w-[280px] transform bg-black transition-transform lg:static lg:h-auto ${
+          className={`absolute top-0 left-0 z-40 h-full w-[70%] lg:w-[280px] transform bg-black transition-transform lg:static lg:h-auto ${
             mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
           }`}
         >
