@@ -7,6 +7,18 @@ import { Footer } from "./Footer";
 export function DashboardLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  useEffect(() => {
+    // Lock body scroll on small screens while mobile sidebar is open
+    if (typeof window === 'undefined') return;
+    const isMobile = window.innerWidth < 1024; // match lg breakpoint
+    if (mobileOpen && isMobile) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+    return () => document.body.classList.remove('overflow-hidden');
+  }, [mobileOpen]);
+
   return (
     <div className="flex flex-col min-h-screen bg-white font-albert">
       <div className="flex-1 flex items-stretch">
