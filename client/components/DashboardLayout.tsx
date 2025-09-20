@@ -59,6 +59,10 @@ export function DashboardLayout() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white font-albert">
+      {/* Full-width red top bar shown when menu is closed */}
+      {!mobileOpen && (
+        <div className="fixed top-0 left-0 right-0 h-[9px] bg-[#DE0707] z-50" />
+      )}
       <div className="flex-1 flex items-stretch">
         {/* Mobile Sidebar overlay */}
         <div
