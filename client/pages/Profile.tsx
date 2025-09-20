@@ -4,11 +4,10 @@ import { EditProfileForm } from "../components/EditProfileForm";
 export default function Profile() {
   return (
     <DashboardLayout>
-      <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
-        <h1 className="text-xl sm:text-xl lg:text-[22px] font-albert font-semibold text-black leading-tight mb-6 lg:mb-[20px]">
-          Profile
-        </h1>
-        <EditProfileForm />
+      <div className="flex-1 overflow-y-auto">
+        <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
+          <EditProfileForm />
+        </div>
       </div>
     </DashboardLayout>
   );
