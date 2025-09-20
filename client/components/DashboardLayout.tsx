@@ -18,12 +18,12 @@ export function DashboardLayout() {
           aria-hidden={!mobileOpen}
           onClick={() => setMobileOpen(false)}
         >
-          <div className={`absolute inset-0 ${mobileOpen ? 'bg-black' : 'bg-black/40'}`} />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         {/* Sidebar - hidden on small screens unless toggled */}
         <div
-          className={`absolute top-0 left-0 z-40 h-full w-[280px] transform bg-black transition-transform lg:static lg:h-auto ${
+          className={`absolute top-0 left-0 z-40 h-full w-[210px] transform bg-black transition-transform lg:static lg:h-auto ${
             mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
           }`}
         >
