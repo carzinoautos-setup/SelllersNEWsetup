@@ -3,6 +3,7 @@ import { EditProfileForm } from "../components/EditProfileForm";
 import { VehicleDetailsForm } from "../components/VehicleDetailsForm";
 import { WhyChooseUsTest } from "../components/WhyChooseUsTest";
 import { SocialProofTest } from "../components/SocialProofTest";
+import { GetStartedTest } from "../components/GetStartedTest";
 
 export default function Profile() {
   return (
