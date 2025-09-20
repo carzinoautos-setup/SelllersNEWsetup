@@ -8,7 +8,7 @@ export function Footer() {
           <div className="flex items-center justify-center relative pt-[22px] px-4 pb-7">
             <div className="w-full text-center">
               <div className="mb-2"></div>
-              <div className="text-gray-700">
+              <div className="text-gray-700 font-semibold">
                 "Find it. Love it. Drive it. Carzino it."
               </div>
               <div className="text-gray-500 mt-2">
