@@ -29,7 +29,10 @@ export default function UsresProfile() {
 
                     {/* Account Type Dropdown */}
                     <div className="w-[423px] h-[60px] relative">
-                      <div className="w-full h-full border border-[#B2B2B2] rounded-xl bg-white absolute left-0 top-0"></div>
+                      <div className="w-full h-full border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
+                        <div className="text-[13px] text-black font-albert font-semibold mb-1">Select your Account type</div>
+                        <div className="text-[15px] text-[#050B20] font-dm">{accountType}</div>
+                      </div>
                       
                       {/* Red chevron */}
                       <div className="absolute left-[398px] top-[25px]">
