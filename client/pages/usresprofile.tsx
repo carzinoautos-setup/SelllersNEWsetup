@@ -40,7 +40,7 @@ export default function UsresProfile() {
                     </div>
 
                     {/* Account Type Dropdown */}
-                    <div className="w-full max-w-[423px] relative">
+                    <div ref={dropdownRef} className="w-full max-w-[423px] relative">
                       <div>
                         <button
                           type="button"
