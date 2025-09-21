@@ -58,7 +58,7 @@ export default function Dashboard() {
             {/* Help Center */}
             <div className="flex flex-col justify-center rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
-                <div>
+                <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
                   <button className="inline-flex items-center px-3 py-1.5 border border-black text-[#E82121] bg-transparent rounded-md text-sm font-medium mt-2">Get Help</button>
@@ -66,7 +66,7 @@ export default function Dashboard() {
               </div>
               <div style={{fontWeight: '400', width: '80%', display: 'flex', flexDirection: 'column', margin: '16px auto 0'}}>
                 <button className="w-full px-4 py-3 border border-black text-[#E82121] bg-transparent rounded-lg text-sm font-medium mb-2">Help Center</button>
-                <div style={{display: 'inline-block', borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0)', marginRight: 'auto', padding: '12px 10px'}}>Help Center</div>
+                <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(0, 0, 0)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export default function Dashboard() {
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M14.9 19.31L10.12 18.28" fill="#E82121"/></svg>
                 </div>
-                <div>
+                <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
                   <div style={{borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', margin: '20px auto 0 0', padding: '12px 10px'}}>Help Center</div>
@@ -90,7 +90,7 @@ export default function Dashboard() {
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M10.21 11.34" fill="#E82121"/></svg>
                 </div>
-                <div>
+                <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
                   <div style={{borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', margin: '20px auto 0 0', padding: '12px 10px'}}>Help Center</div>
@@ -104,7 +104,7 @@ export default function Dashboard() {
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M41.25 26.34" fill="#E82121"/></svg>
                 </div>
-                <div>
+                <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
                   <div style={{borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', margin: '20px auto 0 0', padding: '12px 10px'}}>Help Center</div>
