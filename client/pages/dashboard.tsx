@@ -36,11 +36,6 @@ export default function Dashboard() {
             {/* View listings */}
             <div className="flex flex-col justify-between gap-4 p-6 sm:p-8 rounded-2xl bg-white border border-[#EDEDED]">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 sm:w-14 sm:h-14 flex-shrink-0">
-                  <svg className="w-full h-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.31 26.37L7.94 25.62C7 25.44 6.19 26.12 6.19 27.06V28.5" fill="#E82121"/>
-                  </svg>
-                </div>
                 <div>
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C]">View your listings</h2>
                   <p className="text-sm text-[#696665] mt-2">Quickly access all of your live vehicle listings from your dashboard, where you can update details, adjust pricing, and manage each ad with ease.</p>
