@@ -64,7 +64,7 @@ export default function UsresProfile() {
                         </button>
 
                         {open && (
-                          <ul className="absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] focus-within:border-[#E82121] rounded-md max-h-[260px] overflow-auto text-left">
+                          <ul className={`absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left ${accountType !== 'Select' ? 'shadow-[0_6px_20px_rgba(0,0,0,0.06)]' : ''}`}>
                             <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setAccountType("Select"); setOpen(false); }}>
                               <span>Select</span>
                               {accountType === "Select" && (
