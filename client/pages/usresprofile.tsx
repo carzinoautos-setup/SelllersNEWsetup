@@ -143,7 +143,7 @@ export default function UsresProfile() {
                   {/* Seller or dealer name */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Seller or dealer name</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Seller or dealer name</label>
                       <input
                         type="text"
                         placeholder="Enter your full name"
@@ -158,7 +158,7 @@ export default function UsresProfile() {
                   {/* City */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">City</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">City</label>
                       <input
                         type="text"
                         placeholder="City"
@@ -173,7 +173,7 @@ export default function UsresProfile() {
                   {/* State */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">State</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">State</label>
                       <input
                         type="text"
                         placeholder="Enter your state"
@@ -188,7 +188,7 @@ export default function UsresProfile() {
                   {/* Zip code */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Zip code</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Zip code</label>
                       <input
                         type="text"
                         placeholder="Zip code"
@@ -203,7 +203,7 @@ export default function UsresProfile() {
                   {/* Email lead alert address */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Email lead alert address</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Email lead alert address</label>
                       <input
                         type="email"
                         placeholder="Email address"
@@ -218,7 +218,7 @@ export default function UsresProfile() {
                   {/* Account holder email Address */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Account holder email Address</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Account holder email Address</label>
                       <input
                         type="email"
                         placeholder="Enter your email address"
@@ -284,7 +284,7 @@ export default function UsresProfile() {
                   {/* Seller Phone */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Seller Phone</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Seller Phone</label>
                       <input
                         type="tel"
                         placeholder=""
@@ -302,7 +302,7 @@ export default function UsresProfile() {
                   {/* Enter your address */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Enter your address and then select from the choices.</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Enter your address and then select from the choices.</label>
                       <input
                         type="text"
                         placeholder="Enter address"
@@ -317,7 +317,7 @@ export default function UsresProfile() {
                   {/* Longitude */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Longitude:</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Longitude:</label>
                       <input
                         type="text"
                         placeholder="Longitude"
@@ -332,7 +332,7 @@ export default function UsresProfile() {
                   {/* Latitude */}
                   <div className="flex flex-col">
                     <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
-                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Latitude</label>
+                      <label className="absolute top-3 left-4 text-sm text-[#6B7280]">Latitude</label>
                       <input
                         type="text"
                         placeholder="Latitude"
