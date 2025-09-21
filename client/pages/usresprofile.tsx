@@ -135,72 +135,72 @@ export default function UsresProfile() {
 
                   {/* Seller or dealer name */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-sm text-[#24272C] font-albert mb-1">Seller or dealer name</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Seller or dealer name</label>
                       <input
                         type="text"
                         placeholder="Enter your full name"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* City */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">City</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">City</label>
                       <input
                         type="text"
                         placeholder="City"
-                        className="text-[15px] text-[#24272C] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#24272C] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* State */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">State</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">State</label>
                       <input
                         type="text"
                         placeholder="Enter your state"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* Zip code */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Zip code</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Zip code</label>
                       <input
                         type="text"
                         placeholder="Zip code"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* Email lead alert address */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Email lead alert address</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Email lead alert address</label>
                       <input
                         type="email"
                         placeholder="Email address"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* Account holder email Address */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Account holder email Address</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Account holder email Address</label>
                       <input
                         type="email"
                         placeholder="Enter your email address"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export default function UsresProfile() {
                   <div className="flex flex-col">
                     <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex items-center justify-between relative">
                       <div className="flex flex-col">
-                        <label className="text-[13px] text-[#24272C] font-dm mb-1">List your phone# on ads</label>
+                        <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">List your phone# on ads</label>
                         <span className="text-[15px] text-[#050B20] font-dm">Yes</span>
                       </div>
                       <svg className="w-[10px] h-[10px] flex-shrink-0" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,12 +220,12 @@ export default function UsresProfile() {
 
                   {/* Seller Phone */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Seller Phone</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Seller Phone</label>
                       <input
                         type="tel"
                         placeholder=""
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
@@ -235,36 +235,36 @@ export default function UsresProfile() {
 
                   {/* Enter your address */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-albert mb-1">Enter your address and then select from the choices.</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Enter your address and then select from the choices.</label>
                       <input
                         type="text"
                         placeholder="Enter address"
-                        className="text-[15px] text-[#050B20] font-albert bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-albert bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* Longitude */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Longitude:</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Longitude:</label>
                       <input
                         type="text"
                         placeholder="Longitude"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
 
                   {/* Latitude */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
-                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Latitude</label>
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-[#6B7280]">Latitude</label>
                       <input
                         type="text"
                         placeholder="Latitude"
-                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
                       />
                     </div>
                   </div>
