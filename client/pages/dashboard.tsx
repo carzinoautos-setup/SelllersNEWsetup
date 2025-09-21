@@ -88,7 +88,7 @@ export default function Dashboard() {
             </div>
 
             {/* Messages */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 36px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M10.21 11.34" fill="#E82121"/></svg>
@@ -99,7 +99,7 @@ export default function Dashboard() {
                 </div>
               </div>
               <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '16px'}}>
-                <button className="w-full max-w-[80%] px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">View Messages</button>
+                <button className="w-full max-w-[80%] px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Messages</button>
               </div>
             </div>
 
