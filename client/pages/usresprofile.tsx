@@ -47,10 +47,8 @@ export default function UsresProfile() {
                           onClick={() => setOpen((s) => !s)}
                           className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 py-3 pr-10 text-[15px] font-dm flex items-center justify-between"
                         >
-                          <div className="text-left">
-                            <div className="text-[13px] text-black font-albert font-semibold mb-1">Select your Account type</div>
-                            <div className="text-[15px] text-[#050B20]">{accountType}</div>
-                          </div>
+                          <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Select your Account type</label>
+                          <div className="text-[15px] text-[#050B20]">{accountType}</div>
 
                           <div className="flex items-center gap-2">
                             {accountType !== "Select" && (
