@@ -7,7 +7,7 @@ export default function UsresProfile() {
   return (
     <DashboardLayout>
       <div className="flex-1 overflow-y-auto">
-        <div className="py-16 px-0">
+        <div className="py-16 px-5">
           <div className="w-full max-w-[1280px] mx-auto">
             {/* Hero Section */}
             <div className="flex flex-col lg:flex-row justify-end items-center gap-8 lg:gap-[167px] bg-white">
