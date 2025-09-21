@@ -51,6 +51,11 @@ export default function UsresProfile() {
                             <div className="text-[13px] text-black font-albert font-semibold mb-1">Select your Account type</div>
                             <div className="text-[15px] text-[#050B20]">{accountType}</div>
                           </div>
+                          {accountType !== 'Select' && (
+                            <svg className="w-4 h-4 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          )}
                           <svg className={`${open ? 'rotate-180' : ''} transition-transform`} width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#E82121"/>
                           </svg>
@@ -58,9 +63,30 @@ export default function UsresProfile() {
 
                         {open && (
                           <ul className="absolute left-0 z-50 mt-2 w-full bg-white border border-[#B2B2B2] rounded-md max-h-[260px] overflow-auto text-left">
-                            <li className="px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer text-left" onClick={() => { setAccountType('Select'); setOpen(false); }}>Select</li>
-                            <li className="px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer text-left" onClick={() => { setAccountType('Private Seller'); setOpen(false); }}>Private Seller</li>
-                            <li className="px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer text-left" onClick={() => { setAccountType('Dealer'); setOpen(false); }}>Dealer</li>
+                            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setAccountType('Select'); setOpen(false); }}>
+                              <span>Select</span>
+                              {accountType === 'Select' && (
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                              )}
+                            </li>
+                            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setAccountType('Private Seller'); setOpen(false); }}>
+                              <span>Private Seller</span>
+                              {accountType === 'Private Seller' && (
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                              )}
+                            </li>
+                            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setAccountType('Dealer'); setOpen(false); }}>
+                              <span>Dealer</span>
+                              {accountType === 'Dealer' && (
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                              )}
+                            </li>
                           </ul>
                         )}
                       </div>
