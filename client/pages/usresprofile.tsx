@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
 
 export default function UsresProfile() {
-  const [accountType, setAccountType] = useState("Private Seller");
+  const [accountType, setAccountType] = useState("Select");
 
   return (
     <DashboardLayout>
