@@ -56,7 +56,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Help Center */}
-            <div className="flex flex-col justify-between p-6 rounded-2xl bg-white shadow-lg border border-[#EDEDED]">
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9 19.31L10.12 18.28" fill="#E82121"/></svg>
@@ -66,13 +66,13 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
                 </div>
               </div>
-              <div className="mt-4">
-                <button className="w-full sm:w-[204px] px-4 py-3 bg-black text-white rounded-lg text-sm font-medium">Help Center</button>
+              <div style={{width: '80%', margin: '16px auto 0'}}>
+                <button className="w-full px-4 py-3 border border-black text-[#E82121] bg-transparent rounded-lg text-sm font-medium">Help Center</button>
               </div>
             </div>
 
             {/* Featured Credits */}
-            <div className="flex flex-col justify-between pt-6 pr-3 pb-6 pl-2 rounded-2xl bg-white border border-[#EDEDED]">
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
               <div className="flex items-start gap-[1px]">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M16.9 39.56" fill="#E82121"/></svg>
@@ -82,13 +82,13 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Boost your visibility and attract more buyers by applying credits to feature your vehicle listings.</p>
                 </div>
               </div>
-              <div className="mt-4 w-4/5 ml-auto">
+              <div style={{width: '80%', margin: '16px 0 0 auto'}}>
                 <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Credits</button>
               </div>
             </div>
 
             {/* Messages */}
-            <div className="flex flex-col justify-between gap-5 pt-6 pr-2 pb-6 pl-2 rounded-2xl bg-white border border-[#EDEDED]">
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M10.21 11.34" fill="#E82121"/></svg>
@@ -98,13 +98,13 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Stay connected with potential buyers and sellers through secure, real-time messaging in your dashboard.</p>
                 </div>
               </div>
-              <div className="mt-4 flex flex-col items-center">
+              <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '16px'}}>
                 <button className="w-full max-w-[80%] px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">View Messages</button>
               </div>
             </div>
 
             {/* Profile Settings */}
-            <div className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#EDEDED]">
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M41.25 26.34" fill="#E82121"/></svg>
@@ -114,7 +114,7 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Update your personal details, contact information, and preferences to customize your Carzino experience.</p>
                 </div>
               </div>
-              <div className="mt-4 w-4/5 ml-auto">
+              <div style={{width: '80%', margin: '16px 0 0 auto'}}>
                 <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Profile</button>
               </div>
             </div>
