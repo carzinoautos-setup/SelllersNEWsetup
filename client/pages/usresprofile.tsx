@@ -21,7 +21,7 @@ export default function UsresProfile() {
       <div className="flex-1 overflow-visible">
         <div className="py-16 px-5">
           <div className="w-full max-w-[1280px] mx-auto">
-            <div className="flex flex-col items-center border border-[#E4E4E4] rounded-[14px] p-5">
+            <div className="flex flex-col items-start justify-start border border-[#E4E4E4] rounded-[14px] p-5">
               <div className="flex flex-col lg:flex-row justify-end items-center gap-8 lg:gap-[167px] bg-white w-full max-w-[1280px]">
 
                 <div className="flex-1 max-w-[896px] space-y-10 flex flex-row justify-start items-start mx-auto">
@@ -92,8 +92,8 @@ export default function UsresProfile() {
 
                   </div>
 
-                  <div className="w-full md:w-[241px] flex flex-col items-start gap-2 -mt-10 md:mt-0">
-                    <div className="w-full bg-white border border-[#E4E4E4] rounded-[14px] p-4 flex items-center justify-start gap-4 md:bg-transparent md:border-0 md:p-0 md:flex-col md:items-start">
+                  <div className="w-full md:w-[241px] flex flex-col items-start gap-2 mt-10 md:mt-0">
+                    <div className="w-full bg-white border border-[#E4E4E4] rounded-[14px] p-4 flex flex-col items-start justify-start md:bg-transparent md:border-0 md:p-0 md:flex-col md:items-start">
                       <div className="relative flex-shrink-0">
                         <div className="w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden">
                           <svg className="w-full h-full" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
