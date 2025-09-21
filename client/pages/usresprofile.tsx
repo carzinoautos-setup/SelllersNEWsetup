@@ -67,7 +67,7 @@ export default function UsresProfile() {
 
                   {/* Upload Photo Text */}
                   <div className="flex flex-col items-start gap-6 self-stretch">
-                    <div className="flex w-[143px] flex-col items-start gap-4">
+                    <div className="flex w-full md:w-[143px] flex-col items-start gap-4">
                       <p className="text-xs text-[#111928] font-albert leading-[140%] w-24">
                         Upload Photo
                       </p>
