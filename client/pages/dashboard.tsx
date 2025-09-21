@@ -64,10 +64,7 @@ export default function Dashboard() {
                   <button className="inline-flex items-center px-3 py-1.5 border border-black text-[#E82121] bg-transparent rounded-md text-sm font-medium mt-2">Get Help</button>
                 </div>
               </div>
-              <div style={{fontWeight: '400', width: '80%', display: 'flex', flexDirection: 'column', margin: '16px auto 0'}}>
-                <button className="w-full px-4 py-3 border border-black text-[#E82121] bg-transparent rounded-lg text-sm font-medium mb-2">Help Center</button>
-                <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(0, 0, 0)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
-              </div>
+              <div style={{fontWeight: '400', width: '80%', display: 'flex', flexDirection: 'column', margin: '16px auto 0'}} />
             </div>
 
             {/* Featured Credits */}
