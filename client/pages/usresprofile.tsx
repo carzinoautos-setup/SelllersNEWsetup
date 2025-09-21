@@ -93,7 +93,7 @@ export default function UsresProfile() {
                   </div>
 
                   <div className="w-full md:w-[30%] flex flex-col items-start gap-2 mt-6 md:mt-0 md:self-start md:justify-start">
-                    <div className="w-full bg-white border border-[#E4E4E4] rounded-[14px] p-4 flex flex-col items-start justify-start md:bg-transparent md:border-0 md:p-0 md:flex-col md:items-start">
+                    <div className="w-full bg-transparent md:bg-white md:border md:border-[#E4E4E4] rounded-[14px] md:p-4 p-0 flex flex-row items-center gap-4 md:flex-col md:items-start">
                       <div className="relative flex-shrink-0">
                         <div className="w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden">
                           <svg className="w-full h-full" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
