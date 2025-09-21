@@ -29,14 +29,6 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
 
   return (
     <div className={cn("w-full max-w-[1480px] mx-auto space-y-8", className)}>
-      {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-2xl font-semibold text-black font-albert mb-2">
-          Edit profile
-        </h1>
-        <div className="w-[121px] h-0.5 bg-[#E82121]"></div>
-      </div>
-
       {/* Profile Photo Section */}
       <div className="border border-[#EDEDED] rounded-2xl p-4 lg:p-6 flex flex-row">
         <div className="mb-6 flex flex-row flex-wrap">
