@@ -35,7 +35,7 @@ export default function Dashboard() {
             </div>
 
             {/* View listings */}
-            <div className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white" style={{border: '0.8px solid rgba(255,255,255,1)', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)'}} >
+            <div className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white" style={{border: '0.8px solid rgba(251,251,251,1)', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)'}} >
               <div className="flex items-start gap-4">
                 <div>
                   <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=2000 2000w" alt="" className="block sm:hidden lg:block w-full rounded-md object-cover mt-5" style={{aspectRatio: '2.65', objectPosition: 'center', minHeight: '20px', minWidth: '20px'}} />
@@ -58,7 +58,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             {/* Help Center */}
-            <div className="flex flex-col justify-center rounded-2xl bg-white" style={{border: '0.8px solid rgba(255,255,255,1)', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-center rounded-2xl bg-white" style={{border: '0.8px solid rgba(251,251,251,1)', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
