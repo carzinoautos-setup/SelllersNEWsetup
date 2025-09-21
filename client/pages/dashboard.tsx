@@ -72,8 +72,8 @@ export default function Dashboard() {
             </div>
 
             {/* Featured Credits */}
-            <div className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#EDEDED]">
-              <div className="flex items-start gap-4">
+            <div className="flex flex-col justify-between pt-6 pr-3 pb-6 pl-2 rounded-2xl bg-white border border-[#EDEDED]">
+              <div className="flex items-start gap-[1px]">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M16.9 39.56" fill="#E82121"/></svg>
                 </div>
@@ -82,8 +82,8 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Boost your visibility and attract more buyers by applying credits to feature your vehicle listings.</p>
                 </div>
               </div>
-              <div className="mt-4">
-                <button className="w-full sm:w-[204px] px-4 py-3 border border-[#2B2825] text-[#E82121] rounded-lg text-sm font-medium">Featured Credits</button>
+              <div className="mt-4 w-4/5 ml-auto">
+                <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Credits</button>
               </div>
             </div>
 
