@@ -12,7 +12,7 @@ export default function Dashboard() {
           </header>
 
           {/* Top cards: 3 columns on lg, stacked on mobile */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 items-center justify-center mb-8">
 
             {/* Add Listing */}
             <div className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)'}} >
@@ -30,7 +30,7 @@ export default function Dashboard() {
 
             {/* Car image center */}
             <div className="flex items-center justify-center">
-              <img src="https://api.builder.io/api/v1/image/assets/TEMP/6cb5af304655256907388f87557ab314e301d153?width=820" alt="Vehicle" className="w-full max-w-[480px] object-cover rounded-2xl hidden sm:block" />
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/6cb5af304655256907388f87557ab314e301d153?width=820" alt="Vehicle" className="w-full max-w-[480px] object-cover rounded-2xl hidden md:block" />
             </div>
 
             {/* View listings */}
