@@ -58,7 +58,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             {/* Help Center */}
-            <div className="flex flex-col justify-center rounded-2xl bg-white border border-[#CCCCCC]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-center rounded-2xl bg-white" style={{border: '0.8px solid rgba(255,255,255,1)', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
