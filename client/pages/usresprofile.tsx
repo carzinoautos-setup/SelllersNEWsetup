@@ -273,6 +273,153 @@ export default function UsresProfile() {
               </div>
             </div>
 
+            {/* Enter your Details Form - Enhanced Version */}
+            <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
+              <h2 className="text-2xl font-medium text-[#24272C] font-albert">Enter your Details</h2>
+
+              <div className="w-full border border-[#B2B2B2] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.3),0_1px_3px_1px_rgba(0,0,0,0.15)]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full">
+
+                  {/* Seller or dealer name */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-sm text-[#24272C] font-albert mb-1">Seller or dealer name</label>
+                      <input
+                        type="text"
+                        placeholder="Enter your full name"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* City */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">City</label>
+                      <input
+                        type="text"
+                        placeholder="City"
+                        className="text-[15px] text-[#24272C] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* State */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">State</label>
+                      <input
+                        type="text"
+                        placeholder="Enter your state"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Zip code */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Zip code</label>
+                      <input
+                        type="text"
+                        placeholder="Zip code"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email lead alert address */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Email lead alert address</label>
+                      <input
+                        type="email"
+                        placeholder="Email address"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Account holder email Address */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Account holder email Address</label>
+                      <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* List your phone# on ads */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex items-center justify-between relative">
+                      <div className="flex flex-col">
+                        <label className="text-[13px] text-[#24272C] font-dm mb-1">List your phone# on ads</label>
+                        <span className="text-[15px] text-[#050B20] font-dm">Yes</span>
+                      </div>
+                      <svg className="w-[10px] h-[10px] flex-shrink-0" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Seller Phone */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Seller Phone</label>
+                      <input
+                        type="tel"
+                        placeholder=""
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Empty cell for 3-column layout alignment */}
+                  <div className="hidden lg:block"></div>
+
+                  {/* Enter your address */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-albert mb-1">Enter your address and then select from the choices.</label>
+                      <input
+                        type="text"
+                        placeholder="Enter address"
+                        className="text-[15px] text-[#050B20] font-albert bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Longitude */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Longitude:</label>
+                      <input
+                        type="text"
+                        placeholder="Longitude"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Latitude */}
+                  <div className="flex flex-col">
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-[10px] flex flex-col justify-center">
+                      <label className="text-[13px] text-[#24272C] font-dm mb-1">Latitude</label>
+                      <input
+                        type="text"
+                        placeholder="Latitude"
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
