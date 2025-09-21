@@ -92,7 +92,7 @@ export default function UsresProfile() {
 
                   </div>
 
-                  <div className="w-full md:w-[241px] flex flex-col items-start gap-2 mt-10 md:mt-0">
+                  <div className="w-full md:w-[241px] flex flex-col items-start gap-2 mt-6 md:mt-0 md:self-center">
                     <div className="w-full bg-white border border-[#E4E4E4] rounded-[14px] p-4 flex flex-col items-start justify-start md:bg-transparent md:border-0 md:p-0 md:flex-col md:items-start">
                       <div className="relative flex-shrink-0">
                         <div className="w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden">
