@@ -236,7 +236,7 @@ export default function UsresProfile() {
                       <div>
                         <button
                           type="button"
-                          onClick={() => setPhoneOpen((s) => !s)}
+                          onClick={() => setPhoneOpen((s) => !s)} style={phoneListed ? { boxShadow: '0 4px 10px rgba(0,0,0,0.06)'} : undefined }
                           className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] pr-10 text-[15px] font-dm flex items-center justify-between relative"
                         >
                           <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">List your phone# on ads</label>
