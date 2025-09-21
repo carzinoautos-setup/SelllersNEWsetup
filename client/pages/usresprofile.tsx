@@ -16,7 +16,7 @@ export default function UsresProfile() {
                 <div className="flex-1 max-w-[872px] space-y-10">
                   {/* Title & Description */}
                   <div className="flex flex-col items-start gap-4 self-stretch">
-                    <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-[353px]">
+                    <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-full md:w-[353px]">
                       Get Started with Carzino
                     </h1>
                     <div className="flex flex-col items-start gap-4">
