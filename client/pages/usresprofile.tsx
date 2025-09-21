@@ -24,9 +24,9 @@ export default function UsresProfile() {
             <div className="flex flex-col items-start justify-center border border-[#E4E4E4] rounded-[14px] p-5 md:py-8 md:px-12">
               <div className="flex flex-col md:flex-row justify-start items-stretch md:items-center gap-8 md:gap-[167px] bg-white w-full max-w-[1280px]">
 
-                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row md:items-center justify-start items-start md:gap-8">
-                  <div className="flex flex-col items-start gap-4 self-stretch w-full md:w-2/3 mr-0 md:mr-[45px] pl-2 md:pl-0 md:justify-start">
-                    <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-full md:w-[353px]">Get Started with Carzino</h1>
+                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row md:items-center justify-start items-start md:gap-12">
+                  <div className="flex flex-col items-start gap-4 self-stretch w-full md:w-[70%] mr-0 md:mr-[45px] pl-2 md:pl-0 md:justify-start">
+                    <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-full">Get Started with Carzino</h1>
                     <div className="flex flex-col items-start gap-4">
                       <p className="text-xs text-[#111928] font-albert leading-[140%] max-w-[640px] w-full">
                         Please fill out the form below with your information to create your listing. You'll be asked to choose whether you're listing as a Private Seller or a Dealer. If you're a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
@@ -92,7 +92,7 @@ export default function UsresProfile() {
 
                   </div>
 
-                  <div className="w-full md:w-1/3 flex flex-col items-start gap-2 mt-6 md:mt-0 md:self-center md:justify-center">
+                  <div className="w-full md:w-[30%] flex flex-col items-start gap-2 mt-6 md:mt-0 md:self-center md:justify-center">
                     <div className="w-full bg-white border border-[#E4E4E4] rounded-[14px] p-4 flex flex-col items-start justify-start md:bg-transparent md:border-0 md:p-0 md:flex-col md:items-start">
                       <div className="relative flex-shrink-0">
                         <div className="w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden">
