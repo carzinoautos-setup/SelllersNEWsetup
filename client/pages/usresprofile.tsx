@@ -6,10 +6,17 @@ export default function UsresProfile() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
+  const [phoneListed, setPhoneListed] = useState("Yes");
+  const [phoneOpen, setPhoneOpen] = useState(false);
+  const phoneRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setOpen(false);
+      }
+      if (phoneRef.current && !phoneRef.current.contains(e.target as Node)) {
+        setPhoneOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClick);
@@ -225,14 +232,52 @@ export default function UsresProfile() {
 
                   {/* List your phone# on ads */}
                   <div className="flex flex-col">
-                    <div className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 py-[10px] flex items-center justify-between relative">
-                      <div className="flex flex-col">
-                        <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">List your phone# on ads</label>
-                        <span className="text-[15px] text-[#050B20] font-dm">Yes</span>
+                    <div ref={phoneRef} className="w-full relative">
+                      <div>
+                        <button
+                          type="button"
+                          onClick={() => setPhoneOpen((s) => !s)}
+                          className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 py-3 pr-10 text-[15px] font-dm flex items-center justify-between"
+                        >
+                          <div className="text-left">
+                            <div className="text-[13px] text-black font-albert font-semibold mb-1">List your phone# on ads</div>
+                            <div className="text-[15px] text-[#050B20]">{phoneListed}</div>
+                          </div>
+
+                          {phoneListed && (
+                            <svg className="w-4 h-4 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          )}
+
+                          <svg className={(phoneOpen ? "rotate-180" : "") + " transition-transform"} width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#E82121" />
+                          </svg>
+                        </button>
+
+                        {phoneOpen && (
+                          <ul className="absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left">
+                            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setPhoneListed("Yes"); setPhoneOpen(false); }}>
+                              <span>Yes</span>
+                              {phoneListed === "Yes" && (
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                              )}
+                            </li>
+
+                            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setPhoneListed("No"); setPhoneOpen(false); }}>
+                              <span>No</span>
+                              {phoneListed === "No" && (
+                                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                              )}
+                            </li>
+                          </ul>
+                        )}
+
                       </div>
-                      <svg className="w-[10px] h-[10px] flex-shrink-0" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
-                      </svg>
                     </div>
                   </div>
 
