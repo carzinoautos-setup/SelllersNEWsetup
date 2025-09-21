@@ -56,7 +56,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Help Center */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 36px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9 19.31L10.12 18.28" fill="#E82121"/></svg>
