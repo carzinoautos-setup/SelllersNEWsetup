@@ -4,10 +4,10 @@ export default function UsresProfile() {
   return (
     <DashboardLayout>
       <div className="flex-1 overflow-y-auto">
-        <div className="py-6 md:py-10 lg:px-[50px] px-4 sm:px-6">
+        <div className="py-6 md:py-10 lg:px-[30px] px-4 sm:px-6">
           <div className="max-w-[1480px] mx-auto">
             {/* Get Started with Carzino Block */}
-            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-14 p-6 bg-white rounded-2xl border border-[#E1E1E1]">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-center p-5 bg-white rounded-2xl border border-[#E1E1E1]">
               {/* Left Content */}
               <div className="flex-1 space-y-4">
                 <div className="space-y-3">
@@ -15,7 +15,7 @@ export default function UsresProfile() {
                     Get Started with Carzino
                   </h2>
                   <div className="space-y-4">
-                    <p className="text-xs text-[#111928] font-albert leading-relaxed max-w-[640px]">
+                    <p className="text-xs text-[#111928] font-albert leading-relaxed max-w-[703px]">
                       Please fill out the form below with your information to create your listing. You'll be asked to choose whether you're 
                       listing as a Private Seller or a Dealer. If you're a dealer and would like to use your feed for automatic vehicle listings, 
                       please contact us for details.
@@ -26,7 +26,7 @@ export default function UsresProfile() {
                 {/* Account Type Dropdown */}
                 <div className="w-full max-w-[423px]">
                   <div className="relative">
-                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
+                    <div className="w-1/2 h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
                       <div className="text-[13px] font-bold text-black font-albert mb-1">
                         Select your Account type
                       </div>
@@ -46,8 +46,8 @@ export default function UsresProfile() {
 
               {/* Center Icon */}
               <div className="flex-shrink-0">
-                <div className="relative w-[162px] h-[167px]">
-                  <svg width="162" height="167" viewBox="0 0 162 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="relative w-[108px] h-[107px]">
+                  <svg width="108" height="107" viewBox="0 0 162 167" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="81.4104" cy="82.9641" rx="78.2795" ry="80.3352" fill="url(#pattern0_2989_22478)"/>
                     <path d="M80.8887 0.988281C125.274 0.988281 161.277 37.9181 161.277 83.501C161.277 129.084 125.274 166.015 80.8887 166.015C36.5034 166.015 0.5 129.084 0.5 83.501C0.500185 37.9182 36.5035 0.988387 80.8887 0.988281Z" stroke="#242760"/>
                     <path fillRule="evenodd" clipRule="evenodd" d="M130.829 138.551C130.829 137.857 131.349 137.293 131.99 137.293H139.732C140.373 137.293 140.893 137.857 140.893 138.551C140.893 139.245 140.373 139.809 139.732 139.809H131.99C131.349 139.809 130.829 139.245 130.829 138.551ZM133.066 159.936H138.656C142.582 159.936 144.546 159.936 145.956 159.028C146.563 158.638 147.087 158.132 147.498 157.54C148.44 156.181 148.44 154.288 148.44 150.502C148.44 146.715 148.44 144.823 147.497 143.463C147.086 142.871 146.562 142.365 145.956 141.975C144.546 141.067 142.582 141.067 138.656 141.067H133.066C129.14 141.067 127.176 141.067 125.766 141.975C125.159 142.365 124.636 142.871 124.225 143.463C123.281 144.822 123.281 146.715 123.281 150.499V150.502C123.281 154.288 123.281 156.18 124.223 157.54C124.631 158.129 125.154 158.634 125.766 159.028C127.176 159.936 129.14 159.936 133.066 159.936ZM130.619 150.502C130.619 147.709 132.966 145.447 135.861 145.447C138.755 145.447 141.103 147.71 141.103 150.502C141.103 153.293 138.754 155.556 135.861 155.556C132.966 155.556 130.619 153.292 130.619 150.502ZM132.716 150.502C132.716 148.826 134.125 147.47 135.861 147.47C137.597 147.47 139.006 148.827 139.006 150.502C139.006 152.176 137.597 153.533 135.861 153.533C134.125 153.533 132.716 152.176 132.716 150.502ZM143.548 145.447C142.97 145.447 142.5 145.9 142.5 146.458C142.5 147.016 142.97 147.469 143.548 147.469H144.248C144.826 147.469 145.296 147.016 145.296 146.458C145.296 145.9 144.826 145.447 144.248 145.447H143.548Z" fill="#E82121"/>
@@ -61,9 +61,9 @@ export default function UsresProfile() {
               </div>
 
               {/* Right Content - Account Number */}
-              <div className="w-full lg:w-[403px] space-y-4">
+              <div className="w-full lg:w-[165px] space-y-4">
                 <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7">
-                  Your Assigned Account Number
+                  Account Number
                 </h3>
                 
                 <div className="w-full max-w-[341px]">
