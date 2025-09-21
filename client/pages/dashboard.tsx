@@ -15,7 +15,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mb-8">
 
             {/* Add Listing */}
-            <div className="flex flex-col justify-between gap-4 p-6 sm:p-8 rounded-2xl bg-white shadow-lg">
+            <div className="flex flex-col justify-between gap-4 p-8 rounded-2xl bg-white" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)'}} >
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 sm:w-14 sm:h-14 flex-shrink-0">
                   <svg className="w-full h-full" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C]">Add A listing</h2>
-                  <p className="text-sm text-[#696665] mt-2">Easily create a new vehicle listing and share it with interested buyers in just minutes using our simple step-by-step form.</p>
+                  <p className="text-sm text-[#696665] mt-2 w-full">Easily create a new vehicle listing and share it with interested buyers in just minutes using our simple step-by-step form.</p>
                 </div>
               </div>
 
