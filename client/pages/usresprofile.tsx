@@ -44,7 +44,7 @@ export default function UsresProfile() {
                       <div>
                         <button
                           type="button"
-                          onClick={() => setOpen((s) => !s)} style={accountType !== "Select" ? { boxShadow: '0 4px 10px rgba(0,0,0,0.06)'} : undefined }
+                          onClick={() => setOpen((s) => !s)} style={open && accountType !== "Select" ? { boxShadow: '0 4px 10px rgba(0,0,0,0.06)'} : undefined }
                           className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] pr-10 text-[15px] font-dm flex items-center justify-between relative"
                         >
                           <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">Select your Account type</label>
@@ -64,7 +64,7 @@ export default function UsresProfile() {
                         </button>
 
                         {open && (
-                          <ul className={`absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left ${accountType !== 'Select' ? 'shadow-[0_6px_20px_rgba(0,0,0,0.06)]' : ''}`}>
+                          <ul className={`absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left ${open && accountType !== 'Select' ? 'shadow-[0_6px_20px_rgba(0,0,0,0.06)]' : ''}`}>
                             <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setAccountType("Select"); setOpen(false); }}>
                               <span>Select</span>
                               {accountType === "Select" && (
@@ -236,7 +236,7 @@ export default function UsresProfile() {
                       <div>
                         <button
                           type="button"
-                          onClick={() => setPhoneOpen((s) => !s)} style={phoneListed ? { boxShadow: '0 4px 10px rgba(0,0,0,0.06)'} : undefined }
+                          onClick={() => setPhoneOpen((s) => !s)} style={phoneOpen && phoneListed ? { boxShadow: '0 4px 10px rgba(0,0,0,0.06)'} : undefined }
                           className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] pr-10 text-[15px] font-dm flex items-center justify-between relative"
                         >
                           <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">List your phone# on ads</label>
@@ -256,7 +256,7 @@ export default function UsresProfile() {
                         </button>
 
                         {phoneOpen && (
-                          <ul className={`absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left ${phoneListed ? 'shadow-[0_6px_20px_rgba(0,0,0,0.06)]' : ''}`} >
+                          <ul className={`absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left ${phoneOpen && phoneListed ? 'shadow-[0_6px_20px_rgba(0,0,0,0.06)]' : ''}`} >
                             <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer" onClick={() => { setPhoneListed("Yes"); setPhoneOpen(false); }}>
                               <span>Yes</span>
                               {phoneListed === "Yes" && (
