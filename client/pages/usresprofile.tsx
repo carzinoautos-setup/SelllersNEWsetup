@@ -29,10 +29,16 @@ export default function UsresProfile() {
 
                     {/* Account Type Dropdown */}
                     <div className="w-full max-w-[423px] relative">
-                      <div className="w-full h-full border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-                        <div className="text-[13px] text-black font-albert font-semibold mb-1">Select your Account type</div>
-                        <div className="text-[15px] text-[#050B20] font-dm">{accountType}</div>
-                      </div>
+                      <select
+                        aria-label="Account type"
+                        value={accountType}
+                        onChange={(e) => setAccountType(e.target.value)}
+                        className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 pr-10 text-[15px] font-dm appearance-none"
+                      >
+                        <option value="Select">Select</option>
+                        <option value="Private Seller">Private Seller</option>
+                        <option value="Dealer">Dealer</option>
+                      </select>
                       
                       {/* Red chevron */}
                       <div className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2">
