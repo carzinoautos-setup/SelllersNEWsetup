@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
 
 export default function UsresProfile() {
-  const [accountType, setAccountType] = useState("Select");
+  const [accountType, setAccountType] = useState("Private Seller");
 
   return (
     <DashboardLayout>
@@ -10,15 +10,15 @@ export default function UsresProfile() {
         <div className="py-6 md:py-10 lg:px-[30px] px-4 sm:px-6">
           <div className="max-w-[1480px] mx-auto">
             {/* Get Started with Carzino Block */}
-            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-center p-5 bg-white rounded-2xl border border-[#E1E1E1]">
+            <div className="flex flex-col lg:flex-row items-center gap-[9px] justify-center p-5 bg-white rounded-2xl border border-[#E1E1E1]">
               {/* Left Content */}
-              <div className="flex-1 space-y-4">
+              <div className="flex-1 space-y-6">
                 <div className="space-y-3">
                   <h2 className="text-2xl font-bold text-[#24272C] font-albert">
                     Get Started with Carzino
                   </h2>
                   <div className="space-y-4">
-                    <p className="text-xs text-[#111928] font-albert leading-relaxed max-w-[500px]">
+                    <p className="text-xs text-[#111928] font-albert leading-[140%] max-w-[470px]">
                       Please fill out the form below with your information to create your listing. You'll be asked to choose whether you're
                       listing as a Private Seller or a Dealer. If you're a dealer and would like to use your feed for automatic vehicle listings,
                       please contact us for details.
@@ -29,16 +29,14 @@ export default function UsresProfile() {
                 {/* Account Type Dropdown */}
                 <div className="w-full max-w-[423px]">
                   <div className="relative">
-                    <select
-                      aria-label="Account type"
-                      value={accountType}
-                      onChange={(e) => setAccountType(e.target.value)}
-                      className="w-full h-[40px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-2 pr-10 text-[15px] font-dm appearance-none"
-                    >
-                      <option value="Select">Select</option>
-                      <option value="Private Seller">Private Seller</option>
-                      <option value="Dealer">Dealer</option>
-                    </select>
+                    <div className="w-full h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
+                      <div className="text-[13px] text-black font-albert font-bold mb-1">
+                        Select your Account type
+                      </div>
+                      <div className="text-[15px] text-[#050B20] font-dm">
+                        {accountType}
+                      </div>
+                    </div>
 
                     {/* Red chevron */}
                     <div className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2">
@@ -50,31 +48,39 @@ export default function UsresProfile() {
                 </div>
               </div>
 
-              {/* Center Icon */}
-              <div className="flex-shrink-0">
-                <div className="relative w-[108px] h-[107px]">
-                  <svg width="108" height="107" viewBox="0 0 162 167" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="81.4104" cy="82.9641" rx="78.2795" ry="80.3352" fill="url(#pattern0_2989_22478)" />
-                    <path d="M80.8887 0.988281C125.274 0.988281 161.277 37.9181 161.277 83.501C161.277 129.084 125.274 166.015 80.8887 166.015C36.5034 166.015 0.5 129.084 0.5 83.501C0.500185 37.9182 36.5035 0.988387 80.8887 0.988281Z" stroke="#242760" />
-                    <path fillRule="evenodd" clipRule="evenodd" d="M130.829 138.551C130.829 137.857 131.349 137.293 131.99 137.293H139.732C140.373 137.293 140.893 137.857 140.893 138.551C140.893 139.245 140.373 139.809 139.732 139.809H131.99C131.349 139.809 130.829 139.245 130.829 138.551ZM133.066 159.936H138.656C142.582 159.936 144.546 159.936 145.956 159.028C146.563 158.638 147.087 158.132 147.498 157.54C148.44 156.181 148.44 154.288 148.44 150.502C148.44 146.715 148.44 144.823 147.497 143.463C147.086 142.871 146.562 142.365 145.956 141.975C144.546 141.067 142.582 141.067 138.656 141.067H133.066C129.14 141.067 127.176 141.067 125.766 141.975C125.159 142.365 124.636 142.871 124.225 143.463C123.281 144.822 123.281 146.715 123.281 150.499V150.502C123.281 154.288 123.281 156.18 124.223 157.54C124.631 158.129 125.154 158.634 125.766 159.028C127.176 159.936 129.14 159.936 133.066 159.936ZM130.619 150.502C130.619 147.709 132.966 145.447 135.861 145.447C138.755 145.447 141.103 147.71 141.103 150.502C141.103 153.293 138.754 155.556 135.861 155.556C132.966 155.556 130.619 153.292 130.619 150.502ZM132.716 150.502C132.716 148.826 134.125 147.47 135.861 147.47C137.597 147.47 139.006 148.827 139.006 150.502C139.006 152.176 137.597 153.533 135.861 153.533C134.125 153.533 132.716 152.176 132.716 150.502ZM143.548 145.447C142.97 145.447 142.5 145.9 142.5 146.458C142.5 147.016 142.97 147.469 143.548 147.469H144.248C144.826 147.469 145.296 147.016 145.296 146.458C145.296 145.9 144.826 145.447 144.248 145.447H143.548Z" fill="#E82121" />
+              {/* Center Upload Icon */}
+              <div className="flex-shrink-0 flex flex-col items-center gap-4">
+                <div className="relative w-[163px] flex flex-col items-center">
+                  <svg width="109" height="112" viewBox="0 0 111 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="55.8517" cy="55.6389" rx="52.8068" ry="54.1935" fill="url(#pattern0_2996_28399)" />
+                    <path d="M55.501 0.5C85.3491 0.500188 109.567 25.336 109.567 56C109.567 86.664 85.3491 111.5 55.501 111.5C25.6527 111.5 1.43359 86.6641 1.43359 56C1.43359 25.3359 25.6527 0.5 55.501 0.5Z" stroke="#242760" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M89.1913 93.1377C89.1913 92.6692 89.5418 92.2891 89.9745 92.2891H95.1969C95.6297 92.2891 95.9802 92.6692 95.9802 93.1377C95.9802 93.6061 95.6297 93.9863 95.1969 93.9863H89.9745C89.5418 93.9863 89.1913 93.6061 89.1913 93.1377ZM90.7001 107.564H94.4713C97.1198 107.564 98.4445 107.564 99.3958 106.951C99.8051 106.688 100.159 106.347 100.436 105.947C101.072 105.031 101.072 103.754 101.072 101.199C101.072 98.6452 101.072 97.3688 100.435 96.4515C100.158 96.0519 99.8048 95.7108 99.3958 95.4476C98.4445 94.8349 97.1198 94.8349 94.4713 94.8349H90.7001C88.0516 94.8349 86.7269 94.8349 85.7756 95.4476C85.3666 95.7108 85.0134 96.0519 84.7361 96.4515C84.0996 97.368 84.0996 98.6452 84.0996 101.198V101.199C84.0996 103.754 84.0996 105.03 84.7352 105.947C85.0102 106.345 85.3632 106.686 85.7756 106.951C86.7269 107.564 88.0516 107.564 90.7001 107.564ZM89.0496 101.199C89.0496 99.3156 90.6331 97.7898 92.5857 97.7898C94.5384 97.7898 96.1219 99.3164 96.1219 101.199C96.1219 103.083 94.5375 104.609 92.5857 104.609C90.6331 104.609 89.0496 103.082 89.0496 101.199ZM90.4642 101.199C90.4642 100.069 91.4146 99.1543 92.5857 99.1543C93.7568 99.1543 94.7072 100.07 94.7072 101.199C94.7072 102.329 93.7568 103.245 92.5857 103.245C91.4146 103.245 90.4642 102.329 90.4642 101.199ZM97.7716 97.7898C97.3812 97.7898 97.0647 98.0953 97.0647 98.472C97.0647 98.848 97.3812 99.1535 97.7716 99.1535H98.2434C98.6338 99.1535 98.9503 98.848 98.9503 98.472C98.9503 98.0953 98.6338 97.7898 98.2434 97.7898H97.7716Z" fill="#E82121" />
                     <defs>
-                      <pattern id="pattern0_2989_22478" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlinkHref="#image0_2989_22478" transform="matrix(0.00257069 0 0 0.00250491 0 -0.307835)" />
+                      <pattern id="pattern0_2996_28399" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlinkHref="#image0_2996_28399" transform="matrix(0.00257069 0 0 0.00250491 0 -0.307835)" />
                       </pattern>
                     </defs>
                   </svg>
+                  <div className="text-center text-[#6B7280] font-inter text-base font-light leading-[150%] mt-4">
+                    Upload
+                  </div>
                 </div>
               </div>
 
               {/* Right Content - Account Number */}
-              <div className="w-full lg:w-[165px] space-y-4">
-                <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7">
-                  Account Number
-                </h3>
-
-                <div className="w-full max-w-[341px]">
-                  <div className="w-full h-[67px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex items-center">
-                    <div className="text-[15px] text-[#050B20] font-dm">Account Number here</div>
+              <div className="w-full lg:w-[273px] flex flex-col justify-end items-start gap-4">
+                <div className="flex items-center gap-8">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.6004 14.3992C21.6004 16.3088 20.8418 18.1401 19.4916 19.4904C18.1413 20.8406 16.3099 21.5992 14.4004 21.5992C12.4908 21.5992 10.6595 20.8406 9.30922 19.4904C7.95896 18.1401 7.20039 16.3088 7.20039 14.3992C7.20039 12.4897 7.95896 10.6583 9.30922 9.30805C10.6595 7.95779 12.4908 7.19922 14.4004 7.19922C16.3099 7.19922 18.1413 7.95779 19.4916 9.30805C20.8418 10.6583 21.6004 12.4897 21.6004 14.3992V14.3992ZM40.8004 14.3992C40.8004 15.3447 40.6142 16.281 40.2523 17.1545C39.8905 18.0281 39.3601 18.8218 38.6916 19.4904C38.023 20.159 37.2293 20.6893 36.3557 21.0512C35.4822 21.413 34.5459 21.5992 33.6004 21.5992C32.6549 21.5992 31.7186 21.413 30.8451 21.0512C29.9715 20.6893 29.1778 20.159 28.5092 19.4904C27.8406 18.8218 27.3103 18.0281 26.9485 17.1545C26.5866 16.281 26.4004 15.3447 26.4004 14.3992C26.4004 12.4897 27.159 10.6583 28.5092 9.30805C29.8595 7.95779 31.6908 7.19922 33.6004 7.19922C35.5099 7.19922 37.3413 7.95779 38.6916 9.30805C40.0418 10.6583 40.8004 12.4897 40.8004 14.3992V14.3992ZM31.0324 40.7992C31.1428 40.0144 31.2004 39.2152 31.2004 38.3992C31.2059 34.6285 29.9373 30.9665 27.6004 28.0072C29.4246 26.954 31.4939 26.3995 33.6003 26.3995C35.7067 26.3995 37.776 26.954 39.6003 28.0071C41.4245 29.0603 42.9393 30.5751 43.9926 32.3993C45.0458 34.2235 45.6003 36.2928 45.6004 38.3992V40.7992H31.0324ZM14.4004 26.3992C17.583 26.3992 20.6352 27.6635 22.8857 29.9139C25.1361 32.1644 26.4004 35.2166 26.4004 38.3992V40.7992H2.40039V38.3992C2.40039 35.2166 3.66467 32.1644 5.91511 29.9139C8.16555 27.6635 11.2178 26.3992 14.4004 26.3992V26.3992Z" fill="#B3B3B3" />
+                  </svg>
+                  
+                  <div className="flex flex-col items-start gap-2">
+                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7">
+                      Your Assigned Account Number
+                    </h3>
+                    <div className="text-[12px] text-[#111928] font-albert leading-[140%]">
+                      5555
+                    </div>
                   </div>
                 </div>
               </div>
