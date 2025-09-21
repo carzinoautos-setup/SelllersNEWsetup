@@ -61,6 +61,7 @@ export default function Dashboard() {
                 <div>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
+                  <button className="inline-flex items-center px-3 py-1.5 border border-black text-[#E82121] bg-transparent rounded-md text-sm font-medium mt-2">Get Help</button>
                 </div>
               </div>
               <div style={{fontWeight: '400', width: '80%', display: 'flex', flexDirection: 'column', margin: '16px auto 0'}}>
