@@ -95,7 +95,7 @@ export default function UsresProfile() {
                   <div className="w-full md:w-[30%] flex flex-row md:flex-col items-center md:items-end gap-4 md:gap-2 mt-10 md:self-end md:justify-end">
                     <div className="w-full bg-transparent md:bg-white md:border md:border-[#E4E4E4] rounded-[14px] md:pt-5 md:px-4 md:pb-4 p-0 -mt-1 flex flex-row md:flex-col items-center md:items-start justify-center gap-4 md:gap-2">
                       <div className="relative flex-shrink-0">
-                        <div className="w-[62px] h-[62px] md:w-24 md:h-24 rounded-full overflow-hidden">
+                        <div className="w-[62px] h-[62px] md:w-24 md:h-24 rounded-full overflow-hidden flex items-start justify-start md:block">
                           <svg className="w-full h-full" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="48.7901" cy="49.6803" rx="46.9132" ry="48.1452" fill="url(#pattern0_2997_28513)" />
                             <path d="M48.4766 0.75C74.9614 0.75 96.4541 22.7877 96.4541 50C96.4541 77.2123 74.9614 99.25 48.4766 99.25C21.9919 99.2498 0.5 77.2122 0.5 50C0.5 22.7878 21.9919 0.750224 48.4766 0.75Z" stroke="#242760" />
@@ -107,7 +107,7 @@ export default function UsresProfile() {
                           </svg>
                         </div>
 
-                        <div className="absolute -left-1 md:-right-1 -bottom-1 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center">
+                        <div className="absolute -right-1 md:-right-1 -bottom-1 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center">
                           <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 9a3 3 0 100 6 3 3 0 000-6z" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M20 7h-3.2l-1.4-1.8A1.5 1.5 0 0014.2 4H9.8a1.5 1.5 0 00-1.2.9L7.2 6H4a1 1 0 00-1 1v10a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z" stroke="#fff" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
