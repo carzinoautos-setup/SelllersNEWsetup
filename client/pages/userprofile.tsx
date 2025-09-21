@@ -13,9 +13,17 @@ export default function UserProfile() {
       setSaving(true);
       // Simulate save delay; replace with real API call when available
       await new Promise((res) => setTimeout(res, 700));
-      toast({ title: "Profile saved", description: "Your profile and vehicle details were saved.", duration: 4000 });
+      toast({
+        title: "Profile saved",
+        description: "Your profile and vehicle details were saved.",
+        duration: 4000,
+      });
     } catch (err) {
-      toast({ title: "Save failed", description: "Unable to save changes.", duration: 4000 });
+      toast({
+        title: "Save failed",
+        description: "Unable to save changes.",
+        duration: 4000,
+      });
     } finally {
       setSaving(false);
     }
