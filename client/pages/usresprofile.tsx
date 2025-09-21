@@ -19,7 +19,7 @@ export default function UsresProfile() {
   return (
     <DashboardLayout>
       <div className="flex-1 overflow-visible">
-        <div className="py-16 px-5">
+        <div className="-mb-[1px] pt-[34px] pb-[20px] px-5">
           <div className="w-full max-w-[1280px] mx-auto">
             <div className="flex flex-col items-start justify-start border border-[#E4E4E4] rounded-[14px] p-[7px] md:pt-[7px] md:pb-[21px] md:px-[48px]">
               <div className="flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-start gap-8 md:gap-0 bg-white w-full max-w-[1280px]">
