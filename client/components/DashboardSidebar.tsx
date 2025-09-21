@@ -4,19 +4,21 @@ interface SidebarProps {
   className?: string;
 }
 
+import { Link } from "react-router-dom";
+
 export function DashboardSidebar({ className }: SidebarProps) {
   const menuItems = [
-    { name: "Dashboard", icon: DashboardIcon, active: false },
-    { name: "Add a listing", icon: EditIcon, active: false },
-    { name: "Your Listings", icon: MailIcon, active: true },
-    { name: "Buy Credits (2)", icon: CoinsIcon, active: false },
-    { name: "Messages", icon: MessageIcon, active: false, badge: "7" },
-    { name: "Account Settings", icon: SettingsIcon, active: false },
-    { name: "Add your Payment", icon: BankIcon, active: false },
-    { name: "Billing", icon: CurrencyDollarIcon, active: false },
-    { name: "Help Center", icon: LifebuoyIcon, active: false },
-    { name: "Profile", icon: UserIcon, active: false },
-    { name: "Logout", icon: LogoutIcon, active: false },
+    { name: "Dashboard", icon: DashboardIcon, active: false, path: "/dashboard" },
+    { name: "Add a listing", icon: EditIcon, active: false, path: "/add-listing" },
+    { name: "Your Listings", icon: MailIcon, active: true, path: "/listings" },
+    { name: "Buy Credits (2)", icon: CoinsIcon, active: false, path: "/credits" },
+    { name: "Messages", icon: MessageIcon, active: false, badge: "7", path: "/messages" },
+    { name: "Account Settings", icon: SettingsIcon, active: false, path: "/settings" },
+    { name: "Add your Payment", icon: BankIcon, active: false, path: "/payments" },
+    { name: "Billing", icon: CurrencyDollarIcon, active: false, path: "/billing" },
+    { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
+    { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
+    { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
   ];
 
   return (
@@ -166,10 +168,11 @@ export function DashboardSidebar({ className }: SidebarProps) {
         <div className="px-2 mt-0">
           <div className="space-y-2 px-2">
             {menuItems.map((item, index) => (
-              <div
+              <Link
+                to={item.path || '#'}
                 key={index}
                 className={cn(
-                  "flex items-center gap-3 px-4 py-2 rounded-[10px] cursor-pointer transition-colors overflow-hidden",
+                  "flex items-center gap-3 px-4 py-2 rounded-[10px] transition-colors overflow-hidden",
                   item.active ? "bg-main-color" : "hover:bg-white/5",
                 )}
               >
@@ -198,7 +201,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
                     </span>
                   </div>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
         </div>
