@@ -238,9 +238,6 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       {/* Dealership Information Section */}
       <div className="space-y-5">
         <div className="flex flex-col">
-          <h2 className="text-2xl font-medium text-[#24272C] font-albert">
-            Dealership Information
-          </h2>
           <div className="w-[250px] h-0.5 bg-[#E82121] mt-1"></div>
         </div>
         
@@ -366,9 +363,6 @@ export function EditProfileForm({ className }: EditProfileFormProps) {
       {/* Billing Information Section */}
       <div className="space-y-5">
         <div className="flex flex-col">
-          <h2 className="text-2xl font-medium text-[#24272C] font-albert">
-            Billing Information
-          </h2>
           <div className="w-[202px] h-0.5 bg-[#E82121] mt-1"></div>
         </div>
         
