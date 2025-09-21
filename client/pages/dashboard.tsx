@@ -73,7 +73,7 @@ export default function Dashboard() {
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
-                  <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(0, 0, 0)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
+                  <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(204, 204, 204)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Dashboard() {
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
-                  <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(0, 0, 0)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
+                  <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(204, 204, 204)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Dashboard() {
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
-                  <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(0, 0, 0)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
+                  <div style={{display: 'inline-flex', alignItems: 'center', borderColor: 'rgb(204, 204, 204)', borderRadius: '12px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', marginTop: '8px', textDecoration: 'rgb(232, 33, 33)', backgroundColor: 'rgba(0, 0, 0, 0)', padding: '6px 12px'}}>Get Help</div>
                 </div>
               </div>
             </div>
