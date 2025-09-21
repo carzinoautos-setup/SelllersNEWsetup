@@ -50,7 +50,7 @@ export default function UsresProfile() {
                 </div>
 
                 {/* Right Content */}
-                <div className="w-[241px] flex flex-col items-start gap-[6px]">
+                <div className="w-full md:w-[241px] flex flex-col items-start gap-2">
                   {/* Upload Photo Section */}
                   <div className="flex flex-col items-center">
                     <svg width="97" height="100" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
