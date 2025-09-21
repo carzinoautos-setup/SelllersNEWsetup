@@ -18,7 +18,7 @@ export default function UsresProfile() {
 
   return (
     <DashboardLayout>
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 overflow-visible">
         <div className="py-16 px-5">
           <div className="w-full max-w-[1280px] mx-auto">
             {/* Hero Section with Border */}
