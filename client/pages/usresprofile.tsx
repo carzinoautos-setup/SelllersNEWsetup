@@ -95,7 +95,7 @@ export default function UsresProfile() {
                   <div className="w-full md:w-[30%] flex flex-col items-start gap-2 mt-6 md:mt-0 md:self-start md:justify-start">
                     <div className="w-full bg-transparent md:bg-white md:border md:border-[#E4E4E4] rounded-[14px] md:p-4 p-0 flex flex-row items-center gap-4 md:flex-col md:items-start">
                       <div className="relative flex-shrink-0">
-                        <div className="w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden">
+                        <div className="w-24 h-24 md:w-24 md:h-24 rounded-full overflow-hidden">
                           <svg className="w-full h-full" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="48.7901" cy="49.6803" rx="46.9132" ry="48.1452" fill="url(#pattern0_2997_28513)" />
                             <path d="M48.4766 0.75C74.9614 0.75 96.4541 22.7877 96.4541 50C96.4541 77.2123 74.9614 99.25 48.4766 99.25C21.9919 99.2498 0.5 77.2122 0.5 50C0.5 22.7878 21.9919 0.750224 48.4766 0.75Z" stroke="#242760" />
