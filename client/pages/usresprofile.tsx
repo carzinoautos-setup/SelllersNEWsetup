@@ -22,10 +22,10 @@ export default function UsresProfile() {
         <div className="py-16 px-5">
           <div className="w-full max-w-[1280px] mx-auto">
             <div className="flex flex-col items-start justify-center border border-[#E4E4E4] rounded-[14px] p-5">
-              <div className="flex flex-col lg:flex-row justify-start items-stretch lg:items-start gap-8 lg:gap-[167px] bg-white w-full max-w-[1280px]">
+              <div className="flex flex-col md:flex-row justify-start items-stretch md:items-start gap-8 md:gap-[167px] bg-white w-full max-w-[1280px]">
 
-                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col lg:flex-row justify-start items-start">
-                  <div className="flex flex-col items-start gap-4 self-stretch w-full lg:w-[65%] mr-0 lg:mr-[45px] justify-center pl-2 lg:pl-0">
+                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row justify-start items-start">
+                  <div className="flex flex-col items-start gap-4 self-stretch w-full md:w-[65%] mr-0 md:mr-[45px] justify-center pl-2 md:pl-0">
                     <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-full md:w-[353px]">Get Started with Carzino</h1>
                     <div className="flex flex-col items-start gap-4">
                       <p className="text-xs text-[#111928] font-albert leading-[140%] max-w-[640px] w-full">
