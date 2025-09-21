@@ -6,7 +6,7 @@ export default function Dashboard() {
       <div className="flex-1">
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-          <header className="flex flex-col items-center gap-6 mb-8">
+          <header className="flex flex-col items-center gap-1 sm:gap-6 mb-8">
             <h1 className="text-2xl sm:text-3xl lg:text-[30px] font-medium text-[#24272C] font-albert text-center">Welcome to your Carzino account</h1>
             <p className="text-sm text-[#696665] text-center max-w-2xl">Overview of your account and quick actions.</p>
           </header>
@@ -15,7 +15,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mb-8">
 
             {/* Add Listing */}
-            <div className="flex flex-col justify-between gap-4 p-8 rounded-2xl bg-white" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)'}} >
+            <div className="flex flex-col justify-between gap-1 sm:gap-4 pt-5 pb-7 px-4 sm:p-8 rounded-2xl bg-white" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)'}} >
               <div className="flex items-start gap-4">
                 <div>
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C]">Add A listing</h2>
@@ -30,7 +30,7 @@ export default function Dashboard() {
 
             {/* Car image center */}
             <div className="flex items-center justify-center">
-              <img src="https://api.builder.io/api/v1/image/assets/TEMP/6cb5af304655256907388f87557ab314e301d153?width=820" alt="Vehicle" className="w-full max-w-[480px] object-cover rounded-2xl" />
+              <img src="https://api.builder.io/api/v1/image/assets/TEMP/6cb5af304655256907388f87557ab314e301d153?width=820" alt="Vehicle" className="w-full max-w-[480px] object-cover rounded-2xl hidden sm:block" />
             </div>
 
             {/* View listings */}
@@ -53,7 +53,7 @@ export default function Dashboard() {
           </div>
 
           {/* Bottom cards: responsive grid */}
-          <div style={{display: 'grid', fontWeight: '400', gap: '24px', gridTemplate: 'none / repeat(4, minmax(0px, 1fr))'}}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Help Center */}
             <div className="flex flex-col justify-center rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
