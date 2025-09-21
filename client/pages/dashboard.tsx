@@ -64,6 +64,7 @@ export default function Dashboard() {
                 </div>
               </div>
               <div style={{fontWeight: '400', width: '80%', display: 'flex', flexDirection: 'column', margin: '16px auto 0'}}>
+                <button className="w-full px-4 py-3 border border-black text-[#E82121] bg-transparent rounded-lg text-sm font-medium mb-2">Help Center</button>
                 <div style={{display: 'inline-block', borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0)', marginRight: 'auto', padding: '12px 10px'}}>Help Center</div>
               </div>
             </div>
