@@ -53,10 +53,10 @@ export default function Dashboard() {
           </div>
 
           {/* Bottom cards: responsive grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div style={{display: 'grid', fontWeight: '400', gap: '24px', gridTemplate: 'none / repeat(4, minmax(0px, 1fr))'}}>
 
             {/* Help Center */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 36px 12px'}} >
+            <div className="flex flex-col justify-center items-center rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 20px 12px'}} >
               <div className="flex items-start gap-4">
                 <div>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
