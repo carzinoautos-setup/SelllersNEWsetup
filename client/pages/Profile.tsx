@@ -18,6 +18,7 @@ export default function Profile() {
           <SocialProofTest />
           <GetStartedTest />
           <EnterDetailsTest />
+          <DealershipInformationTest />
         </div>
       </div>
     </DashboardLayout>
