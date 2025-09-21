@@ -22,7 +22,7 @@ export default function UsresProfile() {
         <div className="py-16 px-5">
           <div className="w-full max-w-[1280px] mx-auto">
             <div className="flex flex-col items-start justify-center border border-[#E4E4E4] rounded-[14px] p-5">
-              <div className="flex flex-col md:flex-row justify-start items-stretch md:items-start gap-8 md:gap-[167px] bg-white w-full max-w-[1280px]">
+              <div className="flex flex-col md:flex-row justify-start items-stretch md:items-center gap-8 md:gap-[167px] bg-white w-full max-w-[1280px]">
 
                 <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row justify-start items-start">
                   <div className="flex flex-col items-start gap-4 self-stretch w-full md:w-[65%] mr-0 md:mr-[45px] justify-center pl-2 md:pl-0">
