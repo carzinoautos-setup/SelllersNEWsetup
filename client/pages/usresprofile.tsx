@@ -57,7 +57,7 @@ export default function UsresProfile() {
                         </button>
 
                         {open && (
-                          <ul className="absolute left-0 z-50 mt-2 w-full bg-white border border-[#B2B2B2] rounded-md max-h-48 overflow-auto text-left">
+                          <ul className="absolute left-0 z-50 mt-2 w-full bg-white border border-[#B2B2B2] rounded-md max-h-[260px] overflow-auto text-left">
                             <li className="px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer text-left" onClick={() => { setAccountType('Select'); setOpen(false); }}>Select</li>
                             <li className="px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer text-left" onClick={() => { setAccountType('Private Seller'); setOpen(false); }}>Private Seller</li>
                             <li className="px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer text-left" onClick={() => { setAccountType('Dealer'); setOpen(false); }}>Dealer</li>
