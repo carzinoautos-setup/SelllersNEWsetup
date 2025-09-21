@@ -72,18 +72,18 @@ export default function Dashboard() {
             </div>
 
             {/* Featured Credits */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
-              <div className="flex items-start gap-[1px]">
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 28px 12px'}} >
+              <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
-                  <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M16.9 39.56" fill="#E82121"/></svg>
+                  <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M14.9 19.31L10.12 18.28" fill="#E82121"/></svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-[#24272C]">Featured Ad Credits</h3>
+                  <h3 className="text-lg font-medium text-[#24272C]">Featured Ads</h3>
                   <p className="text-sm text-[#696665] mt-2">Boost your visibility and attract more buyers by applying credits to feature your vehicle listings.</p>
                 </div>
               </div>
-              <div style={{width: '80%', margin: '16px 0 0 auto'}}>
-                <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Credits</button>
+              <div style={{width: '80%', margin: '16px auto 0'}}>
+                <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">View Credits</button>
               </div>
             </div>
 
