@@ -33,7 +33,7 @@ export default function UsresProfile() {
                       aria-label="Account type"
                       value={accountType}
                       onChange={(e) => setAccountType(e.target.value)}
-                      className="w-1/2 h-[60px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-3 pr-10 text-[15px] font-dm appearance-none"
+                      className="w-full h-[40px] border border-[#B2B2B2] rounded-xl bg-white px-4 py-2 pr-10 text-[15px] font-dm appearance-none"
                     >
                       <option value="Select">Select</option>
                       <option value="Private Seller">Private Seller</option>
