@@ -69,50 +69,44 @@ export default function Dashboard() {
             </div>
 
             {/* Featured Credits */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 28px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M14.9 19.31L10.12 18.28" fill="#E82121"/></svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-[#24272C]">Featured Ads</h3>
-                  <p className="text-sm text-[#696665] mt-2">Boost your visibility and attract more buyers by applying credits to feature your vehicle listings.</p>
+                  <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
+                  <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
+                  <div style={{borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', margin: '20px auto 0 0', padding: '12px 10px'}}>Help Center</div>
                 </div>
-              </div>
-              <div style={{width: '80%', margin: '16px auto 0'}}>
-                <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">View Credits</button>
               </div>
             </div>
 
             {/* Messages */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 36px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M10.21 11.34" fill="#E82121"/></svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-[#24272C]">Messages</h3>
-                  <p className="text-sm text-[#696665] mt-2">Stay connected with potential buyers and sellers through secure, real-time messaging in your dashboard.</p>
+                  <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
+                  <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
+                  <div style={{borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', margin: '20px auto 0 0', padding: '12px 10px'}}>Help Center</div>
                 </div>
-              </div>
-              <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '16px'}}>
-                <button className="w-full max-w-[80%] px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Messages</button>
               </div>
             </div>
 
             {/* Profile Settings */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', padding: '24px 11px 24px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M41.25 26.34" fill="#E82121"/></svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-[#24272C]">Profile Settings</h3>
-                  <p className="text-sm text-[#696665] mt-2">Update your personal details, contact information, and preferences to customize your Carzino experience.</p>
+                  <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
+                  <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
+                  <div style={{borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', margin: '20px auto 0 0', padding: '12px 10px'}}>Help Center</div>
                 </div>
-              </div>
-              <div style={{width: '80%', margin: '16px 0 0 auto'}}>
-                <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Profile</button>
               </div>
             </div>
 
