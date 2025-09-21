@@ -45,15 +45,6 @@ export default function UsresProfile() {
                         </svg>
                       </div>
 
-                      {/* Inner content */}
-                      <div className="w-[152px] h-[40px] absolute left-[15px] top-[10px]">
-                        <div className="text-[13px] text-black font-albert font-semibold absolute left-0 top-0 w-[152px] h-[16px]">
-                          Select your Account type
-                        </div>
-                        <div className="text-[15px] text-[#050B20] font-dm absolute left-0 top-[20px] w-[94px] h-[20px]">
-                          Private  Seller
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
