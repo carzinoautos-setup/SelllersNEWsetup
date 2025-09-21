@@ -107,7 +107,7 @@ export default function UsresProfile() {
                           </svg>
                         </div>
 
-                        <div className="absolute -right-1 -bottom-1 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center">
+                        <div className="absolute -left-1 md:-right-1 -bottom-1 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center">
                           <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 9a3 3 0 100 6 3 3 0 000-6z" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             <path d="M20 7h-3.2l-1.4-1.8A1.5 1.5 0 0014.2 4H9.8a1.5 1.5 0 00-1.2.9L7.2 6H4a1 1 0 00-1 1v10a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z" stroke="#fff" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
