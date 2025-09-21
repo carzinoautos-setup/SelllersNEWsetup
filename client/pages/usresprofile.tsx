@@ -73,8 +73,7 @@ export default function UsresProfile() {
                 </h3>
 
                 <div className="w-full max-w-[341px]">
-                  <div className="w-full h-[67px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex flex-col justify-center">
-                    <div className="text-[13px] text-[#24272C] font-dm mb-1">Account Number</div>
+                  <div className="w-full h-[67px] border border-[#E1E1E1] rounded-xl bg-white px-4 py-3 flex items-center">
                     <div className="text-[15px] text-[#050B20] font-dm">Account Number here</div>
                   </div>
                 </div>
