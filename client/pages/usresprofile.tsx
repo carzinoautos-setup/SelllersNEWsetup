@@ -20,7 +20,7 @@ export default function UsresProfile() {
                       Get Started with Carzino
                     </h1>
                     <div className="flex flex-col items-start gap-4">
-                      <p className="text-xs text-[#111928] font-albert leading-[140%] w-[640px]">
+                      <p className="text-xs text-[#111928] font-albert leading-[140%] max-w-[640px] w-full">
                         Please fill out the form below with your information to create your listing. You'll be asked to choose whether you're
                         listing as a Private Seller or a Dealer. If you're a dealer and would like to use your feed for automatic vehicle listings,
                         please contact us for details.
