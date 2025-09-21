@@ -10,7 +10,7 @@ export default function UsresProfile() {
         <div className="py-16 px-5">
           <div className="w-full max-w-[1280px] mx-auto">
             {/* Hero Section with Border */}
-            <div className="flex flex-col items-center border border-[#E4E4E4] rounded-lg py-16">
+            <div className="flex flex-col items-center border border-[#E4E4E4] rounded-[14px] p-5">
               <div className="flex flex-col lg:flex-row justify-end items-center gap-8 lg:gap-[167px] bg-white w-full max-w-[1280px]">
                 {/* Left Content */}
                 <div className="flex-1 max-w-[872px] space-y-10">
