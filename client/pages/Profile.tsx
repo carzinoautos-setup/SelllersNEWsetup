@@ -5,6 +5,7 @@ import { WhyChooseUsTest } from "../components/WhyChooseUsTest";
 import { SocialProofTest } from "../components/SocialProofTest";
 import { GetStartedTest } from "../components/GetStartedTest";
 import { EnterDetailsTest } from "../components/EnterDetailsTest";
+import { DealershipInformationTest } from "../components/DealershipInformationTest";
 
 export default function Profile() {
   return (
