@@ -3,6 +3,18 @@ import { DashboardLayout } from "../components/DashboardLayout";
 
 export default function UsresProfile() {
   const [accountType, setAccountType] = useState("Select");
+  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
 
   return (
     <DashboardLayout>
