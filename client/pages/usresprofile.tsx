@@ -76,7 +76,7 @@ export default function UsresProfile() {
                   
                   <div className="flex flex-col items-start gap-2">
                     <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7">
-                      Your Assigned Account Number
+                      Your Account Number
                     </h3>
                     <div className="text-[12px] text-[#111928] font-albert leading-[140%]">
                       5555
