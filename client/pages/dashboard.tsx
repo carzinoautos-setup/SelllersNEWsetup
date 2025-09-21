@@ -114,8 +114,8 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Update your personal details, contact information, and preferences to customize your Carzino experience.</p>
                 </div>
               </div>
-              <div className="mt-4">
-                <button className="w-full sm:w-[204px] px-4 py-3 border border-[#24272C] text-[#E82121] rounded-lg text-sm font-medium">Update Profile</button>
+              <div className="mt-4 w-4/5 ml-auto">
+                <button className="w-full px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">Profile</button>
               </div>
             </div>
 
