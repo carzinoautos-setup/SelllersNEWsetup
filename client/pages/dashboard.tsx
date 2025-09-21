@@ -38,7 +38,7 @@ export default function Dashboard() {
               <div className="flex items-start gap-4">
                 <div>
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C]">Your listings</h2>
-                  <p className="text-sm text-[#696665] mt-2">Quickly access all of your live vehicle listings from your dashboard, where you can update details, adjust pricing, and manage each ad with ease.</p>
+                  <p className="text-sm text-[#696665] mt-2">Quickly access all of your live vehicle listings from your dashboard, where you can update details, adjust pricing, and manage with ease.</p>
                 </div>
               </div>
 
