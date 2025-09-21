@@ -24,7 +24,7 @@ export default function UsresProfile() {
             <div className="flex flex-col items-start justify-center border border-[#E4E4E4] rounded-[14px] p-5 md:py-8 md:px-12">
               <div className="flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-start gap-8 md:gap-0 bg-white w-full max-w-[1280px]">
 
-                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row md:items-center justify-start items-start md:gap-12">
+                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row md:items-start justify-start items-start md:gap-10">
                   <div className="flex flex-col items-start gap-4 self-stretch w-full md:w-[70%] mr-0 md:mr-0 pl-2 md:pl-0 md:justify-start">
                     <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-full">Get Started with Carzino</h1>
                     <div className="flex flex-col items-start gap-4">
