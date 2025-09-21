@@ -130,7 +130,7 @@ export default function UsresProfile() {
             <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
               <h2 className="text-2xl font-medium text-[#24272C] font-albert">Enter your Details</h2>
 
-              <div className="w-full border border-[#E6E6E6] focus-within:border-[#E82121] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.225),0_1px_3px_1px_rgba(0,0,0,0.1125)]">
+              <div className="w-full border border-[#E6E6E6] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.225),0_1px_3px_1px_rgba(0,0,0,0.1125)]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full">
 
                   {/* Seller or dealer name */}
