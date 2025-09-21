@@ -34,7 +34,7 @@ export default function Dashboard() {
             </div>
 
             {/* View listings */}
-            <div className="flex flex-col justify-between gap-4 p-5 rounded-2xl bg-white border border-[#EDEDED]">
+            <div className="flex flex-col justify-between gap-4 p-5 rounded-2xl bg-white border border-[#CCCCCC]">
               <div className="flex items-start gap-4">
                 <div>
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C]">Your listings</h2>
@@ -56,7 +56,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Help Center */}
-            <div className="flex flex-col justify-center rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-center rounded-2xl bg-white border border-[#CCCCCC]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
@@ -68,7 +68,7 @@ export default function Dashboard() {
             </div>
 
             {/* Featured Credits */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#CCCCCC]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div style={{marginBottom: '-3px'}}>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
@@ -79,7 +79,7 @@ export default function Dashboard() {
             </div>
 
             {/* Messages */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#CCCCCC]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M10.21 11.34" fill="#E82121"/></svg>
@@ -93,7 +93,7 @@ export default function Dashboard() {
             </div>
 
             {/* Profile Settings */}
-            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-between rounded-2xl bg-white border border-[#CCCCCC]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', justifyContent: 'center', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M41.25 26.34" fill="#E82121"/></svg>
