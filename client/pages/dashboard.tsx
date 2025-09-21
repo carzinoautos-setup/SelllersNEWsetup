@@ -56,15 +56,15 @@ export default function Dashboard() {
           <div style={{display: 'grid', fontWeight: '400', gap: '24px', gridTemplate: 'none / repeat(4, minmax(0px, 1fr))'}}>
 
             {/* Help Center */}
-            <div className="flex flex-col justify-center items-center rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'center', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
+            <div className="flex flex-col justify-center rounded-2xl bg-white border border-[#EDEDED]" style={{boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)', alignItems: 'flex-start', height: 'auto', flexGrow: '0', padding: '10px 11px 10px 12px'}} >
               <div className="flex items-start gap-4">
                 <div>
                   <h3 className="text-lg font-medium text-[#24272C]">Help Center</h3>
                   <p className="text-sm text-[#696665] mt-2">Get quick answers, helpful guides, and expert support whenever you need assistance using Carzino.</p>
                 </div>
               </div>
-              <div style={{width: '80%', margin: '16px auto 0'}}>
-                <button className="w-full px-4 py-3 border border-black text-[#E82121] bg-transparent rounded-lg text-sm font-medium">Help Center</button>
+              <div style={{fontWeight: '400', width: '80%', display: 'flex', flexDirection: 'column', margin: '16px auto 0'}}>
+                <div style={{display: 'inline-block', borderColor: 'rgb(0, 0, 0)', borderRadius: '14px', borderWidth: '0.8px', color: 'rgb(232, 33, 33)', fontSize: '14px', fontWeight: '500', lineHeight: '20px', textDecoration: 'rgb(232, 33, 33)', width: '100%', backgroundColor: 'rgba(0, 0, 0, 0)', marginRight: 'auto', padding: '12px 10px'}}>Help Center</div>
               </div>
             </div>
 
