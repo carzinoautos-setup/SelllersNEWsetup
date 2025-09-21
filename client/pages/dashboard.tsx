@@ -88,7 +88,7 @@ export default function Dashboard() {
             </div>
 
             {/* Messages */}
-            <div className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#EDEDED]">
+            <div className="flex flex-col justify-between gap-5 pt-6 pr-2 pb-6 pl-2 rounded-2xl bg-white border border-[#EDEDED]">
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14">
                   <svg className="w-full h-full" viewBox="0 0 60 60"><path d="M10.21 11.34" fill="#E82121"/></svg>
@@ -98,8 +98,8 @@ export default function Dashboard() {
                   <p className="text-sm text-[#696665] mt-2">Stay connected with potential buyers and sellers through secure, real-time messaging in your dashboard.</p>
                 </div>
               </div>
-              <div className="mt-4">
-                <button className="w-full sm:w-[204px] px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">View Messages</button>
+              <div className="mt-4 flex flex-col items-center">
+                <button className="w-full max-w-[80%] px-4 py-3 border border-black text-[#E82121] rounded-lg text-sm font-medium">View Messages</button>
               </div>
             </div>
 
