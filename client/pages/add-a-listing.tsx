@@ -340,7 +340,7 @@ export default function AddAListingPage() {
               </h2>
 
               <div className="bg-white border border-[#B2B2B2] rounded-2xl p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
 
                   {/* Convenience Column */}
                   <div className="space-y-4">
@@ -351,7 +351,7 @@ export default function AddAListingPage() {
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Navigation System</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Navigation System</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -360,42 +360,42 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Remote Start</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Remote Start</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Keyless Entry</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Keyless Entry</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Hands-Free</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Hands-Free</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Power Folding Side Mirrors</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Power Folding Side Mirrors</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Rain-Sensing Wipers</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Rain-Sensing Wipers</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Homelink</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Homelink</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Split-Folding Rear Seats</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Split-Folding Rear Seats</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Adjustable Steering Column</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Adjustable Steering Column</span>
                       </label>
                     </div>
                   </div>
@@ -408,7 +408,7 @@ export default function AddAListingPage() {
                     <div className="space-y-4">
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Apple CarPlay/Android Auto</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Apple CarPlay/Android Auto</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -417,47 +417,47 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Bluetooth</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Bluetooth</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Touchscreen Display</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Touchscreen Display</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Wireless Phone Connectivity</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Wireless Phone Connectivity</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Rear Seat Entertainment Screens</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Rear Seat Entertainment Screens</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">DVD Player</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">DVD Player</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Premium Sound System</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Premium Sound System</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Steering Wheel Audio Controls</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Steering Wheel Audio Controls</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Wi-Fi Hotspot Capability</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Wi-Fi Hotspot Capability</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Voice Command System</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Voice Command System</span>
                       </label>
                     </div>
                   </div>
@@ -470,7 +470,7 @@ export default function AddAListingPage() {
                     <div className="space-y-4">
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Airbags</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Airbags</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -479,47 +479,47 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Airbag - Passenger</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Airbag - Passenger</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Anti-lock Braking System</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Anti-lock Braking System</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Backup Camera</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Backup Camera</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Lane Departure Warning</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Lane Departure Warning</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Adaptive Cruise Control</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Adaptive Cruise Control</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Parking Sensors</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Parking Sensors</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Automatic High Beams</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Automatic High Beams</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Tire Pressure Monitoring System</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Tire Pressure Monitoring System</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Electronic Stability Control</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Electronic Stability Control</span>
                       </label>
                     </div>
                   </div>
@@ -532,7 +532,7 @@ export default function AddAListingPage() {
                     <div className="space-y-4">
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Leather Seats</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Leather Seats</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -541,47 +541,47 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Heated Seats</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Heated Seats</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Sunroof/Panoramic Roof</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Sunroof/Panoramic Roof</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Heated Steering Wheel</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Heated Steering Wheel</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Touchscreen Display</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Touchscreen Display</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Ventilated/Cooled Seats</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Ventilated/Cooled Seats</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Memory Driver Seat Settings</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Memory Driver Seat Settings</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Ambient Interior Lighting</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Ambient Interior Lighting</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Rubber Flooring</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Rubber Flooring</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Wood or Aluminum Trim</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Wood or Aluminum Trim</span>
                       </label>
                     </div>
                   </div>
@@ -594,7 +594,7 @@ export default function AddAListingPage() {
                     <div className="space-y-4">
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Alloy Wheels</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Alloy Wheels</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -603,47 +603,47 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">LED Headlights</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">LED Headlights</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Fog Lights</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Fog Lights</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Roof Rack</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Roof Rack</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Tinted Windows</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Tinted Windows</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Power Tailgate</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Power Tailgate</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Tow Hitch/Towing Package</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Tow Hitch/Towing Package</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Running Boards</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Running Boards</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Body Kit/Sport Package</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Body Kit/Sport Package</span>
                       </label>
 
                       <label className="flex items-center gap-2.5 cursor-pointer">
                         <div className="w-5 h-5 rounded border border-[#B2B2B2] bg-white"></div>
-                        <span className="text-[15px] text-[#050B20] font-dm leading-[35px]">Rear Spoiler</span>
+                        <span className="flex-1 text-sm text-[#050B20] font-dm leading-5 break-words">Rear Spoiler</span>
                       </label>
                     </div>
                   </div>
