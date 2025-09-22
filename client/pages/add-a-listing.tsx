@@ -97,7 +97,7 @@ export default function AddAListingPage() {
               </div>
 
               {/* Form Container */}
-              <div className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-8 opacity-[0.63] shadow-[0_1px_2px_0_rgba(0,0,0,0.30),0_1px_3px_1px_rgba(0,0,0,0.15)]">
+              <div className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-8 opacity-[0.63]">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
                   {/* Vin# Input */}
