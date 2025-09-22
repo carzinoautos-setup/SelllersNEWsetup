@@ -638,6 +638,241 @@ export default function UsresProfile() {
                 </div>
               </div>
             </div>
+
+            {/* Dealership Information Form (copied styling from Enter your Details) */}
+            <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
+              <div className="-mt-[3px] w-full border border-[#E6E6E6] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.225),0_1px_3px_1px_rgba(0,0,0,0.1125)]">
+                <div className="text-[20px] font-semibold text-[#24272C] mb-3">
+                  Dealership Information
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full py-[20px]">
+
+                  {/* Do you sell new or used vehicles? */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Do you sell new or used vehicles?
+                      </label>
+                      <select className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none">
+                        <option value="">Select an option</option>
+                        <option value="new">New vehicles</option>
+                        <option value="used">Used vehicles</option>
+                        <option value="both">Both new and used</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Dealership website */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Dealership website
+                      </label>
+                      <input
+                        type="url"
+                        placeholder="Enter your website URL"
+                        data-placeholder="Enter your website URL"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Website provider information */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Website provider information
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your inventory provider"
+                        data-placeholder="Enter your inventory provider"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* XML or CSV vehicle Feed url */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        XML or CSV vehicle Feed url
+                      </label>
+                      <input
+                        type="url"
+                        placeholder="Enter feed URL"
+                        data-placeholder="Enter feed URL"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email lead alerts user 1 */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Email lead alerts user 1
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="Enter an additional alert email address"
+                        data-placeholder="Enter an additional alert email address"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email lead alerts user 2 */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Email lead alerts user 2
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="Enter an additional alert email address"
+                        data-placeholder="Enter an additional alert email address"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Email lead alerts user 3 */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Email lead alerts user 3
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="Enter an additional alert email address"
+                        data-placeholder="Enter an additional alert email address"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Dealerships CRM provider */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Dealerships CRM provider
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your Crm provider"
+                        data-placeholder="Enter your Crm provider"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* CRM Account # */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        CRM Account #
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your Crm account #"
+                        data-placeholder="Enter your Crm account #"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Dealerships CRM email */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Dealerships CRM email
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="Enter your Crm alert email address"
+                        data-placeholder="Enter your Crm alert email address"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
