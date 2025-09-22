@@ -11,12 +11,6 @@ export default function YourListingsPage() {
             <p className="text-sm text-[#6B6B6B] mt-2">Manage and edit your vehicle listings here.</p>
           </div>
 
-          <section className="w-full bg-white border border-[#E6E6E6] rounded-2xl p-6">
-            <div className="text-sm text-[#242727] mb-4">Editable canvas</div>
-            <div className="min-h-[360px] w-full rounded-lg border-dashed border-2 border-[#E6E6E6] bg-transparent flex items-center justify-center">
-              <div className="text-muted text-sm text-[#8B8B8B]">Add listing cards or a table here to show user listings.</div>
-            </div>
-          </section>
 
           {/* Product-style Listing Page */}
           <section className="w-full mt-8">
