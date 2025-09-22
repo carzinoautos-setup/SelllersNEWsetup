@@ -10,12 +10,7 @@ export default function ResetPage() {
             <p className="text-sm text-[#696665]">Design canvas for the Reset page. Add components or content here.</p>
           </header>
 
-          <main>
-            <div className="w-full bg-white border border-[#E6E6E6] rounded-2xl p-6 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
-              <div className="text-sm text-[#24272C] mb-4">Editable canvas</div>
-              <div className="min-h-[360px] w-full rounded-lg border-dashed border-2 border-[#E6E6E6] bg-transparent" />
-            </div>
-          </main>
+          <main />
         </div>
       </div>
     </DashboardLayout>
