@@ -18,7 +18,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Billing", icon: CurrencyDollarIcon, active: false, path: "/billing" },
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Reset", icon: EditIcon, active: false, path: "/reset" },
-    { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
   ];
 
