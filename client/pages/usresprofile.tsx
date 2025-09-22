@@ -873,6 +873,193 @@ export default function UsresProfile() {
               </div>
             </div>
 
+            {/* Billing Information Form (copied styling from Enter your Details) */}
+            <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
+              <div className="-mt-[3px] w-full border border-[#E6E6E6] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.225),0_1px_3px_1px_rgba(0,0,0,0.1125)]">
+                <div className="text-[20px] font-semibold text-[#24272C] mb-3">
+                  Billing Information
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full py-[20px]">
+
+                  {/* Billing contact */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Billing contact
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your full name"
+                        data-placeholder="Enter your full name"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Street address */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Street address
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your street address"
+                        data-placeholder="Enter your street address"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Zip code */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Zip code
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your zip code"
+                        data-placeholder="Enter your zip code"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Billing phone */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Billing phone
+                      </label>
+                      <input
+                        type="tel"
+                        placeholder="Enter your phone number"
+                        data-placeholder="Enter your phone number"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* City */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        City
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your city"
+                        data-placeholder="Enter your city"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Country */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Country
+                      </label>
+                      <select className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none">
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Billing email address */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        Billing email address
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="Billing email"
+                        data-placeholder="Billing email"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* State */}
+                  <div className="flex flex-col">
+                    <div className="relative w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] flex flex-col justify-start">
+                      <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
+                        State
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your state"
+                        data-placeholder="Enter your state"
+                        onFocus={(e) => {
+                          e.currentTarget.placeholder = "";
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.placeholder =
+                            e.currentTarget.getAttribute("data-placeholder") ||
+                            "";
+                        }}
+                        className="text-[15px] text-[#050B20] font-dm bg-transparent outline-none border-none placeholder:text-gray-300"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
