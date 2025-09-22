@@ -13,9 +13,9 @@ export default function AddAListingPage() {
           {/* VIN Entry Form - Responsive */}
           <section className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-4 sm:p-6 lg:p-8 mb-8">
             <div className="max-w-[1200px] mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-6 lg:gap-12 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-12 items-center">
                 {/* Left: Text + Form */}
-                <div className="order-1 lg:order-1">
+                <div className="order-1 md:order-1 md:col-span-8">
                   <div className="space-y-4">
                     <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold text-[#222] leading-tight">
                       Start by entering your vehicles vin number
@@ -30,7 +30,7 @@ export default function AddAListingPage() {
                   <div className="h-px bg-[#E5E7EB] my-4" />
 
                   <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <label className="block">
                         <span className="text-[13px] text-[#818181]">Year</span>
                         <input
@@ -52,17 +52,17 @@ export default function AddAListingPage() {
                       </label>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <div className="flex flex-col md:flex-row gap-3 md:gap-4">
                       <button
                         type="submit"
-                        className="w-full sm:w-auto flex-1 sm:flex-none px-6 py-3 bg-[#CF0D0D] text-white rounded-xl text-[15px] font-medium hover:bg-[#B10B0B] transition-colors"
+                        className="w-full md:w-auto flex-1 md:flex-none px-6 py-3 bg-[#CF0D0D] text-white rounded-xl text-[15px] font-medium hover:bg-[#B10B0B] transition-colors"
                       >
                         Next
                       </button>
 
                       <button
                         type="button"
-                        className="w-full sm:w-auto flex-1 sm:flex-none px-6 py-3 bg-[#1E1E1E] text-white rounded-xl text-[15px] font-medium hover:bg-[#2A2A2A] transition-colors border border-[#CF0D0D]"
+                        className="w-full md:w-auto flex-1 md:flex-none px-6 py-3 bg-[#1E1E1E] text-white rounded-xl text-[15px] font-medium hover:bg-[#2A2A2A] transition-colors border border-[#CF0D0D]"
                       >
                         Skip
                       </button>
@@ -71,7 +71,7 @@ export default function AddAListingPage() {
                 </div>
 
                 {/* Right: Image */}
-                <div className="order-2 lg:order-2 flex justify-center lg:justify-end">
+                <div className="order-2 md:order-2 md:col-span-4 flex justify-center md:justify-end">
                   <div className="w-full max-w-[520px]">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/b0bb87b082abcee51435cb3c6f2e227c5265b92f?width=998"
