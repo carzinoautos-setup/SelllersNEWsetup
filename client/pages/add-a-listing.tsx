@@ -16,11 +16,11 @@ export default function AddAListingPage() {
                     <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold text-[#222] leading-tight">
                       Start by entering the vin number
                     </h2>
-                    <p className="text-[14px] text-[#222] leading-6 mt-4">
-                      How do I find the VIN number for my car?
-                      <br />
-                      Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle. The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets the edge of the windshield on the driver's side.
-                    </p>
+                    <div className="pt-5">
+                      <p className="text-[14px] text-[#222] leading-4">
+                        How do I find the VIN number for my car? Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle. The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets the edge of the windshield on the driver's side.
+                      </p>
+                    </div>
                   </div>
 
                   <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
