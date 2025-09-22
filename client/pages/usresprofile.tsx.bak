@@ -1,0 +1,156 @@
+import { useEffect, useState } from "react";
+import { DashboardLayout } from "../components/DashboardLayout";
+
+export function UsersProfileCard() {
+  const [sellerName, setSellerName] = useState("");
+  const [city, setCity] = useState("");
+  const [stateVal, setStateVal] = useState("");
+  const [zip, setZip] = useState("");
+  const [emailLead, setEmailLead] = useState("");
+  const [accountEmail, setAccountEmail] = useState("");
+  const [listPhone, setListPhone] = useState(true);
+  const [sellerPhone, setSellerPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [longitude, setLongitude] = useState("");
+  const [latitude, setLatitude] = useState("");
+
+  // Price & Color stub fields (kept from previous UI)
+  const [bodyType, setBodyType] = useState("");
+  const [doors, setDoors] = useState("");
+  const [transmission, setTransmission] = useState("");
+  const [cylinders, setCylinders] = useState("");
+  const [engineSize, setEngineSize] = useState("");
+  const [fuelType, setFuelType] = useState("");
+
+  // Persist to localStorage so user work is not lost during edits
+  useEffect(() => {
+    const saved = localStorage.getItem("usresprofile.draft");
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        setSellerName(data.sellerName || "");
+        setCity(data.city || "");
+        setStateVal(data.stateVal || "");
+        setZip(data.zip || "");
+        setEmailLead(data.emailLead || "");
+        setAccountEmail(data.accountEmail || "");
+        setListPhone(typeof data.listPhone === 'boolean' ? data.listPhone : true);
+        setSellerPhone(data.sellerPhone || "");
+        setAddress(data.address || "");
+        setLongitude(data.longitude || "");
+        setLatitude(data.latitude || "");
+        setBodyType(data.bodyType || "");
+        setDoors(data.doors || "");
+        setTransmission(data.transmission || "");
+        setCylinders(data.cylinders || "");
+        setEngineSize(data.engineSize || "");
+        setFuelType(data.fuelType || "");
+      } catch (e) {
+        console.warn("Failed to parse usresprofile draft:", e);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    const data = {
+      sellerName,
+      city,
+      stateVal,
+      zip,
+      emailLead,
+      accountEmail,
+      listPhone,
+      sellerPhone,
+      address,
+      longitude,
+      latitude,
+      bodyType,
+      doors,
+      transmission,
+      cylinders,
+      engineSize,
+      fuelType,
+    };
+    localStorage.setItem("usresprofile.draft", JSON.stringify(data));
+  }, [sellerName, city, stateVal, zip, emailLead, accountEmail, listPhone, sellerPhone, address, longitude, latitude, bodyType, doors, transmission, cylinders, engineSize, fuelType]);
+
+  const handleSave = () => {
+    // stub: here we would send to backend. For now persist is in localStorage already
+    alert("Profile saved locally. Connect to backend to persist permanently.");
+  };
+
+  const handleReset = () => {
+    localStorage.removeItem("usresprofile.draft");
+    setSellerName("");
+    setCity("");
+    setStateVal("");
+    setZip("");
+    setEmailLead("");
+    setAccountEmail("");
+    setListPhone(true);
+    setSellerPhone("");
+    setAddress("");
+    setLongitude("");
+    setLatitude("");
+    setBodyType("");
+    setDoors("");
+    setTransmission("");
+    setCylinders("");
+    setEngineSize("");
+    setFuelType("");
+  };
+
+  return (
+    <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 shadow-sm mt-8">
+        <div className="text-[20px] font-semibold text-[#24272C] mb-4">Enter your Details</div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full py-5">
+          <div>
+            <label className="block relative">
+              <span className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Seller or dealer name</span>
+              <input
+                value={sellerName}
+                onChange={(e) => setSellerName(e.target.value)}
+                type="text"
+                placeholder="Enter your full name"
+                className="mt-1 w-full h-[60px] rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121]"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label className="block relative">
+              <span className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">City</span>
+              <input
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+                type="text"
+                placeholder="City"
+                className="mt-1 w-full h-[60px] rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#24272C] bg-white outline-none focus:border-[#E82121]"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label className="block relative">
+              <span className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">State</span>
+              <input
+                value={stateVal}
+                onChange={(e) => setStateVal(e.target.value)}
+                type="text"
+                placeholder="Enter your state"
+                className="mt-1 w-full h-[60px] rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121]"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label className="block relative">
+              <span className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Zip code</span>
+              <input
+                value={zip}
+                onChange={(e) => setZip(e.target.value)}
+                type="text"
+                placeholder="Zip code"
+{
