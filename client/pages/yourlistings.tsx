@@ -92,7 +92,7 @@ export default function YourListingsPage() {
                   <div className="flex flex-col gap-5">
                     {/* Title Section */}
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-[#24272C] font-outfit text-[12px] font-medium">
+                      <h3 className="text-[#24272C] font-outfit text-[16px] font-medium">
                         2017 BMW X1 xDrive 20d xline
                       </h3>
 
