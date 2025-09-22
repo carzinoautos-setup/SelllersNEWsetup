@@ -639,7 +639,7 @@ export default function UsresProfile() {
               </div>
             </div>
 
-            {/* Dealership Information Form (copied styling from Enter your Details) */}
+            {accountType === "Dealer" && (
             <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
               <div className="-mt-[3px] w-full border border-[#E6E6E6] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.225),0_1px_3px_1px_rgba(0,0,0,0.1125)]">
                 <div className="text-[20px] font-semibold text-[#24272C] mb-3">
@@ -872,6 +872,8 @@ export default function UsresProfile() {
                 </div>
               </div>
             </div>
+
+            )}
 
             {/* Billing Information Form (copied styling from Enter your Details) */}
             <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
