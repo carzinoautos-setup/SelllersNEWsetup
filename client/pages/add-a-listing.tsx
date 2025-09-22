@@ -31,7 +31,7 @@ export default function AddAListingPage() {
                           aria-label="Year"
                           type="text"
                           placeholder="Select Year"
-                          className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none"
+                          className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                         />
                       </label>
 
@@ -41,7 +41,7 @@ export default function AddAListingPage() {
                           aria-label="Make"
                           type="text"
                           placeholder="Select Make"
-                          className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none"
+                          className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                         />
                       </label>
                     </div>
@@ -239,7 +239,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Cylinders</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Select Cylinders"
                   />
@@ -249,7 +249,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Vin#</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Enter Vin#"
                   />
@@ -347,7 +347,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Trim</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Select Trim"
                   />
@@ -401,7 +401,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Stock #</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Enter Stock #"
                   />
@@ -411,7 +411,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Is certified</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Select one"
                   />
@@ -421,7 +421,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Engine Type</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Enter engine type"
                   />
@@ -431,7 +431,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Listing Status</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Select Listing status"
                   />
@@ -441,7 +441,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Mileage</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Enter Miles"
                   />
@@ -451,7 +451,7 @@ export default function AddAListingPage() {
                 <div className="relative group">
                   <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Engine Size (Liters)</label>
                   <input
-                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] focus:border-[#E82121] focus:ring-0"
                     type="text"
                     placeholder="Enter engine size"
                   />
