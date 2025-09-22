@@ -71,7 +71,7 @@ export default function YourListingsPage() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F26b403a6c1f44d639c47c66a589e743d?format=webp"
                     alt="2017 BMW X1 xDrive 20d xline"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                   <input
                     type="file"
