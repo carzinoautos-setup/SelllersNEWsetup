@@ -155,8 +155,8 @@ export default function YourListingsPage() {
                     </div>
 
                     {/* Featured Button */}
-                    <button className="px-2.5 py-2.5 rounded-xl border border-[#E82121] bg-white hover:bg-red-50 transition-colors">
-                      <span className="text-black font-albert text-[12px] font-medium">Featured</span>
+                    <button className={`px-2.5 py-2.5 rounded-xl border border-[#E82121] transition-colors ${index === 0 ? 'bg-[#E82121]' : 'bg-white hover:bg-red-50'}`}>
+                      <span className={`${index === 0 ? 'text-white' : 'text-black'} font-albert text-[12px] font-medium`}>Featured</span>
                     </button>
                   </div>
                 </div>
