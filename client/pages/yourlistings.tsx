@@ -67,7 +67,7 @@ export default function YourListingsPage() {
             {Array.from({ length: 8 }).map((_, index) => (
               <div key={index} className="flex flex-col bg-white rounded-2xl shadow-sm border border-[#EDEDED] overflow-hidden">
                 {/* Car Image */}
-                <label className="relative h-[261px] bg-gray-200 rounded-t-2xl overflow-hidden cursor-pointer">
+                <label className="relative h-[156px] bg-gray-200 rounded-t-2xl overflow-hidden cursor-pointer">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F26b403a6c1f44d639c47c66a589e743d?format=webp"
                     alt="2017 BMW X1 xDrive 20d xline"
