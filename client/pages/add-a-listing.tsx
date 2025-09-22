@@ -208,13 +208,6 @@ export default function AddAListingPage() {
             </div>
           </section>
 
-          <main>
-            {/* Placeholder for Add a Listing content */}
-            <div className="w-full bg-white border border-[#E6E6E6] rounded-2xl p-6 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
-              <div className="text-sm text-[#242727] mb-4">Editable canvas</div>
-              <div className="min-h-[360px] w-full rounded-lg border-dashed border-2 border-[#E6E6E6] bg-transparent" />
-            </div>
-          </main>
         </div>
       </div>
     </DashboardLayout>
