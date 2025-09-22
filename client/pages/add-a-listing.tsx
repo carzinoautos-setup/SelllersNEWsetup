@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useState } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
+import { UsersProfileCard } from "./usresprofile";
 
 export default function AddAListingPage() {
   const [openSections, setOpenSections] = useState({ convenience: false, entertainment: false, safety: false, interior: false, exterior: false });
@@ -856,6 +858,8 @@ export default function AddAListingPage() {
               </div>
             </div>
           </section>
+
+          <UsersProfileCard />
 
         </div>
       </div>
