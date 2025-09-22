@@ -202,7 +202,7 @@ export default function UsresProfile() {
                     <div className="w-full bg-transparent md:bg-white md:border md:border-[#E4E4E4] rounded-[14px] md:pt-5 md:px-4 md:pb-4 p-0 -mt-5 pb-[5px] md:-mt-1 flex flex-row md:flex-col items-center md:items-start justify-center gap-4 md:gap-2">
                       <div className="relative flex-shrink-0">
                         <div className="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full overflow-hidden flex items-start justify-start md:block">
-                          <img src="/placeholder.svg" alt="Profile" className="w-full h-full object-cover" />
+                          <img src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d" alt="Profile" className="w-full h-full object-cover" />
                         </div>
 
                         <div className="absolute -right-1 md:-right-1 -bottom-1 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center">
