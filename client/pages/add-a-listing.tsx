@@ -10,79 +10,79 @@ export default function AddAListingPage() {
             <p className="text-sm text-[#696665]">Design canvas for the Add a Listing page. Add components or content here.</p>
           </header>
 
-          {/* VIN Entry Form */}
-          <div className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-6 lg:p-8 mb-8">
-            <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
-              {/* Left Content */}
-              <div className="flex-1 space-y-6">
-                {/* Heading & Description */}
-                <div className="space-y-4">
-                  <h2 className="text-2xl lg:text-[32px] font-bold text-[#222] leading-normal">
-                    Start by entering your vehicles vin number
-                  </h2>
-                  <p className="text-[15px] text-[#222] leading-7">
-                    How do I find the VIN number for my car?<br />
-                    Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle. The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets the edge of the windshield on the driver's side.
-                  </p>
-                </div>
+          {/* VIN Entry Form - Responsive */}
+          <section className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-4 sm:p-6 lg:p-8 mb-8">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                {/* Left: Text + Form */}
+                <div className="order-1 lg:order-1">
+                  <div className="space-y-4">
+                    <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold text-[#222] leading-tight">
+                      Start by entering your vehicles vin number
+                    </h2>
+                    <p className="text-sm sm:text-[15px] text-[#222] leading-7">
+                      How do I find the VIN number for my car?
+                      <br />
+                      Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle. The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets the edge of the windshield on the driver's side.
+                    </p>
+                  </div>
 
-                {/* Separator */}
-                <div className="h-px bg-[#E5E7EB]"></div>
+                  <div className="h-px bg-[#E5E7EB] my-4" />
 
-                {/* Form Controls */}
-                <div className="space-y-4">
-                  {/* Input Fields */}
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="w-full sm:w-[216px]">
-                      <div className="relative bg-white border border-[#E1E1E1] rounded-xl h-[60px] px-4 py-2.5">
-                        <label className="block text-[13px] text-[#818181] font-normal">
-                          Year
-                        </label>
+                  <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <label className="block">
+                        <span className="text-[13px] text-[#818181]">Year</span>
                         <input
+                          aria-label="Year"
                           type="text"
                           placeholder="Select Year"
-                          className="w-full text-[15px] text-[#050B20] font-normal bg-transparent border-none outline-none mt-1"
+                          className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none"
                         />
-                      </div>
-                    </div>
-                    <div className="w-full sm:w-[216px]">
-                      <div className="relative bg-white border border-[#E1E1E1] rounded-xl h-[60px] px-4 py-2.5">
-                        <label className="block text-[13px] text-[#818181] font-normal">
-                          Make
-                        </label>
+                      </label>
+
+                      <label className="block">
+                        <span className="text-[13px] text-[#818181]">Make</span>
                         <input
+                          aria-label="Make"
                           type="text"
                           placeholder="Select Make"
-                          className="w-full text-[15px] text-[#050B20] font-normal bg-transparent border-none outline-none mt-1"
+                          className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none"
                         />
-                      </div>
+                      </label>
                     </div>
-                  </div>
 
-                  {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 pt-1">
-                    <button className="flex justify-center items-center px-6 py-5 bg-[#CF0D0D] border border-[#CF0D0D] rounded-xl text-white text-[15px] font-medium min-w-[161px] hover:bg-[#B10B0B] transition-colors">
-                      Next
-                    </button>
-                    <button className="flex justify-center items-center px-6 py-5 bg-[#1E1E1E] border border-[#CF0D0D] rounded-xl text-white text-[15px] font-medium min-w-[161px] hover:bg-[#2A2A2A] transition-colors">
-                      Skip
-                    </button>
-                  </div>
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                      <button
+                        type="submit"
+                        className="w-full sm:w-auto flex-1 sm:flex-none px-6 py-3 bg-[#CF0D0D] text-white rounded-xl text-[15px] font-medium hover:bg-[#B10B0B] transition-colors"
+                      >
+                        Next
+                      </button>
+
+                      <button
+                        type="button"
+                        className="w-full sm:w-auto flex-1 sm:flex-none px-6 py-3 bg-[#1E1E1E] text-white rounded-xl text-[15px] font-medium hover:bg-[#2A2A2A] transition-colors border border-[#CF0D0D]"
+                      >
+                        Skip
+                      </button>
+                    </div>
+                  </form>
                 </div>
-              </div>
 
-              {/* Right Image */}
-              <div className="flex-shrink-0 lg:w-[573px]">
-                <div className="p-2.5">
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/b0bb87b082abcee51435cb3c6f2e227c5265b92f?width=998"
-                    alt="Vehicle listing preview"
-                    className="w-full h-auto max-w-[499px] mx-auto"
-                  />
+                {/* Right: Image */}
+                <div className="order-2 lg:order-2 flex justify-center lg:justify-end">
+                  <div className="w-full max-w-[520px]">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/b0bb87b082abcee51435cb3c6f2e227c5265b92f?width=998"
+                      alt="Vehicle listing preview"
+                      className="w-full h-auto object-contain rounded-md"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <main>
             {/* Placeholder for Add a Listing content */}
