@@ -23,8 +23,6 @@ export default function AddAListingPage() {
                     </p>
                   </div>
 
-                  <div className="h-px bg-[#E5E7EB] my-4" />
-
                   <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <label className="block">
