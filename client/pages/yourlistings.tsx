@@ -123,6 +123,13 @@ export default function YourListingsPage() {
                             Listed: 12-12-25
                           </span>
                         </div>
+
+                        {/* Seller Account Row */}
+                        <div className="flex items-center gap-2.5">
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
+                            Seller account #  here
+                          </span>
+                        </div>
                       </div>
                     </div>
 
