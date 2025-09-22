@@ -8,14 +8,50 @@ import { Link } from "react-router-dom";
 
 export function DashboardSidebar({ className }: SidebarProps) {
   const menuItems = [
-    { name: "Dashboard", icon: DashboardIcon, active: false, path: "/dashboard" },
-    { name: "Add a listing", icon: EditIcon, active: false, path: "/add-listing" },
+    {
+      name: "Dashboard",
+      icon: DashboardIcon,
+      active: false,
+      path: "/dashboard",
+    },
+    {
+      name: "Add a listing",
+      icon: EditIcon,
+      active: false,
+      path: "/add-listing",
+    },
     { name: "Your Listings", icon: MailIcon, active: true, path: "/listings" },
-    { name: "Buy Credits (2)", icon: CoinsIcon, active: false, path: "/credits" },
-    { name: "Messages", icon: MessageIcon, active: false, badge: "7", path: "/messages" },
-    { name: "Account Settings", icon: SettingsIcon, active: false, path: "/settings" },
-    { name: "Add your Payment", icon: BankIcon, active: false, path: "/payments" },
-    { name: "Billing", icon: CurrencyDollarIcon, active: false, path: "/billing" },
+    {
+      name: "Buy Credits (2)",
+      icon: CoinsIcon,
+      active: false,
+      path: "/credits",
+    },
+    {
+      name: "Messages",
+      icon: MessageIcon,
+      active: false,
+      badge: "7",
+      path: "/messages",
+    },
+    {
+      name: "Account Settings",
+      icon: SettingsIcon,
+      active: false,
+      path: "/settings",
+    },
+    {
+      name: "Add your Payment",
+      icon: BankIcon,
+      active: false,
+      path: "/payments",
+    },
+    {
+      name: "Billing",
+      icon: CurrencyDollarIcon,
+      active: false,
+      path: "/billing",
+    },
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Reset", icon: EditIcon, active: false, path: "/reset" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
@@ -169,7 +205,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
           <div className="space-y-2 px-2">
             {menuItems.map((item, index) => (
               <Link
-                to={item.path || '#'}
+                to={item.path || "#"}
                 key={index}
                 className={cn(
                   "flex items-center gap-3 px-4 py-2 rounded-[10px] transition-colors overflow-hidden",
