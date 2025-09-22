@@ -78,6 +78,136 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          <section className="w-full bg-white border border-[#E6E6E6] rounded-lg p-6 mb-8">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-lg font-semibold text-[#24272C] mb-4">Enter your Details</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Seller or dealer name */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Seller or dealer name</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="Enter your full name"
+                    aria-label="Seller or dealer name"
+                  />
+                </div>
+
+                {/* City */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">City</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="City"
+                    aria-label="City"
+                  />
+                </div>
+
+                {/* State */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">State</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="Enter your state"
+                    aria-label="State"
+                  />
+                </div>
+
+                {/* Zip code */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Zip code</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="Zip code"
+                    aria-label="Zip code"
+                  />
+                </div>
+
+                {/* Email lead alert address */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Email lead alert address</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="email"
+                    placeholder="Email address"
+                    aria-label="Email lead alert address"
+                  />
+                </div>
+
+                {/* Account holder email Address */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Account holder email Address</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="email"
+                    placeholder="Enter your email address"
+                    aria-label="Account holder email Address"
+                  />
+                </div>
+
+                {/* List your phone# on ads (toggle-like) */}
+                <div className="relative md:col-span-3">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">List your phone# on ads</label>
+                  <button type="button" className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 flex items-center justify-between">
+                    <span className="text-[15px]">Yes</span>
+                    <span className="flex items-center gap-2">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      <svg width="12" height="12" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.87 2.53C9.69 2.34 9.39 2.33 9.2 2.51L5 6.49 0.8 2.51C0.61 2.33 0.31 2.34 0.13 2.53C-0.05 2.72 -0.04 3.02 0.15 3.2L4.67 7.49C4.76 7.57 4.88 7.62 5 7.62C5.12 7.62 5.24 7.57 5.33 7.49L9.85 3.2C10.04 3.02 10.05 2.72 9.87 2.53Z" fill="#E82121" stroke="#E82121"/></svg>
+                    </span>
+                  </button>
+                </div>
+
+                {/* Seller Phone */}
+                <div className="relative md:col-span-2">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Seller Phone</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="tel"
+                    placeholder=""
+                    aria-label="Seller Phone"
+                  />
+                </div>
+
+                {/* Address (full width) */}
+                <div className="relative md:col-span-3">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Enter your address and then select from the choices.</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="Enter address"
+                    aria-label="Address"
+                  />
+                </div>
+
+                {/* Longitude */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Longitude</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="Longitude"
+                    aria-label="Longitude"
+                  />
+                </div>
+
+                {/* Latitude */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Latitude</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E6E6E6] px-4 text-[15px]"
+                    type="text"
+                    placeholder="Latitude"
+                    aria-label="Latitude"
+                  />
+                </div>
+
+              </div>
+            </div>
+          </section>
+
           <main>
             {/* Placeholder for Add a Listing content */}
             <div className="w-full bg-white border border-[#E6E6E6] rounded-2xl p-6 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
