@@ -89,7 +89,7 @@ export default function YourListingsPage() {
                 {/* Card Content */}
                 <div className="p-4 flex flex-col gap-5">
                   {/* Main Content */}
-                  <div className="flex flex-col gap-5">
+                  <div className="flex flex-col gap-1.5">
                     {/* Title Section */}
                     <div className="flex flex-col gap-2">
                       <h3 className="text-[#24272C] font-outfit text-[16px] font-medium">
@@ -98,7 +98,13 @@ export default function YourListingsPage() {
 
                       {/* Details Rows */}
                       <div className="flex flex-col gap-0">
-                        {/* First Row */}
+                        {/* Price & Stock Row */}
+                        <div className="flex items-center gap-2.5">
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]"><b>Price:</b> $72,000</span>
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]"><strong>Stock#:&nbsp;</strong><span>K5866</span></span>
+                        </div>
+
+                        {/* Condition & Type Row */}
                         <div className="flex items-center gap-2.5">
                           <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Condition: New
@@ -108,24 +114,18 @@ export default function YourListingsPage() {
                           </span>
                         </div>
 
-                        {/* Second Row */}
+                        {/* Miles & Listed Row */}
                         <div className="flex items-center gap-2.5">
                           <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
-                            Miles: 109,996
+                            Miles: 109,658
                           </span>
                           <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
-                            Post Date: 12-12-25
+                            Listed: 12-12-25
                           </span>
                         </div>
                       </div>
                     </div>
 
-                    {/* Price Section */}
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-[#E82121] font-albert text-[12px] font-medium">
-                        $73,000
-                      </span>
-                    </div>
                   </div>
 
                   {/* Divider */}
