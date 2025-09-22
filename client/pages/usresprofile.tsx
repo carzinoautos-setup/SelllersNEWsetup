@@ -6,12 +6,12 @@ export function UsersProfileCard() {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Enter your Details */}
       <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 shadow-sm mt-8">
-        <div className="flex items-end justify-between mb-8">
-          <h2 className="text-[20px] font-semibold text-[#24272C] leading-7 mb-3">Enter your Details</h2>
-        </div>
+        <div className="text-[20px] font-semibold text-[#24272C] mb-4">Enter your Details</div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full py-5">
+          {/* Seller or dealer name */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Seller or dealer name</label>
@@ -23,6 +23,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* City */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">City</label>
@@ -34,6 +35,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* State */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">State</label>
@@ -45,6 +47,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Zip code */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Zip code</label>
@@ -56,6 +59,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Email lead alert address */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Email lead alert address</label>
@@ -67,6 +71,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Account holder email Address */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Account holder email Address</label>
@@ -78,6 +83,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* List your phone# on ads (full width) */}
           <div className="flex flex-col md:col-span-3">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">List your phone# on ads</label>
@@ -88,7 +94,7 @@ export function UsersProfileCard() {
                 className="w-full flex items-center justify-between rounded-md border border-[#E1E1E1] h-[60px] px-4 bg-white"
                 aria-pressed={listPhone}
               >
-                <span className="text-[15px] text-[#050B20]">Yes</span>
+                <span className="text-[15px] text-[#050B20]">{listPhone ? 'Yes' : 'No'}</span>
 
                 <div className="flex items-center gap-2">
                   <svg className="w-4 h-4 text-[#10B981]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,6 +109,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Seller Phone */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Seller Phone</label>
@@ -114,6 +121,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Address (span 2 columns) */}
           <div className="flex flex-col md:col-span-2">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Enter your address and then select from the choices.</label>
@@ -125,6 +133,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Longitude */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Longitude:</label>
@@ -136,6 +145,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
+          {/* Latitude */}
           <div className="flex flex-col">
             <div className="relative">
               <label className="absolute -top-3 left-3 bg-white px-2 text-[12px] text-[#000]">Latitude</label>
@@ -150,6 +160,7 @@ export function UsersProfileCard() {
         </div>
       </section>
 
+      {/* Price & Color Section - Step 2 */}
       <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 mt-8 opacity-90">
         <div className="flex items-end justify-between mb-8">
           <div className="text-[24px] font-medium text-[#24272C]">Price & Color</div>
@@ -164,8 +175,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Body Type</div>
-                <div className="text-[15px] text-[#050B20]">Select Body Type</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Body Type</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select Body Type</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
@@ -177,7 +188,7 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[57px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Doors</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Doors</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
@@ -189,8 +200,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Transmission</div>
-                <div className="text-[15px] text-[#050B20]">Select Transmission</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Transmission</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select Transmission</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
@@ -202,8 +213,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Transmission speed</div>
-                <div className="text-[15px] text-[#050B20]">Select speed</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Transmission speed</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select speed</div>
               </div>
             </div>
           </div>
@@ -212,8 +223,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Cylinders</div>
-                <div className="text-[15px] text-[#050B20]">Select Cylinders</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Cylinders</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select Cylinders</div>
               </div>
             </div>
           </div>
@@ -222,8 +233,8 @@ export function UsersProfileCard() {
           <div className="relative lg:col-span-2">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Engine Size (Liters)</div>
-                <div className="text-[15px] text-[#050B20]">Enter engine size</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Engine Size (Liters)</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Enter engine size</div>
               </div>
             </div>
           </div>
@@ -232,8 +243,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Fuel Type</div>
-                <div className="text-[15px] text-[#050B20]">Select Fuel Type</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Fuel Type</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select Fuel Type</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
@@ -245,8 +256,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">MPG Gallon City</div>
-                <div className="text-[15px] text-[#050B20]">Select MPG City</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">MPG Gallon City</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select MPG City</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
@@ -258,8 +269,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Drive Train</div>
-                <div className="text-[15px] text-[#050B20]">Select Drive Train</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Drive Train</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select Drive Train</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
@@ -271,8 +282,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Engine Type</div>
-                <div className="text-[15px] text-[#050B20]">Enter engine type</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Engine Type</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Enter engine type</div>
               </div>
             </div>
           </div>
@@ -281,8 +292,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">Stock #</div>
-                <div className="text-[15px] text-[#050B20]">Enter Stock #</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">Stock #</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Enter Stock #</div>
               </div>
             </div>
           </div>
@@ -291,8 +302,8 @@ export function UsersProfileCard() {
           <div className="relative">
             <div className="w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white relative">
               <div className="absolute left-4 top-2.5">
-                <div className="text-[13px] text-[#818181] mb-1">MPG Gallon HWY</div>
-                <div className="text-[15px] text-[#050B20]">Select MPG HWY</div>
+                <div className="text-[13px] text-[#818181] font-dm mb-1">MPG Gallon HWY</div>
+                <div className="text-[15px] text-[#050B20] font-dm">Select MPG HWY</div>
               </div>
               <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5" viewBox="0 0 10 10" fill="none">
                 <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
