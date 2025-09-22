@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import UsresProfile from "./pages/usresprofile";
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
+import Reset from "./pages/reset";
 
 const queryClient = new QueryClient();
 
