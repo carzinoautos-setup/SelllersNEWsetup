@@ -92,7 +92,7 @@ export default function YourListingsPage() {
                   <div className="flex flex-col gap-5">
                     {/* Title Section */}
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-[#24272C] font-outfit text-lg font-medium">
+                      <h3 className="text-[#24272C] font-outfit text-[12px] font-medium">
                         2017 BMW X1 xDrive 20d xline
                       </h3>
 
@@ -100,20 +100,20 @@ export default function YourListingsPage() {
                       <div className="flex flex-col gap-0">
                         {/* First Row */}
                         <div className="flex items-center gap-2.5">
-                          <span className="text-[#696665] font-albert text-sm font-normal leading-[140%]">
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Condition: New
                           </span>
-                          <span className="text-[#696665] font-albert text-sm font-normal leading-[140%]">
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Type: Sedan
                           </span>
                         </div>
 
                         {/* Second Row */}
                         <div className="flex items-center gap-2.5">
-                          <span className="text-[#696665] font-albert text-sm font-normal leading-[140%]">
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Miles: 109,996
                           </span>
-                          <span className="text-[#696665] font-albert text-sm font-normal leading-[140%]">
+                          <span className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Post Date: 12-12-25
                           </span>
                         </div>
@@ -122,7 +122,7 @@ export default function YourListingsPage() {
 
                     {/* Price Section */}
                     <div className="flex items-center gap-2.5">
-                      <span className="text-[#E82121] font-albert text-lg font-medium">
+                      <span className="text-[#E82121] font-albert text-[12px] font-medium">
                         $73,000
                       </span>
                     </div>
@@ -156,7 +156,7 @@ export default function YourListingsPage() {
 
                     {/* Featured Button */}
                     <button className="px-2.5 py-2.5 rounded-xl border border-[#E82121] bg-white hover:bg-red-50 transition-colors">
-                      <span className="text-black font-albert text-sm font-medium">Featured</span>
+                      <span className="text-black font-albert text-[12px] font-medium">Featured</span>
                     </button>
                   </div>
                 </div>
