@@ -67,13 +67,24 @@ export default function YourListingsPage() {
             {Array.from({ length: 8 }).map((_, index) => (
               <div key={index} className="flex flex-col bg-white rounded-2xl shadow-sm border border-[#EDEDED] overflow-hidden">
                 {/* Car Image */}
-                <div className="relative h-[261px] bg-gray-200 rounded-t-2xl overflow-hidden">
+                <label className="relative h-[261px] bg-gray-200 rounded-t-2xl overflow-hidden cursor-pointer">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F8ba3f21a332f4fb0bcffcd86121a722c?format=webp&width=800"
                     alt="2017 BMW X1 xDrive 20d xline"
                     className="w-full h-full object-cover"
                   />
-                </div>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e: any) => {
+                      const file = e.target.files && e.target.files[0];
+                      if (!file) return;
+                      const img = e.target.closest("label")?.querySelector("img");
+                      if (img) img.src = URL.createObjectURL(file);
+                    }}
+                    className="absolute inset-0 opacity-0 cursor-pointer"
+                  />
+                </label>
 
                 {/* Card Content */}
                 <div className="p-4 flex flex-col gap-5">
