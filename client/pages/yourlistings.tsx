@@ -87,7 +87,7 @@ export default function YourListingsPage() {
                 </label>
 
                 {/* Card Content */}
-                <div className="p-4 flex flex-col gap-5">
+                <div className="p-4 flex flex-col gap-[13px]">
                   {/* Main Content */}
                   <div className="flex flex-col gap-1.5">
                     {/* Title Section */}
