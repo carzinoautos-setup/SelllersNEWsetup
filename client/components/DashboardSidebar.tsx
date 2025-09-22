@@ -20,7 +20,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
       active: false,
       path: "/add-a-listing",
     },
-    { name: "Your Listings", icon: MailIcon, active: true, path: "/listings" },
+    { name: "Your Listings", icon: MailIcon, active: true, path: "/yourlistings" },
     {
       name: "Buy Credits (2)",
       icon: CoinsIcon,
