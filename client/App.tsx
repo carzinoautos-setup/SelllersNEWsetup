@@ -24,6 +24,7 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/usresprofile" element={<UsresProfile />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/reset" element={<Reset />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
