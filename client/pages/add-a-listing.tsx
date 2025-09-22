@@ -346,18 +346,18 @@ export default function AddAListingPage() {
 
                   {/* Convenience Column */}
                   <div className="space-y-4">
-                    <h3 className="flex items-center justify-between text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
+                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
                       <button
                         type="button"
-                        className="flex items-center gap-2.5 text-[16px] font-medium p-0 m-0"
+                        className="w-full flex items-center justify-between gap-2.5 text-[16px] font-medium p-0 m-0"
                         onClick={() => setOpenSections(s => ({ ...s, convenience: !s.convenience }))}
+                        aria-expanded={openSections.convenience}
                       >
-                        <span>Convenience</span>
+                        <span className="text-left">Convenience</span>
+                        <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.convenience ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </button>
-
-                      <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.convenience ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </h3>
                     <div className={openSections.convenience ? 'block sm:block space-y-4' : 'hidden sm:block space-y-4'}>
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -414,18 +414,18 @@ export default function AddAListingPage() {
 
                   {/* Entertainment Column */}
                   <div className="space-y-4">
-                    <h3 className="flex items-center justify-between text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
+                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
                       <button
                         type="button"
-                        className="flex items-center gap-2.5 text-[16px] font-medium p-0 m-0"
+                        className="w-full flex items-center justify-between gap-2.5 text-[16px] font-medium p-0 m-0"
                         onClick={() => setOpenSections(s => ({ ...s, entertainment: !s.entertainment }))}
+                        aria-expanded={openSections.entertainment}
                       >
-                        <span>Entertainment</span>
+                        <span className="text-left">Entertainment</span>
+                        <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.entertainment ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </button>
-
-                      <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.entertainment ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </h3>
                     <div className={openSections.entertainment ? 'block sm:block space-y-4' : 'hidden sm:block space-y-4'}>
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -486,18 +486,18 @@ export default function AddAListingPage() {
 
                   {/* Safety Column */}
                   <div className="space-y-4">
-                    <h3 className="flex items-center justify-between text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
+                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
                       <button
                         type="button"
-                        className="flex items-center gap-2.5 text-[16px] font-medium p-0 m-0"
+                        className="w-full flex items-center justify-between gap-2.5 text-[16px] font-medium p-0 m-0"
                         onClick={() => setOpenSections(s => ({ ...s, safety: !s.safety }))}
+                        aria-expanded={openSections.safety}
                       >
-                        <span>Safety</span>
+                        <span className="text-left">Safety</span>
+                        <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.safety ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </button>
-
-                      <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.safety ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </h3>
                     <div className={openSections.safety ? 'block sm:block space-y-4' : 'hidden sm:block space-y-4'}>
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -558,18 +558,18 @@ export default function AddAListingPage() {
 
                   {/* Interior Column */}
                   <div className="space-y-4">
-                    <h3 className="flex items-center justify-between text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
+                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
                       <button
                         type="button"
-                        className="flex items-center gap-2.5 text-[16px] font-medium p-0 m-0"
+                        className="w-full flex items-center justify-between gap-2.5 text-[16px] font-medium p-0 m-0"
                         onClick={() => setOpenSections(s => ({ ...s, interior: !s.interior }))}
+                        aria-expanded={openSections.interior}
                       >
-                        <span>Interior</span>
+                        <span className="text-left">Interior</span>
+                        <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.interior ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </button>
-
-                      <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.interior ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </h3>
                     <div className={openSections.interior ? 'block sm:block space-y-4' : 'hidden sm:block space-y-4'}>
                       <label className="flex items-center gap-2.5 cursor-pointer">
@@ -630,18 +630,18 @@ export default function AddAListingPage() {
 
                   {/* Exterior Column */}
                   <div className="space-y-4">
-                    <h3 className="flex items-center justify-between text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
+                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm leading-7 mb-4">
                       <button
                         type="button"
-                        className="flex items-center gap-2.5 text-[16px] font-medium p-0 m-0"
+                        className="w-full flex items-center justify-between gap-2.5 text-[16px] font-medium p-0 m-0"
                         onClick={() => setOpenSections(s => ({ ...s, exterior: !s.exterior }))}
+                        aria-expanded={openSections.exterior}
                       >
-                        <span>Exterior</span>
+                        <span className="text-left">Exterior</span>
+                        <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.exterior ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </button>
-
-                      <svg className="w-4 h-4 text-[#E82121] sm:hidden transform transition-transform" style={{ transform: openSections.exterior ? 'rotate(180deg)' : 'rotate(0deg)' }} viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
                     </h3>
                     <div className={openSections.exterior ? 'block sm:block space-y-4' : 'hidden sm:block space-y-4'}>
                       <label className="flex items-center gap-2.5 cursor-pointer">
