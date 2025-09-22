@@ -202,37 +202,7 @@ export default function UsresProfile() {
                     <div className="w-full bg-transparent md:bg-white md:border md:border-[#E4E4E4] rounded-[14px] md:pt-5 md:px-4 md:pb-4 p-0 -mt-5 pb-[5px] md:-mt-1 flex flex-row md:flex-col items-center md:items-start justify-center gap-4 md:gap-2">
                       <div className="relative flex-shrink-0">
                         <div className="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full overflow-hidden flex items-start justify-start md:block">
-                          <svg
-                            className="w-full h-full"
-                            viewBox="0 0 97 100"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <ellipse
-                              cx="48.7901"
-                              cy="49.6803"
-                              rx="46.9132"
-                              ry="48.1452"
-                              fill="url(#pattern0_2997_28513)"
-                            />
-                            <path
-                              d="M48.4766 0.75C74.9614 0.75 96.4541 22.7877 96.4541 50C96.4541 77.2123 74.9614 99.25 48.4766 99.25C21.9919 99.2498 0.5 77.2122 0.5 50C0.5 22.7878 21.9919 0.750224 48.4766 0.75Z"
-                              stroke="#242760"
-                            />
-                            <defs>
-                              <pattern
-                                id="pattern0_2997_28513"
-                                patternContentUnits="objectBoundingBox"
-                                width="1"
-                                height="1"
-                              >
-                                <use
-                                  xlinkHref="#image0_2997_28513"
-                                  transform="matrix(0.00257069 0 0 0.00250491 0 -0.307835)"
-                                />
-                              </pattern>
-                            </defs>
-                          </svg>
+                          <img src="/placeholder.svg" alt="Profile" className="w-full h-full object-cover" />
                         </div>
 
                         <div className="absolute -right-1 md:-right-1 -bottom-1 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center">
