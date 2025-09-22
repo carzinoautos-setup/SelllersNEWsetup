@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         'albert': ['Albert Sans', 'Inter', 'system-ui', 'sans-serif'],
         'dm': ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
+        'outfit': ['Outfit', 'Albert Sans', 'Inter', 'system-ui', 'sans-serif'],
         'sans': ['Albert Sans', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
