@@ -208,6 +208,259 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Vehicle Details Form */}
+          <section className="w-full bg-white border border-[#E6E6E6] rounded-lg p-6 mb-8">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="text-lg font-semibold text-[#24272C] mb-4">Enter vehicle details</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Year */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Year</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Year</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Body Type */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Body Type</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Body Type</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Cylinders */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Cylinders</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Select Cylinders"
+                  />
+                </div>
+
+                {/* Vin# */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#000]">Vin#</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Enter Vin#"
+                  />
+                </div>
+
+                {/* Doors */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Doors</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select doors</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Transmission */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Transmission</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Transmission</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Make */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Make</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Make</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#E82121"/>
+                  </svg>
+                </div>
+
+                {/* Fuel Type */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Fuel Type</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Fuel Type</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Exterior Color */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Exterior Color</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Exterior Color</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Model */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Model</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Model</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* MPG City */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">MPG Gallon City</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select MPG City</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Interior Color */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Interior Color</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Interior Color</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Trim */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Trim</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Select Trim"
+                  />
+                </div>
+
+                {/* MPG HWY */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">MPG Gallon HWY</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select MPG HWY</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Title Status */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Title Status</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Title Status</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Condition */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Condition</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Condition</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Drive Train */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Drive Train</label>
+                  <select className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white appearance-none">
+                    <option>Select Drive Train</option>
+                  </select>
+                  <svg className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5 pointer-events-none" viewBox="0 0 10 10" fill="none">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+
+                {/* Stock # */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Stock #</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Enter Stock #"
+                  />
+                </div>
+
+                {/* Is certified */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Is certified</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Select one"
+                  />
+                </div>
+
+                {/* Engine Type */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Engine Type</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Enter engine type"
+                  />
+                </div>
+
+                {/* Listing Status */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Listing Status</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Select Listing status"
+                  />
+                </div>
+
+                {/* Mileage */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Mileage</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Enter Miles"
+                  />
+                </div>
+
+                {/* Engine Size */}
+                <div className="relative">
+                  <label className="absolute -top-3 left-3 bg-white px-1 text-[12px] text-[#818181]">Engine Size (Liters)</label>
+                  <input
+                    className="w-full h-14 rounded-md border border-[#E1E1E1] px-4 text-[15px] text-[#050B20]"
+                    type="text"
+                    placeholder="Enter engine size"
+                  />
+                </div>
+
+              </div>
+            </div>
+          </section>
+
         </div>
       </div>
     </DashboardLayout>
