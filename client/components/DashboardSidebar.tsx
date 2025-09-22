@@ -18,7 +18,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
       name: "Add a listing",
       icon: EditIcon,
       active: false,
-      path: "/add-listing",
+      path: "/add-a-listing",
     },
     { name: "Your Listings", icon: MailIcon, active: true, path: "/listings" },
     {
