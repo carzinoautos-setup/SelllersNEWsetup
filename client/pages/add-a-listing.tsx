@@ -11,6 +11,27 @@ export default function AddAListingPage() {
     interior: false,
     exterior: false,
   });
+
+  // Vehicle details form state
+  const [vehicleDetails, setVehicleDetails] = useState({
+    vin: '',
+    year: '',
+    make: '',
+    model: '',
+    trim: '',
+    condition: '',
+    isCertified: '',
+    mileage: '',
+    titleStatus: '',
+    stockNumber: '',
+  });
+
+  const handleVehicleDetailChange = (field: string, value: string) => {
+    setVehicleDetails(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
   return (
     <DashboardLayout>
       <div className="flex-1">
