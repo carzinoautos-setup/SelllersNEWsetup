@@ -42,9 +42,9 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
         onClick={() => setOpen((s) => !s)}
         className={`w-full text-left flex items-center justify-between px-4 bg-white border border-[#D9D9D9] rounded-xl ${className} focus:outline-none`}
       >
-        <span className={`truncate text-[14px] text-[#24272C]`}>{value ?? placeholder}</span>
+        <span className={`truncate text-[14px] text-[#24272C] flex-1 leading-none`}>{value ?? placeholder}</span>
         {/* Chevron inline so flex items-center centers it */}
-        <svg className="ml-2 w-4 h-4 text-[#E82121]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="ml-2 w-4 h-4 text-[#E82121] flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
