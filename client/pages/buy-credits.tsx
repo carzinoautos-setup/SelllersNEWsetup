@@ -27,7 +27,7 @@ export default function BuyCredits() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {/* 1-Pack */}
               <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[22px] px-[20px] h-full shadow-sm">
                 <img
