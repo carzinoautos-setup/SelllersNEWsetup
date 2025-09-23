@@ -152,7 +152,7 @@ export function UsersProfileCard() {
           <div className="w-full md:w-1/4 flex max-w-[573px] h-[232px] p-2.5 flex-col items-start gap-2.5 flex-shrink-0">
             <div className="grid w-[170px] h-[148px] flex-shrink-0 grid-rows-1 grid-cols-1">
               <div className="grid w-[357px] h-[153px] gap-8 flex-shrink-0 self-start grid-rows-1 grid-cols-1 row-start-1 col-start-1">
-                <div className="flex flex-col items-start gap-4 flex-1 self-stretch row-start-1 col-start-1">
+                <div className="flex flex-col items-start gap-4 flex-1 self-stretch row-start-1 col-start-1 pr-[17px]">
                   <svg
                     width="97"
                     height="100"
