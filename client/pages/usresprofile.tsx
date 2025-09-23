@@ -112,12 +112,9 @@ export function UsersProfileCard() {
               <div className="w-full max-w-[353px] text-[#24272C] font-['Albert_Sans'] text-[24px] font-bold leading-normal">
                 Get Started with Carzino
               </div>
-              <div className="self-stretch text-[#222] font-['DM_Sans'] text-[15px] font-normal leading-[28px]">
-                How do I find the VIN number for my car?<br />
-                Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle.
-                The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets
-                the edge of the windshield on the driver's side.
-              </div>
+              <span className="self-stretch text-[#222] font-['DM_Sans'] text-[15px] font-normal leading-[28px] whitespace-pre-wrap">
+                Please fill out the form below with your information to create your listing. You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
+              </span>
 
               {/* Dropdown */}
               <div className="w-[310px] h-[60px] relative">
