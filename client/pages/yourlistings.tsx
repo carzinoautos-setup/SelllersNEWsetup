@@ -89,7 +89,7 @@ export default function YourListingsPage() {
 
           {/* Mobile Filters Drawer */}
           {showMobileFilters && (
-            <div className="fixed inset-0 z-50 flex items-end sm:hidden">
+            <div className="fixed inset-0 z-50 flex items-start sm:hidden">
               <div className="absolute inset-0 bg-black opacity-40" onClick={() => setShowMobileFilters(false)}></div>
               <div className="relative w-full bg-white rounded-t-2xl p-4 max-h-[80vh] overflow-auto">
                 <div className="flex items-center justify-between mb-4">
