@@ -392,7 +392,7 @@ export default function AddAListingPage() {
 
                   {/* Features Column */}
                   <div className="flex flex-col">
-                    <h4 className="text-[16px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6">Features</h4>
+                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Features</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -456,7 +456,7 @@ export default function AddAListingPage() {
 
                   {/* Interior Column */}
                   <div className="flex flex-col">
-                    <h4 className="text-[16px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6">Interior</h4>
+                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Interior</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -526,7 +526,7 @@ export default function AddAListingPage() {
 
                   {/* Exterior Column */}
                   <div className="flex flex-col">
-                    <h4 className="text-[16px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6">Exterior</h4>
+                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Exterior</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -596,7 +596,7 @@ export default function AddAListingPage() {
 
                   {/* Safety Options Column */}
                   <div className="flex flex-col">
-                    <h4 className="text-[16px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6">Safety Options</h4>
+                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Safety Options</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -666,7 +666,7 @@ export default function AddAListingPage() {
 
                   {/* Technology Column */}
                   <div className="flex flex-col">
-                    <h4 className="text-[16px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6">Technology</h4>
+                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Technology</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
