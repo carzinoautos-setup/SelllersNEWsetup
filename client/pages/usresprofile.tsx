@@ -132,7 +132,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">City</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">City</label>
                   <input
                     value={city}
                     onChange={(e)=>setCity(e.target.value)}
@@ -146,7 +146,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">State</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">State</label>
                   <input
                     value={stateVal}
                     onChange={(e)=>setStateVal(e.target.value)}
@@ -161,7 +161,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Zip code</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Zip code</label>
                   <input
                     value={zip}
                     onChange={(e)=>setZip(e.target.value)}
@@ -175,7 +175,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Email lead alert address</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alert address</label>
                   <input
                     value={emailLead}
                     onChange={(e)=>setEmailLead(e.target.value)}
@@ -189,7 +189,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Account holder email Address</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Account holder email Address</label>
                   <input
                     value={accountEmail}
                     onChange={(e)=>setAccountEmail(e.target.value)}
@@ -204,7 +204,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Seller Phone</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Seller Phone</label>
                   <input
                     value={sellerPhone}
                     onChange={(e)=>setSellerPhone(e.target.value)}
@@ -218,7 +218,7 @@ export function UsersProfileCard() {
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2 flex items-center justify-between">
                   <div>
-                    <label className="text-[13px] text-[#24272C] font-['DM_Sans']">List your phone# on ads</label>
+                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
                     <button
                       onClick={()=>setListPhone(v=>!v)}
                       className="block text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
@@ -253,7 +253,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Longitude:</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Longitude:</label>
                   <input
                     value={longitude}
                     onChange={(e)=>setLongitude(e.target.value)}
@@ -267,7 +267,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Latitude</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Latitude</label>
                   <input
                     value={latitude}
                     onChange={(e)=>setLatitude(e.target.value)}
