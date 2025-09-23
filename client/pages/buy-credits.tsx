@@ -103,15 +103,15 @@ export default function BuyCredits() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* 1-Pack */}
-              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[32px] px-[25px] h-full shadow-sm">
+              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[22px] px-[20px] h-full shadow-sm">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/51bc3967e0cfacb3dec69f592eca5be9b62c263f?width=695"
                   alt="Featured Credit"
-                  className="w-full h-24 lg:h-28 object-contain mb-5"
+                  className="w-full h-[68px] lg:h-[78px] object-contain mb-3"
                 />
 
                 <div className="mb-5">
-                  <h3 className="text-[25px] leading-[32px] font-medium text-[#E82121] font-albert mb-2">
+                  <h3 className="text-[18px] leading-[22px] font-medium text-[#E82121] font-albert mb-1">
                     1-Pack
                   </h3>
                   <p className="text-xs text-[#696665] font-albert leading-relaxed">
@@ -119,12 +119,12 @@ export default function BuyCredits() {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-2 mb-[10px] leading-[18px]">
-                  <span className="text-[30px] leading-[36px] font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-[40px] lg:text-[70px] font-bold text-[#24272C] font-albert leading-[70px]">5</span>
+                <div className="flex items-center gap-2 mb-[6px] leading-[16px]">
+                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">$</span>
+                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">5</span>
                 </div>
 
-                <div className="flex-1 space-y-4 mb-6">
+                <div className="flex-1 space-y-3 mb-4">
                   <FeatureItem text="1 Featured Ad listing" />
                   <div className="h-px bg-[#EDEDED]"></div>
                   <FeatureItem text="Runs for 45 days" />
@@ -137,21 +137,21 @@ export default function BuyCredits() {
                   <div className="h-px bg-[#EDEDED]"></div>
                 </div>
 
-                <button className="w-full bg-[#24272C] text-white py-3 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
+                <button className="w-full bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
                   Add to Cart
                 </button>
               </div>
 
               {/* 5-Pack */}
-              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[32px] px-[25px] h-full shadow-sm">
+              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[22px] px-[20px] h-full shadow-sm">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/82996bba11e0d8ddd6053ebbfa5710e3e259db53?width=695"
                   alt="Featured Credit"
-                  className="w-full h-24 lg:h-28 object-contain mb-5"
+                  className="w-full h-[68px] lg:h-[78px] object-contain mb-3"
                 />
 
                 <div className="mb-5">
-                  <h3 className="text-[25px] leading-[32px] font-medium text-[#E82121] font-albert mb-2">
+                  <h3 className="text-[18px] leading-[22px] font-medium text-[#E82121] font-albert mb-1">
                     5-Pack
                   </h3>
                   <p className="text-xs text-[#696665] font-albert leading-relaxed">
@@ -159,12 +159,12 @@ export default function BuyCredits() {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-2 mb-[10px] leading-[18px]">
-                  <span className="text-[30px] leading-[36px] font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-[40px] lg:text-[70px] font-bold text-[#24272C] font-albert leading-[70px]">25</span>
+                <div className="flex items-center gap-2 mb-[6px] leading-[16px]">
+                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">$</span>
+                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">25</span>
                 </div>
 
-                <div className="flex-1 space-y-4 mb-6">
+                <div className="flex-1 space-y-3 mb-4">
                   <FeatureItem text="5 Featured Ad listing" />
                   <div className="h-px bg-[#EDEDED]"></div>
                   <FeatureItem text="Runs for 45 days" />
@@ -177,21 +177,21 @@ export default function BuyCredits() {
                   <div className="h-px bg-[#EDEDED]"></div>
                 </div>
 
-                <button className="w-full bg-[#24272C] text-white py-3 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
+                <button className="w-full bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
                   Add to Cart
                 </button>
               </div>
 
               {/* 10-Pack */}
-              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[32px] px-[25px] h-full shadow-sm">
+              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] py-[22px] px-[20px] h-full shadow-sm">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/f3af57c3a86baad09be458102b2d69988051b1e7?width=695"
                   alt="Featured Credit"
-                  className="w-full h-24 lg:h-28 object-contain mb-5"
+                  className="w-full h-[68px] lg:h-[78px] object-contain mb-3"
                 />
 
                 <div className="mb-5">
-                  <h3 className="text-[25px] leading-[32px] font-medium text-[#E82121] font-albert mb-2">
+                  <h3 className="text-[18px] leading-[22px] font-medium text-[#E82121] font-albert mb-1">
                     10-Pack
                   </h3>
                   <p className="text-xs text-[#696665] font-albert leading-relaxed">
@@ -199,12 +199,12 @@ export default function BuyCredits() {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-2 mb-[10px] leading-[18px]">
-                  <span className="text-[30px] leading-[36px] font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-[40px] lg:text-[70px] font-bold text-[#24272C] font-albert leading-[70px]">50</span>
+                <div className="flex items-center gap-2 mb-[6px] leading-[16px]">
+                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">$</span>
+                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">50</span>
                 </div>
 
-                <div className="flex-1 space-y-4 mb-6">
+                <div className="flex-1 space-y-3 mb-4">
                   <FeatureItem text="10 Featured Ad listing" />
                   <div className="h-px bg-[#EDEDED]"></div>
                   <FeatureItem text="Runs for 45 days" />
@@ -217,7 +217,7 @@ export default function BuyCredits() {
                   <div className="h-px bg-[#EDEDED]"></div>
                 </div>
 
-                <button className="w-full bg-[#24272C] text-white py-3 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
+                <button className="w-full bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
                   Add to Cart
                 </button>
               </div>
