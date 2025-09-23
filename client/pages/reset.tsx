@@ -17,13 +17,14 @@ export default function ResetPage() {
     <DashboardLayout>
       <div className="flex-1">
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="mb-6">
+            <div className="text-[24px] font-semibold text-[#24272C]">Change your password</div>
+            <div className="text-[14px] text-[#6B6B6B] mt-2">Manage and edit your vehicle listings here.</div>
+          </div>
           <main>
             {/* Change Password Form (using Enter your Details styling) */}
             <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8">
               <div className="-mt-[3px] w-full border border-[#E6E6E6] rounded-lg p-[30px] bg-white shadow-[0_1px_2px_0_rgba(0,0,0,0.225),0_1px_3px_1px_rgba(0,0,0,0.1125)]">
-                <div className="text-[20px] font-semibold text-[#24272C] mb-3">
-                  Change password
-                </div>
 
                 <div className="flex flex-col gap-[30px] w-full py-[20px]">
                   {/* Old password */}
