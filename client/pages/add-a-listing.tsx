@@ -158,6 +158,19 @@ export default function AddAListingPage() {
     }
   };
 
+  // Selectable options state
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([
+    'features:Remote Start',
+    'interior:Heated Seats',
+    'exterior:LED Headlights',
+    'safety:Airbag - Passenger',
+    'technology:Bluetooth',
+  ]);
+
+  const toggleOption = (key: string) => {
+    setSelectedOptions((prev) => (prev.includes(key) ? prev.filter((p) => p !== key) : [...prev, key]));
+  };
+
   const onDragStart = (e: React.DragEvent<HTMLDivElement>, index: number) => {
     e.dataTransfer.setData('text/plain', String(index));
     e.dataTransfer.effectAllowed = 'move';
