@@ -354,7 +354,7 @@ export function UsersProfileCard() {
           </div>
       </section>
 
-      <section className="bg-white rounded-lg p-8" style={{ border: '0.8px solid rgba(171,171,171,1)' }}>
+      <section className="bg-white rounded-lg p-8 mt-5" style={{ border: '0.8px solid rgba(171,171,171,1)' }}>
         <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Dealership Information</h3>
 
         <div>
