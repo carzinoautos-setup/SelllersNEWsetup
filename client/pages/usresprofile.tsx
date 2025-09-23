@@ -9,6 +9,18 @@ export function UsersProfileCard() {
   const [emailLead, setEmailLead] = useState("");
   const [accountEmail, setAccountEmail] = useState("");
   const [sellerType, setSellerType] = useState("");
+  const [sellerTypeOpen, setSellerTypeOpen] = useState(false);
+  const sellerTypeRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function onDocClick(e: MouseEvent) {
+      if (sellerTypeRef.current && !(sellerTypeRef.current as any).contains(e.target)) {
+        setSellerTypeOpen(false);
+      }
+    }
+    document.addEventListener('click', onDocClick);
+    return () => document.removeEventListener('click', onDocClick);
+  }, []);
   const [listPhone, setListPhone] = useState(true);
   const [sellerPhone, setSellerPhone] = useState("");
   const [address, setAddress] = useState("");
