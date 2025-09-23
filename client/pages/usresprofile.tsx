@@ -112,7 +112,7 @@ export function UsersProfileCard() {
               <div className="w-full max-w-[353px] text-[#24272C] font-['Albert_Sans'] text-[24px] font-bold leading-normal">
                 Get Started with Carzino
               </div>
-              <span className="self-stretch text-[#222] font-['DM_Sans'] text-[15px] font-normal leading-[28px] whitespace-pre-wrap">
+              <span className="self-stretch text-[#222] font-['DM_Sans'] text-[15px] font-normal leading-[20px] whitespace-pre-wrap">
                 Please fill out the form below with your information to create your listing. You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
               </span>
 
