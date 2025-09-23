@@ -8,6 +8,7 @@ export function UsersProfileCard() {
   const [zip, setZip] = useState("");
   const [emailLead, setEmailLead] = useState("");
   const [accountEmail, setAccountEmail] = useState("");
+  const [sellerType, setSellerType] = useState("");
   const [listPhone, setListPhone] = useState(true);
   const [sellerPhone, setSellerPhone] = useState("");
   const [address, setAddress] = useState("");
