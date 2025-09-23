@@ -110,7 +110,7 @@ export function UsersProfileCard() {
                 )}
               </div>
 
-              <div className={listPhoneOpen ? "relative w-[320px]" : "relative w-[160px]"} ref={listPhoneRef}>
+              <div className="relative w-[160px]" ref={listPhoneRef}>
                 <button
                   type="button"
                   onClick={() => setListPhoneOpen(v => !v)}
