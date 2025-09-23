@@ -366,7 +366,7 @@ export function UsersProfileCard() {
                     <button
                       type="button"
                       onClick={() => { setVehicleTypeOpen(v => !v); }}
-                      className="w-full h-full relative rounded-xl bg-transparent px-0 text-[15px] text-[#050B20]"
+                      className="inline-block w-full h-full border-none rounded-xl bg-transparent text-[15px] text-[#050B20] leading-[22.5px] relative text-left"
                       aria-haspopup="listbox"
                       aria-expanded={vehicleTypeOpen}
                     >
