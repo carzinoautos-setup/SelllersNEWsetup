@@ -249,7 +249,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="inline-block w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white pl-4 pr-10 relative text-[#050B20] text-[15px] leading-[22.5px]">
                 <div className="pt-2 flex items-center justify-between">
                   <div>
                     <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
