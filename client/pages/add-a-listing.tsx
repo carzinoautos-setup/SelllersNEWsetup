@@ -156,9 +156,11 @@ export default function AddAListingPage() {
                       <label className="block">
                         <span className="text-[13px] text-[#818181]">Enter your Vin #</span>
                         <input
-                          aria-label="Make"
+                          aria-label="Vin#"
                           type="text"
-                          placeholder="Select Make"
+                          placeholder="Enter Vin#"
+                          value={vehicleDetails.vin}
+                          onChange={(e) => handleVehicleDetailChange('vin', e.target.value)}
                           className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                         />
                       </label>
