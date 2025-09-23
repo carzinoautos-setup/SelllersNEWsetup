@@ -50,7 +50,7 @@ export default function Dashboard() {
               </div>
 
               <div className="mt-4 flex justify-center">
-                <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
+                <button className="w-full sm:w-[204px] px-4 py-3 bg-[#4A4A4A] text-white rounded-lg text-sm font-medium">
                   Add listing
                 </button>
               </div>
@@ -85,7 +85,7 @@ export default function Dashboard() {
               </div>
 
               <div className="mt-4 flex justify-center">
-                <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
+                <button className="w-full sm:w-[204px] px-4 py-3 bg-[#4A4A4A] text-white rounded-lg text-sm font-medium">
                   Add listing
                 </button>
               </div>
