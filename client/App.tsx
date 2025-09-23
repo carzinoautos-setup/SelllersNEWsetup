@@ -16,6 +16,7 @@ import BuyCredits from "./pages/buy-credits";
 import Checkout from "./pages/checkout";
 import Billing from "./pages/billing";
 import Logout from "./pages/logout";
+import Messages from "./pages/messages";
 
 const queryClient = new QueryClient();
 
@@ -35,7 +36,7 @@ const App = () => (
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/billing" element={<Billing />} />
           <Route path="/logout" element={<Logout />} />
-          <Route path="/logout" element={<Logout />} />
+          <Route path="/messages" element={<Messages />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
