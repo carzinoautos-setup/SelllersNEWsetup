@@ -147,6 +147,14 @@ export function UsersProfileCard() {
     crmProvider,
     crmAccount,
     crmEmail,
+    billingContact,
+    billingStreetAddress,
+    billingCity,
+    billingState,
+    billingZip,
+    billingCountry,
+    billingEmail,
+    billingPhone,
   ]);
 
   // close dropdowns on outside click
