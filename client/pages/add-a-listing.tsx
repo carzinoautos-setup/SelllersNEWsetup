@@ -143,8 +143,13 @@ export default function AddAListingPage() {
   };
 
   const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) addPhotoFromFile(file);
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
+    const remaining = Math.max(0, 15 - photos.length);
+    if (files.length > remaining) {
+      alert(`You can upload up to 15 photos. You can add ${remaining} more.`);
+    }
+    files.slice(0, remaining).forEach((file) => addPhotoFromFile(file));
     e.currentTarget.value = '';
   };
 
