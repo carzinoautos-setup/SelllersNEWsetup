@@ -173,7 +173,7 @@ export default function Dashboard() {
                       Help Center
                     </div>
                     <div aria-hidden="true" className="w-5 h-5 flex items-center justify-center" data-design-placeholder="svg-icon">
-                      <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+                      <img src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F60b305c165284e30a98bef1752da9948?format=webp&width=800" alt="Help icon" className="w-full h-full object-contain" />
                     </div>
                   </div>
                   <p className="text-sm text-[#696665]" style={{ marginTop: "-1px" }}>
