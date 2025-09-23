@@ -104,7 +104,7 @@ export function UsersProfileCard() {
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Get Started with Carzino Section */}
       <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 shadow-sm mb-8">
-        <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-[147px]">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16 lg:gap-[147px]">
           {/* Left Content */}
           <div className="flex flex-col justify-between items-start flex-1 h-auto xl:h-[302px]">
             {/* Heading & Description */}
