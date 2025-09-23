@@ -78,6 +78,14 @@ export function UsersProfileCard() {
         setCrmProvider(data.crmProvider || "");
         setCrmAccount(data.crmAccount || "");
         setCrmEmail(data.crmEmail || "");
+        setBillingContact(data.billingContact || "");
+        setBillingStreetAddress(data.billingStreetAddress || "");
+        setBillingCity(data.billingCity || "");
+        setBillingState(data.billingState || "");
+        setBillingZip(data.billingZip || "");
+        setBillingCountry(data.billingCountry || "USA");
+        setBillingEmail(data.billingEmail || "");
+        setBillingPhone(data.billingPhone || "");
       } catch (e) {
         console.warn(e);
       }
