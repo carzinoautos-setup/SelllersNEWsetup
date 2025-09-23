@@ -112,7 +112,7 @@ export function UsersProfileCard() {
       <section className="bg-white border border-[#B2B2B2] rounded-lg p-8 shadow-sm">
         <h3 className="text-[24px] font-medium text-[#24272C] mb-8 font-['Albert_Sans']">Enter your Details</h3>
 
-        <div className="border border-[#B2B2B2] rounded-lg p-8">
+        <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Row 1 */}
             <div className="relative">
