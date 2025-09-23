@@ -28,6 +28,7 @@ const App = () => (
           <Route path="/reset" element={<Reset />} />
           <Route path="/add-a-listing" element={<AddAListing />} />
           <Route path="/yourlistings" element={<YourListings />} />
+          <Route path="/buy-credits" element={<BuyCredits />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
