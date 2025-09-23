@@ -71,6 +71,9 @@ export default function AddAListingPage() {
     stockNumber: '',
   });
 
+  const currentYear = new Date().getFullYear();
+  const yearOptions = Array.from({ length: 40 }, (_, i) => String(currentYear - i));
+
   // Vehicle details Step 3 form state
   const [vehicleDetailsStep3, setVehicleDetailsStep3] = useState({
     bodyType: '',
