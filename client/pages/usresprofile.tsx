@@ -279,11 +279,7 @@ export function UsersProfileCard() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 mt-8">
-            <button onClick={handleSave} className="px-6 py-3 bg-[#CF0D0D] text-white rounded-xl">Save</button>
-            <button onClick={handleReset} className="px-6 py-3 border border-[#E1E1E1] rounded-xl">Reset</button>
           </div>
-        </div>
       </section>
 
     </div>
