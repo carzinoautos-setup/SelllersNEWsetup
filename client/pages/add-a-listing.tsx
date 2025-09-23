@@ -639,7 +639,7 @@ export default function AddAListingPage() {
                   </CollapsibleSection>
 
                   {/* Safety Options Column */}
-                  <div className="flex flex-col">
+                  <CollapsibleSection title={'Safety Options'} id={'safety'} isOpen={openSections.safety} onToggle={() => handleToggle('safety')}>
                     <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Safety Options</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
@@ -706,7 +706,7 @@ export default function AddAListingPage() {
                         <span className="text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Electronic Stability Control</span>
                       </label>
                     </div>
-                  </div>
+                  </CollapsibleSection>
 
                   {/* Technology Column */}
                   <div className="flex flex-col">
