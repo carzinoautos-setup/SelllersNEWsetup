@@ -40,12 +40,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
       path: "/messages",
     },
     {
-      name: "Account Settings",
-      icon: SettingsIcon,
-      active: false,
-      path: "/settings",
-    },
-    {
       name: "Add your Payment",
       icon: BankIcon,
       active: false,
@@ -58,7 +52,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
       path: "/billing",
     },
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
-    { name: "Reset", icon: EditIcon, active: false, path: "/reset" },
+    { name: "Reset Password", icon: EditIcon, active: false, path: "/reset" },
     { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
   ];
