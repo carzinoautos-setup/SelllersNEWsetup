@@ -239,9 +239,9 @@ export default function AddAListingPage() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 xl:px-[60px] py-8">
+        <div className="w-full max-w-[1290px] mx-auto px-6 xl:px-[60px] py-8">
           {/* VIN Entry Form - Responsive */}
-          <section className="w-full bg-white p-5 mb-8">
+          <section className="w-full bg-white pt-0 px-5 pb-5 mb-8">
             <div className="mb-6" />
               <div className="max-w-[1200px] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
@@ -251,7 +251,7 @@ export default function AddAListingPage() {
                     <h2 className="text-[24px] font-semibold text-[#24272C] leading-[32px]">
                       Start by entering the vin number
                     </h2>
-                    <div className="pt-3">
+                    <div>
                       <p className="text-[14px] text-[#222] leading-5">
                         How do I find the VIN number for my car? Look on your
                         insurance cards, registration, or the paperwork from
