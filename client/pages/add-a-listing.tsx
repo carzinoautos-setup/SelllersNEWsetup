@@ -26,6 +26,20 @@ export default function AddAListingPage() {
     stockNumber: '',
   });
 
+  // Vehicle details Step 3 form state
+  const [vehicleDetailsStep3, setVehicleDetailsStep3] = useState({
+    bodyType: '',
+    doors: '',
+    transmission: '',
+    transmissionSpeed: '',
+    cylinders: '',
+    engineSize: '',
+    driveTrain: '',
+    fuelType: '',
+    mpgCity: '',
+    mpgHwy: '',
+  });
+
   const handleVehicleDetailChange = (field: string, value: string) => {
     setVehicleDetails(prev => ({
       ...prev,
