@@ -93,30 +93,7 @@ export default function Dashboard() {
 
             {/* Car image center (replaced with profile card) */}
             <div className="flex items-center justify-center">
-              <div className="flex items-center justify-center gap-6">
-                <div className="flex flex-col items-center bg-white rounded-[24px]" style={{ boxShadow: 'rgba(0, 95, 183, 0.08) 0px 10px 20px 0px', minHeight: '270px', padding: '64px 16px 24px', position: 'relative' }}>
-                  {/* Avatar wrapper positioned absolutely */}
-                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
-                    <div className="w-[107px] h-[107px] rounded-full border-[5px] border-white bg-gray-200 overflow-hidden">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
-                        alt="Profile"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-
-                  <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', fontWeight: 400, gap: '12px', maxWidth: '344px', textAlign: 'center' }}>
-                    <div style={{ color: 'rgb(36, 39, 44)', fontSize: '24px', fontWeight: 600, lineHeight: '28px' }}>Sellers Name</div>
-                    <p style={{ color: 'rgb(65, 65, 65)', fontSize: '14px', fontWeight: 400, lineHeight: '19.6px', padding: '0 8px' }}>
-                      10216 Melody Lane Sw<br/>Tacoma, Wa 98498<br/>emailhere@gmail.com
-                    </p>
-                    <div aria-label="Edit profile" style={{ display: 'flex', alignItems: 'center', backgroundColor: 'rgb(36, 39, 44)', borderRadius: '14px', color: 'rgb(255, 255, 255)', fontFamily: 'Outfit, "Albert Sans", Inter, system-ui, sans-serif', fontWeight: 500, gap: '8px', height: '50px', justifyContent: 'center', width: '204px' }}>
-                      Edit Profile
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div className="flex items-center justify-center gap-6" />
             </div>
 
             {/* View listings */}
