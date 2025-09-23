@@ -246,6 +246,116 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Enter Vehicle Details Form - Step 3 */}
+          <section className="w-full mb-8">
+            <div className="max-w-[1480px] mx-auto">
+              {/* Header */}
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+                  Enter vehicle details
+                </h3>
+                <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                    Step 3
+                  </span>
+                </div>
+              </div>
+
+              {/* Form Container */}
+              <div className="bg-white rounded-lg p-8" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+                  {/* Body Type Field */}
+                  <FormField
+                    label="Body Type"
+                    value={vehicleDetailsStep3.bodyType}
+                    onChange={(value) => handleVehicleDetailStep3Change('bodyType', value)}
+                    type="select"
+                    options={['Sedan', 'SUV', 'Truck', 'Coupe', 'Convertible', 'Hatchback', 'Wagon', 'Van', 'Crossover']}
+                  />
+
+                  {/* Doors Field */}
+                  <FormField
+                    label="Doors"
+                    value={vehicleDetailsStep3.doors}
+                    onChange={(value) => handleVehicleDetailStep3Change('doors', value)}
+                    type="select"
+                    options={['2', '3', '4', '5']}
+                  />
+
+                  {/* Transmission Field */}
+                  <FormField
+                    label="Transmission"
+                    value={vehicleDetailsStep3.transmission}
+                    onChange={(value) => handleVehicleDetailStep3Change('transmission', value)}
+                    type="select"
+                    options={['Manual', 'Automatic', 'CVT', 'Semi-Automatic']}
+                  />
+
+                  {/* Cylinders Field */}
+                  <FormField
+                    label="Cylinders"
+                    value={vehicleDetailsStep3.cylinders}
+                    onChange={(value) => handleVehicleDetailStep3Change('cylinders', value)}
+                    placeholder="Select Cylinders"
+                  />
+
+                  {/* Engine Size Field */}
+                  <FormField
+                    label="Engine Size (Liters)"
+                    value={vehicleDetailsStep3.engineSize}
+                    onChange={(value) => handleVehicleDetailStep3Change('engineSize', value)}
+                    placeholder="Enter engine size"
+                  />
+
+                  {/* Drive Train Field */}
+                  <FormField
+                    label="Drive Train"
+                    value={vehicleDetailsStep3.driveTrain}
+                    onChange={(value) => handleVehicleDetailStep3Change('driveTrain', value)}
+                    type="select"
+                    options={['Front-Wheel Drive', 'Rear-Wheel Drive', 'All-Wheel Drive', '4-Wheel Drive']}
+                  />
+
+                  {/* Fuel Type Field */}
+                  <FormField
+                    label="Fuel Type"
+                    value={vehicleDetailsStep3.fuelType}
+                    onChange={(value) => handleVehicleDetailStep3Change('fuelType', value)}
+                    type="select"
+                    options={['Gasoline', 'Diesel', 'Hybrid', 'Electric', 'Plug-in Hybrid', 'Natural Gas']}
+                  />
+
+                  {/* MPG City Field */}
+                  <FormField
+                    label="MPG Gallon City"
+                    value={vehicleDetailsStep3.mpgCity}
+                    onChange={(value) => handleVehicleDetailStep3Change('mpgCity', value)}
+                    type="select"
+                    options={['15-20', '20-25', '25-30', '30-35', '35-40', '40+']}
+                  />
+
+                  {/* MPG HWY Field */}
+                  <FormField
+                    label="MPG Gallon HWY"
+                    value={vehicleDetailsStep3.mpgHwy}
+                    onChange={(value) => handleVehicleDetailStep3Change('mpgHwy', value)}
+                    type="select"
+                    options={['20-25', '25-30', '30-35', '35-40', '40-45', '45+']}
+                  />
+
+                  {/* Transmission Speed Field */}
+                  <FormField
+                    label="Transmission speed"
+                    value={vehicleDetailsStep3.transmissionSpeed}
+                    onChange={(value) => handleVehicleDetailStep3Change('transmissionSpeed', value)}
+                    type="select"
+                    options={['3-Speed', '4-Speed', '5-Speed', '6-Speed', '7-Speed', '8-Speed', '9-Speed', '10-Speed']}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Vehicle Features Selection */}
           <section className="w-full mb-8" />
         </div>
