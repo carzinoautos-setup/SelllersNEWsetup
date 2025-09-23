@@ -63,6 +63,9 @@ export function UsersProfileCard() {
       if (listPhoneRef.current && !(listPhoneRef.current as any).contains(e.target)) {
         setListPhoneOpen(false);
       }
+      if (listPhoneFormRef.current && !(listPhoneFormRef.current as any).contains(e.target)) {
+        setListPhoneFormOpen(false);
+      }
     }
     document.addEventListener('click', onDocClick);
     return () => document.removeEventListener('click', onDocClick);
