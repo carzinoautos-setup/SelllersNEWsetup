@@ -116,7 +116,7 @@ export function UsersProfileCard() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {/* Row 1 */}
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Seller or dealer name</label>
                   <input
@@ -130,7 +130,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">City</label>
                   <input
@@ -144,7 +144,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">State</label>
                   <input
@@ -159,7 +159,7 @@ export function UsersProfileCard() {
 
             {/* Row 2 */}
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Zip code</label>
                   <input
@@ -173,7 +173,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alert address</label>
                   <input
@@ -187,7 +187,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Account holder email Address</label>
                   <input
@@ -202,7 +202,7 @@ export function UsersProfileCard() {
 
             {/* Row 3 */}
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Seller Phone</label>
                   <input
@@ -215,7 +215,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2 flex items-center justify-between">
                   <div>
                     <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
@@ -237,7 +237,7 @@ export function UsersProfileCard() {
 
             {/* Row 4 */}
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Enter your address and then select from the choices.</label>
                   <input
@@ -251,7 +251,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Longitude:</label>
                   <input
@@ -265,7 +265,7 @@ export function UsersProfileCard() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Latitude</label>
                   <input
