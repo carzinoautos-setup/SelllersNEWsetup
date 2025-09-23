@@ -71,7 +71,7 @@ export function UsersProfileCard() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 p-8">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-16">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-7 md:gap-16">
           <div className="flex-1">
             <h2 className="text-[24px] font-bold text-[#24272C] mb-2">Get Started with Carzino</h2>
             <p className="text-[15px] text-[#222] mb-4 leading-6">Please fill out the form below with your information to create your listing. You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.</p>
@@ -113,7 +113,7 @@ export function UsersProfileCard() {
         <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Enter your Details</h3>
 
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {/* Row 1 */}
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
