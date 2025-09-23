@@ -112,11 +112,7 @@ export default function CheckoutPage() {
                       </div>
 
                       {/* Delete Button - Desktop Only */}
-                      <div className="hidden md:flex justify-center">
-                        <button onClick={() => removeItem(item.id)} className="w-[40px] h-[40px] bg-[#F9FBFC] border border-[#E1E1E1] rounded-2xl flex items-center justify-center hover:bg-gray-100">
-                          <DeleteIcon />
-                        </button>
-                      </div>
+                      <div className="hidden md:flex justify-center"></div>
                     </div>
                   </div>
                 ))}
