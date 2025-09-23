@@ -569,7 +569,7 @@ export default function AddAListingPage() {
                   </CollapsibleSection>
 
                   {/* Exterior Column */}
-                  <div className="flex flex-col">
+                  <CollapsibleSection title={'Exterior'} id={'exterior'} isOpen={openSections.exterior} onToggle={() => handleToggle('exterior')}>
                     <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Exterior</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
@@ -636,7 +636,7 @@ export default function AddAListingPage() {
                         <span className="text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Spoiler</span>
                       </label>
                     </div>
-                  </div>
+                  </CollapsibleSection>
 
                   {/* Safety Options Column */}
                   <div className="flex flex-col">
