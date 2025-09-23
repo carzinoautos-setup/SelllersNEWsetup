@@ -118,7 +118,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['Albert_Sans']">Seller or dealer name</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Seller or dealer name</label>
                   <input
                     value={sellerName}
                     onChange={(e)=>setSellerName(e.target.value)}
@@ -239,7 +239,7 @@ export function UsersProfileCard() {
             <div className="relative">
               <div className="w-full h-[48px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
-                  <label className="text-[13px] text-[#24272C] font-['Albert_Sans']">Enter your address and then select from the choices.</label>
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Enter your address and then select from the choices.</label>
                   <input
                     value={address}
                     onChange={(e)=>setAddress(e.target.value)}
