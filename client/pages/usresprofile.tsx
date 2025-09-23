@@ -118,7 +118,7 @@ export function UsersProfileCard() {
 
               <div className="relative w-[280px]" ref={sellerTypeRef}>
                 <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="pt-2">
+                  <div className="h-full flex items-center">
                     <div className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black"><p>Select your Account type</p></div>
                     <button
                       type="button"
@@ -162,7 +162,7 @@ export function UsersProfileCard() {
             {/* Row 1 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Seller or dealer name</label>
                   <input
                     value={sellerName}
@@ -176,7 +176,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">City</label>
                   <input
                     value={city}
@@ -190,7 +190,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">State</label>
                   <input
                     value={stateVal}
@@ -205,7 +205,7 @@ export function UsersProfileCard() {
             {/* Row 2 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Zip code</label>
                   <input
                     value={zip}
@@ -219,7 +219,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alert address</label>
                   <input
                     value={emailLead}
@@ -233,7 +233,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Account holder email Address</label>
                   <input
                     value={accountEmail}
@@ -248,7 +248,7 @@ export function UsersProfileCard() {
             {/* Row 3 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Seller Phone</label>
                   <input
                     value={sellerPhone}
@@ -261,7 +261,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads?</label>
                   <div className="relative w-full" ref={listPhoneFormRef}>
                     <button
@@ -293,7 +293,7 @@ export function UsersProfileCard() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
                 <div className="relative md:col-span-2">
                   <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                    <div className="pt-2">
+                    <div className="h-full flex items-center">
                       <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Enter your address and then select from the choices.</label>
                       <input
                         value={address}
@@ -307,7 +307,7 @@ export function UsersProfileCard() {
 
                 <div className="relative md:col-span-1">
                   <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                    <div className="pt-2">
+                    <div className="h-full flex items-center">
                       <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Longitude:</label>
                       <input
                         value={longitude}
@@ -321,7 +321,7 @@ export function UsersProfileCard() {
 
                 <div className="relative md:col-span-1">
                   <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                    <div className="pt-2">
+                    <div className="h-full flex items-center">
                       <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Latitude</label>
                       <input
                         value={latitude}
@@ -347,7 +347,7 @@ export function UsersProfileCard() {
             {/* Row 1 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Do you sell new or used vehicles?</label>
                   <div className="relative w-full" ref={vehicleTypeRef}>
                     <button
@@ -374,7 +374,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alerts user 1</label>
                   <input
                     value={emailAlert1}
@@ -388,7 +388,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Dealerships CRM provider</label>
                   <input
                     value={crmProvider}
@@ -403,7 +403,7 @@ export function UsersProfileCard() {
             {/* Row 2 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Dealership website</label>
                   <input
                     value={dealershipWebsite}
@@ -416,7 +416,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alerts user 2</label>
                   <input
                     value={emailAlert2}
@@ -430,7 +430,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">CRM Account #</label>
                   <input
                     value={crmAccount}
@@ -445,7 +445,7 @@ export function UsersProfileCard() {
             {/* Row 3 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">XML or CSV vehicle Feed url</label>
                   <input
                     value={websiteProvider}
@@ -458,7 +458,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alerts user 3</label>
                   <input
                     value={emailAlert3}
@@ -472,7 +472,7 @@ export function UsersProfileCard() {
 
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Dealerships CRM email</label>
                   <input
                     value={crmEmail}
@@ -487,7 +487,7 @@ export function UsersProfileCard() {
             {/* Row 4 */}
             <div className="relative">
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
+                <div className="h-full flex items-center">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Website provider information</label>
                   <input
                     value={websiteProvider}
