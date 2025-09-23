@@ -15,6 +15,7 @@ import YourListings from "./pages/yourlistings";
 import BuyCredits from "./pages/buy-credits";
 import Checkout from "./pages/checkout";
 import Billing from "./pages/billing";
+import Logout from "./pages/logout";
 
 const queryClient = new QueryClient();
 
