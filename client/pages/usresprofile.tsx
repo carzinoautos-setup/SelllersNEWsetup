@@ -94,7 +94,7 @@ export function UsersProfileCard() {
               <div className="relative w-full max-w-[310px]" ref={sellerTypeRef}>
                 <button
                   type="button"
-                  onClick={() => setSellerTypeOpen(v => !v)}
+                  onClick={() => { setSellerTypeOpen(v => !v); setTimeout(()=>{ if (sellerTypeRef.current) setSellerTypeWidth(sellerTypeRef.current.offsetWidth); },0); }}
                   className="w-full h-[44px] flex items-center justify-between rounded-xl border border-[#B2B2B2] bg-white px-4 text-[15px] text-[#050B20]"
                   aria-haspopup="listbox"
                   aria-expanded={sellerTypeOpen}
