@@ -371,6 +371,63 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Price & Color - Step 4 */}
+          <section className="w-full mb-8">
+            <div className="max-w-[1480px] mx-auto">
+              {/* Header */}
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+                  Price & Color
+                </h3>
+                <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                    Step 4
+                  </span>
+                </div>
+              </div>
+
+              {/* Form Container */}
+              <div className="bg-white rounded-lg p-8" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
+                  {/* Price Field */}
+                  <FormField
+                    label="Price"
+                    value={priceColorStep4.price}
+                    onChange={(value) => handlePriceColorStep4Change('price', value)}
+                    placeholder="Set your price"
+                  />
+
+                  {/* Listing Status Field */}
+                  <FormField
+                    label="Listing Status"
+                    value={priceColorStep4.listingStatus}
+                    onChange={(value) => handlePriceColorStep4Change('listingStatus', value)}
+                    type="select"
+                    options={['Active', 'Inactive', 'Pending', 'Sold', 'Draft']}
+                  />
+
+                  {/* Exterior Color Field */}
+                  <FormField
+                    label="Exterior Color"
+                    value={priceColorStep4.exteriorColor}
+                    onChange={(value) => handlePriceColorStep4Change('exteriorColor', value)}
+                    type="select"
+                    options={['Black', 'White', 'Silver', 'Gray', 'Red', 'Blue', 'Green', 'Brown', 'Gold', 'Orange', 'Yellow', 'Purple']}
+                  />
+
+                  {/* Interior Color Field */}
+                  <FormField
+                    label="Interior Color"
+                    value={priceColorStep4.interiorColor}
+                    onChange={(value) => handlePriceColorStep4Change('interiorColor', value)}
+                    type="select"
+                    options={['Black', 'Beige', 'Gray', 'Brown', 'Tan', 'White', 'Red', 'Blue']}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Vehicle Features Selection */}
           <section className="w-full mb-8" />
         </div>
