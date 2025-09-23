@@ -33,6 +33,27 @@ export default function BillingPage() {
     address: "",
   });
 
+  const [BuilderComponent, setBuilderComponent] = useState<any | null>(null);
+  const [builderAvailable, setBuilderAvailable] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+    import("@builder.io/react")
+      .then((mod) => {
+        if (!mounted) return;
+        if (mod && (mod.BuilderComponent || mod.Builder)) {
+          setBuilderComponent((mod as any).BuilderComponent || (mod as any).Builder);
+          setBuilderAvailable(true);
+        }
+      })
+      .catch(() => {
+        // package not installed or network error — silently ignore
+      });
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setForm((s) => ({ ...s, [name]: value }));
