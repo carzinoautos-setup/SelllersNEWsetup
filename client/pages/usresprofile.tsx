@@ -51,11 +51,14 @@ export function UsersProfileCard() {
     localStorage.setItem("usresprofile.draft", JSON.stringify(data));
   }, [sellerName, city, stateVal, zip, emailLead, accountEmail, sellerType, listPhone, sellerPhone, address, longitude, latitude]);
 
-  // close dropdown on outside click
+  // close dropdowns on outside click
   useEffect(() => {
     function onDocClick(e: MouseEvent) {
       if (sellerTypeRef.current && !(sellerTypeRef.current as any).contains(e.target)) {
         setSellerTypeOpen(false);
+      }
+      if (listPhoneRef.current && !(listPhoneRef.current as any).contains(e.target)) {
+        setListPhoneOpen(false);
       }
     }
     document.addEventListener('click', onDocClick);
