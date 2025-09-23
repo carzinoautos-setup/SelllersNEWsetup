@@ -435,7 +435,7 @@ export default function AddAListingPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 
                   {/* Features Column */}
-                  <div className="flex flex-col">
+                  <CollapsibleSection title={'Features'} id={'features'} isOpen={openSections.features} onToggle={() => handleToggle('features')}>
                     <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Features</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
@@ -496,7 +496,7 @@ export default function AddAListingPage() {
                         <span className="text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adjustable Steering Column</span>
                       </label>
                     </div>
-                  </div>
+                  </CollapsibleSection>
 
                   {/* Interior Column */}
                   <div className="flex flex-col">
