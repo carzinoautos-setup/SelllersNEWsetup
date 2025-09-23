@@ -182,7 +182,7 @@ export default function CheckoutPage() {
               {/* Update Cart Button */}
               <div className="mt-8 px-[35px]">
                 <button className="bg-black text-white px-[26px] py-[20px] rounded-xl font-dm text-[15px] font-bold flex items-center gap-2 hover:bg-gray-800 transition-colors">
-                  Update Cart
+                  <p>Proceed to Checkout</p>
                   <ArrowIcon />
                 </button>
               </div>
