@@ -8,7 +8,7 @@ export default function BuyCredits() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-[1290px] mx-auto px-8 pt-0 pb-8">
           <header className="mb-6" />
 
           <div className="mb-6 relative" />
