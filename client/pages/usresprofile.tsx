@@ -575,6 +575,7 @@ export function UsersProfileCard() {
         </div>
       </section>
 
+      {sellerType === "Dealer" && (
       <section
         className="bg-white rounded-lg p-8 mt-5"
         style={{ border: "0.8px solid rgba(171,171,171,1)" }}
@@ -806,6 +807,7 @@ export function UsersProfileCard() {
           </div>
         </div>
       </section>
+      )}
 
       <section
         className="bg-white rounded-lg p-8 mt-5"
