@@ -128,9 +128,8 @@ export default function Dashboard() {
                 display: "flex",
                 alignItems: "flex-start",
                 backgroundColor: "rgb(255, 255, 255)",
-                borderColor: "rgb(251, 251, 251)",
+                border: "0.8px solid rgba(228, 228, 228, 1)",
                 borderRadius: "16px",
-                borderWidth: "0.8px",
                 boxShadow:
                   "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
                 flexDirection: "column",
@@ -144,10 +143,10 @@ export default function Dashboard() {
             >
               <div className="flex items-start gap-4">
                 <div style={{ fontWeight: "400", marginBottom: "-3px", "@media (max-width: 640px)": { lineHeight: "14px" } }}>
-                  <div style={{ color: "rgb(36, 39, 44)", fontSize: "18px", fontWeight: "500", lineHeight: "28px", textDecoration: "rgb(36, 39, 44)", "@media (max-width: 640px)": { lineHeight: "22px" } }}>
+                  <div style={{ color: "rgb(36, 39, 44)", fontSize: "18px", fontWeight: "600", lineHeight: "28px", textDecoration: "rgb(36, 39, 44)", "@media (max-width: 640px)": { lineHeight: "22px" } }}>
                     Help Center
                   </div>
-                  <p className="text-sm text-[#696665] mt-2">
+                  <p className="text-sm text-[#696665]" style={{ marginTop: "-1px" }}>
                     Get quick answers, helpful guides, and expert support
                     whenever you need assistance using Carzino.
                   </p>
