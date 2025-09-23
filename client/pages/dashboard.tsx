@@ -49,7 +49,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="mt-4 flex justify-start sm:justify-normal">
+              <div className="mt-4 flex justify-center">
                 <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
                   Add listing
                 </button>
@@ -84,7 +84,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="mt-4 flex justify-start sm:justify-normal">
+              <div className="mt-4 flex justify-center">
                 <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
                   Add listing
                 </button>
@@ -130,7 +130,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="mt-4 flex justify-start sm:justify-normal">
+              <div className="mt-4 flex justify-center">
                 <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium inline-flex items-center justify-center gap-2">
                   <span>View listings</span>
                   <svg
