@@ -94,6 +94,7 @@ export default function AddAListingPage() {
     listingStatus: '',
     exteriorColor: '',
     interiorColor: '',
+    description: '',
   });
 
   const handleVehicleDetailChange = (field: string, value: string) => {
