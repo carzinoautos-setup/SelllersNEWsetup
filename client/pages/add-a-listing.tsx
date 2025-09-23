@@ -921,7 +921,7 @@ export default function AddAListingPage() {
                 </div>
 
                 {/* Preview Section */}
-                <div className="flex flex-wrap gap-5">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full">
                   {photos.map((photo, index) => (
                     <div
                       key={photo.id}
@@ -929,7 +929,7 @@ export default function AddAListingPage() {
                       onDragStart={(e) => onDragStart(e, index)}
                       onDragOver={(e) => e.preventDefault()}
                       onDrop={(e) => onDrop(e, index)}
-                      className="relative w-[194px] h-[109px] flex-shrink-0"
+                      className="relative w-full h-[109px]"
                     >
                       <img src={photo.url} alt={`Vehicle photo ${index + 1}`} className="w-full h-full object-cover rounded-2xl" />
 
