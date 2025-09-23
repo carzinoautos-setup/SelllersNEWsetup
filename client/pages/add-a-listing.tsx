@@ -662,6 +662,43 @@ export default function AddAListingPage() {
                 </div>
               </div>
 
+          <div className="bg-white rounded-lg p-8" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
+              <FormField
+                label="Price"
+                value={priceColorStep4.price}
+                onChange={(value) => handlePriceColorStep4Change('price', value)}
+                placeholder="Set your price"
+              />
+
+              <FormField
+                label="Listing Status"
+                value={priceColorStep4.listingStatus}
+                onChange={(value) => handlePriceColorStep4Change('listingStatus', value)}
+                type="select"
+                options={["Active", "Inactive", "Pending", "Sold", "Draft"]}
+              />
+
+              <FormField
+                label="Exterior Color"
+                value={priceColorStep4.exteriorColor}
+                onChange={(value) => handlePriceColorStep4Change('exteriorColor', value)}
+                type="select"
+                options={["Black", "White", "Silver", "Gray", "Red", "Blue", "Green", "Brown", "Gold", "Orange", "Yellow", "Purple"]}
+              />
+
+              <FormField
+                label="Interior Color"
+                value={priceColorStep4.interiorColor}
+                onChange={(value) => handlePriceColorStep4Change('interiorColor', value)}
+                type="select"
+                options={["Black", "Beige", "Gray", "Brown", "Tan", "White", "Red", "Blue"]}
+              />
+            </div>
+          </div>
+            </div>
+          </section>
+
           {/* Upload Photo Section (New Design) */}
           <section className="w-full mb-8">
             <div className="max-w-[1540px] mx-auto">
