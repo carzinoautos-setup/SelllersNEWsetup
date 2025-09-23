@@ -16,7 +16,7 @@ export default function ResetPage() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] py-8">
           <div className="mb-6">
             <div className="text-[24px] font-semibold text-[#24272C]">Change your password</div>
             <div className="text-[14px] text-[#6B6B6B] mt-2">Manage and edit your vehicle listings here.</div>
