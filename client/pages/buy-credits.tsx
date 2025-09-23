@@ -16,12 +16,11 @@ export default function BuyCredits() {
           <section className="mt-12">
             <div className="mb-12">
               <div className="relative">
-                <h2 className="text-2xl md:text-4xl font-bold text-black font-albert leading-tight">
+                <h2 className="text-[30px] font-medium text-[#24272C] font-albert leading-[36px]">
                   Buy Featured ad credits
                 </h2>
-                <div className="w-24 md:w-32 h-0.5 bg-[#E82121] mt-2"></div>
               </div>
-              <p className="mt-4 text-base md:text-lg text-[#24272C] leading-relaxed max-w-5xl font-albert">
+              <p className="mt-2 text-sm text-[#696665] leading-5 max-w-5xl font-albert">
                 Promoting your car with featured ad credits on Carzino gives you maximum visibility and faster results. Featured listings appear at the top of search results, attract more views, and stand out with highlighted formatting that draws buyer attention. With targeted exposure to serious car shoppers and optimized display across desktop and mobile, your vehicle gets noticed quicker, builds buyer trust, and sells faster—all at a cost-effective rate that delivers strong value for every credit.
               </p>
             </div>
