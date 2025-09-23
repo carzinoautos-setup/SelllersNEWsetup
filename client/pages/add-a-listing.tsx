@@ -95,6 +95,8 @@ export default function AddAListingPage() {
     exteriorColor: '',
     interiorColor: '',
     description: '',
+    photos: [] as string[],
+    videoLink: '',
   });
 
   const handleVehicleDetailChange = (field: string, value: string) => {
