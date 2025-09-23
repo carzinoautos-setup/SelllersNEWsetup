@@ -46,7 +46,7 @@ export default function Dashboard() {
 
               <div className="mt-4 flex justify-center">
                 <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
-                  Add listing
+                  Edit Profile
                 </button>
               </div>
             </div>
