@@ -39,6 +39,16 @@ export function UsersProfileCard() {
   const [crmAccount, setCrmAccount] = useState("");
   const [crmEmail, setCrmEmail] = useState("");
 
+  // Billing information fields
+  const [billingContact, setBillingContact] = useState("");
+  const [billingStreetAddress, setBillingStreetAddress] = useState("");
+  const [billingCity, setBillingCity] = useState("");
+  const [billingState, setBillingState] = useState("");
+  const [billingZip, setBillingZip] = useState("");
+  const [billingCountry, setBillingCountry] = useState("USA");
+  const [billingEmail, setBillingEmail] = useState("");
+  const [billingPhone, setBillingPhone] = useState("");
+
   // persist draft locally
   useEffect(() => {
     const saved = localStorage.getItem("usresprofile.draft");
