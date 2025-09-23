@@ -8,14 +8,14 @@ export default function BuyCredits() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-[60px] pt-0 pb-8">
+        <div className="w-full max-w-[1290px] mx-auto pt-0 px-[60px] pb-[32px]">
           <header className="mb-6" />
 
           <div className="mb-6 relative" />
 
 
           {/* Featured Credits Purchase Section */}
-          <section className="mt-12">
+          <section className="mt-[47px]">
             <div className="mb-12">
               <div className="relative">
                 <h2 className="text-[24px] font-semibold text-[#24272C] leading-[32px]">
