@@ -55,7 +55,7 @@ export function FormField({
         {/* Floating label */}
         <label
           htmlFor={fieldId}
-          className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black font-['Albert_Sans']"
+          className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-[#050B20] font-['Albert_Sans']"
         >
           {label}
         </label>
