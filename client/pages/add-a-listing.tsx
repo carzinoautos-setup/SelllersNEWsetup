@@ -437,7 +437,7 @@ export default function AddAListingPage() {
 
                   {/* Features Column */}
                   <CollapsibleSection title={'Features'} id={'features'} isOpen={openSections.features} onToggle={() => handleToggle('features')}>
-                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Features</h4>
+                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Features</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -501,7 +501,7 @@ export default function AddAListingPage() {
 
                   {/* Interior Column */}
                   <CollapsibleSection title={'Interior'} id={'interior'} isOpen={openSections.interior} onToggle={() => handleToggle('interior')}>
-                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Interior</h4>
+                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Interior</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -571,7 +571,7 @@ export default function AddAListingPage() {
 
                   {/* Exterior Column */}
                   <CollapsibleSection title={'Exterior'} id={'exterior'} isOpen={openSections.exterior} onToggle={() => handleToggle('exterior')}>
-                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Exterior</h4>
+                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Exterior</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -641,7 +641,7 @@ export default function AddAListingPage() {
 
                   {/* Safety Options Column */}
                   <CollapsibleSection title={'Safety Options'} id={'safety'} isOpen={openSections.safety} onToggle={() => handleToggle('safety')}>
-                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Safety Options</h4>
+                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Safety Options</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
@@ -711,7 +711,7 @@ export default function AddAListingPage() {
 
                   {/* Technology Column */}
                   <CollapsibleSection title={'Technology'} id={'technology'} isOpen={openSections.technology} onToggle={() => handleToggle('technology')}>
-                    <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Technology</h4>
+                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Technology</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
