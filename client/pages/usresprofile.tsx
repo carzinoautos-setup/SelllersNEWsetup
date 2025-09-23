@@ -106,7 +106,7 @@ export function UsersProfileCard() {
       <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 shadow-sm mb-8">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16 lg:gap-[147px]">
           {/* Left Content */}
-          <div className="flex flex-col justify-between items-start flex-1 h-auto xl:h-[302px]">
+          <div className="w-full md:w-3/4 flex flex-col justify-between items-start flex-1 h-auto xl:h-[302px]">
             {/* Heading & Description */}
             <div className="flex flex-col items-start gap-4 self-stretch">
               <div className="w-full max-w-[353px] text-[#24272C] font-['Albert_Sans'] text-[24px] font-bold leading-normal">
