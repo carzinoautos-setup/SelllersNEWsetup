@@ -36,7 +36,7 @@ export function FormField({
               value={value || ''}
               onChange={(v) => onChange(v)}
               placeholder={placeholder || `Select ${label}`}
-              className={`w-full h-full bg-transparent text-[15px] ${inputClasses} pr-10`}
+              className={`w-full h-full bg-transparent text-[15px] ${inputClasses}`}
             />
           </>
         ) : (
