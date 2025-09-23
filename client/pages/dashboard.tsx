@@ -95,7 +95,6 @@ export default function Dashboard() {
             <div
             className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
             style={{
-              border: "0.8px solid rgba(251,251,251,1)",
               boxShadow:
                 "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6 -4px rgba(0,0,0,0.1)",
             }}
