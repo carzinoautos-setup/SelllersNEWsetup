@@ -22,10 +22,10 @@ export function DashboardSidebar({ className }: SidebarProps) {
     },
     { name: "Your Listings", icon: MailIcon, active: true, path: "/yourlistings" },
     {
-      name: "Buy Credits (2)",
+      name: "Buy Credits",
       icon: CoinsIcon,
       active: false,
-      path: "/credits",
+      path: "/buy-credits",
     },
     {
       name: "Messages",
