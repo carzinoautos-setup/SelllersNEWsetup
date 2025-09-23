@@ -52,6 +52,19 @@ export default function BillingPage() {
 
   const [showStripeModal, setShowStripeModal] = useState(false);
 
+  // Open modal automatically when page loads
+  useEffect(() => {
+    setShowStripeModal(true);
+  }, []);
+
+  const Modal: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+    if (typeof document === "undefined") return null;
+    return createPortal(
+      <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50">{children}</div>,
+      document.body
+    );
+  };
+
   const handleStripePay = () => {
     // This is a placeholder for integrating Stripe Elements or redirect to Checkout.
     // For now it simulates a successful payment and closes the modal.
