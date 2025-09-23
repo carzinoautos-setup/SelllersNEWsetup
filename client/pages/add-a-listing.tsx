@@ -868,6 +868,82 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Upload Photo Section (New Design) */}
+          <section className="w-full mb-8">
+            <div className="max-w-[1540px] mx-auto">
+              <div className="flex flex-col gap-5 rounded-2xl border border-[#EDEDED] bg-white p-[30px]">
+                {/* Upload Section */}
+                <div className="flex flex-col gap-5">
+                  <h3 className="text-2xl font-medium text-[#24272C] font-['Albert_Sans']">
+                    Upload Photo
+                  </h3>
+
+                  {/* Upload Area */}
+                  <div className="flex items-center justify-center w-full py-12 px-4 md:py-[50px] md:px-[640px] border-2 border-dashed border-[#E5E5EA] rounded-2xl bg-white relative">
+                    <div className="flex flex-col items-center gap-[15px] w-full max-w-[160px]">
+                      {/* Select Photos Button */}
+                      <button className="flex items-center justify-center gap-2.5 w-full h-[50px] px-2.5 bg-[#E82121] rounded-[14px] text-white font-['Albert_Sans'] font-medium text-base leading-[140%] hover:bg-[#d41d1d] transition-colors">
+                        <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.375 13.125L6.67417 8.82583C6.84828 8.65172 7.05498 8.51361 7.28246 8.41938C7.50995 8.32515 7.75377 8.27665 8 8.27665C8.24623 8.27665 8.49005 8.32515 8.71754 8.41938C8.94502 8.51361 9.15172 8.65172 9.32583 8.82583L13.625 13.125M12.375 11.875L13.5492 10.7008C13.7233 10.5267 13.93 10.3886 14.1575 10.2944C14.385 10.2001 14.6288 10.1516 14.875 10.1516C15.1212 10.1516 15.365 10.2001 15.5925 10.2944C15.82 10.3886 16.0267 10.5267 16.2008 10.7008L18.625 13.125M3.625 16.25H17.375C17.7065 16.25 18.0245 16.1183 18.2589 15.8839C18.4933 15.6495 18.625 15.3315 18.625 15V5C18.625 4.66848 18.4933 4.35054 18.2589 4.11612C18.0245 3.8817 17.7065 3.75 17.375 3.75H3.625C3.29348 3.75 2.97554 3.8817 2.74112 4.11612C2.5067 4.35054 2.375 4.66848 2.375 5V15C2.375 15.3315 2.5067 15.6495 2.74112 15.8839C2.97554 16.1183 3.29348 16.25 3.625 16.25ZM12.375 6.875H12.3817V6.88167H12.375V6.875ZM12.6875 6.875C12.6875 6.95788 12.6546 7.03737 12.596 7.09597C12.5374 7.15458 12.4579 7.1875 12.375 7.1875C12.2921 7.1875 12.2126 7.15458 12.154 7.09597C12.0954 7.03737 12.0625 6.95788 12.0625 6.875C12.0625 6.79212 12.0954 6.71263 12.154 6.65403C12.2126 6.59542 12.2921 6.5625 12.375 6.5625C12.4579 6.5625 12.5374 6.59542 12.596 6.65403C12.6546 6.71263 12.6875 6.79212 12.6875 6.875Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        Select photos
+                      </button>
+
+                      {/* Help Text */}
+                      <div className="text-center font-['Albert_Sans'] text-sm leading-[140%]">
+                        <span className="text-[#24272C]">or drag photos here</span>
+                        <br />
+                        <span className="text-[#696665]">(Up to 15 photos)</span>
+                      </div>
+                    </div>
+
+                    {/* Hidden file input */}
+                    <input
+                      type="file"
+                      multiple
+                      accept="image/*"
+                      className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                      onChange={handleFileInput}
+                    />
+                  </div>
+                </div>
+
+                {/* Preview Section */}
+                <div className="flex flex-wrap gap-5">
+                  {[
+                    'https://api.builder.io/api/v1/image/assets/TEMP/17364dea3aebc276610289047962487f1a2df1d1?width=388',
+                    'https://api.builder.io/api/v1/image/assets/TEMP/5d9c53e6b9a8bf3b47c2c51007652c01eae8813f?width=388',
+                    'https://api.builder.io/api/v1/image/assets/TEMP/c499ce7b45d93ac2d48070e28248e40d691abe94?width=388',
+                    'https://api.builder.io/api/v1/image/assets/TEMP/4d33bb1bb9d408e53a453b57a7468aa4184698de?width=388',
+                    'https://api.builder.io/api/v1/image/assets/TEMP/46078d73e15bf45f396065949e8fee2cc555c17a?width=388'
+                  ].map((src, index) => (
+                    <div key={index} className="relative w-[194px] h-[109px] flex-shrink-0">
+                      <img
+                        src={src}
+                        alt={`Vehicle photo ${index + 1}`}
+                        className="w-full h-full object-cover rounded-2xl"
+                      />
+
+                      {/* Delete Button */}
+                      <div className="absolute top-[5px] right-[5px] w-[30px] h-[30px]">
+                        <div className="w-full h-full rounded-full bg-black opacity-50 absolute"></div>
+                        <button
+                          type="button"
+                          className="absolute inset-0 flex items-center justify-center"
+                          aria-label="Delete photo"
+                        >
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.82667 6.00035L9.596 12.0003M6.404 12.0003L6.17333 6.00035M12.8187 3.86035C13.0467 3.89501 13.2733 3.93168 13.5 3.97101M12.8187 3.86035L12.1067 13.1157C12.0776 13.4925 11.9074 13.8445 11.63 14.1012C11.3527 14.3579 10.9886 14.5005 10.6107 14.5003H5.38933C5.0114 14.5005 4.64735 14.3579 4.36999 14.1012C4.09262 13.8445 3.92239 13.4925 3.89333 13.1157L3.18133 3.86035M12.8187 3.86035C12.0492 3.74403 11.2758 3.65574 10.5 3.59568M3.18133 3.86035C2.95333 3.89435 2.72667 3.93101 2.5 3.97035M3.18133 3.86035C3.95076 3.74403 4.72416 3.65575 5.5 3.59568M10.5 3.59568V2.98501C10.5 2.19835 9.89333 1.54235 9.10667 1.51768C8.36908 1.49411 7.63092 1.49411 6.89333 1.51768C6.10667 1.54235 5.5 2.19901 5.5 2.98501V3.59568M10.5 3.59568C8.83581 3.46707 7.16419 3.46707 5.5 3.59568" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Vehicle Features Selection */}
           <section className="w-full mb-8" />
         </div>
