@@ -119,7 +119,7 @@ export function UsersProfileCard() {
               <div className="relative w-[280px]" ref={listPhoneRef}>
                 <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                   <div className="pt-2">
-                    <div className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads?</div>
+                    <div className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black"><p>Select your Account type</p></div>
                     <button
                       type="button"
                       onClick={() => { setListPhoneOpen(v => !v); }}
