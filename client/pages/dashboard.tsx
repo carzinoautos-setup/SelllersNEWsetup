@@ -15,9 +15,9 @@ export default function Dashboard() {
           </header>
 
           {/* Top cards: 3 columns on lg, stacked on mobile */}
-          <div className="flex flex-col lg:flex-row gap-6 items-stretch mb-8">
+          <div className="flex flex-col md:flex-row gap-6 items-stretch mb-8">
             {/* Duplicate of Add Listing — Sellers Name card */}
-            <div className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
+            <div className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full md:w-1/3" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4">
                 <div className="w-full text-center">
                   <div className="flex items-center justify-center">
@@ -53,7 +53,7 @@ export default function Dashboard() {
 
             {/* Add Listing */}
             <div
-              className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
+              className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full md:w-1/3"
               style={{
                 boxShadow:
                   "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
@@ -93,7 +93,7 @@ export default function Dashboard() {
 
             {/* View listings */}
             <div
-            className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
+            className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full md:w-1/3"
             style={{
               boxShadow:
                 "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
