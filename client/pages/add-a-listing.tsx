@@ -61,6 +61,13 @@ export default function AddAListingPage() {
       [field]: value
     }));
   };
+
+  const handlePriceColorStep4Change = (field: string, value: string) => {
+    setPriceColorStep4(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
   return (
     <DashboardLayout>
       <div className="flex-1">
