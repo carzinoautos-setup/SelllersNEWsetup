@@ -16,6 +16,41 @@ export default function Dashboard() {
 
           {/* Top cards: 3 columns on lg, stacked on mobile */}
           <div className="flex flex-col lg:flex-row gap-6 items-stretch mb-8">
+            {/* Duplicate of Add Listing — Sellers Name card */}
+            <div className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
+              <div className="flex items-start gap-4">
+                <div className="w-full">
+                  <div className="flex items-center justify-center">
+                    <div className="w-24 h-24 rounded-full overflow-hidden">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
+                        alt="Seller"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3">
+                    Sellers Name
+                  </h2>
+                  <p className="text-sm text-[#696665] mt-2 w-full text-center">
+                    <span>10216 Melody Lane Sw</span>
+                    <br />
+                    <span>Tacoma, Wa 98498</span>
+                    <br />
+                    <span>emailhere@gmail.com<br/>253-000-0000</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-4 flex justify-center">
+                <button className="w-full sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
+                  Add listing
+                </button>
+              </div>
+            </div>
+
             {/* Add Listing */}
             <div
               className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
@@ -45,41 +80,6 @@ export default function Dashboard() {
                     Easily create a new vehicle listing and share it with
                     interested buyers in just minutes using our simple
                     step-by-step form.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 flex justify-center">
-                <button className="w-full sm:w-[204px] px-4 py-3 bg-[#4A4A4A] text-white rounded-lg text-sm font-medium">
-                  Add listing
-                </button>
-              </div>
-            </div>
-
-            {/* Duplicate of Add Listing — Sellers Name card */}
-            <div className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
-              <div className="flex items-start gap-4">
-                <div className="w-full">
-                  <div className="flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full overflow-hidden">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
-                        alt="Seller"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-
-                  <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3">
-                    Sellers Name
-                  </h2>
-                  <p className="text-sm text-[#696665] mt-2 w-full text-center">
-                    <span>10216 Melody Lane Sw</span>
-                    <br />
-                    <span>Tacoma, Wa 98498</span>
-                    <br />
-                    <span>emailhere@gmail.com<br/>253-000-0000</span>
                   </p>
                 </div>
               </div>
