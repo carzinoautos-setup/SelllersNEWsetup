@@ -23,7 +23,7 @@ export function FormField({
 }: FormFieldProps) {
   const fieldId = `field-${label.toLowerCase().replace(/\s+/g, '-')}`;
 
-  const inputClasses = `w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent`.trim();
+  const inputClasses = `w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent`.trim();
 
   return (
     <div className={`relative ${className}`}>
