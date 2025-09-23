@@ -111,7 +111,7 @@ export default function Dashboard() {
                     loading="lazy"
                     srcSet="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fba622308806749e89c9669055a2385b0?format=webp&width=2000 2000w"
                     alt=""
-                    className="block sm:hidden lg:block w-full rounded-lg object-cover"
+                    className="block sm:hidden lg:block w-full rounded-[14px] object-cover"
                     style={{
                       aspectRatio: "2.65 / 1",
                       objectPosition: "center",
