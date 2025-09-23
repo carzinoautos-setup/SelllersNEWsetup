@@ -115,6 +115,14 @@ export function UsersProfileCard() {
       crmProvider,
       crmAccount,
       crmEmail,
+      billingContact,
+      billingStreetAddress,
+      billingCity,
+      billingState,
+      billingZip,
+      billingCountry,
+      billingEmail,
+      billingPhone,
     };
     localStorage.setItem("usresprofile.draft", JSON.stringify(data));
   }, [
