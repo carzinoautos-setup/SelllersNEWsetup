@@ -9,10 +9,7 @@ export default function BuyCredits() {
     <DashboardLayout>
       <div className="flex-1">
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <header className="mb-6">
-            <h1 className="text-2xl sm:text-3xl font-medium text-[#24272C] font-albert">Buy Credits</h1>
-            <p className="text-sm text-[#696665] mt-2">Purchase credits to feature your listings and boost visibility.</p>
-          </header>
+          <header className="mb-6" />
 
 
           {/* Featured Credits Purchase Section */}
