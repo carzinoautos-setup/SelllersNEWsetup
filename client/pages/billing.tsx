@@ -245,7 +245,7 @@ export default function BillingPage() {
                       </div>
 
                       {/* Pay Button */}
-                      <button className="w-full bg-[#E82121] text-white font-inter text-base font-semibold py-[7px] px-[15px] rounded-[7px] h-10 flex items-center justify-center">
+                      <button onClick={() => setShowStripeModal(true)} className="w-full bg-[#E82121] text-white font-inter text-base font-semibold py-[7px] px-[15px] rounded-[7px] h-10 flex items-center justify-center">
                         Pay
                       </button>
 
