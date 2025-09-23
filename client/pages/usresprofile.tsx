@@ -146,7 +146,7 @@ export function UsersProfileCard() {
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-1/4 flex max-w-[573px] h-[160px] p-2.5 flex-col items-start gap-2.5 flex-shrink-0">
+          <div className="w-full md:w-1/4 flex max-w-[573px] h-[120px] md:h-[160px] p-2.5 flex-col items-start gap-2.5 flex-shrink-0">
             <div className="grid w-[170px] h-[148px] flex-shrink-0 grid-rows-1 grid-cols-1">
               <div className="grid w-[357px] h-[153px] gap-8 flex-shrink-0 self-start grid-rows-1 grid-cols-1 row-start-1 col-start-1">
                 <div className="flex flex-row md:flex-col items-start gap-4 flex-1 self-stretch row-start-1 col-start-1 pr-[17px]">
