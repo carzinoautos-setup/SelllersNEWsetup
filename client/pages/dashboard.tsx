@@ -61,12 +61,12 @@ export default function Dashboard() {
               <div className="flex items-center justify-center gap-6">
                 <div className="flex flex-col items-center bg-white rounded-[24px]" style={{ boxShadow: 'rgba(0, 95, 183, 0.08) 0px 10px 20px 0px', minHeight: '270px', padding: '64px 16px 24px', position: 'relative' }}>
                   {/* Avatar wrapper positioned absolutely */}
-                  <div style={{ fontWeight: 400, left: '50%', position: 'absolute', top: '-48px', transform: 'translateX(-53.5px)' }}>
-                    <div style={{ backgroundColor: 'rgb(229, 231, 235)', borderColor: 'rgb(255, 255, 255)', borderRadius: 9999, borderWidth: '4.8px', fontWeight: 400, height: '107px', overflowX: 'hidden', overflowY: 'hidden', width: '107px' }}>
+                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                    <div className="w-[107px] h-[107px] rounded-full border-[5px] border-white bg-gray-200 overflow-hidden">
                       <img
                         src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
                         alt="Profile"
-                        style={{ display: 'block', fontWeight: 400, height: '100%', objectFit: 'cover', width: '100%' }}
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>
