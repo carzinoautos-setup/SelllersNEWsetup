@@ -40,6 +40,9 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((s) => !s)}
+        onKeyDown={(e) => {
+          if (e.key === 'Escape') setOpen(false);
+        }}
         className={`w-full h-full text-left flex items-center justify-between bg-transparent rounded-xl focus:outline-none text-[15px] font-normal leading-[22.5px]`}
       >
         {/* Ensure we show placeholder when value is empty */}
@@ -52,6 +55,24 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
             );
           })()
         }
+
+        {/* Clear button when a value is selected */}
+        {value && value.length ? (
+          <button
+            type="button"
+            aria-label="Clear"
+            onClick={(e) => {
+              e.stopPropagation();
+              setValue(null);
+              onChange?.('');
+            }}
+            className="ml-2 mr-1 w-4 h-4 text-[#9CA3AF] hover:text-[#6B7280] flex-shrink-0"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+        ) : null}
 
         {/* Chevron aligned to center */}
         <svg className="w-4 h-4 text-[#E82121] flex-shrink-0 self-center" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
