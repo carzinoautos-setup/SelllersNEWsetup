@@ -77,8 +77,17 @@ export default function CheckoutPage() {
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center px-[35px]">
                       {/* Product Info */}
                       <div className="md:col-span-5 flex items-center gap-4">
-                        <div className="w-[118px] h-[100px] bg-white border border-[#E1E1E1] rounded-2xl flex items-center justify-center flex-shrink-0">
-                          <img src={item.image} alt={item.name} className="w-[94px] h-[80px] object-contain" />
+                        <div className="relative">
+                          <div className="w-[118px] h-[100px] bg-white border border-[#E1E1E1] rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <img src={item.image} alt={item.name} className="w-[94px] h-[80px] object-contain" />
+                          </div>
+                          <button
+                            onClick={() => removeItem(item.id)}
+                            aria-label="Remove item"
+                            className="absolute -top-2 -right-2 w-8 h-8 bg-[#F9FBFC] border border-[#E1E1E1] rounded-2xl flex items-center justify-center hover:bg-gray-100"
+                          >
+                            <DeleteIcon />
+                          </button>
                         </div>
                         <div className="font-dm text-base font-medium text-[#050B20]">{item.name}</div>
                       </div>
