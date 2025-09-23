@@ -64,7 +64,7 @@ export default function Dashboard() {
                     <div className="w-24 h-24 rounded-full overflow-hidden">
                       <img
                         loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F2db1f9af8b3345fb990ffaf367c3987e?format=webp&width=800"
+                        src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
                         alt="Seller"
                         className="w-full h-full object-cover"
                       />
