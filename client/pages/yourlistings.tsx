@@ -91,7 +91,7 @@ export default function YourListingsPage() {
           {showMobileFilters && (
             <div className="fixed inset-0 z-50 flex items-start sm:hidden">
               <div className="absolute inset-0 bg-black opacity-40" onClick={() => setShowMobileFilters(false)}></div>
-              <div className="relative w-full bg-white rounded-t-2xl p-4 max-h-[80vh] overflow-auto">
+              <div className="relative w-full bg-white rounded-b-2xl p-4 max-h-[90vh] overflow-auto mt-16">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-medium">Filters</h3>
                   <button onClick={() => setShowMobileFilters(false)} className="p-2 rounded-md">
