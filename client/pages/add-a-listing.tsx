@@ -121,9 +121,9 @@ export default function AddAListingPage() {
             <div className="max-w-[1480px] mx-auto">
               {/* Header */}
               <div className="flex items-end justify-between gap-4 mb-5">
-                <h2 className="text-[24px] font-medium text-[#24272C] font-['Albert_Sans'] leading-normal">
+                <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
                   Enter vehicle details
-                </h2>
+                </h3>
                 <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
                   <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
                     Step 2
@@ -132,8 +132,8 @@ export default function AddAListingPage() {
               </div>
 
               {/* Form Container */}
-              <div className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-8 opacity-[0.63] shadow-lg">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              <div className="bg-white rounded-lg p-8" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
                   {/* VIN# Field */}
                   <FormField
                     label="Vin#"
