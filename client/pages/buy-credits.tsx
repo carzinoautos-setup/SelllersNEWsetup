@@ -13,7 +13,6 @@ export default function BuyCredits() {
 
           <div className="mb-6 relative" />
 
-
           {/* Featured Credits Purchase Section */}
           <section className="mt-[47px]">
             <div className="mb-12">
@@ -23,7 +22,14 @@ export default function BuyCredits() {
                 </h2>
               </div>
               <p className="mt-2 text-sm text-[#696665] leading-5 max-w-5xl font-albert">
-                Promoting your car with featured ad credits on Carzino gives you maximum visibility and faster results. Featured listings appear at the top of search results, attract more views, and stand out with highlighted formatting that draws buyer attention. With targeted exposure to serious car shoppers and optimized display across desktop and mobile, your vehicle gets noticed quicker, builds buyer trust, and sells faster—all at a cost-effective rate that delivers strong value for every credit.
+                Promoting your car with featured ad credits on Carzino gives you
+                maximum visibility and faster results. Featured listings appear
+                at the top of search results, attract more views, and stand out
+                with highlighted formatting that draws buyer attention. With
+                targeted exposure to serious car shoppers and optimized display
+                across desktop and mobile, your vehicle gets noticed quicker,
+                builds buyer trust, and sells faster—all at a cost-effective
+                rate that delivers strong value for every credit.
               </p>
             </div>
 
@@ -41,13 +47,18 @@ export default function BuyCredits() {
                     1-Pack
                   </h3>
                   <p className="text-xs text-[#696665] font-albert leading-relaxed">
-                    Feature your car on Carzino to get top placement, more views, and faster sales.
+                    Feature your car on Carzino to get top placement, more
+                    views, and faster sales.
                   </p>
                 </div>
 
                 <div className="flex items-center gap-2 mb-[6px] leading-[16px]">
-                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">5</span>
+                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">
+                    $
+                  </span>
+                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">
+                    5
+                  </span>
                 </div>
 
                 <div className="flex-1 space-y-3 mb-4">
@@ -81,13 +92,18 @@ export default function BuyCredits() {
                     5-Pack
                   </h3>
                   <p className="text-xs text-[#696665] font-albert leading-relaxed">
-                    Feature your car on Carzino to get top placement, more views, and faster sales.
+                    Feature your car on Carzino to get top placement, more
+                    views, and faster sales.
                   </p>
                 </div>
 
                 <div className="flex items-center gap-2 mb-[6px] leading-[16px]">
-                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">25</span>
+                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">
+                    $
+                  </span>
+                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">
+                    25
+                  </span>
                 </div>
 
                 <div className="flex-1 space-y-3 mb-4">
@@ -121,13 +137,18 @@ export default function BuyCredits() {
                     10-Pack
                   </h3>
                   <p className="text-xs text-[#696665] font-albert leading-relaxed">
-                    Feature your car on Carzino to get top placement, more views, and faster sales.
+                    Feature your car on Carzino to get top placement, more
+                    views, and faster sales.
                   </p>
                 </div>
 
                 <div className="flex items-center gap-2 mb-[6px] leading-[16px]">
-                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">50</span>
+                  <span className="text-[20px] leading-[24px] font-medium text-[#24272C] font-albert">
+                    $
+                  </span>
+                  <span className="text-[28px] lg:text-[49px] font-bold text-[#24272C] font-albert leading-[49px]">
+                    50
+                  </span>
                 </div>
 
                 <div className="flex-1 space-y-3 mb-4">
@@ -153,7 +174,9 @@ export default function BuyCredits() {
           {/* Smaller package selector (duplicated per DOM diff) */}
           <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="bg-white rounded-2xl border border-[#EDEDED] p-6 md:col-span-2 shadow-sm">
-              <h3 className="text-lg font-medium text-[#24272C] mb-4">Choose a package</h3>
+              <h3 className="text-lg font-medium text-[#24272C] mb-4">
+                Choose a package
+              </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {/* Starter */}
@@ -161,7 +184,9 @@ export default function BuyCredits() {
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm text-[#696665]">Starter</div>
-                      <div className="text-2xl font-medium text-[#24272C]">10</div>
+                      <div className="text-2xl font-medium text-[#24272C]">
+                        10
+                      </div>
                       <div className="text-sm text-[#696665]">credits</div>
                     </div>
                     <div className="text-base font-medium">$9</div>
@@ -173,7 +198,9 @@ export default function BuyCredits() {
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm text-[#696665]">Growth</div>
-                      <div className="text-2xl font-medium text-[#24272C]">25</div>
+                      <div className="text-2xl font-medium text-[#24272C]">
+                        25
+                      </div>
                       <div className="text-sm text-[#696665]">credits</div>
                     </div>
                     <div className="text-base font-medium">$19</div>
@@ -185,7 +212,9 @@ export default function BuyCredits() {
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm text-[#696665]">Pro</div>
-                      <div className="text-2xl font-medium text-[#24272C]">50</div>
+                      <div className="text-2xl font-medium text-[#24272C]">
+                        50
+                      </div>
                       <div className="text-sm text-[#696665]">credits</div>
                     </div>
                     <div className="text-base font-medium">$35</div>
@@ -194,7 +223,9 @@ export default function BuyCredits() {
               </div>
 
               <div className="mt-6">
-                <div className="text-sm font-medium mb-2">Or enter custom amount</div>
+                <div className="text-sm font-medium mb-2">
+                  Or enter custom amount
+                </div>
                 <div className="flex items-center gap-3">
                   <input
                     type="number"
@@ -206,19 +237,30 @@ export default function BuyCredits() {
                 </div>
 
                 <div className="mt-4 flex items-center gap-3">
-                  <button className="px-4 py-2 rounded-lg bg-[#E82121] text-white font-medium">Purchase</button>
-                  <button className="px-4 py-2 rounded-lg border border-[#EDEDED] bg-white text-sm">Reset</button>
+                  <button className="px-4 py-2 rounded-lg bg-[#E82121] text-white font-medium">
+                    Purchase
+                  </button>
+                  <button className="px-4 py-2 rounded-lg border border-[#EDEDED] bg-white text-sm">
+                    Reset
+                  </button>
                 </div>
               </div>
             </div>
 
             <aside className="bg-white rounded-2xl border border-[#EDEDED] p-6 shadow-sm">
               <h4 className="text-sm font-medium mb-3">How credits work</h4>
-              <p className="text-sm text-[#696665] leading-[1.45]">Credits can be applied to your vehicle listings to feature them in search results and increase visibility. Credits do not expire.</p>
+              <p className="text-sm text-[#696665] leading-[1.45]">
+                Credits can be applied to your vehicle listings to feature them
+                in search results and increase visibility. Credits do not
+                expire.
+              </p>
 
               <div className="mt-4">
                 <h5 className="text-sm font-medium">Need help?</h5>
-                <p className="text-sm text-[#696665]">Visit our Help Center or contact support for assistance with purchases.</p>
+                <p className="text-sm text-[#696665]">
+                  Visit our Help Center or contact support for assistance with
+                  purchases.
+                </p>
               </div>
             </aside>
           </section>
@@ -249,7 +291,19 @@ function FeatureItem({ text }: { text: string }) {
   );
 }
 
-function PackageCard({ title, credits, price, selected, onSelect }: { title: string; credits: number; price: string; selected: boolean; onSelect: () => void; }) {
+function PackageCard({
+  title,
+  credits,
+  price,
+  selected,
+  onSelect,
+}: {
+  title: string;
+  credits: number;
+  price: string;
+  selected: boolean;
+  onSelect: () => void;
+}) {
   return (
     <div
       onClick={onSelect}

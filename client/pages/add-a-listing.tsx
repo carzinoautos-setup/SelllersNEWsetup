@@ -243,7 +243,7 @@ export default function AddAListingPage() {
           {/* VIN Entry Form - Responsive */}
           <section className="w-full bg-white pt-0 px-0 pb-5 mb-8">
             <div className="mb-6" />
-              <div className="max-w-[1200px] mx-auto">
+            <div className="max-w-[1200px] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start justify-start">
                 {/* Left: Text + Form */}
                 <div className="order-1 md:order-1 md:col-span-8">
