@@ -102,6 +102,82 @@ export function UsersProfileCard() {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Get Started with Carzino Section */}
+      <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 shadow-sm mb-8">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-16">
+          {/* Left Content */}
+          <div className="flex-1 flex flex-col justify-between gap-6">
+            {/* Heading & Description */}
+            <div className="flex flex-col gap-4">
+              <h2 className="text-[24px] font-bold text-[#24272C] font-['Albert_Sans']">
+                Get Started with Carzino
+              </h2>
+              <p className="text-[15px] font-normal text-[#222] leading-7 font-['DM_Sans']">
+                How do I find the VIN number for my car?<br />
+                Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle.
+                The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets
+                the edge of the windshield on the driver's side.
+              </p>
+            </div>
+
+            {/* Account Type Dropdown */}
+            <div className="w-full max-w-[310px]">
+              <div className="relative w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white">
+                <div className="absolute left-4 top-2.5">
+                  <div className="text-[13px] text-[#000] font-bold font-['Albert_Sans'] mb-1">
+                    Select your Account type
+                  </div>
+                  <div className="text-[15px] text-[#050B20] font-normal font-['DM_Sans']">
+                    Private Seller
+                  </div>
+                </div>
+                <svg
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-2.5 h-2.5"
+                  viewBox="0 0 10 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                    fill="#E82121"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Upload Photo */}
+          <div className="flex-shrink-0 flex flex-col items-center gap-4">
+            <div className="relative">
+              {/* Profile Circle with Upload Icon */}
+              <div className="w-24 h-24 rounded-full border border-[#242760] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
+                <div className="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                {/* Camera/Upload Icon */}
+                <div className="absolute bottom-0 right-0 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center border-2 border-white">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2h-5L9 1H4zm5 5a2 2 0 100 4 2 2 0 000-4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Upload Photo Text */}
+            <div className="text-center">
+              <p className="text-[12px] text-[#111928] font-normal font-['Albert_Sans'] leading-[140%]">
+                Upload Photo
+              </p>
+              <p className="text-[12px] text-[#111928] font-normal font-['Albert_Sans'] leading-[140%]">
+                Account #: 556568995
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white border border-[#B2B2B2] rounded-2xl p-8 shadow-sm mt-8">
         <div className="text-[20px] font-semibold text-[#24272C] mb-4">Enter your Details</div>
 
