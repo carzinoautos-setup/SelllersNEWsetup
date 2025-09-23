@@ -70,9 +70,9 @@ export function UsersProfileCard() {
   }, []);
 
   useEffect(() => {
-    const data = { sellerName, city, stateVal, zip, emailLead, accountEmail, sellerType, listPhone, sellerPhone, address, longitude, latitude };
+    const data = { sellerName, city, stateVal, zip, emailLead, accountEmail, sellerType, listPhone, sellerPhone, address, longitude, latitude, vehicleType, dealershipWebsite, websiteProvider, emailAlert1, emailAlert2, emailAlert3, crmProvider, crmAccount, crmEmail };
     localStorage.setItem("usresprofile.draft", JSON.stringify(data));
-  }, [sellerName, city, stateVal, zip, emailLead, accountEmail, sellerType, listPhone, sellerPhone, address, longitude, latitude]);
+  }, [sellerName, city, stateVal, zip, emailLead, accountEmail, sellerType, listPhone, sellerPhone, address, longitude, latitude, vehicleType, dealershipWebsite, websiteProvider, emailAlert1, emailAlert2, emailAlert3, crmProvider, crmAccount, crmEmail]);
 
   // close dropdowns on outside click
   useEffect(() => {
