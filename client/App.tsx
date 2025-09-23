@@ -13,6 +13,7 @@ import Reset from "./pages/reset";
 import AddAListing from "./pages/add-a-listing";
 import YourListings from "./pages/yourlistings";
 import BuyCredits from "./pages/buy-credits";
+import Checkout from "./pages/checkout";
 
 const queryClient = new QueryClient();
 
