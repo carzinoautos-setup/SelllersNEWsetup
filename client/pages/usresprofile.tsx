@@ -346,6 +346,159 @@ export function UsersProfileCard() {
           </div>
       </section>
 
+      <section className="bg-white rounded-lg p-8" style={{ border: '0.8px solid rgba(171,171,171,1)' }}>
+        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Dealership Information</h3>
+
+        <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            {/* Row 1 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Do you sell new or used vehicles?</label>
+                  <input
+                    value={vehicleType}
+                    onChange={(e)=>setVehicleType(e.target.value)}
+                    placeholder="Select an option"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alerts user 1</label>
+                  <input
+                    value={emailAlert1}
+                    onChange={(e)=>setEmailAlert1(e.target.value)}
+                    placeholder="Enter an additional alert email address"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Dealerships CRM provider</label>
+                  <input
+                    value={crmProvider}
+                    onChange={(e)=>setCrmProvider(e.target.value)}
+                    placeholder="Enter your Crm provider"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Dealership website</label>
+                  <input
+                    value={dealershipWebsite}
+                    onChange={(e)=>setDealershipWebsite(e.target.value)}
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alerts user 2</label>
+                  <input
+                    value={emailAlert2}
+                    onChange={(e)=>setEmailAlert2(e.target.value)}
+                    placeholder="Enter an additional alert email address"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">CRM Account #</label>
+                  <input
+                    value={crmAccount}
+                    onChange={(e)=>setCrmAccount(e.target.value)}
+                    placeholder="Enter your Crm account #"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 3 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">XML or CSV vehicle Feed url</label>
+                  <input
+                    value={websiteProvider}
+                    onChange={(e)=>setWebsiteProvider(e.target.value)}
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Email lead alerts user 3</label>
+                  <input
+                    value={emailAlert3}
+                    onChange={(e)=>setEmailAlert3(e.target.value)}
+                    placeholder="Enter an additional alert email address"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Dealerships CRM email</label>
+                  <input
+                    value={crmEmail}
+                    onChange={(e)=>setCrmEmail(e.target.value)}
+                    placeholder="Enter your Crm alert email address"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 4 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="pt-2">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Website provider information</label>
+                  <input
+                    value={websiteProvider}
+                    onChange={(e)=>setWebsiteProvider(e.target.value)}
+                    placeholder="Enter your inventory provider"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
