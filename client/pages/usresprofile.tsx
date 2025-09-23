@@ -184,11 +184,7 @@ export function UsersProfileCard() {
               Get Started with Carzino
             </h2>
             <p className="text-[15px] text-[#222] mb-4 leading-6">
-              Please fill out the form below with your information to create
-              your listing. You’ll be asked to choose whether you’re listing as
-              a Private Seller or a Dealer. If you’re a dealer and would like to
-              use your feed for automatic vehicle listings, please contact us
-              for details.
+              You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
             </p>
 
             <div className="flex items-center gap-4">
