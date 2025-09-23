@@ -40,6 +40,14 @@ export default function AddAListingPage() {
     mpgHwy: '',
   });
 
+  // Price & Color Step 4 form state
+  const [priceColorStep4, setPriceColorStep4] = useState({
+    price: '',
+    listingStatus: '',
+    exteriorColor: '',
+    interiorColor: '',
+  });
+
   const handleVehicleDetailChange = (field: string, value: string) => {
     setVehicleDetails(prev => ({
       ...prev,
