@@ -109,7 +109,7 @@ export function UsersProfileCard() {
         </div>
       </section>
 
-      <section className="bg-white rounded-lg p-8" style={{ boxShadow: '1px 1px 3px 0 rgba(212, 204, 204, 1)', border: '0.8px solid rgba(205,205,205,1)' }}>
+      <section className="bg-white rounded-lg p-8" style={{ border: '0.8px solid rgba(171,171,171,1)' }}>
         <h3 className="text-[24px] font-medium text-[#24272C] mb-8 font-['Albert_Sans']">Enter your Details</h3>
 
         <div>
