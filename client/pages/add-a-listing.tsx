@@ -920,25 +920,45 @@ export default function AddAListingPage() {
 
                 {/* Preview Section */}
                 <div className="flex flex-wrap gap-5">
-                  {[
-                    'https://api.builder.io/api/v1/image/assets/TEMP/17364dea3aebc276610289047962487f1a2df1d1?width=388',
-                    'https://api.builder.io/api/v1/image/assets/TEMP/5d9c53e6b9a8bf3b47c2c51007652c01eae8813f?width=388',
-                    'https://api.builder.io/api/v1/image/assets/TEMP/c499ce7b45d93ac2d48070e28248e40d691abe94?width=388',
-                    'https://api.builder.io/api/v1/image/assets/TEMP/4d33bb1bb9d408e53a453b57a7468aa4184698de?width=388',
-                    'https://api.builder.io/api/v1/image/assets/TEMP/46078d73e15bf45f396065949e8fee2cc555c17a?width=388'
-                  ].map((src, index) => (
-                    <div key={index} className="relative w-[194px] h-[109px] flex-shrink-0">
-                      <img
-                        src={src}
-                        alt={`Vehicle photo ${index + 1}`}
-                        className="w-full h-full object-cover rounded-2xl"
-                      />
+                  {photos.map((photo, index) => (
+                    <div
+                      key={photo.id}
+                      draggable
+                      onDragStart={(e) => onDragStart(e, index)}
+                      onDragOver={(e) => e.preventDefault()}
+                      onDrop={(e) => onDrop(e, index)}
+                      className="relative w-[194px] h-[109px] flex-shrink-0"
+                    >
+                      <img src={photo.url} alt={`Vehicle photo ${index + 1}`} className="w-full h-full object-cover rounded-2xl" />
+
+                      {/* Feature Toggle */}
+                      <div className="absolute top-2 left-2">
+                        {featurePhotoId === photo.id ? (
+                          <div className="w-7 h-7 bg-[#E82121] rounded-full flex items-center justify-center text-white">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor" />
+                            </svg>
+                          </div>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={() => setFeaturePhotoId(photo.id)}
+                            className="w-7 h-7 bg-white rounded-full flex items-center justify-center border"
+                            aria-label="Set as feature"
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" stroke="#050B20" strokeWidth="1" fill="none" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
 
                       {/* Delete Button */}
-                      <div className="absolute top-[5px] right-[5px] w-[30px] h-[30px]">
+                      <div className="absolute top-2 right-2 w-[34px] h-[34px]">
                         <div className="w-full h-full rounded-full bg-black opacity-50 absolute"></div>
                         <button
                           type="button"
+                          onClick={() => deletePhoto(photo.id)}
                           className="absolute inset-0 flex items-center justify-center"
                           aria-label="Delete photo"
                         >
