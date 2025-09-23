@@ -147,32 +147,37 @@ export function UsersProfileCard() {
           </div>
 
           {/* Right Content - Upload Photo */}
-          <div className="flex-shrink-0 flex flex-col items-center gap-4">
-            <div className="relative">
-              {/* Profile Circle with Upload Icon */}
-              <div className="w-24 h-24 rounded-full border border-[#242760] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
-                <div className="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
+          <div className="flex-shrink-0 flex flex-col items-start gap-4 p-2.5">
+            <div className="flex flex-col items-start gap-4">
+              {/* Profile Image with exact Figma SVG */}
+              <svg
+                width="97"
+                height="100"
+                viewBox="0 0 97 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                className="relative"
+              >
+                <ellipse cx="48.7901" cy="49.4303" rx="46.9132" ry="48.1452" fill="url(#pattern0_3092_23250)"/>
+                <path d="M48.4766 0.5C74.9614 0.5 96.4541 22.5377 96.4541 49.75C96.4541 76.9623 74.9614 99 48.4766 99C21.9919 98.9998 0.5 76.9622 0.5 49.75C0.5 22.5378 21.9919 0.500224 48.4766 0.5Z" stroke="#242760"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M78.4062 82.7422C78.4062 82.326 78.7176 81.9883 79.1021 81.9883H83.7416C84.126 81.9883 84.4374 82.326 84.4374 82.7422C84.4374 83.1583 84.126 83.4961 83.7416 83.4961H79.1021C78.7176 83.4961 78.4062 83.1583 78.4062 82.7422ZM79.7466 95.5585H83.097C85.4499 95.5585 86.6267 95.5585 87.4719 95.0142C87.8355 94.7804 88.1495 94.4773 88.3961 94.1223C88.9608 93.3081 88.9608 92.1735 88.9608 89.9042C88.9608 87.635 88.9608 86.5011 88.3954 85.6862C88.149 85.3312 87.8352 85.0281 87.4719 84.7943C86.6267 84.25 85.4499 84.25 83.097 84.25H79.7466C77.3937 84.25 76.2169 84.25 75.3718 84.7943C75.0084 85.0281 74.6946 85.3312 74.4482 85.6862C73.8828 86.5004 73.8828 87.635 73.8828 89.9027V89.9042C73.8828 92.1735 73.8828 93.3073 74.4475 94.1223C74.6917 94.4751 75.0054 94.7782 75.3718 95.0142C76.2169 95.5585 77.3937 95.5585 79.7466 95.5585ZM78.2803 89.9042C78.2803 88.2306 79.6871 86.8751 81.4218 86.8751C83.1565 86.8751 84.5633 88.2313 84.5633 89.9042C84.5633 91.5771 83.1558 92.9334 81.4218 92.9334C79.6871 92.9334 78.2803 91.5764 78.2803 89.9042ZM79.5371 89.9042C79.5371 88.9 80.3814 88.0873 81.4218 88.0873C82.4622 88.0873 83.3066 88.9008 83.3066 89.9042C83.3066 90.9077 82.4622 91.7211 81.4218 91.7211C80.3814 91.7211 79.5371 90.9077 79.5371 89.9042ZM86.0289 86.8751C85.6821 86.8751 85.4009 87.1465 85.4009 87.4812C85.4009 87.8152 85.6821 88.0866 86.0289 88.0866H86.4481C86.7949 88.0866 87.0761 87.8152 87.0761 87.4812C87.0761 87.1465 86.7949 86.8751 86.4481 86.8751H86.0289Z" fill="#E82121"/>
+                <defs>
+                  <pattern id="pattern0_3092_23250" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlinkHref="#image0_3092_23250" transform="matrix(0.00257069 0 0 0.00250491 0 -0.307835)"/>
+                  </pattern>
+                </defs>
+              </svg>
+
+              {/* Upload Photo Text */}
+              <div className="flex flex-col items-start gap-2 self-stretch">
+                <div className="self-stretch text-[#111928] font-['Albert_Sans'] text-[12px] font-normal leading-[140%]">
+                  Upload Photo
                 </div>
-                {/* Camera/Upload Icon */}
-                <div className="absolute bottom-0 right-0 w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center border-2 border-white">
-                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2h-5L9 1H4zm5 5a2 2 0 100 4 2 2 0 000-4z" clipRule="evenodd" />
-                  </svg>
+                <div className="self-stretch text-[#111928] font-['Albert_Sans'] text-[12px] font-normal leading-[140%]">
+                  Account #r: 556568995
                 </div>
               </div>
-            </div>
-
-            {/* Upload Photo Text */}
-            <div className="text-center">
-              <p className="text-[12px] text-[#111928] font-normal font-['Albert_Sans'] leading-[140%]">
-                Upload Photo
-              </p>
-              <p className="text-[12px] text-[#111928] font-normal font-['Albert_Sans'] leading-[140%]">
-                Account #: 556568995
-              </p>
             </div>
           </div>
         </div>
