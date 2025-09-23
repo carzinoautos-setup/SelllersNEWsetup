@@ -91,11 +91,6 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Car image center (replaced with profile card) */}
-            <div className="flex items-center justify-center">
-              <div className="flex items-center justify-center gap-6" />
-            </div>
-
             {/* View listings */}
             <div
             className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
