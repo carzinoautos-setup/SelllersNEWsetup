@@ -122,16 +122,16 @@ export function UsersProfileCard() {
                 <select
                   value={sellerType}
                   onChange={(e) => setSellerType(e.target.value)}
-                  className="appearance-none w-[310px] h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 pr-10 text-[15px] text-[#050B20] outline-none"
+                  className="appearance-none w-[310px] h-[44px] rounded-xl border border-[#B2B2B2] bg-white px-4 py-3 pr-10 text-[15px] text-[#050B20] outline-none"
                 >
                   <option value="">Select Seller Type</option>
                   <option value="Private Seller">Private Seller</option>
                   <option value="Dealer">Dealer</option>
                 </select>
                 <svg
-                  className="flex w-[10px] h-[10px] justify-center items-center flex-shrink-0 absolute left-[285px] top-[25px]"
-                  width="10"
-                  height="11"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#E82121] pointer-events-none"
+                  width="16"
+                  height="16"
                   viewBox="0 0 10 11"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
