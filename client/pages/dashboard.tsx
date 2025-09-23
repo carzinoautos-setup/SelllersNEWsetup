@@ -71,7 +71,7 @@ export default function Dashboard() {
                     </div>
                   </div>
 
-                  <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3">
+                  <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3 pt-2">
                     Sellers Name
                   </h2>
                   <p className="text-sm text-[#696665] mt-2 w-full text-center">
