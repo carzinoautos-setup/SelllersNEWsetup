@@ -53,7 +53,6 @@ export default function CheckoutPage() {
     <DashboardLayout>
       <div className="flex-1 overflow-visible">
         <div className="pt-8 px-4 sm:px-6 lg:px-8 w-full max-w-[1550px] mx-auto">
-          <h1 className="text-[40px] font-bold text-black font-albert leading-[48px] mb-[72px]">Check out</h1>
 
           <div className="flex flex-col xl:flex-row gap-8">
             {/* Cart Table Section */}
