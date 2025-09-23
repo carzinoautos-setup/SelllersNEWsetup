@@ -247,16 +247,8 @@ export function UsersProfileCard() {
                 <div className="pt-2 flex items-center justify-between">
                   <div>
                     <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
-                    <button
-                      onClick={()=>setListPhone(v=>!v)}
-                      className="block text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    >
-                      {listPhone ? 'Yes' : 'No'}
-                    </button>
+                    <div className="block text-[15px] text-[#050B20] font-['DM_Sans'] h-full flex items-center">{listPhone ? 'Yes' : 'No'}</div>
                   </div>
-                  <svg className="w-[10px] h-[10px] text-[#050B20]" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.52021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
-                  </svg>
                 </div>
               </div>
             </div>
