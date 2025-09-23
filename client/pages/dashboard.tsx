@@ -56,31 +56,30 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Car image center */}
-            <div className="flex items-center justify-center gap-6">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/6cb5af304655256907388f87557ab314e301d153?width=820"
-                alt="Vehicle"
-                className="w-full max-w-[480px] object-cover rounded-2xl hidden md:block"
-              />
-
-              {/* Profile card (compact) */}
-              <div className="hidden md:flex flex-col items-center bg-white rounded-[24px]" style={{ boxShadow: 'rgba(0, 95, 183, 0.08) 0px 10px 20px 0px', minHeight: '270px', padding: '64px 16px 24px', position: 'relative' }}>
-                {/* Avatar */}
-                <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-[107px] h-[107px] rounded-full border-[4.8px] border-white bg-gray-200 overflow-hidden">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fc995fe842c70430fbc202b2ccec5b0c6?format=webp&width=800"
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
+            {/* Car image center (replaced with profile card) */}
+            <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center gap-6">
+                <div className="flex flex-col items-center bg-white rounded-[24px]" style={{ boxShadow: 'rgba(0, 95, 183, 0.08) 0px 10px 20px 0px', minHeight: '270px', padding: '64px 16px 24px', position: 'relative' }}>
+                  {/* Avatar wrapper positioned absolutely */}
+                  <div style={{ fontWeight: 400, left: '50%', position: 'absolute', top: '-48px', transform: 'translateX(-53.5px)' }}>
+                    <div style={{ backgroundColor: 'rgb(229, 231, 235)', borderColor: 'rgb(255, 255, 255)', borderRadius: 9999, borderWidth: '4.8px', fontWeight: 400, height: '107px', overflowX: 'hidden', overflowY: 'hidden', width: '107px' }}>
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
+                        alt="Profile"
+                        style={{ display: 'block', fontWeight: 400, height: '100%', objectFit: 'cover', width: '100%' }}
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div className="flex flex-col items-center text-center gap-3 max-w-[344px]">
-                  <h3 className="text-2xl font-semibold text-[#24272C]">Sellers Name</h3>
-                  <p className="text-sm text-[#414141] leading-[1.4]">10216 Melody Lane Sw<br/>Tacoma, Wa 98498<br/>emailhere@gmail.com</p>
-                  <button aria-label="Edit profile" className="mt-2 w-[204px] h-[50px] bg-[#24272C] text-white rounded-[14px] font-medium">Edit Profile</button>
+                  <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', fontWeight: 400, gap: '12px', maxWidth: '344px', textAlign: 'center' }}>
+                    <div style={{ color: 'rgb(36, 39, 44)', fontSize: '24px', fontWeight: 600, lineHeight: '28px' }}>Sellers Name</div>
+                    <p style={{ color: 'rgb(65, 65, 65)', fontSize: '14px', fontWeight: 400, lineHeight: '19.6px', padding: '0 8px' }}>
+                      10216 Melody Lane Sw<br/>Tacoma, Wa 98498<br/>emailhere@gmail.com
+                    </p>
+                    <div aria-label="Edit profile" style={{ display: 'flex', alignItems: 'center', backgroundColor: 'rgb(36, 39, 44)', borderRadius: '14px', color: 'rgb(255, 255, 255)', fontFamily: 'Outfit, "Albert Sans", Inter, system-ui, sans-serif', fontWeight: 500, gap: '8px', height: '50px', justifyContent: 'center', width: '204px' }}>
+                      Edit Profile
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
