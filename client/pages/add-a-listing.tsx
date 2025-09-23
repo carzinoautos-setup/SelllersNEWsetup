@@ -442,7 +442,7 @@ export default function AddAListingPage() {
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Navigation System</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Navigation System</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" defaultChecked />
@@ -451,49 +451,49 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Remote Start</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Remote Start</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Keyless Entry</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Keyless Entry</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Hands-Free</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Hands-Free</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Power Folding Side Mirrors</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Power Folding Side Mirrors</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rain-Sensing Wipers</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rain-Sensing Wipers</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Homelink</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Homelink</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Split-Folding Rear Seats</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Split-Folding Rear Seats</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adjustable Steering Column</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adjustable Steering Column</span>
                       </label>
                     </div>
                   </CollapsibleSection>
@@ -506,7 +506,7 @@ export default function AddAListingPage() {
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Leather Seats</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Leather Seats</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" defaultChecked />
@@ -515,55 +515,55 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Heated Seats</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Heated Seats</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Sunroof /Panoramic Roof</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Sunroof /Panoramic Roof</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Heated Steering Wheel</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Heated Steering Wheel</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Touchscreen Display</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Touchscreen Display</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Ventilated / Cooled Seats</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Ventilated / Cooled Seats</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Memory Driver Seat Settings</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Memory Driver Seat Settings</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Ambient Interior Lighting</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Ambient Interior Lighting</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rubber Flooring</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rubber Flooring</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wood or Aluminum Trim</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wood or Aluminum Trim</span>
                       </label>
                     </div>
                   </CollapsibleSection>
@@ -576,7 +576,7 @@ export default function AddAListingPage() {
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Alloy Wheels</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Alloy Wheels</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" defaultChecked />
@@ -585,55 +585,55 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">LED Headlights</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">LED Headlights</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Fog Lights</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Fog Lights</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Roof Rack</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Roof Rack</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tinted Windows</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tinted Windows</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Power Tailgate</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Power Tailgate</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tow Hitch / Towing Package</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tow Hitch / Towing Package</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Running Boards</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Running Boards</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Body Kit/Sport Package</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Body Kit/Sport Package</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Spoiler</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Spoiler</span>
                       </label>
                     </div>
                   </CollapsibleSection>
@@ -646,7 +646,7 @@ export default function AddAListingPage() {
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Airbags</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Airbags</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" defaultChecked />
@@ -655,55 +655,55 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Airbag - Passenger</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Airbag - Passenger</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Anti-lock Braking System</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Anti-lock Braking System</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Backup Camera</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Backup Camera</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Lane Departure Warning</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Lane Departure Warning</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adaptive Cruise Control</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adaptive Cruise Control</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Parking Sensors</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Parking Sensors</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Automatic High Beams</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Automatic High Beams</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tire Pressure Monitoring System</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tire Pressure Monitoring System</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Electronic Stability Control</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Electronic Stability Control</span>
                       </label>
                     </div>
                   </CollapsibleSection>
@@ -716,7 +716,7 @@ export default function AddAListingPage() {
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Apple CarPlay/Android Auto</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Apple CarPlay/Android Auto</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" defaultChecked />
@@ -725,55 +725,55 @@ export default function AddAListingPage() {
                             <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
                           </svg>
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Bluetooth</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Bluetooth</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Touchscreen Display</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Touchscreen Display</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wireless Phone Connectivity</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wireless Phone Connectivity</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Seat Entertainment Screens</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Seat Entertainment Screens</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">DVD Player</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">DVD Player</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Premium Sound System</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Premium Sound System</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Steering Wheel Audio Controls</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Steering Wheel Audio Controls</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wi-Fi Hotspot Capability</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wi-Fi Hotspot Capability</span>
                       </label>
                       <label className="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" className="hidden" />
                         <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
                         </div>
-                        <span className="text-[14px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Voice Command System</span>
+                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Voice Command System</span>
                       </label>
                     </div>
                   </CollapsibleSection>
