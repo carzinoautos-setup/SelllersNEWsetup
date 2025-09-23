@@ -499,7 +499,7 @@ export default function AddAListingPage() {
                   </CollapsibleSection>
 
                   {/* Interior Column */}
-                  <div className="flex flex-col">
+                  <CollapsibleSection title={'Interior'} id={'interior'} isOpen={openSections.interior} onToggle={() => handleToggle('interior')}>
                     <h4 className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Interior</h4>
                     <div className="flex flex-col gap-4">
                       <label className="flex items-center gap-3 cursor-pointer">
@@ -566,7 +566,7 @@ export default function AddAListingPage() {
                         <span className="text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wood or Aluminum Trim</span>
                       </label>
                     </div>
-                  </div>
+                  </CollapsibleSection>
 
                   {/* Exterior Column */}
                   <div className="flex flex-col">
