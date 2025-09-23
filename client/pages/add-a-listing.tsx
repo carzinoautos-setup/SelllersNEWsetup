@@ -46,6 +46,13 @@ export default function AddAListingPage() {
       [field]: value
     }));
   };
+
+  const handleVehicleDetailStep3Change = (field: string, value: string) => {
+    setVehicleDetailsStep3(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
   return (
     <DashboardLayout>
       <div className="flex-1">
