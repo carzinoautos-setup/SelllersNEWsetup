@@ -241,7 +241,7 @@ export default function AddAListingPage() {
       <div className="flex-1">
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 xl:px-[60px] py-8">
           {/* VIN Entry Form - Responsive */}
-          <section className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-5 mb-8">
+          <section className="w-full bg-white p-5 mb-8">
             <div className="mb-6" />
               <div className="max-w-[1200px] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
