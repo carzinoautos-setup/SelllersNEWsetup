@@ -75,9 +75,11 @@ export default function Dashboard() {
                     Sellers Name
                   </h2>
                   <p className="text-sm text-[#696665] mt-2 w-full text-center">
-                    Easily create a new vehicle listing and share it with
-                    interested buyers in just minutes using our simple
-                    step-by-step form.
+                    <span>10216 Melody Lane Sw</span>
+                    <br />
+                    <span>Tacoma, Wa 98498</span>
+                    <br />
+                    <span>emailhere@gmail.com<br/>253-000-0000</span>
                   </p>
                 </div>
               </div>
