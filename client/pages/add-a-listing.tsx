@@ -161,7 +161,7 @@ export default function AddAListingPage() {
                   Enter vehicle details
                 </h3>
                 <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
-                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['Albert_Sans'] leading-[26px]">
                     Step 2
                   </span>
                 </div>
@@ -270,7 +270,7 @@ export default function AddAListingPage() {
                   Enter vehicle details
                 </h3>
                 <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
-                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['Albert_Sans'] leading-[26px]">
                     Step 3
                   </span>
                 </div>
@@ -380,7 +380,7 @@ export default function AddAListingPage() {
                   Price & Color
                 </h3>
                 <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
-                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['Albert_Sans'] leading-[26px]">
                     Step 4
                   </span>
                 </div>
