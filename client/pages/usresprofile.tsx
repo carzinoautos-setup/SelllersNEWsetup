@@ -19,6 +19,9 @@ export function UsersProfileCard() {
   const [listPhoneFormOpen, setListPhoneFormOpen] = useState(false);
   const listPhoneFormRef = useRef<HTMLDivElement | null>(null);
 
+  const [vehicleTypeOpen, setVehicleTypeOpen] = useState(false);
+  const vehicleTypeRef = useRef<HTMLDivElement | null>(null);
+
   const [listPhone, setListPhone] = useState(true);
   const [sellerPhone, setSellerPhone] = useState("");
   const [address, setAddress] = useState("");
@@ -85,6 +88,9 @@ export function UsersProfileCard() {
       }
       if (listPhoneFormRef.current && !(listPhoneFormRef.current as any).contains(e.target)) {
         setListPhoneFormOpen(false);
+      }
+      if (vehicleTypeRef.current && !(vehicleTypeRef.current as any).contains(e.target)) {
+        setVehicleTypeOpen(false);
       }
     }
     document.addEventListener('click', onDocClick);
@@ -356,12 +362,26 @@ export function UsersProfileCard() {
               <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
                 <div className="pt-2">
                   <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Do you sell new or used vehicles?</label>
-                  <input
-                    value={vehicleType}
-                    onChange={(e)=>setVehicleType(e.target.value)}
-                    placeholder="Select an option"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
+                  <div className="relative w-full" ref={vehicleTypeRef}>
+                    <button
+                      type="button"
+                      onClick={() => { setVehicleTypeOpen(v => !v); }}
+                      className="w-full h-full relative rounded-xl bg-transparent px-0 text-[15px] text-[#050B20]"
+                      aria-haspopup="listbox"
+                      aria-expanded={vehicleTypeOpen}
+                    >
+                      <div className="inline flex-shrink-0 overflow-hidden whitespace-nowrap text-left overflow-x-hidden overflow-y-hidden">{vehicleType || 'Select vehicle type'}</div>
+                      <svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 absolute right-4 top-1/2 transform -translate-y-1/2"><path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D"/></svg>
+                    </button>
+
+                    {vehicleTypeOpen && (
+                      <ul role="listbox" className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50" style={{ left: 0, right: 0, top: 'calc(100% + 8px)', boxSizing: 'border-box' }}>
+                        <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType(''); setVehicleTypeOpen(false); }}>Select vehicle type</li>
+                        <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType('New/Used'); setVehicleTypeOpen(false); }}>New/Used</li>
+                        <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType('Used'); setVehicleTypeOpen(false); }}>Used</li>
+                      </ul>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
