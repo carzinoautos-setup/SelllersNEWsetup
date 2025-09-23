@@ -119,6 +119,63 @@ export default function AddAListingPage() {
       [field]: value
     }));
   };
+  // Photos state and handlers
+  const [photos, setPhotos] = useState<Array<{ id: string; url: string }>>([
+    { id: 'p1', url: 'https://api.builder.io/api/v1/image/assets/TEMP/9e70d3a8ceb312795c532df6dc151c9d3b313ba9?width=314' },
+    { id: 'p2', url: 'https://api.builder.io/api/v1/image/assets/TEMP/f5bdf2c8b316671a24dd99a2c2ba76f65ef1a1e3?width=315' },
+    { id: 'p3', url: 'https://api.builder.io/api/v1/image/assets/TEMP/fd33fd9e7843e4a7814bb338186c8afac402528a?width=315' },
+  ]);
+  const [featurePhotoId, setFeaturePhotoId] = useState<string | null>('p1');
+
+  const addPhotoFromFile = (file: File) => {
+    if (!file) return;
+    if (file.size > 1024 * 1024) {
+      alert('File is too large. Max size is 1MB.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => {
+      const url = String(reader.result);
+      const newPhoto = { id: `${Date.now()}-${Math.random().toString(36).slice(2,8)}`, url };
+      setPhotos((prev) => [...prev, newPhoto]);
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) addPhotoFromFile(file);
+    e.currentTarget.value = '';
+  };
+
+  const deletePhoto = (id: string) => {
+    setPhotos((prev) => prev.filter((p) => p.id !== id));
+    if (featurePhotoId === id) {
+      setFeaturePhotoId((prev) => {
+        const remaining = photos.filter((p) => p.id !== id);
+        return remaining[0]?.id ?? null;
+      });
+    }
+  };
+
+  const onDragStart = (e: React.DragEvent<HTMLDivElement>, index: number) => {
+    e.dataTransfer.setData('text/plain', String(index));
+    e.dataTransfer.effectAllowed = 'move';
+  };
+
+  const onDrop = (e: React.DragEvent<HTMLDivElement>, index: number) => {
+    e.preventDefault();
+    const fromIndex = Number(e.dataTransfer.getData('text/plain'));
+    const toIndex = index;
+    if (isNaN(fromIndex)) return;
+    setPhotos((prev) => {
+      const copy = [...prev];
+      const [moved] = copy.splice(fromIndex, 1);
+      copy.splice(toIndex, 0, moved);
+      return copy;
+    });
+  };
+
   return (
     <DashboardLayout>
       <div className="flex-1">
