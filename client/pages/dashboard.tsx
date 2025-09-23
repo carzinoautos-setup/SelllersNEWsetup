@@ -19,7 +19,7 @@ export default function Dashboard() {
             {/* Duplicate of Add Listing — Sellers Name card */}
             <div className="flex flex-col justify-between gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4">
-                <div className="w-full">
+                <div className="w-full text-center">
                   <div className="flex items-center justify-center">
                     <div className="w-24 h-24 rounded-full overflow-hidden">
                       <img
