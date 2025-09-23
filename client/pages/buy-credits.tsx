@@ -223,6 +223,79 @@ export default function BuyCredits() {
               </div>
             </div>
           </section>
+
+          {/* Smaller package selector (duplicated per DOM diff) */}
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div className="bg-white rounded-2xl border border-[#EDEDED] p-6 md:col-span-2 shadow-sm">
+              <h3 className="text-lg font-medium text-[#24272C] mb-4">Choose a package</h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {/* Starter */}
+                <div className="bg-red-50 border border-[#E82121] rounded-2xl p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-sm text-[#696665]">Starter</div>
+                      <div className="text-2xl font-medium text-[#24272C]">10</div>
+                      <div className="text-sm text-[#696665]">credits</div>
+                    </div>
+                    <div className="text-base font-medium">$9</div>
+                  </div>
+                </div>
+
+                {/* Growth */}
+                <div className="bg-white border border-[#EDEDED] rounded-2xl p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-sm text-[#696665]">Growth</div>
+                      <div className="text-2xl font-medium text-[#24272C]">25</div>
+                      <div className="text-sm text-[#696665]">credits</div>
+                    </div>
+                    <div className="text-base font-medium">$19</div>
+                  </div>
+                </div>
+
+                {/* Pro */}
+                <div className="bg-white border border-[#EDEDED] rounded-2xl p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="text-sm text-[#696665]">Pro</div>
+                      <div className="text-2xl font-medium text-[#24272C]">50</div>
+                      <div className="text-sm text-[#696665]">credits</div>
+                    </div>
+                    <div className="text-base font-medium">$35</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <div className="text-sm font-medium mb-2">Or enter custom amount</div>
+                <div className="flex items-center gap-3">
+                  <input
+                    type="number"
+                    min={1}
+                    className="w-40 px-3 py-2 rounded-lg border border-[#EDEDED] text-sm"
+                    placeholder="Credits"
+                  />
+                  <span className="text-sm text-[#696665]">credits</span>
+                </div>
+
+                <div className="mt-4 flex items-center gap-3">
+                  <button className="px-4 py-2 rounded-lg bg-[#E82121] text-white font-medium">Purchase</button>
+                  <button className="px-4 py-2 rounded-lg border border-[#EDEDED] bg-white text-sm">Reset</button>
+                </div>
+              </div>
+            </div>
+
+            <aside className="bg-white rounded-2xl border border-[#EDEDED] p-6 shadow-sm">
+              <h4 className="text-sm font-medium mb-3">How credits work</h4>
+              <p className="text-sm text-[#696665] leading-[1.45]">Credits can be applied to your vehicle listings to feature them in search results and increase visibility. Credits do not expire.</p>
+
+              <div className="mt-4">
+                <h5 className="text-sm font-medium">Need help?</h5>
+                <p className="text-sm text-[#696665]">Visit our Help Center or contact support for assistance with purchases.</p>
+              </div>
+            </aside>
+          </section>
         </div>
       </div>
     </DashboardLayout>
