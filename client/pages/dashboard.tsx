@@ -57,12 +57,32 @@ export default function Dashboard() {
             </div>
 
             {/* Car image center */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center gap-6">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/6cb5af304655256907388f87557ab314e301d153?width=820"
                 alt="Vehicle"
                 className="w-full max-w-[480px] object-cover rounded-2xl hidden md:block"
               />
+
+              {/* Profile card (compact) */}
+              <div className="hidden md:flex flex-col items-center bg-white rounded-[24px]" style={{ boxShadow: 'rgba(0, 95, 183, 0.08) 0px 10px 20px 0px', minHeight: '270px', padding: '64px 16px 24px', position: 'relative' }}>
+                {/* Avatar */}
+                <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                  <div className="w-[107px] h-[107px] rounded-full border-[4.8px] border-white bg-gray-200 overflow-hidden">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fc995fe842c70430fbc202b2ccec5b0c6?format=webp&width=800"
+                      alt="Profile"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center text-center gap-3 max-w-[344px]">
+                  <h3 className="text-2xl font-semibold text-[#24272C]">Sellers Name</h3>
+                  <p className="text-sm text-[#414141] leading-[1.4]">10216 Melody Lane Sw<br/>Tacoma, Wa 98498<br/>emailhere@gmail.com</p>
+                  <button aria-label="Edit profile" className="mt-2 w-[204px] h-[50px] bg-[#24272C] text-white rounded-[14px] font-medium">Edit Profile</button>
+                </div>
+              </div>
             </div>
 
             {/* View listings */}
