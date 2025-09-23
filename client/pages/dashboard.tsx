@@ -18,7 +18,7 @@ export default function Dashboard() {
           <div className="flex flex-col lg:flex-row gap-6 items-start mb-8">
             {/* Add Listing */}
             <div
-              className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full"
+              className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
               style={{
                 boxShadow:
                   "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
@@ -57,7 +57,7 @@ export default function Dashboard() {
             </div>
 
             {/* Duplicate of Add Listing — Sellers Name card */}
-            <div className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
+            <div className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3" style={{ boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4">
                 <div className="w-full">
                   <div className="flex items-center justify-center">
