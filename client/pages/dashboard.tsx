@@ -30,7 +30,7 @@ export default function Dashboard() {
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F2db1f9af8b3345fb990ffaf367c3987e?format=webp&width=2000"
                     alt=""
-                    className="block sm:hidden lg:block w-full rounded-lg object-cover"
+                    className="block sm:hidden lg:block w-full rounded-[14px] object-cover"
                     style={{
                       aspectRatio: "2.65 / 1",
                       objectPosition: "center",
