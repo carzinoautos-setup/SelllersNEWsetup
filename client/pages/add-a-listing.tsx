@@ -239,7 +239,7 @@ export default function AddAListingPage() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-[60px] py-8">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 xl:px-[60px] py-8">
           {/* VIN Entry Form - Responsive */}
           <section className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-5 mb-8">
             <div className="mb-6" />
