@@ -125,20 +125,28 @@ export default function Dashboard() {
             <div
               className="flex flex-col justify-center rounded-2xl bg-white"
               style={{
-                border: "0.8px solid rgba(251,251,251,1)",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
+                display: "flex",
                 alignItems: "flex-start",
-                height: "auto",
-                flexGrow: "0",
+                backgroundColor: "rgb(255, 255, 255)",
+                borderColor: "rgb(251, 251, 251)",
+                borderRadius: "16px",
+                borderWidth: "0.8px",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+                flexDirection: "column",
+                fontWeight: "400",
+                justifyContent: "center",
+                "@media (max-width: 640px)": {
+                  paddingTop: "10px",
+                },
                 padding: "10px 11px 10px 12px",
               }}
             >
               <div className="flex items-start gap-4">
-                <div style={{ marginBottom: "-3px" }}>
-                  <h3 className="text-lg font-medium text-[#24272C]">
+                <div style={{ fontWeight: "400", marginBottom: "-3px", "@media (max-width: 640px)": { lineHeight: "14px" } }}>
+                  <div style={{ color: "rgb(36, 39, 44)", fontSize: "18px", fontWeight: "500", lineHeight: "28px", textDecoration: "rgb(36, 39, 44)", "@media (max-width: 640px)": { lineHeight: "22px" } }}>
                     Help Center
-                  </h3>
+                  </div>
                   <p className="text-sm text-[#696665] mt-2">
                     Get quick answers, helpful guides, and expert support
                     whenever you need assistance using Carzino.
