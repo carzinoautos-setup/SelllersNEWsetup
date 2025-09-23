@@ -16,6 +16,9 @@ export function UsersProfileCard() {
   const [listPhoneOpen, setListPhoneOpen] = useState(false);
   const listPhoneRef = useRef<HTMLDivElement | null>(null);
 
+  const [listPhoneFormOpen, setListPhoneFormOpen] = useState(false);
+  const listPhoneFormRef = useRef<HTMLDivElement | null>(null);
+
   const [listPhone, setListPhone] = useState(true);
   const [sellerPhone, setSellerPhone] = useState("");
   const [address, setAddress] = useState("");
