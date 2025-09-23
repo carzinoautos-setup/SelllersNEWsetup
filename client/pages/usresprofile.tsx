@@ -110,10 +110,10 @@ export function UsersProfileCard() {
                 )}
               </div>
 
-              <div className="relative w-[160px]" ref={listPhoneRef}>
+              <div className="relative w-[280px]" ref={listPhoneRef}>
                 <button
                   type="button"
-                  onClick={() => { setListPhoneOpen(v => !v); setTimeout(()=>{ if (listPhoneRef.current) setListPhoneWidth(listPhoneRef.current.offsetWidth); },0); }}
+                  onClick={() => { setListPhoneOpen(v => !v); }}
                   className="w-full h-[44px] flex items-center justify-between rounded-xl border border-[#B2B2B2] bg-white px-4 text-[15px] text-[#050B20]"
                   aria-haspopup="listbox"
                   aria-expanded={listPhoneOpen}
