@@ -11,12 +11,14 @@ export default function BuyCredits() {
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <header className="mb-6" />
 
+          <div className="mb-6 relative" />
+
 
           {/* Featured Credits Purchase Section */}
           <section className="mt-12">
             <div className="mb-12">
               <div className="relative">
-                <h2 className="text-[30px] font-medium text-[#24272C] font-albert leading-[36px]">
+                <h2 className="text-[24px] font-semibold text-[#24272C] leading-[32px]">
                   Buy Featured ad credits
                 </h2>
               </div>
