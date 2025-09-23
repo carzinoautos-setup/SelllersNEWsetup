@@ -43,7 +43,7 @@ export default function YourListingsPage() {
               </div>
 
               {/* Search Input (desktop) */}
-              <div className="relative flex items-center gap-3 px-4 py-3 rounded-xl border border-[#B6B6B6] bg-white min-w-0 lg:w-52 flex-shrink-0">
+              <div className="hidden sm:flex relative items-center gap-3 px-4 py-3 rounded-xl border border-[#B6B6B6] bg-white min-w-0 lg:w-52 flex-shrink-0">
                 <span className="text-[#5B5B5B] font-outfit text-base font-normal">Search</span>
                 <svg className="w-5 h-5 flex-shrink-0 ml-auto" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.9419 17.0595L14.0302 13.1485C15.1639 11.7874 15.7293 10.0415 15.6086 8.27409C15.488 6.5067 14.6906 4.85387 13.3823 3.65943C12.074 2.46499 10.3557 1.8209 8.58462 1.86115C6.81357 1.9014 5.12622 2.62289 3.87358 3.87554C2.62094 5.12818 1.89945 6.81553 1.8592 8.58657C1.81895 10.3576 2.46304 12.076 3.65748 13.3843C4.85192 14.6925 6.50475 15.4899 8.27214 15.6106C10.0395 15.7312 11.7854 15.1659 13.1466 14.0321L17.0575 17.9438C17.1156 18.0019 17.1845 18.048 17.2604 18.0794C17.3363 18.1108 17.4176 18.127 17.4997 18.127C17.5818 18.127 17.6631 18.1108 17.739 18.0794C17.8149 18.048 17.8838 18.0019 17.9419 17.9438C17.9999 17.8858 18.046 17.8168 18.0774 17.741C18.1089 17.6651 18.125 17.5838 18.125 17.5016C18.125 17.4195 18.1089 17.3382 18.0774 17.2623C18.046 17.1865 17.9999 17.1175 17.9419 17.0595ZM3.12469 8.75164C3.12469 7.63912 3.45459 6.55159 4.07267 5.62656C4.69076 4.70153 5.56926 3.98056 6.5971 3.55482C7.62493 3.12908 8.75593 3.01768 9.84707 3.23473C10.9382 3.45177 11.9405 3.9875 12.7272 4.77417C13.5138 5.56084 14.0496 6.56312 14.2666 7.65426C14.4837 8.7454 14.3723 9.8764 13.9465 10.9042C13.5208 11.9321 12.7998 12.8106 11.8748 13.4287C10.9497 14.0467 9.86221 14.3766 8.74969 14.3766C7.25836 14.375 5.82858 13.7818 4.77404 12.7273C3.71951 11.6728 3.12634 10.243 3.12469 8.75164Z" fill="#B9B9B9"/>
@@ -51,9 +51,9 @@ export default function YourListingsPage() {
               </div>
 
               {/* Filter Dropdowns */}
-              <div className="hidden sm:flex flex-col sm:flex-row gap-3 flex-1 min-w-0">
+              <div className="hidden sm:flex sm:flex-row gap-3 flex-1 min-w-0">
                   {/* Make Dropdown */}
-                  <div className="relative flex items-center justify-between px-4 py-3 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
+                  <div className="relative flex items-center justify-between px-3 py-2 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
                     <span className="text-[#696665] font-outfit text-sm font-normal leading-[140%]">Make</span>
                     <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.2733 7.14828L9.64828 12.7733C9.59604 12.8256 9.534 12.8671 9.46572 12.8954C9.39743 12.9237 9.32423 12.9383 9.25031 12.9383C9.17639 12.9383 9.1032 12.9237 9.03491 12.8954C8.96662 12.8671 8.90458 12.8256 8.85234 12.7733L3.22734 7.14828C3.1218 7.04273 3.0625 6.89958 3.0625 6.75031C3.0625 6.60105 3.1218 6.45789 3.22734 6.35234C3.33289 6.2468 3.47605 6.1875 3.62531 6.1875C3.77458 6.1875 3.91773 6.2468 4.02328 6.35234L9.25031 11.5801L14.4773 6.35234C14.5296 6.30008 14.5917 6.25863 14.6599 6.23034C14.7282 6.20206 14.8014 6.1875 14.8753 6.1875C14.9492 6.1875 15.0224 6.20206 15.0907 6.23034C15.159 6.25863 15.221 6.30008 15.2733 6.35234C15.3255 6.40461 15.367 6.46665 15.3953 6.53493C15.4236 6.60322 15.4381 6.6764 15.4381 6.75031C15.4381 6.82422 15.4236 6.89741 15.3953 6.96569C15.367 7.03398 15.3255 7.09602 15.2733 7.14828Z" fill="#696665"/>
@@ -61,7 +61,7 @@ export default function YourListingsPage() {
                   </div>
 
                   {/* Model Dropdown */}
-                  <div className="relative flex items-center justify-between px-4 py-3 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
+                  <div className="relative flex items-center justify-between px-3 py-2 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
                     <span className="text-[#696665] font-outfit text-sm font-normal leading-[140%]">Model</span>
                     <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.5233 7.14828L9.89828 12.7733C9.84604 12.8256 9.784 12.8671 9.71572 12.8954C9.64743 12.9237 9.57423 12.9383 9.50031 12.9383C9.42639 12.9383 9.3532 12.9237 9.28491 12.8954C9.21662 12.8671 9.15458 12.8256 9.10234 12.7733L3.47734 7.14828C3.3718 7.04273 3.3125 6.89958 3.3125 6.75031C3.3125 6.60105 3.3718 6.45789 3.47734 6.35234C3.58289 6.2468 3.72605 6.1875 3.87531 6.1875C4.02458 6.1875 4.16773 6.2468 4.27328 6.35234L9.50031 11.5801L14.7273 6.35234C14.7796 6.30008 14.8417 6.25863 14.9099 6.23034C14.9782 6.20206 15.0514 6.1875 15.1253 6.1875C15.1992 6.1875 15.2724 6.20206 15.3407 6.23034C15.409 6.25863 15.471 6.30008 15.5233 6.35234C15.5755 6.40461 15.617 6.46665 15.6453 6.53493C15.6736 6.60322 15.6881 6.6764 15.6881 6.75031C15.6881 6.82422 15.6736 6.89741 15.6453 6.96569C15.617 7.03398 15.5755 7.09602 15.5233 7.14828Z" fill="#696665"/>
@@ -69,7 +69,7 @@ export default function YourListingsPage() {
                   </div>
 
                   {/* Body Style Dropdown */}
-                  <div className="relative flex items-center justify-between px-4 py-3 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
+                  <div className="relative flex items-center justify-between px-3 py-2 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
                     <span className="text-[#696665] font-outfit text-sm font-normal leading-[140%]">Body Style</span>
                     <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.7733 7.14828L10.1483 12.7733C10.096 12.8256 10.034 12.8671 9.96572 12.8954C9.89743 12.9237 9.82423 12.9383 9.75031 12.9383C9.67639 12.9383 9.6032 12.9237 9.53491 12.8954C9.46662 12.8671 9.40458 12.8256 9.35234 12.7733L3.72734 7.14828C3.6218 7.04273 3.5625 6.89958 3.5625 6.75031C3.5625 6.60105 3.6218 6.45789 3.72734 6.35234C3.83289 6.2468 3.97605 6.1875 4.12531 6.1875C4.27458 6.1875 4.41773 6.2468 4.52328 6.35234L9.75031 11.5801L14.9773 6.35234C15.0296 6.30008 15.0917 6.25863 15.1599 6.23034C15.2282 6.20206 15.3014 6.1875 15.3753 6.1875C15.4492 6.1875 15.5224 6.20206 15.5907 6.23034C15.659 6.25863 15.721 6.30008 15.7733 6.35234C15.8255 6.40461 15.867 6.46665 15.8953 6.53493C15.9236 6.60322 15.9381 6.6764 15.9381 6.75031C15.9381 6.82422 15.9236 6.89741 15.8953 6.96569C15.867 7.03398 15.8255 7.09602 15.7733 7.14828Z" fill="#696665"/>
@@ -77,7 +77,7 @@ export default function YourListingsPage() {
                   </div>
 
                   {/* Sort Dropdown */}
-                  <div className="relative flex items-center justify-between px-4 py-3 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
+                  <div className="relative flex items-center justify-between px-3 py-2 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
                     <span className="text-[#696665] font-outfit text-sm font-normal leading-[140%]">Sort</span>
                     <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.0228 7.14828L9.39779 12.7733C9.34555 12.8256 9.28351 12.8671 9.21523 12.8954C9.14694 12.9237 9.07375 12.9383 8.99982 12.9383C8.9259 12.9383 8.85271 12.9237 8.78442 12.8954C8.71613 12.8671 8.6541 12.8256 8.60186 12.7733L2.97686 7.14828C2.87131 7.04273 2.81201 6.89958 2.81201 6.75031C2.81201 6.60105 2.87131 6.45789 2.97686 6.35234C3.0824 6.2468 3.22556 6.1875 3.37482 6.1875C3.52409 6.1875 3.66725 6.2468 3.77279 6.35234L8.99982 11.5801L14.2269 6.35234C14.2791 6.30008 14.3412 6.25863 14.4094 6.23034C14.4777 6.20206 14.5509 6.1875 14.6248 6.1875C14.6987 6.1875 14.7719 6.20206 14.8402 6.23034C14.9085 6.25863 14.9705 6.30008 15.0228 6.35234C15.0751 6.40461 15.1165 6.46665 15.1448 6.53493C15.1731 6.60322 15.1876 6.6764 15.1876 6.75031C15.1876 6.82422 15.1731 6.89741 15.1448 6.96569C15.1165 7.03398 15.0751 7.09602 15.0228 7.14828Z" fill="#E82121"/>
