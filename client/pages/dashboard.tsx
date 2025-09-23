@@ -265,41 +265,6 @@ export default function Dashboard() {
           <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8" />
         </div>
 
-        {/* Profile Card - Figma Design */}
-        <div className="w-full max-w-[400px] mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-          <div className="relative flex flex-col items-center justify-end bg-white rounded-3xl p-4 pt-16 pb-6 min-h-[270px]" style={{ boxShadow: '0 10px 20px rgba(0,95,183,0.08)' }}>
-            {/* Profile Image - positioned to overflow at top */}
-            <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
-              <div className="w-[107px] h-[107px] rounded-full border-[5px] border-white bg-gray-200 overflow-hidden">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fc995fe842c70430fbc202b2ccec5b0c6?format=webp&width=800"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex flex-col items-center gap-3 w-full max-w-[344px] text-center">
-              {/* Name */}
-              <h2 className="text-2xl sm:text-3xl font-semibold text-[#24272C] font-albert leading-tight">
-                Sellers Name
-              </h2>
-
-              {/* Address and Email - keep line breaks */}
-              <p className="text-sm font-normal text-[#414141] font-albert leading-[1.4] px-2">
-                10216 Melody Lane Sw<br />
-                Tacoma, Wa 98498<br />
-                emailhere@gmail.com
-              </p>
-
-              {/* Edit Profile Button */}
-              <button aria-label="Edit profile" className="flex items-center justify-center gap-2 w-[204px] h-[50px] bg-[#24272C] text-white rounded-[14px] font-outfit text-base font-medium hover:bg-[#1a1d21] transition-colors">
-                Edit Profile
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </DashboardLayout>
   );
