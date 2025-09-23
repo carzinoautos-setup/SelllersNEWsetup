@@ -123,7 +123,7 @@ export function UsersProfileCard() {
                     value={sellerName}
                     onChange={(e)=>setSellerName(e.target.value)}
                     placeholder="Enter your full name"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -137,7 +137,7 @@ export function UsersProfileCard() {
                     value={city}
                     onChange={(e)=>setCity(e.target.value)}
                     placeholder="City"
-                    className="w-full text-[15px] text-[#24272C] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#24272C] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -151,7 +151,7 @@ export function UsersProfileCard() {
                     value={stateVal}
                     onChange={(e)=>setStateVal(e.target.value)}
                     placeholder="Enter your state"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -166,7 +166,7 @@ export function UsersProfileCard() {
                     value={zip}
                     onChange={(e)=>setZip(e.target.value)}
                     placeholder="Zip code"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -180,7 +180,7 @@ export function UsersProfileCard() {
                     value={emailLead}
                     onChange={(e)=>setEmailLead(e.target.value)}
                     placeholder="Email address"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -194,7 +194,7 @@ export function UsersProfileCard() {
                     value={accountEmail}
                     onChange={(e)=>setAccountEmail(e.target.value)}
                     placeholder="Enter your email address"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -208,7 +208,7 @@ export function UsersProfileCard() {
                   <input
                     value={sellerPhone}
                     onChange={(e)=>setSellerPhone(e.target.value)}
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -221,7 +221,7 @@ export function UsersProfileCard() {
                     <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
                     <button
                       onClick={()=>setListPhone(v=>!v)}
-                      className="block text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                      className="block text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                     >
                       {listPhone ? 'Yes' : 'No'}
                     </button>
@@ -244,7 +244,7 @@ export function UsersProfileCard() {
                     value={address}
                     onChange={(e)=>setAddress(e.target.value)}
                     placeholder="Enter address"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -258,7 +258,7 @@ export function UsersProfileCard() {
                     value={longitude}
                     onChange={(e)=>setLongitude(e.target.value)}
                     placeholder="Longitude"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
@@ -272,7 +272,7 @@ export function UsersProfileCard() {
                     value={latitude}
                     onChange={(e)=>setLatitude(e.target.value)}
                     placeholder="Latitude"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
                   />
                 </div>
               </div>
