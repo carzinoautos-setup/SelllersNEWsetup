@@ -15,7 +15,7 @@ export default function YourListingsPage() {
 
           {/* Search Filter Section */}
           <div className="mb-8">
-            <div className="bg-white rounded-2xl shadow-[0_4px_26px_0_rgba(66,71,76,0.08)] p-4 sm:p-6">
+            <div className="bg-white rounded-2xl shadow-[0_4px_26px_0_rgba(66,71,76,0.08)] p-4 sm:p-6 md:flex md:items-center md:gap-3">
               {/* Mobile top row: search, filter icon, sort (mobile only) */}
               <div className="flex items-center gap-2 mb-3 md:hidden">
                 <div className="flex-1">
@@ -43,7 +43,7 @@ export default function YourListingsPage() {
               </div>
 
               {/* Search Input (desktop) */}
-              <div className="hidden md:flex relative items-center gap-3 px-3 py-2 rounded-xl border border-[#B6B6B6] bg-white min-w-0 w-48 md:w-56 lg:w-64 flex-shrink-0">
+              <div className="hidden md:flex flex-1 relative items-center gap-3 px-3 py-2 rounded-xl border border-[#B6B6B6] bg-white min-w-0 flex-shrink-0">
                 <span className="text-[#5B5B5B] font-outfit text-base font-normal">Search</span>
                 <svg className="w-5 h-5 flex-shrink-0 ml-auto" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.9419 17.0595L14.0302 13.1485C15.1639 11.7874 15.7293 10.0415 15.6086 8.27409C15.488 6.5067 14.6906 4.85387 13.3823 3.65943C12.074 2.46499 10.3557 1.8209 8.58462 1.86115C6.81357 1.9014 5.12622 2.62289 3.87358 3.87554C2.62094 5.12818 1.89945 6.81553 1.8592 8.58657C1.81895 10.3576 2.46304 12.076 3.65748 13.3843C4.85192 14.6925 6.50475 15.4899 8.27214 15.6106C10.0395 15.7312 11.7854 15.1659 13.1466 14.0321L17.0575 17.9438C17.1156 18.0019 17.1845 18.048 17.2604 18.0794C17.3363 18.1108 17.4176 18.127 17.4997 18.127C17.5818 18.127 17.6631 18.1108 17.739 18.0794C17.8149 18.048 17.8838 18.0019 17.9419 17.9438C17.9999 17.8858 18.046 17.8168 18.0774 17.741C18.1089 17.6651 18.125 17.5838 18.125 17.5016C18.125 17.4195 18.1089 17.3382 18.0774 17.2623C18.046 17.1865 17.9999 17.1175 17.9419 17.0595ZM3.12469 8.75164C3.12469 7.63912 3.45459 6.55159 4.07267 5.62656C4.69076 4.70153 5.56926 3.98056 6.5971 3.55482C7.62493 3.12908 8.75593 3.01768 9.84707 3.23473C10.9382 3.45177 11.9405 3.9875 12.7272 4.77417C13.5138 5.56084 14.0496 6.56312 14.2666 7.65426C14.4837 8.7454 14.3723 9.8764 13.9465 10.9042C13.5208 11.9321 12.7998 12.8106 11.8748 13.4287C10.9497 14.0467 9.86221 14.3766 8.74969 14.3766C7.25836 14.375 5.82858 13.7818 4.77404 12.7273C3.71951 11.6728 3.12634 10.243 3.12469 8.75164Z" fill="#B9B9B9"/>
