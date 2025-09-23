@@ -23,23 +23,18 @@ export function FormField({
 }: FormFieldProps) {
   const fieldId = `field-${label.toLowerCase().replace(/\s+/g, '-')}`;
 
-  const baseClasses = `
-    w-full h-[60px] rounded-xl border border-[#E1E1E1] bg-white px-4 
-    text-[15px] font-['Albert_Sans'] text-[#050B20] 
-    outline-none focus:border-[#E82121] focus:ring-0 
-    transition-colors duration-200
-  `.trim();
+  const inputClasses = `w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent`.trim();
 
   return (
     <div className={`relative ${className}`}>
-      <div className="relative">
+      <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
         {type === 'select' ? (
           <>
             <select
               id={fieldId}
               value={value}
               onChange={(e) => onChange(e.target.value)}
-              className={`${baseClasses} appearance-none cursor-pointer`}
+              className={`${inputClasses} appearance-none cursor-pointer`}
               required={required}
               aria-label={label}
             >
@@ -52,7 +47,6 @@ export function FormField({
                 </option>
               ))}
             </select>
-            {/* Dropdown arrow */}
             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
               <svg
                 width="10"
@@ -75,16 +69,16 @@ export function FormField({
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder={placeholder || `Enter ${label}`}
-            className={baseClasses}
+            className={inputClasses}
             required={required}
             aria-label={label}
           />
         )}
-        
+
         {/* Floating label */}
         <label
           htmlFor={fieldId}
-          className="absolute left-4 top-[10px] text-[13px] text-[#818181] font-['Albert_Sans'] pointer-events-none"
+          className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black"
         >
           {label}
         </label>
