@@ -154,7 +154,7 @@ export default function AddAListingPage() {
                       </label>
 
                       <label className="block">
-                        <span className="text-[13px] text-[#818181]">Make</span>
+                        <span className="text-[13px] text-[#818181]">Enter your Vin #</span>
                         <input
                           aria-label="Make"
                           type="text"
