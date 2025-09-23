@@ -32,7 +32,7 @@ export default function AddAListingPage() {
     id: string;
     isOpen: boolean;
     onToggle: () => void;
-    children: React.ReactNode;
+    children: any;
   }) {
     return (
       <div className="w-full">
