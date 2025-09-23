@@ -242,12 +242,13 @@ export default function AddAListingPage() {
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {/* VIN Entry Form - Responsive */}
           <section className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-5 mb-8">
-            <div className="max-w-[1200px] mx-auto">
+            <div className="mb-6" />
+              <div className="max-w-[1200px] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 {/* Left: Text + Form */}
                 <div className="order-1 md:order-1 md:col-span-8">
                   <div className="space-y-4">
-                    <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold text-[#222] leading-tight">
+                    <h2 className="text-[24px] font-semibold text-[#24272C] leading-[32px]">
                       Start by entering the vin number
                     </h2>
                     <div className="pt-3">
