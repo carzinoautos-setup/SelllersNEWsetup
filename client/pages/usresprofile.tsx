@@ -110,7 +110,7 @@ export function UsersProfileCard() {
                 )}
               </div>
 
-              <div className="relative w-[160px]" ref={listPhoneRef}>
+              <div className={listPhoneOpen ? "relative w-[320px]" : "relative w-[160px]"} ref={listPhoneRef}>
                 <button
                   type="button"
                   onClick={() => setListPhoneOpen(v => !v)}
@@ -118,12 +118,12 @@ export function UsersProfileCard() {
                   aria-haspopup="listbox"
                   aria-expanded={listPhoneOpen}
                 >
-                  <span className="truncate">{listPhone ? 'Yes' : 'No'}</span>
-                  <svg className="w-4 h-4 text-[#050B20] ml-2" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#050B20"/></svg>
+                  <span className="truncate flex-1 text-left">{listPhone ? 'Yes' : 'No'}</span>
+                  <svg className="w-4 h-4 ml-2" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D"/></svg>
                 </button>
 
                 {listPhoneOpen && (
-                  <ul role="listbox" className="absolute left-0 mt-2 w-full bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50">
+                  <ul role="listbox" className={"absolute left-0 mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50 " + (listPhoneOpen ? 'w-[320px]' : 'w-full')}>
                     <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(true); setListPhoneOpen(false); }}>Yes</li>
                     <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(false); setListPhoneOpen(false); }}>No</li>
                   </ul>
