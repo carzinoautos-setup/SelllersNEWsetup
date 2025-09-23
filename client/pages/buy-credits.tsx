@@ -61,7 +61,7 @@ export default function BuyCredits() {
                   <div className="h-px bg-[#EDEDED]"></div>
                 </div>
 
-                <button className="w-full bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
+                <button className="w-[70%] mx-auto bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
                   Add to Cart
                 </button>
               </div>
@@ -101,7 +101,7 @@ export default function BuyCredits() {
                   <div className="h-px bg-[#EDEDED]"></div>
                 </div>
 
-                <button className="w-full bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
+                <button className="w-[70%] mx-auto bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
                   Add to Cart
                 </button>
               </div>
@@ -141,7 +141,7 @@ export default function BuyCredits() {
                   <div className="h-px bg-[#EDEDED]"></div>
                 </div>
 
-                <button className="w-full bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
+                <button className="w-[70%] mx-auto bg-[#24272C] text-white py-2 px-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors">
                   Add to Cart
                 </button>
               </div>
