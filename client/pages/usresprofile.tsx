@@ -25,6 +25,17 @@ export function UsersProfileCard() {
   const [longitude, setLongitude] = useState("");
   const [latitude, setLatitude] = useState("");
 
+  // Dealership information fields
+  const [vehicleType, setVehicleType] = useState("");
+  const [dealershipWebsite, setDealershipWebsite] = useState("");
+  const [websiteProvider, setWebsiteProvider] = useState("");
+  const [emailAlert1, setEmailAlert1] = useState("");
+  const [emailAlert2, setEmailAlert2] = useState("");
+  const [emailAlert3, setEmailAlert3] = useState("");
+  const [crmProvider, setCrmProvider] = useState("");
+  const [crmAccount, setCrmAccount] = useState("");
+  const [crmEmail, setCrmEmail] = useState("");
+
   // persist draft locally
   useEffect(() => {
     const saved = localStorage.getItem("usresprofile.draft");
