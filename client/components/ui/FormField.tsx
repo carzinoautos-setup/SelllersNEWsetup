@@ -28,7 +28,7 @@ export function FormField({
 
   return (
     <div className={`relative ${className}`}>
-      <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+      <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative flex flex-col justify-center items-center">
         {type === 'select' ? (
           <>
             <Select
