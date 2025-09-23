@@ -34,7 +34,7 @@ export default function Dashboard() {
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3">
                     Sellers Name
                   </h2>
-                  <p className="text-sm text-[#696665] mt-2 w-full text-center">
+                  <p className="text-sm text-[#696665] mt-2 w-full">
                     <span>10216 Melody Lane Sw</span>
                     <br />
                     <span>Tacoma, Wa 98498</span>
