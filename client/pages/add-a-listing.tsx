@@ -884,6 +884,122 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Upload vehicle photos - Step 7 */}
+          <section className="w-full mb-8">
+            <div className="max-w-[1480px] mx-auto">
+              {/* Header */}
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <h3 className="text-[24px] font-medium text-[#24272C] font-['Albert_Sans']">
+                  Upload vehicle photos
+                </h3>
+                <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['Albert_Sans'] leading-[26px]">
+                    Step 7
+                  </span>
+                </div>
+              </div>
+
+              {/* Form Container */}
+              <div className="bg-white rounded-lg p-8 border border-[#B2B2B2]">
+
+                {/* Gallery Section */}
+                <div className="mb-8">
+                  <h4 className="text-[16px] font-medium text-[#050B20] font-['DM_Sans'] mb-4">Gallery</h4>
+
+                  {/* Photo Grid */}
+                  <div className="flex flex-wrap gap-4 mb-4">
+                    {/* Sample uploaded photos */}
+                    <div className="relative w-[107px] h-[94px] rounded-lg bg-[#C4C4C4] overflow-hidden">
+                      <img
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/9e70d3a8ceb312795c532df6dc151c9d3b313ba9?width=314"
+                        alt="Vehicle photo"
+                        className="w-full h-full object-cover"
+                      />
+                      {/* Action buttons */}
+                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-200 flex items-center justify-center gap-2 opacity-0 hover:opacity-100">
+                        <button className="w-10 h-10 bg-white rounded-2xl border border-white flex items-center justify-center hover:bg-gray-50">
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fillRule="evenodd" clipRule="evenodd" d="M7.06907 7.69033C7.37819 7.65943 7.65382 7.88496 7.68472 8.19411L8.05972 11.9441C8.0907 12.2532 7.8651 12.5289 7.55602 12.5598C7.2469 12.5907 6.97124 12.3652 6.94033 12.056L6.56533 8.30601C6.53442 7.99693 6.75995 7.72123 7.06907 7.69033Z" fill="#050B20"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M10.931 7.69033C11.2401 7.72123 11.4656 7.99693 11.4347 8.30601L11.0597 12.056C11.0288 12.3652 10.7532 12.5907 10.444 12.5598C10.135 12.5289 9.90943 12.2532 9.94033 11.9441L10.3153 8.19411C10.3462 7.88496 10.6219 7.65943 10.931 7.69033Z" fill="#050B20"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M7.59236 0.937514H10.1285C10.2908 0.937409 10.4322 0.937319 10.5657 0.958642C11.0931 1.04287 11.5496 1.37186 11.7963 1.84563C11.8587 1.96555 11.9034 2.09971 11.9546 2.2537L12.0383 2.50488C12.0525 2.5474 12.0565 2.55943 12.06 2.56891C12.1913 2.932 12.5318 3.17744 12.9178 3.18723C12.9279 3.18748 12.9404 3.18753 12.9854 3.18753H15.2354C15.5461 3.18753 15.7979 3.43936 15.7979 3.75003C15.7979 4.06069 15.5461 4.31253 15.2354 4.31253H2.48535C2.17469 4.31253 1.92285 4.06069 1.92285 3.75003C1.92285 3.43936 2.17469 3.18753 2.48535 3.18753H4.73542C4.78045 3.18753 4.79288 3.18748 4.80303 3.18723C5.18902 3.17744 5.52953 2.93202 5.66087 2.56893C5.66432 2.55938 5.6683 2.54761 5.68254 2.50488L5.76624 2.25372C5.81747 2.09973 5.8621 1.96555 5.92454 1.84563C6.17125 1.37186 6.6277 1.04287 7.15517 0.958642C7.28869 0.937319 7.43008 0.937409 7.59236 0.937514ZM6.61646 3.18753C6.6551 3.11176 6.68933 3.03303 6.71879 2.95161C6.72773 2.92688 6.7365 2.90056 6.74777 2.86675L6.82262 2.64219C6.891 2.43706 6.90674 2.39522 6.92236 2.36523C7.0046 2.2073 7.15675 2.09764 7.33257 2.06956C7.36597 2.06423 7.41062 2.06253 7.62686 2.06253H10.094C10.3102 2.06253 10.3548 2.06423 10.3883 2.06956C10.5641 2.09764 10.7163 2.2073 10.7985 2.36523C10.8141 2.39522 10.8298 2.43705 10.8982 2.64219L10.973 2.86662L11.0021 2.95162C11.0315 3.03304 11.0658 3.11176 11.1044 3.18753H6.61646Z" fill="#050B20"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M3.83663 5.81377C4.1466 5.7931 4.41463 6.02763 4.4353 6.3376L4.78026 11.5119C4.84764 12.5228 4.89567 13.2262 5.00109 13.7554C5.10336 14.2688 5.2461 14.5405 5.45117 14.7323C5.65623 14.9241 5.93685 15.0485 6.45585 15.1164C6.9909 15.1864 7.69592 15.1875 8.70902 15.1875H9.28907C10.3022 15.1875 11.0072 15.1864 11.5422 15.1164C12.0612 15.0485 12.3419 14.9241 12.5469 14.7323C12.752 14.5405 12.8948 14.2688 12.997 13.7554C13.1024 13.2262 13.1504 12.5228 13.2179 11.5119L13.5628 6.3376C13.5834 6.02763 13.8515 5.7931 14.1614 5.81377C14.4714 5.83443 14.7059 6.10246 14.6853 6.41244L14.3377 11.6262C14.2736 12.5883 14.2218 13.3654 14.1003 13.9752C13.974 14.6092 13.7592 15.1388 13.3155 15.5538C12.8718 15.9689 12.3291 16.148 11.6882 16.2319C11.0716 16.3125 10.2928 16.3125 9.32859 16.3125H8.66949C7.70529 16.3125 6.92646 16.3125 6.30993 16.2319C5.66894 16.148 5.12628 15.9689 4.68258 15.5538C4.23888 15.1388 4.02407 14.6092 3.89778 13.9752C3.77629 13.3654 3.7245 12.5883 3.66038 11.6262L3.31279 6.41244C3.29212 6.10246 3.52665 5.83443 3.83663 5.81377Z" fill="#050B20"/>
+                          </svg>
+                        </button>
+                        <button className="w-10 h-10 bg-white rounded-2xl border border-white flex items-center justify-center hover:bg-gray-50">
+                          <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.8453 15.1836H10.0625C9.752 15.1836 9.5 14.9316 9.5 14.6211C9.5 14.3106 9.752 14.0586 10.0625 14.0586H14.8453C15.1558 14.0586 15.4078 14.3106 15.4078 14.6211C15.4078 14.9316 15.1558 15.1836 14.8453 15.1836Z" fill="#050B20"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M12.0893 8.39263L13.0097 7.16645C13.4657 6.55895 13.6577 5.81046 13.5504 5.0582C13.4432 4.30595 13.0502 3.64145 12.4427 3.18545C11.1894 2.24495 9.40292 2.4977 8.46167 3.75245L3.39767 10.4987C1.88867 12.511 3.23117 14.908 3.28892 15.0092C3.36692 15.145 3.49817 15.2417 3.65117 15.277C3.69467 15.2875 4.11467 15.3805 4.70042 15.3805C5.64767 15.3805 7.02617 15.1382 7.94567 13.9127L11.9721 8.54871C11.9955 8.52666 12.0173 8.50236 12.0373 8.47581C12.0573 8.44918 12.0746 8.42136 12.0893 8.39263ZM4.15367 14.2202C4.73942 14.2915 6.21692 14.3417 7.04567 13.237L10.7927 8.24511L8.04422 6.1815L4.29692 11.1737C3.45167 12.3017 3.91667 13.6825 4.15367 14.2202ZM8.71937 5.28215L11.4683 7.34514L12.1097 6.4907C12.6789 5.73321 12.5252 4.65395 11.7677 4.0847C11.0094 3.51695 9.92942 3.67071 9.36092 4.42745L8.71937 5.28215Z" fill="#050B20"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="relative w-[107px] h-[94px] rounded-lg bg-[#C4C4C4] overflow-hidden">
+                      <img
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/f5bdf2c8b316671a24dd99a2c2ba76f65ef1a1e3?width=315"
+                        alt="Vehicle photo"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    <div className="relative w-[107px] h-[94px] rounded-lg bg-[#C4C4C4] overflow-hidden">
+                      <img
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/fd33fd9e7843e4a7814bb338186c8afac402528a?width=315"
+                        alt="Vehicle photo"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Upload slot */}
+                    <div className="w-[107px] h-[94px] rounded-lg border border-dashed border-[#D9D9D9] bg-[#E9F2FF] flex flex-col items-center justify-center cursor-pointer hover:bg-[#dbeafe] transition-colors">
+                      <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-2">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M18.1807 21.8723C17.5594 21.8723 17.0557 21.3826 17.0557 20.7785V3.21875C17.0557 2.61469 17.5594 2.125 18.1807 2.125C18.802 2.125 19.3057 2.61469 19.3057 3.21875V20.7785C19.3057 21.3826 18.802 21.8723 18.1807 21.8723Z" fill="#050B20"/>
+                        <path fillRule="evenodd" clipRule="evenodd" d="M13.0128 8.26374C12.5725 7.83748 12.5711 7.14496 13.0095 6.71694L17.3836 2.44694C17.5946 2.24085 17.8814 2.125 18.1807 2.125C18.4798 2.125 18.7667 2.24085 18.9778 2.44694L23.3518 6.71694C23.7902 7.14496 23.7887 7.83748 23.3485 8.26374C22.9082 8.68999 22.196 8.68858 21.7576 8.26056L18.1807 4.76874L14.6038 8.26056C14.1653 8.68858 13.453 8.68999 13.0128 8.26374Z" fill="#050B20"/>
+                        <path fillRule="evenodd" clipRule="evenodd" d="M6.67514 14.1617C7.53846 13.029 8.94983 12.4627 11.5483 12.2298C12.167 12.1744 12.6223 11.6418 12.5652 11.0403C12.5082 10.4388 11.9604 9.99612 11.3417 10.0516C8.57018 10.2999 6.32154 10.9514 4.86737 12.8593C3.47319 14.6886 3 17.4445 3 21.3491C3 26.5258 3.83481 29.7088 6.56991 31.3421C7.8735 32.1207 9.48795 32.4648 11.3361 32.6319C13.177 32.7984 15.3885 32.7984 17.9526 32.7984H18.0474C20.6115 32.7984 22.8231 32.7984 24.6639 32.6319C26.5121 32.4648 28.1265 32.1207 29.4302 31.3421C32.1653 29.7088 33 26.5258 33 21.3491C33 17.4445 32.5268 14.6886 31.1327 12.8593C29.6784 10.9514 27.4299 10.2999 24.6582 10.0516C24.0396 9.99612 23.4918 10.4388 23.4348 11.0403C23.3777 11.6418 23.8331 12.1744 24.4518 12.2298C27.0501 12.4627 28.4616 13.029 29.3249 14.1617C30.2483 15.3731 30.75 17.4807 30.75 21.3491C30.75 26.5279 29.8523 28.5227 28.2524 29.4782C27.3885 29.9942 26.1848 30.2974 24.4554 30.4539C22.7303 30.6099 20.6208 30.6109 18 30.6109C15.3792 30.6109 13.2698 30.6099 11.5445 30.4539C9.81518 30.2974 8.6115 29.9942 7.74759 29.4782C6.14769 28.5227 5.25 26.5279 5.25 21.3491C5.25 17.4807 5.75181 15.3731 6.67514 14.1617Z" fill="#050B20"/>
+                      </svg>
+                      <span className="text-[15px] font-medium text-[#050B20] font-['DM_Sans']">Upload</span>
+                    </div>
+                  </div>
+
+                  {/* File requirements */}
+                  <p className="text-[15px] text-[#050B20] font-['DM_Sans'] leading-[26px]">
+                    Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png
+                  </p>
+                </div>
+
+                {/* Divider */}
+                <div className="w-full h-px bg-[#E1E1E1] my-8"></div>
+
+                {/* Video Link Section */}
+                <div>
+                  <h4 className="text-[16px] font-medium text-[#050B20] font-['DM_Sans'] mb-4">Video link</h4>
+
+                  {/* Video input field */}
+                  <div className="w-full h-[60px] bg-white rounded-xl border border-[#E1E1E1] relative">
+                    <label
+                      htmlFor="video-link-input"
+                      className="absolute top-2.5 left-4 text-[13px] text-[#818181] font-['DM_Sans'] pointer-events-none"
+                    >
+                      Video Link
+                    </label>
+                    <input
+                      id="video-link-input"
+                      type="url"
+                      value={priceColorStep4.videoLink}
+                      onChange={(e) => handlePriceColorStep4Change('videoLink', e.target.value)}
+                      placeholder="#"
+                      className="w-full h-full pt-6 px-4 pb-2 bg-transparent border-none outline-none text-[15px] text-[#050B20] font-['DM_Sans'] focus:ring-0"
+                    />
+                  </div>
+
+                  <p className="text-[15px] text-[#050B20] font-['DM_Sans'] leading-[26px] mt-4">
+                    Enter Youtube or Vimeo url.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Vehicle Features Selection */}
           <section className="w-full mb-8" />
         </div>
