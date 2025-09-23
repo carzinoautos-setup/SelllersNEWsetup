@@ -15,7 +15,7 @@ export default function Dashboard() {
           </header>
 
           {/* Top cards: 3 columns on lg, stacked on mobile */}
-          <div className="flex flex-col lg:flex-row gap-6 items-start mb-8">
+          <div className="flex flex-col lg:flex-row gap-6 items-stretch mb-8">
             {/* Add Listing */}
             <div
               className="flex flex-col justify-between gap-1 sm:gap-4 p-5 md:p-6 rounded-2xl bg-white h-full w-full lg:w-1/3"
