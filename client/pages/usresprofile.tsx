@@ -109,59 +109,175 @@ export function UsersProfileCard() {
         </div>
       </section>
 
-      <section className="bg-white border border-[#B2B2B2] rounded-2xl p-6 shadow-sm">
-        <h3 className="text-[20px] font-semibold text-[#24272C] mb-4">Enter your Details</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">Seller or dealer name</span>
-            <input value={sellerName} onChange={(e)=>setSellerName(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+      <section className="bg-white border border-[#B2B2B2] rounded-lg p-8 shadow-sm">
+        <h3 className="text-[24px] font-medium text-[#24272C] mb-8 font-['Albert_Sans']">Enter your Details</h3>
 
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">City</span>
-            <input value={city} onChange={(e)=>setCity(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+        <div className="border border-[#B2B2B2] rounded-lg p-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Row 1 */}
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['Albert_Sans']">Seller or dealer name</label>
+                  <input
+                    value={sellerName}
+                    onChange={(e)=>setSellerName(e.target.value)}
+                    placeholder="Enter your full name"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">State</span>
-            <input value={stateVal} onChange={(e)=>setStateVal(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">City</label>
+                  <input
+                    value={city}
+                    onChange={(e)=>setCity(e.target.value)}
+                    placeholder="City"
+                    className="w-full text-[15px] text-[#24272C] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">Zip code</span>
-            <input value={zip} onChange={(e)=>setZip(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">State</label>
+                  <input
+                    value={stateVal}
+                    onChange={(e)=>setStateVal(e.target.value)}
+                    placeholder="Enter your state"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative md:col-span-3">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">List your phone# on ads</span>
-            <button onClick={()=>setListPhone(v=>!v)} className="mt-1 w-full h-[60px] rounded-md border px-4 flex items-center justify-between">{listPhone ? 'Yes' : 'No'}</button>
-          </label>
+            {/* Row 2 */}
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Zip code</label>
+                  <input
+                    value={zip}
+                    onChange={(e)=>setZip(e.target.value)}
+                    placeholder="Zip code"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">Seller Phone</span>
-            <input value={sellerPhone} onChange={(e)=>setSellerPhone(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Email lead alert address</label>
+                  <input
+                    value={emailLead}
+                    onChange={(e)=>setEmailLead(e.target.value)}
+                    placeholder="Email address"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative md:col-span-2">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">Enter your address</span>
-            <input value={address} onChange={(e)=>setAddress(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Account holder email Address</label>
+                  <input
+                    value={accountEmail}
+                    onChange={(e)=>setAccountEmail(e.target.value)}
+                    placeholder="Enter your email address"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">Longitude</span>
-            <input value={longitude} onChange={(e)=>setLongitude(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+            {/* Row 3 */}
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Seller Phone</label>
+                  <input
+                    value={sellerPhone}
+                    onChange={(e)=>setSellerPhone(e.target.value)}
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
 
-          <label className="block relative">
-            <span className="absolute -top-3 left-3 bg-white px-2 text-[12px]">Latitude</span>
-            <input value={latitude} onChange={(e)=>setLatitude(e.target.value)} className="mt-1 w-full h-[60px] rounded-md border px-4" />
-          </label>
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2 flex items-center justify-between">
+                  <div>
+                    <label className="text-[13px] text-[#24272C] font-['DM_Sans']">List your phone# on ads</label>
+                    <button
+                      onClick={()=>setListPhone(v=>!v)}
+                      className="block text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                    >
+                      {listPhone ? 'Yes' : 'No'}
+                    </button>
+                  </div>
+                  <svg className="w-[10px] h-[10px] text-[#050B20]" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.52021 10.0504 2.71879 9.86941 2.52782Z" fill="#050B20"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-        </div>
+            <div></div>
 
-        <div className="flex items-center gap-3 mt-6">
-          <button onClick={handleSave} className="px-6 py-3 bg-[#CF0D0D] text-white rounded-xl">Save</button>
-          <button onClick={handleReset} className="px-6 py-3 border border-[#E1E1E1] rounded-xl">Reset</button>
+            {/* Row 4 */}
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['Albert_Sans']">Enter your address and then select from the choices.</label>
+                  <input
+                    value={address}
+                    onChange={(e)=>setAddress(e.target.value)}
+                    placeholder="Enter address"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Longitude:</label>
+                  <input
+                    value={longitude}
+                    onChange={(e)=>setLongitude(e.target.value)}
+                    placeholder="Longitude"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm">
+                <div className="pt-2">
+                  <label className="text-[13px] text-[#24272C] font-['DM_Sans']">Latitude</label>
+                  <input
+                    value={latitude}
+                    onChange={(e)=>setLatitude(e.target.value)}
+                    placeholder="Latitude"
+                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
