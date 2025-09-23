@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import Reset from "./pages/reset";
 import AddAListing from "./pages/add-a-listing";
 import YourListings from "./pages/yourlistings";
+import BuyCredits from "./pages/buy-credits";
 
 const queryClient = new QueryClient();
 
