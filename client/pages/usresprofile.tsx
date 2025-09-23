@@ -70,7 +70,7 @@ export function UsersProfileCard() {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <section className="bg-white border border-[#B2B2B2] rounded-2xl shadow-sm mb-6 p-4 sm:p-8">
+      <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 p-8">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-16">
           <div className="flex-1">
             <h2 className="text-[24px] font-bold text-[#24272C] mb-2">Get Started with Carzino</h2>
