@@ -8,7 +8,13 @@ interface SelectProps {
   className?: string;
 }
 
-export function Select({ options, value: valueProp = null, onChange, placeholder = "Select", className = "" }: SelectProps) {
+export function Select({
+  options,
+  value: valueProp = null,
+  onChange,
+  placeholder = "Select",
+  className = "",
+}: SelectProps) {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState<string | null>(valueProp);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -41,20 +47,22 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
         aria-expanded={open}
         onClick={() => setOpen((s) => !s)}
         onKeyDown={(e) => {
-          if (e.key === 'Escape') setOpen(false);
+          if (e.key === "Escape") setOpen(false);
         }}
         className={`w-full h-full text-left flex items-center justify-between bg-transparent rounded-xl focus:outline-none text-[15px] font-normal leading-[22.5px]`}
       >
         {/* Ensure we show placeholder when value is empty */}
-        {
-          (() => {
-            const display = value && value.length ? value : placeholder;
-            const isPlaceholder = !(value && value.length);
-            return (
-              <span className={`inline-flex items-center h-full basis-0 flex-grow text-[14px] ${isPlaceholder ? 'text-[#9CA3AF]' : 'text-[#24272C]'} truncate leading-[21px]`}>{display}</span>
-            );
-          })()
-        }
+        {(() => {
+          const display = value && value.length ? value : placeholder;
+          const isPlaceholder = !(value && value.length);
+          return (
+            <span
+              className={`inline-flex items-center h-full basis-0 flex-grow text-[14px] ${isPlaceholder ? "text-[#9CA3AF]" : "text-[#24272C]"} truncate leading-[21px]`}
+            >
+              {display}
+            </span>
+          );
+        })()}
 
         {/* Clear button when a value is selected */}
         {value && value.length ? (
@@ -64,19 +72,42 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
             onClick={(e) => {
               e.stopPropagation();
               setValue(null);
-              onChange?.('');
+              onChange?.("");
             }}
             className="ml-2 mr-1 w-4 h-4 text-[#9CA3AF] hover:text-[#6B7280] flex-shrink-0"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18M6 6l12 12"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
         ) : null}
 
         {/* Chevron aligned to center */}
-        <svg className="w-4 h-4 text-[#E82121] flex-shrink-0 self-center" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <svg
+          className="w-4 h-4 text-[#E82121] flex-shrink-0 self-center"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 9L12 15L18 9"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </button>
 

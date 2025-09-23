@@ -1,12 +1,12 @@
-import React from 'react';
-import { Select } from './select';
+import React from "react";
+import { Select } from "./select";
 
 interface FormFieldProps {
   label: string;
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
-  type?: 'text' | 'select';
+  type?: "text" | "select";
   options?: string[];
   className?: string;
   required?: boolean;
@@ -17,23 +17,24 @@ export function FormField({
   value,
   onChange,
   placeholder,
-  type = 'text',
+  type = "text",
   options = [],
-  className = '',
+  className = "",
   required = false,
 }: FormFieldProps) {
-  const fieldId = `field-${label.toLowerCase().replace(/\s+/g, '-')}`;
+  const fieldId = `field-${label.toLowerCase().replace(/\s+/g, "-")}`;
 
-  const inputClasses = `w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent`.trim();
+  const inputClasses =
+    `w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent`.trim();
 
   return (
     <div className={`relative ${className}`}>
       <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative flex flex-col justify-center items-center">
-        {type === 'select' ? (
+        {type === "select" ? (
           <>
             <Select
               options={options}
-              value={value || ''}
+              value={value || ""}
               onChange={(v) => onChange(v)}
               placeholder={placeholder || `Select ${label}`}
               className={`w-full h-full bg-transparent text-[15px] ${inputClasses}`}
