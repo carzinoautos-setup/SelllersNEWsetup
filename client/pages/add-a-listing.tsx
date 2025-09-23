@@ -121,9 +121,11 @@ export default function AddAListingPage() {
   };
   // Photos state and handlers
   const [photos, setPhotos] = useState<Array<{ id: string; url: string }>>([
-    { id: 'p1', url: 'https://api.builder.io/api/v1/image/assets/TEMP/9e70d3a8ceb312795c532df6dc151c9d3b313ba9?width=314' },
-    { id: 'p2', url: 'https://api.builder.io/api/v1/image/assets/TEMP/f5bdf2c8b316671a24dd99a2c2ba76f65ef1a1e3?width=315' },
-    { id: 'p3', url: 'https://api.builder.io/api/v1/image/assets/TEMP/fd33fd9e7843e4a7814bb338186c8afac402528a?width=315' },
+    { id: 'p1', url: 'https://api.builder.io/api/v1/image/assets/TEMP/17364dea3aebc276610289047962487f1a2df1d1?width=388' },
+    { id: 'p2', url: 'https://api.builder.io/api/v1/image/assets/TEMP/5d9c53e6b9a8bf3b47c2c51007652c01eae8813f?width=388' },
+    { id: 'p3', url: 'https://api.builder.io/api/v1/image/assets/TEMP/c499ce7b45d93ac2d48070e28248e40d691abe94?width=388' },
+    { id: 'p4', url: 'https://api.builder.io/api/v1/image/assets/TEMP/4d33bb1bb9d408e53a453b57a7468aa4184698de?width=388' },
+    { id: 'p5', url: 'https://api.builder.io/api/v1/image/assets/TEMP/46078d73e15bf45f396065949e8fee2cc555c17a?width=388' },
   ]);
   const [featurePhotoId, setFeaturePhotoId] = useState<string | null>('p1');
 
