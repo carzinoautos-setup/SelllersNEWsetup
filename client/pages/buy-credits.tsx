@@ -103,7 +103,7 @@ export default function BuyCredits() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* 1-Pack */}
-              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] p-6 lg:p-8 h-full">
+              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] p-6 lg:p-8 h-full shadow-sm">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/51bc3967e0cfacb3dec69f592eca5be9b62c263f?width=695"
                   alt="Featured Credit"
@@ -121,7 +121,7 @@ export default function BuyCredits() {
 
                 <div className="flex items-center gap-2 mb-6">
                   <span className="text-2xl lg:text-3xl font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-5xl lg:text-7xl font-bold text-[#24272C] font-albert leading-none">5</span>
+                  <span className="text-[42px] lg:text-[70px] font-bold text-[#24272C] font-albert leading-none">5</span>
                 </div>
 
                 <div className="flex-1 space-y-4 mb-6">
@@ -143,7 +143,7 @@ export default function BuyCredits() {
               </div>
 
               {/* 5-Pack */}
-              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] p-6 lg:p-8 h-full">
+              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] p-6 lg:p-8 h-full shadow-sm">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/82996bba11e0d8ddd6053ebbfa5710e3e259db53?width=695"
                   alt="Featured Credit"
@@ -161,7 +161,7 @@ export default function BuyCredits() {
 
                 <div className="flex items-center gap-2 mb-6">
                   <span className="text-2xl lg:text-3xl font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-5xl lg:text-7xl font-bold text-[#24272C] font-albert leading-none">25</span>
+                  <span className="text-[42px] lg:text-[70px] font-bold text-[#24272C] font-albert leading-none">25</span>
                 </div>
 
                 <div className="flex-1 space-y-4 mb-6">
@@ -183,7 +183,7 @@ export default function BuyCredits() {
               </div>
 
               {/* 10-Pack */}
-              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] p-6 lg:p-8 h-full">
+              <div className="flex flex-col bg-white rounded-2xl border border-[#EDEDED] p-6 lg:p-8 h-full shadow-sm">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/f3af57c3a86baad09be458102b2d69988051b1e7?width=695"
                   alt="Featured Credit"
@@ -201,7 +201,7 @@ export default function BuyCredits() {
 
                 <div className="flex items-center gap-2 mb-6">
                   <span className="text-2xl lg:text-3xl font-medium text-[#24272C] font-albert">$</span>
-                  <span className="text-5xl lg:text-7xl font-bold text-[#24272C] font-albert leading-none">50</span>
+                  <span className="text-[42px] lg:text-[70px] font-bold text-[#24272C] font-albert leading-none">50</span>
                 </div>
 
                 <div className="flex-1 space-y-4 mb-6">
