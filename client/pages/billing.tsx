@@ -356,7 +356,7 @@ export default function BillingPage() {
                   </div>
                 </div>
 
-                <button className="w-full bg-[#CF0D0D] text-white px-[26px] py-[14px] rounded-xl font-dm text-[15px] font-medium flex items-center justify-center gap-2 hover:bg-red-700 transition-colors">Pay outstanding</button>
+                <button onClick={() => setShowStripeModal(true)} className="w-full bg-[#CF0D0D] text-white px-[26px] py-[14px] rounded-xl font-dm text-[15px] font-medium flex items-center justify-center gap-2 hover:bg-red-700 transition-colors">Pay outstanding</button>
               </div>
             </div>
           </div>
