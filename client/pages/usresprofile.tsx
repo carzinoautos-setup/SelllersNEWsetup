@@ -253,7 +253,25 @@ export function UsersProfileCard() {
                 <div className="pt-2 flex items-center justify-between">
                   <div>
                     <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
-                    <div className="block text-[15px] text-[#050B20] font-['DM_Sans'] h-full flex items-center">{listPhone ? 'Yes' : 'No'}</div>
+                    <div className="relative" ref={listPhoneFormRef}>
+                      <button
+                        type="button"
+                        onClick={() => setListPhoneFormOpen(v => !v)}
+                        className="w-full h-full flex items-center justify-between text-[15px] text-[#050B20] font-['DM_Sans'] bg-transparent border-none"
+                        aria-haspopup="listbox"
+                        aria-expanded={listPhoneFormOpen}
+                      >
+                        <span>{listPhone ? 'Yes' : 'No'}</span>
+                        <svg className="w-4 h-4 text-[#050B20] ml-2" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#050B20"/></svg>
+                      </button>
+
+                      {listPhoneFormOpen && (
+                        <ul role="listbox" className="absolute left-0 mt-2 w-full bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50">
+                          <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(true); setListPhoneFormOpen(false); }}>Yes</li>
+                          <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(false); setListPhoneFormOpen(false); }}>No</li>
+                        </ul>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
