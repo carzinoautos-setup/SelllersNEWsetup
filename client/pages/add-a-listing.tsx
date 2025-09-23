@@ -149,9 +149,10 @@ export default function AddAListingPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <label className="block">
                         <span className="text-[13px] text-[#818181]">Year</span>
-                        <input
-                          aria-label="Year"
-                          type="text"
+                        <Select
+                          options={yearOptions}
+                          value={vehicleDetails.year}
+                          onChange={(v) => handleVehicleDetailChange('year', v)}
                           placeholder="Select Year"
                           className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                         />
