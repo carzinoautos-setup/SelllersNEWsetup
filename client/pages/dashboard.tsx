@@ -45,7 +45,7 @@ export default function Dashboard() {
               </div>
 
               <div className="mt-4 flex justify-center">
-                <button className="w-1/2 sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium">
+                <button className="w-1/2 sm:w-[204px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm h-10 sm:h-[50px] bg-[#E82121] text-white rounded-lg font-medium">
                   Edit Profile
                 </button>
               </div>
@@ -85,7 +85,7 @@ export default function Dashboard() {
               </div>
 
               <div className="mt-4 flex justify-center">
-                <button className="w-1/2 sm:w-[204px] px-4 py-3 bg-[#4A4A4A] text-white rounded-lg text-sm font-medium">
+                <button className="w-1/2 sm:w-[204px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm h-10 sm:h-[50px] bg-[#4A4A4A] text-white rounded-lg font-medium">
                   Add listing
                 </button>
               </div>
@@ -125,7 +125,7 @@ export default function Dashboard() {
               </div>
 
               <div className="mt-4 flex justify-center">
-                <button className="w-1/2 sm:w-[204px] px-4 py-3 bg-[#E82121] text-white rounded-lg text-sm font-medium inline-flex items-center justify-center gap-2">
+                <button className="w-1/2 sm:w-[204px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm h-10 sm:h-[50px] bg-[#E82121] text-white rounded-lg font-medium inline-flex items-center justify-center gap-2">
                   <span>View listings</span>
                   <svg
                     className="w-4 h-4"
