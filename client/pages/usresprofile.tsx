@@ -54,6 +54,15 @@ export function UsersProfileCard() {
         setAddress(data.address || "");
         setLongitude(data.longitude || "");
         setLatitude(data.latitude || "");
+        setVehicleType(data.vehicleType || "");
+        setDealershipWebsite(data.dealershipWebsite || "");
+        setWebsiteProvider(data.websiteProvider || "");
+        setEmailAlert1(data.emailAlert1 || "");
+        setEmailAlert2(data.emailAlert2 || "");
+        setEmailAlert3(data.emailAlert3 || "");
+        setCrmProvider(data.crmProvider || "");
+        setCrmAccount(data.crmAccount || "");
+        setCrmEmail(data.crmEmail || "");
       } catch (e) {
         console.warn(e);
       }
