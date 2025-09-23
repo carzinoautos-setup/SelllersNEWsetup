@@ -304,44 +304,48 @@ export function UsersProfileCard() {
             <div></div>
 
             {/* Row 4 */}
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Enter your address and then select from the choices.</label>
-                  <input
-                    value={address}
-                    onChange={(e)=>setAddress(e.target.value)}
-                    placeholder="Enter address"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
+            <div className="md:col-span-3 w-full">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
+                <div className="relative md:col-span-2">
+                  <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                    <div className="pt-2">
+                      <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Enter your address and then select from the choices.</label>
+                      <input
+                        value={address}
+                        onChange={(e)=>setAddress(e.target.value)}
+                        placeholder="Enter address"
+                        className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Longitude:</label>
-                  <input
-                    value={longitude}
-                    onChange={(e)=>setLongitude(e.target.value)}
-                    placeholder="Longitude"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
+                <div className="relative md:col-span-1">
+                  <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                    <div className="pt-2">
+                      <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Longitude:</label>
+                      <input
+                        value={longitude}
+                        onChange={(e)=>setLongitude(e.target.value)}
+                        placeholder="Longitude"
+                        className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="pt-2">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Latitude</label>
-                  <input
-                    value={latitude}
-                    onChange={(e)=>setLatitude(e.target.value)}
-                    placeholder="Latitude"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
+                <div className="relative md:col-span-1">
+                  <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                    <div className="pt-2">
+                      <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">Latitude</label>
+                      <input
+                        value={latitude}
+                        onChange={(e)=>setLatitude(e.target.value)}
+                        placeholder="Latitude"
+                        className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
