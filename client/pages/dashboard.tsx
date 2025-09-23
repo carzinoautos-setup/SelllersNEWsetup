@@ -168,8 +168,13 @@ export default function Dashboard() {
             >
               <div className="flex items-start gap-4">
                 <div style={{ fontWeight: "400", marginBottom: "-3px", "@media (max-width: 640px)": { lineHeight: "14px" } }}>
-                  <div style={{ color: "rgb(36, 39, 44)", fontSize: "18px", fontWeight: "600", lineHeight: "28px", textDecoration: "rgb(36, 39, 44)", "@media (max-width: 640px)": { lineHeight: "22px" } }}>
-                    Help Center
+                  <div className="flex items-center" style={{ gap: "8px" }}>
+                    <div style={{ color: "rgb(36, 39, 44)", fontSize: "18px", fontWeight: "600", lineHeight: "28px", textDecoration: "rgb(36, 39, 44)", "@media (max-width: 640px)": { lineHeight: "22px" } }}>
+                      Help Center
+                    </div>
+                    <div aria-hidden="true" className="w-5 h-5 flex items-center justify-center" data-design-placeholder="svg-icon">
+                      <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+                    </div>
                   </div>
                   <p className="text-sm text-[#696665]" style={{ marginTop: "-1px" }}>
                     Get quick answers, helpful guides, and expert support
