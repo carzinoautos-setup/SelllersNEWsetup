@@ -5,12 +5,56 @@ import { FormField } from "../components/ui/FormField";
 
 export default function AddAListingPage() {
   const [openSections, setOpenSections] = useState({
-    convenience: false,
-    entertainment: false,
-    safety: false,
+    features: false,
     interior: false,
     exterior: false,
+    safety: false,
+    technology: false,
   });
+
+  const handleToggle = (key: string) => {
+    setOpenSections((prev) => {
+      const next: Record<string, boolean> = {};
+      Object.keys(prev).forEach((k) => (next[k] = false));
+      next[key] = !prev[key];
+      return next as typeof prev;
+    });
+  };
+
+  function CollapsibleSection({
+    title,
+    id,
+    isOpen,
+    onToggle,
+    children,
+  }: {
+    title: string;
+    id: string;
+    isOpen: boolean;
+    onToggle: () => void;
+    children: React.ReactNode;
+  }) {
+    return (
+      <div className="w-full">
+        <button
+          type="button"
+          onClick={onToggle}
+          aria-expanded={isOpen}
+          className="w-full flex items-center justify-between md:hidden py-2"
+        >
+          <span className="text-[18px] font-medium text-[#050B20] font-['Albert_Sans']">{title}</span>
+          <span className={`text-[#E82121] transform transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`}>
+            {/* Chevron right */}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
+        </button>
+
+        <div className={`${isOpen ? 'block' : 'hidden'} md:block`}>{children}</div>
+      </div>
+    );
+  }
 
   // Vehicle details form state
   const [vehicleDetails, setVehicleDetails] = useState({
