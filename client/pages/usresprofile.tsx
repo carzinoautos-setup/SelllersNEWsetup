@@ -806,6 +806,152 @@ export function UsersProfileCard() {
           </div>
         </div>
       </section>
+
+      <section
+        className="bg-white rounded-lg p-8 mt-5"
+        style={{ border: "0.8px solid rgba(171,171,171,1)" }}
+      >
+        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+          Billing Information
+        </h3>
+
+        <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            {/* Row 1 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    Billing contact
+                  </label>
+                  <input
+                    value={billingContact}
+                    onChange={(e) => setBillingContact(e.target.value)}
+                    placeholder="Enter your full name"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    Street address
+                  </label>
+                  <input
+                    value={billingStreetAddress}
+                    onChange={(e) => setBillingStreetAddress(e.target.value)}
+                    placeholder="Enter your street address"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    City
+                  </label>
+                  <input
+                    value={billingCity}
+                    onChange={(e) => setBillingCity(e.target.value)}
+                    placeholder="Enter your city"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    State
+                  </label>
+                  <input
+                    value={billingState}
+                    onChange={(e) => setBillingState(e.target.value)}
+                    placeholder="Enter your state"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    Zip code
+                  </label>
+                  <input
+                    value={billingZip}
+                    onChange={(e) => setBillingZip(e.target.value)}
+                    placeholder="Enter your zip code"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    Country
+                  </label>
+                  <input
+                    value={billingCountry}
+                    onChange={(e) => setBillingCountry(e.target.value)}
+                    placeholder="USA"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Row 3 */}
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    Billing email address
+                  </label>
+                  <input
+                    value={billingEmail}
+                    onChange={(e) => setBillingEmail(e.target.value)}
+                    placeholder="Billing email"
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
+                <div className="h-full flex items-center">
+                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
+                    Billing phone
+                  </label>
+                  <input
+                    value={billingPhone}
+                    onChange={(e) => setBillingPhone(e.target.value)}
+                    placeholder=""
+                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
