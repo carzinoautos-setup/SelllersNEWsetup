@@ -156,13 +156,13 @@ export default function AddAListingPage() {
   };
 
   const deletePhoto = (id: string) => {
-    setPhotos((prev) => prev.filter((p) => p.id !== id));
-    if (featurePhotoId === id) {
-      setFeaturePhotoId((prev) => {
-        const remaining = photos.filter((p) => p.id !== id);
-        return remaining[0]?.id ?? null;
-      });
-    }
+    setPhotos((prev) => {
+      const next = prev.filter((p) => p.id !== id);
+      if (featurePhotoId === id) {
+        setFeaturePhotoId(next[0]?.id ?? null);
+      }
+      return next;
+    });
   };
 
   // Selectable options state
