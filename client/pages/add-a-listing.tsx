@@ -468,7 +468,6 @@ export default function AddAListingPage() {
             </div>
           </section>
 
-          <UsersProfileCard />
 
         </div>
       </div>
