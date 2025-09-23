@@ -34,13 +34,13 @@ export function Select({ options, value: valueProp = null, onChange, placeholder
   };
 
   return (
-    <div ref={ref} className={`relative w-full`}>
+    <div ref={ref} className={`relative w-full ${className}`}>
       <button
         type="button"
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((s) => !s)}
-        className={`w-full h-full text-left flex items-center justify-between bg-transparent rounded-xl ${className} focus:outline-none text-[15px] font-normal leading-[22.5px]`}
+        className={`w-full h-full text-left flex items-center justify-between bg-transparent rounded-xl focus:outline-none text-[15px] font-normal leading-[22.5px]`}
       >
         {/* Ensure we show placeholder when value is empty */}
         {
