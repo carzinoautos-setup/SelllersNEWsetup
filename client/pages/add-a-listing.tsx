@@ -176,7 +176,7 @@ export default function AddAListingPage() {
                         type="submit"
                         className="w-full md:w-auto flex-1 md:flex-none px-6 py-3 bg-[#CF0D0D] text-white rounded-xl text-[15px] font-medium hover:bg-[#B10B0B] transition-colors"
                       >
-                        Next
+                        Submit
                       </button>
 
                       <button
