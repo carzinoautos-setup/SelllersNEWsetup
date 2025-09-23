@@ -12,9 +12,11 @@ export function UsersProfileCard() {
   const [sellerType, setSellerType] = useState("");
   const [sellerTypeOpen, setSellerTypeOpen] = useState(false);
   const sellerTypeRef = useRef<HTMLDivElement | null>(null);
+  const [sellerTypeWidth, setSellerTypeWidth] = useState<number | null>(null);
 
   const [listPhoneOpen, setListPhoneOpen] = useState(false);
   const listPhoneRef = useRef<HTMLDivElement | null>(null);
+  const [listPhoneWidth, setListPhoneWidth] = useState<number | null>(null);
 
   const [listPhoneFormOpen, setListPhoneFormOpen] = useState(false);
   const listPhoneFormRef = useRef<HTMLDivElement | null>(null);
