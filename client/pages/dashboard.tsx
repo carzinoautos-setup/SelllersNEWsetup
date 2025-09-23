@@ -148,7 +148,7 @@ export default function Dashboard() {
           <div className="flex flex-col gap-10 w-full max-w-[1290px]">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 xl:gap-8">
               {/* Help Center */}
-              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0">
+              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0" style={{ boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)", border: "0.8px solid rgba(228, 228, 228, 1)" }}>
                 <div className="flex flex-col gap-3 sm:gap-5">
                   <svg className="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_help)">
@@ -175,7 +175,7 @@ export default function Dashboard() {
               </div>
 
               {/* Featured Ad Credits */}
-              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0">
+              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0" style={{ boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)", border: "0.8px solid rgba(228, 228, 228, 1)" }}>
                 <div className="flex flex-col gap-3 sm:gap-5">
                   <svg className="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.9688 39.5622L11.9063 38.4372C10.5 38.1559 9.28125 39.1872 9.28125 40.5934V42.7497C9.28125 44.4372 10.5938 44.7184 12.1875 44.8122H18C19.0313 44.8122 19.875 44.4372 19.875 43.4059V43.1247C19.7813 41.3434 18.6563 39.9372 16.9688 39.5622ZM11.0625 42.8434V40.4997C11.0625 40.2184 11.25 40.0309 11.5313 40.1247L16.6875 41.2497C17.4375 41.4372 18 42.0934 18.0937 42.8434C17.9062 42.9372 11.1563 42.9372 11.0625 42.8434ZM48.0937 38.4372L42.9375 39.5622C41.25 39.9372 40.125 41.3434 40.125 43.0309C40.125 43.1247 39.9375 44.3434 41.25 44.6247C41.9062 44.8122 46.125 44.7184 47.9062 44.7184C49.5 44.7184 50.7187 44.3434 50.7187 42.6559V40.4997C50.8125 39.1872 49.5 38.1559 48.0937 38.4372ZM48.9375 42.8434C48.6563 42.9372 42.0937 42.9372 42 42.9372C42.0937 42.1872 42.5625 41.5309 43.3125 41.3434L48.4688 40.2184C48.75 40.1247 48.9375 40.3122 48.9375 40.5934V42.8434ZM36.2812 43.8747H23.7187C23.25 43.8747 22.7812 44.2497 22.7812 44.8122C22.7812 45.3747 23.1562 45.7497 23.7187 45.7497H36.2812C36.75 45.7497 37.2187 45.3747 37.2187 44.8122C37.2187 44.2497 36.8437 43.8747 36.2812 43.8747ZM36.2812 47.7184H23.7187C23.25 47.7184 22.7812 48.0934 22.7812 48.6559C22.7812 49.2184 23.1562 49.5934 23.7187 49.5934H36.2812C36.75 49.5934 37.2187 49.2184 37.2187 48.6559C37.2187 48.0934 36.8437 47.7184 36.2812 47.7184Z" fill="#E82121"/>
@@ -196,7 +196,7 @@ export default function Dashboard() {
               </div>
 
               {/* Messages */}
-              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0">
+              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0" style={{ boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)", border: "0.8px solid rgba(228, 228, 228, 1)" }}>
                 <div className="flex flex-col gap-3 sm:gap-5">
                   <svg className="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_messages)">
@@ -223,7 +223,7 @@ export default function Dashboard() {
               </div>
 
               {/* Profile Settings */}
-              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0">
+              <div className="flex flex-col gap-4 sm:gap-8 p-4 sm:p-8 rounded-2xl border border-[#EDEDED] bg-white w-full max-w-none lg:max-w-[300px] mx-auto lg:mx-0" style={{ boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)", border: "0.8px solid rgba(228, 228, 228, 1)" }}>
                 <div className="flex flex-col gap-3 sm:gap-5">
                   <img src="https://api.builder.io/api/v1/image/assets/TEMP/3567bf8fc97874a478dd081368b4f20fa2ca862a?width=120" className="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" alt="Profile Settings" />
                   <div className="flex flex-col gap-3 sm:gap-5">
