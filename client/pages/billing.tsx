@@ -50,6 +50,8 @@ export default function BillingPage() {
 
   const removeMethod = (id: string) => setMethods((m) => m.filter((x) => x.id !== id));
 
+  const [showStripeModal, setShowStripeModal] = useState(false);
+
   return (
     <DashboardLayout>
       <div className="flex-1 overflow-visible">
