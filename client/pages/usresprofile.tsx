@@ -104,7 +104,7 @@ export function UsersProfileCard() {
                 </button>
 
                 {sellerTypeOpen && (
-                  <ul role="listbox" className="absolute left-0 mt-2 w-full bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50">
+                  <ul role="listbox" className="absolute left-0 mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50" style={{ width: sellerTypeWidth ?? '100%' }}>
                     <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setSellerType(''); setSellerTypeOpen(false); }}>Select Seller Type</li>
                     <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setSellerType('Private Seller'); setSellerTypeOpen(false); }}>Private Seller</li>
                     <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setSellerType('Dealer'); setSellerTypeOpen(false); }}>Dealer</li>
