@@ -57,10 +57,20 @@ export default function BillingPage() {
     setShowStripeModal(true);
   }, []);
 
-  const Modal: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const Modal: React.FC<{ children: React.ReactNode; onClose?: () => void }> = ({ children, onClose }) => {
     if (typeof document === "undefined") return null;
+    const handleOverlayMouseDown = (e: React.MouseEvent) => {
+      if (e.target === e.currentTarget && onClose) onClose();
+    };
     return createPortal(
-      <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50">{children}</div>,
+      <div
+        className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50"
+        onMouseDown={handleOverlayMouseDown}
+        role="dialog"
+        aria-modal="true"
+      >
+        {children}
+      </div>,
       document.body
     );
   };
@@ -71,6 +81,23 @@ export default function BillingPage() {
     setShowStripeModal(false);
     window.alert("Payment processed (simulation)");
   };
+
+  // lock body scroll while modal is open and close on ESC
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowStripeModal(false);
+    };
+    if (showStripeModal) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", onKey);
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [showStripeModal]);
 
   return (
     <DashboardLayout>
@@ -381,7 +408,7 @@ export default function BillingPage() {
             </div>
           </div>
 
-          {showStripeModal && (<Modal>
+          {showStripeModal && (<Modal onClose={() => setShowStripeModal(false)}>
               <div className="bg-white rounded-lg w-full max-w-4xl mx-4 lg:mx-0 shadow-lg p-6 relative">
                 <button onClick={() => setShowStripeModal(false)} className="absolute top-3 right-3 text-gray-500 hover:text-gray-800">
                   <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 8.586L15.95 2.636a1 1 0 111.414 1.414L11.414 10l5.95 5.95a1 1 0 01-1.414 1.414L10 11.414l-5.95 5.95a1 1 0 01-1.414-1.414L8.586 10 2.636 4.05A1 1 0 014.05 2.636L10 8.586z" clipRule="evenodd" /></svg>
