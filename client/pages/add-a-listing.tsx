@@ -848,6 +848,40 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Enter description - Step 6 */}
+          <section className="w-full mb-8">
+            <div className="max-w-[1480px] mx-auto">
+              {/* Header */}
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <h3 className="text-[24px] font-medium text-[#24272C] font-['Albert_Sans']">
+                  Enter description
+                </h3>
+                <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['Albert_Sans'] leading-[26px]">
+                    Step 6
+                  </span>
+                </div>
+              </div>
+
+              {/* Textarea Container */}
+              <div className="w-full h-[289px] bg-white rounded-xl border border-[#B2B2B2] relative">
+                <label
+                  htmlFor="description-textarea"
+                  className="absolute top-5 left-5 text-[13px] text-[#818181] font-['DM_Sans'] pointer-events-none"
+                >
+                  Description
+                </label>
+                <textarea
+                  id="description-textarea"
+                  value={priceColorStep4.description}
+                  onChange={(e) => handlePriceColorStep4Change('description', e.target.value)}
+                  placeholder=""
+                  className="w-full h-full pt-12 px-5 pb-5 bg-transparent border-none outline-none resize-none text-[15px] text-[#050B20] font-['DM_Sans'] leading-[26px] focus:ring-0"
+                />
+              </div>
+            </div>
+          </section>
+
           {/* Vehicle Features Selection */}
           <section className="w-full mb-8" />
         </div>
