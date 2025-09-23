@@ -117,7 +117,113 @@ export default function AddAListingPage() {
           </section>
 
           {/* Enter Vehicle Details Form - Step 2 */}
-          <section className="w-full mb-8" />
+          <section className="w-full mb-8">
+            <div className="max-w-[1480px] mx-auto">
+              {/* Header */}
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <h2 className="text-[24px] font-medium text-[#24272C] font-['Albert_Sans'] leading-normal">
+                  Enter vehicle details
+                </h2>
+                <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
+                  <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                    Step 2
+                  </span>
+                </div>
+              </div>
+
+              {/* Form Container */}
+              <div className="w-full bg-white border border-[#B2B2B2] rounded-2xl p-8 opacity-[0.63] shadow-lg">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {/* VIN# Field */}
+                  <FormField
+                    label="Vin#"
+                    value={vehicleDetails.vin}
+                    onChange={(value) => handleVehicleDetailChange('vin', value)}
+                    placeholder="Enter Vin#"
+                    className="xl:col-span-1"
+                  />
+
+                  {/* Year Field */}
+                  <FormField
+                    label="Year"
+                    value={vehicleDetails.year}
+                    onChange={(value) => handleVehicleDetailChange('year', value)}
+                    placeholder="Enter Year"
+                  />
+
+                  {/* Make Field */}
+                  <FormField
+                    label="Make"
+                    value={vehicleDetails.make}
+                    onChange={(value) => handleVehicleDetailChange('make', value)}
+                    type="select"
+                    options={['Toyota', 'Honda', 'Ford', 'BMW', 'Mercedes-Benz', 'Audi', 'Volkswagen', 'Nissan', 'Hyundai', 'Kia']}
+                    className="xl:col-span-2"
+                  />
+
+                  {/* Model Field */}
+                  <FormField
+                    label="Model"
+                    value={vehicleDetails.model}
+                    onChange={(value) => handleVehicleDetailChange('model', value)}
+                    type="select"
+                    options={['Camry', 'Corolla', 'Prius', 'RAV4', 'Highlander', 'Sienna', 'Tacoma', 'Tundra']}
+                  />
+
+                  {/* Trim Field */}
+                  <FormField
+                    label="Trim"
+                    value={vehicleDetails.trim}
+                    onChange={(value) => handleVehicleDetailChange('trim', value)}
+                    placeholder="Select Trim"
+                  />
+
+                  {/* Condition Field */}
+                  <FormField
+                    label="Condition"
+                    value={vehicleDetails.condition}
+                    onChange={(value) => handleVehicleDetailChange('condition', value)}
+                    type="select"
+                    options={['New', 'Used', 'Certified Pre-Owned', 'For Parts']}
+                  />
+
+                  {/* Is Certified Field */}
+                  <FormField
+                    label="Is certified"
+                    value={vehicleDetails.isCertified}
+                    onChange={(value) => handleVehicleDetailChange('isCertified', value)}
+                    type="select"
+                    options={['Yes', 'No']}
+                  />
+
+                  {/* Mileage Field */}
+                  <FormField
+                    label="Mileage"
+                    value={vehicleDetails.mileage}
+                    onChange={(value) => handleVehicleDetailChange('mileage', value)}
+                    placeholder="Enter Miles"
+                  />
+
+                  {/* Title Status Field */}
+                  <FormField
+                    label="Title Status"
+                    value={vehicleDetails.titleStatus}
+                    onChange={(value) => handleVehicleDetailChange('titleStatus', value)}
+                    type="select"
+                    options={['Clean', 'Salvage', 'Rebuilt', 'Lemon', 'Flood']}
+                  />
+
+                  {/* Stock# Field */}
+                  <FormField
+                    label="Stock#"
+                    value={vehicleDetails.stockNumber}
+                    onChange={(value) => handleVehicleDetailChange('stockNumber', value)}
+                    placeholder="Enter Stock Number"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Vehicle Features Selection */}
           <section className="w-full mb-8" />
