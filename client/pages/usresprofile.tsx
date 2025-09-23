@@ -91,7 +91,7 @@ export function UsersProfileCard() {
             <p className="text-[15px] text-[#222] mb-4 leading-6">Please fill out the form below with your information to create your listing. You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.</p>
 
             <div className="flex items-center gap-4">
-              <div className="relative w-full max-w-[420px]" ref={sellerTypeRef}>
+              <div className="relative flex-1" ref={sellerTypeRef}>
                 <button
                   type="button"
                   onClick={() => { setSellerTypeOpen(v => !v); setTimeout(()=>{ if (sellerTypeRef.current) setSellerTypeWidth(sellerTypeRef.current.offsetWidth); },0); }}
