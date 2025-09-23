@@ -4,7 +4,7 @@ export default function Dashboard() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-[32px] xl:px-[60px] py-8">
           <header className="flex flex-col items-center gap-1 sm:gap-6 mb-8">
             <h1 className="text-2xl sm:text-3xl lg:text-[30px] font-medium text-[#24272C] font-albert text-center">
               Welcome to your Carzino account
@@ -376,7 +376,7 @@ export default function Dashboard() {
           </div>
 
           {/* Dealership Information Form */}
-          <div className="flex flex-col items-start gap-5 w-full max-w-[1484px] mx-auto mt-8" />
+          <div className="flex flex-col items-start gap-5 w-full max-w-[1290px] mx-auto mt-8" />
         </div>
       </div>
     </DashboardLayout>
