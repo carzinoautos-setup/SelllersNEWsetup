@@ -505,344 +505,120 @@ export default function AddAListingPage() {
                   <CollapsibleSection title={'Features'} id={'features'} isOpen={openSections.features} onToggle={() => handleToggle('features')}>
                     <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Features</h4>
                     <div className="flex flex-col gap-4">
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Navigation System</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" defaultChecked />
-                        <div className="w-5 h-5 rounded bg-[#E82121] flex items-center justify-center">
-                          <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
-                          </svg>
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Remote Start</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Keyless Entry</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Hands-Free</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Power Folding Side Mirrors</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rain-Sensing Wipers</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Homelink</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Split-Folding Rear Seats</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adjustable Steering Column</span>
-                      </label>
-                    </div>
+                    {['Navigation System','Remote Start','Keyless Entry','Hands-Free','Power Folding Side Mirrors','Rain-Sensing Wipers','Homelink','Split-Folding Rear Seats','Adjustable Steering Column'].map((opt) => {
+                      const key = `features:${opt}`;
+                      const selected = selectedOptions.includes(key);
+                      return (
+                        <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                          <input type="checkbox" className="hidden" checked={selected} readOnly />
+                          <div className={selected ? 'w-5 h-5 rounded bg-[#E82121] flex items-center justify-center' : 'w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center'}>
+                            {selected && (
+                              <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
+                              </svg>
+                            )}
+                          </div>
+                          <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
                   </CollapsibleSection>
 
                   {/* Interior Column */}
                   <CollapsibleSection title={'Interior'} id={'interior'} isOpen={openSections.interior} onToggle={() => handleToggle('interior')}>
                     <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Interior</h4>
                     <div className="flex flex-col gap-4">
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Leather Seats</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" defaultChecked />
-                        <div className="w-5 h-5 rounded bg-[#E82121] flex items-center justify-center">
-                          <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
-                          </svg>
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Heated Seats</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Sunroof /Panoramic Roof</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Heated Steering Wheel</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Touchscreen Display</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Ventilated / Cooled Seats</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Memory Driver Seat Settings</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Ambient Interior Lighting</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rubber Flooring</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wood or Aluminum Trim</span>
-                      </label>
-                    </div>
+                    {['Leather Seats','Heated Seats','Sunroof /Panoramic Roof','Heated Steering Wheel','Touchscreen Display','Ventilated / Cooled Seats','Memory Driver Seat Settings','Ambient Interior Lighting','Rubber Flooring','Wood or Aluminum Trim'].map((opt) => {
+                      const key = `interior:${opt}`;
+                      const selected = selectedOptions.includes(key);
+                      return (
+                        <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                          <input type="checkbox" className="hidden" checked={selected} readOnly />
+                          <div className={selected ? 'w-5 h-5 rounded bg-[#E82121] flex items-center justify-center' : 'w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center'}>
+                            {selected && (
+                              <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
+                              </svg>
+                            )}
+                          </div>
+                          <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
                   </CollapsibleSection>
 
                   {/* Exterior Column */}
                   <CollapsibleSection title={'Exterior'} id={'exterior'} isOpen={openSections.exterior} onToggle={() => handleToggle('exterior')}>
                     <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Exterior</h4>
                     <div className="flex flex-col gap-4">
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Alloy Wheels</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" defaultChecked />
-                        <div className="w-5 h-5 rounded bg-[#E82121] flex items-center justify-center">
-                          <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
-                          </svg>
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">LED Headlights</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Fog Lights</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Roof Rack</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tinted Windows</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Power Tailgate</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tow Hitch / Towing Package</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Running Boards</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Body Kit/Sport Package</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Spoiler</span>
-                      </label>
-                    </div>
+                    {['Alloy Wheels','LED Headlights','Fog Lights','Roof Rack','Tinted Windows','Power Tailgate','Tow Hitch / Towing Package','Running Boards','Body Kit/Sport Package','Rear Spoiler'].map((opt) => {
+                      const key = `exterior:${opt}`;
+                      const selected = selectedOptions.includes(key);
+                      return (
+                        <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                          <input type="checkbox" className="hidden" checked={selected} readOnly />
+                          <div className={selected ? 'w-5 h-5 rounded bg-[#E82121] flex items-center justify-center' : 'w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center'}>
+                            {selected && (
+                              <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
+                              </svg>
+                            )}
+                          </div>
+                          <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
                   </CollapsibleSection>
 
                   {/* Safety Options Column */}
                   <CollapsibleSection title={'Safety Options'} id={'safety'} isOpen={openSections.safety} onToggle={() => handleToggle('safety')}>
                     <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Safety Options</h4>
                     <div className="flex flex-col gap-4">
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Airbags</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" defaultChecked />
-                        <div className="w-5 h-5 rounded bg-[#E82121] flex items-center justify-center">
-                          <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
-                          </svg>
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Airbag - Passenger</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Anti-lock Braking System</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Backup Camera</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Lane Departure Warning</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Adaptive Cruise Control</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Parking Sensors</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Automatic High Beams</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Tire Pressure Monitoring System</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Electronic Stability Control</span>
-                      </label>
-                    </div>
+                    {['Airbags','Airbag - Passenger','Anti-lock Braking System','Backup Camera','Lane Departure Warning','Adaptive Cruise Control','Parking Sensors','Automatic High Beams','Tire Pressure Monitoring System','Electronic Stability Control'].map((opt) => {
+                      const key = `safety:${opt}`;
+                      const selected = selectedOptions.includes(key);
+                      return (
+                        <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                          <input type="checkbox" className="hidden" checked={selected} readOnly />
+                          <div className={selected ? 'w-5 h-5 rounded bg-[#E82121] flex items-center justify-center' : 'w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center'}>
+                            {selected && (
+                              <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
+                              </svg>
+                            )}
+                          </div>
+                          <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
                   </CollapsibleSection>
 
                   {/* Technology Column */}
                   <CollapsibleSection title={'Technology'} id={'technology'} isOpen={openSections.technology} onToggle={() => handleToggle('technology')}>
                     <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">Technology</h4>
                     <div className="flex flex-col gap-4">
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Apple CarPlay/Android Auto</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" defaultChecked />
-                        <div className="w-5 h-5 rounded bg-[#E82121] flex items-center justify-center">
-                          <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
-                          </svg>
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Bluetooth</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Touchscreen Display</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wireless Phone Connectivity</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Rear Seat Entertainment Screens</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">DVD Player</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Premium Sound System</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Steering Wheel Audio Controls</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Wi-Fi Hotspot Capability</span>
-                      </label>
-                      <label className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="hidden" />
-                        <div className="w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center">
-                        </div>
-                        <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">Voice Command System</span>
-                      </label>
-                    </div>
+                    {['Apple CarPlay/Android Auto','Bluetooth','Touchscreen Display','Wireless Phone Connectivity','Rear Seat Entertainment Screens','DVD Player','Premium Sound System','Steering Wheel Audio Controls','Wi-Fi Hotspot Capability','Voice Command System'].map((opt) => {
+                      const key = `technology:${opt}`;
+                      const selected = selectedOptions.includes(key);
+                      return (
+                        <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                          <input type="checkbox" className="hidden" checked={selected} readOnly />
+                          <div className={selected ? 'w-5 h-5 rounded bg-[#E82121] flex items-center justify-center' : 'w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center'}>
+                            {selected && (
+                              <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/>
+                              </svg>
+                            )}
+                          </div>
+                          <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                        </label>
+                      );
+                    })}
+                  </div>
                   </CollapsibleSection>
 
                 </div>
