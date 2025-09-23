@@ -253,7 +253,7 @@ export function UsersProfileCard() {
                 <div className="pt-2 flex items-center justify-between">
                   <div>
                     <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">List your phone# on ads</label>
-                    <div className="relative" ref={listPhoneFormRef}>
+                    <div className="relative w-full" ref={listPhoneFormRef}>
                       <button
                         type="button"
                         onClick={() => setListPhoneFormOpen(v => !v)}
