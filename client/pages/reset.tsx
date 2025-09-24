@@ -30,7 +30,7 @@ export default function ResetPage() {
               {/* Form column (spans 2 on desktop) */}
               <div className="lg:col-span-2">
                 <div className="-mt-[3px] w-full border border-[#E6E6E6] rounded-lg p-10 bg-white shadow-md">
-                  <div className="flex flex-col gap-8 w-full py-2">
+                  <div className="flex flex-col gap-[10px] w-full py-2">
                     {/* Old password */}
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-medium text-[#24272C] font-albert">
