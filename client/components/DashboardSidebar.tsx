@@ -4,7 +4,7 @@ interface SidebarProps {
   className?: string;
 }
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function DashboardSidebar({ className }: SidebarProps) {
   const menuItems = [
@@ -56,6 +56,8 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
   ];
+
+  const location = useLocation();
 
   return (
     <div
@@ -209,13 +211,13 @@ export function DashboardSidebar({ className }: SidebarProps) {
                 key={index}
                 className={cn(
                   "flex items-center gap-3 px-4 py-2 rounded-[10px] transition-colors overflow-hidden",
-                  item.active ? "bg-main-color" : "hover:bg-white/5",
+                  location.pathname === item.path ? "bg-main-color" : "hover:bg-white/5",
                 )}
               >
                 <item.icon
                   className={cn(
                     "w-[22px] h-[22px] flex-shrink-0",
-                    item.active
+                    location.pathname === item.path
                       ? "text-white"
                       : "text-[rgba(255,255,255,0.85)]",
                   )}
@@ -223,7 +225,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
                 <span
                   className={cn(
                     "flex-1 text-sm font-albert truncate",
-                    item.active
+                    location.pathname === item.path
                       ? "text-white font-bold"
                       : "text-white font-medium",
                   )}
