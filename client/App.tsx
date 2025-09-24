@@ -17,6 +17,7 @@ import Checkout from "./pages/checkout";
 import Billing from "./pages/billing";
 import Logout from "./pages/logout";
 import Messages from "./pages/messages";
+import Payments from "./pages/payments";
 
 const queryClient = new QueryClient();
 
