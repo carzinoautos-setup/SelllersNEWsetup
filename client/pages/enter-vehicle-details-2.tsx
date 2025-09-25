@@ -103,6 +103,15 @@ export default function EnterVehicleDetails2() {
 
   const [featurePhotoId, setFeaturePhotoId] = useState<string | null>(null);
 
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  useEffect(() => {
+    try {
+      setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0 || (window as any).DocumentTouch && document instanceof (window as any).DocumentTouch);
+    } catch (e) {
+      setIsTouchDevice(false);
+    }
+  }, []);
+
   const onDragStart = (e: React.DragEvent, index: number) => {
     e.dataTransfer.setData('text/plain', String(index));
   };
