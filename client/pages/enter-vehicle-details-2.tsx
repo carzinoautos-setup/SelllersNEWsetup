@@ -492,10 +492,10 @@ export default function EnterVehicleDetails2() {
                 {photos.map((photo, index) => (
                   <div
                     key={photo.id}
-                    draggable
-                    onDragStart={(e) => onDragStart(e, index)}
-                    onDragOver={(e) => e.preventDefault()}
-                    onDrop={(e) => onDrop(e, index)}
+                    draggable={!isTouchDevice}
+                    onDragStart={(e) => !isTouchDevice && onDragStart(e, index)}
+                    onDragOver={(e) => !isTouchDevice && e.preventDefault()}
+                    onDrop={(e) => !isTouchDevice && onDrop(e, index)}
                     className="relative w-28 h-28 rounded-[12px] overflow-hidden bg-gray-50"
                   >
                     <img
