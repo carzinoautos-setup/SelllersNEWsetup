@@ -40,9 +40,9 @@ export default function EnterVehicleDetails2() {
           <div className="bg-white border border-[#B2B2B2] rounded-2xl p-[30px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
               {/* Left Column */}
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col gap-1">
                 {/* Mileage */}
-                <div className="flex flex-col gap-2 mb-[30px]">
+                <div className="flex flex-col gap-2 mb-3">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Mileage
                   </label>
@@ -51,7 +51,7 @@ export default function EnterVehicleDetails2() {
                     value={mileage}
                     onChange={(e) => setMileage(e.target.value)}
                     placeholder="Enter mileage"
-                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] font-albert leading-[140%] outline-none focus:border-[#E82121]"
+                    className="w-full h-[48px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] font-albert leading-[140%] outline-none focus:border-[#E82121]"
                   />
                 </div>
 
@@ -65,15 +65,15 @@ export default function EnterVehicleDetails2() {
                     value={vehicleTrim}
                     onChange={(v) => setVehicleTrim(v)}
                     placeholder="440 xDrive Coupe 2D"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
               </div>
 
               {/* Middle Column */}
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col gap-1">
                 {/* Engine */}
-                <div className="flex flex-col gap-2 mb-[30px]">
+                <div className="flex flex-col gap-2 mb-3">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Engine
                   </label>
@@ -82,7 +82,7 @@ export default function EnterVehicleDetails2() {
                     value={engine}
                     onChange={(v) => setEngine(v)}
                     placeholder="6.7 Liter"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
@@ -96,15 +96,15 @@ export default function EnterVehicleDetails2() {
                     value={transmission}
                     onChange={(v) => setTransmission(v)}
                     placeholder="Select"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col gap-1">
                 {/* Drivetrain */}
-                <div className="flex flex-col gap-2 mb-[30px]">
+                <div className="flex flex-col gap-2 mb-3">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Drivetrain
                   </label>
@@ -113,12 +113,12 @@ export default function EnterVehicleDetails2() {
                     value={drivetrain}
                     onChange={(v) => setDrivetrain(v)}
                     placeholder="FWD"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 {/* Exterior Color */}
-                <div className="flex flex-col gap-2 mb-[30px]">
+                <div className="flex flex-col gap-2 mb-3">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Exterior Color
                   </label>
@@ -127,7 +127,7 @@ export default function EnterVehicleDetails2() {
                     value={exteriorColor}
                     onChange={(v) => setExteriorColor(v)}
                     placeholder="Select"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
@@ -141,7 +141,7 @@ export default function EnterVehicleDetails2() {
                     value={interiorColor}
                     onChange={(v) => setInteriorColor(v)}
                     placeholder="Select"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
               </div>
