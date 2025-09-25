@@ -81,7 +81,7 @@ export default function EnterVehicleDetails2() {
   // Step 4: Photos
   const [photos, setPhotos] = useState<{ id: string; url: string }[]>([
     { id: '1', url: 'https://api.builder.io/api/v1/image/assets/TEMP/38c4b622a6c9fb83b718c6460c49dbd9fcf44c44?width=332' },
-    { id: '2', url: 'https://api.builder.io/api/v1/image/assets/TEMP/38c4b622a6c9fb83b718c6460c49dbd9fcf44c44?width=332' },
+    { id: '2', url: '/placeholder.svg' },
     { id: '3', url: 'https://api.builder.io/api/v1/image/assets/TEMP/38c4b622a6c9fb83b718c6460c49dbd9fcf44c44?width=332' },
     { id: '4', url: 'https://api.builder.io/api/v1/image/assets/TEMP/38c4b622a6c9fb83b718c6460c49dbd9fcf44c44?width=332' },
     { id: '5', url: 'https://api.builder.io/api/v1/image/assets/TEMP/38c4b622a6c9fb83b718c6460c49dbd9fcf44c44?width=332' },
