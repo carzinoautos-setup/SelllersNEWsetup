@@ -141,7 +141,7 @@ export default function EnterVehicleDetails2() {
           </svg>
         )}
       </button>
-      <label className="text-[15px] text-[#050B20] leading-[35px] cursor-pointer" style={{ fontFamily: 'DM Sans' }}>
+      <label className="text-[15px] text-[#050B20] leading-[20px] cursor-pointer" style={{ fontFamily: 'DM Sans' }}>
         {label}
       </label>
     </div>
