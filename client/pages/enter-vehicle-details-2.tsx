@@ -481,7 +481,7 @@ export default function EnterVehicleDetails2() {
               {/* Photo Preview Grid - First Row */}
               <div className="flex flex-wrap gap-4">
                 {photos.slice(0, 5).map((photo, index) => (
-                  <div key={index} className="relative w-[48%] sm:w-[166px] h-[109px]">
+                  <div key={photo.id} draggable onDragStart={(e) => onDragStart(e, index)} onDragOver={(e) => e.preventDefault()} onDrop={(e) => onDrop(e, index)} className="relative w-full h-[109px]">
                     <img
                       src={photo.url}
                       alt={`Photo ${index + 1}`}
