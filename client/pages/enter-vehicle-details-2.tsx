@@ -101,15 +101,37 @@ export default function EnterVehicleDetails2() {
     }));
   };
 
+  const [featurePhotoId, setFeaturePhotoId] = useState<string | null>(null);
+
+  const onDragStart = (e: React.DragEvent, index: number) => {
+    e.dataTransfer.setData('text/plain', String(index));
+  };
+
+  const onDrop = (e: React.DragEvent, dropIndex: number) => {
+    const dragIndex = Number(e.dataTransfer.getData('text/plain'));
+    if (isNaN(dragIndex)) return;
+    setPhotos(prev => {
+      const copy = [...prev];
+      const [moved] = copy.splice(dragIndex, 1);
+      copy.splice(dropIndex, 0, moved);
+      return copy;
+    });
+  };
+
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
-    if (files) {
-      console.log("Files selected:", files);
+    if (files && files.length > 0) {
+      const newPhotos: { id: string; url: string }[] = Array.from(files).map((file, i) => ({
+        id: `${Date.now()}-${i}`,
+        url: URL.createObjectURL(file),
+      }));
+      setPhotos(prev => [...prev, ...newPhotos].slice(0, 15));
     }
   };
 
-  const deletePhoto = (index: number) => {
-    setPhotos(prev => prev.filter((_, i) => i !== index));
+  const deletePhoto = (id: string) => {
+    setPhotos(prev => prev.filter(p => p.id !== id));
+    if (featurePhotoId === id) setFeaturePhotoId(null);
   };
 
   const renderCheckbox = (
