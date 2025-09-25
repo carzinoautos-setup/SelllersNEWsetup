@@ -15,7 +15,7 @@ export default function EnterVehicleDetails1() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd335fb9d0f814932a1399018d6b6144f?format=webp&width=1200')"
+              backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F23b891c966f7452fa3f3f303b9253c6a?format=webp&width=1200')"
             }}
           />
 
