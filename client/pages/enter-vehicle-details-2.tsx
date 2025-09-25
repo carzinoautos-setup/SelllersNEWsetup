@@ -316,7 +316,7 @@ export default function EnterVehicleDetails2() {
                 <div className="flex flex-col gap-[31px] w-[288px]">
                   <div>
                     <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[35px]" style={{ fontFamily: 'Albert Sans' }}>Interior</h3>
-                    <div className="space-y-4">
+                    <div className="space-y-2">
                       {renderCheckbox('leatherSeats', 'Leather Seats', selectedFeatures.leatherSeats)}
                       {renderCheckbox('heatedSeats', 'Heated Seats', selectedFeatures.heatedSeats)}
                       {renderCheckbox('sunroof', 'Sunroof /Panoramic Roof', selectedFeatures.sunroof)}
@@ -332,7 +332,7 @@ export default function EnterVehicleDetails2() {
                   
                   <div>
                     <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[29px]" style={{ fontFamily: 'Albert Sans' }}>Technology</h3>
-                    <div className="space-y-4">
+                    <div className="space-y-2">
                       {renderCheckbox('appleCarPlay', 'Apple CarPlay/Android Auto', selectedFeatures.appleCarPlay)}
                       {renderCheckbox('bluetooth', 'Bluetooth', selectedFeatures.bluetooth)}
                       {renderCheckbox('touchscreenDisplayTech', 'Touchscreen Display', selectedFeatures.touchscreenDisplayTech)}
