@@ -258,10 +258,10 @@ export default function EnterVehicleDetails2() {
 
             {/* Features Grid */}
             <div className="bg-white rounded-2xl p-[30px]">
-              <div className="flex gap-[30px]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 
                 {/* Features Column */}
-                <div className="flex flex-col gap-[34px] w-[288px]">
+                <div className="flex flex-col gap-[34px]">
                   <div>
                     <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[42px]" style={{ fontFamily: 'Albert Sans' }}>Features</h3>
                     <div className="space-y-2">
@@ -300,7 +300,7 @@ export default function EnterVehicleDetails2() {
                 </div>
 
                 {/* Interior Column */}
-                <div className="flex flex-col gap-[31px] w-[288px]">
+                <div className="flex flex-col gap-[31px]">
                   <div>
                     <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[35px]" style={{ fontFamily: 'Albert Sans' }}>Interior</h3>
                     <div className="space-y-2">
@@ -335,7 +335,7 @@ export default function EnterVehicleDetails2() {
                 </div>
 
                 {/* Safety Options Column */}
-                <div className="w-[288px]">
+                <div className="flex flex-col">
                   <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[11px]" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
                   <div className="space-y-2">
                     {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
