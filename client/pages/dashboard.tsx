@@ -168,7 +168,7 @@ export default function Dashboard() {
               >
                 <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
                   <svg
-                    className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px]"
+                    className="w-[30px] h-[30px] sm:w-[36px] sm:h-[36px]"
                     viewBox="0 0 60 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -227,7 +227,7 @@ export default function Dashboard() {
               >
                 <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
                   <svg
-                    className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px]"
+                    className="w-[30px] h-[30px] sm:w-[36px] sm:h-[36px]"
                     viewBox="0 0 60 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +283,7 @@ export default function Dashboard() {
               >
                 <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
                   <svg
-                    className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px]"
+                    className="w-[30px] h-[30px] sm:w-[36px] sm:h-[36px]"
                     viewBox="0 0 60 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +343,7 @@ export default function Dashboard() {
                 <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/3567bf8fc97874a478dd081368b4f20fa2ca862a?width=120"
-                    className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px]"
+                    className="w-[30px] h-[30px] sm:w-[36px] sm:h-[36px]"
                     alt="Profile Settings"
                   />
                   <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
