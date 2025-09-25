@@ -481,7 +481,7 @@ export default function EnterVehicleDetails2() {
               {/* Photo Preview Grid - First Row */}
               <div className="flex flex-wrap gap-4">
                 {photos.slice(0, 5).map((photo, index) => (
-                  <div key={photo.id} draggable onDragStart={(e) => onDragStart(e, index)} onDragOver={(e) => e.preventDefault()} onDrop={(e) => onDrop(e, index)} className="relative w-full h-[109px]">
+                  <div key={photo.id} draggable onDragStart={(e) => onDragStart(e, index)} onDragOver={(e) => e.preventDefault()} onDrop={(e) => onDrop(e, index)} className="relative w-full pb-[100%]">
                     <img
                       src={photo.url}
                       alt={`Photo ${index + 1}`}
@@ -521,7 +521,7 @@ export default function EnterVehicleDetails2() {
               {photos.length > 5 && (
                 <div className="flex flex-wrap gap-4">
                   {photos.slice(5, 10).map((photo, index) => (
-                    <div key={photo.id} draggable onDragStart={(e) => onDragStart(e, index + 5)} onDragOver={(e) => e.preventDefault()} onDrop={(e) => onDrop(e, index + 5)} className="relative w-full h-[109px]">
+                    <div key={photo.id} draggable onDragStart={(e) => onDragStart(e, index + 5)} onDragOver={(e) => e.preventDefault()} onDrop={(e) => onDrop(e, index + 5)} className="relative w-full pb-[100%]">
                       <img
                         src={photo.url}
                         alt={`Photo ${index + 6}`}
