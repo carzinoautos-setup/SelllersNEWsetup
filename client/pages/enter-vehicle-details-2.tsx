@@ -371,7 +371,7 @@ export default function EnterVehicleDetails2() {
             {/* Price and Description Form */}
             <div className="space-y-6">
               {/* Sale Price */}
-              <div className="w-full max-w-[318px]">
+              <div className="w-full max-w-full md:max-w-[318px]">
                 <label className="block text-[14px] font-medium text-[#24272C] mb-2" style={{ fontFamily: 'Albert Sans' }}>
                   Sale Price
                 </label>
