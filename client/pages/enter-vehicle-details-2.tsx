@@ -261,10 +261,10 @@ export default function EnterVehicleDetails2() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 items-start">
                 
                 {/* Features Column */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-6">
                   <div>
-                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-6" style={{ fontFamily: 'Albert Sans' }}>Features</h3>
-                    <div className="space-y-3">
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Features</h3>
+                    <div className="space-y-2">
                       {renderCheckbox('navigationSystem', 'Navigation System', selectedFeatures.navigationSystem)}
                       {renderCheckbox('remoteStart', 'Remote Start', selectedFeatures.remoteStart)}
                       {renderCheckbox('keylessEntry', 'Keyless Entry', selectedFeatures.keylessEntry)}
@@ -273,7 +273,7 @@ export default function EnterVehicleDetails2() {
                   </div>
 
                   <div>
-                    <div className="space-y-3">
+                    <div className="space-y-2">
                       {renderCheckbox('powerFoldingSideMirrors', 'Power Folding Side Mirrors', selectedFeatures.powerFoldingSideMirrors)}
                       {renderCheckbox('rainSensingWipers', 'Rain-Sensing Wipers', selectedFeatures.rainSensingWipers)}
                       {renderCheckbox('homelink', 'Homelink', selectedFeatures.homelink)}
@@ -283,8 +283,8 @@ export default function EnterVehicleDetails2() {
                   </div>
 
                   <div>
-                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-6" style={{ fontFamily: 'Albert Sans' }}>Exterior</h3>
-                    <div className="space-y-3">
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Exterior</h3>
+                    <div className="space-y-2">
                       {renderCheckbox('alloyWheels', 'Alloy Wheels', selectedFeatures.alloyWheels)}
                       {renderCheckbox('ledHeadlights', 'LED Headlights', selectedFeatures.ledHeadlights)}
                       {renderCheckbox('fogLights', 'Fog Lights', selectedFeatures.fogLights)}
@@ -300,10 +300,10 @@ export default function EnterVehicleDetails2() {
                 </div>
 
                 {/* Interior Column */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-6">
                   <div>
-                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-6" style={{ fontFamily: 'Albert Sans' }}>Interior</h3>
-                    <div className="space-y-3">
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Interior</h3>
+                    <div className="space-y-2">
                       {renderCheckbox('leatherSeats', 'Leather Seats', selectedFeatures.leatherSeats)}
                       {renderCheckbox('heatedSeats', 'Heated Seats', selectedFeatures.heatedSeats)}
                       {renderCheckbox('sunroof', 'Sunroof /Panoramic Roof', selectedFeatures.sunroof)}
@@ -318,8 +318,8 @@ export default function EnterVehicleDetails2() {
                   </div>
                   
                   <div>
-                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-6" style={{ fontFamily: 'Albert Sans' }}>Technology</h3>
-                    <div className="space-y-3">
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Technology</h3>
+                    <div className="space-y-2">
                       {renderCheckbox('appleCarPlay', 'Apple CarPlay/Android Auto', selectedFeatures.appleCarPlay)}
                       {renderCheckbox('bluetooth', 'Bluetooth', selectedFeatures.bluetooth)}
                       {renderCheckbox('touchscreenDisplayTech', 'Touchscreen Display', selectedFeatures.touchscreenDisplayTech)}
@@ -335,9 +335,9 @@ export default function EnterVehicleDetails2() {
                 </div>
 
                 {/* Safety Options Column */}
-                <div className="flex flex-col gap-8">
-                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-6" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
-                  <div className="space-y-3">
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
+                  <div className="space-y-2">
                     {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
                     {renderCheckbox('passengerAirbag', 'Airbag - Passenger', selectedFeatures.passengerAirbag)}
                     {renderCheckbox('antiLockBraking', 'Anti-lock Braking System', selectedFeatures.antiLockBraking)}
