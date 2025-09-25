@@ -485,7 +485,7 @@ export default function EnterVehicleDetails2() {
                     <img
                       src={photo.url}
                       alt={`Photo ${index + 1}`}
-                      className="w-full h-full object-cover rounded-2xl"
+                      className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                     />
 
                     <div className="absolute top-2 left-2">
@@ -525,7 +525,7 @@ export default function EnterVehicleDetails2() {
                       <img
                         src={photo.url}
                         alt={`Photo ${index + 6}`}
-                        className="w-full h-full object-cover rounded-2xl"
+                        className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                       />
 
                     <div className="absolute top-2 left-2">
