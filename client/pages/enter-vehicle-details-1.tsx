@@ -114,7 +114,7 @@ export default function EnterVehicleDetails1() {
                     <div className="text-sm text-[#6B6B6B]">2021 Honda Accord LX</div>
                     <div className="text-xs text-[#9A9A9A]">VIN: XXXXXXXXXXXXXXXX</div>
                     <div className="mt-3 flex gap-3">
-                      <button className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white">Preview your car</button>
+                      <button className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white">Create Your Ad</button>
                     </div>
                   </div>
                 )}
