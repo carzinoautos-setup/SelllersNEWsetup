@@ -20,6 +20,7 @@ import Messages from "./pages/messages";
 import Payments from "./pages/payments";
 import EnterVehicleDetails1 from "./pages/enter-vehicle-details-1";
 import EnterVehicleDetails2 from "./pages/enter-vehicle-details-2";
+import EnterVehicleDetails2Backup from "./pages/enter-vehicle-details-2.backup";
 
 const queryClient = new QueryClient();
 
