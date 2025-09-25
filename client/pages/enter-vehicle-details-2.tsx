@@ -122,7 +122,7 @@ export default function EnterVehicleDetails2() {
     label: string, 
     checked: boolean
   ) => (
-    <div key={key} className="flex items-center gap-2.5">
+    <div key={key} className="flex items-center gap-2">
       <button
         type="button"
         onClick={() => toggleFeature(key)}
