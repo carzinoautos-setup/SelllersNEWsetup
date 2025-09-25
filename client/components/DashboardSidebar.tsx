@@ -20,6 +20,13 @@ export function DashboardSidebar({ className }: SidebarProps) {
       active: false,
       path: "/add-a-listing",
     },
+    // Temporary link for development: Enter Vehicle Details (Step 2)
+    {
+      name: "Enter Vehicle Details",
+      icon: EditIcon,
+      active: false,
+      path: "/enter-vehicle-details-2",
+    },
     {
       name: "Your Listings",
       icon: MailIcon,
