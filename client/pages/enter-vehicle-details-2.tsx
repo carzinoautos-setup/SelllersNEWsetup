@@ -232,7 +232,7 @@ export default function EnterVehicleDetails2() {
           )}
         </div>
 
-        <button onClick={() => deletePhoto(photo.id)} className="absolute bottom-1 right-1 w-6 h-6 bg-black/50 rounded-full flex items-center justify-center text-white shadow">
+        <button onPointerDown={(e)=>e.stopPropagation()} onTouchStart={(e)=>e.stopPropagation()} onClick={() => deletePhoto(photo.id)} className="absolute bottom-1 right-1 w-6 h-6 bg-black/50 rounded-full flex items-center justify-center text-white shadow">
           <svg className="w-4 h-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M9 3h6l1 2h3v2H3V5h3l1-2zM6 7h12v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7zM9 10v8h2v-8H9zm4 0v8h2v-8h-2z" fill="white" />
           </svg>
