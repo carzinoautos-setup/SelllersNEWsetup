@@ -49,7 +49,7 @@ export default function EnterVehicleDetails1() {
             {/* LEFT: Card area */}
             <div className="flex items-start">
               <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[640px] min-h-[320px]">
-                <h1 className="text-[26px] sm:text-[30px] font-bold text-[#24272C] font-albert mb-4">
+                <h1 className="text-[24px] leading-[35px] font-bold text-[#24272C] font-albert mb-4">
                   Enter your info
                 </h1>
 
