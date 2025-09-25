@@ -163,7 +163,7 @@ export default function EnterVehicleDetails2() {
               <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 We've fetched details for your vehicle. Check that the selections are correct and add anything missing.
               </p>
-              <div className="w-full h-px bg-[#B9B9B9] my-6"></div>
+              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
             </div>
 
             {/* Form */}
