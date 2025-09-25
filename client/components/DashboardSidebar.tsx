@@ -28,6 +28,12 @@ export function DashboardSidebar({ className }: SidebarProps) {
       path: "/enter-vehicle-details-2",
     },
     {
+      name: "Enter Vehicle Details (Backup)",
+      icon: EditIcon,
+      active: false,
+      path: "/enter-vehicle-details-2-backup",
+    },
+    {
       name: "Your Listings",
       icon: MailIcon,
       active: true,
