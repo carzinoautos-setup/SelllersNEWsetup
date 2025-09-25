@@ -150,7 +150,7 @@ export default function EnterVehicleDetails2() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[995px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-[995px] mx-auto px-4 sm:px-6 lg:px-8 py-8 overflow-x-hidden">
           
           {/* Step 1: Basic Details */}
           <div className="mb-12">
