@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
+import { Select } from "../components/ui/select";
 
 export default function EnterVehicleDetails2() {
   const [mileage, setMileage] = useState("");
@@ -9,6 +10,12 @@ export default function EnterVehicleDetails2() {
   const [drivetrain, setDrivetrain] = useState("FWD");
   const [exteriorColor, setExteriorColor] = useState("");
   const [interiorColor, setInteriorColor] = useState("");
+
+  const engineOptions = ["6.7 Liter", "3.5 Liter", "2.0 Liter"];
+  const trimOptions = ["440 xDrive Coupe 2D", "Base", "Premium"];
+  const transmissionOptions = ["", "Manual", "Automatic", "CVT"];
+  const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
+  const colorOptions = ["", "White", "Black", "Silver", "Red", "Blue"];
 
   const DropdownIcon = () => (
     <svg 
