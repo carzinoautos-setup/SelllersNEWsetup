@@ -510,7 +510,7 @@ export default function EnterVehicleDetails2() {
                         className="w-full h-full object-cover rounded-2xl"
                       />
                       <button
-                        onClick={() => deletePhoto(index + 5)}
+                        onClick={() => deletePhoto(photo.id)}
                         className="absolute bottom-2 right-2 w-[30px] h-[30px] bg-black/50 rounded-full flex items-center justify-center"
                       >
                         <svg width="16" height="16" viewBox="0 0 17 16" fill="none">
