@@ -2,6 +2,24 @@ import React, { useState, useEffect } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
 import { Select } from "../components/ui/select";
 
+// dnd-kit
+import {
+  DndContext,
+  closestCenter,
+  PointerSensor,
+  TouchSensor,
+  useSensor,
+  useSensors,
+  DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
+
 export default function EnterVehicleDetails2() {
   // Step 1: Basic Details
   const [mileage, setMileage] = useState("");
