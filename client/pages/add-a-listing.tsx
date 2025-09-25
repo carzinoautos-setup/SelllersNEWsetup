@@ -320,7 +320,7 @@ export default function AddAListingPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/b0bb87b082abcee51435cb3c6f2e227c5265b92f?width=998"
                       alt="Vehicle listing preview"
-                      className="w-full h-auto object-contain rounded-md"
+                      className="hidden sm:flex lg:block w-full h-auto object-contain rounded-md"
                     />
                   </div>
                 </div>
