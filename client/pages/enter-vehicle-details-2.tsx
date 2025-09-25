@@ -493,6 +493,10 @@ export default function EnterVehicleDetails2() {
                       src={photo.url}
                       alt={`Photo ${index + 1}`}
                       className="w-full h-full object-cover"
+                      draggable={false}
+                      onDragStart={(e) => e.preventDefault()}
+                      onContextMenu={(e) => e.preventDefault()}
+                      style={{ WebkitTouchCallout: 'none' }}
                     />
 
                     <div className="absolute top-1 left-1">
