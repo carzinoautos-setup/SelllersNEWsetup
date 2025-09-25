@@ -61,8 +61,8 @@ export default function EnterVehicleDetails1() {
                       onClick={() => setActiveTab("license")}
                       className={`w-full h-12 rounded-[14px] ${activeTab === "license" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
                     >
-                      <span className="text-base font-medium">
-                        License Plate
+                      <span className="text-base font-medium" style={{ fontFamily: "Albert Sans, sans-serif", fontWeight: 500 }}>
+                        <font face="Albert Sans, sans-serif">License Plate</font>
                       </span>
                     </button>
                     {activeTab === "license" && (
