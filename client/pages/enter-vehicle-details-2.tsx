@@ -226,7 +226,7 @@ export default function EnterVehicleDetails2() {
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor"/></svg>
             </div>
           ) : (
-            <button type="button" onClick={() => setFeaturePhotoId(photo.id)} className="w-6 h-6 bg-white rounded-full flex items-center justify-center border shadow" aria-label="Set as feature">
+            <button type="button" onPointerDown={(e) => e.stopPropagation()} onTouchStart={(e) => e.stopPropagation()} onClick={() => setFeaturePhotoId(photo.id)} className="w-6 h-6 bg-white rounded-full flex items-center justify-center border shadow" aria-label="Set as feature">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" stroke="currentColor" strokeWidth="1"/></svg>
             </button>
           )}
