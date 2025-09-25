@@ -130,6 +130,12 @@ export default function EnterVehicleDetails2() {
     }
   }, []);
 
+  // dnd-kit sensors (defined here so hooks follow rules)
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(TouchSensor, { activationConstraint: { distance: 5 } }),
+  );
+
   const onDragStart = (e: React.DragEvent, index: number) => {
     e.dataTransfer.setData('text/plain', String(index));
   };
