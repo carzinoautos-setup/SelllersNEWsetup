@@ -456,7 +456,7 @@ export default function EnterVehicleDetails2() {
               </div>
 
               {/* Photo Preview Grid - First Row */}
-              <div className="flex gap-[31px]">
+              <div className="flex flex-wrap gap-4">
                 {photos.slice(0, 5).map((photo, index) => (
                   <div key={index} className="relative w-[166px] h-[109px]">
                     <img
@@ -478,7 +478,7 @@ export default function EnterVehicleDetails2() {
 
               {/* Photo Preview Grid - Second Row */}
               {photos.length > 5 && (
-                <div className="flex gap-[31px]">
+                <div className="flex flex-wrap gap-4">
                   {photos.slice(5, 10).map((photo, index) => (
                     <div key={index + 5} className="relative w-[166px] h-[109px]">
                       <img
