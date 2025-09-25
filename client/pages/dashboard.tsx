@@ -200,7 +200,7 @@ export default function Dashboard() {
                   </div>
                 </div>
                 <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] bg-black text-white font-outfit font-medium">
-                  <span>Help Center</span>
+                  <span className="text-[12px]">Help Center</span>
                   <svg
                     width="20"
                     height="20"
@@ -256,7 +256,7 @@ export default function Dashboard() {
                   </div>
                 </div>
                 <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] border border-[#2B2825] bg-white text-[#E82121] font-outfit font-medium">
-                  <span>Featured Credits</span>
+                  <span className="text-[12px]">Featured Credits</span>
                   <svg
                     width="20"
                     height="20"
@@ -315,7 +315,7 @@ export default function Dashboard() {
                   </div>
                 </div>
                 <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] border border-black bg-white text-[#E82121] font-outfit font-medium">
-                  <span>View Messages</span>
+                  <span className="text-[12px]">View Messages</span>
                   <svg
                     width="21"
                     height="20"
@@ -357,7 +357,7 @@ export default function Dashboard() {
                   </div>
                 </div>
                 <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] border border-[#24272C] bg-white text-[#E82121] font-outfit font-medium">
-                  <span>Update Profile</span>
+                  <span className="text-[12px]">Update Profile</span>
                   <svg
                     width="21"
                     height="20"
