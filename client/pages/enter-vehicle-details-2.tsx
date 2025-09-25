@@ -17,23 +17,6 @@ export default function EnterVehicleDetails2() {
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
   const colorOptions = ["", "White", "Black", "Silver", "Red", "Blue"];
 
-  const DropdownIcon = () => (
-    <svg 
-      width="16" 
-      height="16" 
-      viewBox="0 0 16 16" 
-      fill="none" 
-      className="transform rotate-90"
-    >
-      <path 
-        d="M13 5.5L8 10.5L3 5.5" 
-        stroke="#E82121" 
-        strokeWidth="1.5" 
-        strokeLinecap="round" 
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
 
   return (
     <DashboardLayout>
