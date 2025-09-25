@@ -266,7 +266,7 @@ export default function EnterVehicleDetails2() {
               <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 Carzino makes it simple—we've pulled in your unit's features automatically. All you need to do is confirm or adjust what's here.
               </p>
-              <div className="w-full h-px bg-[#B9B9B9]"></div>
+              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
             </div>
 
             {/* Features Grid */}
@@ -378,7 +378,7 @@ export default function EnterVehicleDetails2() {
               <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 Enter your sale price, then write a description that highlights your car's features. Buyers want details, so be specific
               </p>
-              <div className="w-full h-px bg-[#B9B9B9]"></div>
+              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
             </div>
 
             {/* Price and Description Form */}
@@ -431,7 +431,7 @@ export default function EnterVehicleDetails2() {
               <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 Shoppers want to see it all. The more photos you upload—inside, outside, and every detail—the more confident buyers feel and the faster your car sells.
               </p>
-              <div className="w-full h-px bg-[#B9B9B9]"></div>
+              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
             </div>
 
             {/* Photo Upload */}
