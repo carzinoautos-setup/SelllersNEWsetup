@@ -16,7 +16,7 @@ import {
   arrayMove,
   SortableContext,
   useSortable,
-  verticalListSortingStrategy,
+  rectSortingStrategy,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
@@ -132,8 +132,8 @@ export default function EnterVehicleDetails2() {
 
   // dnd-kit sensors (defined here so hooks follow rules)
   const sensors = useSensors(
+    useSensor(TouchSensor, { activationConstraint: { delay: 150, tolerance: 5 } }),
     useSensor(PointerSensor),
-    useSensor(TouchSensor, { activationConstraint: { distance: 5 } }),
   );
 
   const onDragStart = (e: React.DragEvent, index: number) => {
@@ -214,6 +214,9 @@ export default function EnterVehicleDetails2() {
     const style: React.CSSProperties = {
       transform: CSS.Transform.toString(transform),
       transition,
+      touchAction: 'none',
+      WebkitUserSelect: 'none',
+      userSelect: 'none',
     };
 
     return (
@@ -568,7 +571,7 @@ export default function EnterVehicleDetails2() {
                   setPhotos((prev) => arrayMove(prev, oldIndex, newIndex));
                 }}
               >
-                <SortableContext items={photos.map((p) => p.id)} strategy={verticalListSortingStrategy}>
+                <SortableContext items={photos.map((p) => p.id)} strategy={rectSortingStrategy}>
                   <div className="flex flex-wrap gap-4">
                     {photos.map((photo, index) => (
                       <SortableThumbnail
