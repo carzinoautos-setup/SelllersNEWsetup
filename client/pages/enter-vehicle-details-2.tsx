@@ -79,18 +79,13 @@ export default function EnterVehicleDetails2() {
                     Engine
                   </label>
                   <div className="relative">
-                    <select
+                    <Select
+                      options={engineOptions}
                       value={engine}
-                      onChange={(e) => setEngine(e.target.value)}
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#24272C] font-albert leading-[140%] outline-none focus:border-[#E82121] appearance-none cursor-pointer"
-                    >
-                      <option value="6.7 Liter">6.7 Liter</option>
-                      <option value="3.5 Liter">3.5 Liter</option>
-                      <option value="2.0 Liter">2.0 Liter</option>
-                    </select>
-                    <div className="absolute right-[18px] top-1/2 transform -translate-y-1/2 pointer-events-none">
-                      <DropdownIcon />
-                    </div>
+                      onChange={(v) => setEngine(v)}
+                      placeholder="6.7 Liter"
+                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    />
                   </div>
                 </div>
               </div>
@@ -103,18 +98,13 @@ export default function EnterVehicleDetails2() {
                     Vehicle Trim
                   </label>
                   <div className="relative">
-                    <select
+                    <Select
+                      options={trimOptions}
                       value={vehicleTrim}
-                      onChange={(e) => setVehicleTrim(e.target.value)}
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#24272C] font-albert leading-[140%] outline-none focus:border-[#E82121] appearance-none cursor-pointer"
-                    >
-                      <option value="440 xDrive Coupe 2D">440 xDrive Coupe 2D</option>
-                      <option value="Base">Base</option>
-                      <option value="Premium">Premium</option>
-                    </select>
-                    <div className="absolute right-[18px] top-1/2 transform -translate-y-1/2 pointer-events-none">
-                      <DropdownIcon />
-                    </div>
+                      onChange={(v) => setVehicleTrim(v)}
+                      placeholder="440 xDrive Coupe 2D"
+                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    />
                   </div>
                 </div>
 
@@ -124,19 +114,13 @@ export default function EnterVehicleDetails2() {
                     Transmission
                   </label>
                   <div className="relative">
-                    <select
+                    <Select
+                      options={transmissionOptions}
                       value={transmission}
-                      onChange={(e) => setTransmission(e.target.value)}
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#24272C] font-albert leading-[140%] outline-none focus:border-[#E82121] appearance-none cursor-pointer"
-                    >
-                      <option value="">Select</option>
-                      <option value="Manual">Manual</option>
-                      <option value="Automatic">Automatic</option>
-                      <option value="CVT">CVT</option>
-                    </select>
-                    <div className="absolute right-[18px] top-1/2 transform -translate-y-1/2 pointer-events-none">
-                      <DropdownIcon />
-                    </div>
+                      onChange={(v) => setTransmission(v)}
+                      placeholder="Select"
+                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    />
                   </div>
                 </div>
               </div>
@@ -149,19 +133,13 @@ export default function EnterVehicleDetails2() {
                     Drivetrain
                   </label>
                   <div className="relative">
-                    <select
+                    <Select
+                      options={drivetrainOptions}
                       value={drivetrain}
-                      onChange={(e) => setDrivetrain(e.target.value)}
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#24272C] font-albert leading-[140%] outline-none focus:border-[#E82121] appearance-none cursor-pointer"
-                    >
-                      <option value="FWD">FWD</option>
-                      <option value="RWD">RWD</option>
-                      <option value="AWD">AWD</option>
-                      <option value="4WD">4WD</option>
-                    </select>
-                    <div className="absolute right-[18px] top-1/2 transform -translate-y-1/2 pointer-events-none">
-                      <DropdownIcon />
-                    </div>
+                      onChange={(v) => setDrivetrain(v)}
+                      placeholder="FWD"
+                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    />
                   </div>
                 </div>
 
@@ -171,21 +149,13 @@ export default function EnterVehicleDetails2() {
                     Exterior Color
                   </label>
                   <div className="relative">
-                    <select
+                    <Select
+                      options={colorOptions}
                       value={exteriorColor}
-                      onChange={(e) => setExteriorColor(e.target.value)}
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#24272C] font-albert leading-[140%] outline-none focus:border-[#E82121] appearance-none cursor-pointer"
-                    >
-                      <option value="">Select</option>
-                      <option value="White">White</option>
-                      <option value="Black">Black</option>
-                      <option value="Silver">Silver</option>
-                      <option value="Red">Red</option>
-                      <option value="Blue">Blue</option>
-                    </select>
-                    <div className="absolute right-[18px] top-1/2 transform -translate-y-1/2 pointer-events-none">
-                      <DropdownIcon />
-                    </div>
+                      onChange={(v) => setExteriorColor(v)}
+                      placeholder="Select"
+                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    />
                   </div>
                 </div>
 
@@ -195,20 +165,13 @@ export default function EnterVehicleDetails2() {
                     Interior Color
                   </label>
                   <div className="relative">
-                    <select
+                    <Select
+                      options={colorOptions}
                       value={interiorColor}
-                      onChange={(e) => setInteriorColor(e.target.value)}
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#24272C] font-albert leading-[140%] outline-none focus:border-[#E82121] appearance-none cursor-pointer"
-                    >
-                      <option value="">Select</option>
-                      <option value="Black">Black</option>
-                      <option value="Gray">Gray</option>
-                      <option value="Beige">Beige</option>
-                      <option value="Brown">Brown</option>
-                    </select>
-                    <div className="absolute right-[18px] top-1/2 transform -translate-y-1/2 pointer-events-none">
-                      <DropdownIcon />
-                    </div>
+                      onChange={(v) => setInteriorColor(v)}
+                      placeholder="Select"
+                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    />
                   </div>
                 </div>
               </div>
