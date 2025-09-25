@@ -631,7 +631,7 @@ export default function EnterVehicleDetails2() {
 
           {/* Submit Button */}
           <div className="w-full bg-transparent py-6">
-            <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-0 lg:px-0">
               <div className="flex justify-center sm:justify-start">
                 <button
                   type="button"
