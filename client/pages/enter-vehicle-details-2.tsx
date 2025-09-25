@@ -483,7 +483,7 @@ export default function EnterVehicleDetails2() {
                 {photos.slice(0, 5).map((photo, index) => (
                   <div key={index} className="relative w-[48%] sm:w-[166px] h-[109px]">
                     <img
-                      src={photo}
+                      src={photo.url}
                       alt={`Photo ${index + 1}`}
                       className="w-full h-full object-cover rounded-2xl"
                     />
@@ -505,7 +505,7 @@ export default function EnterVehicleDetails2() {
                   {photos.slice(5, 10).map((photo, index) => (
                     <div key={index + 5} className="relative w-[48%] sm:w-[166px] h-[109px]">
                       <img
-                        src={photo}
+                        src={photo.url}
                         alt={`Photo ${index + 6}`}
                         className="w-full h-full object-cover rounded-2xl"
                       />
