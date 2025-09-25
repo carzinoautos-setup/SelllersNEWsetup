@@ -209,7 +209,7 @@ export default function EnterVehicleDetails1() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F23b891c966f7452fa3f3f303b9253c6a?format=webp&width=1200"
                   alt="vehicle"
-                  className="w-full h-full object-cover"
+                  className="hidden sm:flex lg:block w-full h-full object-cover"
                 />
               </div>
             </div>
