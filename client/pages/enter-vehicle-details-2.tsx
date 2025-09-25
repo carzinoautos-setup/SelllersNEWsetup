@@ -487,6 +487,24 @@ export default function EnterVehicleDetails2() {
                       alt={`Photo ${index + 1}`}
                       className="w-full h-full object-cover rounded-2xl"
                     />
+
+                    <div className="absolute top-2 left-2">
+                      {featurePhotoId === photo.id ? (
+                        <div className="w-7 h-7 bg-[#E82121] rounded-full flex items-center justify-center text-white">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor"/></svg>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => setFeaturePhotoId(photo.id)}
+                          className="w-7 h-7 bg-white rounded-full flex items-center justify-center border"
+                          aria-label="Set as feature"
+                        >
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" stroke="currentColor" strokeWidth="1"/></svg>
+                        </button>
+                      )}
+                    </div>
+
                     <button
                       onClick={() => deletePhoto(photo.id)}
                       className="absolute bottom-2 right-2 w-[30px] h-[30px] bg-black/50 rounded-full flex items-center justify-center"
@@ -509,8 +527,26 @@ export default function EnterVehicleDetails2() {
                         alt={`Photo ${index + 6}`}
                         className="w-full h-full object-cover rounded-2xl"
                       />
-                      <button
-                        onClick={() => deletePhoto(photo.id)}
+
+                    <div className="absolute top-2 left-2">
+                      {featurePhotoId === photo.id ? (
+                        <div className="w-7 h-7 bg-[#E82121] rounded-full flex items-center justify-center text-white">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor"/></svg>
+                        </div>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => setFeaturePhotoId(photo.id)}
+                          className="w-7 h-7 bg-white rounded-full flex items-center justify-center border"
+                          aria-label="Set as feature"
+                        >
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" stroke="currentColor" strokeWidth="1"/></svg>
+                        </button>
+                      )}
+                    </div>
+
+                    <button
+                      onClick={() => deletePhoto(photo.id)}
                         className="absolute bottom-2 right-2 w-[30px] h-[30px] bg-black/50 rounded-full flex items-center justify-center"
                       >
                         <svg width="16" height="16" viewBox="0 0 17 16" fill="none">
