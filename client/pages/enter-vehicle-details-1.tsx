@@ -10,7 +10,8 @@ export default function EnterVehicleDetails1() {
     <DashboardLayout>
       <div className="flex-1">
         {/* Hero Section with Background */}
-        <div className="relative w-full h-[463px] bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden rounded-3xl mx-4 sm:mx-6 lg:mx-8 xl:mx-[60px] mt-8">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] mt-8">
+          <div className="relative w-full h-[463px] bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden rounded-3xl">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -112,6 +113,7 @@ export default function EnterVehicleDetails1() {
             </div>
           </div>
         </div>
+      </div>
 
         {/* Text Content Section */}
         <div className="w-full max-w-[1076px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] py-12">
