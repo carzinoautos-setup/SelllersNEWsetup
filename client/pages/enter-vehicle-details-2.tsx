@@ -156,11 +156,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
+              <h1 className="text-[20px] font-semibold" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Basic Details- </span>
                 <span className="text-[#E82121]">Step 1</span>
               </h1>
-              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 We've fetched details for your vehicle. Check that the selections are correct and add anything missing.
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -259,11 +259,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
+              <h1 className="text-[20px] font-semibold" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Basic Details- </span>
                 <span className="text-[#E82121]">Step 2</span>
               </h1>
-              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 Carzino makes it simple—we've pulled in your unit's features automatically. All you need to do is confirm or adjust what's here.
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -371,11 +371,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
+              <h1 className="text-[20px] font-semibold" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Price and Description- </span>
                 <span className="text-[#E82121]">Step 3</span>
               </h1>
-              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 Enter your sale price, then write a description that highlights your car's features. Buyers want details, so be specific
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -404,7 +404,7 @@ export default function EnterVehicleDetails2() {
               <div className="w-full max-w-[955px]">
                 <div className="relative">
                   <div className="w-full min-h-[289px] p-5 border border-[#B2B2B2] rounded-xl bg-white">
-                    <label className="block text-[13px] text-[#818181] mb-6" style={{ fontFamily: 'DM Sans' }}>
+                    <label className="block text-[13px] text-[#818181]" style={{ fontFamily: 'DM Sans' }}>
                       Description
                     </label>
                     <textarea
@@ -424,11 +424,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
+              <h1 className="text-[20px] font-semibold" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Photos- </span>
                 <span className="text-[#E82121]">Step 4</span>
               </h1>
-              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: 'Albert Sans' }}>
                 Shoppers want to see it all. The more photos you upload—inside, outside, and every detail—the more confident buyers feel and the faster your car sells.
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
