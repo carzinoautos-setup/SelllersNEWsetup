@@ -3,8 +3,6 @@ import { DashboardLayout } from "../components/DashboardLayout";
 import { Select } from "../components/ui/select";
 
 export default function EnterVehicleDetails2() {
-  const [currentStep, setCurrentStep] = useState(1);
-  
   // Step 1: Basic Details
   const [mileage, setMileage] = useState("");
   const [engine, setEngine] = useState("6.7 Liter");
@@ -111,7 +109,6 @@ export default function EnterVehicleDetails2() {
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (files) {
-      // Handle file upload logic here
       console.log("Files selected:", files);
     }
   };
@@ -136,15 +133,15 @@ export default function EnterVehicleDetails2() {
         }`}
       >
         {checked && (
-          <svg width="10" height="11" viewBox="0 0 10 11" fill="none">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
             <path 
-              d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27842 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" 
+              d="M9.76764 1.63463C9.45824 1.32482 8.95582 1.32501 8.64601 1.63463L3.59787 6.68296L1.35419 4.4393C1.04438 4.12949 0.542174 4.12949 0.23236 4.4393C-0.0774534 4.74912 -0.0774534 5.25132 0.23236 5.56113L3.03684 8.36561C3.19165 8.52042 3.39464 8.59802 3.59765 8.59802C3.80067 8.59802 4.00386 8.52061 4.15867 8.36561L9.76764 2.75644C10.0775 2.44684 10.0775 1.94442 9.76764 1.63463Z" 
               fill="white"
             />
           </svg>
         )}
       </button>
-      <label className="text-[15px] text-[#050B20] font-dm-sans leading-[35px] cursor-pointer">
+      <label className="text-[15px] text-[#050B20] leading-[35px] cursor-pointer" style={{ fontFamily: 'DM Sans' }}>
         {label}
       </label>
     </div>
@@ -153,17 +150,17 @@ export default function EnterVehicleDetails2() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] py-8">
+        <div className="w-full max-w-[995px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
           
           {/* Step 1: Basic Details */}
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-bold font-albert mb-3">
+              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Basic Details- </span>
                 <span className="text-[#E82121]">Step 1</span>
               </h1>
-              <p className="text-[14px] text-black font-albert leading-[140%] max-w-[991px] mb-4">
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
                 We've fetched details for your vehicle. Check that the selections are correct and add anything missing.
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -171,85 +168,86 @@ export default function EnterVehicleDetails2() {
 
             {/* Form */}
             <div className="bg-white border border-[#B2B2B2] rounded-2xl p-[30px]">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+              <div className="flex gap-[30px]">
                 {/* Left Column */}
-                <div className="flex flex-col gap-1">
-                  <div className="flex flex-col gap-2 mb-3">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Mileage</label>
+                <div className="flex flex-col gap-6 w-[288px]">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Mileage</label>
                     <input
                       type="text"
                       value={mileage}
                       onChange={(e) => setMileage(e.target.value)}
                       placeholder="Enter mileage"
-                      className="w-full h-[48px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] font-albert leading-[140%] outline-none focus:border-[#E82121]"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                      style={{ fontFamily: 'Albert Sans' }}
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Vehicle Trim</label>
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Vehicle Trim</label>
                     <Select
                       options={trimOptions}
                       value={vehicleTrim}
                       onChange={(v) => setVehicleTrim(v)}
                       placeholder="440 xDrive Coupe 2D"
-                      className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                     />
                   </div>
                 </div>
 
                 {/* Middle Column */}
-                <div className="flex flex-col gap-1">
-                  <div className="flex flex-col gap-2 mb-3">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Engine</label>
+                <div className="flex flex-col gap-6 w-[288px]">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Engine</label>
                     <Select
                       options={engineOptions}
                       value={engine}
                       onChange={(v) => setEngine(v)}
                       placeholder="6.7 Liter"
-                      className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Transmission</label>
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Transmission</label>
                     <Select
                       options={transmissionOptions}
                       value={transmission}
                       onChange={(v) => setTransmission(v)}
                       placeholder="Select"
-                      className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                     />
                   </div>
                 </div>
 
                 {/* Right Column */}
-                <div className="flex flex-col gap-1">
-                  <div className="flex flex-col gap-2 mb-3">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Drivetrain</label>
+                <div className="flex flex-col gap-6 w-[288px]">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Drivetrain</label>
                     <Select
                       options={drivetrainOptions}
                       value={drivetrain}
                       onChange={(v) => setDrivetrain(v)}
                       placeholder="FWD"
-                      className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                     />
                   </div>
-                  <div className="flex flex-col gap-2 mb-3">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Exterior Color</label>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Exterior Color</label>
                     <Select
                       options={exteriorColorOptions}
                       value={exteriorColor}
                       onChange={(v) => setExteriorColor(v)}
                       placeholder="Select"
-                      className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C] font-albert">Interior Color</label>
+                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Interior Color</label>
                     <Select
                       options={interiorColorOptions}
                       value={interiorColor}
                       onChange={(v) => setInteriorColor(v)}
                       placeholder="Select"
-                      className="w-full h-[48px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                     />
                   </div>
                 </div>
@@ -261,11 +259,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-bold font-albert mb-3">
+              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Basic Details- </span>
                 <span className="text-[#E82121]">Step 2</span>
               </h1>
-              <p className="text-[14px] text-black font-albert leading-[140%] max-w-[991px] mb-4">
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
                 Carzino makes it simple—we've pulled in your unit's features automatically. All you need to do is confirm or adjust what's here.
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -273,17 +271,22 @@ export default function EnterVehicleDetails2() {
 
             {/* Features Grid */}
             <div className="bg-white rounded-2xl p-[30px]">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+              <div className="flex gap-[30px]">
                 
                 {/* Features Column */}
-                <div className="space-y-[34px]">
+                <div className="flex flex-col gap-[34px] w-[288px]">
                   <div>
-                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm-sans mb-4">Features</h3>
-                    <div className="space-y-4">
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[42px]" style={{ fontFamily: 'Albert Sans' }}>Features</h3>
+                    <div className="space-y-2.5">
                       {renderCheckbox('navigationSystem', 'Navigation System', selectedFeatures.navigationSystem)}
                       {renderCheckbox('remoteStart', 'Remote Start', selectedFeatures.remoteStart)}
                       {renderCheckbox('keylessEntry', 'Keyless Entry', selectedFeatures.keylessEntry)}
                       {renderCheckbox('handsFree', 'Hands-Free', selectedFeatures.handsFree)}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="space-y-2.5">
                       {renderCheckbox('powerFoldingSideMirrors', 'Power Folding Side Mirrors', selectedFeatures.powerFoldingSideMirrors)}
                       {renderCheckbox('rainSensingWipers', 'Rain-Sensing Wipers', selectedFeatures.rainSensingWipers)}
                       {renderCheckbox('homelink', 'Homelink', selectedFeatures.homelink)}
@@ -293,8 +296,8 @@ export default function EnterVehicleDetails2() {
                   </div>
 
                   <div>
-                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm-sans mb-4">Exterior</h3>
-                    <div className="space-y-4">
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[35px]" style={{ fontFamily: 'Albert Sans' }}>Exterior</h3>
+                    <div className="space-y-2.5">
                       {renderCheckbox('alloyWheels', 'Alloy Wheels', selectedFeatures.alloyWheels)}
                       {renderCheckbox('ledHeadlights', 'LED Headlights', selectedFeatures.ledHeadlights)}
                       {renderCheckbox('fogLights', 'Fog Lights', selectedFeatures.fogLights)}
@@ -309,10 +312,10 @@ export default function EnterVehicleDetails2() {
                   </div>
                 </div>
 
-                {/* Interior & Technology Column */}
-                <div className="space-y-[31px]">
+                {/* Interior Column */}
+                <div className="flex flex-col gap-[31px] w-[288px]">
                   <div>
-                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm-sans mb-4">Interior</h3>
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[35px]" style={{ fontFamily: 'Albert Sans' }}>Interior</h3>
                     <div className="space-y-4">
                       {renderCheckbox('leatherSeats', 'Leather Seats', selectedFeatures.leatherSeats)}
                       {renderCheckbox('heatedSeats', 'Heated Seats', selectedFeatures.heatedSeats)}
@@ -328,7 +331,7 @@ export default function EnterVehicleDetails2() {
                   </div>
                   
                   <div>
-                    <h3 className="text-[16px] font-medium text-[#050B20] font-dm-sans mb-4">Technology</h3>
+                    <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[29px]" style={{ fontFamily: 'Albert Sans' }}>Technology</h3>
                     <div className="space-y-4">
                       {renderCheckbox('appleCarPlay', 'Apple CarPlay/Android Auto', selectedFeatures.appleCarPlay)}
                       {renderCheckbox('bluetooth', 'Bluetooth', selectedFeatures.bluetooth)}
@@ -345,9 +348,9 @@ export default function EnterVehicleDetails2() {
                 </div>
 
                 {/* Safety Options Column */}
-                <div>
-                  <h3 className="text-[16px] font-medium text-[#050B20] font-dm-sans mb-4">Safety Options</h3>
-                  <div className="space-y-4">
+                <div className="w-[288px]">
+                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[11px]" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
+                  <div className="space-y-2.5">
                     {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
                     {renderCheckbox('passengerAirbag', 'Airbag - Passenger', selectedFeatures.passengerAirbag)}
                     {renderCheckbox('antiLockBraking', 'Anti-lock Braking System', selectedFeatures.antiLockBraking)}
@@ -368,11 +371,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-bold font-albert mb-3">
+              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Price and Description- </span>
                 <span className="text-[#E82121]">Step 3</span>
               </h1>
-              <p className="text-[14px] text-black font-albert leading-[140%] max-w-[991px] mb-4">
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
                 Enter your sale price, then write a description that highlights your car's features. Buyers want details, so be specific
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -382,7 +385,7 @@ export default function EnterVehicleDetails2() {
             <div className="space-y-6">
               {/* Sale Price */}
               <div className="w-full max-w-[318px]">
-                <label className="block text-[14px] font-medium text-[#24272C] font-albert mb-2">
+                <label className="block text-[14px] font-medium text-[#24272C] mb-2" style={{ fontFamily: 'Albert Sans' }}>
                   Sale Price
                 </label>
                 <div className="relative">
@@ -391,7 +394,8 @@ export default function EnterVehicleDetails2() {
                     value={salePrice}
                     onChange={(e) => setSalePrice(e.target.value)}
                     placeholder="$"
-                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] font-albert leading-[140%] outline-none focus:border-[#E82121]"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: 'Albert Sans' }}
                   />
                 </div>
               </div>
@@ -399,16 +403,18 @@ export default function EnterVehicleDetails2() {
               {/* Description */}
               <div className="w-full max-w-[955px]">
                 <div className="relative">
-                  <textarea
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    placeholder="Description"
-                    rows={10}
-                    className="w-full p-5 border border-[#B2B2B2] rounded-xl bg-white text-[15px] text-[#050B20] font-dm-sans leading-[26px] outline-none focus:border-[#E82121] resize-none"
-                  />
-                  <label className="absolute top-5 left-5 text-[13px] text-[#818181] font-dm-sans pointer-events-none">
-                    Description
-                  </label>
+                  <div className="w-full min-h-[289px] p-5 border border-[#B2B2B2] rounded-xl bg-white">
+                    <label className="block text-[13px] text-[#818181] mb-6" style={{ fontFamily: 'DM Sans' }}>
+                      Description
+                    </label>
+                    <textarea
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
+                      className="w-full text-[15px] text-[#050B20] leading-[26px] outline-none resize-none border-none bg-transparent"
+                      style={{ fontFamily: 'DM Sans' }}
+                      rows={8}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -418,11 +424,11 @@ export default function EnterVehicleDetails2() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1 className="text-[20px] font-bold font-albert mb-3">
+              <h1 className="text-[20px] font-semibold mb-6" style={{ fontFamily: 'Albert Sans' }}>
                 <span className="text-[#090909]">Photos- </span>
                 <span className="text-[#E82121]">Step 4</span>
               </h1>
-              <p className="text-[14px] text-black font-albert leading-[140%] max-w-[991px] mb-4">
+              <p className="text-[14px] text-black leading-[140%] max-w-[955px] mb-4" style={{ fontFamily: 'Albert Sans' }}>
                 Shoppers want to see it all. The more photos you upload—inside, outside, and every detail—the more confident buyers feel and the faster your car sells.
               </p>
               <div className="w-full h-px bg-[#B9B9B9]"></div>
@@ -432,17 +438,17 @@ export default function EnterVehicleDetails2() {
             <div className="space-y-6">
               {/* Upload Photo Section */}
               <div>
-                <h2 className="text-[24px] font-medium text-[#24272C] font-albert mb-5">Upload Photo</h2>
+                <h2 className="text-[24px] font-medium text-[#24272C] mb-5" style={{ fontFamily: 'Albert Sans' }}>Upload Photo</h2>
                 
                 {/* Upload Area */}
-                <div className="w-full border-2 border-dashed border-[#E5E5EA] rounded-2xl bg-white p-8 flex flex-col items-center justify-center">
+                <div className="w-full max-w-[952px] border-2 border-dashed border-[#E5E5EA] rounded-2xl bg-white py-6 flex flex-col items-center justify-center">
                   <div className="flex flex-col items-center gap-4">
                     {/* Upload Button */}
                     <label className="flex items-center gap-2.5 px-4 py-2.5 bg-[#E82121] text-white rounded-[14px] cursor-pointer">
                       <svg width="20" height="20" viewBox="0 0 21 20" fill="none">
                         <path d="M2.375 13.125L6.67417 8.82583C6.84828 8.65172 7.05498 8.51361 7.28246 8.41938C7.50995 8.32515 7.75377 8.27665 8 8.27665C8.24623 8.27665 8.49005 8.32515 8.71754 8.41938C8.94502 8.51361 9.15172 8.65172 9.32583 8.82583L13.625 13.125M12.375 11.875L13.5492 10.7008C13.7233 10.5267 13.93 10.3886 14.1575 10.2944C14.385 10.2001 14.6288 10.1516 14.875 10.1516C15.1212 10.1516 15.365 10.2001 15.5925 10.2944C15.82 10.3886 16.0267 10.5267 16.2008 10.7008L18.625 13.125M3.625 16.25H17.375C17.7065 16.25 18.0245 16.1183 18.2589 15.8839C18.4933 15.6495 18.625 15.3315 18.625 15V5C18.625 4.66848 18.4933 4.35054 18.2589 4.11612C18.0245 3.8817 17.7065 3.75 17.375 3.75H3.625C3.29348 3.75 2.97554 3.8817 2.74112 4.11612C2.5067 4.35054 2.375 4.66848 2.375 5V15C2.375 15.3315 2.5067 15.6495 2.74112 15.8839C2.97554 16.1183 3.29348 16.25 3.625 16.25ZM12.375 6.875H12.3817V6.88167H12.375V6.875ZM12.6875 6.875C12.6875 6.95788 12.6546 7.03737 12.596 7.09597C12.5374 7.15458 12.4579 7.1875 12.375 7.1875C12.2921 7.1875 12.2126 7.15458 12.154 7.09597C12.0954 7.03737 12.0625 6.95788 12.0625 6.875C12.0625 6.79212 12.0954 6.71263 12.154 6.65403C12.2126 6.59542 12.2921 6.5625 12.375 6.5625C12.4579 6.5625 12.5374 6.59542 12.596 6.65403C12.6546 6.71263 12.6875 6.79212 12.6875 6.875Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
-                      <span className="text-[16px] font-medium font-albert">Select photos</span>
+                      <span className="text-[16px] font-medium" style={{ fontFamily: 'Albert Sans' }}>Select photos</span>
                       <input
                         type="file"
                         multiple
@@ -454,16 +460,16 @@ export default function EnterVehicleDetails2() {
                     
                     {/* Upload Text */}
                     <div className="text-center">
-                      <span className="text-[14px] text-[#24272C] font-albert">or drag photos here</span>
+                      <span className="text-[14px] text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>or drag photos here</span>
                       <br />
-                      <span className="text-[14px] text-[#696665] font-albert">(Up to 15 photos)</span>
+                      <span className="text-[14px] text-[#696665]" style={{ fontFamily: 'Albert Sans' }}>(Up to 15 photos)</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Photo Preview Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+              {/* Photo Preview Grid - First Row */}
+              <div className="flex gap-[31px]">
                 {photos.slice(0, 5).map((photo, index) => (
                   <div key={index} className="relative w-[166px] h-[109px]">
                     <img
@@ -483,9 +489,9 @@ export default function EnterVehicleDetails2() {
                 ))}
               </div>
 
-              {/* Second Row of Photos */}
+              {/* Photo Preview Grid - Second Row */}
               {photos.length > 5 && (
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div className="flex gap-[31px]">
                   {photos.slice(5, 10).map((photo, index) => (
                     <div key={index + 5} className="relative w-[166px] h-[109px]">
                       <img
