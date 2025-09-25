@@ -244,6 +244,25 @@ export default function EnterVehicleDetails2() {
     );
   }
 
+  const handleSubmit = () => {
+    const payload = {
+      mileage,
+      engine,
+      vehicleTrim,
+      transmission,
+      drivetrain,
+      exteriorColor,
+      interiorColor,
+      salePrice,
+      description,
+      photos,
+      selectedFeatures,
+    };
+
+    console.log('Submitting listing:', payload);
+    alert('Listing submitted');
+  };
+
   return (
     <DashboardLayout>
       <div className="flex-1">
@@ -609,6 +628,27 @@ export default function EnterVehicleDetails2() {
 
             </div>
           </div>
+
+          {/* Submit Button */}
+          <div className="w-full bg-transparent py-6">
+            <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12">
+              <div className="flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => {
+                    const payload = { mileage, engine, vehicleTrim, transmission, drivetrain, exteriorColor, interiorColor, salePrice, description, photos, selectedFeatures };
+                    console.log('Submitting listing:', payload);
+                    alert('Listing submitted');
+                  }}
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
+                  style={{ fontFamily: 'Albert Sans' }}
+                >
+                  Submit your listing
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </DashboardLayout>
