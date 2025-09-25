@@ -425,7 +425,6 @@ export default function EnterVehicleDetails2() {
             <div className="space-y-6">
               {/* Upload Photo Section */}
               <div>
-                <h2 className="text-[24px] font-medium text-[#24272C] mb-5" style={{ fontFamily: 'Albert Sans' }}>Upload Photo</h2>
                 
                 {/* Upload Area */}
                 <div className="w-full max-w-[952px] border-2 border-dashed border-[#E5E5EA] rounded-2xl bg-white py-6 flex flex-col items-center justify-center">
