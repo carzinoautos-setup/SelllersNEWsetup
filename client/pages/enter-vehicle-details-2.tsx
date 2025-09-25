@@ -54,58 +54,52 @@ export default function EnterVehicleDetails2() {
 
           {/* Form Section */}
           <div className="bg-white border border-[#B2B2B2] rounded-2xl p-[30px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
               {/* Left Column */}
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1.5">
                 {/* Mileage */}
                 <div className="flex flex-col gap-2 mb-[30px]">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Mileage
                   </label>
-                  <div className="relative">
-                    <input
-                      type="text"
-                      value={mileage}
-                      onChange={(e) => setMileage(e.target.value)}
-                      placeholder="Enter mileage"
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] font-albert leading-[140%] outline-none focus:border-[#E82121]"
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    value={mileage}
+                    onChange={(e) => setMileage(e.target.value)}
+                    placeholder="Enter mileage"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] font-albert leading-[140%] outline-none focus:border-[#E82121]"
+                  />
                 </div>
 
-                {/* Engine */}
+                {/* Vehicle Trim */}
                 <div className="flex flex-col gap-2">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
-                    Engine
+                    Vehicle Trim
                   </label>
-                  <div className="relative">
-                    <Select
-                      options={engineOptions}
-                      value={engine}
-                      onChange={(v) => setEngine(v)}
-                      placeholder="6.7 Liter"
-                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                  <Select
+                    options={trimOptions}
+                    value={vehicleTrim}
+                    onChange={(v) => setVehicleTrim(v)}
+                    placeholder="440 xDrive Coupe 2D"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
               </div>
 
               {/* Middle Column */}
-              <div className="flex flex-col gap-2">
-                {/* Vehicle Trim */}
+              <div className="flex flex-col gap-1.5">
+                {/* Engine */}
                 <div className="flex flex-col gap-2 mb-[30px]">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
-                    Vehicle Trim
+                    Engine
                   </label>
-                  <div className="relative">
-                    <Select
-                      options={trimOptions}
-                      value={vehicleTrim}
-                      onChange={(v) => setVehicleTrim(v)}
-                      placeholder="440 xDrive Coupe 2D"
-                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                  <Select
+                    options={engineOptions}
+                    value={engine}
+                    onChange={(v) => setEngine(v)}
+                    placeholder="6.7 Liter"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
 
                 {/* Transmission */}
@@ -113,34 +107,30 @@ export default function EnterVehicleDetails2() {
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Transmission
                   </label>
-                  <div className="relative">
-                    <Select
-                      options={transmissionOptions}
-                      value={transmission}
-                      onChange={(v) => setTransmission(v)}
-                      placeholder="Select"
-                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                  <Select
+                    options={transmissionOptions}
+                    value={transmission}
+                    onChange={(v) => setTransmission(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
               </div>
 
               {/* Right Column */}
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1.5">
                 {/* Drivetrain */}
                 <div className="flex flex-col gap-2 mb-[30px]">
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Drivetrain
                   </label>
-                  <div className="relative">
-                    <Select
-                      options={drivetrainOptions}
-                      value={drivetrain}
-                      onChange={(v) => setDrivetrain(v)}
-                      placeholder="FWD"
-                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                  <Select
+                    options={drivetrainOptions}
+                    value={drivetrain}
+                    onChange={(v) => setDrivetrain(v)}
+                    placeholder="FWD"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
 
                 {/* Exterior Color */}
@@ -148,15 +138,13 @@ export default function EnterVehicleDetails2() {
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Exterior Color
                   </label>
-                  <div className="relative">
-                    <Select
-                      options={colorOptions}
-                      value={exteriorColor}
-                      onChange={(v) => setExteriorColor(v)}
-                      placeholder="Select"
-                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                  <Select
+                    options={colorOptions}
+                    value={exteriorColor}
+                    onChange={(v) => setExteriorColor(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
 
                 {/* Interior Color */}
@@ -164,15 +152,13 @@ export default function EnterVehicleDetails2() {
                   <label className="text-[14px] font-medium text-[#24272C] font-albert">
                     Interior Color
                   </label>
-                  <div className="relative">
-                    <Select
-                      options={colorOptions}
-                      value={interiorColor}
-                      onChange={(v) => setInteriorColor(v)}
-                      placeholder="Select"
-                      className="mt-1 w-full h-[60px] rounded-xl border border-[#E1E1E1] px-4 text-[15px] text-[#050B20] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                  <Select
+                    options={colorOptions}
+                    value={interiorColor}
+                    onChange={(v) => setInteriorColor(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
               </div>
             </div>
