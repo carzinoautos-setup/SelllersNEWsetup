@@ -247,8 +247,35 @@ export default function EnterVehicleDetails2() {
   return (
     <DashboardLayout>
       <div className="flex-1">
+        {/* Vehicle Info Header */}
+        <div className="w-full bg-white border-b border-[#EDEDED]">
+          <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 py-6">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+              {/* Your listing title */}
+              <div className="flex-shrink-0">
+                <h2 className="text-[24px] font-semibold text-black leading-normal" style={{ fontFamily: 'Albert Sans' }}>
+                  Your listing
+                </h2>
+              </div>
+
+              {/* Vehicle details */}
+              <div className="flex flex-col gap-1 min-w-0 flex-1">
+                <div className="text-[14px] font-normal text-black leading-[140%]" style={{ fontFamily: 'Albert Sans' }}>
+                  Your Vehicle
+                </div>
+                <div className="text-[16px] font-semibold text-[#090909] leading-[140%]" style={{ fontFamily: 'Albert Sans' }}>
+                  Year Make Model Trim
+                </div>
+                <div className="text-[14px] font-normal text-black leading-[140%]" style={{ fontFamily: 'Albert Sans' }}>
+                  Vin#: Vinnumberhere6789H1222
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 py-8 overflow-x-hidden">
-          
+
           {/* Step 1: Basic Details */}
           <div className="mb-12">
             {/* Header */}
