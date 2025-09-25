@@ -123,7 +123,7 @@ export default function EnterVehicleDetails2() {
                     Exterior Color
                   </label>
                   <Select
-                    options={colorOptions}
+                    options={exteriorColorOptions}
                     value={exteriorColor}
                     onChange={(v) => setExteriorColor(v)}
                     placeholder="Select"
@@ -137,7 +137,7 @@ export default function EnterVehicleDetails2() {
                     Interior Color
                   </label>
                   <Select
-                    options={colorOptions}
+                    options={interiorColorOptions}
                     value={interiorColor}
                     onChange={(v) => setInteriorColor(v)}
                     placeholder="Select"
