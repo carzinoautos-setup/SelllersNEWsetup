@@ -516,9 +516,7 @@ export default function EnterVehicleDetails2() {
                       onClick={() => deletePhoto(photo.id)}
                       className="absolute bottom-1 right-1 w-6 h-6 bg-black/50 rounded-full flex items-center justify-center text-white shadow"
                     >
-                      <svg width="12" height="12" viewBox="0 0 17 16" fill="none">
-                        <path d="M10.0571 6.00035L9.82647 12.0003M6.63447 12.0003L6.4038 6.00035M13.0491 3.86035C13.2771 3.89501 13.5038 3.93168 13.7305 3.97101M13.0491 3.86035L12.3371 13.1157C12.3081 13.4925 12.1378 13.8445 11.8605 14.1012" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
+                      <img src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fdbfc72679a1749f6b9cdbc3fc4ed0850?format=webp&width=64" alt="Delete" className="w-3.5 h-3.5 object-contain" />
                     </button>
                   </div>
                 ))}
