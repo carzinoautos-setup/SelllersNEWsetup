@@ -171,7 +171,7 @@ export default function ResetPage() {
               </div>
 
               {/* Right column: password requirements / tips */}
-              <aside className="block">
+              <aside className="order-first lg:order-none block lg:col-span-1 mb-4 lg:mb-0">
                 <div className="sticky top-28 p-6 bg-white border border-[#E6E6E6] rounded-lg shadow-md">
                   <h3 className="text-lg font-semibold text-[#24272C]">Password requirements</h3>
                   <p className="text-sm text-[#6B6B6B] mt-2">Use a strong password to protect your account. The password must meet the following:</p>
