@@ -47,6 +47,10 @@ const App = () => (
             path="/enter-vehicle-details-2"
             element={<EnterVehicleDetails2 />}
           />
+          <Route
+            path="/enter-vehicle-details-2-backup"
+            element={<EnterVehicleDetails2Backup />}
+          />
           <Route path="/billing" element={<Billing />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/messages" element={<Messages />} />
