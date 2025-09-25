@@ -557,7 +557,7 @@ export default function EnterVehicleDetails2() {
 
               {/* Photo Previews (sortable thumbnails using dnd-kit) */}
               <DndContext
-                sensors={useSensors(useSensor(PointerSensor), useSensor(TouchSensor, { activationConstraint: { distance: 5 } }))}
+                sensors={sensors}
                 collisionDetection={closestCenter}
                 onDragEnd={(event: DragEndEvent) => {
                   const { active, over } = event;
