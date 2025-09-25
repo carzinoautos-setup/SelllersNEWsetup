@@ -167,7 +167,7 @@ export default function EnterVehicleDetails2() {
             </div>
 
             {/* Form */}
-            <div className="bg-white border border-[#B2B2B2] rounded-2xl p-[30px]">
+            <div className="bg-white border border-[#B2B2B2] p-[30px]">
               <div className="flex gap-[30px]">
                 {/* Left Column */}
                 <div className="flex flex-col gap-6 w-[288px]">
