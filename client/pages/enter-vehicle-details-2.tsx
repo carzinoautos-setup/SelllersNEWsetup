@@ -15,7 +15,8 @@ export default function EnterVehicleDetails2() {
   const trimOptions = ["440 xDrive Coupe 2D", "Base", "Premium"];
   const transmissionOptions = ["", "Manual", "Automatic", "CVT"];
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
-  const colorOptions = ["", "White", "Black", "Silver", "Red", "Blue"];
+  const exteriorColorOptions = ["", "White", "Black", "Silver", "Red", "Blue"];
+  const interiorColorOptions = ["", "Black", "Gray", "Beige", "Brown"];
 
 
   return (
