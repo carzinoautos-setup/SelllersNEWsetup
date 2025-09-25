@@ -277,7 +277,7 @@ export default function EnterVehicleDetails2() {
                 <div className="flex flex-col gap-[34px] w-[288px]">
                   <div>
                     <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[42px]" style={{ fontFamily: 'Albert Sans' }}>Features</h3>
-                    <div className="space-y-2.5">
+                    <div className="space-y-2">
                       {renderCheckbox('navigationSystem', 'Navigation System', selectedFeatures.navigationSystem)}
                       {renderCheckbox('remoteStart', 'Remote Start', selectedFeatures.remoteStart)}
                       {renderCheckbox('keylessEntry', 'Keyless Entry', selectedFeatures.keylessEntry)}
@@ -286,7 +286,7 @@ export default function EnterVehicleDetails2() {
                   </div>
 
                   <div>
-                    <div className="space-y-2.5">
+                    <div className="space-y-2">
                       {renderCheckbox('powerFoldingSideMirrors', 'Power Folding Side Mirrors', selectedFeatures.powerFoldingSideMirrors)}
                       {renderCheckbox('rainSensingWipers', 'Rain-Sensing Wipers', selectedFeatures.rainSensingWipers)}
                       {renderCheckbox('homelink', 'Homelink', selectedFeatures.homelink)}
@@ -297,7 +297,7 @@ export default function EnterVehicleDetails2() {
 
                   <div>
                     <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[35px]" style={{ fontFamily: 'Albert Sans' }}>Exterior</h3>
-                    <div className="space-y-2.5">
+                    <div className="space-y-2">
                       {renderCheckbox('alloyWheels', 'Alloy Wheels', selectedFeatures.alloyWheels)}
                       {renderCheckbox('ledHeadlights', 'LED Headlights', selectedFeatures.ledHeadlights)}
                       {renderCheckbox('fogLights', 'Fog Lights', selectedFeatures.fogLights)}
@@ -350,7 +350,7 @@ export default function EnterVehicleDetails2() {
                 {/* Safety Options Column */}
                 <div className="w-[288px]">
                   <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-[11px]" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
-                  <div className="space-y-2.5">
+                  <div className="space-y-2">
                     {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
                     {renderCheckbox('passengerAirbag', 'Airbag - Passenger', selectedFeatures.passengerAirbag)}
                     {renderCheckbox('antiLockBraking', 'Anti-lock Braking System', selectedFeatures.antiLockBraking)}
