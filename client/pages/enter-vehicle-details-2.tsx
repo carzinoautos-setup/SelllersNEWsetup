@@ -168,7 +168,7 @@ export default function EnterVehicleDetails2() {
 
             {/* Form */}
             <div className="bg-white">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {/* Row 1: Mileage + Engine */}
                 <div className="flex flex-col gap-2">
                   <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Mileage</label>
