@@ -524,46 +524,6 @@ export default function EnterVehicleDetails2() {
                 ))}
               </div>
 
-              {/* Photo Preview Grid - Second Row */}
-              {photos.length > 5 && (
-                <div className="flex flex-wrap gap-4">
-                  {photos.slice(5, 10).map((photo, index) => (
-                    <div key={photo.id} draggable onDragStart={(e) => onDragStart(e, index + 5)} onDragOver={(e) => e.preventDefault()} onDrop={(e) => onDrop(e, index + 5)} className="relative w-full pb-[100%]">
-                      <img
-                        src={photo.url}
-                        alt={`Photo ${index + 6}`}
-                        className="absolute inset-0 w-full h-full object-cover rounded-2xl"
-                      />
-
-                    <div className="absolute top-2 left-2">
-                      {featurePhotoId === photo.id ? (
-                        <div className="w-7 h-7 bg-[#E82121] rounded-full flex items-center justify-center text-white">
-                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="currentColor"/></svg>
-                        </div>
-                      ) : (
-                        <button
-                          type="button"
-                          onClick={() => setFeaturePhotoId(photo.id)}
-                          className="w-7 h-7 bg-white rounded-full flex items-center justify-center border"
-                          aria-label="Set as feature"
-                        >
-                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" stroke="currentColor" strokeWidth="1"/></svg>
-                        </button>
-                      )}
-                    </div>
-
-                    <button
-                      onClick={() => deletePhoto(photo.id)}
-                        className="absolute bottom-2 right-2 w-[30px] h-[30px] bg-black/50 rounded-full flex items-center justify-center"
-                      >
-                        <svg width="16" height="16" viewBox="0 0 17 16" fill="none">
-                          <path d="M10.0571 6.00035L9.82647 12.0003M6.63447 12.0003L6.4038 6.00035M13.0491 3.86035C13.2771 3.89501 13.5038 3.93168 13.7305 3.97101M13.0491 3.86035L12.3371 13.1157C12.3081 13.4925 12.1378 13.8445 11.8605 14.1012C11.5831 14.3579 11.2191 14.5005 10.8411 14.5003H5.6198C5.24187 14.5005 4.87782 14.3579 4.60046 14.1012C4.32309 13.8445 4.15286 13.4925 4.1238 13.1157L3.4118 3.86035M13.0491 3.86035C12.2797 3.74403 11.5063 3.65574 10.7305 3.59568M3.4118 3.86035C3.1838 3.89435 2.95714 3.93101 2.73047 3.97035M3.4118 3.86035C4.18122 3.74403 4.95463 3.65575 5.73047 3.59568M10.7305 3.59568V2.98501C10.7305 2.19835 10.1238 1.54235 9.33714 1.51768C8.59955 1.49411 7.86139 1.49411 7.1238 1.51768C6.33714 1.54235 5.73047 2.19901 5.73047 2.98501V3.59568M10.7305 3.59568C9.06628 3.46707 7.39465 3.46707 5.73047 3.59568" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
         </div>
