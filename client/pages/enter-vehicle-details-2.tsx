@@ -168,88 +168,75 @@ export default function EnterVehicleDetails2() {
 
             {/* Form */}
             <div className="bg-white">
-              <div className="flex gap-[30px]">
-                {/* Left Column */}
-                <div className="flex flex-col gap-6 w-[288px]">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Mileage</label>
-                    <input
-                      type="text"
-                      value={mileage}
-                      onChange={(e) => setMileage(e.target.value)}
-                      placeholder="Enter mileage"
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
-                      style={{ fontFamily: 'Albert Sans' }}
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Vehicle Trim</label>
-                    <Select
-                      options={trimOptions}
-                      value={vehicleTrim}
-                      onChange={(v) => setVehicleTrim(v)}
-                      placeholder="440 xDrive Coupe 2D"
-                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {/* Row 1: Mileage + Engine */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Mileage</label>
+                  <input
+                    type="text"
+                    value={mileage}
+                    onChange={(e) => setMileage(e.target.value)}
+                    placeholder="Enter mileage"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: 'Albert Sans' }}
+                  />
                 </div>
 
-                {/* Middle Column */}
-                <div className="flex flex-col gap-6 w-[288px]">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Engine</label>
-                    <Select
-                      options={engineOptions}
-                      value={engine}
-                      onChange={(v) => setEngine(v)}
-                      placeholder="6.7 Liter"
-                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Transmission</label>
-                    <Select
-                      options={transmissionOptions}
-                      value={transmission}
-                      onChange={(v) => setTransmission(v)}
-                      placeholder="Select"
-                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Engine</label>
+                  <Select
+                    options={engineOptions}
+                    value={engine}
+                    onChange={(v) => setEngine(v)}
+                    placeholder="6.7 Liter"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
 
-                {/* Right Column */}
-                <div className="flex flex-col gap-6 w-[288px]">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Drivetrain</label>
-                    <Select
-                      options={drivetrainOptions}
-                      value={drivetrain}
-                      onChange={(v) => setDrivetrain(v)}
-                      placeholder="FWD"
-                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Exterior Color</label>
-                    <Select
-                      options={exteriorColorOptions}
-                      value={exteriorColor}
-                      onChange={(v) => setExteriorColor(v)}
-                      placeholder="Select"
-                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Interior Color</label>
-                    <Select
-                      options={interiorColorOptions}
-                      value={interiorColor}
-                      onChange={(v) => setInteriorColor(v)}
-                      placeholder="Select"
-                      className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                    />
-                  </div>
+                {/* Row 2: Vehicle Trim + Transmission */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Vehicle Trim</label>
+                  <Select
+                    options={trimOptions}
+                    value={vehicleTrim}
+                    onChange={(v) => setVehicleTrim(v)}
+                    placeholder="440 xDrive Coupe 2D"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Transmission</label>
+                  <Select
+                    options={transmissionOptions}
+                    value={transmission}
+                    onChange={(v) => setTransmission(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                {/* Row 3: Exterior + Interior */}
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Exterior Color</label>
+                  <Select
+                    options={exteriorColorOptions}
+                    value={exteriorColor}
+                    onChange={(v) => setExteriorColor(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: 'Albert Sans' }}>Interior Color</label>
+                  <Select
+                    options={interiorColorOptions}
+                    value={interiorColor}
+                    onChange={(v) => setInteriorColor(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
                 </div>
               </div>
             </div>
