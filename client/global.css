@@ -116,6 +116,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Use Albert Sans for all buttons to match design */
+  button,
+  button * {
+    font-family: 'Albert Sans', -apple-system, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Segoe UI', sans-serif !important;
+  }
 }
 
 /* Prevent horizontal scrollbar across the site (fix for thin slider bar) */
