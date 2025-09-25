@@ -190,7 +190,7 @@ export default function Dashboard() {
                     </defs>
                   </svg>
                   <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
-                    <h3 className="text-xl font-medium text-[#24272C] font-albert leading-[20px]">
+                    <h3 className="text-[17px] font-medium text-[#24272C] font-albert leading-[20px]">
                       Help Center
                     </h3>
                     <p className="text-sm font-normal text-[#696665] font-albert leading-[140%]">
@@ -246,7 +246,7 @@ export default function Dashboard() {
                     />
                   </svg>
                   <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
-                    <h3 className="text-xl font-medium text-[#24272C] font-albert leading-[20px]">
+                    <h3 className="text-[17px] font-medium text-[#24272C] font-albert leading-[20px]">
                       Featured Ad Credits
                     </h3>
                     <p className="text-sm font-normal text-[#696665] font-albert leading-[140%]">
@@ -305,7 +305,7 @@ export default function Dashboard() {
                     </defs>
                   </svg>
                   <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
-                    <h3 className="text-xl font-medium text-[#24272C] font-albert leading-[20px]">
+                    <h3 className="text-[17px] font-medium text-[#24272C] font-albert leading-[20px]">
                       Messages
                     </h3>
                     <p className="text-sm font-normal text-[#696665] font-albert leading-[140%]">
@@ -347,7 +347,7 @@ export default function Dashboard() {
                     alt="Profile Settings"
                   />
                   <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-3 sm:gap-5">
-                    <h3 className="text-xl font-medium text-[#24272C] font-albert leading-[20px]">
+                    <h3 className="text-[17px] font-medium text-[#24272C] font-albert leading-[20px]">
                       Profile Settings
                     </h3>
                     <p className="text-sm font-normal text-[#696665] font-albert leading-[140%]">
