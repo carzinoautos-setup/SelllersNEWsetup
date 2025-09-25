@@ -9,64 +9,63 @@ export default function EnterVehicleDetails1() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        {/* Hero Section with Background */}
+        {/* Centered page container */}
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] mt-8">
-          <div className="relative w-full h-[463px] bg-gradient-to-r from-blue-600 to-blue-800 overflow-hidden rounded-3xl">
-            {/* Background Image */}
+
+          {/* Hero Section with Background */}
+          <div className="relative w-full h-[463px] overflow-hidden rounded-3xl">
+            {/* Background Image (cover) */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
-                backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F23b891c966f7452fa3f3f303b9253c6a?format=webp&width=1200')"
+                backgroundImage:
+                  "url('https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F23b891c966f7452fa3f3f303b9253c6a?format=webp&width=1200')",
               }}
             />
 
-            {/* Overlay Card */}
-            <div className="absolute left-4 sm:left-8 top-4 sm:top-8 w-full max-w-[440px]">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                {/* Title */}
-                <h1 className="text-[30px] font-bold text-[#24272C] font-albert mb-6">
+            {/* Dim overlay to ensure card legibility on small screens */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent pointer-events-none" />
+
+            {/* Overlay Card (positioned inside the centered container) */}
+            <div className="absolute left-4 sm:left-8 top-4 sm:top-8 w-[calc(100%-32px)] sm:w-[440px]">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+                <h1 className="text-[26px] sm:text-[30px] font-bold text-[#24272C] font-albert mb-4">
                   Enter your info
                 </h1>
 
-                {/* Tab Navigation */}
-                <div className="flex items-start gap-[10px] mb-6">
-                  <div className="flex flex-col items-center flex-1">
+                {/* Tabs */}
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="flex-1">
                     <button
                       onClick={() => setActiveTab("license")}
-                      className={`flex h-[50px] justify-center items-center gap-[10px] w-full rounded-[14px] ${
-                        activeTab === "license"
-                          ? "bg-[#24272C] text-white"
-                          : "border border-[#24272C] text-[#24272C]"
+                      className={`w-full h-12 rounded-[14px] ${
+                        activeTab === "license" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"
                       }`}
                     >
                       <span className="text-base font-medium">License Plate</span>
                     </button>
-                    {activeTab === "license" && (
-                      <svg width="11" height="5" viewBox="0 0 11 5" fill="none" className="mt-1">
-                        <path d="M5.5 5L10.5 0H0.5L5.5 5Z" fill="#24272C"/>
-                      </svg>
-                    )}
+                    {activeTab === "license" && <div className="mt-1 w-full flex justify-center"><svg width="11" height="5" viewBox="0 0 11 5" fill="none"><path d="M5.5 5L10.5 0H0.5L5.5 5Z" fill="#24272C"/></svg></div>}
                   </div>
 
-                  <button
-                    onClick={() => setActiveTab("vin")}
-                    className={`flex h-[50px] justify-center items-center gap-[10px] flex-1 rounded-[14px] ${
-                      activeTab === "vin"
-                        ? "bg-[#24272C] text-white"
-                        : "border border-[#24272C] text-[#24272C]"
-                    }`}
-                  >
-                    <span className="text-base font-medium">By Vin #</span>
-                  </button>
+                  <div className="flex-1">
+                    <button
+                      onClick={() => setActiveTab("vin")}
+                      className={`w-full h-12 rounded-[14px] ${
+                        activeTab === "vin" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"
+                      }`}
+                    >
+                      <span className="text-base font-medium">By Vin #</span>
+                    </button>
+                  </div>
                 </div>
 
                 {/* Form */}
-                <div className="flex flex-col gap-5">
-                  <div className="flex flex-col gap-[10px]">
-                    {/* License Plate Input */}
-                    <div className="flex h-[50px] px-4 items-center justify-between border border-[#EDEDED] rounded-[14px] bg-white">
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-2">
+                    <div className="flex h-12 px-3 items-center border border-[#EDEDED] rounded-[14px] bg-white">
                       <input
                         type="text"
+                        aria-label="license plate"
                         value={licensePlate}
                         onChange={(e) => setLicensePlate(e.target.value)}
                         placeholder="Enter License Plate #"
@@ -74,12 +73,11 @@ export default function EnterVehicleDetails1() {
                       />
                     </div>
 
-                    {/* State Selector */}
                     <div className="relative">
                       <select
                         value={selectedState}
                         onChange={(e) => setSelectedState(e.target.value)}
-                        className="flex h-[50px] px-4 items-center justify-between w-full border border-[#EDEDED] rounded-[14px] bg-white text-sm text-[#24272C] font-inter outline-none appearance-none"
+                        className="h-12 w-full px-3 border border-[#EDEDED] rounded-[14px] bg-white text-sm text-[#24272C] font-inter outline-none appearance-none"
                       >
                         <option value="">Select State</option>
                         <option value="CA">California</option>
@@ -93,7 +91,7 @@ export default function EnterVehicleDetails1() {
                         height="16"
                         viewBox="0 0 16 16"
                         fill="none"
-                        className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                        className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
                       >
                         <path
                           fillRule="evenodd"
@@ -105,29 +103,20 @@ export default function EnterVehicleDetails1() {
                     </div>
                   </div>
 
-                  {/* Get Vehicle Details Button */}
-                  <button className="flex h-[50px] justify-center items-center gap-[10px] w-full rounded-[14px] bg-[#E82121] text-white">
-                    <span className="text-base font-medium">Get vehicle details</span>
-                  </button>
+                  <button className="h-12 w-full rounded-[14px] bg-[#E82121] text-white">Get vehicle details</button>
                 </div>
               </div>
             </div>
           </div>
-      </div>
 
-        {/* Text Content Section */}
-        <div className="w-full max-w-[1076px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] py-12">
-          <h2 className="text-2xl font-bold text-black font-albert mb-4">
-            Sell your vehicle online easily with Carzino.
-          </h2>
+          {/* Text Content Section */}
+          <div className="w-full max-w-[1076px] mx-auto px-0 py-12">
+            <h2 className="text-2xl font-bold text-black font-albert mb-4">Sell your vehicle online easily with Carzino.</h2>
 
-          <div className="text-sm text-black font-albert leading-relaxed max-w-[1076px]">
-            <p className="mb-4">
-              Carzino makes it simple to sell your vehicle through a fast, and convenient.
-            </p>
-            <p>
-              Just enter your car's VIN number or license plate, and Carzino will automatically pull in your vehicle's make, model, and essential details. From there, you can complete your listing and start connecting with buyers.
-            </p>
+            <div className="text-sm text-black font-albert leading-relaxed max-w-[1076px]">
+              <p className="mb-4">Carzino makes it simple to sell your vehicle through a fast, and convenient.</p>
+              <p>Just enter your car's VIN number or license plate, and Carzino will automatically pull in your vehicle's make, model, and essential details. From there, you can complete your listing and start connecting with buyers.</p>
+            </div>
           </div>
         </div>
       </div>
