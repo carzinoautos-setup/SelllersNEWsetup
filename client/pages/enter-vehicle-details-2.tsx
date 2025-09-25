@@ -34,22 +34,14 @@ export default function EnterVehicleDetails2() {
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] py-8">
           {/* Header Section */}
           <div className="relative mb-8">
-            {/* Red checkbox with number 1 */}
-            <div className="flex items-start gap-3 mb-4">
-              <div className="relative flex-shrink-0">
-                <div className="w-5 h-[17px] bg-[#E82121] rounded flex items-center justify-center">
-                  <span className="text-white text-[13px] font-albert leading-[140%]">1</span>
-                </div>
-              </div>
-              <div>
-                <h1 className="text-[18px] font-medium text-[#090909] font-albert mb-2">
-                  Basic Details
-                </h1>
-                <div className="w-32 h-0.5 bg-[#E82121] mb-3"></div>
-                <p className="text-[14px] text-black font-albert leading-[140%] max-w-[991px]">
-                  We've fetched details for your vehicle. Check that the selections are correct and add anything missing.
-                </p>
-              </div>
+            <div className="mb-4">
+              <h1 className="text-[20px] font-bold font-albert mb-3">
+                <span className="text-[#090909]">Basic Details- </span>
+                <span className="text-[#E82121]">Step 1</span>
+              </h1>
+              <p className="text-[14px] text-black font-albert leading-[140%] max-w-[991px]">
+                We've fetched details for your vehicle. Check that the selections are correct and add anything missing.
+              </p>
             </div>
           </div>
 
