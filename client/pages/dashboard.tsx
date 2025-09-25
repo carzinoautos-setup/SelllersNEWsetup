@@ -199,9 +199,6 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] bg-black text-white font-outfit font-medium">
-                  <span className="text-[12px]">Help Center</span>
-                </button>
               </div>
 
               {/* Featured Ad Credits */}
@@ -243,9 +240,6 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] border border-[#2B2825] bg-white text-[#E82121] font-outfit font-medium">
-                  <span className="text-[12px]">Featured Credits</span>
-                </button>
               </div>
 
               {/* Messages */}
@@ -290,9 +284,6 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] border border-black bg-white text-[#E82121] font-outfit font-medium">
-                  <span className="text-[12px]">View Messages</span>
-                </button>
               </div>
 
               {/* Profile Settings */}
@@ -320,9 +311,6 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <button className="flex justify-center items-center gap-2.5 w-1/2 sm:w-full sm:max-w-[204px] mx-auto sm:mx-0 h-10 sm:h-[50px] px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-base rounded-[14px] border border-[#24272C] bg-white text-[#E82121] font-outfit font-medium">
-                  <span className="text-[12px]">Update Profile</span>
-                </button>
               </div>
             </div>
           </div>
