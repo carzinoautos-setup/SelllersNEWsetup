@@ -371,6 +371,393 @@ export default function EditListing() {
         </div>
 
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 py-8 overflow-x-hidden">
+          {/* Vehicle Details Step 1A */}
+          <div className="mb-12">
+            {/* Header */}
+            <div className="mb-6">
+              <h1
+                className="text-[20px] font-semibold"
+                style={{ fontFamily: "Albert Sans" }}
+              >
+                <span className="text-[#090909]">Vehicle Details- </span>
+                <span className="text-[#E82121]">Step 1 A</span>
+              </h1>
+              <p
+                className="text-[14px] text-black leading-[140%] max-w-[955px]"
+                style={{ fontFamily: "Albert Sans" }}
+              >
+                Enter or edit your vehicle details
+              </p>
+              <div className="w-full h-[0.5px] bg-[#B9B9B9] my-6"></div>
+            </div>
+
+            {/* Form */}
+            <div className="bg-white rounded-2xl p-[30px]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+                {/* Column 1 */}
+                <div className="flex flex-col gap-[30px]">
+                  {/* Vin# */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Vin#
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter Vin#"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    />
+                  </div>
+
+                  {/* Model */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Model
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#050B20] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select Model
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Is certified */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Is certified
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#050B20] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select one
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Exterior Color */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Exterior Color
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#24272C] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select color
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Column 2 */}
+                <div className="flex flex-col gap-[30px]">
+                  {/* Year */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Year
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#050B20] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Enter Year
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Trim */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Trim
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter Trim"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    />
+                  </div>
+
+                  {/* Mileage */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Mileage
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter Miles"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    />
+                  </div>
+
+                  {/* Title Status */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Title Status
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#050B20] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select title status
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Column 3 */}
+                <div className="flex flex-col gap-[30px]">
+                  {/* Make */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Make
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#050B20] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select Make
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Condition */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Condition
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#050B20] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select Condition
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Interior Color */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Interior Color
+                    </label>
+                    <div className="relative">
+                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
+                        <span
+                          className="text-[14px] text-[#24272C] leading-[140%]"
+                          style={{ fontFamily: "Albert Sans" }}
+                        >
+                          Select Color
+                        </span>
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="transform rotate-90"
+                        >
+                          <path
+                            d="M13 5.5L8 10.5L3 5.5"
+                            stroke="#E82121"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Stock# */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Stock#
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter Stock Number"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Step 1: Basic Details */}
           <div className="mb-12">
             {/* Header */}
