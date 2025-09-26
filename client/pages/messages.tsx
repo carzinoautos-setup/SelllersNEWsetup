@@ -24,7 +24,7 @@ export default function MessagesPage() {
             {/* Left Sidebar - User List */}
             <div className={`md:w-[444px] w-[85%] md:flex md:flex-col flex flex-col border-r border-[#EDEDED] bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
               {/* Search */}
-              <div className="p-[30px] pb-[10px]">
+              <div className="p-4 md:p-[30px] pb-[10px]">
                 <div className="flex items-center gap-3 w-full h-[54px] px-[18px] border border-[#EDEDED] rounded-xl bg-white">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.7506 15.7506L11.8528 11.8528M11.8528 11.8528C12.9078 10.7979 13.5004 9.36711 13.5004 7.87521C13.5004 6.38331 12.9078 4.95252 11.8528 3.89759C10.7979 2.84265 9.36711 2.25 7.87521 2.25C6.38331 2.25 4.95252 2.84265 3.89759 3.89759C2.84265 4.95252 2.25 6.38331 2.25 7.87521C2.25 9.36711 2.84265 10.7979 3.89759 11.8528C4.95252 12.9078 6.38331 13.5004 7.87521 13.5004C9.36711 13.5004 10.7979 12.9078 11.8528 11.8528Z" stroke="#B6B6B6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
