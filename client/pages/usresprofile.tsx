@@ -259,7 +259,7 @@ export function UsersProfileCard() {
               className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto lg:mx-0"
             />
             <div className="flex flex-col gap-[10px] w-full max-w-[364px]">
-              <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans']">
+              <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center sm:text-left">
                 Upload a Image
               </div>
               <div className="flex items-center gap-4 w-full max-w-[352px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
@@ -270,7 +270,7 @@ export function UsersProfileCard() {
                   No files selected
                 </span>
               </div>
-              <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%]">
+              <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center sm:text-left">
                 JPEG 100x100
               </div>
             </div>
