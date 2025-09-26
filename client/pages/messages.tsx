@@ -42,7 +42,7 @@ export default function MessagesPage() {
                 <div className="space-y-0">
                   {/* Leslie Alexander */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/c041dc35be8bc315c45d97e5809f850ae3d3e137?width=120" alt="Leslie Alexander" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/c041dc35be8bc315c45d97e5809f850ae3d3e137?width=120" alt="Leslie Alexander" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Leslie Alexander</h3>
@@ -54,7 +54,7 @@ export default function MessagesPage() {
 
                   {/* Arlene McCoy - Active */}
                   <div className="flex items-start gap-5 p-4 bg-[#F9FCFF] rounded-2xl cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120" alt="Arlene McCoy" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120" alt="Arlene McCoy" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Arlene McCoy</h3>
@@ -66,7 +66,7 @@ export default function MessagesPage() {
 
                   {/* Kristin Watson */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/f12eb2aeb8e6b90f247254903de54e5826193f01?width=120" alt="Kristin Watson" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/f12eb2aeb8e6b90f247254903de54e5826193f01?width=120" alt="Kristin Watson" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Kristin Watson</h3>
@@ -78,7 +78,7 @@ export default function MessagesPage() {
 
                   {/* Cody Fisher */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/1cd22edc30b21b3a800653867a9c9791ebe8d27b?width=120" alt="Cody Fisher" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/1cd22edc30b21b3a800653867a9c9791ebe8d27b?width=120" alt="Cody Fisher" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Cody Fisher</h3>
@@ -90,7 +90,7 @@ export default function MessagesPage() {
 
                   {/* Arlene McCoy (duplicate) */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/cdc8db175de79ce744da76369ab664cb9ad77b8c?width=120" alt="Arlene McCoy" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/cdc8db175de79ce744da76369ab664cb9ad77b8c?width=120" alt="Arlene McCoy" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Arlene McCoy</h3>
@@ -102,7 +102,7 @@ export default function MessagesPage() {
 
                   {/* Bessie Cooper */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/88524a91e17f572cfa76d84a10d99234f4c15b70?width=120" alt="Bessie Cooper" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/88524a91e17f572cfa76d84a10d99234f4c15b70?width=120" alt="Bessie Cooper" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Bessie Cooper</h3>
@@ -114,7 +114,7 @@ export default function MessagesPage() {
 
                   {/* Savannah Nguyen */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
-                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/b878046b247eb0edd91adbacb82197e1cf7286d3?width=120" alt="Savannah Nguyen" className="w-[60px] h-[60px] rounded-full object-cover" />
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/b878046b247eb0edd91adbacb82197e1cf7286d3?width=120" alt="Savannah Nguyen" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-lg font-medium text-[#24272C] font-albert">Savannah Nguyen</h3>
@@ -131,7 +131,7 @@ export default function MessagesPage() {
             <div className="flex-1 flex flex-col">
               {/* Chat Header */}
               <div className="flex items-center gap-5 h-[114px] px-[50px] py-[10px] border-b border-[#EDEDED]">
-                <img src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120" alt="Arlene McCoy" className="w-[60px] h-[60px] rounded-full object-cover" />
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120" alt="Arlene McCoy" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
                 <div className="flex-1">
                   <h2 className="text-lg font-medium text-[#24272C] font-albert mb-1">Arlene McCoy</h2>
                   <div className="flex items-center gap-[6px]">
