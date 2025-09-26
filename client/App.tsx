@@ -22,6 +22,7 @@ import EnterVehicleDetails2 from "./pages/enter-vehicle-details-2";
 import EditListing from "./pages/edit-listing";
 import Production from "./pages/production";
 import Elements from "./pages/elements";
+import Vindecoder from "./pages/vindecoder";
 
 const queryClient = new QueryClient();
 
