@@ -429,6 +429,7 @@ export default function EditListing() {
                   />
                 </div>
 
+                {/* Row 2: Vehicle Trim + Transmission */}
                 <div className="flex flex-col gap-2">
                   <label
                     className="text-[14px] font-medium text-[#24272C]"
@@ -443,5 +444,56 @@ export default function EditListing() {
                     placeholder="440 xDrive Coupe 2D"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
+                </div>
 
-{
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Transmission
+                  </label>
+                  <Select
+                    options={transmissionOptions}
+                    value={transmission}
+                    onChange={(v) => setTransmission(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                {/* Row 3: Exterior + Interior */}
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Exterior Color
+                  </label>
+                  <Select
+                    options={exteriorColorOptions}
+                    value={exteriorColor}
+                    onChange={(v) => setExteriorColor(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Interior Color
+                  </label>
+                  <Select
+                    options={interiorColorOptions}
+                    value={interiorColor}
+                    onChange={(v) => setInteriorColor(v)}
+                    placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                {/* ... rest of file follows same as original ... */}
+  (truncated)
