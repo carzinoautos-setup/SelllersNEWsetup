@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { DashboardLayout } from "../components/DashboardLayout";
 
 export default function YourListingsPage() {
@@ -380,7 +382,7 @@ export default function YourListingsPage() {
                       </button>
 
                       {/* Edit Button */}
-                      <button className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white flex items-center justify-center hover:bg-gray-50 transition-colors">
+                      <Link to="/enter-vehicle-details-2" className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white flex items-center justify-center hover:bg-gray-50 transition-colors">
                         <svg
                           className="w-[18px] h-[18px]"
                           viewBox="0 0 19 18"
@@ -398,7 +400,7 @@ export default function YourListingsPage() {
                             fill="#050B20"
                           />
                         </svg>
-                      </button>
+                      </Link>
                     </div>
 
                     {/* Featured Button */}
