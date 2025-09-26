@@ -139,7 +139,6 @@ export default function Vindecoder() {
   };
 
   const vehicleLocationCityOptions = vehicleCityMap[vehicleLocationState] || [];
-  const vehicleLocationStateOptions = ["California", "Texas", "Florida", "New York", "Illinois"];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
 
   const toggleFeature = (feature: string) => {
