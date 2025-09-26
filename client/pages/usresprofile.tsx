@@ -1,5 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
+import { Select } from "../components/ui/select";
+
+function FieldLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <label className="text-[14px] font-medium text-[#24272C] mb-2" style={{ fontFamily: "Albert Sans" }}>
+      {children}
+    </label>
+  );
+}
 
 export function UsersProfileCard() {
   const [sellerName, setSellerName] = useState("");
@@ -229,25 +238,12 @@ export function UsersProfileCard() {
 
             {/* Dropdown */}
             <div className="relative w-full md:w-[310px]">
-              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#E82121] transition-colors duration-150 relative">
-                <div className="h-full flex items-center justify-between">
-                  <div className="flex flex-col justify-center">
-                    <div className="text-[13px] font-bold text-black font-['Albert_Sans'] leading-none">
-                      Select your Account type
-                    </div>
-                    <div className="text-[15px] text-[#050B20] font-['DM_Sans'] leading-none mt-1">
-                      Private Seller
-                    </div>
-                  </div>
-                  <svg
-                    className="w-[10px] h-[10px] text-[#E82121]"
-                    viewBox="0 0 10 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#E82121"/>
-                  </svg>
-                </div>
+              <FieldLabel>Select your Account type</FieldLabel>
+              <div className="w-full h-[54px] rounded-lg border border-[#B2B2B2] bg-white px-[18px] flex items-center justify-between">
+                <div className="leading-none text-[15px] text-[#050B20]">{sellerType || 'Private Seller'}</div>
+                <svg className="w-4 h-4 text-[#CF0D0D]" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D" />
+                </svg>
               </div>
             </div>
           </div>
@@ -288,9 +284,7 @@ export function UsersProfileCard() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {/* Row 1 */}
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                Seller or dealer name
-              </label>
+              <FieldLabel>Seller or dealer name</FieldLabel>
               <input
                 value={sellerName}
                 onChange={(e) => setSellerName(e.target.value)}
@@ -301,9 +295,7 @@ export function UsersProfileCard() {
             </div>
 
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                address
-              </label>
+              <FieldLabel>address</FieldLabel>
               <input
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
@@ -314,9 +306,7 @@ export function UsersProfileCard() {
             </div>
 
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                City
-              </label>
+              <FieldLabel>City</FieldLabel>
               <input
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
@@ -327,9 +317,7 @@ export function UsersProfileCard() {
             </div>
 
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                State
-              </label>
+              <FieldLabel>State</FieldLabel>
               <input
                 value={stateVal}
                 onChange={(e) => setStateVal(e.target.value)}
@@ -341,9 +329,7 @@ export function UsersProfileCard() {
 
             {/* Row 2 */}
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                Zip code
-              </label>
+              <FieldLabel>Zip code</FieldLabel>
               <input
                 value={zip}
                 onChange={(e) => setZip(e.target.value)}
@@ -354,9 +340,7 @@ export function UsersProfileCard() {
             </div>
 
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                Email lead alert address
-              </label>
+              <FieldLabel>Email lead alert address</FieldLabel>
               <input
                 value={emailLead}
                 onChange={(e) => setEmailLead(e.target.value)}
@@ -367,9 +351,7 @@ export function UsersProfileCard() {
             </div>
 
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                Account holder email Address
-              </label>
+              <FieldLabel>Account holder email Address</FieldLabel>
               <input
                 value={accountEmail}
                 onChange={(e) => setAccountEmail(e.target.value)}
@@ -381,9 +363,7 @@ export function UsersProfileCard() {
 
             {/* Row 3 */}
             <div>
-              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
-                Seller Phone
-              </label>
+              <FieldLabel>Seller Phone</FieldLabel>
               <input
                 value={sellerPhone}
                 onChange={(e) => setSellerPhone(e.target.value)}
@@ -393,9 +373,7 @@ export function UsersProfileCard() {
             </div>
 
             <div>
-              <label className="text-[14px] font-medium text-[#24272C] mb-2" style={{ fontFamily: "Albert Sans" }}>
-                List your phone# on ads?
-              </label>
+              <FieldLabel>List your phone# on ads?</FieldLabel>
               <div className="relative w-full" ref={listPhoneFormRef}>
                 <button
                   type="button"
@@ -404,48 +382,18 @@ export function UsersProfileCard() {
                   aria-haspopup="listbox"
                   aria-expanded={listPhoneFormOpen}
                 >
-                  <span className="truncate flex-1 text-left">
-                    {listPhone ? "Yes" : "No"}
-                  </span>
-                  <svg
-                    viewBox="0 0 10 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-4 h-4 ml-2"
-                  >
+                  <span className="truncate flex-1 text-left">{listPhone ? "Yes" : "No"}</span>
+                  <svg className="w-4 h-4 ml-2 text-[#CF0D0D]" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D" />
                   </svg>
                 </button>
 
                 {listPhoneFormOpen && (
-                  <ul
-                    role="listbox"
-                    className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
-                    style={{
-                      left: 0,
-                      right: 0,
-                      top: "calc(100% + 8px)",
-                      boxSizing: "border-box",
-                    }}
-                  >
-                    <li
-                      role="option"
-                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => {
-                        setListPhone(true);
-                        setListPhoneFormOpen(false);
-                      }}
-                    >
+                  <ul role="listbox" className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50" style={{ left: 0, right: 0, top: "calc(100% + 8px)", boxSizing: "border-box" }}>
+                    <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(true); setListPhoneFormOpen(false); }}>
                       Yes
                     </li>
-                    <li
-                      role="option"
-                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => {
-                        setListPhone(false);
-                        setListPhoneFormOpen(false);
-                      }}
-                    >
+                    <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(false); setListPhoneFormOpen(false); }}>
                       No
                     </li>
                   </ul>
@@ -458,52 +406,19 @@ export function UsersProfileCard() {
             {/* Row 4 */}
             <div className="md:col-span-3 w-full">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
-                <div className="relative md:col-span-2">
-                  <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                    <div className="h-full flex items-center">
-                      <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                        Enter your address and then select from the choices.
-                      </label>
-                      <input
-                        value={address}
-                        onChange={(e) => setAddress(e.target.value)}
-                        placeholder="Enter address"
-                        className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                      />
-                    </div>
-                  </div>
+                <div className="md:col-span-2">
+                  <FieldLabel>Enter your address and then select from the choices.</FieldLabel>
+                  <input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Enter address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
                 </div>
 
-                <div className="relative md:col-span-1">
-                  <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                    <div className="h-full flex items-center">
-                      <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                        Longitude:
-                      </label>
-                      <input
-                        value={longitude}
-                        onChange={(e) => setLongitude(e.target.value)}
-                        placeholder="Longitude"
-                        className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                      />
-                    </div>
-                  </div>
+                <div>
+                  <FieldLabel>Longitude:</FieldLabel>
+                  <input value={longitude} onChange={(e) => setLongitude(e.target.value)} placeholder="Longitude" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
                 </div>
 
-                <div className="relative md:col-span-1">
-                  <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                    <div className="h-full flex items-center">
-                      <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                        Latitude
-                      </label>
-                      <input
-                        value={latitude}
-                        onChange={(e) => setLatitude(e.target.value)}
-                        placeholder="Latitude"
-                        className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                      />
-                    </div>
-                  </div>
+                <div>
+                  <FieldLabel>Latitude</FieldLabel>
+                  <input value={latitude} onChange={(e) => setLatitude(e.target.value)} placeholder="Latitude" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
                 </div>
               </div>
             </div>
@@ -512,381 +427,124 @@ export function UsersProfileCard() {
       </section>
 
       {sellerType === "Dealer" && (
-        <section
-          className="bg-white rounded-lg p-8 mt-5"
-          style={{ border: "0.8px solid rgba(171,171,171,1)" }}
-        >
-          <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
-            Dealership Information
-          </h3>
+        <section className="bg-white rounded-lg p-8 mt-5" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
+          <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Dealership Information</h3>
 
           <div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-              {/* Row 1 */}
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Do you sell new or used vehicles?
-                    </label>
-                    <div className="relative w-full" ref={vehicleTypeRef}>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setVehicleTypeOpen((v) => !v);
-                        }}
-                        className="w-full h-full flex items-center justify-between border-none rounded-xl bg-transparent text-[15px] text-[#050B20]"
-                        aria-haspopup="listbox"
-                        aria-expanded={vehicleTypeOpen}
-                      >
-                        <span className="truncate flex-1 text-left">
-                          {vehicleType}
-                        </span>
-                        <svg
-                          viewBox="0 0 10 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-4 h-4 ml-2"
-                        >
-                          <path
-                            d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
-                            fill="#CF0D0D"
-                          />
-                        </svg>
-                      </button>
+              <div>
+                <FieldLabel>Do you sell new or used vehicles?</FieldLabel>
+                <div className="relative w-full" ref={vehicleTypeRef}>
+                  <button type="button" onClick={() => setVehicleTypeOpen((v) => !v)} className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]" aria-haspopup="listbox" aria-expanded={vehicleTypeOpen}>
+                    <span className="truncate flex-1 text-left">{vehicleType || 'New/Used'}</span>
+                    <svg className="w-4 h-4 ml-2 text-[#CF0D0D]" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D"/></svg>
+                  </button>
 
-                      {vehicleTypeOpen && (
-                        <ul
-                          role="listbox"
-                          className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
-                          style={{
-                            left: 0,
-                            right: 0,
-                            top: "calc(100% + 8px)",
-                            boxSizing: "border-box",
-                          }}
-                        >
-                          <li
-                            role="option"
-                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                            onClick={() => {
-                              setVehicleType("New/Used");
-                              setVehicleTypeOpen(false);
-                            }}
-                          >
-                            New/Used
-                          </li>
-                          <li
-                            role="option"
-                            className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                            onClick={() => {
-                              setVehicleType("Used");
-                              setVehicleTypeOpen(false);
-                            }}
-                          >
-                            Used
-                          </li>
-                        </ul>
-                      )}
-                    </div>
-                  </div>
+                  {vehicleTypeOpen && (
+                    <ul role="listbox" className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50" style={{ left: 0, right: 0, top: "calc(100% + 8px)", boxSizing: "border-box" }}>
+                      <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType("New/Used"); setVehicleTypeOpen(false); }}>New/Used</li>
+                      <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType("Used"); setVehicleTypeOpen(false); }}>Used</li>
+                    </ul>
+                  )}
                 </div>
               </div>
 
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Email lead alerts user 1
-                    </label>
-                    <input
-                      value={emailAlert1}
-                      onChange={(e) => setEmailAlert1(e.target.value)}
-                      placeholder="Enter an additional alert email address"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Email lead alerts user 1</FieldLabel>
+                <input value={emailAlert1} onChange={(e) => setEmailAlert1(e.target.value)} placeholder="Enter an additional alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Dealerships CRM provider
-                    </label>
-                    <input
-                      value={crmProvider}
-                      onChange={(e) => setCrmProvider(e.target.value)}
-                      placeholder="Enter your Crm provider"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Dealerships CRM provider</FieldLabel>
+                <input value={crmProvider} onChange={(e) => setCrmProvider(e.target.value)} placeholder="Enter your Crm provider" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              {/* Row 2 */}
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Dealership website
-                    </label>
-                    <input
-                      value={dealershipWebsite}
-                      onChange={(e) => setDealershipWebsite(e.target.value)}
-                      className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Dealership website</FieldLabel>
+                <input value={dealershipWebsite} onChange={(e) => setDealershipWebsite(e.target.value)} className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Email lead alerts user 2
-                    </label>
-                    <input
-                      value={emailAlert2}
-                      onChange={(e) => setEmailAlert2(e.target.value)}
-                      placeholder="Enter an additional alert email address"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Email lead alerts user 2</FieldLabel>
+                <input value={emailAlert2} onChange={(e) => setEmailAlert2(e.target.value)} placeholder="Enter an additional alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      CRM Account #
-                    </label>
-                    <input
-                      value={crmAccount}
-                      onChange={(e) => setCrmAccount(e.target.value)}
-                      placeholder="Enter your Crm account #"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>CRM Account #</FieldLabel>
+                <input value={crmAccount} onChange={(e) => setCrmAccount(e.target.value)} placeholder="Enter your Crm account #" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              {/* Row 3 */}
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      XML or CSV vehicle Feed url
-                    </label>
-                    <input
-                      value={websiteProvider}
-                      onChange={(e) => setWebsiteProvider(e.target.value)}
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>XML or CSV vehicle Feed url</FieldLabel>
+                <input value={websiteProvider} onChange={(e) => setWebsiteProvider(e.target.value)} placeholder="Enter your inventory provider" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Email lead alerts user 3
-                    </label>
-                    <input
-                      value={emailAlert3}
-                      onChange={(e) => setEmailAlert3(e.target.value)}
-                      placeholder="Enter an additional alert email address"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Email lead alerts user 3</FieldLabel>
+                <input value={emailAlert3} onChange={(e) => setEmailAlert3(e.target.value)} placeholder="Enter an additional alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Dealerships CRM email
-                    </label>
-                    <input
-                      value={crmEmail}
-                      onChange={(e) => setCrmEmail(e.target.value)}
-                      placeholder="Enter your Crm alert email address"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Dealerships CRM email</FieldLabel>
+                <input value={crmEmail} onChange={(e) => setCrmEmail(e.target.value)} placeholder="Enter your Crm alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              {/* Row 4 */}
-              <div className="relative">
-                <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                  <div className="h-full flex items-center">
-                    <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                      Website provider information
-                    </label>
-                    <input
-                      value={websiteProvider}
-                      onChange={(e) => setWebsiteProvider(e.target.value)}
-                      placeholder="Enter your inventory provider"
-                      className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                    />
-                  </div>
-                </div>
+              <div>
+                <FieldLabel>Website provider information</FieldLabel>
+                <input value={websiteProvider} onChange={(e) => setWebsiteProvider(e.target.value)} placeholder="Enter your inventory provider" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
               </div>
 
-              <div></div>
-              <div></div>
             </div>
           </div>
         </section>
       )}
 
-      <section
-        className="bg-white rounded-lg p-8 mt-5"
-        style={{ border: "0.8px solid rgba(171,171,171,1)" }}
-      >
-        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
-          Billing Information
-        </h3>
+      <section className="bg-white rounded-lg p-8 mt-5" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
+        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Billing Information</h3>
 
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-            {/* Row 1 */}
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Billing contact
-                  </label>
-                  <input
-                    value={billingContact}
-                    onChange={(e) => setBillingContact(e.target.value)}
-                    placeholder="Enter your full name"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>Billing contact</FieldLabel>
+              <input value={billingContact} onChange={(e) => setBillingContact(e.target.value)} placeholder="Enter your full name" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Street address
-                  </label>
-                  <input
-                    value={billingStreetAddress}
-                    onChange={(e) => setBillingStreetAddress(e.target.value)}
-                    placeholder="Enter your street address"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>Street address</FieldLabel>
+              <input value={billingStreetAddress} onChange={(e) => setBillingStreetAddress(e.target.value)} placeholder="Enter your street address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    City
-                  </label>
-                  <input
-                    value={billingCity}
-                    onChange={(e) => setBillingCity(e.target.value)}
-                    placeholder="Enter your city"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>City</FieldLabel>
+              <input value={billingCity} onChange={(e) => setBillingCity(e.target.value)} placeholder="Enter your city" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            {/* Row 2 */}
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    State
-                  </label>
-                  <input
-                    value={billingState}
-                    onChange={(e) => setBillingState(e.target.value)}
-                    placeholder="Enter your state"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>State</FieldLabel>
+              <input value={billingState} onChange={(e) => setBillingState(e.target.value)} placeholder="Enter your state" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Zip code
-                  </label>
-                  <input
-                    value={billingZip}
-                    onChange={(e) => setBillingZip(e.target.value)}
-                    placeholder="Enter your zip code"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>Zip code</FieldLabel>
+              <input value={billingZip} onChange={(e) => setBillingZip(e.target.value)} placeholder="Enter your zip code" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Country
-                  </label>
-                  <input
-                    value={billingCountry}
-                    onChange={(e) => setBillingCountry(e.target.value)}
-                    placeholder="USA"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>Country</FieldLabel>
+              <input value={billingCountry} onChange={(e) => setBillingCountry(e.target.value)} placeholder="USA" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            {/* Row 3 */}
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Billing email address
-                  </label>
-                  <input
-                    value={billingEmail}
-                    onChange={(e) => setBillingEmail(e.target.value)}
-                    placeholder="Billing email"
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>Billing email address</FieldLabel>
+              <input value={billingEmail} onChange={(e) => setBillingEmail(e.target.value)} placeholder="Billing email" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Billing phone
-                  </label>
-                  <input
-                    value={billingPhone}
-                    onChange={(e) => setBillingPhone(e.target.value)}
-                    placeholder=""
-                    className="w-full text-[15px] text-[#050B20] font-['Albert_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <FieldLabel>Billing phone</FieldLabel>
+              <input value={billingPhone} onChange={(e) => setBillingPhone(e.target.value)} placeholder="" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
             </div>
 
-            <div className="text-center mt-4">
+            <div className="text-center mt-4 md:col-span-3">
               <button onClick={handleSave} className="bg-[#E82121] text-white px-4 py-2 rounded-md">Save</button>
               <button onClick={handleReset} className="ml-2 bg-gray-200 px-4 py-2 rounded-md">Reset</button>
             </div>
@@ -909,13 +567,13 @@ export function UsersProfileCard() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
             {/* Column 1 */}
             <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Vin#</label>
-                <input placeholder="Enter Vin#" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              <div>
+                <FieldLabel>Vin#</FieldLabel>
+                <input placeholder="Enter Vin#" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" />
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Model</label>
+              <div>
+                <FieldLabel>Model</FieldLabel>
                 <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
                   <option value="">Select Model</option>
                   <option>Model A</option>
@@ -923,8 +581,8 @@ export function UsersProfileCard() {
                 </select>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Is certified</label>
+              <div>
+                <FieldLabel>Is certified</FieldLabel>
                 <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
                   <option value="">Select one</option>
                   <option>Yes</option>
@@ -932,8 +590,8 @@ export function UsersProfileCard() {
                 </select>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Exterior Color</label>
+              <div>
+                <FieldLabel>Exterior Color</FieldLabel>
                 <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
                   <option value="">Select color</option>
                   <option>White</option>
@@ -944,8 +602,8 @@ export function UsersProfileCard() {
 
             {/* Column 2 */}
             <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Year</label>
+              <div>
+                <FieldLabel>Year</FieldLabel>
                 <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
                   <option value="">Enter Year</option>
                   <option>2025</option>
@@ -953,21 +611,21 @@ export function UsersProfileCard() {
                 </select>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Trim</label>
-                <input placeholder="Enter Trim" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              <div>
+                <FieldLabel>Trim</FieldLabel>
+                <input placeholder="Enter Trim" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" />
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Mileage</label>
-                <input placeholder="Enter Miles" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              <div>
+                <FieldLabel>Mileage</FieldLabel>
+                <input placeholder="Enter Miles" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" />
               </div>
             </div>
 
             {/* Column 3 */}
             <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Title Status</label>
+              <div>
+                <FieldLabel>Title Status</FieldLabel>
                 <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
                   <option value="">Select title status</option>
                   <option>Clean</option>
@@ -975,8 +633,8 @@ export function UsersProfileCard() {
                 </select>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Condition</label>
+              <div>
+                <FieldLabel>Condition</FieldLabel>
                 <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
                   <option value="">Select Condition</option>
                   <option>New</option>
@@ -984,9 +642,9 @@ export function UsersProfileCard() {
                 </select>
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label className="text-[14px] font-medium text-[#24272C]">Stock#</label>
-                <input placeholder="Enter Stock Number" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              <div>
+                <FieldLabel>Stock#</FieldLabel>
+                <input placeholder="Enter Stock Number" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" />
               </div>
             </div>
           </div>
