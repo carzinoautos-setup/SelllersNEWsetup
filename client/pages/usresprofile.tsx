@@ -212,7 +212,7 @@ export function UsersProfileCard() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* New Figma Design Section */}
-      <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 p-8 max-w-[1000px] mx-auto">
+      <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 py-8 max-w-[1000px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
           <div className="w-full md:w-[70%] max-w-[725px]">
@@ -221,8 +221,9 @@ export function UsersProfileCard() {
                 Get Started with Carzino Revised
               </h2>
               <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
-                How do I find the VIN number for my car?<br />
-                Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle. The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets the edge of the windshield on the driver's side.
+                <span style={{ fontFamily: 'Albert Sans, Inter, system-ui, sans-serif' }}>
+                  You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
+                </span>
               </p>
             </div>
 
