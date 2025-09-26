@@ -182,9 +182,9 @@ export default function AddAListing() {
                       VIN: XXXXXXXXXXXXXXXX
                     </div>
                     <div className="mt-3 flex gap-3">
-                      <button className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white">
+                      <Link to="/enter-vehicle-details-2" className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white flex items-center justify-center">
                         Create Your Ad
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 )}
