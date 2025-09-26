@@ -127,6 +127,18 @@ export default function Vindecoder() {
   const transmissionOptions = ["Manual", "Automatic", "CVT"];
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
   const exteriorColorOptions = ["White", "Black", "Silver", "Red", "Blue"];
+  const vehicleLocationStateOptions = ["California", "Washington", "Texas", "Florida", "New York", "Illinois"];
+
+  const vehicleCityMap: Record<string, string[]> = {
+    California: ["Los Angeles", "San Francisco", "San Diego", "Sacramento"],
+    Washington: ["Seattle", "Tacoma", "Bellevue", "Spokane"],
+    Texas: ["Houston", "Dallas", "Austin", "San Antonio"],
+    Florida: ["Miami", "Orlando", "Tampa", "Jacksonville"],
+    "New York": ["New York", "Buffalo", "Rochester", "Syracuse"],
+    Illinois: ["Chicago", "Springfield", "Naperville", "Peoria"],
+  };
+
+  const vehicleLocationCityOptions = vehicleCityMap[vehicleLocationState] || [];
   const vehicleLocationStateOptions = ["California", "Texas", "Florida", "New York", "Illinois"];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
 
@@ -522,7 +534,7 @@ export default function Vindecoder() {
                     Vehicle Location City
                   </label>
                   <Select
-                    options={[]}
+                    options={vehicleLocationCityOptions}
                     value={vehicleLocationCity}
                     onChange={(v) => setVehicleLocationCity(v)}
                     placeholder="Enter City"
@@ -537,12 +549,13 @@ export default function Vindecoder() {
                   >
                     Vehicle Location Zip
                   </label>
-                  <Select
-                    options={[]}
+                  <input
+                    type="text"
                     value={vehicleLocationZip}
-                    onChange={(v) => setVehicleLocationZip(v)}
+                    onChange={(e) => setVehicleLocationZip(e.target.value)}
                     placeholder="Enter Zip"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
                   />
                 </div>
               </div>
