@@ -171,7 +171,7 @@ export default function MessagesPage() {
                       <p className="text-sm text-[#696665] font-albert">Yes</p>
                     </div>
                   </div>
-                  <div className="md:ml-[54px] ml-0">
+                  <div className="lg:ml-[54px] ml-0">
                     <span className="text-xs text-[#B6B6B6] font-dm-sans">2:55 PM - Aug 17, 2024</span>
                   </div>
                 </div>
