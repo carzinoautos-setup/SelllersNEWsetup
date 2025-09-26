@@ -392,7 +392,7 @@ export default function EditListing() {
             </div>
 
             {/* Form */}
-            <div className="bg-white rounded-2xl p-[30px]">
+            <div className="bg-white rounded-2xl pb-[30px]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Column 1 */}
                 <div className="flex flex-col gap-6">
