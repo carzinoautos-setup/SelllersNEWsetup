@@ -1177,6 +1177,36 @@ export default function AddAListingPage() {
             </div>
           </section>
 
+          {/* Enter Description - Step 6 */}
+          <section className="w-full mb-8">
+            <div className="max-w-[1540px] mx-auto">
+              <div className="flex flex-col gap-5">
+                {/* Header */}
+                <div className="flex items-end gap-4">
+                  <h3 className="text-2xl font-medium text-[#24272C] font-['Albert_Sans']">
+                    Enter description
+                  </h3>
+                  <div className="flex items-center justify-center px-[26px] py-2 bg-white border border-[#CF0D0D] rounded-xl">
+                    <span className="text-[15px] font-medium text-[#1E1E1E] font-['DM_Sans'] leading-[26px]">
+                      Step 6
+                    </span>
+                  </div>
+                </div>
+
+                {/* Textarea */}
+                <div className="w-full h-[289px] border border-[#B2B2B2] rounded-xl bg-white relative">
+                  <label className="absolute left-5 top-5 text-[13px] text-[#818181] font-['DM_Sans']">
+                    Description
+                  </label>
+                  <textarea
+                    className="absolute left-5 top-[47px] w-[calc(100%-40px)] h-[calc(100%-67px)] text-[15px] text-[#050B20] font-['DM_Sans'] leading-[26px] resize-none border-none outline-none bg-transparent"
+                    defaultValue="Lorem Ipsum Dolar Sit Amet"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Upload Photo Section (New Design) */}
           <section className="w-full mb-8">
             <div className="max-w-[1540px] mx-auto">
