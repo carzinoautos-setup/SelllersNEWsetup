@@ -21,12 +21,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
       path: "/add-a-listing",
     },
     {
-      name: "Start VIN Decoder",
-      icon: EditIcon,
-      active: false,
-      path: "/start-vindecoder",
-    },
-    {
       name: "Your Listings",
       icon: MailIcon,
       active: true,
