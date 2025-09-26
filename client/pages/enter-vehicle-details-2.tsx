@@ -948,7 +948,7 @@ export default function EnterVehicleDetails2() {
           {/* AI Suggested Description - Step 3A */}
           {showAiDescription && (
             <div className="mb-12">
-              <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12">
+              <div className="w-full max-w-[955px]">
                 {/* Header Section */}
                 <div className="mb-6">
                   <h1 className="text-[20px] font-albert mb-2">
