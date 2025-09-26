@@ -211,6 +211,73 @@ export function UsersProfileCard() {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* New Figma Design Section */}
+      <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 p-8">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+          {/* Left Content */}
+          <div className="flex-1 max-w-[725px]">
+            <div className="flex flex-col gap-4 mb-6">
+              <h2 className="text-[24px] font-bold text-[#24272C] font-['Albert_Sans']">
+                Get Started with Carzino Revised
+              </h2>
+              <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
+                How do I find the VIN number for my car?<br />
+                Look on your insurance cards, registration, or the paperwork from when you purchased your vehicle. The most common place to find a VIN is on your vehicle's dashboard, near where the dashboard meets the edge of the windshield on the driver's side.
+              </p>
+            </div>
+
+            {/* Dropdown */}
+            <div className="relative w-[310px]">
+              <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#E82121] transition-colors duration-150 relative">
+                <div className="h-full flex items-center justify-between">
+                  <div className="flex flex-col justify-center">
+                    <div className="text-[13px] font-bold text-black font-['Albert_Sans'] leading-none">
+                      Select your Account type
+                    </div>
+                    <div className="text-[15px] text-[#050B20] font-['DM_Sans'] leading-none mt-1">
+                      Private Seller
+                    </div>
+                  </div>
+                  <svg
+                    className="w-[10px] h-[10px] text-[#E82121]"
+                    viewBox="0 0 10 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#E82121"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Image Upload */}
+          <div className="flex items-start gap-[30px] w-full lg:w-auto">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
+              alt="Profile"
+              className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0"
+            />
+            <div className="flex flex-col gap-[10px] max-w-[364px]">
+              <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans']">
+                Upload a Image
+              </div>
+              <div className="flex items-center gap-4 w-[352px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
+                <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[18px] py-[16px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[16px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
+                  Choose file
+                </button>
+                <span className="text-[14px] text-[#696665] font-['Albert_Sans'] leading-[140%]">
+                  No files selected
+                </span>
+              </div>
+              <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%]">
+                JPEG 100x100
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 p-8">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-7 md:gap-16">
           <div className="flex-1">
