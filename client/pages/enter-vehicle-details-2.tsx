@@ -483,6 +483,23 @@ export default function EnterVehicleDetails2() {
                     {renderCheckbox('electronicStability', 'Electronic Stability Control', selectedFeatures.electronicStability)}
                   </div>
                 </div>
+
+                {/* Mechanical Options Column (duplicate of Safety) */}
+                <div className="flex flex-col gap-6">
+                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Mechanical</h3>
+                  <div className="space-y-2">
+                    {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
+                    {renderCheckbox('passengerAirbag', 'Airbag - Passenger', selectedFeatures.passengerAirbag)}
+                    {renderCheckbox('antiLockBraking', 'Anti-lock Braking System', selectedFeatures.antiLockBraking)}
+                    {renderCheckbox('backupCamera', 'Backup Camera', selectedFeatures.backupCamera)}
+                    {renderCheckbox('laneDeparture', 'Lane Departure Warning', selectedFeatures.laneDeparture)}
+                    {renderCheckbox('adaptiveCruise', 'Adaptive Cruise Control', selectedFeatures.adaptiveCruise)}
+                    {renderCheckbox('parkingSensors', 'Parking Sensors', selectedFeatures.parkingSensors)}
+                    {renderCheckbox('automaticHighBeams', 'Automatic High Beams', selectedFeatures.automaticHighBeams)}
+                    {renderCheckbox('tirePressure', 'Tire Pressure Monitoring System', selectedFeatures.tirePressure)}
+                    {renderCheckbox('electronicStability', 'Electronic Stability Control', selectedFeatures.electronicStability)}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
