@@ -221,9 +221,9 @@ export function UsersProfileCard() {
                 Get Started with Carzino Revised
               </h2>
               <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
-                <span style={{ fontFamily: 'Albert Sans, Inter, system-ui, sans-serif' }}>
-                  You’ll be asked to choose whether you’re listing as a Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
-                </span>
+                <div className="inline font-['Albert_Sans']">
+                  Select Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
+                </div>
               </p>
             </div>
 
@@ -253,18 +253,18 @@ export function UsersProfileCard() {
           </div>
 
           {/* Right Content - Image Upload */}
-          <div className="w-full md:w-[30%] flex flex-col items-center justify-center gap-6 mx-auto md:mx-0">
+          <div className="w-full md:w-[30%] flex flex-col items-center justify-center gap-2 mx-auto md:mx-0">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
               alt="Profile"
               className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
             />
-            <div className="flex flex-col gap-[10px] w-full md:max-w-[364px] justify-center items-center mx-auto">
+            <div className="flex flex-col gap-1 w-full md:max-w-[364px] justify-center items-center mx-auto">
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
                 Upload a Image
               </div>
-              <div className="flex items-center justify-center w-4/5 md:w-full md:max-w-[320px] h-[54px] mx-auto md:mx-0">
-                <div className="bg-[#E82121] rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] font-medium">
+              <div className="flex items-center justify-center w-full md:max-w-[320px] h-[54px] mx-auto md:mx-0">
+                <div className="bg-black rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] leading-[18px] font-medium">
                   Choose file
                 </div>
               </div>
