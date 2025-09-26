@@ -18,12 +18,24 @@ export default function Production() {
 
             <div className="space-y-4">
               <section className="p-4 border border-[#EDEDED] rounded-lg">
-                <h2 className="text-lg font-medium text-[#24272C]">Drafts & Stored Pages</h2>
+                <h2 className="text-lg font-medium text-[#24272C]">Payment gateway pages</h2>
                 <p className="text-sm text-[#696665] mt-2">
                   Add any unused pages or sections here for safekeeping. They will
                   remain accessible from the design screen for quick edits and
                   reuse.
                 </p>
+
+                <div className="mt-4 flex flex-col gap-3">
+                  <Link to="/checkout" className="text-sm text-[#1f2937] hover:underline">
+                    /checkout
+                  </Link>
+                  <Link to="/payments" className="text-sm text-[#1f2937] hover:underline">
+                    /payments
+                  </Link>
+                  <Link to="/billing" className="text-sm text-[#1f2937] hover:underline">
+                    /billing
+                  </Link>
+                </div>
               </section>
 
               <section className="p-4 border border-[#EDEDED] rounded-lg">
