@@ -213,9 +213,9 @@ export function UsersProfileCard() {
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* New Figma Design Section */}
       <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 p-8">
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
-          <div className="flex-1 max-w-[725px]">
+          <div className="w-full md:w-[70%] max-w-[725px]">
             <div className="flex flex-col gap-4 mb-6">
               <h2 className="text-[24px] font-bold text-[#24272C] font-['Albert_Sans']">
                 Get Started with Carzino Revised
@@ -252,17 +252,17 @@ export function UsersProfileCard() {
           </div>
 
           {/* Right Content - Image Upload */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 w-full">
+          <div className="w-full md:w-[30%] flex flex-col md:flex-row items-center md:items-start gap-6">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
               alt="Profile"
-              className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto lg:mx-0"
+              className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
             />
-            <div className="flex flex-col gap-[10px] w-full max-w-[364px]">
+            <div className="flex flex-col gap-[10px] w-full md:max-w-[364px]">
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center sm:text-left">
                 Upload a Image
               </div>
-              <div className="flex items-center gap-4 w-full max-w-[352px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
+              <div className="flex items-center gap-4 w-full h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
                 <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[18px] py-[16px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[16px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
                   Choose file
                 </button>
