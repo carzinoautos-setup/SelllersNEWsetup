@@ -216,7 +216,7 @@ export function UsersProfileCard() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
           <div className="w-full md:w-[70%] max-w-[725px]">
-            <div className="flex flex-col gap-4 mb-6">
+            <div className="flex flex-col mb-6">
               <h2 className="text-[24px] font-bold text-[#24272C] font-['Albert_Sans']">
                 Get Started with Carzino Revised
               </h2>
@@ -257,7 +257,7 @@ export function UsersProfileCard() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
               alt="Profile"
-              className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
+              className="w-[84px] h-[84px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
             />
             <div className="flex flex-col gap-1 w-full md:max-w-[364px] justify-center items-center mx-auto">
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
