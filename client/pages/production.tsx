@@ -39,7 +39,7 @@ export default function Production() {
               </section>
 
               <section className="p-4 border border-[#EDEDED] rounded-lg">
-                <h2 className="text-lg font-medium text-[#24272C]">Notes</h2>
+                <h2 className="text-lg font-medium text-[#24272C]">Design Elements</h2>
                 <p className="text-sm text-[#696665] mt-2">
                   Use this area to document why a page was archived or any required
                   next steps before publishing.
