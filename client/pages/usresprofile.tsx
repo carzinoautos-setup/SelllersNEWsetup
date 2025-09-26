@@ -266,9 +266,6 @@ export function UsersProfileCard() {
                 <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[14px] py-[8px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[12px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
                   Choose file
                 </button>
-                <span className="text-[12px] text-[#696665] font-['Albert_Sans'] leading-[140%]">
-                  No files selected
-                </span>
               </div>
               <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center">
                 JPEG 100x100
