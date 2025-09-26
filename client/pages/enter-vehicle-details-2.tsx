@@ -1006,16 +1006,18 @@ export default function EnterVehicleDetails2() {
                   </div>
 
                   {/* Update Description Button */}
-                  <div className="mt-5 flex justify-start">
-                    <button
-                      onClick={() => {
-                        setDescription(aiDescription);
-                        setShowAiDescription(false);
-                      }}
-                      className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
-                    >
-                      Update Description
-                    </button>
+                  <div className="mt-5">
+                    <div className="max-w-[955px] flex justify-start">
+                      <button
+                        onClick={() => {
+                          setDescription(aiDescription);
+                          setShowAiDescription(false);
+                        }}
+                        className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                      >
+                        Update Description
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
