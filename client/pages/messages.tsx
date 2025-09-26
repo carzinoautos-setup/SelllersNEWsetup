@@ -146,7 +146,7 @@ export default function MessagesPage() {
               </div>
 
               {/* Messages */}
-              <div className="flex-1 p-[50px] space-y-[30px] overflow-y-auto">
+              <div className="flex-1 p-4 md:p-[50px] space-y-[30px] overflow-y-auto">
                 {/* Outgoing Message 1 */}
                 <div className="flex flex-col items-end gap-[6px] ml-[300px]">
                   <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-full">
