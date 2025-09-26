@@ -393,9 +393,9 @@ export default function EditListing() {
 
             {/* Form */}
             <div className="bg-white rounded-2xl p-[30px]">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Column 1 */}
-                <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-6">
                   {/* Vin# */}
                   <div className="flex flex-col gap-2">
                     <label
@@ -434,7 +434,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -470,7 +470,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -506,7 +506,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -522,7 +522,7 @@ export default function EditListing() {
                 </div>
 
                 {/* Column 2 */}
-                <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-6">
                   {/* Year */}
                   <div className="flex flex-col gap-2">
                     <label
@@ -545,7 +545,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -613,7 +613,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -629,7 +629,7 @@ export default function EditListing() {
                 </div>
 
                 {/* Column 3 */}
-                <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-6">
                   {/* Make */}
                   <div className="flex flex-col gap-2">
                     <label
@@ -652,7 +652,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -688,7 +688,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
@@ -724,7 +724,7 @@ export default function EditListing() {
                           viewBox="0 0 16 16"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="transform rotate-90"
+                          className=""
                         >
                           <path
                             d="M13 5.5L8 10.5L3 5.5"
