@@ -434,8 +434,8 @@ export default function EditListing() {
                     </label>
                     <Select
                       options={modelOptions}
-                      value={""}
-                      onChange={(v) => console.log(v)}
+                      value={model}
+                      onChange={(v) => setModel(v)}
                       placeholder="Select Model"
                       className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
                     />
