@@ -29,6 +29,9 @@ export default function Vindecoder() {
   const [drivetrain, setDrivetrain] = useState("FWD");
   const [exteriorColor, setExteriorColor] = useState("");
   const [interiorColor, setInteriorColor] = useState("");
+  const [vehicleLocationState, setVehicleLocationState] = useState("");
+  const [vehicleLocationCity, setVehicleLocationCity] = useState("");
+  const [vehicleLocationZip, setVehicleLocationZip] = useState("");
 
   // Step 2: Features
   const [selectedFeatures, setSelectedFeatures] = useState({
@@ -124,6 +127,7 @@ export default function Vindecoder() {
   const transmissionOptions = ["Manual", "Automatic", "CVT"];
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
   const exteriorColorOptions = ["White", "Black", "Silver", "Red", "Blue"];
+  const vehicleLocationStateOptions = ["California", "Texas", "Florida", "New York", "Illinois"];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
 
   const toggleFeature = (feature: string) => {
@@ -490,6 +494,54 @@ export default function Vindecoder() {
                     value={interiorColor}
                     onChange={(v) => setInteriorColor(v)}
                     placeholder="Select"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Vehicle Location State
+                  </label>
+                  <Select
+                    options={vehicleLocationStateOptions}
+                    value={vehicleLocationState}
+                    onChange={(v) => setVehicleLocationState(v)}
+                    placeholder="Enter State"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Vehicle Location City
+                  </label>
+                  <Select
+                    options={[]}
+                    value={vehicleLocationCity}
+                    onChange={(v) => setVehicleLocationCity(v)}
+                    placeholder="Enter City"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Vehicle Location Zip
+                  </label>
+                  <Select
+                    options={[]}
+                    value={vehicleLocationZip}
+                    onChange={(v) => setVehicleLocationZip(v)}
+                    placeholder="Enter Zip"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
