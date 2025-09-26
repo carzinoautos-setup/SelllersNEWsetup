@@ -895,19 +895,47 @@ export default function EnterVehicleDetails2() {
               {/* Description */}
               <div className="w-full max-w-[955px]">
                 <div className="relative">
-                  <div className="w-full min-h-[289px] p-5 border border-[#B2B2B2] rounded-xl bg-white">
+                  <div
+                    style={{
+                      backgroundColor: "#ffffff",
+                      border: "0.8px solid rgba(178,178,178,1)",
+                      borderRadius: 12,
+                      minHeight: 289,
+                      width: "100%",
+                      position: "relative",
+                      padding: 20,
+                      fontWeight: 400,
+                    }}
+                  >
                     <label
-                      className="block text-[13px] text-[#818181]"
-                      style={{ fontFamily: "DM Sans" }}
+                      style={{
+                        color: "#818181",
+                        display: "block",
+                        fontFamily: "DM Sans",
+                        fontSize: 13,
+                        lineHeight: "19.5px",
+                      }}
                     >
                       Description
                     </label>
+
                     <textarea
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
-                      className="w-full text-[15px] text-[#050B20] leading-[26px] outline-none resize-none border-none bg-transparent"
-                      style={{ fontFamily: "DM Sans" }}
                       rows={8}
+                      style={{
+                        display: "inline-block",
+                        backgroundColor: "transparent",
+                        color: "#050B20",
+                        outline: "rgba(0,0,0,0) solid 1.6px",
+                        outlineOffset: 2,
+                        resize: "none",
+                        width: "100%",
+                        fontFamily: "DM Sans",
+                        fontSize: 15,
+                        lineHeight: "26px",
+                        border: "none",
+                      }}
                     />
                   </div>
                 </div>
