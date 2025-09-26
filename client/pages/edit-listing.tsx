@@ -154,6 +154,17 @@ export default function EditListing() {
   const conditionOptions = ["New", "Used", "Certified Pre-Owned"];
   const yearOptions = ["2025","2024","2023","2022","2021"];
 
+  // Step 2A options
+  const bodyTypeOptions = ["Sedan", "SUV", "Hatchback", "Coupe", "Convertible", "Truck", "Wagon"];
+  const doorsOptions = ["2", "3", "4", "5"];
+  const transmissionSpeedOptions = ["3-Speed", "4-Speed", "5-Speed", "6-Speed", "7-Speed", "8-Speed", "9-Speed", "10-Speed"];
+  const cylindersOptions = ["3", "4", "5", "6", "8", "10", "12"];
+  const engineSizeOptions = ["1.0L", "1.4L", "1.6L", "1.8L", "2.0L", "2.4L", "2.5L", "3.0L", "3.5L", "4.0L", "5.0L", "6.0L", "6.7L"];
+  const fuelTypeOptions = ["Gasoline", "Diesel", "Hybrid", "Electric", "Flex Fuel"];
+  const mpgOptions = ["15", "20", "25", "30", "35", "40", "45", "50+"];
+  const stateOptions = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"];
+  const listingStatusOptions = ["Active", "Sold", "Pending", "Draft"];
+
   const toggleFeature = (feature: string) => {
     setSelectedFeatures((prev) => ({
       ...prev,
