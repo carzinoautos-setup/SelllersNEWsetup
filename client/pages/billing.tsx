@@ -73,7 +73,7 @@ export default function BillingPage() {
           <div className="flex flex-col xl:flex-row gap-8">
             <div className="flex-1">
               <h2 className="text-[28px] font-albert font-medium text-[#050B20] mb-6">
-                Billing
+                stripe design
               </h2>
 
               {/* Stripe Checkout Component */}
