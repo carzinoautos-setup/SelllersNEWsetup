@@ -227,7 +227,7 @@ export function UsersProfileCard() {
             </div>
 
             {/* Dropdown */}
-            <div className="relative w-[310px]">
+            <div className="relative w-full md:w-[310px]">
               <div className="w-full h-[60px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#E82121] transition-colors duration-150 relative">
                 <div className="h-full flex items-center justify-between">
                   <div className="flex flex-col justify-center">
@@ -252,17 +252,17 @@ export function UsersProfileCard() {
           </div>
 
           {/* Right Content - Image Upload */}
-          <div className="flex items-start gap-[30px] w-full lg:w-auto">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 w-full">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
               alt="Profile"
-              className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0"
+              className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto lg:mx-0"
             />
-            <div className="flex flex-col gap-[10px] max-w-[364px]">
+            <div className="flex flex-col gap-[10px] w-full max-w-[364px]">
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans']">
                 Upload a Image
               </div>
-              <div className="flex items-center gap-4 w-[352px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
+              <div className="flex items-center gap-4 w-full max-w-[352px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
                 <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[18px] py-[16px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[16px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
                   Choose file
                 </button>
