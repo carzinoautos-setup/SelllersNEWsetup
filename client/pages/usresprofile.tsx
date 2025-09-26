@@ -221,9 +221,9 @@ export function UsersProfileCard() {
                 Get Started with Carzino Revised
               </h2>
               <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
-                <div className="inline font-['Albert_Sans']">
+                <span className="inline font-['Albert_Sans']">
                   Select Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
-                </div>
+                </span>
               </p>
             </div>
 
