@@ -47,7 +47,7 @@ export function MobileBottomNav() {
   ];
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#FCFCFC] border-t border-gray-200" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
+    <div className="lg:hidden fixed left-0 right-0 z-50 bg-[#FCFCFC] border-t border-gray-200" style={{ bottom: 'env(safe-area-inset-bottom, 0px)', paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
       <div className="flex justify-center items-center px-2.5 py-3" style={{ gap: '47px' }}>
         {navItems.map((item) => (
           <a
