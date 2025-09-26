@@ -963,62 +963,58 @@ export default function EnterVehicleDetails2() {
                 </div>
 
                 {/* AI Description Content */}
-                <div className="w-full max-w-[955px]">
-                  <div className="relative">
-                    <div
+                <div className="relative">
+                  <div
+                    style={{
+                      backgroundColor: "#ffffff",
+                      border: "1px solid rgba(178,178,178,1)",
+                      borderRadius: 12,
+                      minHeight: 289,
+                      width: "100%",
+                      position: "relative",
+                      padding: 20,
+                      fontWeight: 400,
+                    }}
+                  >
+                    <label
                       style={{
-                        backgroundColor: "#ffffff",
-                        border: "1px solid rgba(178,178,178,1)",
-                        borderRadius: 12,
-                        minHeight: 289,
-                        width: "100%",
-                        position: "relative",
-                        padding: 20,
-                        fontWeight: 400,
+                        color: "#818181",
+                        display: "block",
+                        fontFamily: "DM Sans",
+                        fontSize: 13,
+                        lineHeight: "19.5px",
                       }}
                     >
-                      <label
-                        style={{
-                          color: "#818181",
-                          display: "block",
-                          fontFamily: "DM Sans",
-                          fontSize: 13,
-                          lineHeight: "19.5px",
-                        }}
-                      >
-                        Description
-                      </label>
+                      Description
+                    </label>
 
-                      <div
-                        style={{
-                          color: "#050B20",
-                          fontFamily: "DM Sans",
-                          fontSize: 15,
-                          fontWeight: 400,
-                          lineHeight: "26px",
-                          marginTop: 20,
-                          minHeight: 200,
-                        }}
-                      >
-                        {aiDescription}
-                      </div>
+                    <div
+                      style={{
+                        color: "#050B20",
+                        fontFamily: "DM Sans",
+                        fontSize: 15,
+                        fontWeight: 400,
+                        lineHeight: "26px",
+                        marginTop: 20,
+                        minHeight: 200,
+                      }}
+                    >
+                      {aiDescription}
                     </div>
                   </div>
+                </div>
 
-                  {/* Update Description Button */}
-                  <div className="mt-5">
-                    <div className="max-w-[955px] flex justify-start">
-                      <button
-                        onClick={() => {
-                          setDescription(aiDescription);
-                          setShowAiDescription(false);
-                        }}
-                        className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
-                      >
-                        Update Description
-                      </button>
-                    </div>
-                  </div>
+                {/* Update Description Button */}
+                <div className="mt-5 flex justify-start">
+                  <button
+                    onClick={() => {
+                      setDescription(aiDescription);
+                      setShowAiDescription(false);
+                    }}
+                    className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                  >
+                    Update Description
+                  </button>
                 </div>
               </div>
             </div>
