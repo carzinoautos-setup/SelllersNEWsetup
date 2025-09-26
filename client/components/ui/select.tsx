@@ -41,15 +41,17 @@ export function Select({
 
   return (
     <div ref={ref} className={`relative w-full ${className}`}>
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((s) => !s)}
         onKeyDown={(e) => {
           if (e.key === "Escape") setOpen(false);
+          if (e.key === "Enter" || e.key === " ") setOpen((s) => !s);
         }}
-        className={`w-full h-full text-left flex items-center justify-between bg-transparent rounded-xl focus:outline-none text-[15px] font-normal leading-[22.5px]`}
+        className={`w-full h-full text-left flex items-center justify-between bg-transparent rounded-xl focus:outline-none text-[15px] font-normal leading-[22.5px] cursor-pointer`}
       >
         {/* Ensure we show placeholder when value is empty */}
         {(() => {
@@ -109,7 +111,7 @@ export function Select({
             strokeLinejoin="round"
           />
         </svg>
-      </button>
+      </div>
 
       {open && (
         <ul
