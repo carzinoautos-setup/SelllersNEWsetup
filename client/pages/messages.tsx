@@ -132,7 +132,7 @@ export default function MessagesPage() {
             )}
 
             {/* Main Chat Area */}
-            <div className="flex-1 flex flex-col">
+            <div className="flex-1 flex flex-col min-w-0">
               {/* Chat Header */}
               <div className="flex items-center gap-5 h-[114px] px-4 md:px-[50px] py-[10px] border-b border-[#EDEDED]">
                 <img src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120" alt="Arlene McCoy" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
