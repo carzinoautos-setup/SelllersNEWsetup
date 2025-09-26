@@ -1163,6 +1163,40 @@ export default function AddAListingPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* Additional Mechanical & Safety blocks */}
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-2xl p-6 border border-[#EDEDED]">
+                    <h4 className="text-[18px] font-medium text-[#050B20] mb-4" style={{ fontFamily: 'Albert Sans' }}>Mechanical</h4>
+                    <div className="space-y-2">
+                      {[
+                        "Engine: 6.7L",
+                        "Transmission: Automatic",
+                        "Drive Train: All-Wheel Drive",
+                        "Cylinders: 8",
+                        "Exhaust: Dual"
+                      ].map((opt, i) => (
+                        <div key={`mech-${i}`} className="text-sm text-[#696665]">{opt}</div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-2xl p-6 border border-[#EDEDED]">
+                    <h4 className="text-[18px] font-medium text-[#050B20] mb-4" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h4>
+                    <div className="space-y-2">
+                      {[
+                        "Airbags",
+                        "Anti-lock Braking System",
+                        "Backup Camera",
+                        "Lane Departure Warning",
+                        "Tire Pressure Monitoring System"
+                      ].map((opt, i) => (
+                        <div key={`safety-${i}`} className="text-sm text-[#696665]">{opt}</div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
