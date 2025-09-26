@@ -233,7 +233,7 @@ export default function StartVindecoder() {
           {/* Text Content Section */}
           <div className="w-full max-w-[1076px] mx-auto px-0 py-12">
             <h2 className="text-2xl font-bold text-black font-albert mb-4">
-              Sell your vehicle online easily with Carzino.
+              <p>Sell your vehicle online easily with Carzino.test</p>
             </h2>
 
             <div className="text-sm text-black font-albert leading-relaxed max-w-[1076px]">
