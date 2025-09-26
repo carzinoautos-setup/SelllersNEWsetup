@@ -922,24 +922,6 @@ export default function EditListing() {
 
           {/* Step 1: Basic Details */}
           <div className="mb-12">
-            {/* Header */}
-            <div className="mb-6">
-              <h1
-                className="text-[20px] font-semibold"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                <span className="text-[#090909]">Basic Details- </span>
-                <span className="text-[#E82121]">Step 1</span>
-              </h1>
-              <p
-                className="text-[14px] text-black leading-[140%] max-w-[955px]"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                We've fetched details for your vehicle. Check that the
-                selections are correct and add anything missing.
-              </p>
-              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
-            </div>
 
             {/* Form */}
             <div className="bg-white">
