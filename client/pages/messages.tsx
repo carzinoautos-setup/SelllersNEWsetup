@@ -16,6 +16,7 @@ export default function MessagesPage() {
           <div className="mb-6">
             <h1 className="text-2xl font-semibold text-[#24272C]">Messages</h1>
             <p className="text-sm text-[#6B6B6B] mt-2">View and respond to messages from buyers.</p>
+            <button onClick={() => setShowSidebar(true)} className="md:hidden mt-3 inline-flex items-center gap-2 px-3 py-2 rounded-md bg-[#F3F3F3] text-sm">Open list</button>
           </div>
 
           {/* Message Portal Interface */}
