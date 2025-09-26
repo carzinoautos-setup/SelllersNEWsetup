@@ -494,6 +494,656 @@ export default function EditListing() {
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
+              </div>
+            </div>
 
-                {/* ... rest of file follows same as original ... */}
-  (truncated)
+            {/* Step 2: Features */}
+            <div className="mb-12">
+              {/* Header */}
+              <div className="mb-6">
+                <h1
+                  className="text-[20px] font-semibold"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  <span className="text-[#090909]">Basic Details- </span>
+                  <span className="text-[#E82121]">Step 2</span>
+                </h1>
+                <p
+                  className="text-[14px] text-black leading-[140%] max-w-[955px]"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  Carzino makes it simple—we've pulled in your unit's features
+                  automatically. All you need to do is confirm or adjust what's
+                  here.
+                </p>
+                <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
+              </div>
+
+              <div className="bg-white rounded-2xl pl-[2px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 items-start">
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3
+                        className="text-[19px] font-semibold text-[#050B20] underline mb-4"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Features
+                      </h3>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "navigationSystem",
+                          "Navigation System",
+                          selectedFeatures.navigationSystem,
+                        )}
+                        {renderCheckbox(
+                          "remoteStart",
+                          "Remote Start",
+                          selectedFeatures.remoteStart,
+                        )}
+                        {renderCheckbox(
+                          "keylessEntry",
+                          "Keyless Entry",
+                          selectedFeatures.keylessEntry,
+                        )}
+                        {renderCheckbox(
+                          "handsFree",
+                          "Hands-Free",
+                          selectedFeatures.handsFree,
+                        )}
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "powerFoldingSideMirrors",
+                          "Power Folding Side Mirrors",
+                          selectedFeatures.powerFoldingSideMirrors,
+                        )}
+                        {renderCheckbox(
+                          "rainSensingWipers",
+                          "Rain-Sensing Wipers",
+                          selectedFeatures.rainSensingWipers,
+                        )}
+                        {renderCheckbox(
+                          "homelink",
+                          "Homelink",
+                          selectedFeatures.homelink,
+                        )}
+                        {renderCheckbox(
+                          "splitFoldingRearSeats",
+                          "Split-Folding Rear Seats",
+                          selectedFeatures.splitFoldingRearSeats,
+                        )}
+                        {renderCheckbox(
+                          "adjustableSteeringColumn",
+                          "Adjustable Steering Column",
+                          selectedFeatures.adjustableSteeringColumn,
+                        )}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3
+                        className="text-[19px] font-semibold text-[#050B20] underline mb-4"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Exterior
+                      </h3>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "alloyWheels",
+                          "Alloy Wheels",
+                          selectedFeatures.alloyWheels,
+                        )}
+                        {renderCheckbox(
+                          "ledHeadlights",
+                          "LED Headlights",
+                          selectedFeatures.ledHeadlights,
+                        )}
+                        {renderCheckbox(
+                          "fogLights",
+                          "Fog Lights",
+                          selectedFeatures.fogLights,
+                        )}
+                        {renderCheckbox(
+                          "roofRack",
+                          "Roof Rack",
+                          selectedFeatures.roofRack,
+                        )}
+                        {renderCheckbox(
+                          "tintedWindows",
+                          "Tinted Windows",
+                          selectedFeatures.tintedWindows,
+                        )}
+                        {renderCheckbox(
+                          "powerTailgate",
+                          "Power Tailgate",
+                          selectedFeatures.powerTailgate,
+                        )}
+                        {renderCheckbox(
+                          "towHitch",
+                          "Tow Hitch / Towing Package",
+                          selectedFeatures.towHitch,
+                        )}
+                        {renderCheckbox(
+                          "runningBoards",
+                          "Running Boards",
+                          selectedFeatures.runningBoards,
+                        )}
+                        {renderCheckbox(
+                          "bodyKit",
+                          "Body Kit/Sport Package",
+                          selectedFeatures.bodyKit,
+                        )}
+                        {renderCheckbox(
+                          "rearSpoiler",
+                          "Rear Spoiler",
+                          selectedFeatures.rearSpoiler,
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3
+                        className="text-[19px] font-semibold text-[#050B20] underline mb-4"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Interior
+                      </h3>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "leatherSeats",
+                          "Leather Seats",
+                          selectedFeatures.leatherSeats,
+                        )}
+                        {renderCheckbox(
+                          "heatedSeats",
+                          "Heated Seats",
+                          selectedFeatures.heatedSeats,
+                        )}
+                        {renderCheckbox(
+                          "sunroof",
+                          "Sunroof /Panoramic Roof",
+                          selectedFeatures.sunroof,
+                        )}
+                        {renderCheckbox(
+                          "heatedSteeringWheel",
+                          "Heated Steering Wheel",
+                          selectedFeatures.heatedSteeringWheel,
+                        )}
+                        {renderCheckbox(
+                          "touchscreenDisplay",
+                          "Touchscreen Display",
+                          selectedFeatures.touchscreenDisplay,
+                        )}
+                        {renderCheckbox(
+                          "ventilatedSeats",
+                          "Ventilated / Cooled Seats",
+                          selectedFeatures.ventilatedSeats,
+                        )}
+                        {renderCheckbox(
+                          "memoryDriverSeat",
+                          "Memory Driver Seat Settings",
+                          selectedFeatures.memoryDriverSeat,
+                        )}
+                        {renderCheckbox(
+                          "ambientLighting",
+                          "Ambient Interior Lighting",
+                          selectedFeatures.ambientLighting,
+                        )}
+                        {renderCheckbox(
+                          "rubberFlooring",
+                          "Rubber Flooring",
+                          selectedFeatures.rubberFlooring,
+                        )}
+                        {renderCheckbox(
+                          "woodTrim",
+                          "Wood or Aluminum Trim",
+                          selectedFeatures.woodTrim,
+                        )}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3
+                        className="text-[19px] font-semibold text-[#050B20] underline mb-4"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Technology
+                      </h3>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "appleCarPlay",
+                          "Apple CarPlay/Android Auto",
+                          selectedFeatures.appleCarPlay,
+                        )}
+                        {renderCheckbox(
+                          "bluetooth",
+                          "Bluetooth",
+                          selectedFeatures.bluetooth,
+                        )}
+                        {renderCheckbox(
+                          "touchscreenDisplayTech",
+                          "Touchscreen Display",
+                          selectedFeatures.touchscreenDisplayTech,
+                        )}
+                        {renderCheckbox(
+                          "wirelessConnectivity",
+                          "Wireless Phone Connectivity",
+                          selectedFeatures.wirelessConnectivity,
+                        )}
+                        {renderCheckbox(
+                          "rearSeatScreens",
+                          "Rear Seat Entertainment Screens",
+                          selectedFeatures.rearSeatScreens,
+                        )}
+                        {renderCheckbox(
+                          "dvdPlayer",
+                          "DVD Player",
+                          selectedFeatures.dvdPlayer,
+                        )}
+                        {renderCheckbox(
+                          "premiumSound",
+                          "Premium Sound System",
+                          selectedFeatures.premiumSound,
+                        )}
+                        {renderCheckbox(
+                          "steeringWheelAudio",
+                          "Steering Wheel Audio Controls",
+                          selectedFeatures.steeringWheelAudio,
+                        )}
+                        {renderCheckbox(
+                          "wifiHotspot",
+                          "Wi-Fi Hotspot Capability",
+                          selectedFeatures.wifiHotspot,
+                        )}
+                        {renderCheckbox(
+                          "voiceCommand",
+                          "Voice Command System",
+                          selectedFeatures.voiceCommand,
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3
+                        className="text-[19px] font-semibold text-[#050B20] underline mb-4"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Mechanical
+                      </h3>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "airbags",
+                          "Airbags",
+                          selectedFeatures.airbags,
+                        )}
+                        {renderCheckbox(
+                          "passengerAirbag",
+                          "Airbag - Passenger",
+                          selectedFeatures.passengerAirbag,
+                        )}
+                        {renderCheckbox(
+                          "antiLockBraking",
+                          "Anti-lock Braking System",
+                          selectedFeatures.antiLockBraking,
+                        )}
+                        {renderCheckbox(
+                          "backupCamera",
+                          "Backup Camera",
+                          selectedFeatures.backupCamera,
+                        )}
+                        {renderCheckbox(
+                          "laneDeparture",
+                          "Lane Departure Warning",
+                          selectedFeatures.laneDeparture,
+                        )}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3
+                        className="text-[19px] font-semibold text-[#050B20] underline mb-4"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Safety Options
+                      </h3>
+                      <div className="space-y-2">
+                        {renderCheckbox(
+                          "adaptiveCruise",
+                          "Adaptive Cruise Control",
+                          selectedFeatures.adaptiveCruise,
+                        )}
+                        {renderCheckbox(
+                          "parkingSensors",
+                          "Parking Sensors",
+                          selectedFeatures.parkingSensors,
+                        )}
+                        {renderCheckbox(
+                          "automaticHighBeams",
+                          "Automatic High Beams",
+                          selectedFeatures.automaticHighBeams,
+                        )}
+                        {renderCheckbox(
+                          "tirePressure",
+                          "Tire Pressure Monitoring System",
+                          selectedFeatures.tirePressure,
+                        )}
+                        {renderCheckbox(
+                          "electronicStability",
+                          "Electronic Stability Control",
+                          selectedFeatures.electronicStability,
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <div className="mb-6">
+                <h1
+                  className="text-[20px] font-semibold"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  <span className="text-[#090909]">Price and Description- </span>
+                  <span className="text-[#E82121]">Step 3</span>
+                </h1>
+                <p
+                  className="text-[14px] text-black leading-[140%] max-w-[955px]"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  Enter your sale price, then write a description that highlights
+                  your car's features. Buyers want details, so be specific
+                </p>
+                <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="w-full max-w-full md:max-w-[318px]">
+                  <label
+                    className="block text-[14px] font-medium text-[#24272C] mb-2"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Sale Price
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      value={salePrice}
+                      onChange={(e) => setSalePrice(e.target.value)}
+                      placeholder="$"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    />
+                  </div>
+                </div>
+
+                <div className="w-full max-w-[955px]">
+                  <div className="relative">
+                    <div
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "0.8px solid rgba(178,178,178,1)",
+                        borderRadius: 12,
+                        minHeight: 289,
+                        width: "100%",
+                        position: "relative",
+                        padding: 20,
+                        fontWeight: 400,
+                      }}
+                    >
+                      <label
+                        style={{
+                          color: "#818181",
+                          display: "block",
+                          fontFamily: "DM Sans",
+                          fontSize: 13,
+                          lineHeight: "19.5px",
+                        }}
+                      >
+                        Description
+                      </label>
+
+                      <textarea
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                        rows={8}
+                        style={{
+                          display: "inline-block",
+                          backgroundColor: "transparent",
+                          color: "#050B20",
+                          outline: "rgba(0,0,0,0) solid 1.6px",
+                          outlineOffset: 2,
+                          resize: "none",
+                          width: "100%",
+                          fontFamily: "DM Sans",
+                          fontSize: 15,
+                          lineHeight: "26px",
+                          border: "none",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* AI Suggested Description - Step 3A */}
+            {showAiDescription && (
+              <div className="mb-12">
+                <div className="w-full max-w-[955px]">
+                  <div className="mb-6">
+                    <h1 className="text-[20px] font-albert mb-2">
+                      <span className="text-[#090909] font-normal">AI suggested Description</span>
+                      <span className="text-[#090909] font-bold">- </span>
+                      <span className="text-[#E82121] font-bold">Step 3A</span>
+                    </h1>
+                    <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
+                      Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
+                    </p>
+                    <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
+                  </div>
+
+                  <div className="relative">
+                    <div
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "1px solid rgba(178,178,178,1)",
+                        borderRadius: 12,
+                        minHeight: 289,
+                        width: "100%",
+                        position: "relative",
+                        padding: 20,
+                        fontWeight: 400,
+                      }}
+                    >
+                      <label
+                        style={{
+                          color: "#818181",
+                          display: "block",
+                          fontFamily: "DM Sans",
+                          fontSize: 13,
+                          lineHeight: "19.5px",
+                        }}
+                      >
+                        Description
+                      </label>
+
+                      <div
+                        style={{
+                          color: "#050B20",
+                          fontFamily: "DM Sans",
+                          fontSize: 15,
+                          fontWeight: 400,
+                          lineHeight: "26px",
+                          marginTop: 20,
+                          minHeight: 200,
+                        }}
+                      >
+                        {aiDescription}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 flex justify-start">
+                    <button
+                      onClick={() => {
+                        setDescription(aiDescription);
+                        setShowAiDescription(false);
+                      }}
+                      className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                    >
+                      Update Description
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="mb-12">
+              <div className="mb-6">
+                <h1
+                  className="text-[20px] font-semibold"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  <span className="text-[#090909]">Photos- </span>
+                  <span className="text-[#E82121]">Step 4</span>
+                </h1>
+                <p
+                  className="text-[14px] text-black leading-[140%] max-w-[955px]"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  Shoppers want to see it all. The more photos you upload—inside,
+                  outside, and every detail—the more confident buyers feel and the
+                  faster your car sells.
+                </p>
+                <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <div className="w-full max-w-[952px] rounded-2xl bg-white py-6 flex flex-col items-center justify-center relative">
+                    <div className="flex flex-col items-center gap-4 w-full max-w-[220px]">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          document.getElementById("upload-input-evd2")?.click()
+                        }
+                        className="flex items-center justify-center gap-2.5 w-full h-[50px] px-4 bg-[#E82121] rounded-[14px] text-white font-['Albert_Sans'] font-medium text-base leading-[140%] hover:bg-[#d41d1d] transition-colors"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.375 13.125L6.67417 8.82583C6.84828 8.65172 7.05498 8.51361 7.28246 8.41938C7.50995 8.32515 7.75377 8.27665 8 8.27665C8.24623 8.27665 8.49005 8.32515 8.71754 8.41938C8.94502 8.51361 9.15172 8.65172 9.32583 8.82583L13.625 13.125M12.375 11.875L13.5492 10.7008C13.7233 10.5267 13.93 10.3886 14.1575 10.2944C14.385 10.2001 14.6288 10.1516 14.875 10.1516C15.1212 10.1516 15.365 10.2001 15.5925 10.2944C15.82 10.3886 16.0267 10.5267 16.2008 10.7008L18.625 13.125M3.625 16.25H17.375C17.7065 16.25 18.0245 16.1183 18.2589 15.8839C18.4933 15.6495 18.625 15.3315 18.625 15V5C18.625 4.66848 18.4933 4.35054 18.2589 4.11612C18.0245 3.8817 17.7065 3.75 17.375 3.75H3.625C3.29348 3.75 2.97554 3.8817 2.74112 4.11612C2.5067 4.35054 2.375 4.66848 2.375 5V15C2.375 15.3315 2.5067 15.6495 2.74112 15.8839C2.97554 16.1183 3.29348 16.25 3.625 16.25ZM12.375 6.875H12.3817V6.88167H12.375V6.875ZM12.6875 6.875C12.6875 6.95788 12.6546 7.03737 12.596 7.09597C12.5374 7.15458 12.4579 7.1875 12.375 7.1875C12.2921 7.1875 12.2126 7.15458 12.154 7.09597C12.0954 7.03737 12.0625 6.95788 12.0625 6.875C12.0625 6.79212 12.0954 6.71263 12.154 6.65403C12.2126 6.59542 12.2921 6.5625 12.375 6.5625C12.4579 6.5625 12.5374 12.596 6.65403C12.6546 6.71263 12.6875 6.79212 12.6875 6.875Z"
+                            stroke="white"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        Select photos
+                      </button>
+
+                      <div className="text-center font-['Albert_Sans'] text-sm leading-[140%]">
+                        <span className="text-[#24272C]">or drag photos here</span>
+                        <br />
+                        <span className="text-[#696665]">(Up to 15 photos)</span>
+                      </div>
+                    </div>
+
+                    <input
+                      id="upload-input-evd2"
+                      type="file"
+                      multiple
+                      accept="image/*"
+                      className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                      onChange={handleFileUpload}
+                    />
+                  </div>
+
+                  <DndContext
+                    sensors={sensors}
+                    collisionDetection={closestCenter}
+                    onDragEnd={(event: DragEndEvent) => {
+                      const { active, over } = event;
+                      if (!over || active.id === over.id) return;
+                      const oldIndex = photos.findIndex(
+                        (p) => p.id === String(active.id),
+                      );
+                      const newIndex = photos.findIndex(
+                        (p) => p.id === String(over.id),
+                      );
+                      if (oldIndex === -1 || newIndex === -1) return;
+                      setPhotos((prev) => arrayMove(prev, oldIndex, newIndex));
+                    }}
+                  >
+                    <SortableContext
+                      items={photos.map((p) => p.id)}
+                      strategy={rectSortingStrategy}
+                    >
+                      <div className="flex flex-wrap gap-4">
+                        {photos.map((photo, index) => (
+                          <SortableThumbnail
+                            key={photo.id}
+                            photo={photo}
+                            index={index}
+                            featurePhotoId={featurePhotoId}
+                            setFeaturePhotoId={setFeaturePhotoId}
+                            deletePhoto={deletePhoto}
+                          />
+                        ))}
+                      </div>
+                    </SortableContext>
+                  </DndContext>
+                </div>
+
+                <div className="w-full bg-transparent py-6">
+                  <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-0 lg:px-0">
+                    <div className="flex justify-center sm:justify-start">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const payload = {
+                            mileage,
+                            engine,
+                            vehicleTrim,
+                            transmission,
+                            drivetrain,
+                            exteriorColor,
+                            interiorColor,
+                            salePrice,
+                            description,
+                            photos,
+                            selectedFeatures,
+                          };
+                          console.log("Submitting listing:", payload);
+                          alert("Listing submitted");
+                        }}
+                        className="inline-flex items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
+                        style={{ fontFamily: "Albert Sans" }}
+                      >
+                        Submit your listing
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </DashboardLayout>
+  );
+}
