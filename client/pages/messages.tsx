@@ -12,7 +12,7 @@ export default function MessagesPage() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 py-8 overflow-x-hidden">
           <div className="mb-6">
             <h1 className="text-2xl font-semibold text-[#24272C]">Messages</h1>
             <p className="text-sm text-[#6B6B6B] mt-2">View and respond to messages from buyers.</p>
