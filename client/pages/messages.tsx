@@ -7,6 +7,8 @@ export default function MessagesPage() {
     { id: 2, from: "Jane Smith", subject: "Question about mileage", preview: "Can you confirm the mileage on the Toyota?" },
   ];
 
+  const [showSidebar, setShowSidebar] = useState(false);
+
   return (
     <DashboardLayout>
       <div className="flex-1">
