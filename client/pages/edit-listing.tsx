@@ -125,6 +125,12 @@ export default function EditListing() {
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
   const exteriorColorOptions = ["White", "Black", "Silver", "Red", "Blue"];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
+  const modelOptions = ["Model A", "Model B", "Model C"];
+  const certifiedOptions = ["Yes", "No"];
+  const titleStatusOptions = ["Clean", "Salvage", "Rebuilt"];
+  const makeOptions = ["Toyota", "Honda", "Ford", "BMW"];
+  const conditionOptions = ["New", "Used", "Certified Pre-Owned"];
+  const yearOptions = ["2025","2024","2023","2022","2021"];
 
   const toggleFeature = (feature: string) => {
     setSelectedFeatures((prev) => ({
