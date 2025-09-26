@@ -148,7 +148,7 @@ export default function MessagesPage() {
               {/* Messages */}
               <div className="flex-1 p-4 md:p-[50px] space-y-[30px] overflow-y-auto">
                 {/* Outgoing Message 1 */}
-                <div className="flex flex-col items-end gap-[6px] md:ml-[300px] ml-0">
+                <div className="flex flex-col items-end gap-[6px] lg:ml-[300px] ml-0">
                   <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-full">
                     <p className="text-sm text-[#24272C] font-albert leading-relaxed">
                       Dear Mr Williamson,<br/>
@@ -177,7 +177,7 @@ export default function MessagesPage() {
                 </div>
 
                 {/* Outgoing Message 2 */}
-                <div className="flex flex-col items-end gap-[6px] md:ml-[300px] ml-0">
+                <div className="flex flex-col items-end gap-[6px] lg:ml-[300px] ml-0">
                   <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-full">
                     <p className="text-sm text-[#24272C] font-albert leading-relaxed">
                       Dear Mr Williamson,<br/>
