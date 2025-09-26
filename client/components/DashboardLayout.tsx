@@ -3,6 +3,7 @@ import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardHeader } from "./DashboardHeader";
 import { EditProfileForm } from "./EditProfileForm";
 import { Footer } from "./Footer";
+import { MobileBottomNav } from "./MobileBottomNav";
 
 interface DashboardLayoutProps {
   children?: React.ReactNode;
