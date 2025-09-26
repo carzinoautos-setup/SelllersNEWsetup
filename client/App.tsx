@@ -10,7 +10,6 @@ import UsresProfile from "./pages/usresprofile";
 import Dashboard from "./pages/dashboard";
 import NotFound from "./pages/NotFound";
 import Reset from "./pages/reset";
-import AddAListing from "./pages/add-a-listing";
 import YourListings from "./pages/yourlistings";
 import BuyCredits from "./pages/buy-credits";
 import Checkout from "./pages/checkout";
@@ -34,7 +33,6 @@ const App = () => (
           <Route path="/profile" element={<UsresProfile />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/reset" element={<Reset />} />
-          <Route path="/add-a-listing" element={<AddAListing />} />
           <Route path="/yourlistings" element={<YourListings />} />
           <Route path="/buy-credits" element={<BuyCredits />} />
           <Route path="/checkout" element={<Checkout />} />
