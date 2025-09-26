@@ -22,7 +22,7 @@ export default function MessagesPage() {
           {/* Message Portal Interface */}
           <div className="flex bg-white rounded-2xl border border-[#EDEDED] overflow-hidden overflow-x-hidden min-h-[500px] md:h-[700px]">
             {/* Left Sidebar - User List */}
-            <div className={`md:w-[444px] w-[85%] md:flex md:flex-col flex flex-col border-r border-[#EDEDED] bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
+            <div className={`md:w-[444px] w-[85%] md:flex md:flex-col flex flex-col md:border-r md:border-[#EDEDED] border-none bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
               {/* Search */}
               <div className="p-4 md:p-[30px] pb-[10px]">
                 <div className="flex items-center gap-3 w-full h-[54px] px-4 md:px-[18px] border border-[#EDEDED] rounded-xl bg-white">
