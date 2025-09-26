@@ -1363,7 +1363,7 @@ export default function EditListing() {
                     <h1 className="text-[20px] font-albert mb-2">
                       <span className="text-[#090909] font-normal">AI suggested Description</span>
                       <span className="text-[#090909] font-bold">- </span>
-                      <span className="text-[#E82121] font-bold">Step 3A</span>
+                      <span className="text-[#E82121] font-bold">Step 5</span>
                     </h1>
                     <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
                       Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
