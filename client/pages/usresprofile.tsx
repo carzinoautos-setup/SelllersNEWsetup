@@ -1019,6 +1019,106 @@ export function UsersProfileCard() {
           </div>
         </div>
       </section>
+
+      {/* Vehicle Details - Step 1 (template) */}
+      <div className="mb-12 relative">
+        <div className="mb-6">
+          <h1 className="text-[20px] font-semibold font-['Albert_Sans']">
+            <span className="text-[#090909] font-semibold">Vehicle Details- </span>
+            <span className="text-[#E82121] font-semibold">Step 1</span>
+          </h1>
+          <div className="text-[14px] text-[#000] max-w-[955px] font-['Albert_Sans']">Enter or edit your vehicle details</div>
+          <div className="w-full my-6" style={{ height: 0.5, backgroundColor: '#B9B9B9' }} />
+        </div>
+
+        <div className="bg-white rounded-2xl pb-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+            {/* Column 1 */}
+            <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Vin#</label>
+                <input placeholder="Enter Vin#" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Model</label>
+                <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
+                  <option value="">Select Model</option>
+                  <option>Model A</option>
+                  <option>Model B</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Is certified</label>
+                <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
+                  <option value="">Select one</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Exterior Color</label>
+                <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
+                  <option value="">Select color</option>
+                  <option>White</option>
+                  <option>Black</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Column 2 */}
+            <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Year</label>
+                <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
+                  <option value="">Enter Year</option>
+                  <option>2025</option>
+                  <option>2024</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Trim</label>
+                <input placeholder="Enter Trim" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Mileage</label>
+                <input placeholder="Enter Miles" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              </div>
+            </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Title Status</label>
+                <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
+                  <option value="">Select title status</option>
+                  <option>Clean</option>
+                  <option>Salvage</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Condition</label>
+                <select className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121]">
+                  <option value="">Select Condition</option>
+                  <option>New</option>
+                  <option>Used</option>
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-[14px] font-medium text-[#24272C]">Stock#</label>
+                <input placeholder="Enter Stock Number" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] outline-none focus:border-[#E82121]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
