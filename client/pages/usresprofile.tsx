@@ -212,7 +212,7 @@ export function UsersProfileCard() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* New Figma Design Section */}
-      <section className="bg-white border border-[#B2B2B2] rounded-lg mb-6 py-8 mx-auto">
+      <section className="bg-white rounded-lg mb-6 py-8 mx-auto" style={{ border: '0.8px none rgb(178, 178, 178)' }}>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
           <div className="w-full md:w-[70%] max-w-[725px]">
