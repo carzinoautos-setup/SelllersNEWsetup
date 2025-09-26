@@ -127,6 +127,10 @@ export default function MessagesPage() {
               </div>
             </div>
 
+            {showSidebar && (
+              <div className="fixed inset-0 bg-black/40 z-30 md:hidden" onClick={() => setShowSidebar(false)} />
+            )}
+
             {/* Main Chat Area */}
             <div className="flex-1 flex flex-col">
               {/* Chat Header */}
