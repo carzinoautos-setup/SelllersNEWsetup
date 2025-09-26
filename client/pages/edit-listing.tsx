@@ -29,6 +29,12 @@ export default function EditListing() {
   const [drivetrain, setDrivetrain] = useState("FWD");
   const [exteriorColor, setExteriorColor] = useState("");
   const [interiorColor, setInteriorColor] = useState("");
+  const [model, setModel] = useState("");
+  const [isCertified, setIsCertified] = useState("");
+  const [yearValue, setYearValue] = useState("");
+  const [titleStatusValue, setTitleStatusValue] = useState("");
+  const [makeValue, setMakeValue] = useState("");
+  const [conditionValue, setConditionValue] = useState("");
 
   // Step 2: Features
   const [selectedFeatures, setSelectedFeatures] = useState({
