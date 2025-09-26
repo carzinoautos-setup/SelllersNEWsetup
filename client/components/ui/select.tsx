@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-import { useEffect, useRef, useState } from "react";
-
 interface SelectProps {
   options: string[];
   value?: string | null;
