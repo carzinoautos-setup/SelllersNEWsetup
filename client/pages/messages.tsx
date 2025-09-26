@@ -20,7 +20,7 @@ export default function MessagesPage() {
           </div>
 
           {/* Message Portal Interface */}
-          <div className="flex bg-white rounded-2xl border border-[#EDEDED] overflow-hidden h-[700px]">
+          <div className="flex bg-white rounded-2xl border border-[#EDEDED] overflow-hidden min-h-[500px] md:h-[700px]">
             {/* Left Sidebar - User List */}
             <div className={`md:w-[444px] w-[85%] md:flex md:flex-col flex flex-col border-r border-[#EDEDED] bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
               {/* Search */}
