@@ -138,7 +138,19 @@ export default function Vindecoder() {
     Illinois: ["Chicago", "Springfield", "Naperville", "Peoria"],
   };
 
-  const vehicleLocationCityOptions = vehicleCityMap[vehicleLocationState] || [];
+  const allCities = Object.values(vehicleCityMap).flat();
+  const vehicleLocationCityOptions = vehicleLocationState ? vehicleCityMap[vehicleLocationState] : allCities;
+
+  useEffect(() => {
+    // reset dependent fields when parent selection changes
+    setVehicleLocationCity("");
+    setVehicleLocationZip("");
+  }, [vehicleLocationState]);
+
+  useEffect(() => {
+    // reset zip when city changes
+    setVehicleLocationZip("");
+  }, [vehicleLocationCity]);
 
   const vehicleZipMap: Record<string, string[]> = {
     Seattle: ["98101", "98102", "98103"],
