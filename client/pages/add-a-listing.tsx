@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
 
-export default function EnterVehicleDetails1() {
+export default function AddAListing() {
   const [activeTab, setActiveTab] = useState("license");
   const [licensePlate, setLicensePlate] = useState("");
   const [selectedState, setSelectedState] = useState("");
