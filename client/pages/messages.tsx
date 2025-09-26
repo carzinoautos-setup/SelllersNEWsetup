@@ -38,7 +38,7 @@ export default function MessagesPage() {
               </div>
 
               {/* User List */}
-              <div className="flex-1 px-[30px] pb-[10px] border-t border-[#EDEDED] overflow-y-auto">
+              <div className="flex-1 px-4 md:px-[30px] pb-[10px] border-t border-[#EDEDED] overflow-y-auto">
                 <div className="space-y-0">
                   {/* Leslie Alexander */}
                   <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
