@@ -399,12 +399,6 @@ export default function EditListing() {
               >
                 Year Make Model Trim
               </span>
-              <span
-                className="text-[12px] font-normal text-black leading-[140%]"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                Vin#: VA5768PSJ6789H1222
-              </span>
             </div>
           </div>
         </div>
