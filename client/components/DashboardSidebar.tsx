@@ -39,18 +39,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
       badge: "7",
       path: "/messages",
     },
-    {
-      name: "Add your Payment",
-      icon: BankIcon,
-      active: false,
-      path: "/payments",
-    },
-    {
-      name: "Billing",
-      icon: CurrencyDollarIcon,
-      active: false,
-      path: "/billing",
-    },
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Reset Password", icon: EditIcon, active: false, path: "/reset" },
     { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
