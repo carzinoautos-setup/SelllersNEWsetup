@@ -36,6 +36,22 @@ export default function EditListing() {
   const [makeValue, setMakeValue] = useState("");
   const [conditionValue, setConditionValue] = useState("");
 
+  // Step 2A state variables
+  const [bodyType, setBodyType] = useState("");
+  const [doors, setDoors] = useState("");
+  const [transmission, setTransmission] = useState("");
+  const [transmissionSpeed, setTransmissionSpeed] = useState("");
+  const [cylinders, setCylinders] = useState("");
+  const [engineSize, setEngineSize] = useState("");
+  const [driveTrain, setDriveTrain] = useState("");
+  const [fuelType, setFuelType] = useState("");
+  const [mpgCity, setMpgCity] = useState("");
+  const [mpgHwy, setMpgHwy] = useState("");
+  const [stateValue, setStateValue] = useState("");
+  const [listingStatus, setListingStatus] = useState("");
+  const [city, setCity] = useState("");
+  const [zipCode, setZipCode] = useState("");
+
   // Step 2: Features
   const [selectedFeatures, setSelectedFeatures] = useState({
     // Features
