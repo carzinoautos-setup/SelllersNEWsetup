@@ -39,7 +39,7 @@ export default function EditListing() {
   // Step 2A state variables
   const [bodyType, setBodyType] = useState("");
   const [doors, setDoors] = useState("");
-  const [transmission, setTransmission] = useState("");
+  const [transmissionType, setTransmissionType] = useState("");
   const [transmissionSpeed, setTransmissionSpeed] = useState("");
   const [cylinders, setCylinders] = useState("");
   const [engineSize, setEngineSize] = useState("");
