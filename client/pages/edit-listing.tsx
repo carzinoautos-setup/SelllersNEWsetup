@@ -413,7 +413,7 @@ export default function EditListing() {
                 style={{ fontFamily: "Albert Sans" }}
               >
                 <span className="text-[#090909]">Vehicle Details- </span>
-                <span className="text-[#E82121]">Step 1 A</span>
+                <span className="text-[#E82121]">Step 1</span>
               </h1>
               <p
                 className="text-[14px] text-black leading-[140%] max-w-[955px]"
