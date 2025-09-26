@@ -20,9 +20,9 @@ export default function MessagesPage() {
           </div>
 
           {/* Message Portal Interface */}
-          <div className="flex bg-white rounded-2xl border border-[#EDEDED] overflow-hidden overflow-x-hidden min-h-[500px] md:h-[700px] min-w-0">
+          <div className="flex bg-white rounded-2xl border border-[#EDEDED] overflow-hidden overflow-x-hidden min-h-[500px] md:h-[700px] min-w-0 box-border">
             {/* Left Sidebar - User List */}
-            <div className={`lg:w-[444px] w-[85%] max-w-full md:flex md:flex-col flex flex-col md:border-r md:border-[#EDEDED] border-none bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform min-w-0 ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
+            <div className={`lg:w-[444px] w-[85%] max-w-full md:flex md:flex-col flex flex-col md:border-r md:border-[#EDEDED] border-none bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform min-w-0 box-border ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
               {/* Search */}
               <div className="p-4 md:p-[30px] pb-[10px]">
                 <div className="flex items-center gap-3 w-full h-[54px] px-4 md:px-[18px] border border-[#EDEDED] rounded-xl bg-white">
@@ -132,7 +132,7 @@ export default function MessagesPage() {
             )}
 
             {/* Main Chat Area */}
-            <div className="flex-1 flex flex-col min-w-0">
+            <div className="flex-1 flex flex-col min-w-0 box-border">
               {/* Chat Header */}
               <div className="flex items-center gap-5 h-[114px] px-4 md:px-[50px] py-[10px] border-b border-[#EDEDED]">
                 <img src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120" alt="Arlene McCoy" className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover" />
