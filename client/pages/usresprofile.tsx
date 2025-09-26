@@ -287,20 +287,17 @@ export function UsersProfileCard() {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {/* Row 1 */}
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Seller or dealer name
-                  </label>
-                  <input
-                    value={sellerName}
-                    onChange={(e) => setSellerName(e.target.value)}
-                    placeholder="Enter your full name"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
+                Seller or dealer name
+              </label>
+              <input
+                value={sellerName}
+                onChange={(e) => setSellerName(e.target.value)}
+                placeholder="Enter your full name"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div className="relative">
