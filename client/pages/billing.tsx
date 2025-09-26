@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { createPortal } from "react-dom";
 import { DashboardLayout } from "../components/DashboardLayout";
 
 interface PaymentMethod {
@@ -63,8 +62,7 @@ export default function BillingPage() {
 
   const handleStripePay = () => {
     // This is a placeholder for integrating Stripe Elements or redirect to Checkout.
-    // For now it simulates a successful payment and closes the modal.
-    setShowStripeModal(false);
+    // For now it simulates a successful payment.
     window.alert("Payment processed (simulation)");
   };
 
