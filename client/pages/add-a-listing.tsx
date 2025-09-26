@@ -206,12 +206,12 @@ export default function AddAListing() {
                       >
                         Try Again
                       </button>
-                      <button
-                        onClick={handleEnterManually}
-                        className="h-12 px-4 rounded-[14px] bg-[#24272C] text-white"
+                      <Link
+                        to="/edit-listing"
+                        className="h-12 px-4 rounded-[14px] bg-[#24272C] text-white flex items-center justify-center"
                       >
                         Enter Manually
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 )}
