@@ -109,7 +109,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
           {/* Main Content Area */}
           <div
-            className={`flex-1 pb-20 lg:pb-0 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
+            className={`flex-1 pb-24 lg:pb-0 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
           >
             {children}
           </div>
