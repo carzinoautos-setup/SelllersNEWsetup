@@ -60,33 +60,6 @@ export default function BillingPage() {
   const removeMethod = (id: string) =>
     setMethods((m) => m.filter((x) => x.id !== id));
 
-  const [showStripeModal, setShowStripeModal] = useState(false);
-
-  // Open modal automatically when page loads
-  useEffect(() => {
-    setShowStripeModal(true);
-  }, []);
-
-  const Modal: React.FC<{
-    children: React.ReactNode;
-    onClose?: () => void;
-  }> = ({ children, onClose }) => {
-    if (typeof document === "undefined") return null;
-    const handleOverlayMouseDown = (e: React.MouseEvent) => {
-      if (e.target === e.currentTarget && onClose) onClose();
-    };
-    return createPortal(
-      <div
-        className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50"
-        onMouseDown={handleOverlayMouseDown}
-        role="dialog"
-        aria-modal="true"
-      >
-        {children}
-      </div>,
-      document.body,
-    );
-  };
 
   const handleStripePay = () => {
     // This is a placeholder for integrating Stripe Elements or redirect to Checkout.
@@ -95,24 +68,7 @@ export default function BillingPage() {
     window.alert("Payment processed (simulation)");
   };
 
-  // lock body scroll while modal is open and close on ESC
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setShowStripeModal(false);
-    };
-    if (showStripeModal) {
-      document.body.style.overflow = "hidden";
-      window.addEventListener("keydown", onKey);
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", onKey);
-    };
-  }, [showStripeModal]);
-
-  return (
+    return (
     <DashboardLayout>
       <div className="flex-1 overflow-visible">
         <div className="pt-8 px-4 sm:px-6 lg:px-8 w-full max-w-[1200px] mx-auto">
@@ -501,7 +457,7 @@ export default function BillingPage() {
 
                       {/* Pay Button */}
                       <button
-                        onClick={() => setShowStripeModal(true)}
+                        onClick={handleStripePay}
                         className="w-full bg-[#E82121] text-white font-inter text-base font-semibold py-[7px] px-[15px] rounded-[7px] h-10 flex items-center justify-center"
                       >
                         Pay
@@ -721,7 +677,7 @@ export default function BillingPage() {
                 </div>
 
                 <button
-                  onClick={() => setShowStripeModal(true)}
+                  onClick={handleStripePay}
                   className="w-full bg-[#CF0D0D] text-white px-[26px] py-[14px] rounded-xl font-dm text-[15px] font-medium flex items-center justify-center gap-2 hover:bg-red-700 transition-colors"
                 >
                   Pay outstanding
@@ -730,142 +686,6 @@ export default function BillingPage() {
             </div>
           </div>
 
-          {showStripeModal && (
-            <Modal onClose={() => setShowStripeModal(false)}>
-              <div className="bg-white rounded-lg w-full max-w-4xl mx-4 lg:mx-0 shadow-lg p-6 relative">
-                <button
-                  onClick={() => setShowStripeModal(false)}
-                  className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 8.586L15.95 2.636a1 1 0 111.414 1.414L11.414 10l5.95 5.95a1 1 0 01-1.414 1.414L10 11.414l-5.95 5.95a1 1 0 01-1.414-1.414L8.586 10 2.636 4.05A1 1 0 014.05 2.636L10 8.586z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
-
-                <div className="flex flex-col lg:flex-row gap-6">
-                  <div className="w-full lg:w-1/2 border-r lg:border-r p-4">
-                    <h4 className="text-[#30313D] font-albert text-sm font-bold mb-4">
-                      Order Summary
-                    </h4>
-                    <div className="flex items-start gap-4 mb-4">
-                      <img
-                        src="https://api.builder.io/api/v1/image/assets/TEMP/384e5dac0ee88ede163b487c4cb19f549aa2765a?width=132"
-                        alt="Featured Ad Credit"
-                        className="w-[66px] h-[66px] rounded-md object-cover"
-                      />
-                      <div className="flex-1">
-                        <div className="text-[#30313D] font-albert text-sm font-semibold">
-                          Featured Ad Credit
-                        </div>
-                        <div className="text-[#30313D] font-albert text-xs">
-                          1 Featured Credit
-                        </div>
-                      </div>
-                      <div className="text-[#30313D] font-albert text-sm">
-                        $5
-                      </div>
-                    </div>
-                    <div className="border-t border-[#E7EAEB] pt-4 space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span>Subtotal</span>
-                        <span>$5</span>
-                      </div>
-                      <div className="flex justify-between text-sm text-[#8C8C8C]">
-                        <span>Tax (9.875%)</span>
-                        <span>$.96</span>
-                      </div>
-                      <div className="flex justify-between text-sm">
-                        <span>Shipping</span>
-                        <span>Free</span>
-                      </div>
-                      <div className="flex justify-between text-sm font-medium">
-                        <span>Total</span>
-                        <span>$5.96</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-full lg:w-1/2 p-4">
-                    <h4 className="text-[#24272C] font-inter text-base font-medium mb-3">
-                      Complete payment
-                    </h4>
-
-                    <div className="space-y-3">
-                      <div className="border border-[#E7EAEB] rounded-[7px] p-3">
-                        <div className="flex items-center gap-3">
-                          <div className="w-px h-[17px] bg-black/80"></div>
-                          <div className="text-black/50">Card number</div>
-                        </div>
-                        <input
-                          name="card"
-                          value={form.card}
-                          onChange={handleChange}
-                          placeholder="4242 4242 4242 4242"
-                          className="mt-3 w-full border-none outline-none"
-                        />
-
-                        <div className="flex gap-2 mt-3">
-                          <input
-                            name="exp"
-                            value={form.exp}
-                            onChange={handleChange}
-                            placeholder="MM/YY"
-                            className="flex-1 border border-[#E7EAEB] rounded-[6px] p-2"
-                          />
-                          <input
-                            name="cvc"
-                            value={form.cvc}
-                            onChange={handleChange}
-                            placeholder="CVC"
-                            className="w-24 border border-[#E7EAEB] rounded-[6px] p-2"
-                          />
-                        </div>
-
-                        <input
-                          name="name"
-                          value={form.name}
-                          onChange={handleChange}
-                          placeholder="Full name on card"
-                          className="mt-3 w-full border border-[#E7EAEB] rounded-[6px] p-2"
-                        />
-
-                        <textarea
-                          name="address"
-                          value={form.address}
-                          onChange={handleChange}
-                          placeholder="Billing address"
-                          className="mt-3 w-full border border-[#E7EAEB] rounded-[6px] p-2"
-                        />
-                      </div>
-
-                      <div className="flex gap-3">
-                        <button
-                          onClick={handleStripePay}
-                          className="flex-1 bg-[#E82121] text-white py-2 rounded-md"
-                        >
-                          Pay now
-                        </button>
-                        <button
-                          onClick={() => setShowStripeModal(false)}
-                          className="flex-1 border border-[#E7EAEB] py-2 rounded-md"
-                        >
-                          Cancel
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Modal>
-          )}
         </div>
       </div>
     </DashboardLayout>
