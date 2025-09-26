@@ -258,7 +258,7 @@ export function UsersProfileCard() {
               alt="Profile"
               className="w-[128px] h-[128px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
             />
-            <div className="flex flex-col gap-[10px] w-full md:max-w-[364px]">
+            <div className="flex flex-col gap-[10px] w-full md:max-w-[364px] justify-center items-center mx-auto">
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
                 Upload a Image
               </div>
