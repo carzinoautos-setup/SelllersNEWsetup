@@ -95,6 +95,8 @@ export default function EnterVehicleDetails2() {
   // Step 3: Price and Description
   const [salePrice, setSalePrice] = useState("");
   const [description, setDescription] = useState("Lorem Ipsum Dolar Sit Amet");
+  const [aiDescription, setAiDescription] = useState("AI suggested description");
+  const [showAiDescription, setShowAiDescription] = useState(true);
 
   // Step 4: Photos
   const [photos, setPhotos] = useState<{ id: string; url: string }[]>([
