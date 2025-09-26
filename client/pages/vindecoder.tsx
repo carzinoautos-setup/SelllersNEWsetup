@@ -139,6 +139,35 @@ export default function Vindecoder() {
   };
 
   const vehicleLocationCityOptions = vehicleCityMap[vehicleLocationState] || [];
+
+  const vehicleZipMap: Record<string, string[]> = {
+    Seattle: ["98101", "98102", "98103"],
+    Tacoma: ["98402", "98403", "98404"],
+    Bellevue: ["98004", "98005"],
+    Spokane: ["99201", "99202"],
+    "Los Angeles": ["90001", "90002", "90003"],
+    "San Francisco": ["94102", "94103"],
+    "San Diego": ["92101", "92102"],
+    Sacramento: ["95814", "95815"],
+    Houston: ["77001", "77002"],
+    Dallas: ["75201", "75202"],
+    Austin: ["73301", "78701"],
+    "San Antonio": ["78201", "78202"],
+    Miami: ["33101", "33102"],
+    Orlando: ["32801", "32802"],
+    Tampa: ["33601", "33602"],
+    Jacksonville: ["32201", "32202"],
+    "New York": ["10001", "10002"],
+    Buffalo: ["14201"],
+    Rochester: ["14602"],
+    Syracuse: ["13202"],
+    Chicago: ["60601", "60602"],
+    Springfield: ["62701"],
+    Naperville: ["60540"],
+    Peoria: ["61602"],
+  };
+
+  const vehicleLocationZipOptions = vehicleZipMap[vehicleLocationCity] || [];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
 
   const toggleFeature = (feature: string) => {
@@ -548,13 +577,12 @@ export default function Vindecoder() {
                   >
                     Vehicle Location Zip
                   </label>
-                  <input
-                    type="text"
+                  <Select
+                    options={vehicleLocationZipOptions}
                     value={vehicleLocationZip}
-                    onChange={(e) => setVehicleLocationZip(e.target.value)}
+                    onChange={(v) => setVehicleLocationZip(v)}
                     placeholder="Enter Zip"
-                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
-                    style={{ fontFamily: "Albert Sans" }}
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
               </div>
