@@ -22,6 +22,12 @@ export function DashboardSidebar({ className }: SidebarProps) {
       path: "/enter-vehicle-details-2",
     },
     {
+      name: "Add a Listing",
+      icon: EditIcon,
+      active: false,
+      path: "/add-a-listing",
+    },
+    {
       name: "Your Listings",
       icon: MailIcon,
       active: true,
