@@ -191,7 +191,7 @@ export default function MessagesPage() {
 
               {/* Message Input */}
               <div className="flex items-center gap-[10px] p-4 md:p-[30px] pt-0">
-                <div className="flex-1 flex items-center h-[52px] px-[18px] py-[16px] border border-[#EDEDED] rounded-xl bg-white">
+                <div className="flex-1 flex items-center h-[52px] px-3 md:px-[18px] py-3 md:py-[12px] border border-[#EDEDED] rounded-xl bg-white">
                   <input
                     type="text"
                     placeholder="Aa"
