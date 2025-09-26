@@ -467,9 +467,9 @@ export default function EnterVehicleDetails2() {
                   </div>
                 </div>
 
-                {/* Safety Options Column */}
+                {/* Mechanical Options Column (duplicate of Safety) */}
                 <div className="flex flex-col gap-6">
-                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
+                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Mechanical</h3>
                   <div className="space-y-2">
                     {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
                     {renderCheckbox('passengerAirbag', 'Airbag - Passenger', selectedFeatures.passengerAirbag)}
@@ -484,9 +484,9 @@ export default function EnterVehicleDetails2() {
                   </div>
                 </div>
 
-                {/* Mechanical Options Column (duplicate of Safety) */}
+                {/* Safety Options Column */}
                 <div className="flex flex-col gap-6">
-                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Mechanical</h3>
+                  <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
                   <div className="space-y-2">
                     {renderCheckbox('airbags', 'Airbags', selectedFeatures.airbags)}
                     {renderCheckbox('passengerAirbag', 'Airbag - Passenger', selectedFeatures.passengerAirbag)}
