@@ -262,11 +262,11 @@ export function UsersProfileCard() {
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
                 Upload a Image
               </div>
-              <div className="flex items-center gap-4 w-full h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white">
-                <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[18px] py-[16px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[16px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
+              <div className="flex items-center gap-4 w-full md:max-w-[320px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white mx-auto md:mx-0">
+                <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[18px] py-[8px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[12px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
                   Choose file
                 </button>
-                <span className="text-[14px] text-[#696665] font-['Albert_Sans'] leading-[140%]">
+                <span className="text-[12px] text-[#696665] font-['Albert_Sans'] leading-[140%]">
                   No files selected
                 </span>
               </div>
