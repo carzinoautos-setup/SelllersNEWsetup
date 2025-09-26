@@ -683,347 +683,142 @@ export default function AddAListingPage() {
                 className="bg-white rounded-lg p-8"
                 style={{ border: "0.8px solid rgba(178,178,178,1)" }}
               >
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-                  {/* Features Column */}
-                  <CollapsibleSection
-                    title={"Features"}
-                    id={"features"}
-                    isOpen={openSections.features}
-                    onToggle={() => handleToggle("features")}
-                  >
-                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">
-                      Features
-                    </h4>
-                    <div className="flex flex-col gap-4">
-                      {[
-                        "Navigation System",
-                        "Remote Start",
-                        "Keyless Entry",
-                        "Hands-Free",
-                        "Power Folding Side Mirrors",
-                        "Rain-Sensing Wipers",
-                        "Homelink",
-                        "Split-Folding Rear Seats",
-                        "Adjustable Steering Column",
-                      ].map((opt) => {
-                        const key = `features:${opt}`;
-                        const selected = selectedOptions.includes(key);
-                        return (
-                          <label
-                            key={key}
-                            onClick={() => toggleOption(key)}
-                            className="flex items-center gap-3 cursor-pointer"
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden"
-                              checked={selected}
-                              readOnly
-                            />
-                            <div
-                              className={
-                                selected
-                                  ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center"
-                                  : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"
-                              }
-                            >
-                              {selected && (
-                                <svg
-                                  width="10"
-                                  height="10"
-                                  viewBox="0 0 10 11"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z"
-                                    fill="white"
-                                  />
-                                </svg>
-                              )}
-                            </div>
-                            <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">
-                              {opt}
-                            </span>
-                          </label>
-                        );
-                      })}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                  {/* Column 1: Features + Exterior */}
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Features</h3>
+                      <div className="space-y-2">
+                        {["Navigation System","Remote Start","Keyless Entry","Hands-Free","Power Folding Side Mirrors","Rain-Sensing Wipers","Homelink","Split-Folding Rear Seats","Adjustable Steering Column"].map((opt) => {
+                          const key = `features:${opt}`;
+                          const selected = selectedOptions.includes(key);
+                          return (
+                            <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                              <input type="checkbox" className="hidden" checked={selected} readOnly />
+                              <div className={selected ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center" : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"}>
+                                {selected && (
+                                  <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/></svg>
+                                )}
+                              </div>
+                              <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                            </label>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </CollapsibleSection>
 
-                  {/* Interior Column */}
-                  <CollapsibleSection
-                    title={"Interior"}
-                    id={"interior"}
-                    isOpen={openSections.interior}
-                    onToggle={() => handleToggle("interior")}
-                  >
-                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">
-                      Interior
-                    </h4>
-                    <div className="flex flex-col gap-4">
-                      {[
-                        "Leather Seats",
-                        "Heated Seats",
-                        "Sunroof /Panoramic Roof",
-                        "Heated Steering Wheel",
-                        "Touchscreen Display",
-                        "Ventilated / Cooled Seats",
-                        "Memory Driver Seat Settings",
-                        "Ambient Interior Lighting",
-                        "Rubber Flooring",
-                        "Wood or Aluminum Trim",
-                      ].map((opt) => {
-                        const key = `interior:${opt}`;
-                        const selected = selectedOptions.includes(key);
-                        return (
-                          <label
-                            key={key}
-                            onClick={() => toggleOption(key)}
-                            className="flex items-center gap-3 cursor-pointer"
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden"
-                              checked={selected}
-                              readOnly
-                            />
-                            <div
-                              className={
-                                selected
-                                  ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center"
-                                  : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"
-                              }
-                            >
-                              {selected && (
-                                <svg
-                                  width="10"
-                                  height="10"
-                                  viewBox="0 0 10 11"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z"
-                                    fill="white"
-                                  />
-                                </svg>
-                              )}
-                            </div>
-                            <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">
-                              {opt}
-                            </span>
-                          </label>
-                        );
-                      })}
+                    <div>
+                      <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Exterior</h3>
+                      <div className="space-y-2">
+                        {["Alloy Wheels","LED Headlights","Fog Lights","Roof Rack","Tinted Windows","Power Tailgate","Tow Hitch / Towing Package","Running Boards","Body Kit/Sport Package","Rear Spoiler"].map((opt) => {
+                          const key = `exterior:${opt}`;
+                          const selected = selectedOptions.includes(key);
+                          return (
+                            <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                              <input type="checkbox" className="hidden" checked={selected} readOnly />
+                              <div className={selected ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center" : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"}>
+                                {selected && (
+                                  <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/></svg>
+                                )}
+                              </div>
+                              <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                            </label>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </CollapsibleSection>
+                  </div>
 
-                  {/* Exterior Column */}
-                  <CollapsibleSection
-                    title={"Exterior"}
-                    id={"exterior"}
-                    isOpen={openSections.exterior}
-                    onToggle={() => handleToggle("exterior")}
-                  >
-                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">
-                      Exterior
-                    </h4>
-                    <div className="flex flex-col gap-4">
-                      {[
-                        "Alloy Wheels",
-                        "LED Headlights",
-                        "Fog Lights",
-                        "Roof Rack",
-                        "Tinted Windows",
-                        "Power Tailgate",
-                        "Tow Hitch / Towing Package",
-                        "Running Boards",
-                        "Body Kit/Sport Package",
-                        "Rear Spoiler",
-                      ].map((opt) => {
-                        const key = `exterior:${opt}`;
-                        const selected = selectedOptions.includes(key);
-                        return (
-                          <label
-                            key={key}
-                            onClick={() => toggleOption(key)}
-                            className="flex items-center gap-3 cursor-pointer"
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden"
-                              checked={selected}
-                              readOnly
-                            />
-                            <div
-                              className={
-                                selected
-                                  ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center"
-                                  : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"
-                              }
-                            >
-                              {selected && (
-                                <svg
-                                  width="10"
-                                  height="10"
-                                  viewBox="0 0 10 11"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z"
-                                    fill="white"
-                                  />
-                                </svg>
-                              )}
-                            </div>
-                            <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">
-                              {opt}
-                            </span>
-                          </label>
-                        );
-                      })}
+                  {/* Column 2: Interior + Technology */}
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Interior</h3>
+                      <div className="space-y-2">
+                        {["Leather Seats","Heated Seats","Sunroof /Panoramic Roof","Heated Steering Wheel","Touchscreen Display","Ventilated / Cooled Seats","Memory Driver Seat Settings","Ambient Interior Lighting","Rubber Flooring","Wood or Aluminum Trim"].map((opt) => {
+                          const key = `interior:${opt}`;
+                          const selected = selectedOptions.includes(key);
+                          return (
+                            <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                              <input type="checkbox" className="hidden" checked={selected} readOnly />
+                              <div className={selected ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center" : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"}>
+                                {selected && (
+                                  <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/></svg>
+                                )}
+                              </div>
+                              <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                            </label>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </CollapsibleSection>
 
-                  {/* Safety Options Column */}
-                  <CollapsibleSection
-                    title={"Safety Options"}
-                    id={"safety"}
-                    isOpen={openSections.safety}
-                    onToggle={() => handleToggle("safety")}
-                  >
-                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">
-                      Safety Options
-                    </h4>
-                    <div className="flex flex-col gap-4">
-                      {[
-                        "Airbags",
-                        "Airbag - Passenger",
-                        "Anti-lock Braking System",
-                        "Backup Camera",
-                        "Lane Departure Warning",
-                        "Adaptive Cruise Control",
-                        "Parking Sensors",
-                        "Automatic High Beams",
-                        "Tire Pressure Monitoring System",
-                        "Electronic Stability Control",
-                      ].map((opt) => {
-                        const key = `safety:${opt}`;
-                        const selected = selectedOptions.includes(key);
-                        return (
-                          <label
-                            key={key}
-                            onClick={() => toggleOption(key)}
-                            className="flex items-center gap-3 cursor-pointer"
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden"
-                              checked={selected}
-                              readOnly
-                            />
-                            <div
-                              className={
-                                selected
-                                  ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center"
-                                  : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"
-                              }
-                            >
-                              {selected && (
-                                <svg
-                                  width="10"
-                                  height="10"
-                                  viewBox="0 0 10 11"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z"
-                                    fill="white"
-                                  />
-                                </svg>
-                              )}
-                            </div>
-                            <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">
-                              {opt}
-                            </span>
-                          </label>
-                        );
-                      })}
+                    <div>
+                      <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Technology</h3>
+                      <div className="space-y-2">
+                        {["Apple CarPlay/Android Auto","Bluetooth","Touchscreen Display","Wireless Phone Connectivity","Rear Seat Entertainment Screens","DVD Player","Premium Sound System","Steering Wheel Audio Controls","Wi-Fi Hotspot Capability","Voice Command System"].map((opt) => {
+                          const key = `technology:${opt}`;
+                          const selected = selectedOptions.includes(key);
+                          return (
+                            <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                              <input type="checkbox" className="hidden" checked={selected} readOnly />
+                              <div className={selected ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center" : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"}>
+                                {selected && (
+                                  <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/></svg>
+                                )}
+                              </div>
+                              <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                            </label>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </CollapsibleSection>
+                  </div>
 
-                  {/* Technology Column */}
-                  <CollapsibleSection
-                    title={"Technology"}
-                    id={"technology"}
-                    isOpen={openSections.technology}
-                    onToggle={() => handleToggle("technology")}
-                  >
-                    <h4 className="hidden md:block text-[18px] font-medium text-[#050B20] font-['Albert_Sans'] mb-6 leading-[19px]">
-                      Technology
-                    </h4>
-                    <div className="flex flex-col gap-4">
-                      {[
-                        "Apple CarPlay/Android Auto",
-                        "Bluetooth",
-                        "Touchscreen Display",
-                        "Wireless Phone Connectivity",
-                        "Rear Seat Entertainment Screens",
-                        "DVD Player",
-                        "Premium Sound System",
-                        "Steering Wheel Audio Controls",
-                        "Wi-Fi Hotspot Capability",
-                        "Voice Command System",
-                      ].map((opt) => {
-                        const key = `technology:${opt}`;
-                        const selected = selectedOptions.includes(key);
-                        return (
-                          <label
-                            key={key}
-                            onClick={() => toggleOption(key)}
-                            className="flex items-center gap-3 cursor-pointer"
-                          >
-                            <input
-                              type="checkbox"
-                              className="hidden"
-                              checked={selected}
-                              readOnly
-                            />
-                            <div
-                              className={
-                                selected
-                                  ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center"
-                                  : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"
-                              }
-                            >
-                              {selected && (
-                                <svg
-                                  width="10"
-                                  height="10"
-                                  viewBox="0 0 10 11"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z"
-                                    fill="white"
-                                  />
-                                </svg>
-                              )}
-                            </div>
-                            <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">
-                              {opt}
-                            </span>
-                          </label>
-                        );
-                      })}
+                  {/* Column 3: Mechanical + Safety */}
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Mechanical</h3>
+                      <div className="space-y-2">
+                        {["Airbags","Airbag - Passenger","Anti-lock Braking System","Backup Camera","Lane Departure Warning"].map((opt) => {
+                          const key = `mechanical:${opt}`;
+                          const selected = selectedOptions.includes(key) || selectedOptions.includes(`safety:${opt}`);
+                          return (
+                            <label key={key} onClick={() => toggleOption(key.startsWith('mechanical:') ? key : `safety:${opt}`)} className="flex items-center gap-3 cursor-pointer">
+                              <input type="checkbox" className="hidden" checked={selected} readOnly />
+                              <div className={selected ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center" : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"}>
+                                {selected && (
+                                  <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/></svg>
+                                )}
+                              </div>
+                              <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                            </label>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </CollapsibleSection>
 
-                  {/* End columns */}
+                    <div>
+                      <h3 className="text-[19px] font-semibold text-[#050B20] underline mb-4" style={{ fontFamily: 'Albert Sans' }}>Safety Options</h3>
+                      <div className="space-y-2">
+                        {["Adaptive Cruise Control","Parking Sensors","Automatic High Beams","Tire Pressure Monitoring System","Electronic Stability Control"].map((opt) => {
+                          const key = `safety:${opt}`;
+                          const selected = selectedOptions.includes(key);
+                          return (
+                            <label key={key} onClick={() => toggleOption(key)} className="flex items-center gap-3 cursor-pointer">
+                              <input type="checkbox" className="hidden" checked={selected} readOnly />
+                              <div className={selected ? "w-5 h-5 rounded bg-[#E82121] flex items-center justify-center" : "w-5 h-5 border border-[#B2B2B2] rounded bg-white flex items-center justify-center"}>
+                                {selected && (
+                                  <svg width="10" height="10" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.76764 2.39244C9.45824 2.08263 8.95582 2.08282 8.64601 2.39244L3.59787 7.44077L1.35419 5.19711C1.04438 4.8873 0.542174 4.8873 0.23236 5.19711C-0.0774534 5.50693 -0.0774534 6.00913 0.23236 6.31894L3.03684 9.12342C3.19165 9.27823 3.39464 9.35583 3.59765 9.35583C3.80067 9.35583 4.00386 9.27843 4.15867 9.12342L9.76764 3.51425C10.0775 3.20465 10.0775 2.70224 9.76764 2.39244Z" fill="white"/></svg>
+                                )}
+                              </div>
+                              <span className="text-[16px] md:text-[12px] text-[#050B20] font-['Albert_Sans'] leading-[25px]">{opt}</span>
+                            </label>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
                 {/* Copied Features Grid from enter-vehicle-details-2 (read-only grid) */}
