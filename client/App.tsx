@@ -23,6 +23,7 @@ import EditListing from "./pages/edit-listing";
 import Production from "./pages/production";
 import Elements from "./pages/elements";
 import Vindecoder from "./pages/vindecoder";
+import StartVindecoder from "./pages/start-vindecoder";
 
 const queryClient = new QueryClient();
 
@@ -41,9 +42,10 @@ const App = () => (
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payments" element={<Payments />} />
           <Route
-            path="/add-a-listing"
-            element={<AddAListing />}
-          />
+          path="/add-a-listing"
+          element={<AddAListing />}
+        />
+          <Route path="/start-vindecoder" element={<StartVindecoder />} />
           <Route
             path="/enter-vehicle-details-2"
             element={<EnterVehicleDetails2 />}
