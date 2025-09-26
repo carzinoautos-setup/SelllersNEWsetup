@@ -173,14 +173,23 @@ export default function ResetPage() {
               {/* Right column: password requirements / tips */}
               <aside className="order-first lg:order-none block lg:col-span-1 mb-4 lg:mb-0">
                 <div className="sticky top-28 p-6 bg-white border border-[#E6E6E6] rounded-lg shadow-md">
-                  <h3 className="text-lg font-semibold text-[#24272C]">Password requirements</h3>
-                  <p className="text-sm text-[#6B6B6B] mt-2">Use a strong password to protect your account. The password must meet the following:</p>
+                  <h3 className="text-lg font-semibold text-[#24272C]">
+                    Password requirements
+                  </h3>
+                  <p className="text-sm text-[#6B6B6B] mt-2">
+                    Use a strong password to protect your account. The password
+                    must meet the following:
+                  </p>
 
                   <div className="mt-4 flex flex-col gap-4">
                     <div className="flex items-start gap-3">
-                      <div className={`w-3 h-3 rounded-full mt-1 ${hasNumber ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`} />
+                      <div
+                        className={`w-3 h-3 rounded-full mt-1 ${hasNumber ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`}
+                      />
                       <div>
-                        <div className={`text-sm font-albert ${hasNumber ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}>
+                        <div
+                          className={`text-sm font-albert ${hasNumber ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}
+                        >
                           One number
                         </div>
                         <div className="text-xs text-[#9A9A9A]">e.g. 0-9</div>
@@ -188,9 +197,13 @@ export default function ResetPage() {
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <div className={`w-3 h-3 rounded-full mt-1 ${hasLowercase ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`} />
+                      <div
+                        className={`w-3 h-3 rounded-full mt-1 ${hasLowercase ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`}
+                      />
                       <div>
-                        <div className={`text-sm font-albert ${hasLowercase ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}>
+                        <div
+                          className={`text-sm font-albert ${hasLowercase ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}
+                        >
                           One lowercase character
                         </div>
                         <div className="text-xs text-[#9A9A9A]">a-z</div>
@@ -198,9 +211,13 @@ export default function ResetPage() {
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <div className={`w-3 h-3 rounded-full mt-1 ${hasUppercase ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`} />
+                      <div
+                        className={`w-3 h-3 rounded-full mt-1 ${hasUppercase ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`}
+                      />
                       <div>
-                        <div className={`text-sm font-albert ${hasUppercase ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}>
+                        <div
+                          className={`text-sm font-albert ${hasUppercase ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}
+                        >
                           One uppercase character
                         </div>
                         <div className="text-xs text-[#9A9A9A]">A-Z</div>
@@ -208,12 +225,18 @@ export default function ResetPage() {
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <div className={`w-3 h-3 rounded-full mt-1 ${hasMinLength ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`} />
+                      <div
+                        className={`w-3 h-3 rounded-full mt-1 ${hasMinLength ? "bg-[#7ED321]" : "bg-[#B6B6B6]"}`}
+                      />
                       <div>
-                        <div className={`text-sm font-albert ${hasMinLength ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}>
+                        <div
+                          className={`text-sm font-albert ${hasMinLength ? "text-[#7ED321]" : "text-[#6B6B6B]"}`}
+                        >
                           8 characters minimum
                         </div>
-                        <div className="text-xs text-[#9A9A9A]">Use 8 or more characters</div>
+                        <div className="text-xs text-[#9A9A9A]">
+                          Use 8 or more characters
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -61,7 +61,10 @@ export default function EnterVehicleDetails1() {
                       onClick={() => setActiveTab("license")}
                       className={`w-full h-12 rounded-[14px] ${activeTab === "license" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
                     >
-                      <span className="text-base font-medium" style={{ font: "500 12px Albert Sans, sans-serif" }}>
+                      <span
+                        className="text-base font-medium"
+                        style={{ font: "500 12px Albert Sans, sans-serif" }}
+                      >
                         License Plate
                       </span>
                     </button>
@@ -85,7 +88,12 @@ export default function EnterVehicleDetails1() {
                       onClick={() => setActiveTab("vin")}
                       className={`w-full h-12 rounded-[14px] ${activeTab === "vin" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
                     >
-                      <span className="text-base font-medium" style={{ font: "500 12px Albert Sans, sans-serif" }}>By Vin #</span>
+                      <span
+                        className="text-base font-medium"
+                        style={{ font: "500 12px Albert Sans, sans-serif" }}
+                      >
+                        By Vin #
+                      </span>
                     </button>
                   </div>
                 </div>

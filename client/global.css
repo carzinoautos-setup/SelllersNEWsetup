@@ -120,7 +120,15 @@
   /* Use Albert Sans for all buttons to match design */
   button,
   button * {
-    font-family: 'Albert Sans', -apple-system, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Segoe UI', sans-serif !important;
+    font-family:
+      "Albert Sans",
+      -apple-system,
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Segoe UI",
+      sans-serif !important;
   }
 }
 
