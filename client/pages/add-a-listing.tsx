@@ -1262,6 +1262,87 @@ export default function AddAListingPage() {
                     onChange={handleFileInput}
                   />
                 </div>
+
+                {/* Photo Previews (draggable native) */}
+                <div className="mt-6">
+                  <div className="flex flex-wrap gap-4">
+                    {photos.map((photo, index) => (
+                      <div
+                        key={photo.id}
+                        draggable
+                        onDragStart={(e) => onDragStart(e as any, index)}
+                        onDragOver={(e) => e.preventDefault()}
+                        onDrop={(e) => onDrop(e as any, index)}
+                        className="relative w-28 h-28 rounded-[12px] overflow-hidden bg-gray-50"
+                      >
+                        <img
+                          src={photo.url}
+                          alt={`Photo ${index + 1}`}
+                          className="w-full h-full object-cover"
+                          draggable={false}
+                          onContextMenu={(e) => e.preventDefault()}
+                        />
+
+                        <div className="absolute top-1 left-1">
+                          {featurePhotoId === photo.id ? (
+                            <div className="w-6 h-6 bg-[#E82121] rounded-full flex items-center justify-center text-white shadow">
+                              <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </div>
+                          ) : (
+                            <button
+                              type="button"
+                              onClick={() => setFeaturePhotoId(photo.id)}
+                              className="w-6 h-6 bg-white rounded-full flex items-center justify-center border shadow"
+                              aria-label="Set as feature"
+                            >
+                              <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                                  stroke="currentColor"
+                                  strokeWidth="1"
+                                />
+                              </svg>
+                            </button>
+                          )}
+                        </div>
+
+                        <button
+                          onClick={() => deletePhoto(photo.id)}
+                          className="absolute bottom-1 right-1 w-6 h-6 bg-black/50 rounded-full flex items-center justify-center text-white shadow"
+                        >
+                          <svg
+                            className="w-4 h-4"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M9 3h6l1 2h3v2H3V5h3l1-2zM6 7h12v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7zM9 10v8h2v-8H9zm4 0v8h2v-8h-2z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </section>
