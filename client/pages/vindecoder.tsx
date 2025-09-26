@@ -179,7 +179,8 @@ export default function Vindecoder() {
     Peoria: ["61602"],
   };
 
-  const vehicleLocationZipOptions = vehicleZipMap[vehicleLocationCity] || [];
+  const allZips = Object.values(vehicleZipMap).flat();
+  const vehicleLocationZipOptions = vehicleLocationCity ? (vehicleZipMap[vehicleLocationCity] || []) : allZips.slice(0, 50);
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
 
   const toggleFeature = (feature: string) => {
