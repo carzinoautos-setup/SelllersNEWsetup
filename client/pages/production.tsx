@@ -35,6 +35,9 @@ export default function Production() {
                   <Link to="/billing" className="text-sm text-[#1f2937] hover:underline">
                     /billing
                   </Link>
+                  <Link to="/vindecoder" className="text-sm text-[#1f2937] hover:underline">
+                    /vindecoder
+                  </Link>
                 </div>
               </section>
 
