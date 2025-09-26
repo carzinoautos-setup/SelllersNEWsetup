@@ -167,7 +167,7 @@ export default function MessagesPage() {
                 <div className="flex flex-col gap-[6px]">
                   <div className="flex items-end gap-3">
                     <div className="w-[42px] h-[42px] rounded-full bg-gray-200 flex-shrink-0"></div>
-                    <div className="bg-[#F3F3F3] rounded-2xl rounded-bl-none p-[14px] max-w-[140px]">
+                    <div className="bg-[#F3F3F3] rounded-2xl rounded-bl-none p-[14px] max-w-[80%] md:max-w-[240px] break-words">
                       <p className="text-sm text-[#696665] font-albert">Yes</p>
                     </div>
                   </div>
