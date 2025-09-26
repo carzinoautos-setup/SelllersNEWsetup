@@ -366,20 +366,17 @@ export function UsersProfileCard() {
               />
             </div>
 
-            <div className="relative">
-              <div className="w-full h-[54px] rounded-xl border border-[#B2B2B2] bg-white px-4 shadow-sm focus-within:border-[#CF0D0D] transition-colors duration-150 relative">
-                <div className="h-full flex items-center">
-                  <label className="absolute -top-2 left-4 bg-white px-1 text-[12px] text-black">
-                    Account holder email Address
-                  </label>
-                  <input
-                    value={accountEmail}
-                    onChange={(e) => setAccountEmail(e.target.value)}
-                    placeholder="Enter your email address"
-                    className="w-full text-[15px] text-[#050B20] font-['DM_Sans'] border-none outline-none bg-transparent h-full placeholder-transparent focus:placeholder-transparent"
-                  />
-                </div>
-              </div>
+            <div>
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>
+                Account holder email Address
+              </label>
+              <input
+                value={accountEmail}
+                onChange={(e) => setAccountEmail(e.target.value)}
+                placeholder="Enter your email address"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             {/* Row 3 */}
