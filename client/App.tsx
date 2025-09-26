@@ -20,6 +20,7 @@ import Payments from "./pages/payments";
 import AddAListing from "./pages/add-a-listing";
 import EnterVehicleDetails2 from "./pages/enter-vehicle-details-2";
 import EditListing from "./pages/edit-listing";
+import Production from "./pages/production";
 
 const queryClient = new QueryClient();
 
