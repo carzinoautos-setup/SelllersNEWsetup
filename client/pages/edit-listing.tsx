@@ -460,32 +460,13 @@ export default function EditListing() {
                     >
                       Exterior Color
                     </label>
-                    <div className="relative">
-                      <div className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white flex items-center justify-between cursor-pointer hover:border-[#E82121] transition-colors">
-                        <span
-                          className="text-[14px] text-[#24272C] leading-[140%]"
-                          style={{ fontFamily: "Albert Sans" }}
-                        >
-                          Select color
-                        </span>
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className=""
-                        >
-                          <path
-                            d="M13 5.5L8 10.5L3 5.5"
-                            stroke="#E82121"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
+                    <Select
+                      options={exteriorColorOptions}
+                      value={exteriorColor}
+                      onChange={(v) => setExteriorColor(v)}
+                      placeholder="Select color"
+                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
+                    />
                   </div>
                 </div>
 
