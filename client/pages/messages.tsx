@@ -148,8 +148,8 @@ export default function MessagesPage() {
               {/* Messages */}
               <div className="flex-1 p-4 md:p-[50px] space-y-[30px] overflow-y-auto">
                 {/* Outgoing Message 1 */}
-                <div className="flex flex-col items-end gap-[6px] lg:ml-[300px] md:ml-[120px] ml-0">
-                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-full">
+                <div className="flex flex-col items-end gap-[6px] ml-0">
+                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[80%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words">
                     <p className="text-sm text-[#24272C] font-albert leading-relaxed">
                       Dear Mr Williamson,<br/>
                       I would like to send you the quotation for the Toyota Fortuner<br/>
@@ -177,8 +177,8 @@ export default function MessagesPage() {
                 </div>
 
                 {/* Outgoing Message 2 */}
-                <div className="flex flex-col items-end gap-[6px] lg:ml-[300px] md:ml-[120px] ml-0">
-                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-full">
+                <div className="flex flex-col items-end gap-[6px] ml-0">
+                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[80%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words">
                     <p className="text-sm text-[#24272C] font-albert leading-relaxed">
                       Dear Mr Williamson,<br/>
                       Thank you for inquiring Toyota Fortuner. My name is Adam, Sales Consultant at Toyota Cubao. If you are still interested in Toyota Fortuner, kindly answer "Yes" for the quotation. For any further assistance, please do not hesitate to contact me via 09012345678 or dvg.ap.ngantt1@gmail.com.<br/>
