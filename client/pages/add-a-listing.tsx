@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
+import { Link } from "react-router-dom";
 
 export default function AddAListing() {
   const [activeTab, setActiveTab] = useState("license");
@@ -162,6 +163,12 @@ export default function AddAListing() {
                     >
                       Get vehicle details
                     </button>
+
+                    <div className="w-full text-center mt-2">
+                      <Link to="/edit-listing" className="text-sm text-[#24272C] underline">
+                        Enter Info Manually
+                      </Link>
+                    </div>
                   </div>
                 )}
 
