@@ -945,6 +945,83 @@ export default function EnterVehicleDetails2() {
             </div>
           </div>
 
+          {/* AI Suggested Description - Step 3A */}
+          {showAiDescription && (
+            <div className="mb-12">
+              <div className="w-full max-w-[960px] mx-auto">
+                {/* Header Section */}
+                <div className="mb-6">
+                  <h1 className="text-[20px] font-albert mb-2">
+                    <span className="text-[#090909] font-normal">AI suggested Description</span>
+                    <span className="text-[#090909] font-bold">- </span>
+                    <span className="text-[#E82121] font-bold">Step 3A</span>
+                  </h1>
+                  <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
+                    Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
+                  </p>
+                  <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
+                </div>
+
+                {/* AI Description Content */}
+                <div className="w-full max-w-[955px]">
+                  <div className="relative">
+                    <div
+                      style={{
+                        backgroundColor: "#ffffff",
+                        border: "1px solid rgba(178,178,178,1)",
+                        borderRadius: 12,
+                        minHeight: 289,
+                        width: "100%",
+                        position: "relative",
+                        padding: 20,
+                        fontWeight: 400,
+                      }}
+                    >
+                      <label
+                        style={{
+                          color: "#818181",
+                          display: "block",
+                          fontFamily: "DM Sans",
+                          fontSize: 13,
+                          lineHeight: "19.5px",
+                        }}
+                      >
+                        Description
+                      </label>
+
+                      <div
+                        style={{
+                          color: "#050B20",
+                          fontFamily: "DM Sans",
+                          fontSize: 15,
+                          fontWeight: 400,
+                          lineHeight: "26px",
+                          marginTop: 20,
+                          minHeight: 200,
+                        }}
+                      >
+                        {aiDescription}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Update Description Button */}
+                  <div className="mt-5 flex justify-start">
+                    <button
+                      onClick={() => {
+                        setDescription(aiDescription);
+                        setShowAiDescription(false);
+                      }}
+                      className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                    >
+                      Update Description
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Step 4: Photos */}
           <div className="mb-12">
             {/* Header */}
