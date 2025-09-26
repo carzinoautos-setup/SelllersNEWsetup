@@ -117,6 +117,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       </div>
 
       <Footer />
+      <MobileBottomNav />
     </div>
   );
 }
