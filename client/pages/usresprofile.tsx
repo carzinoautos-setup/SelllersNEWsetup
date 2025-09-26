@@ -252,7 +252,7 @@ export function UsersProfileCard() {
           </div>
 
           {/* Right Content - Image Upload */}
-          <div className="w-full md:w-[30%] flex flex-col md:flex-row items-center md:items-start gap-6">
+          <div className="w-full md:w-[30%] flex flex-col items-center justify-center gap-6 mx-auto md:mx-0">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
               alt="Profile"
