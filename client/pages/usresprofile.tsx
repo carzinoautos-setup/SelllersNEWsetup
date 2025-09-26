@@ -262,10 +262,10 @@ export function UsersProfileCard() {
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
                 Upload a Image
               </div>
-              <div className="flex items-center gap-4 w-4/5 md:w-full md:max-w-[320px] h-[54px] px-[6px] py-[10px] border border-[#EDEDED] rounded-[14px] bg-white mx-auto md:mx-0 justify-center">
-                <button className="flex items-center justify-center gap-[10px] w-[142px] h-[42px] px-[14px] py-[8px] bg-[#E82121] rounded-[10px] text-white font-['Albert_Sans'] text-[12px] font-medium leading-[140%] hover:bg-[#d41d1d] transition-colors">
+              <div className="flex items-center justify-center w-4/5 md:w-full md:max-w-[320px] h-[54px] mx-auto md:mx-0">
+                <div className="bg-[#E82121] rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] font-medium">
                   Choose file
-                </button>
+                </div>
               </div>
               <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center">
                 Seller account Number Here
