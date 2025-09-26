@@ -17,7 +17,7 @@ import Billing from "./pages/billing";
 import Logout from "./pages/logout";
 import Messages from "./pages/messages";
 import Payments from "./pages/payments";
-import EnterVehicleDetails1 from "./pages/enter-vehicle-details-1";
+import AddAListing from "./pages/add-a-listing";
 import EnterVehicleDetails2 from "./pages/enter-vehicle-details-2";
 import EditListing from "./pages/edit-listing";
 
@@ -38,8 +38,8 @@ const App = () => (
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payments" element={<Payments />} />
           <Route
-            path="/enter-vehicle-details-1"
-            element={<EnterVehicleDetails1 />}
+            path="/add-a-listing"
+            element={<AddAListing />}
           />
           <Route
             path="/enter-vehicle-details-2"
