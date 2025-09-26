@@ -197,7 +197,7 @@ export default function MessagesPage() {
                     placeholder="Aa"
                     className="flex-1 text-sm text-[#696665] font-albert bg-transparent outline-none"
                   />
-                  <button className="ml-2 bg-[#E82121] text-white px-[18px] py-[16px] rounded-[10px] text-base font-medium font-albert hover:bg-[#d41d1d] transition-colors">
+                  <button className="ml-2 bg-[#E82121] text-white px-3 md:px-[18px] py-2 md:py-[12px] rounded-[10px] text-base font-medium font-albert hover:bg-[#d41d1d] transition-colors">
                     Send
                   </button>
                 </div>
