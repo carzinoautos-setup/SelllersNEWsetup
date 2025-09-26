@@ -397,7 +397,7 @@ export default function EditListing() {
                 className="text-[12px] font-normal text-[#090909] leading-[140%]"
                 style={{ fontFamily: "Albert Sans" }}
               >
-                Year Make Model Trim
+                Edit or add a listing
               </span>
             </div>
           </div>
@@ -925,16 +925,14 @@ export default function EditListing() {
                   className="text-[20px] font-semibold"
                   style={{ fontFamily: "Albert Sans" }}
                 >
-                  <span className="text-[#090909]">Basic Details- </span>
+                  <span className="text-[#090909]">Features- </span>
                   <span className="text-[#E82121]">Step 3</span>
                 </h1>
                 <p
                   className="text-[14px] text-black leading-[140%] max-w-[955px]"
                   style={{ fontFamily: "Albert Sans" }}
                 >
-                  Carzino makes it simple—we've pulled in your unit's features
-                  automatically. All you need to do is confirm or adjust what's
-                  here.
+                  Add or edit your vehicles features
                 </p>
                 <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
               </div>
@@ -1279,8 +1277,8 @@ export default function EditListing() {
                   className="text-[14px] text-black leading-[140%] max-w-[955px]"
                   style={{ fontFamily: "Albert Sans" }}
                 >
-                  Enter your sale price, then write a description that highlights
-                  your car's features. Buyers want details, so be specific
+                  Enter or edit your sale price, then write a
+                  description that highlights your car's features. Buyers want details, so be specific
                 </p>
                 <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
               </div>
@@ -1434,7 +1432,7 @@ export default function EditListing() {
                   style={{ fontFamily: "Albert Sans" }}
                 >
                   <span className="text-[#090909]">Photos- </span>
-                  <span className="text-[#E82121]">Step 5</span>
+                  <span className="text-[#E82121]">Step 6</span>
                 </h1>
                 <p
                   className="text-[14px] text-black leading-[140%] max-w-[955px]"
