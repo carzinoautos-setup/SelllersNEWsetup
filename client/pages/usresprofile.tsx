@@ -270,7 +270,7 @@ export function UsersProfileCard() {
                   No files selected
                 </span>
               </div>
-              <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center sm:text-left">
+              <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center">
                 JPEG 100x100
               </div>
             </div>
