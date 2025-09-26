@@ -39,7 +39,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
       badge: "7",
       path: "/messages",
     },
-    { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Reset Password", icon: EditIcon, active: false, path: "/reset" },
     { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
     {
@@ -48,6 +47,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
       active: false,
       path: "/enter-vehicle-details-2",
     },
+    { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
   ];
 
