@@ -4,7 +4,7 @@ export default function RemoveListingConfirmed() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       {/* Success Confirmation Card */}
-      <div className="relative w-full max-w-md bg-white rounded-[20px] shadow-[0_6px_10px_4px_rgba(0,0,0,0.15),0_2px_3px_0_rgba(0,0,0,0.30)] overflow-hidden lg:transform lg:scale-[0.55] lg:origin-center">
+      <div className="relative w-full max-w-md bg-white rounded-[20px] shadow-[0_6px_10px_4px_rgba(0,0,0,0.15),0_2px_3px_0_rgba(0,0,0,0.30)] overflow-hidden transform scale-[0.55] origin-center">
         {/* Red Check Icon */}
         <div className="absolute left-1/2 transform -translate-x-1/2 top-[18px] w-[46px] h-[46px] bg-[#E82121] rounded-full flex items-center justify-center">
           <svg width="25" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
