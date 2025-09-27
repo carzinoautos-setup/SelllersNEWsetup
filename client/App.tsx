@@ -26,6 +26,7 @@ import Vindecoder from "./pages/vindecoder";
 import StartVindecoder from "./pages/start-vindecoder";
 import SuccessUploaded from "./pages/success-uploaded";
 import RemoveListing from "./pages/remove-listing";
+import RemoveListingConfirmed from "./pages/remove-listing-confirmed";
 
 const queryClient = new QueryClient();
 
