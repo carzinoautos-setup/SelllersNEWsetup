@@ -336,12 +336,12 @@ export default function YourListingsPage() {
                       <div className="grid gap-2.5 self-stretch grid-cols-2">
                         <div className="inline-flex items-center gap-1">
                           <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
-                            <b>Status:</b> Active
+                            <b>Status:</b>&nbsp;Active
                           </div>
                         </div>
                         <div className="inline-flex items-center gap-1">
                           <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
-                            <b>Stock#:</b>K5555P
+                            <b>Stock#</b>: K87873
                           </div>
                         </div>
                       </div>
@@ -365,7 +365,7 @@ export default function YourListingsPage() {
                   {/* Info Section */}
                   <div className="flex justify-between items-start self-stretch">
                     {/* Action Buttons */}
-                    <div className="flex w-[104px] items-center gap-1.5">
+                    <div className="flex w-[104px] items-center gap-1.5 mr-5">
                       <div className="flex w-12 items-start gap-2.5 h-10">
                         <a href="/remove-listing" className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer">
                           <svg
@@ -430,7 +430,7 @@ export default function YourListingsPage() {
                     </div>
 
                     {/* Change Status Button */}
-                    <div className="flex w-[153px] h-[38px] p-2 px-2.5 justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]">
+                    <div className="flex w-[153px] h-[38px] p-2 px-[5px] justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]">
                       <div className="text-black font-albert text-[12px] font-medium leading-normal">
                         Change Status
                       </div>
@@ -438,10 +438,10 @@ export default function YourListingsPage() {
                   </div>
 
                   {/* Featured Button */}
-                  <div className="flex justify-between items-start self-stretch">
+                  <div className="flex justify-center items-center self-stretch">
                     <div className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px] border border-[#E82121]">
                       <div className="text-black font-albert text-[12px] font-medium leading-normal">
-                        Featured
+                        Feature this
                       </div>
                     </div>
                   </div>
