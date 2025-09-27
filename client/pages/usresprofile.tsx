@@ -225,8 +225,8 @@ export function UsersProfileCard() {
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* New Figma Design Section */}
       <section
-        className="bg-white rounded-lg mb-6 py-8 mx-auto"
-        style={{ border: "0.8px none rgb(178, 178, 178)" }}
+        className="bg-white rounded-lg mb-6 mx-auto"
+        style={{ border: "0.8px none rgb(178, 178, 178)", paddingBottom: "32px" }}
       >
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
