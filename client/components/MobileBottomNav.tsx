@@ -105,6 +105,7 @@ export function MobileBottomNav() {
       path: "/listings",
       label: "Listings",
       href: "https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev/listings",
+      iconSrc: "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Ff91b6fe2a4d84cee97b304816ec0f145?format=webp&width=800",
       icon: (
         <svg
           width="28"
