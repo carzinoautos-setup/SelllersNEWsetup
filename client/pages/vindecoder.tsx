@@ -1153,11 +1153,18 @@ export default function Vindecoder() {
                       }
 
                       try {
+                        const apiKey = (process && (process as any).env && (process as any).env.OPENAI_API_KEY) || import.meta.env.VITE_OPENAI_API_KEY || (window as any).__OPENAI_API_KEY__;
+                        if (!apiKey) {
+                          setAiDescription("Missing OPENAI API key. Set OPENAI_API_KEY in environment.");
+                          setIsGenerating(false);
+                          return;
+                        }
+
                         const resp = await fetch("https://api.openai.com/v1/chat/completions", {
                           method: "POST",
                           headers: {
                             "Content-Type": "application/json",
-                            Authorization: "Bearer REPLACE_WITH_MY_OPENAI_API_KEY",
+                            Authorization: `Bearer ${apiKey}`,
                           },
                           body: JSON.stringify({
                             model: "gpt-4o-mini",
