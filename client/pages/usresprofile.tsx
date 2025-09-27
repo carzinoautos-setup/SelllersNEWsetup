@@ -329,7 +329,7 @@ export function UsersProfileCard() {
             />
             <div className="flex flex-col gap-1 w-full md:max-w-[364px] justify-center items-center mx-auto">
               <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
-                Upload a Image
+                Profile Photo
               </div>
               <div className="flex items-center justify-center w-full md:max-w-[320px] h-[54px] mx-auto md:mx-0">
                 <input
