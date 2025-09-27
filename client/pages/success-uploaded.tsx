@@ -47,6 +47,9 @@ export default function SuccessUploaded() {
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">Success</h1>
             <p className="text-lg sm:text-xl text-black font-light">Your add was published</p>
+            <div className="text-red-600 text-lg font-light leading-6 mt-2">
+              <Link to="/yourlistings"><b>See Listings</b></Link>
+            </div>
           </div>
         </div>
 
