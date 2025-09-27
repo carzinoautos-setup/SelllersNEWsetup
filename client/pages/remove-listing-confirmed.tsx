@@ -21,36 +21,6 @@ export default function RemoveListingConfirmed() {
           </svg>
         </button>
 
-        {/* Content */}
-        <div className="p-[10px] transform scale-[0.7] origin-center md:pt-16 md:px-6 md:pb-6 md:transform md:scale-[1]">
-
-          {/* Heading */}
-          <div className="text-center mb-6">
-            <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4 font-albert">
-              Delete Listing
-            </h1>
-            <p className="text-lg sm:text-xl text-black font-light font-albert">
-              Do you really want to delete your listing?
-            </p>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex gap-6 mb-8 px-4">
-            <button className="flex-1 h-14 bg-gray-600 hover:bg-gray-700 text-white rounded-xl font-medium transition-colors">
-            test
-            </button>
-            <button className="flex-1 h-14 bg-red-700 hover:bg-red-800 text-white rounded-xl font-medium transition-colors">
-              Delete
-            </button>
-          </div>
-
-          {/* Warning Text */}
-          <div className="text-center">
-            <p className="text-sm text-black font-albert">
-              Listings cannot be restored.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
