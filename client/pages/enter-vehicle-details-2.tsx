@@ -125,6 +125,10 @@ export default function EnterVehicleDetails2() {
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
   const exteriorColorOptions = ["White", "Black", "Silver", "Red", "Blue"];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
+  const stateOptions = [
+    "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+  ];
+  const [state, setState] = useState("");
 
   const toggleFeature = (feature: string) => {
     setSelectedFeatures((prev) => ({
