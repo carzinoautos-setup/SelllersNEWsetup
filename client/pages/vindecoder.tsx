@@ -1229,9 +1229,7 @@ export default function Vindecoder() {
                       description sound natural and appealing for buyers. If
                       feature fields are provided (such as navigation system,
                       leather seats, sunroof, towing package, etc.), highlight
-                      them in the description to make the vehicle stand out.
-                      Keep the tone professional but engaging, and ensure the
-                      description is unique:
+                      them in the description to make the vehicle stand out. use most of the values supplied make sure the length of thext is about 900 to 1500 characters make the content Keep the tone professional but engaging, and ensure the description is unique:
                     </p>
 
                     {
