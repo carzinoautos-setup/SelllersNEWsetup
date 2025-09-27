@@ -65,6 +65,7 @@ export function MobileBottomNav() {
       path: "/messages",
       label: "Messages",
       href: "https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev/messages",
+      iconSrc: "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F8abd689308084fff984e235669e9e831?format=webp&width=800",
       icon: (
         <svg
           width="28"
