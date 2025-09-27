@@ -61,10 +61,6 @@ export default function Production() {
                 >
                   /vindecoder
                 </Link>
-                <p className="text-sm text-[#696665] mt-2">
-                  Use this area to document why a page was archived or any
-                  required next steps before publishing.
-                </p>
               </section>
             </div>
           </div>
