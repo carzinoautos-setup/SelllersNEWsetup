@@ -1160,26 +1160,24 @@ export default function Vindecoder() {
                           return;
                         }
 
-                        const resp = await fetch("https://api.openai.com/v1/chat/completions", {
+                        const resp = await fetch("/api/openai", {
                           method: "POST",
                           headers: {
                             "Content-Type": "application/json",
-                            Authorization: `Bearer ${apiKey}`,
                           },
-                          body: JSON.stringify({
-                            model: "gpt-4o-mini",
-                            messages: [
-                              { role: "system", content: "You write concise, SEO-friendly vehicle descriptions." },
-                              { role: "user", content: inputText },
-                            ],
-                            max_tokens: 300,
-                            temperature: 0.7,
-                          }),
+                          body: JSON.stringify({ prompt: inputText }),
                         });
 
-                        const data = await resp.json();
-                        const text = data?.choices?.[0]?.message?.content?.trim();
-                        setAiDescription(text || "No text returned.");
+                        if (!resp.ok) {
+                          const errBody = await resp.json().catch(() => null);
+                          setAiDescription(
+                            `OpenAI proxy error: ${resp.status} ${resp.statusText}${errBody?.error ? ' - ' + errBody.error : ''}`
+                          );
+                        } else {
+                          const data = await resp.json();
+                          const text = data?.choices?.[0]?.message?.content?.trim();
+                          setAiDescription(text || "No text returned.");
+                        }
                       } catch (e) {
                         setAiDescription("Error generating description.");
                       } finally {
