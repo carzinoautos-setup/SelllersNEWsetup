@@ -367,7 +367,7 @@ export default function YourListingsPage() {
                     {/* Action Buttons */}
                     <div className="flex w-[104px] items-center gap-1.5 mr-5">
                       <div className="flex w-12 items-start gap-2.5 h-10">
-                        <a href="/remove-listing" className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer">
+                        <Link to="/remove-listing" className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer">
                           <svg
                             className="w-[18px] h-[18px] absolute left-[11px] top-[11px]"
                             viewBox="0 0 18 18"
@@ -399,7 +399,7 @@ export default function YourListingsPage() {
                               fill="#050B20"
                             />
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                       <div className="inline-flex items-start gap-2.5 w-10 h-10">
                         <Link
