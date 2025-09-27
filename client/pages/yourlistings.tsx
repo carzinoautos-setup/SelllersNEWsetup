@@ -267,7 +267,7 @@ export default function YourListingsPage() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/6975da1c4e84f2b56c87e6eeef4d7045c7b852fd?width=695"
                   alt="2017 BMW 7 Series xDrive 20d xline"
-                  className="w-full h-[218px] object-cover self-stretch"
+                  className="w-full h-[218px] object-cover object-center rounded-t-2xl self-stretch"
                 />
 
                 {/* Main Content */}
