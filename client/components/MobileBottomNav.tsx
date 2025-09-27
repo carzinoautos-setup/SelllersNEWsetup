@@ -132,7 +132,12 @@ export function MobileBottomNav() {
       aria-label="Mobile bottom navigation"
     >
       <div className="max-w-7xl mx-auto px-4 mobile-bottom-nav-inner">
-        <style>{`@media (max-width: 640px) { .mobile-bottom-nav-inner { background-color: rgba(253, 253, 253, 1); } }`}</style>
+        <style>{` .mobile-bottom-nav-inner { background-color: rgb(253, 253, 253); }
+          @media (max-width: 640px) {
+            .mobile-bottom-nav-inner { background-color: rgba(0, 0, 0, 0.79); }
+            .mobile-bottom-nav-inner .mobile-bottom-label { color: rgba(255, 255, 255, 1) !important; }
+          }
+        `}</style>
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
