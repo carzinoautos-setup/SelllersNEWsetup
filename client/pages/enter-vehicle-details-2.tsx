@@ -134,6 +134,7 @@ export default function EnterVehicleDetails2() {
   const [zipOptions, setZipOptions] = useState<string[]>([]);
   const [city, setCity] = useState("");
   const [zipCode, setZipCode] = useState("");
+  const [zipcodeDemo, setZipcodeDemo] = useState("");
 
   // Simple city map for common states (extend as needed)
   const cityMap: Record<string, string[]> = {
