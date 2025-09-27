@@ -565,13 +565,13 @@ export default function EnterVehicleDetails2() {
                     className="text-[14px] font-medium text-[#24272C]"
                     style={{ fontFamily: "Albert Sans" }}
                   >
-                    City
+                    Zip Code
                   </label>
                   <Select
-                    options={cityOptions}
-                    value={city}
-                    onChange={(v) => setCity(v)}
-                    placeholder="Select City"
+                    options={zipOptions}
+                    value={zipCode}
+                    onChange={(v) => setZipCode(v)}
+                    placeholder="Select Zip"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
@@ -581,13 +581,13 @@ export default function EnterVehicleDetails2() {
                     className="text-[14px] font-medium text-[#24272C]"
                     style={{ fontFamily: "Albert Sans" }}
                   >
-                    Zip Code
+                    City
                   </label>
                   <Select
-                    options={zipOptions}
-                    value={zipCode}
-                    onChange={(v) => setZipCode(v)}
-                    placeholder="Select Zip"
+                    options={cityOptions}
+                    value={city}
+                    onChange={(v) => setCity(v)}
+                    placeholder="Select City"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
