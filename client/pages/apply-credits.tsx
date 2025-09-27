@@ -72,8 +72,8 @@ export default function ApplyCredits() {
               <Link to="/buy-credits" className="px-6 py-2 rounded-[14px] bg-[#DC2626] text-white font-medium">
                 Use 1 Credit
               </Link>
-              <Link to="/yourlistings" className="px-6 py-2 rounded-lg border border-gray-300 text-gray-800">
-                View Listings
+              <Link to="/yourlistings" className="px-6 py-2 rounded-[14px] border border-gray-300 text-gray-800">
+                Learn More
               </Link>
             </div>
             <div className="text-red-600 text-lg font-light leading-6 mt-2">
