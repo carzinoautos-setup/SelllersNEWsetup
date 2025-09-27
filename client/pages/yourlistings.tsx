@@ -330,7 +330,7 @@ export default function YourListingsPage() {
 
                         <div className="flex items-center gap-2.5 mr-auto">
                           <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Days remaining</b> 5
+                            <b>Days left:</b> 5
                           </div>
                           <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
                             <strong>
