@@ -80,7 +80,7 @@ export default function SuccessUploaded() {
             {/* Listings */}
             <Link to="/yourlistings" className="flex flex-col items-center gap-1 text-center">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/4766f603cc1082084b55b7fcb351ad6c96072cd9?width=56"
+                src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F3fbe3146588440b1b7c7d389740d2e15?format=webp&width=800"
                 alt="Listings"
                 className="w-7 h-7"
               />
