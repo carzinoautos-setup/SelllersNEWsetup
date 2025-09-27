@@ -20,7 +20,12 @@ export function createServer() {
           } else if (path && path.route && path.route.path) {
             console.log(`REGISTER ${method.toUpperCase()} route object ${path.route.path}`);
           } else {
-            console.log(`REGISTER ${method.toUpperCase()} with non-string first arg`);
+            try {
+              const repr = typeof path === 'function' ? (path.name || path.toString().slice(0,100)) : JSON.stringify(path).slice(0,200);
+              console.log(`REGISTER ${method.toUpperCase()} with non-string first arg: ${repr}`);
+            } catch (errInner) {
+              console.log(`REGISTER ${method.toUpperCase()} with non-string first arg of type ${typeof path}`);
+            }
           }
         } catch (err) {
           console.error("route logging failed", err);
