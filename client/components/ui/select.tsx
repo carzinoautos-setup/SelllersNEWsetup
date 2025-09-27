@@ -115,22 +115,56 @@ export function Select({
       </div>
 
       {open && (
-        <ul
-          role="listbox"
-          className="absolute left-0 right-0 mt-2 bg-white border border-[#E5E7EB] rounded-xl shadow-lg z-50 max-h-56 overflow-auto"
-        >
-          {options.map((opt) => (
-            <li
-              key={opt}
-              role="option"
-              aria-selected={value === opt}
-              onClick={() => handleSelect(opt)}
-              className={`px-4 py-2 cursor-pointer hover:bg-[#F3F4F6] ${value === opt ? "bg-[#EEF2FF] font-medium" : ""}`}
+        // Render dropdown via portal to avoid clipping by overflow parents
+        (function renderDropdown() {
+          if (typeof document === 'undefined') return null;
+          const rect = ref.current?.getBoundingClientRect();
+          if (!rect) {
+            return (
+              <ul
+                role="listbox"
+                className="absolute left-0 right-0 mt-2 bg-white border border-[#E5E7EB] rounded-xl shadow-lg z-50 max-h-56 overflow-auto"
+              >
+                {options.map((opt) => (
+                  <li
+                    key={opt}
+                    role="option"
+                    aria-selected={value === opt}
+                    onClick={() => handleSelect(opt)}
+                    className={`px-4 py-2 cursor-pointer hover:bg-[#F3F4F6] ${value === opt ? "bg-[#EEF2FF] font-medium" : ""}`}
+                  >
+                    {opt}
+                  </li>
+                ))}
+              </ul>
+            );
+          }
+
+          const top = rect.bottom + window.scrollY;
+          const left = rect.left + window.scrollX;
+          const width = rect.width;
+
+          return createPortal(
+            <ul
+              role="listbox"
+              className="bg-white border border-[#E5E7EB] rounded-xl shadow-lg z-[10000] max-h-56 overflow-auto"
+              style={{ position: "absolute", top: top, left: left, width }}
             >
-              {opt}
-            </li>
-          ))}
-        </ul>
+              {options.map((opt) => (
+                <li
+                  key={opt}
+                  role="option"
+                  aria-selected={value === opt}
+                  onClick={() => handleSelect(opt)}
+                  className={`px-4 py-2 cursor-pointer hover:bg-[#F3F4F6] ${value === opt ? "bg-[#EEF2FF] font-medium" : ""}`}
+                >
+                  {opt}
+                </li>
+              ))}
+            </ul>,
+            document.body,
+          );
+        })()
       )}
     </div>
   );
