@@ -480,7 +480,7 @@ export default function Vindecoder() {
                 className="text-[12px] font-normal text-[#090909] leading-[140%]"
                 style={{ fontFamily: "Albert Sans" }}
               >
-                Year Make Model Trim
+                2018 BMW 530i xDrive
               </span>
               <span
                 className="text-[12px] font-normal text-black leading-[140%]"
