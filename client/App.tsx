@@ -25,6 +25,7 @@ import Elements from "./pages/elements";
 import Vindecoder from "./pages/vindecoder";
 import StartVindecoder from "./pages/start-vindecoder";
 import SuccessUploaded from "./pages/success-uploaded";
+import ApplyCredits from "./pages/apply-credits";
 import RemoveListing from "./pages/remove-listing";
 import RemoveListingConfirmed from "./pages/remove-listing-confirmed";
 
@@ -51,6 +52,7 @@ const App = () => (
             element={<EnterVehicleDetails2 />}
           />
           <Route path="/edit-listing" element={<EditListing />} />
+          <Route path="/apply-credits" element={<ApplyCredits />} />
           <Route path="/success-uploaded" element={<SuccessUploaded />} />
           <Route path="/remove-listing" element={<RemoveListing />} />
           <Route path="/remove-listing-confirmed" element={<RemoveListingConfirmed />} />
