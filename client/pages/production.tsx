@@ -61,12 +61,14 @@ export default function Production() {
                 >
                   /vindecoder
                 </Link>
-                <Link
-                  to="/edit-listing"
-                  className="text-sm text-[#1f2937] hover:underline"
-                >
-                  /edit-listing
-                </Link>
+                <div className="mt-2">
+                  <Link
+                    to="/edit-listing"
+                    className="text-sm text-[#1f2937] hover:underline"
+                  >
+                    /edit-listing
+                  </Link>
+                </div>
               </section>
             </div>
           </div>
