@@ -1143,14 +1143,47 @@ export default function Vindecoder() {
 
                 <div className="flex justify-start my-5">
                   <button
-                    onClick={() => {
-                      // Test wiring: set aiDescription to the test string
-                      setAiDescription("Test: wiring works.");
-                      setShowAiDescription(true);
+                    onClick={async () => {
+                      setIsGenerating(true);
+                      const inputText = (aiValues ?? "").trim();
+                      if (!inputText) {
+                        setAiDescription("No input found in 'AI Get values'.");
+                        setIsGenerating(false);
+                        return;
+                      }
+
+                      try {
+                        const resp = await fetch("https://api.openai.com/v1/chat/completions", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                            Authorization: "Bearer REPLACE_WITH_MY_OPENAI_API_KEY",
+                          },
+                          body: JSON.stringify({
+                            model: "gpt-4o-mini",
+                            messages: [
+                              { role: "system", content: "You write concise, SEO-friendly vehicle descriptions." },
+                              { role: "user", content: inputText },
+                            ],
+                            max_tokens: 300,
+                            temperature: 0.7,
+                          }),
+                        });
+
+                        const data = await resp.json();
+                        const text = data?.choices?.[0]?.message?.content?.trim();
+                        setAiDescription(text || "No text returned.");
+                      } catch (e) {
+                        setAiDescription("Error generating description.");
+                      } finally {
+                        setIsGenerating(false);
+                        setShowAiDescription(true);
+                      }
                     }}
-                    className="flex items-center justify-center gap-2 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                    disabled={isGenerating}
+                    className="flex items-center justify-center gap-2 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px] disabled:opacity-60"
                   >
-                    Get Ai Description
+                    {isGenerating ? "Generating..." : "Get Ai Description"}
                   </button>
                 </div>
 
