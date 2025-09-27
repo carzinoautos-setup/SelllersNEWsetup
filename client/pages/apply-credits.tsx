@@ -63,7 +63,7 @@ export default function ApplyCredits() {
           {/* Success Text */}
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
-              Success
+              Feature a Car
             </h1>
             <p className="text-lg sm:text-xl text-black font-light">
               Your add was published
