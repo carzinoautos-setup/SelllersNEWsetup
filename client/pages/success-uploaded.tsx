@@ -4,7 +4,7 @@ export default function SuccessUploaded() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       {/* Main Success Modal */}
-      <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden mx-auto md:transform md:scale-[0.7] md:origin-center">
         {/* Close Button */}
         <button className="absolute top-6 right-6 z-10 w-5 h-5 text-red-600 hover:text-red-700 transition-colors">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
