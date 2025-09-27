@@ -23,7 +23,7 @@ export default function ApplyCredits() {
         </button>
 
         {/* Content */}
-        <div className="px-6 pt-10 sm:pt-16 pb-[3px] sm:pb-6">
+        <div className="px-6 pt-[54px] pb-[15px]">
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img
