@@ -117,7 +117,9 @@ export default function EditListing() {
   // Step 3: Price and Description
   const [salePrice, setSalePrice] = useState("");
   const [description, setDescription] = useState("Lorem Ipsum Dolar Sit Amet");
-  const [aiDescription, setAiDescription] = useState("AI suggested description");
+  const [aiDescription, setAiDescription] = useState(
+    "AI suggested description",
+  );
   const [showAiDescription, setShowAiDescription] = useState(true);
 
   // Step 4: Photos
@@ -152,17 +154,105 @@ export default function EditListing() {
   const titleStatusOptions = ["Clean", "Salvage", "Rebuilt"];
   const makeOptions = ["Toyota", "Honda", "Ford", "BMW"];
   const conditionOptions = ["New", "Used", "Certified Pre-Owned"];
-  const yearOptions = ["2025","2024","2023","2022","2021"];
+  const yearOptions = ["2025", "2024", "2023", "2022", "2021"];
 
   // Step 2A options
-  const bodyTypeOptions = ["Sedan", "SUV", "Hatchback", "Coupe", "Convertible", "Truck", "Wagon"];
+  const bodyTypeOptions = [
+    "Sedan",
+    "SUV",
+    "Hatchback",
+    "Coupe",
+    "Convertible",
+    "Truck",
+    "Wagon",
+  ];
   const doorsOptions = ["2", "3", "4", "5"];
-  const transmissionSpeedOptions = ["3-Speed", "4-Speed", "5-Speed", "6-Speed", "7-Speed", "8-Speed", "9-Speed", "10-Speed"];
+  const transmissionSpeedOptions = [
+    "3-Speed",
+    "4-Speed",
+    "5-Speed",
+    "6-Speed",
+    "7-Speed",
+    "8-Speed",
+    "9-Speed",
+    "10-Speed",
+  ];
   const cylindersOptions = ["3", "4", "5", "6", "8", "10", "12"];
-  const engineSizeOptions = ["1.0L", "1.4L", "1.6L", "1.8L", "2.0L", "2.4L", "2.5L", "3.0L", "3.5L", "4.0L", "5.0L", "6.0L", "6.7L"];
-  const fuelTypeOptions = ["Gasoline", "Diesel", "Hybrid", "Electric", "Flex Fuel"];
+  const engineSizeOptions = [
+    "1.0L",
+    "1.4L",
+    "1.6L",
+    "1.8L",
+    "2.0L",
+    "2.4L",
+    "2.5L",
+    "3.0L",
+    "3.5L",
+    "4.0L",
+    "5.0L",
+    "6.0L",
+    "6.7L",
+  ];
+  const fuelTypeOptions = [
+    "Gasoline",
+    "Diesel",
+    "Hybrid",
+    "Electric",
+    "Flex Fuel",
+  ];
   const mpgOptions = ["15", "20", "25", "30", "35", "40", "45", "50+"];
-  const stateOptions = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"];
+  const stateOptions = [
+    "AL",
+    "AK",
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "ID",
+    "IL",
+    "IN",
+    "IA",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MD",
+    "MA",
+    "MI",
+    "MN",
+    "MS",
+    "MO",
+    "MT",
+    "NE",
+    "NV",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "NC",
+    "ND",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VT",
+    "VA",
+    "WA",
+    "WV",
+    "WI",
+    "WY",
+  ];
   const listingStatusOptions = ["Active", "Sold", "Pending", "Draft"];
 
   const toggleFeature = (feature: string) => {
@@ -916,7 +1006,6 @@ export default function EditListing() {
 
           {/* Step 1: Basic Details */}
           <div className="mb-12">
-
             {/* Step 2: Features */}
             <div className="mb-12">
               {/* Header */}
@@ -1270,15 +1359,18 @@ export default function EditListing() {
                   className="text-[20px] font-semibold"
                   style={{ fontFamily: "Albert Sans" }}
                 >
-                  <span className="text-[#090909]">Price and Description- </span>
+                  <span className="text-[#090909]">
+                    Price and Description-{" "}
+                  </span>
                   <span className="text-[#E82121]">Step 4</span>
                 </h1>
                 <p
                   className="text-[14px] text-black leading-[140%] max-w-[955px]"
                   style={{ fontFamily: "Albert Sans" }}
                 >
-                  Enter or edit your sale price, then write a
-                  description that highlights your car's features. Buyers want details, so be specific
+                  Enter or edit your sale price, then write a description that
+                  highlights your car's features. Buyers want details, so be
+                  specific
                 </p>
                 <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
               </div>
@@ -1359,12 +1451,16 @@ export default function EditListing() {
                 <div className="w-full max-w-[955px]">
                   <div className="mb-6">
                     <h1 className="text-[20px] font-albert mb-2">
-                      <span className="text-[#090909] font-normal">AI suggested Description</span>
+                      <span className="text-[#090909] font-normal">
+                        AI suggested Description
+                      </span>
                       <span className="text-[#090909] font-bold">- </span>
                       <span className="text-[#E82121] font-bold">Step 5</span>
                     </h1>
                     <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
-                      Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
+                      Check out the AI-generated, SEO-friendly description to
+                      help your listing get noticed online. Review, edit if
+                      needed, then click "Update Description."
                     </p>
                     <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
                   </div>
@@ -1438,9 +1534,9 @@ export default function EditListing() {
                   className="text-[14px] text-black leading-[140%] max-w-[955px]"
                   style={{ fontFamily: "Albert Sans" }}
                 >
-                  Shoppers want to see it all. The more photos you upload—inside,
-                  outside, and every detail—the more confident buyers feel and the
-                  faster your car sells.
+                  Shoppers want to see it all. The more photos you
+                  upload—inside, outside, and every detail—the more confident
+                  buyers feel and the faster your car sells.
                 </p>
                 <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
               </div>
@@ -1475,9 +1571,13 @@ export default function EditListing() {
                       </button>
 
                       <div className="text-center font-['Albert_Sans'] text-sm leading-[140%]">
-                        <span className="text-[#24272C]">or drag photos here</span>
+                        <span className="text-[#24272C]">
+                          or drag photos here
+                        </span>
                         <br />
-                        <span className="text-[#696665]">(Up to 15 photos)</span>
+                        <span className="text-[#696665]">
+                          (Up to 15 photos)
+                        </span>
                       </div>
                     </div>
 

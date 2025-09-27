@@ -165,7 +165,10 @@ export default function StartVindecoder() {
                     </button>
 
                     <div className="w-full text-center mt-2">
-                      <Link to="/edit-listing" className="text-sm text-[#24272C] underline">
+                      <Link
+                        to="/edit-listing"
+                        className="text-sm text-[#24272C] underline"
+                      >
                         Enter Info Manually
                       </Link>
                     </div>
@@ -182,7 +185,10 @@ export default function StartVindecoder() {
                       VIN: XXXXXXXXXXXXXXXX
                     </div>
                     <div className="mt-3 flex gap-3">
-                      <Link to="/enter-vehicle-details-2" className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white flex items-center justify-center">
+                      <Link
+                        to="/enter-vehicle-details-2"
+                        className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white flex items-center justify-center"
+                      >
                         Create Your Ad
                       </Link>
                     </div>

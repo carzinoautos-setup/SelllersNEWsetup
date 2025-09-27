@@ -207,7 +207,9 @@ export function DashboardSidebar({ className }: SidebarProps) {
                 key={index}
                 className={cn(
                   "flex items-center gap-3 px-4 py-2 rounded-[10px] transition-colors overflow-hidden",
-                  location.pathname === item.path ? "bg-main-color" : "hover:bg-white/5",
+                  location.pathname === item.path
+                    ? "bg-main-color"
+                    : "hover:bg-white/5",
                 )}
               >
                 <item.icon

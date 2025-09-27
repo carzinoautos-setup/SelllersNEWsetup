@@ -41,10 +41,7 @@ const App = () => (
           <Route path="/buy-credits" element={<BuyCredits />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/payments" element={<Payments />} />
-          <Route
-          path="/add-a-listing"
-          element={<AddAListing />}
-        />
+          <Route path="/add-a-listing" element={<AddAListing />} />
           <Route path="/start-vindecoder" element={<StartVindecoder />} />
           <Route
             path="/enter-vehicle-details-2"

@@ -98,7 +98,9 @@ export default function Vindecoder() {
   // Step 3: Price and Description
   const [salePrice, setSalePrice] = useState("");
   const [description, setDescription] = useState("Lorem Ipsum Dolar Sit Amet");
-  const [aiDescription, setAiDescription] = useState("AI suggested description");
+  const [aiDescription, setAiDescription] = useState(
+    "AI suggested description",
+  );
   const [showAiDescription, setShowAiDescription] = useState(true);
 
   // Step 4: Photos
@@ -127,7 +129,14 @@ export default function Vindecoder() {
   const transmissionOptions = ["Manual", "Automatic", "CVT"];
   const drivetrainOptions = ["FWD", "RWD", "AWD", "4WD"];
   const exteriorColorOptions = ["White", "Black", "Silver", "Red", "Blue"];
-  const vehicleLocationStateOptions = ["California", "Washington", "Texas", "Florida", "New York", "Illinois"];
+  const vehicleLocationStateOptions = [
+    "California",
+    "Washington",
+    "Texas",
+    "Florida",
+    "New York",
+    "Illinois",
+  ];
 
   const vehicleCityMap: Record<string, string[]> = {
     California: ["Los Angeles", "San Francisco", "San Diego", "Sacramento"],
@@ -139,7 +148,9 @@ export default function Vindecoder() {
   };
 
   const allCities = Object.values(vehicleCityMap).flat();
-  const vehicleLocationCityOptions = vehicleLocationState ? vehicleCityMap[vehicleLocationState] : allCities;
+  const vehicleLocationCityOptions = vehicleLocationState
+    ? vehicleCityMap[vehicleLocationState]
+    : allCities;
 
   useEffect(() => {
     // reset dependent fields when parent selection changes
@@ -180,7 +191,9 @@ export default function Vindecoder() {
   };
 
   const allZips = Object.values(vehicleZipMap).flat();
-  const vehicleLocationZipOptions = vehicleLocationCity ? (vehicleZipMap[vehicleLocationCity] || []) : allZips.slice(0, 50);
+  const vehicleLocationZipOptions = vehicleLocationCity
+    ? vehicleZipMap[vehicleLocationCity] || []
+    : allZips.slice(0, 50);
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
 
   const toggleFeature = (feature: string) => {
@@ -220,15 +233,31 @@ export default function Vindecoder() {
     if (drivetrain) parts.push(`Drivetrain: ${drivetrain}`);
     if (exteriorColor) parts.push(`Exterior Color: ${exteriorColor}`);
     if (interiorColor) parts.push(`Interior Color: ${interiorColor}`);
-    if (vehicleLocationState) parts.push(`Location State: ${vehicleLocationState}`);
-    if (vehicleLocationCity) parts.push(`Location City: ${vehicleLocationCity}`);
+    if (vehicleLocationState)
+      parts.push(`Location State: ${vehicleLocationState}`);
+    if (vehicleLocationCity)
+      parts.push(`Location City: ${vehicleLocationCity}`);
     if (vehicleLocationZip) parts.push(`Location Zip: ${vehicleLocationZip}`);
     if (salePrice) parts.push(`Price: ${salePrice}`);
-    if (featureEntries.length) parts.push(`Features: ${featureEntries.join('; ')}`);
+    if (featureEntries.length)
+      parts.push(`Features: ${featureEntries.join("; ")}`);
 
-    const combined = parts.join(', ');
+    const combined = parts.join(", ");
     setAiInput(combined);
-  }, [mileage, engine, vehicleTrim, transmission, drivetrain, exteriorColor, interiorColor, vehicleLocationState, vehicleLocationCity, vehicleLocationZip, salePrice, selectedFeatures]);
+  }, [
+    mileage,
+    engine,
+    vehicleTrim,
+    transmission,
+    drivetrain,
+    exteriorColor,
+    interiorColor,
+    vehicleLocationState,
+    vehicleLocationCity,
+    vehicleLocationZip,
+    salePrice,
+    selectedFeatures,
+  ]);
 
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   useEffect(() => {
@@ -1094,64 +1123,77 @@ export default function Vindecoder() {
                 {/* Header Section */}
                 <div className="mb-6">
                   <h1 className="text-[20px] font-albert mb-2">
-                    <span className="text-[#090909] font-normal">AI suggested Description</span>
+                    <span className="text-[#090909] font-normal">
+                      AI suggested Description
+                    </span>
                     <span className="text-[#090909] font-bold">- </span>
                     <span className="text-[#E82121] font-bold">Step 3A</span>
                   </h1>
                   <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
-                    Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
+                    Check out the AI-generated, SEO-friendly description to help
+                    your listing get noticed online. Review, edit if needed,
+                    then click "Update Description."
                   </p>
                   <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
-              </div>
+                </div>
 
-              <div className="flex justify-start my-5">
-                <button
-                  onClick={() => {
-                    // generate AI-friendly description from aiInput and features
-                    const titleParts = [
-                      // prefer year/make/model/trim if available from state; use placeholders if not
-                      // We don't have separate year/make/model state here, this will include what we have
-                    ];
+                <div className="flex justify-start my-5">
+                  <button
+                    onClick={() => {
+                      // generate AI-friendly description from aiInput and features
+                      const titleParts = [
+                        // prefer year/make/model/trim if available from state; use placeholders if not
+                        // We don't have separate year/make/model state here, this will include what we have
+                      ];
 
-                    // Build feature highlights
-                    const featureEntries = Object.entries(selectedFeatures)
-                      .filter(([, val]) => !!val)
-                      .map(([k]) => k.replace(/([A-Z])/g, " $1").replace(/_/g, " "));
+                      // Build feature highlights
+                      const featureEntries = Object.entries(selectedFeatures)
+                        .filter(([, val]) => !!val)
+                        .map(([k]) =>
+                          k.replace(/([A-Z])/g, " $1").replace(/_/g, " "),
+                        );
 
-                    const keywords = [] as string[];
-                    // Attempt to extract year/make/model/trim from header text (not available in state)
+                      const keywords = [] as string[];
+                      // Attempt to extract year/make/model/trim from header text (not available in state)
 
-                    // Build a basic description using available fields
-                    const parts: string[] = [];
-                    if (mileage) parts.push(`Mileage: ${mileage}`);
-                    if (engine) parts.push(`Engine: ${engine}`);
-                    if (vehicleTrim) parts.push(`Trim: ${vehicleTrim}`);
-                    if (transmission) parts.push(`Transmission: ${transmission}`);
-                    if (drivetrain) parts.push(`Drivetrain: ${drivetrain}`);
-                    if (exteriorColor) parts.push(`Exterior Color: ${exteriorColor}`);
-                    if (interiorColor) parts.push(`Interior Color: ${interiorColor}`);
-                    if (vehicleLocationCity) parts.push(`City: ${vehicleLocationCity}`);
-                    if (vehicleLocationState) parts.push(`State: ${vehicleLocationState}`);
-                    if (vehicleLocationZip) parts.push(`Zip: ${vehicleLocationZip}`);
-                    if (salePrice) parts.push(`Price: ${salePrice}`);
-                    if (featureEntries.length) parts.push(`Features: ${featureEntries.join(', ')}`);
+                      // Build a basic description using available fields
+                      const parts: string[] = [];
+                      if (mileage) parts.push(`Mileage: ${mileage}`);
+                      if (engine) parts.push(`Engine: ${engine}`);
+                      if (vehicleTrim) parts.push(`Trim: ${vehicleTrim}`);
+                      if (transmission)
+                        parts.push(`Transmission: ${transmission}`);
+                      if (drivetrain) parts.push(`Drivetrain: ${drivetrain}`);
+                      if (exteriorColor)
+                        parts.push(`Exterior Color: ${exteriorColor}`);
+                      if (interiorColor)
+                        parts.push(`Interior Color: ${interiorColor}`);
+                      if (vehicleLocationCity)
+                        parts.push(`City: ${vehicleLocationCity}`);
+                      if (vehicleLocationState)
+                        parts.push(`State: ${vehicleLocationState}`);
+                      if (vehicleLocationZip)
+                        parts.push(`Zip: ${vehicleLocationZip}`);
+                      if (salePrice) parts.push(`Price: ${salePrice}`);
+                      if (featureEntries.length)
+                        parts.push(`Features: ${featureEntries.join(", ")}`);
 
-                    const combined = parts.join(', ');
+                      const combined = parts.join(", ");
 
-                    // Simple AI-like transformation: produce a persuasive paragraph
-                    const ai = `For sale: ${vehicleTrim || 'Vehicle'} in ${vehicleLocationCity || 'your area'}, ${vehicleLocationState || ''}. This ${vehicleTrim || 'vehicle'} features ${featureEntries.length ? featureEntries.join(', ') : 'excellent features'}, with specs including ${parts.join(', ')}. Search "car for sale" and find this listing for more details.`;
+                      // Simple AI-like transformation: produce a persuasive paragraph
+                      const ai = `For sale: ${vehicleTrim || "Vehicle"} in ${vehicleLocationCity || "your area"}, ${vehicleLocationState || ""}. This ${vehicleTrim || "vehicle"} features ${featureEntries.length ? featureEntries.join(", ") : "excellent features"}, with specs including ${parts.join(", ")}. Search "car for sale" and find this listing for more details.`;
 
-                    setAiDescription(ai);
-                    setShowAiDescription(true);
-                  }}
-                  className="flex items-center justify-center gap-2 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
-                >
-                  Get Ai Description
-                </button>
-              </div>
+                      setAiDescription(ai);
+                      setShowAiDescription(true);
+                    }}
+                    className="flex items-center justify-center gap-2 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                  >
+                    Get Ai Description
+                  </button>
+                </div>
 
-              {/* AI Description Content */}
-              <div className="relative">
+                {/* AI Description Content */}
+                <div className="relative">
                   <div
                     style={{
                       backgroundColor: "#ffffff",
@@ -1177,8 +1219,24 @@ export default function Vindecoder() {
                       AI Get values
                     </label>
 
-                    <p style={{ color: "#050B20", marginTop: 12, fontFamily: "DM Sans", fontSize: 14, lineHeight: "20px" }}>
-                      Write a persuasive SEO-friendly description of this car for sale. Use the keywords: "car for sale", the year, make, model, trim, city, state, and location. Make the description sound natural and appealing for buyers. If feature fields are provided (such as navigation system, leather seats, sunroof, towing package, etc.), highlight them in the description to make the vehicle stand out. Keep the tone professional but engaging, and ensure the description is unique:
+                    <p
+                      style={{
+                        color: "#050B20",
+                        marginTop: 12,
+                        fontFamily: "DM Sans",
+                        fontSize: 14,
+                        lineHeight: "20px",
+                      }}
+                    >
+                      Write a persuasive SEO-friendly description of this car
+                      for sale. Use the keywords: "car for sale", the year,
+                      make, model, trim, city, state, and location. Make the
+                      description sound natural and appealing for buyers. If
+                      feature fields are provided (such as navigation system,
+                      leather seats, sunroof, towing package, etc.), highlight
+                      them in the description to make the vehicle stand out.
+                      Keep the tone professional but engaging, and ensure the
+                      description is unique:
                     </p>
 
                     <textarea
@@ -1293,7 +1351,9 @@ export default function Vindecoder() {
                     <button
                       type="button"
                       onClick={() =>
-                        document.getElementById("upload-input-vindecoder")?.click()
+                        document
+                          .getElementById("upload-input-vindecoder")
+                          ?.click()
                       }
                       className="flex items-center justify-center gap-2.5 w-full h-[50px] px-4 bg-[#E82121] rounded-[14px] text-white font-['Albert_Sans'] font-medium text-base leading-[140%] hover:bg-[#d41d1d] transition-colors"
                     >
@@ -1317,7 +1377,9 @@ export default function Vindecoder() {
 
                     {/* Help Text */}
                     <div className="text-center font-['Albert_Sans'] text-sm leading-[140%]">
-                      <span className="text-[#24272C]">or drag photos here</span>
+                      <span className="text-[#24272C]">
+                        or drag photos here
+                      </span>
                       <br />
                       <span className="text-[#696665]">(Up to 15 photos)</span>
                     </div>
@@ -1342,13 +1404,20 @@ export default function Vindecoder() {
                 onDragEnd={(event: DragEndEvent) => {
                   const { active, over } = event;
                   if (!over || active.id === over.id) return;
-                  const oldIndex = photos.findIndex((p) => p.id === String(active.id));
-                  const newIndex = photos.findIndex((p) => p.id === String(over.id));
+                  const oldIndex = photos.findIndex(
+                    (p) => p.id === String(active.id),
+                  );
+                  const newIndex = photos.findIndex(
+                    (p) => p.id === String(over.id),
+                  );
                   if (oldIndex === -1 || newIndex === -1) return;
                   setPhotos((prev) => arrayMove(prev, oldIndex, newIndex));
                 }}
               >
-                <SortableContext items={photos.map((p) => p.id)} strategy={rectSortingStrategy}>
+                <SortableContext
+                  items={photos.map((p) => p.id)}
+                  strategy={rectSortingStrategy}
+                >
                   <div className="flex flex-wrap gap-4">
                     {photos.map((photo, index) => (
                       <SortableThumbnail

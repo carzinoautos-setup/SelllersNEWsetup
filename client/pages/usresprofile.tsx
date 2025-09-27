@@ -4,7 +4,10 @@ import { Select } from "../components/ui/select";
 
 function FieldLabel({ children }: { children: React.ReactNode }) {
   return (
-    <label className="text-[14px] font-medium text-[#24272C] mb-2" style={{ fontFamily: "Albert Sans" }}>
+    <label
+      className="text-[14px] font-medium text-[#24272C] mb-2"
+      style={{ fontFamily: "Albert Sans" }}
+    >
       {children}
     </label>
   );
@@ -221,7 +224,10 @@ export function UsersProfileCard() {
   return (
     <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* New Figma Design Section */}
-      <section className="bg-white rounded-lg mb-6 py-8 mx-auto" style={{ border: '0.8px none rgb(178, 178, 178)' }}>
+      <section
+        className="bg-white rounded-lg mb-6 py-8 mx-auto"
+        style={{ border: "0.8px none rgb(178, 178, 178)" }}
+      >
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
           <div className="w-full md:w-[70%] max-w-[725px]">
@@ -231,7 +237,9 @@ export function UsersProfileCard() {
               </h2>
               <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
                 <span className="inline font-['Albert_Sans']">
-                  Select Private Seller or a Dealer. If you’re a dealer and would like to use your feed for automatic vehicle listings, please contact us for details.
+                  Select Private Seller or a Dealer. If you’re a dealer and
+                  would like to use your feed for automatic vehicle listings,
+                  please contact us for details.
                 </span>
               </p>
             </div>
@@ -247,9 +255,19 @@ export function UsersProfileCard() {
                   aria-haspopup="listbox"
                   aria-expanded={sellerTypeOpen}
                 >
-                  <div className="leading-none text-[15px] text-[#050B20]">{sellerType || 'Private Seller'}</div>
-                  <svg className="w-4 h-4 text-[#CF0D0D]" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D" />
+                  <div className="leading-none text-[15px] text-[#050B20]">
+                    {sellerType || "Private Seller"}
+                  </div>
+                  <svg
+                    className="w-4 h-4 text-[#CF0D0D]"
+                    viewBox="0 0 10 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                      fill="#CF0D0D"
+                    />
                   </svg>
                 </button>
 
@@ -257,7 +275,12 @@ export function UsersProfileCard() {
                   <ul
                     role="listbox"
                     className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
-                    style={{ left: 0, right: 0, top: "calc(100% + 8px)", boxSizing: "border-box" }}
+                    style={{
+                      left: 0,
+                      right: 0,
+                      top: "calc(100% + 8px)",
+                      boxSizing: "border-box",
+                    }}
                   >
                     <li
                       role="option"
@@ -419,18 +442,51 @@ export function UsersProfileCard() {
                   aria-haspopup="listbox"
                   aria-expanded={listPhoneFormOpen}
                 >
-                  <span className="truncate flex-1 text-left">{listPhone ? "Yes" : "No"}</span>
-                  <svg className="w-4 h-4 ml-2 text-[#CF0D0D]" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D" />
+                  <span className="truncate flex-1 text-left">
+                    {listPhone ? "Yes" : "No"}
+                  </span>
+                  <svg
+                    className="w-4 h-4 ml-2 text-[#CF0D0D]"
+                    viewBox="0 0 10 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                      fill="#CF0D0D"
+                    />
                   </svg>
                 </button>
 
                 {listPhoneFormOpen && (
-                  <ul role="listbox" className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50" style={{ left: 0, right: 0, top: "calc(100% + 8px)", boxSizing: "border-box" }}>
-                    <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(true); setListPhoneFormOpen(false); }}>
+                  <ul
+                    role="listbox"
+                    className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                    style={{
+                      left: 0,
+                      right: 0,
+                      top: "calc(100% + 8px)",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    <li
+                      role="option"
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => {
+                        setListPhone(true);
+                        setListPhoneFormOpen(false);
+                      }}
+                    >
                       Yes
                     </li>
-                    <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setListPhone(false); setListPhoneFormOpen(false); }}>
+                    <li
+                      role="option"
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => {
+                        setListPhone(false);
+                        setListPhoneFormOpen(false);
+                      }}
+                    >
                       No
                     </li>
                   </ul>
@@ -444,18 +500,38 @@ export function UsersProfileCard() {
             <div className="md:col-span-3 w-full">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
                 <div className="md:col-span-2">
-                  <FieldLabel>Enter your address and then select from the choices.</FieldLabel>
-                  <input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Enter address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                  <FieldLabel>
+                    Enter your address and then select from the choices.
+                  </FieldLabel>
+                  <input
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    placeholder="Enter address"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
                 </div>
 
                 <div>
                   <FieldLabel>Longitude:</FieldLabel>
-                  <input value={longitude} onChange={(e) => setLongitude(e.target.value)} placeholder="Longitude" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                  <input
+                    value={longitude}
+                    onChange={(e) => setLongitude(e.target.value)}
+                    placeholder="Longitude"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
                 </div>
 
                 <div>
                   <FieldLabel>Latitude</FieldLabel>
-                  <input value={latitude} onChange={(e) => setLatitude(e.target.value)} placeholder="Latitude" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                  <input
+                    value={latitude}
+                    onChange={(e) => setLatitude(e.target.value)}
+                    placeholder="Latitude"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
                 </div>
               </div>
             </div>
@@ -464,23 +540,73 @@ export function UsersProfileCard() {
       </section>
 
       {sellerType === "Dealer" && (
-        <section className="bg-white rounded-lg p-8 mt-5" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
-          <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Dealership Information</h3>
+        <section
+          className="bg-white rounded-lg p-8 mt-5"
+          style={{ border: "0.8px solid rgba(171,171,171,1)" }}
+        >
+          <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+            Dealership Information
+          </h3>
 
           <div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
               <div>
                 <FieldLabel>Do you sell new or used vehicles?</FieldLabel>
                 <div className="relative w-full" ref={vehicleTypeRef}>
-                  <button type="button" onClick={() => setVehicleTypeOpen((v) => !v)} className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]" aria-haspopup="listbox" aria-expanded={vehicleTypeOpen}>
-                    <span className="truncate flex-1 text-left">{vehicleType || 'New/Used'}</span>
-                    <svg className="w-4 h-4 ml-2 text-[#CF0D0D]" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z" fill="#CF0D0D"/></svg>
+                  <button
+                    type="button"
+                    onClick={() => setVehicleTypeOpen((v) => !v)}
+                    className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]"
+                    aria-haspopup="listbox"
+                    aria-expanded={vehicleTypeOpen}
+                  >
+                    <span className="truncate flex-1 text-left">
+                      {vehicleType || "New/Used"}
+                    </span>
+                    <svg
+                      className="w-4 h-4 ml-2 text-[#CF0D0D]"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                        fill="#CF0D0D"
+                      />
+                    </svg>
                   </button>
 
                   {vehicleTypeOpen && (
-                    <ul role="listbox" className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50" style={{ left: 0, right: 0, top: "calc(100% + 8px)", boxSizing: "border-box" }}>
-                      <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType("New/Used"); setVehicleTypeOpen(false); }}>New/Used</li>
-                      <li role="option" className="px-4 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => { setVehicleType("Used"); setVehicleTypeOpen(false); }}>Used</li>
+                    <ul
+                      role="listbox"
+                      className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                      style={{
+                        left: 0,
+                        right: 0,
+                        top: "calc(100% + 8px)",
+                        boxSizing: "border-box",
+                      }}
+                    >
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setVehicleType("New/Used");
+                          setVehicleTypeOpen(false);
+                        }}
+                      >
+                        New/Used
+                      </li>
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setVehicleType("Used");
+                          setVehicleTypeOpen(false);
+                        }}
+                      >
+                        Used
+                      </li>
                     </ul>
                   )}
                 </div>
@@ -488,103 +614,206 @@ export function UsersProfileCard() {
 
               <div>
                 <FieldLabel>Email lead alerts user 1</FieldLabel>
-                <input value={emailAlert1} onChange={(e) => setEmailAlert1(e.target.value)} placeholder="Enter an additional alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={emailAlert1}
+                  onChange={(e) => setEmailAlert1(e.target.value)}
+                  placeholder="Enter an additional alert email address"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>Dealerships CRM provider</FieldLabel>
-                <input value={crmProvider} onChange={(e) => setCrmProvider(e.target.value)} placeholder="Enter your Crm provider" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={crmProvider}
+                  onChange={(e) => setCrmProvider(e.target.value)}
+                  placeholder="Enter your Crm provider"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>Dealership website</FieldLabel>
-                <input value={dealershipWebsite} onChange={(e) => setDealershipWebsite(e.target.value)} className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={dealershipWebsite}
+                  onChange={(e) => setDealershipWebsite(e.target.value)}
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>Email lead alerts user 2</FieldLabel>
-                <input value={emailAlert2} onChange={(e) => setEmailAlert2(e.target.value)} placeholder="Enter an additional alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={emailAlert2}
+                  onChange={(e) => setEmailAlert2(e.target.value)}
+                  placeholder="Enter an additional alert email address"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>CRM Account #</FieldLabel>
-                <input value={crmAccount} onChange={(e) => setCrmAccount(e.target.value)} placeholder="Enter your Crm account #" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={crmAccount}
+                  onChange={(e) => setCrmAccount(e.target.value)}
+                  placeholder="Enter your Crm account #"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>XML or CSV vehicle Feed url</FieldLabel>
-                <input value={websiteProvider} onChange={(e) => setWebsiteProvider(e.target.value)} placeholder="Enter your inventory provider" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={websiteProvider}
+                  onChange={(e) => setWebsiteProvider(e.target.value)}
+                  placeholder="Enter your inventory provider"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>Email lead alerts user 3</FieldLabel>
-                <input value={emailAlert3} onChange={(e) => setEmailAlert3(e.target.value)} placeholder="Enter an additional alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={emailAlert3}
+                  onChange={(e) => setEmailAlert3(e.target.value)}
+                  placeholder="Enter an additional alert email address"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>Dealerships CRM email</FieldLabel>
-                <input value={crmEmail} onChange={(e) => setCrmEmail(e.target.value)} placeholder="Enter your Crm alert email address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={crmEmail}
+                  onChange={(e) => setCrmEmail(e.target.value)}
+                  placeholder="Enter your Crm alert email address"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
 
               <div>
                 <FieldLabel>Website provider information</FieldLabel>
-                <input value={websiteProvider} onChange={(e) => setWebsiteProvider(e.target.value)} placeholder="Enter your inventory provider" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+                <input
+                  value={websiteProvider}
+                  onChange={(e) => setWebsiteProvider(e.target.value)}
+                  placeholder="Enter your inventory provider"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
               </div>
-
             </div>
           </div>
         </section>
       )}
 
-      <section className="bg-white rounded-lg p-8 mt-5" style={{ border: "0.8px solid rgba(171,171,171,1)" }}>
-        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">Billing Information</h3>
+      <section
+        className="bg-white rounded-lg p-8 mt-5"
+        style={{ border: "0.8px solid rgba(171,171,171,1)" }}
+      >
+        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+          Billing Information
+        </h3>
 
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <div>
               <FieldLabel>Billing contact</FieldLabel>
-              <input value={billingContact} onChange={(e) => setBillingContact(e.target.value)} placeholder="Enter your full name" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingContact}
+                onChange={(e) => setBillingContact(e.target.value)}
+                placeholder="Enter your full name"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>Street address</FieldLabel>
-              <input value={billingStreetAddress} onChange={(e) => setBillingStreetAddress(e.target.value)} placeholder="Enter your street address" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingStreetAddress}
+                onChange={(e) => setBillingStreetAddress(e.target.value)}
+                placeholder="Enter your street address"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>City</FieldLabel>
-              <input value={billingCity} onChange={(e) => setBillingCity(e.target.value)} placeholder="Enter your city" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingCity}
+                onChange={(e) => setBillingCity(e.target.value)}
+                placeholder="Enter your city"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>State</FieldLabel>
-              <input value={billingState} onChange={(e) => setBillingState(e.target.value)} placeholder="Enter your state" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingState}
+                onChange={(e) => setBillingState(e.target.value)}
+                placeholder="Enter your state"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>Zip code</FieldLabel>
-              <input value={billingZip} onChange={(e) => setBillingZip(e.target.value)} placeholder="Enter your zip code" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingZip}
+                onChange={(e) => setBillingZip(e.target.value)}
+                placeholder="Enter your zip code"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>Country</FieldLabel>
-              <input value={billingCountry} onChange={(e) => setBillingCountry(e.target.value)} placeholder="USA" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingCountry}
+                onChange={(e) => setBillingCountry(e.target.value)}
+                placeholder="USA"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>Billing email address</FieldLabel>
-              <input value={billingEmail} onChange={(e) => setBillingEmail(e.target.value)} placeholder="Billing email" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingEmail}
+                onChange={(e) => setBillingEmail(e.target.value)}
+                placeholder="Billing email"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
 
             <div>
               <FieldLabel>Billing phone</FieldLabel>
-              <input value={billingPhone} onChange={(e) => setBillingPhone(e.target.value)} placeholder="" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]" style={{ fontFamily: "Albert Sans" }} />
+              <input
+                value={billingPhone}
+                onChange={(e) => setBillingPhone(e.target.value)}
+                placeholder=""
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
             </div>
-
           </div>
         </div>
       </section>
-
     </div>
   );
 }

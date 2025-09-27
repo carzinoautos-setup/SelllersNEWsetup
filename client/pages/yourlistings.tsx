@@ -381,7 +381,10 @@ export default function YourListingsPage() {
                       </button>
 
                       {/* Edit Button */}
-                      <Link to="/enter-vehicle-details-2" className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white flex items-center justify-center hover:bg-gray-50 transition-colors">
+                      <Link
+                        to="/enter-vehicle-details-2"
+                        className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white flex items-center justify-center hover:bg-gray-50 transition-colors"
+                      >
                         <svg
                           className="w-[18px] h-[18px]"
                           viewBox="0 0 19 18"

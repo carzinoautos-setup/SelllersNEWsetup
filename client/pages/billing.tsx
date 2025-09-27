@@ -59,14 +59,13 @@ export default function BillingPage() {
   const removeMethod = (id: string) =>
     setMethods((m) => m.filter((x) => x.id !== id));
 
-
   const handleStripePay = () => {
     // This is a placeholder for integrating Stripe Elements or redirect to Checkout.
     // For now it simulates a successful payment.
     window.alert("Payment processed (simulation)");
   };
 
-    return (
+  return (
     <DashboardLayout>
       <div className="flex-1 overflow-visible">
         <div className="pt-8 px-4 sm:px-6 lg:px-8 w-full max-w-[1200px] mx-auto">
@@ -683,7 +682,6 @@ export default function BillingPage() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </DashboardLayout>
