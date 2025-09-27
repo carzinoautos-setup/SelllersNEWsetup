@@ -311,20 +311,20 @@ export default function YourListingsPage() {
                         {/* Condition & Type Row */}
                         <div className="flex items-center gap-2.5">
                           <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            Condition: New
+                            <b>Condition</b>: New
                           </span>
                           <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            Type: Sedan
+                            <b>Type</b>: Sedan
                           </span>
                         </div>
 
                         {/* Miles & Listed Row */}
                         <div className="flex items-center gap-2.5">
                           <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            Miles: 109,658
+                            <b>Miles</b>: 109,658
                           </span>
                           <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            Listed: 12-12-25
+                            <b>Listed:</b> 12-12-25
                           </span>
                         </div>
 
@@ -332,18 +332,15 @@ export default function YourListingsPage() {
                           <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
                             <b>Days left:</b> 5
                           </div>
-                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <strong>
-                              <div className="font-bold"><span style={{ color: 'rgb(208, 2, 27)' }}>Change status: Inactive</span></div>
-                            </strong>
-                          </div>
                         </div>
 
-                        {/* Seller Account Row */}
-                        <div className="flex items-center gap-2.5">
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            Seller account #  here
-                          </span>
+                        <div className="flex items-center gap-2.5 justify-center">
+                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
+                            <b>Status</b>: Active
+                          </div>
+                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
+                            <b>Change Status</b>:
+                          </div>
                         </div>
                       </div>
                     </div>
