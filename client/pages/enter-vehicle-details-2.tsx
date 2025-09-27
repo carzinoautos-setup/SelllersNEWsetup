@@ -498,6 +498,22 @@ export default function EnterVehicleDetails2() {
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
+
+                <div className="flex flex-col gap-2">
+                  <label
+                    className="text-[14px] font-medium text-[#24272C]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    State
+                  </label>
+                  <Select
+                    options={stateOptions}
+                    value={state}
+                    onChange={(v) => setState(v)}
+                    placeholder="Select State"
+                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
+                  />
+                </div>
               </div>
             </div>
           </div>
