@@ -43,27 +43,27 @@ export default function ChangeStatus() {
           {/* Heading */}
           <div className="text-center mb-6">
             <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4 font-albert">
-              Delete Listing
+              Update Status
             </h1>
             <p className="text-lg sm:text-xl text-black font-light font-albert">
-              Do you really want to delete your listing?
+              Turn your add on or off
             </p>
           </div>
 
           {/* Action Buttons */}
           <div className="flex gap-6 mb-8 px-4">
             <button className="flex-1 h-14 bg-gray-600 hover:bg-gray-700 text-white rounded-xl font-medium transition-colors">
-              Cancel
+              Make Active
             </button>
             <button className="flex-1 h-14 bg-red-700 hover:bg-red-800 text-white rounded-xl font-medium transition-colors">
-              Delete
+              Disable Ad
             </button>
           </div>
 
-          {/* Warning Text */}
+          {/* Helper Text */}
           <div className="text-center">
             <p className="text-sm text-black font-albert">
-              Listings cannot be restored.
+              To delete you ad go your listings page
             </p>
           </div>
         </div>
