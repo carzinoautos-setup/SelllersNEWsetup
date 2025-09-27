@@ -84,7 +84,7 @@ export function MobileBottomNav() {
     },
     {
       path: "/messages-2",
-      label: "Messages Duplicate",
+      label: (<p className="m-0">Add A Car</p>),
       href: "https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev/messages-2",
       iconSrc: "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Faf713629968c45918964b6c0be2cd6da?format=webp&width=800",
       icon: (
@@ -131,7 +131,8 @@ export function MobileBottomNav() {
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 mobile-bottom-nav-inner">
+        <style>{`@media (max-width: 640px) { .mobile-bottom-nav-inner { background-color: rgba(253, 253, 253, 1); } }`}</style>
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
