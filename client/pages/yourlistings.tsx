@@ -276,19 +276,19 @@ export default function YourListingsPage() {
                   <div className="flex flex-col items-start self-stretch">
                     {/* Title */}
                     <div className="flex flex-col items-start gap-0.5 self-stretch">
-                      <div className="text-[#24272C] font-outfit text-[18px] font-medium leading-normal">
+                      <div className="text-[#24272C] font-outfit text-[16px] font-medium leading-normal">
                         2017 BMW 7 Series xDrive 20d xline
                       </div>
 
                       {/* Description Rows */}
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Year: 2000
                           </div>
                         </div>
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Make: BMW
                           </div>
                         </div>
@@ -296,12 +296,12 @@ export default function YourListingsPage() {
 
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Model: 7 Series
                           </div>
                         </div>
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Type: Sedan
                           </div>
                         </div>
@@ -309,12 +309,12 @@ export default function YourListingsPage() {
 
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Condition: New
                           </div>
                         </div>
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Miles: 109,996
                           </div>
                         </div>
@@ -322,12 +322,12 @@ export default function YourListingsPage() {
 
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Days Left: 5
                           </div>
                         </div>
                         <div className="flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Post Date: 12-12-25
                           </div>
                         </div>
@@ -335,12 +335,12 @@ export default function YourListingsPage() {
 
                       <div className="grid h-5 gap-2.5 self-stretch grid-cols-3">
                         <div className="inline-flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Status: Active
                           </div>
                         </div>
                         <div className="inline-flex items-center gap-1">
-                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Stock#:K5555P
                           </div>
                         </div>
@@ -351,7 +351,7 @@ export default function YourListingsPage() {
                     <div className="flex flex-col items-start gap-2 self-stretch">
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
-                          <div className="text-[#E82121] font-albert text-[18px] font-medium leading-normal">
+                          <div className="text-[#E82121] font-albert text-[16px] font-medium leading-normal">
                             $73,000
                           </div>
                         </div>
@@ -431,7 +431,7 @@ export default function YourListingsPage() {
 
                     {/* Change Status Button */}
                     <div className="flex w-[153px] h-[38px] p-2 px-2.5 justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]">
-                      <div className="text-black font-albert text-[14px] font-medium leading-normal">
+                      <div className="text-black font-albert text-[12px] font-medium leading-normal">
                         Change Status
                       </div>
                     </div>
@@ -440,7 +440,7 @@ export default function YourListingsPage() {
                   {/* Featured Button */}
                   <div className="flex justify-between items-start self-stretch">
                     <div className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px] border border-[#E82121]">
-                      <div className="text-black font-albert text-[14px] font-medium leading-normal">
+                      <div className="text-black font-albert text-[12px] font-medium leading-normal">
                         Featured
                       </div>
                     </div>
