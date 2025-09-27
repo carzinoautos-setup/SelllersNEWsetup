@@ -17,7 +17,7 @@ export default function RemoveListingConfirmed() {
           <h1 className="text-[34px] font-normal text-black leading-[41px] tracking-[0.4px] mb-0 font-sf-pro">
             Car Deleted
           </h1>
-          <p className="text-[20px] font-light text-black font-albert ml-1">
+          <p className="text-[20px] font-light text-black font-albert ml-[3px]">
             Success!
           </p>
         </div>
