@@ -25,6 +25,7 @@ import Elements from "./pages/elements";
 import Vindecoder from "./pages/vindecoder";
 import StartVindecoder from "./pages/start-vindecoder";
 import SuccessUploaded from "./pages/success-uploaded";
+import RemoveListing from "./pages/remove-listing";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           />
           <Route path="/edit-listing" element={<EditListing />} />
           <Route path="/success-uploaded" element={<SuccessUploaded />} />
+          <Route path="/remove-listing" element={<RemoveListing />} />
           <Route path="/production" element={<Production />} />
           <Route path="/elements" element={<Elements />} />
           <Route path="/vindecoder" element={<Vindecoder />} />
