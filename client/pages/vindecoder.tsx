@@ -1214,7 +1214,7 @@ export default function Vindecoder() {
                       AI Get values
                     </label>
 
-                    <p
+                    <div
                       style={{
                         color: "#050B20",
                         marginTop: 12,
@@ -1223,10 +1223,10 @@ export default function Vindecoder() {
                         lineHeight: "20px",
                       }}
                     >
-                      <span>
-                        Write a persuasive SEO-friendly description of this car for sale. Use the keywords: "car for sale", the year, make, model, and trim, plus city, state, and location. Make the description sound natural and appealing for buyers. Make sure to use year, make, and model as keywords. If feature fields are provided (such as navigation system, leather seats, sunroof, towing package, etc.), highlight them in the description to make the vehicle stand out. Use most of the provided values and produce a description of approximately 1200 to 1900 characters. Keep the tone professional but engaging, and ensure the description is unique.
-                      </span>
-                    </p>
+                      <p>
+                        Write a persuasive SEO-friendly description of this car for sale. Use the keywords: "car for sale", the year, make, model, and trim, plus city, state, and location. Make the description sound natural and appealing for buyers. Make sure to use year, make, and model as keywords. If feature fields are provided (such as navigation system, leather seats, sunroof, towing package, etc.), highlight them in the description to make the vehicle stand out. Use most of the provided values and produce a description of at least 2200 characters. Keep the tone professional but engaging, and ensure the description is unique.
+                      </p>
+                    </div>
 
                     {
                       /* Prefix the textarea with the provided vehicle headline but keep aiInput as the editable body */
