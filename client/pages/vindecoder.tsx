@@ -1102,10 +1102,56 @@ export default function Vindecoder() {
                     Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
                   </p>
                   <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
-                </div>
+              </div>
 
-                {/* AI Description Content */}
-                <div className="relative">
+              <div className="flex justify-start my-5">
+                <button
+                  onClick={() => {
+                    // generate AI-friendly description from aiInput and features
+                    const titleParts = [
+                      // prefer year/make/model/trim if available from state; use placeholders if not
+                      // We don't have separate year/make/model state here, this will include what we have
+                    ];
+
+                    // Build feature highlights
+                    const featureEntries = Object.entries(selectedFeatures)
+                      .filter(([, val]) => !!val)
+                      .map(([k]) => k.replace(/([A-Z])/g, " $1").replace(/_/g, " "));
+
+                    const keywords = [] as string[];
+                    // Attempt to extract year/make/model/trim from header text (not available in state)
+
+                    // Build a basic description using available fields
+                    const parts: string[] = [];
+                    if (mileage) parts.push(`Mileage: ${mileage}`);
+                    if (engine) parts.push(`Engine: ${engine}`);
+                    if (vehicleTrim) parts.push(`Trim: ${vehicleTrim}`);
+                    if (transmission) parts.push(`Transmission: ${transmission}`);
+                    if (drivetrain) parts.push(`Drivetrain: ${drivetrain}`);
+                    if (exteriorColor) parts.push(`Exterior Color: ${exteriorColor}`);
+                    if (interiorColor) parts.push(`Interior Color: ${interiorColor}`);
+                    if (vehicleLocationCity) parts.push(`City: ${vehicleLocationCity}`);
+                    if (vehicleLocationState) parts.push(`State: ${vehicleLocationState}`);
+                    if (vehicleLocationZip) parts.push(`Zip: ${vehicleLocationZip}`);
+                    if (salePrice) parts.push(`Price: ${salePrice}`);
+                    if (featureEntries.length) parts.push(`Features: ${featureEntries.join(', ')}`);
+
+                    const combined = parts.join(', ');
+
+                    // Simple AI-like transformation: produce a persuasive paragraph
+                    const ai = `For sale: ${vehicleTrim || 'Vehicle'} in ${vehicleLocationCity || 'your area'}, ${vehicleLocationState || ''}. This ${vehicleTrim || 'vehicle'} features ${featureEntries.length ? featureEntries.join(', ') : 'excellent features'}, with specs including ${parts.join(', ')}. Search "car for sale" and find this listing for more details.`;
+
+                    setAiDescription(ai);
+                    setShowAiDescription(true);
+                  }}
+                  className="flex items-center justify-center gap-2 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
+                >
+                  Get Ai Description
+                </button>
+              </div>
+
+              {/* AI Description Content */}
+              <div className="relative">
                   <div
                     style={{
                       backgroundColor: "#ffffff",
