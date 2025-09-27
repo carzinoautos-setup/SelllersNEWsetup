@@ -23,7 +23,7 @@ export default function ApplyCredits() {
         </button>
 
         {/* Content */}
-        <div className="px-6 pt-[54px] pb-[15px]">
+        <div className="px-6" style={{ marginBottom: '-4px', padding: '44px 24px 21px' }} >
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img
