@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 export function MobileBottomNav() {
   const location = useLocation();
   const [mounted, setMounted] = React.useState(false);
+  const navRef = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
     setMounted(true);
@@ -13,22 +14,36 @@ export function MobileBottomNav() {
   // Ensure the mobile nav reserves space at the bottom so content isn't hidden
   React.useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined") return;
-    const NAV_HEIGHT_PX = 72; // approximate height of the nav bar
+
+    let navHeight = 72; // fallback
+    function updateNavHeight() {
+      try {
+        const el = navRef.current;
+        if (el) navHeight = Math.max(56, el.offsetHeight);
+      } catch (e) {
+        navHeight = 72;
+      }
+    }
+
     const mq = window.matchMedia("(max-width: 1023px)");
     function applyPadding() {
+      updateNavHeight();
       if (mq.matches) {
         // include safe area inset
-        document.body.style.paddingBottom = `calc(${NAV_HEIGHT_PX}px + env(safe-area-inset-bottom, 8px))`;
+        document.body.style.paddingBottom = `calc(${navHeight}px + env(safe-area-inset-bottom, 8px))`;
       } else {
         document.body.style.paddingBottom = "";
       }
     }
+
     applyPadding();
     try {
       mq.addEventListener("change", applyPadding);
+      window.addEventListener('resize', applyPadding);
     } catch (e) {
       // fallback for older browsers
       mq.addListener(applyPadding as any);
+      window.addEventListener('resize', applyPadding);
     }
     return () => {
       try {
@@ -36,6 +51,9 @@ export function MobileBottomNav() {
       } catch (e) {
         mq.removeListener(applyPadding as any);
       }
+      try {
+        window.removeEventListener('resize', applyPadding);
+      } catch (e) {}
       document.body.style.paddingBottom = "";
     };
   }, []);
