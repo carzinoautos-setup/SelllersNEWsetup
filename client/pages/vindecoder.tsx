@@ -98,9 +98,7 @@ export default function Vindecoder() {
   // Step 3: Price and Description
   const [salePrice, setSalePrice] = useState("");
   const [description, setDescription] = useState("Lorem Ipsum Dolar Sit Amet");
-  const [aiDescription, setAiDescription] = useState(
-    "AI suggested description",
-  );
+  const [aiDescription, setAiDescription] = useState("");
   const [showAiDescription, setShowAiDescription] = useState(true);
 
   // Step 4: Photos
