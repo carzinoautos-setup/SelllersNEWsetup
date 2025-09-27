@@ -74,6 +74,24 @@ export default function FeatureMycar() {
               </Link>
             </div>
           </div>
+
+          {/* Action Buttons from Figma Design */}
+          <div className="flex flex-col items-center gap-6 mb-8 px-4">
+            {/* Two Buttons Side by Side */}
+            <div className="flex items-center gap-6 w-full max-w-sm">
+              <button className="flex-1 h-14 bg-gray-800 hover:bg-gray-900 text-white rounded-xl font-medium transition-colors flex items-center justify-center">
+                <span className="text-xl font-normal">Buy Credits</span>
+              </button>
+              <button className="flex-1 h-14 bg-red-600 hover:bg-red-700 text-white rounded-xl font-medium transition-colors flex items-center justify-center">
+                <span className="text-xl font-normal">Use 1 Credit</span>
+              </button>
+            </div>
+
+            {/* Learn More Text */}
+            <div className="text-center">
+              <span className="text-xl font-light text-black">Learn more</span>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Bottom Navigation */}
