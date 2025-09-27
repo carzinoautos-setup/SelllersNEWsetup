@@ -259,10 +259,7 @@ export default function YourListingsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {/* Sample Car Listings - Replace with actual data */}
             {Array.from({ length: 8 }).map((_, index) => (
-              <div
-                key={index}
-                className="flex flex-col"
-              >
+              <div key={index} className="flex flex-col">
                 {/* Image */}
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/6975da1c4e84f2b56c87e6eeef4d7045c7b852fd?width=695"
@@ -352,7 +349,8 @@ export default function YourListingsPage() {
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
                           <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
-                            <div className="inline font-bold">Price:</div>&nbsp;$74,000
+                            <div className="inline font-bold">Price:</div>
+                            &nbsp;$74,000
                           </div>
                         </div>
                       </div>
@@ -367,7 +365,10 @@ export default function YourListingsPage() {
                     {/* Action Buttons */}
                     <div className="flex w-[104px] items-center gap-1.5 mr-5">
                       <div className="flex w-12 items-start gap-2.5 h-10">
-                        <Link to="/remove-listing" className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer">
+                        <Link
+                          to="/remove-listing"
+                          className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer"
+                        >
                           <svg
                             className="w-[18px] h-[18px] absolute left-[11px] top-[11px]"
                             viewBox="0 0 18 18"
@@ -430,7 +431,10 @@ export default function YourListingsPage() {
                     </div>
 
                     {/* Change Status Button */}
-                    <Link to="/change-status" className="flex w-[153px] h-[38px] p-2 px-[5px] justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]">
+                    <Link
+                      to="/change-status"
+                      className="flex w-[153px] h-[38px] p-2 px-[5px] justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]"
+                    >
                       <div className="text-black font-albert text-[12px] font-medium leading-normal">
                         Change Status
                       </div>
@@ -439,7 +443,11 @@ export default function YourListingsPage() {
 
                   {/* Featured Button */}
                   <div className="flex justify-center items-center self-stretch">
-                    <Link to="/feature-mycar" className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px]" style={{ border: "0.8px solid rgba(74, 74, 74, 1)" }}>
+                    <Link
+                      to="/feature-mycar"
+                      className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px]"
+                      style={{ border: "0.8px solid rgba(74, 74, 74, 1)" }}
+                    >
                       <div className="text-black font-albert text-[12px] font-medium leading-normal">
                         Feature this
                       </div>

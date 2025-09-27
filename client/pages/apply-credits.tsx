@@ -23,7 +23,10 @@ export default function ApplyCredits() {
         </button>
 
         {/* Content */}
-        <div className="px-6" style={{ marginBottom: '-4px', padding: '44px 24px 21px' }} >
+        <div
+          className="px-6"
+          style={{ marginBottom: "-4px", padding: "44px 24px 21px" }}
+        >
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img
@@ -69,10 +72,16 @@ export default function ApplyCredits() {
               Sell your car faster
             </p>
             <div className="flex justify-center gap-4 mt-4">
-              <Link to="/buy-credits" className="px-6 py-2 rounded-[14px] bg-[#DC2626] text-white font-medium">
+              <Link
+                to="/buy-credits"
+                className="px-6 py-2 rounded-[14px] bg-[#DC2626] text-white font-medium"
+              >
                 Use 1 Credit
               </Link>
-              <Link to="/yourlistings" className="px-6 py-2 rounded-[14px] border border-gray-300 text-gray-800">
+              <Link
+                to="/yourlistings"
+                className="px-6 py-2 rounded-[14px] border border-gray-300 text-gray-800"
+              >
                 Learn More
               </Link>
             </div>
@@ -80,12 +89,18 @@ export default function ApplyCredits() {
           </div>
           <div
             className="text-center"
-            style={{ color: "rgb(0,0,0)", fontSize: "18px", fontWeight: 300, lineHeight: "28px", textAlign: "center", marginBottom: "20px" }}
+            style={{
+              color: "rgb(0,0,0)",
+              fontSize: "18px",
+              fontWeight: 300,
+              lineHeight: "28px",
+              textAlign: "center",
+              marginBottom: "20px",
+            }}
           >
             Get more details
           </div>
         </div>
-
       </div>
     </div>
   );
