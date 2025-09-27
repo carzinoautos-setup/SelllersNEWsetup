@@ -11,7 +11,9 @@ router.post("/api/openai", async (req, res) => {
 
     const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
     if (!OPENAI_API_KEY) {
-      return res.status(500).json({ error: "Missing OPENAI_API_KEY on server" });
+      return res
+        .status(500)
+        .json({ error: "Missing OPENAI_API_KEY on server" });
     }
 
     const resp = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -23,7 +25,10 @@ router.post("/api/openai", async (req, res) => {
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
         messages: [
-          { role: "system", content: "You write concise, SEO-friendly vehicle descriptions." },
+          {
+            role: "system",
+            content: "You write concise, SEO-friendly vehicle descriptions.",
+          },
           { role: "user", content: prompt },
         ],
         max_tokens: 300,

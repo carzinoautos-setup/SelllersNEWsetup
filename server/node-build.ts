@@ -29,7 +29,10 @@ try {
     console.log(`🔧 API: http://localhost:${port}/api`);
   });
 } catch (err) {
-  console.error("Server startup error:", err instanceof Error ? err.stack || err.message : err);
+  console.error(
+    "Server startup error:",
+    err instanceof Error ? err.stack || err.message : err,
+  );
   process.exit(1);
 }
 

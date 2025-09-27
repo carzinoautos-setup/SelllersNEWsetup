@@ -62,7 +62,7 @@ const App = () => (
   </QueryClientProvider>
 );
 
-(function() {
+(function () {
   const container = document.getElementById("root");
   if (!container) return;
   const w = window as any;

@@ -1166,11 +1166,12 @@ export default function Vindecoder() {
                         if (!resp.ok) {
                           const errBody = await resp.json().catch(() => null);
                           setAiDescription(
-                            `OpenAI proxy error: ${resp.status} ${resp.statusText}${errBody?.error ? ' - ' + errBody.error : ''}`
+                            `OpenAI proxy error: ${resp.status} ${resp.statusText}${errBody?.error ? " - " + errBody.error : ""}`,
                           );
                         } else {
                           const data = await resp.json();
-                          const text = data?.choices?.[0]?.message?.content?.trim();
+                          const text =
+                            data?.choices?.[0]?.message?.content?.trim();
                           setAiDescription(text || "No text returned.");
                         }
                       } catch (e) {
@@ -1224,13 +1225,22 @@ export default function Vindecoder() {
                       }}
                     >
                       <p>
-                        Write a persuasive SEO-friendly description of this car for sale. Use the keywords: "car for sale", the year, make, model, and trim, plus city, state, and location. Make the description sound natural and appealing for buyers. Make sure to use year, make, and model as keywords. If feature fields are provided (such as navigation system, leather seats, sunroof, towing package, etc.), highlight them in the description to make the vehicle stand out. Use most of the provided values and produce a description of at least 2200 characters. Keep the tone professional but engaging, and ensure the description is unique.
+                        Write a persuasive SEO-friendly description of this car
+                        for sale. Use the keywords: "car for sale", the year,
+                        make, model, and trim, plus city, state, and location.
+                        Make the description sound natural and appealing for
+                        buyers. Make sure to use year, make, and model as
+                        keywords. If feature fields are provided (such as
+                        navigation system, leather seats, sunroof, towing
+                        package, etc.), highlight them in the description to
+                        make the vehicle stand out. Use most of the provided
+                        values and produce a description of at least 2200
+                        characters. Keep the tone professional but engaging, and
+                        ensure the description is unique.
                       </p>
                     </div>
 
-                    {
-                      /* Prefix the textarea with the provided vehicle headline but keep aiInput as the editable body */
-                    }
+                    {/* Prefix the textarea with the provided vehicle headline but keep aiInput as the editable body */}
                     <textarea
                       value={aiValues}
                       onChange={(e) => {

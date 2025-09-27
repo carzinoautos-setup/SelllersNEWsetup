@@ -5,23 +5,25 @@ import express from "express";
 
 // Try to instrument path-to-regexp using dynamic import (works in ESM)
 try {
-  import('path-to-regexp').then((ptre: any) => {
-    if (ptre && typeof ptre.parse === 'function') {
-      const origParse = ptre.parse;
-      ptre.parse = function (...args: any[]) {
-        try {
-          console.log('PTRE parse:', args[0]);
-        } catch (e) {
-          // ignore
-        }
-        return origParse.apply(this, args);
-      };
-    }
-  }).catch((e) => {
-    console.error('Failed dynamic import of path-to-regexp', e);
-  });
+  import("path-to-regexp")
+    .then((ptre: any) => {
+      if (ptre && typeof ptre.parse === "function") {
+        const origParse = ptre.parse;
+        ptre.parse = function (...args: any[]) {
+          try {
+            console.log("PTRE parse:", args[0]);
+          } catch (e) {
+            // ignore
+          }
+          return origParse.apply(this, args);
+        };
+      }
+    })
+    .catch((e) => {
+      console.error("Failed dynamic import of path-to-regexp", e);
+    });
 } catch (err) {
-  console.error('Failed to schedule path-to-regexp instrumentation', err);
+  console.error("Failed to schedule path-to-regexp instrumentation", err);
 }
 
 import cors from "cors";
@@ -37,13 +39,22 @@ try {
         if (typeof path === "string") {
           console.log(`REGISTER ${method.toUpperCase()} ${path}`);
         } else if (path && path.route && path.route.path) {
-          console.log(`REGISTER ${method.toUpperCase()} route object ${path.route.path}`);
+          console.log(
+            `REGISTER ${method.toUpperCase()} route object ${path.route.path}`,
+          );
         } else {
           try {
-            const repr = typeof path === 'function' ? (path.name || path.toString().slice(0,100)) : JSON.stringify(path).slice(0,200);
-            console.log(`REGISTER ${method.toUpperCase()} with non-string first arg: ${repr}`);
+            const repr =
+              typeof path === "function"
+                ? path.name || path.toString().slice(0, 100)
+                : JSON.stringify(path).slice(0, 200);
+            console.log(
+              `REGISTER ${method.toUpperCase()} with non-string first arg: ${repr}`,
+            );
           } catch (errInner) {
-            console.log(`REGISTER ${method.toUpperCase()} with non-string first arg of type ${typeof path}`);
+            console.log(
+              `REGISTER ${method.toUpperCase()} with non-string first arg of type ${typeof path}`,
+            );
           }
         }
       } catch (err) {
