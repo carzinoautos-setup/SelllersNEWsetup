@@ -351,8 +351,8 @@ export default function YourListingsPage() {
                     <div className="flex flex-col items-start gap-2 self-stretch">
                       <div className="flex items-start gap-2.5 self-stretch">
                         <div className="flex items-center gap-1">
-                          <div className="text-[#E82121] font-albert text-[16px] font-medium leading-normal">
-                            $73,000
+                          <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
+                            <div className="inline font-bold">Price:</div>&nbsp;$74,000
                           </div>
                         </div>
                       </div>
