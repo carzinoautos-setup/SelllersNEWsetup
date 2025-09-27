@@ -1153,12 +1153,7 @@ export default function Vindecoder() {
                       }
 
                       try {
-                        const apiKey = (process && (process as any).env && (process as any).env.OPENAI_API_KEY) || import.meta.env.VITE_OPENAI_API_KEY || (window as any).__OPENAI_API_KEY__;
-                        if (!apiKey) {
-                          setAiDescription("Missing OPENAI API key. Set OPENAI_API_KEY in environment.");
-                          setIsGenerating(false);
-                          return;
-                        }
+                        // Call server-side proxy at /api/openai; server will use the OPENAI_API_KEY from environment
 
                         const resp = await fetch("/api/openai", {
                           method: "POST",
