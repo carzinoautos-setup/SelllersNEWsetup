@@ -205,6 +205,9 @@ export default function Vindecoder() {
 
   // AI input combined string (captures all field labels+values on this page)
   const [aiInput, setAiInput] = useState("");
+  // raw AI Get values box content (includes prefixed headline)
+  const [aiValues, setAiValues] = useState("");
+  const [isGenerating, setIsGenerating] = useState(false);
 
   // Helper to convert camelCase keys to Title Case labels
   function prettyLabel(key: string) {
