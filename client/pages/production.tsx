@@ -85,6 +85,17 @@ export default function Production() {
                   <Link to="/remove-listing" className="hover:underline block">
                     /remove-listing
                   </Link>
+                  <div className="flex flex-col relative mt-5">
+                    <Link to="/change-status" className="hover:underline block">
+                      /change-status
+                    </Link>
+                    <Link to="/feature-mycar" className="hover:underline block">
+                      /feature-mycar
+                    </Link>
+                    <Link to="/apply-credits" className="hover:underline block">
+                      /apply-credits
+                    </Link>
+                  </div>
                 </div>
                 <div className="mt-2" />
               </section>
