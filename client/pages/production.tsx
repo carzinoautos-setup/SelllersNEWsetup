@@ -70,6 +70,20 @@ export default function Production() {
                   </Link>
                 </div>
               </section>
+
+              <section className="p-4 border border-[#EDEDED] rounded-lg">
+                <h2 className="text-lg font-medium text-[#24272C]">
+                  POP UP Messages
+                </h2>
+                <Link
+                  to="/success-uploaded"
+                  className="text-sm text-[#1f2937] hover:underline"
+                >
+                  /success-uploaded
+                </Link>
+                <div className="mt-2" />
+              </section>
+
             </div>
           </div>
         </div>
