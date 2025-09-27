@@ -328,6 +328,17 @@ export default function YourListingsPage() {
                           </span>
                         </div>
 
+                        <div className="flex items-center gap-2.5">
+                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
+                            <span>Days remaining 5</span>
+                          </div>
+                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
+                            <strong>
+                              <span>Repost Ad</span>
+                            </strong>
+                          </div>
+                        </div>
+
                         {/* Seller Account Row */}
                         <div className="flex items-center gap-2.5">
                           <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
