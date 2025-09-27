@@ -1,0 +1,189 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function FeatureMycar() {
+  return (
+    <div className="min-h-screen bg-gray-100 flex items-start sm:items-center justify-center pt-[50px] sm:pt-0 px-4">
+      {/* Main Success Modal */}
+      <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden mx-auto md:transform md:scale-[0.7] md:origin-center lg:transform lg:scale-[0.49] lg:origin-center">
+        {/* Close Button */}
+        <button className="absolute top-6 right-6 z-10 w-5 h-5 text-red-600 hover:text-red-700 transition-colors">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12.1293L2.54753 19.5817C2.26869 19.8606 1.91381 20 1.48289 20C1.05196 20 0.697084 19.8606 0.41825 19.5817C0.139416 19.3029 0 18.948 0 18.5171C0 18.0862 0.139416 17.7313 0.41825 17.4525L7.87072 10L0.41825 2.54753C0.139416 2.26869 0 1.91381 0 1.48289C0 1.05196 0.139416 0.697084 0.41825 0.41825C0.697084 0.139416 1.05196 0 1.48289 0C1.91381 0 2.26869 0.139416 2.54753 0.41825L10 7.87072L17.4525 0.41825C17.7313 0.139416 18.0862 0 18.5171 0C18.948 0 19.3029 0.139416 19.5817 0.41825C19.8606 0.697084 20 1.05196 20 1.48289C20 1.91381 19.8606 2.26869 19.5817 2.54753L12.1293 10L19.5817 17.4525C19.8606 17.7313 20 18.0862 20 18.5171C20 18.948 19.8606 19.3029 19.5817 19.5817C19.3029 19.8606 18.948 20 18.5171 20C18.0862 20 17.7313 19.8606 17.4525 19.5817L10 12.1293Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+
+        {/* Content */}
+        <div className="px-6 pt-10 sm:pt-16 pb-[3px] sm:pb-6">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/55e4dfc2f25ba21e21807ca5ba7e2a4afce2fedc?width=427"
+              alt="Carzino Logo"
+              className="h-4 sm:h-5"
+            />
+          </div>
+
+          {/* Three Cars Image */}
+          <div className="flex justify-center mb-12">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/14a45ec3e91d0c86ded24525071cc664845168e9?width=764"
+              alt="Three Cars"
+              className="w-full max-w-sm"
+            />
+          </div>
+
+          {/* Success Icon */}
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35.0007 11.6664L15.0007 31.6664L5.83398 22.4997L8.18398 20.1497L15.0007 26.9498L32.6507 9.31641L35.0007 11.6664Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+
+          {/* Success Text */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
+              Success
+            </h1>
+            <p className="text-lg sm:text-xl text-black font-light">
+              Your add was published
+            </p>
+            <div className="text-red-600 text-lg font-light leading-6 mt-2">
+              <Link to="/yourlistings">
+                <b>See Listings</b>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Bottom Navigation */}
+        <div className="bg-white border-t border-gray-100 px-3 py-3">
+          <div className="flex justify-center items-center gap-8 sm:gap-12">
+            {/* Dashboard */}
+            <Link
+              to="/dashboard"
+              className="flex flex-col items-center gap-1 text-center"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clipPath="url(#clip0_dashboard)">
+                  <path
+                    d="M13 14.8438C14.0742 14.8438 14.9531 13.9648 14.9531 12.8906C14.9531 12.3047 14.6992 11.7773 14.2891 11.4258L16.5547 5.9375L15.8516 5.60547L13 10.9375C11.9258 10.9375 11.0469 11.8164 11.0469 12.8906C11.0469 13.9648 11.9258 14.8438 13 14.8438ZM8.70312 19.1406H17.2969V16.4062H8.70312V19.1406ZM14.5625 16.7969H16.9062V18.75H14.5625V16.7969ZM11.8281 16.7969H14.1719V18.75H11.8281V16.7969ZM9.09375 16.7969H11.4375V18.75H9.09375V16.7969ZM13 0C6.10547 0 0.5 5.60547 0.5 12.5C0.5 19.3945 6.10547 25 13 25C19.8945 25 25.5 19.3945 25.5 12.5C25.5 5.60547 19.8945 0 13 0ZM23.8203 15.8789L21.9844 15.2148L21.7109 15.957L23.5664 16.6211C21.9258 20.8398 17.8242 23.8281 13.0195 23.8281C8.41016 23.8281 4.42578 21.0547 2.66797 17.1094L4.50391 16.2891L4.19141 15.5664L2.39453 16.3672C2.04297 15.3906 1.80859 14.3555 1.73047 13.2812H5.57812V12.1094H1.67188C1.71094 10.9375 1.92578 9.80469 2.29687 8.75L4.19141 9.43359L4.46484 8.69141L2.57031 8.00781C3.07813 6.83594 3.78125 5.76172 4.64063 4.82422L7.23828 7.42188L8.05859 6.60156L5.5 4.02344C6.28125 3.33984 7.14063 2.75391 8.09766 2.30469L9.09375 4.35547L9.79687 4.00391L8.80078 1.97266C9.97266 1.50391 11.2617 1.23047 12.5898 1.17188V5.07812H13.7617V1.21094C14.8945 1.28906 15.9883 1.54297 17.0039 1.93359L16.2227 3.98437L16.9453 4.25781L17.7266 2.22656C18.8008 2.73437 19.7969 3.39844 20.6562 4.19922L18.0195 6.83594L18.8398 7.65625L21.4766 5.01953C22.1797 5.82031 22.7656 6.69922 23.2344 7.67578L21.418 8.47656L21.7305 9.19922L23.5273 8.3984..."
+                    fill="#141414"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_dashboard">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span className="text-xs text-gray-600">Dashboard</span>
+            </Link>
+
+            {/* Messages */}
+            <Link
+              to="/messages"
+              className="flex flex-col items-center gap-1 text-center"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.4173 22.1654H9.83398C5.16732 22.1654 2.83398 20.9987 2.83398 15.1654V9.33203C2.83398 4.66536 5.16732 2.33203 9.83398 2.33203H19.1673C23.834 2.33203 26.1673 4.66536 26.1673 9.33203V15.1654C26.1673 19.832 23.834 22.1654 19.1673 22.1654H18.584C18.2223 22.1654 17.8723 22.3404 17.6507 22.632L15.9007 24.9654C15.1307 25.992 13.8707 25.992 13.1007 24.9654L11.3507 22.632C11.164 22.3754 10.7323 22.1654 10.4173 22.1654Z"
+                  stroke="#292D32"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.66602 9.33203H20.3327"
+                  stroke="#292D32"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.66602 15.168H15.666"
+                  stroke="#292D32"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="text-xs text-gray-600">Messages</span>
+            </Link>
+
+            {/* Listings */}
+            <Link
+              to="/yourlistings"
+              className="flex flex-col items-center gap-1 text-center"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F3fbe3146588440b1b7c7d389740d2e15?format=webp&width=800"
+                alt="Listings"
+                className="w-7 h-7"
+              />
+              <span className="text-xs text-gray-600">Listings</span>
+            </Link>
+
+            {/* Add Listing */}
+            <Link
+              to="/add-a-listing"
+              className="flex flex-col items-center gap-1 text-center"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.50316 12.0667L2.94854 12.1333C2.72585 12.4667 2.6145 12.9333 2.67018 13.4L3.00421 19.8667C3.05989 20.4667 3.33825 21 3.72796 21.2667V22.3333C3.72796 23.2667 4.34036 24 5.11977 24H7.45802C8.23744 24 8.84983 23.2667 8.84983 22.3333V21.5333H18.2028V22.3333C18.2028 23.2667 18.8152 24 19.5946 24H21.9329C22.7123 24 23.3247 23.2667 23.3247 22.3333V21.1333C23.6587 20.8 23.8814 20.4 23.8814 19.8667L24.2155 13.4C24.2711 12.9333 24.1041 12.5333 23.9371 12.1333L24.4382 12.0667C25.3289 11.9333 26.0527 11 25.997 9.8C25.8856 8.8 25.1619 8.06667 24.3268 8H22.935C22.4896 8 22.0442 8.2 21.7102 8.6C21.3205 7.53333 20.8194 6.53333 20.3741 5.66667C19.873 4.66667 18.9266 4 17.9801 4H9.01685C8.01475 4 7.12398 4.6 6.56726 5.66667C6.01053 6.73333 5.62082 7.6 5.23112 8.6C4.95275 8.2 4.50737 8 4.06199 8L2.67018 8.06667C1.72374 8.06667 1 9 1 10.0667C1 11.0667 1.66807 12 2.50316 12.0667ZM5.17544 11.4667H21.7659C21.9329 11.7333 22.0999 11.9333 22.2669 12.1333C20.1514 12.6 18.8152 13.8667 18.0358 15.0667C17.6461 15.6667 17.0894 15.9333 16.5327 15.9333H10.353C9.79627 15.9333 9.23954 15.6 8.84983 15.0667C8.07042 13.9333 6.73428 12.6 4.61872 12.1333C4.84141 11.9333 5.00843 11.6667 5.17544 11.4667ZM22.4339 20.2667H4.50737C4.28468 20.2667 4.06199 20.0667 4.06199 19.8L3.89497 16.4667C4.06199 16.4667 6.2889 18.0667 7.9034 15.7333C8.5158 16.6 9.23954 17.2667 10.353 17.2667H16.5883C17.6461 17.2667 18.3698 16.6667 19.0379 15.7333C19.8173 16.8667 21.1535 17.3333 22.3226 16.8L22.9907 16.4667L22..."
+                  fill="#24272C"
+                />
+              </svg>
+              <span className="text-xs text-gray-600">Add Listing</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
