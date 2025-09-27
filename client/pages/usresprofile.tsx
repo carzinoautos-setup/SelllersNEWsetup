@@ -38,6 +38,18 @@ export function UsersProfileCard() {
   const [sellerPhone, setSellerPhone] = useState("");
   const [address, setAddress] = useState("");
   const [longitude, setLongitude] = useState("");
+
+  // Profile image upload state
+  const [profileImage, setProfileImage] = useState<string>("");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files && e.target.files[0];
+    if (file) {
+      const url = URL.createObjectURL(file);
+      setProfileImage(url);
+    }
+  };
   const [latitude, setLatitude] = useState("");
 
   // Dealership information fields
@@ -311,7 +323,7 @@ export function UsersProfileCard() {
           {/* Right Content - Image Upload */}
           <div className="w-full md:w-[30%] flex flex-col items-center justify-center gap-2 mx-auto md:mx-0">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
+              src={profileImage || "https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"}
               alt="Profile"
               className="w-[84px] h-[84px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
             />
@@ -320,9 +332,20 @@ export function UsersProfileCard() {
                 Upload a Image
               </div>
               <div className="flex items-center justify-center w-full md:max-w-[320px] h-[54px] mx-auto md:mx-0">
-                <div className="bg-black rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] leading-[18px] font-medium">
-                  Choose file
-                </div>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleFileChange}
+                  className="hidden"
+                />
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current && fileInputRef.current.click()}
+                  className="bg-black rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] leading-[18px] font-medium"
+                >
+                  {profileImage ? "Change Image" : "Choose file"}
+                </button>
               </div>
               <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center">
                 Seller account Number Here
