@@ -68,14 +68,14 @@ export default function SuccessUploaded() {
             </Link>
 
             {/* Messages */}
-            <div className="flex flex-col items-center gap-1">
+            <Link to="/messages" className="flex flex-col items-center gap-1 text-center">
               <svg width="28" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.4173 22.1654H9.83398C5.16732 22.1654 2.83398 20.9987 2.83398 15.1654V9.33203C2.83398 4.66536 5.16732 2.33203 9.83398 2.33203H19.1673C23.834 2.33203 26.1673 4.66536 26.1673 9.33203V15.1654C26.1673 19.832 23.834 22.1654 19.1673 22.1654H18.584C18.2223 22.1654 17.8723 22.3404 17.6507 22.632L15.9007 24.9654C15.1307 25.992 13.8707 25.992 13.1007 24.9654L11.3507 22.632C11.164 22.3754 10.7323 22.1654 10.4173 22.1654Z" stroke="#292D32" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M8.66602 9.33203H20.3327" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M8.66602 15.168H15.666" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <span className="text-xs text-gray-600">Messages</span>
-            </div>
+            </Link>
 
             {/* Listings */}
             <div className="flex flex-col items-center gap-1">
