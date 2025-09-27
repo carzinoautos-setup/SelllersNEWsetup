@@ -69,8 +69,8 @@ export default function ApplyCredits() {
               Sell your car faster
             </p>
             <div className="flex justify-center gap-4 mt-4">
-              <Link to="/buy-credits" className="px-6 py-2 rounded-lg bg-red-600 text-white font-medium">
-                Buy Credits
+              <Link to="/buy-credits" className="px-6 py-2 rounded-[14px] bg-[#DC2626] text-white font-medium">
+                Use 1 Credit
               </Link>
               <Link to="/yourlistings" className="px-6 py-2 rounded-lg border border-gray-300 text-gray-800">
                 View Listings
