@@ -1131,7 +1131,10 @@ export default function Vindecoder() {
                       AI Get values
                     </label>
 
-                    <div
+                    <textarea
+                      value={aiInput}
+                      onChange={(e) => setAiInput(e.target.value)}
+                      rows={8}
                       style={{
                         color: "#050B20",
                         fontFamily: "DM Sans",
@@ -1140,10 +1143,13 @@ export default function Vindecoder() {
                         lineHeight: "26px",
                         marginTop: 20,
                         minHeight: 200,
+                        width: "100%",
+                        resize: "vertical",
+                        padding: 8,
+                        border: "none",
+                        outline: "none",
                       }}
-                    >
-                      Ai Input data here
-                    </div>
+                    />
                   </div>
                 </div>
 
