@@ -205,7 +205,7 @@ export default function AddAListing() {
                       We did not find any details.
                     </h3>
                     <div className="text-sm text-[#6B6B6B]">
-                      We couldn’t find details this time, but don’t worry—you
+                      We couldn’t find details this time, but don��t worry—you
                       can retry with a license plate or VIN. If details still
                       don’t work, you can always enter your details manually.
                     </div>
@@ -232,7 +232,7 @@ export default function AddAListing() {
             <div className="flex items-stretch">
               <div className="w-full h-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F23b891c966f7452fa3f3f303b9253c6a?format=webp&width=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F3dd49c3d3c3d4edea0802340a03fbad3?format=webp"
                   alt="vehicle"
                   className="hidden sm:flex lg:block w-full h-full object-cover"
                 />
