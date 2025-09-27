@@ -78,10 +78,12 @@ export default function ApplyCredits() {
             </div>
             <div className="text-red-600 text-lg font-light leading-6 mt-2" />
           </div>
-
-              <div className="text-center mt-4 text-base sm:text-lg text-black font-light">
-                Get more details
-              </div>
+          <div
+            className="text-center"
+            style={{ color: "rgb(0,0,0)", fontSize: "18px", fontWeight: 300, lineHeight: "28px", textAlign: "center", marginBottom: "20px" }}
+          >
+            Get more details
+          </div>
         </div>
 
       </div>
