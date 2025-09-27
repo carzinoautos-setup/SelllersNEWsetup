@@ -439,11 +439,11 @@ export default function YourListingsPage() {
 
                   {/* Featured Button */}
                   <div className="flex justify-center items-center self-stretch">
-                    <div className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px]" style={{ border: "0.8px solid rgba(74, 74, 74, 1)" }} >
+                    <Link to="/feature-mycar" className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px]" style={{ border: "0.8px solid rgba(74, 74, 74, 1)" }}>
                       <div className="text-black font-albert text-[12px] font-medium leading-normal">
                         Feature this
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
