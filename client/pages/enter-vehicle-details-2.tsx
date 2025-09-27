@@ -95,7 +95,9 @@ export default function EnterVehicleDetails2() {
   // Step 3: Price and Description
   const [salePrice, setSalePrice] = useState("");
   const [description, setDescription] = useState("Lorem Ipsum Dolar Sit Amet");
-  const [aiDescription, setAiDescription] = useState("AI suggested description");
+  const [aiDescription, setAiDescription] = useState(
+    "AI suggested description",
+  );
   const [showAiDescription, setShowAiDescription] = useState(true);
 
   // Step 4: Photos
@@ -126,7 +128,56 @@ export default function EnterVehicleDetails2() {
   const exteriorColorOptions = ["White", "Black", "Silver", "Red", "Blue"];
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
   const stateOptions = [
-    "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming",
   ];
   const [state, setState] = useState("");
   // dynamic city options are populated when a state is selected
@@ -138,7 +189,13 @@ export default function EnterVehicleDetails2() {
 
   // Simple city map for common states (extend as needed)
   const cityMap: Record<string, string[]> = {
-    California: ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Sacramento"],
+    California: [
+      "Los Angeles",
+      "San Diego",
+      "San Jose",
+      "San Francisco",
+      "Sacramento",
+    ],
     Texas: ["Houston", "San Antonio", "Dallas", "Austin"],
     Florida: ["Jacksonville", "Miami", "Tampa", "Orlando"],
     "New York": ["New York", "Buffalo", "Rochester", "Albany"],
@@ -187,18 +244,18 @@ export default function EnterVehicleDetails2() {
       "San Diego": ["92101", "92102", "92103"],
       "San Jose": ["95101", "95110", "95112"],
       "San Francisco": ["94102", "94103", "94104"],
-      "Sacramento": ["95814", "95816", "95817"],
-      "Houston": ["77001", "77002", "77003"],
+      Sacramento: ["95814", "95816", "95817"],
+      Houston: ["77001", "77002", "77003"],
       "San Antonio": ["78201", "78202", "78203"],
-      "Dallas": ["75201", "75202", "75203"],
-      "Austin": ["73301", "78701", "78702"],
+      Dallas: ["75201", "75202", "75203"],
+      Austin: ["73301", "78701", "78702"],
       "New York": ["10001", "10002", "10003"],
-      "Buffalo": ["14201", "14202", "14203"],
-      "Rochester": ["14602", "14603", "14604"],
-      "Albany": ["12201", "12202"],
-      "Chicago": ["60601", "60602", "60603"],
-      "Aurora": ["60502", "60503"],
-      "Naperville": ["60540", "60563"],
+      Buffalo: ["14201", "14202", "14203"],
+      Rochester: ["14602", "14603", "14604"],
+      Albany: ["12201", "12202"],
+      Chicago: ["60601", "60602", "60603"],
+      Aurora: ["60502", "60503"],
+      Naperville: ["60540", "60563"],
     };
 
     const stateZipFallback: Record<string, string[]> = {
@@ -209,7 +266,8 @@ export default function EnterVehicleDetails2() {
       Illinois: ["60007", "60018"],
     };
 
-    const zips = zipMap[city] || stateZipFallback[state] || ["12345", "23456", "34567"];
+    const zips = zipMap[city] ||
+      stateZipFallback[state] || ["12345", "23456", "34567"];
     setZipOptions(zips);
     setZipCode("");
   }, [city, state]);
@@ -599,7 +657,6 @@ export default function EnterVehicleDetails2() {
                   />
                 </div>
 
-
                 <div className="flex flex-col gap-2">
                   <label
                     className="text-[14px] font-medium text-[#24272C]"
@@ -624,7 +681,7 @@ export default function EnterVehicleDetails2() {
                     Zip Code
                   </label>
                   <Select
-                    options={["98498","98032"]}
+                    options={["98498", "98032"]}
                     value={zipcodeDemo}
                     onChange={(v) => setZipcodeDemo(v)}
                     placeholder="Select zipcode"
@@ -1089,12 +1146,16 @@ export default function EnterVehicleDetails2() {
                 {/* Header Section */}
                 <div className="mb-6">
                   <h1 className="text-[20px] font-albert mb-2">
-                    <span className="text-[#090909] font-normal">AI suggested Description</span>
+                    <span className="text-[#090909] font-normal">
+                      AI suggested Description
+                    </span>
                     <span className="text-[#090909] font-bold">- </span>
                     <span className="text-[#E82121] font-bold">Step 3A</span>
                   </h1>
                   <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
-                    Check out the AI-generated, SEO-friendly description to help your listing get noticed online. Review, edit if needed, then click "Update Description."
+                    Check out the AI-generated, SEO-friendly description to help
+                    your listing get noticed online. Review, edit if needed,
+                    then click "Update Description."
                   </p>
                   <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
                 </div>

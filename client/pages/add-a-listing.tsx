@@ -55,7 +55,10 @@ export default function AddAListing() {
                 </h1>
 
                 <div className="flex flex-col relative h-auto my-[5px] mb-2">
-                  <p className="text-sm text-[#6B6B6B] mb-5">AI-powered auto-fill for your car’s make, model, details, and even the description.</p>
+                  <p className="text-sm text-[#6B6B6B] mb-5">
+                    AI-powered auto-fill for your car’s make, model, details,
+                    and even the description.
+                  </p>
                 </div>
 
                 {/* Tabs */}
@@ -75,7 +78,12 @@ export default function AddAListing() {
                     </button>
                     {activeTab === "license" && (
                       <div className="mt-1 w-full flex justify-center">
-                        <svg width="11" height="5" viewBox="0 0 11 5" fill="none" />
+                        <svg
+                          width="11"
+                          height="5"
+                          viewBox="0 0 11 5"
+                          fill="none"
+                        />
                       </div>
                     )}
                   </div>
@@ -174,7 +182,9 @@ export default function AddAListing() {
 
                 {flowState === "found" && (
                   <div className="flex flex-col gap-3">
-                    <h3 className="text-xl font-semibold">If this is your car, create your ad.</h3>
+                    <h3 className="text-xl font-semibold">
+                      If this is your car, create your ad.
+                    </h3>
                     <div className="text-sm text-[#6B6B6B]">
                       2021 Honda Accord LX
                     </div>
@@ -232,7 +242,6 @@ export default function AddAListing() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </DashboardLayout>

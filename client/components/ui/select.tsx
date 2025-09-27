@@ -114,10 +114,10 @@ export function Select({
         </svg>
       </div>
 
-      {open && (
+      {open &&
         // Render dropdown via portal to avoid clipping by overflow parents
         (function renderDropdown() {
-          if (typeof document === 'undefined') return null;
+          if (typeof document === "undefined") return null;
           const rect = ref.current?.getBoundingClientRect();
           if (!rect) {
             return (
@@ -164,8 +164,7 @@ export function Select({
             </ul>,
             document.body,
           );
-        })()
-      )}
+        })()}
     </div>
   );
 }
