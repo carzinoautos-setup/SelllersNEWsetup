@@ -175,6 +175,44 @@ export default function EnterVehicleDetails2() {
     setZipCode("");
   }, [state]);
 
+  React.useEffect(() => {
+    if (!city) {
+      setZipOptions([]);
+      setZipCode("");
+      return;
+    }
+    const zipMap: Record<string, string[]> = {
+      "Los Angeles": ["90001", "90002", "90003"],
+      "San Diego": ["92101", "92102", "92103"],
+      "San Jose": ["95101", "95110", "95112"],
+      "San Francisco": ["94102", "94103", "94104"],
+      "Sacramento": ["95814", "95816", "95817"],
+      "Houston": ["77001", "77002", "77003"],
+      "San Antonio": ["78201", "78202", "78203"],
+      "Dallas": ["75201", "75202", "75203"],
+      "Austin": ["73301", "78701", "78702"],
+      "New York": ["10001", "10002", "10003"],
+      "Buffalo": ["14201", "14202", "14203"],
+      "Rochester": ["14602", "14603", "14604"],
+      "Albany": ["12201", "12202"],
+      "Chicago": ["60601", "60602", "60603"],
+      "Aurora": ["60502", "60503"],
+      "Naperville": ["60540", "60563"],
+    };
+
+    const stateZipFallback: Record<string, string[]> = {
+      California: ["90001", "90002", "90003"],
+      Texas: ["77001", "77002", "77003"],
+      Florida: ["32003", "32004", "32005"],
+      "New York": ["10001", "10002", "10003"],
+      Illinois: ["60007", "60018"],
+    };
+
+    const zips = zipMap[city] || stateZipFallback[state] || ["12345", "23456", "34567"];
+    setZipOptions(zips);
+    setZipCode("");
+  }, [city, state]);
+
   const toggleFeature = (feature: string) => {
     setSelectedFeatures((prev) => ({
       ...prev,
