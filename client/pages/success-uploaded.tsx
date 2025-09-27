@@ -14,7 +14,7 @@ export default function SuccessUploaded() {
         </button>
 
         {/* Content */}
-        <div className="px-6 pt-6 sm:pt-16 pb-[3px] sm:pb-6">
+        <div className="px-6 pt-10 sm:pt-16 pb-[3px] sm:pb-6">
           {/* Logo */}
           <div className="flex justify-center mb-8">
             <img
