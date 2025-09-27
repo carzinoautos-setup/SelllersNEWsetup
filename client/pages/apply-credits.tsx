@@ -36,7 +36,7 @@ export default function ApplyCredits() {
           {/* Three Cars Image */}
           <div className="flex justify-center mb-12">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/14a45ec3e91d0c86ded24525071cc664845168e9?width=764"
+              src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F27e27892e6f045e08a9f937cb1d0b1aa"
               alt="Three Cars"
               className="w-full max-w-sm"
             />
