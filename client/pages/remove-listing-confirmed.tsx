@@ -14,10 +14,10 @@ export default function RemoveListingConfirmed() {
 
         {/* Content */}
         <div className="pt-[17px] pb-[11px] pl-[103px] pr-[13px] text-left">
-          <h1 className="text-[34px] font-normal text-black leading-[41px] tracking-[0.4px] mb-0 font-sf-pro">
+          <h1 className="text-[34px] font-normal text-black leading-[35px] tracking-[0.4px] mb-0 font-sf-pro">
             Car Deleted
           </h1>
-          <p className="text-[20px] font-light text-black font-albert">
+          <p className="text-[20px] font-light text-black font-albert leading-[20px]">
             Success!
           </p>
         </div>
