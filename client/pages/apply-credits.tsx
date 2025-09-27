@@ -68,6 +68,14 @@ export default function ApplyCredits() {
             <p className="text-lg sm:text-xl text-black font-light">
               Sell your car faster
             </p>
+            <div className="flex justify-center gap-4 mt-4">
+              <Link to="/buy-credits" className="px-6 py-2 rounded-lg bg-red-600 text-white font-medium">
+                Buy Credits
+              </Link>
+              <Link to="/yourlistings" className="px-6 py-2 rounded-lg border border-gray-300 text-gray-800">
+                View Listings
+              </Link>
+            </div>
             <div className="text-red-600 text-lg font-light leading-6 mt-2">
               <Link to="/yourlistings">
                 <b>See Listings</b>
