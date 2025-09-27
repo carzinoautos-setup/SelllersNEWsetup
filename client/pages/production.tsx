@@ -61,6 +61,12 @@ export default function Production() {
                 >
                   /vindecoder
                 </Link>
+                <Link
+                  to="/edit-listing"
+                  className="text-sm text-[#1f2937] hover:underline"
+                >
+                  /edit-listing
+                </Link>
               </section>
             </div>
           </div>
