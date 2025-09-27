@@ -1,27 +1,29 @@
 import "dotenv/config";
 
 // Instrument path-to-regexp to log patterns that cause parse errors
+import express from "express";
+
+// Try to instrument path-to-regexp using dynamic import (works in ESM)
 try {
-  // dynamic import to avoid ESM/require issues
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const ptre = require('path-to-regexp');
-  if (ptre && typeof ptre.parse === 'function') {
-    const origParse = ptre.parse;
-    ptre.parse = function (...args: any[]) {
-      try {
-        console.log('PTRE parse:', args[0]);
-      } catch (e) {
-        // ignore
-      }
-      return origParse.apply(this, args as any);
-    };
-  }
+  import('path-to-regexp').then((ptre: any) => {
+    if (ptre && typeof ptre.parse === 'function') {
+      const origParse = ptre.parse;
+      ptre.parse = function (...args: any[]) {
+        try {
+          console.log('PTRE parse:', args[0]);
+        } catch (e) {
+          // ignore
+        }
+        return origParse.apply(this, args);
+      };
+    }
+  }).catch((e) => {
+    console.error('Failed dynamic import of path-to-regexp', e);
+  });
 } catch (err) {
-  // ignore if unavailable
-  console.error('Failed to instrument path-to-regexp', err);
+  console.error('Failed to schedule path-to-regexp instrumentation', err);
 }
 
-import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
 
