@@ -192,6 +192,44 @@ export default function Vindecoder() {
 
   const [featurePhotoId, setFeaturePhotoId] = useState<string | null>(null);
 
+  // AI input combined string (captures all field labels+values on this page)
+  const [aiInput, setAiInput] = useState("");
+
+  // Helper to convert camelCase keys to Title Case labels
+  function prettyLabel(key: string) {
+    const result = key
+      // insert space before capital letters
+      .replace(/([A-Z])/g, " $1")
+      // replace underscores
+      .replace(/_/g, " ")
+      .trim();
+    return result.charAt(0).toUpperCase() + result.slice(1);
+  }
+
+  useEffect(() => {
+    // Build features string
+    const featureEntries = Object.entries(selectedFeatures)
+      .filter(([, val]) => !!val)
+      .map(([k]) => prettyLabel(k));
+
+    const parts: string[] = [];
+    if (mileage) parts.push(`Mileage: ${mileage}`);
+    if (engine) parts.push(`Engine: ${engine}`);
+    if (vehicleTrim) parts.push(`Trim: ${vehicleTrim}`);
+    if (transmission) parts.push(`Transmission: ${transmission}`);
+    if (drivetrain) parts.push(`Drivetrain: ${drivetrain}`);
+    if (exteriorColor) parts.push(`Exterior Color: ${exteriorColor}`);
+    if (interiorColor) parts.push(`Interior Color: ${interiorColor}`);
+    if (vehicleLocationState) parts.push(`Location State: ${vehicleLocationState}`);
+    if (vehicleLocationCity) parts.push(`Location City: ${vehicleLocationCity}`);
+    if (vehicleLocationZip) parts.push(`Location Zip: ${vehicleLocationZip}`);
+    if (salePrice) parts.push(`Price: ${salePrice}`);
+    if (featureEntries.length) parts.push(`Features: ${featureEntries.join('; ')}`);
+
+    const combined = parts.join(', ');
+    setAiInput(combined);
+  }, [mileage, engine, vehicleTrim, transmission, drivetrain, exteriorColor, interiorColor, vehicleLocationState, vehicleLocationCity, vehicleLocationZip, salePrice, selectedFeatures]);
+
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   useEffect(() => {
     try {
