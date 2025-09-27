@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
 import openaiRoute from "./routes/openai";
+import envRoute from "./routes/env";
 
 export function createServer() {
   const app = express();
@@ -22,6 +23,9 @@ export function createServer() {
 
   // OpenAI proxy route (server-side) to avoid exposing API keys and CORS issues
   app.use(openaiRoute);
+
+  // Environment check route (safe: does not expose the actual key)
+  app.use(envRoute);
 
   return app;
 }
