@@ -78,14 +78,14 @@ export default function SuccessUploaded() {
             </Link>
 
             {/* Listings */}
-            <div className="flex flex-col items-center gap-1">
+            <Link to="/yourlistings" className="flex flex-col items-center gap-1 text-center">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/4766f603cc1082084b55b7fcb351ad6c96072cd9?width=56"
                 alt="Listings"
                 className="w-7 h-7"
               />
               <span className="text-xs text-gray-600">Listings</span>
-            </div>
+            </Link>
 
             {/* Add Listing */}
             <Link to="/add-a-listing" className="flex flex-col items-center gap-1 text-center">
