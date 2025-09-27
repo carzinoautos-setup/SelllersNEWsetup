@@ -1223,13 +1223,9 @@ export default function Vindecoder() {
                         lineHeight: "20px",
                       }}
                     >
-                      Write a persuasive SEO-friendly description of this car
-                      for sale. Use the keywords: "car for sale", the year,
-                      make, model, trim, city, state, and location. Make the
-                      description sound natural and appealing for buyers. If
-                      feature fields are provided (such as navigation system,
-                      leather seats, sunroof, towing package, etc.), highlight
-                      them in the description to make the vehicle stand out. use most of the values supplied make sure the length of thext is about 900 to 1500 characters make the content Keep the tone professional but engaging, and ensure the description is unique:
+                      <span>
+                        Write a persuasive SEO-friendly description of this car for sale. Use the keywords: "car for sale", the year, make, model, and trim, plus city, state, and location. Make the description sound natural and appealing for buyers. Make sure to use year, make, and model as keywords. If feature fields are provided (such as navigation system, leather seats, sunroof, towing package, etc.), highlight them in the description to make the vehicle stand out. Use most of the provided values and produce a description of approximately 1200 to 1900 characters. Keep the tone professional but engaging, and ensure the description is unique.
+                      </span>
                     </p>
 
                     {
