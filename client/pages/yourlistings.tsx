@@ -261,85 +261,98 @@ export default function YourListingsPage() {
             {Array.from({ length: 8 }).map((_, index) => (
               <div
                 key={index}
-                className="flex flex-col bg-white rounded-2xl shadow-sm border border-[#EDEDED] overflow-hidden"
+                className="flex flex-col"
               >
-                {/* Car Image */}
-                <label className="relative h-[156px] bg-gray-200 rounded-t-2xl overflow-hidden cursor-pointer">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F0937c70c237c49be9cdf73a0306be0ed?format=webp"
-                    alt="2017 BMW X1 xDrive 20d xline"
-                    className="w-full h-full object-cover object-center"
-                  />
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={(e: any) => {
-                      const file = e.target.files && e.target.files[0];
-                      if (!file) return;
-                      const img = e.target
-                        .closest("label")
-                        ?.querySelector("img");
-                      if (img) img.src = URL.createObjectURL(file);
-                    }}
-                    className="absolute inset-0 opacity-0 cursor-pointer"
-                  />
-                </label>
+                {/* Image */}
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/6975da1c4e84f2b56c87e6eeef4d7045c7b852fd?width=695"
+                  alt="2017 BMW 7 Series xDrive 20d xline"
+                  className="flex h-[261px] justify-center items-center self-stretch"
+                />
 
-                {/* Card Content */}
-                <div className="p-4 flex flex-col gap-[13px]">
-                  {/* Main Content */}
-                  <div className="flex flex-col gap-1.5">
-                    {/* Title Section */}
-                    <div className="flex flex-col gap-2">
-                      <h3 className="text-[#24272C] font-outfit text-[20px] sm:text-[16px] font-medium">
-                        2017 BMW X1 xDrive 20d xline
-                      </h3>
+                {/* Main Content */}
+                <div className="flex p-4 flex-col items-start gap-3 self-stretch rounded-b-2xl border-r border-b border-l border-[#EDEDED] bg-white">
+                  {/* Content */}
+                  <div className="flex flex-col items-start self-stretch">
+                    {/* Title */}
+                    <div className="flex flex-col items-start gap-0.5 self-stretch">
+                      <div className="text-[#24272C] font-outfit text-[18px] font-medium leading-normal">
+                        2017 BMW 7 Series xDrive 20d xline
+                      </div>
 
-                      {/* Details Rows */}
-                      <div className="flex flex-col gap-0">
-                        {/* Price & Stock Row */}
-                        <div className="flex items-center gap-2.5">
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Price:</b> $72,000
-                          </span>
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <strong>Stock#:&nbsp;</strong>
-                            <span>K5866</span>
-                          </span>
-                        </div>
-
-                        {/* Condition & Type Row */}
-                        <div className="flex items-center gap-2.5">
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Condition</b>: New
-                          </span>
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Type</b>: Sedan
-                          </span>
-                        </div>
-
-                        {/* Miles & Listed Row */}
-                        <div className="flex items-center gap-2.5">
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Miles</b>: 109,658
-                          </span>
-                          <span className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Listed:</b> 12-12-25
-                          </span>
-                        </div>
-
-                        <div className="flex items-center gap-2.5 mr-auto">
-                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Days left:</b> 5
+                      {/* Description Rows */}
+                      <div className="flex items-start gap-2.5 self-stretch">
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Year: 2000
                           </div>
                         </div>
-
-                        <div className="flex items-center gap-2.5 justify-center">
-                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Status</b>: Active
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Make: BMW
                           </div>
-                          <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
-                            <b>Change Status</b>:
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-2.5 self-stretch">
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Model: 7 Series
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Type: Sedan
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-2.5 self-stretch">
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Condition: New
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Miles: 109,996
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start gap-2.5 self-stretch">
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Days Left: 5
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Post Date: 12-12-25
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid h-5 gap-2.5 self-stretch grid-cols-3">
+                        <div className="inline-flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Status: Active
+                          </div>
+                        </div>
+                        <div className="inline-flex items-center gap-1">
+                          <div className="text-[#696665] font-albert text-[14px] font-normal leading-[140%]">
+                            Stock#:K5555P
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Price */}
+                    <div className="flex flex-col items-start gap-2 self-stretch">
+                      <div className="flex items-start gap-2.5 self-stretch">
+                        <div className="flex items-center gap-1">
+                          <div className="text-[#E82121] font-albert text-[18px] font-medium leading-normal">
+                            $73,000
                           </div>
                         </div>
                       </div>
@@ -347,82 +360,90 @@ export default function YourListingsPage() {
                   </div>
 
                   {/* Divider */}
-                  <div className="h-px bg-[#EDEDED]"></div>
+                  <div className="h-px self-stretch bg-[#EDEDED]"></div>
 
-                  {/* Action Section */}
-                  <div className="flex justify-between items-center">
+                  {/* Info Section */}
+                  <div className="flex justify-between items-start self-stretch">
                     {/* Action Buttons */}
-                    <div className="flex items-center gap-1.5">
-                      {/* Delete Button */}
-                      <a href="/remove-listing" className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer">
-                        <svg
-                          className="w-[18px] h-[18px]"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                    <div className="flex w-[104px] items-center gap-1.5">
+                      <div className="flex w-12 items-start gap-2.5 h-10">
+                        <a href="/remove-listing" className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer">
+                          <svg
+                            className="w-[18px] h-[18px] absolute left-[11px] top-[11px]"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M7.06907 7.69033C7.37819 7.65943 7.65382 7.88496 7.68472 8.19411L8.05972 11.9441C8.0907 12.2532 7.8651 12.5289 7.55602 12.5598C7.2469 12.5907 6.97124 12.3652 6.94033 12.056L6.56533 8.30601C6.53442 7.99693 6.75995 7.72123 7.06907 7.69033Z"
+                              fill="#050B20"
+                            />
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M10.931 7.69033C11.2401 7.72123 11.4656 7.99693 11.4347 8.30601L11.0597 12.056C11.0288 12.3652 10.7532 12.5907 10.444 12.5598C10.135 12.5289 9.90943 12.2532 9.94033 11.9441L10.3153 8.19411C10.3462 7.88496 10.6219 7.65943 10.931 7.69033Z"
+                              fill="#050B20"
+                            />
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M7.59236 0.937514H10.1285C10.2908 0.937409 10.4322 0.937319 10.5657 0.958642C11.0931 1.04287 11.5496 1.37186 11.7963 1.84563C11.8587 1.96555 11.9034 2.09971 11.9546 2.2537L12.0383 2.50488C12.0525 2.5474 12.0565 2.55943 12.06 2.56891C12.1913 2.932 12.5318 3.17744 12.9178 3.18723C12.9279 3.18748 12.9404 3.18753 12.9854 3.18753H15.2354C15.5461 3.18753 15.7979 3.43936 15.7979 3.75003C15.7979 4.06069 15.5461 4.31253 15.2354 4.31253H2.48535C2.17469 4.31253 1.92285 4.06069 1.92285 3.75003C1.92285 3.43936 2.17469 3.18753 2.48535 3.18753H4.73542C4.78045 3.18753 4.79288 3.18748 4.80303 3.18723C5.18902 3.17744 5.52953 2.93202 5.66087 2.56893C5.66432 2.55938 5.6683 2.54761 5.68254 2.50488L5.76624 2.25372C5.81747 2.09973 5.8621 1.96555 5.92454 1.84563C6.17125 1.37186 6.6277 1.04287 7.15517 0.958642C7.28869 0.937319 7.43008 0.937409 7.59236 0.937514ZM6.61646 3.18753C6.6551 3.11176 6.68933 3.03303 6.71879 2.95161C6.72773 2.92688 6.7365 2.90056 6.74777 2.86675L6.82262 2.64219C6.891 2.43706 6.90674 2.39522 6.92236 2.36523C7.0046 2.2073 7.15675 2.09764 7.33257 2.06956C7.36597 2.06423 7.41062 2.06253 7.62686 2.06253H10.094C10.3102 2.06253 10.3548 2.06423 10.3883 2.06956C10.5641 2.09764 10.7163 2.2073 10.7985 2.36523C10.8141 2.39522 10.8298 2.43705 10.8982 2.64219L10.973 2.86662L11.0021 2.95162C11.0315 3.03304 11.0658 3.11176 11.1044 3.18753H6.61646Z"
+                              fill="#050B20"
+                            />
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M3.83663 5.81377C4.1466 5.7931 4.41463 6.02763 4.4353 6.3376L4.78026 11.5119C4.84764 12.5228 4.89567 13.2262 5.00109 13.7554C5.10336 14.2688 5.2461 14.5405 5.45117 14.7323C5.65623 14.9241 5.93685 15.0485 6.45585 15.1164C6.9909 15.1864 7.69592 15.1875 8.70902 15.1875H9.28907C10.3022 15.1875 11.0072 15.1864 11.5422 15.1164C12.0612 15.0485 12.3419 14.9241 12.5469 14.7323C12.752 14.5405 12.8948 14.2688 12.997 13.7554C13.1024 13.2262 13.1504 12.5228 13.2179 11.5119L13.5628 6.3376C13.5834 6.02763 13.8515 5.7931 14.1614 5.81377C14.4714 5.83443 14.7059 6.10246 14.6853 6.41244L14.3377 11.6262C14.2736 12.5883 14.2218 13.3654 14.1003 13.9752C13.974 14.6092 13.7592 15.1388 13.3155 15.5538C12.8718 15.9689 12.3291 16.148 11.6882 16.2319C11.0716 16.3125 10.2928 16.3125 9.32859 16.3125H8.66949C7.70529 16.3125 6.92646 16.3125 6.30993 16.2319C5.66894 16.148 5.12628 15.9689 4.68258 15.5538C4.23888 15.1388 4.02407 14.6092 3.89778 13.9752C3.77629 13.3654 3.7245 12.5883 3.66038 11.6262L3.31279 6.41244C3.29212 6.10246 3.52665 5.83443 3.83663 5.81377Z"
+                              fill="#050B20"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div className="inline-flex items-start gap-2.5 w-10 h-10">
+                        <Link
+                          to="/enter-vehicle-details-2"
+                          className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white relative"
                         >
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M7.06907 7.69033C7.37819 7.65943 7.65382 7.88496 7.68472 8.19411L8.05972 11.9441C8.0907 12.2532 7.8651 12.5289 7.55602 12.5598C7.2469 12.5907 6.97124 12.3652 6.94033 12.056L6.56533 8.30601C6.53442 7.99693 6.75995 7.72123 7.06907 7.69033Z"
-                            fill="#050B20"
-                          />
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M10.931 7.69033C11.2401 7.72123 11.4656 7.99693 11.4347 8.30601L11.0597 12.056C11.0288 12.3652 10.7532 12.5907 10.444 12.5598C10.135 12.5289 9.90943 12.2532 9.94033 11.9441L10.3153 8.19411C10.3462 7.88496 10.6219 7.65943 10.931 7.69033Z"
-                            fill="#050B20"
-                          />
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M7.59236 0.937514H10.1285C10.2908 0.937409 10.4322 0.937319 10.5657 0.958642C11.0931 1.04287 11.5496 1.37186 11.7963 1.84563C11.8587 1.96555 11.9034 2.09971 11.9546 2.2537L12.0383 2.50488C12.0525 2.5474 12.0565 2.55943 12.06 2.56891C12.1913 2.932 12.5318 3.17744 12.9178 3.18723C12.9279 3.18748 12.9404 3.18753 12.9854 3.18753H15.2354C15.5461 3.18753 15.7979 3.43936 15.7979 3.75003C15.7979 4.06069 15.5461 4.31253 15.2354 4.31253H2.48535C2.17469 4.31253 1.92285 4.06069 1.92285 3.75003C1.92285 3.43936 2.17469 3.18753 2.48535 3.18753H4.73542C4.78045 3.18753 4.79288 3.18748 4.80303 3.18723C5.18902 3.17744 5.52953 2.93202 5.66087 2.56893C5.66432 2.55938 5.6683 2.54761 5.68254 2.50488L5.76624 2.25372C5.81747 2.09973 5.8621 1.96555 5.92454 1.84563C6.17125 1.37186 6.6277 1.04287 7.15517 0.958642C7.28869 0.937319 7.43008 0.937409 7.59236 0.937514ZM6.61646 3.18753C6.6551 3.11176 6.68933 3.03303 6.71879 2.95161C6.72773 2.92688 6.7365 2.90056 6.74777 2.86675L6.82262 2.64219C6.891 2.43706 6.90674 2.39522 6.92236 2.36523C7.0046 2.2073 7.15675 2.09764 7.33257 2.06956C7.36597 2.06423 7.41062 2.06253 7.62686 2.06253H10.094C10.3102 2.06253 10.3548 2.06423 10.3883 2.06956C10.5641 2.09764 10.7163 2.2073 10.7985 2.36523C10.8141 2.39522 10.8298 2.43705 10.8982 2.64219L10.973 2.86662L11.0021 2.95162C11.0315 3.03304 11.0658 3.11176 11.1044 3.18753H6.61646Z"
-                            fill="#050B20"
-                          />
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M3.83663 5.81377C4.1466 5.7931 4.41463 6.02763 4.4353 6.3376L4.78026 11.5119C4.84764 12.5228 4.89567 13.2262 5.00109 13.7554C5.10336 14.2688 5.2461 14.5405 5.45117 14.7323C5.65623 14.9241 5.93685 15.0485 6.45585 15.1164C6.9909 15.1864 7.69592 15.1875 8.70902 15.1875H9.28907C10.3022 15.1875 11.0072 15.1864 11.5422 15.1164C12.0612 15.0485 12.3419 14.9241 12.5469 14.7323C12.752 14.5405 12.8948 14.2688 12.997 13.7554C13.1024 13.2262 13.1504 12.5228 13.2179 11.5119L13.5628 6.3376C13.5834 6.02763 13.8515 5.7931 14.1614 5.81377C14.4714 5.83443 14.7059 6.10246 14.6853 6.41244L14.3377 11.6262C14.2736 12.5883 14.2218 13.3654 14.1003 13.9752C13.974 14.6092 13.7592 15.1388 13.3155 15.5538C12.8718 15.9689 12.3291 16.148 11.6882 16.2319C11.0716 16.3125 10.2928 16.3125 9.32859 16.3125H8.66949C7.70529 16.3125 6.92646 16.3125 6.30993 16.2319C5.66894 16.148 5.12628 15.9689 4.68258 15.5538C4.23888 15.1388 4.02407 14.6092 3.89778 13.9752C3.77629 13.3654 3.7245 12.5883 3.66038 11.6262L3.31279 6.41244C3.29212 6.10246 3.52665 5.83443 3.83663 5.81377Z"
-                            fill="#050B20"
-                          />
-                        </svg>
-                      </a>
-
-                      {/* Edit Button */}
-                      <Link
-                        to="/enter-vehicle-details-2"
-                        className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white flex items-center justify-center hover:bg-gray-50 transition-colors"
-                      >
-                        <svg
-                          className="w-[18px] h-[18px]"
-                          viewBox="0 0 19 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M15.4546 15.1836H10.6719C10.3614 15.1836 10.1094 14.9316 10.1094 14.6211C10.1094 14.3106 10.3614 14.0586 10.6719 14.0586H15.4546C15.7651 14.0586 16.0171 14.3106 16.0171 14.6211C16.0171 14.9316 15.7651 15.1836 15.4546 15.1836Z"
-                            fill="#050B20"
-                          />
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M12.6986 8.39263L13.619 7.16645C14.075 6.55895 14.267 5.81046 14.1598 5.0582C14.0525 4.30595 13.6595 3.64145 13.052 3.18545C11.7988 2.24495 10.0123 2.4977 9.07105 3.75245L4.00704 10.4987C2.49804 12.511 3.84054 14.908 3.89829 15.0092C3.97629 15.145 4.10754 15.2417 4.26054 15.277C4.30404 15.2875 4.72404 15.3805 5.30979 15.3805C6.25704 15.3805 7.63554 15.1382 8.55505 13.9127L12.5815 8.54871C12.6049 8.52666 12.6267 8.50236 12.6467 8.47581C12.6667 8.44918 12.684 8.42136 12.6986 8.39263ZM4.76304 14.2202C5.34879 14.2915 6.82629 14.3417 7.65504 13.237L11.4021 8.24511L8.6536 6.1815L4.90629 11.1737C4.06104 12.3017 4.52604 13.6825 4.76304 14.2202ZM9.32875 5.28215L12.0776 7.34514L12.719 6.4907C13.2883 5.73321 13.1345 4.65395 12.377 4.0847C11.6188 3.51695 10.5388 3.67071 9.9703 4.42745L9.32875 5.28215Z"
-                            fill="#050B20"
-                          />
-                        </svg>
-                      </Link>
+                          <div className="flex w-[18px] h-[18px] justify-center items-center absolute left-[11px] top-[11px]">
+                            <svg
+                              className="w-[18px] h-[18px] flex-shrink-0"
+                              viewBox="0 0 19 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M15.0494 15.1836H10.2666C9.9561 15.1836 9.7041 14.9316 9.7041 14.6211C9.7041 14.3106 9.9561 14.0586 10.2666 14.0586H15.0494C15.3599 14.0586 15.6119 14.3106 15.6119 14.6211C15.6119 14.9316 15.3599 15.1836 15.0494 15.1836Z"
+                                fill="#050B20"
+                              />
+                              <path
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M12.2934 8.39263L13.2138 7.16645C13.6698 6.55895 13.8618 5.81046 13.7545 5.0582C13.6473 4.30595 13.2543 3.64145 12.6468 3.18545C11.3935 2.24495 9.60703 2.4977 8.66578 3.75245L3.60177 10.4987C2.09277 12.511 3.43527 14.908 3.49302 15.0092C3.57102 15.145 3.70227 15.2417 3.85527 15.277C3.89877 15.2875 4.31877 15.3805 4.90452 15.3805C5.85177 15.3805 7.23027 15.1382 8.14978 13.9127L12.1762 8.54871C12.1996 8.52666 12.2215 8.50236 12.2414 8.47581C12.2614 8.44918 12.2788 8.42136 12.2934 8.39263ZM4.35777 14.2202C4.94352 14.2915 6.42102 14.3417 7.24977 13.237L10.9969 8.24511L8.24833 6.1815L4.50102 11.1737C3.65577 12.3017 4.12077 13.6825 4.35777 14.2202ZM8.92348 5.28215L11.6724 7.34514L12.3138 6.4907C12.883 5.73321 12.7293 4.65395 11.9718 4.0847C11.2135 3.51695 10.1335 3.67071 9.56503 4.42745L8.92348 5.28215Z"
+                                fill="#050B20"
+                              />
+                            </svg>
+                          </div>
+                        </Link>
+                      </div>
                     </div>
 
-                    {/* Featured Button */}
-                    <button
-                      className={`px-2.5 py-2.5 rounded-xl border border-[#E82121] transition-colors ${index === 0 ? "bg-[#E82121]" : "bg-white hover:bg-red-50"}`}
-                    >
-                      <span
-                        className={`${index === 0 ? "text-white" : "text-black"} font-albert text-[16px] sm:text-[12px] font-medium`}
-                      >
-                        {index === 0 ? "Featured" : "Feature This"}
-                      </span>
-                    </button>
+                    {/* Change Status Button */}
+                    <div className="flex w-[153px] h-[38px] p-2 px-2.5 justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]">
+                      <div className="text-black font-albert text-[14px] font-medium leading-normal">
+                        Change Status
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Featured Button */}
+                  <div className="flex justify-between items-start self-stretch">
+                    <div className="flex w-[150px] h-[38px] py-[5px] px-2.5 justify-center items-center gap-1 rounded-[14px] border border-[#E82121]">
+                      <div className="text-black font-albert text-[14px] font-medium leading-normal">
+                        Featured
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
