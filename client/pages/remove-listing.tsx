@@ -13,7 +13,7 @@ export default function RemoveListing() {
         </button>
 
         {/* Content */}
-        <div className="px-6 pt-16 pb-6">
+        <div className="px-6 pt-16 pb-6 lg:transform lg:scale-[0.75] lg:origin-center">
           {/* Delete Icon */}
           <div className="flex justify-center mb-8">
             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
