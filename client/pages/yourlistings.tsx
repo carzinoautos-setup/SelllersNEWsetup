@@ -357,7 +357,7 @@ export default function YourListingsPage() {
                     {/* Action Buttons */}
                     <div className="flex items-center gap-1.5">
                       {/* Delete Button */}
-                      <button className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] flex items-center justify-center hover:bg-gray-100 transition-colors">
+                      <a href="/remove-listing" className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] flex items-center justify-center hover:bg-gray-100 transition-colors cursor-pointer">
                         <svg
                           className="w-[18px] h-[18px]"
                           viewBox="0 0 18 18"
@@ -389,7 +389,7 @@ export default function YourListingsPage() {
                             fill="#050B20"
                           />
                         </svg>
-                      </button>
+                      </a>
 
                       {/* Edit Button */}
                       <Link
