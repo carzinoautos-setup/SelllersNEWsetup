@@ -146,15 +146,29 @@ export default function EnterVehicleDetails2() {
     Ohio: ["Columbus", "Cleveland", "Cincinnati"],
   };
 
+  const defaultMajorCities = [
+    "New York",
+    "Los Angeles",
+    "Chicago",
+    "Houston",
+    "Phoenix",
+    "Philadelphia",
+    "San Antonio",
+    "San Diego",
+    "Dallas",
+    "San Jose",
+  ];
+
   React.useEffect(() => {
     if (!state) {
-      setCityOptions([]);
+      // show major cities by default so users can pick a city without selecting state
+      setCityOptions(defaultMajorCities);
       setCity("");
       setZipOptions([]);
       setZipCode("");
       return;
     }
-    const options = cityMap[state] || [];
+    const options = cityMap[state] || defaultMajorCities;
     setCityOptions(options);
     setCity("");
     setZipOptions([]);
