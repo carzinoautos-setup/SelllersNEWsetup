@@ -75,14 +75,7 @@ export default function AddAListing() {
                     </button>
                     {activeTab === "license" && (
                       <div className="mt-1 w-full flex justify-center">
-                        <svg
-                          width="11"
-                          height="5"
-                          viewBox="0 0 11 5"
-                          fill="none"
-                        >
-                          <path d="M5.5 5L10.5 0H0.5L5.5 5Z" fill="#24272C" />
-                        </svg>
+                        <svg width="11" height="5" viewBox="0 0 11 5" fill="none" />
                       </div>
                     )}
                   </div>
