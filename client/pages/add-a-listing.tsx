@@ -50,14 +50,17 @@ export default function AddAListing() {
             {/* LEFT: Card area */}
             <div className="flex items-start">
               <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[640px] min-h-[320px]">
+                <div className="flex flex-col relative mt-5 mb-2">
+                  List and sell your car fast with
+                </div>
                 <h1 className="text-[20px] leading-[24px] font-bold text-[#24272C] font-albert mb-4">
-                  Carzino’s AI will do the work for you
+                  Carzino’s AI it will do the work for you.
                 </h1>
 
                 <div className="flex flex-col relative h-auto my-[5px] mb-2">
                   <p className="text-sm text-[#6B6B6B] mb-5">
-                    AI-powered auto-fill for your car’s make, model, details,
-                    and even the description.
+                    Our AI-powered site will fill in your car’s make, model,
+                    details, specs and even the description.
                   </p>
                 </div>
 
