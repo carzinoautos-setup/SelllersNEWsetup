@@ -144,8 +144,9 @@ export function MobileBottomNav() {
 
   const nav = (
     <div
+      ref={navRef}
       className="lg:hidden fixed left-0 right-0 bottom-0 z-[99999] bg-[#FCFCFC] border-t border-gray-200"
-      style={{ paddingBottom: "env(safe-area-inset-bottom, 8px)" }}
+      style={{ paddingBottom: "env(safe-area-inset-bottom, 8px)", position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 99999 }}
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
