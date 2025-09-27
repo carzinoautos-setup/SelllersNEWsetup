@@ -55,7 +55,7 @@ export default function AddAListing() {
                 </h1>
 
                 <div className="flex flex-col relative h-auto my-[5px] mb-2">
-                  <p className="text-sm text-[#6B6B6B]">AI-powered auto-fill for your car’s make, model, details, and even the description.</p>
+                  <p className="text-sm text-[#6B6B6B] mb-5">AI-powered auto-fill for your car’s make, model, details, and even the description.</p>
                 </div>
 
                 {/* Tabs */}
@@ -205,7 +205,7 @@ export default function AddAListing() {
                       We did not find any details.
                     </h3>
                     <div className="text-sm text-[#6B6B6B]">
-                      We couldn’t find details this time, but don��t worry—you
+                      We couldn’t find details this time, but don’t worry—you
                       can retry with a license plate or VIN. If details still
                       don’t work, you can always enter your details manually.
                     </div>
