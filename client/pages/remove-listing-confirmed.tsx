@@ -8,7 +8,7 @@ export default function RemoveListingConfirmed() {
         {/* Red Check Icon */}
         <div className="absolute left-[19px] top-[18px] w-[56px] h-[56px] bg-[#E82121] rounded-full flex items-center justify-center">
           <svg width="42" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M34.1667 8.35L14.1667 28.35L5 19.1833L7.35 16.8333L14.1667 23.6333L31.8167 6L34.1667 8.35Z" fill="white"/>
+            <path d="M34.1667 8.35L14.1667 28.35L5 19.1833L7.35 16.8333L14.1667 23.6333L31.8167 6L34.1667 8.35Z" fill="white" style={{paddingTop: '44px'}}/>
           </svg>
         </div>
 
