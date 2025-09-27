@@ -232,7 +232,7 @@ export default function AddAListing() {
             <div className="flex items-stretch">
               <div className="w-full h-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F3dd49c3d3c3d4edea0802340a03fbad3?format=webp"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fab03aa3cde5c40cd9e82c388188b2814?format=webp"
                   alt="vehicle"
                   className="hidden sm:flex lg:block w-full h-full object-cover"
                 />
