@@ -66,7 +66,7 @@ export default function ApplyCredits() {
               Feature a Car
             </h1>
             <p className="text-lg sm:text-xl text-black font-light">
-              Your add was published
+              Sell your car faster
             </p>
             <div className="text-red-600 text-lg font-light leading-6 mt-2">
               <Link to="/yourlistings">
