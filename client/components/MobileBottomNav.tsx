@@ -5,14 +5,14 @@ import { useLocation } from "react-router-dom";
 
 export function MobileBottomNav() {
   const location = useLocation();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = React.useState(false);
 
-  useEffect(() => {
+  React.React.useEffect(() => {
     setMounted(true);
   }, []);
 
   // Ensure the mobile nav reserves space at the bottom so content isn't hidden
-  useEffect(() => {
+  React.React.useEffect(() => {
     if (typeof window === "undefined" || typeof document === "undefined") return;
     const NAV_HEIGHT_PX = 72; // approximate height of the nav bar
     const mq = window.matchMedia("(max-width: 1023px)");
