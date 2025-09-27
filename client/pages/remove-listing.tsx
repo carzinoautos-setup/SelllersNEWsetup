@@ -4,7 +4,7 @@ export default function RemoveListing() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       {/* Delete Listing Modal */}
-      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-[0_6px_10px_4px_rgba(0,0,0,0.15),0_2px_3px_0_rgba(0,0,0,0.30)] overflow-hidden">
+      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-[0_6px_10px_4px_rgba(0,0,0,0.15),0_2px_3px_0_rgba(0,0,0,0.30)] overflow-hidden lg:transform lg:scale-[0.7] lg:origin-center">
         {/* Close Button */}
         <button className="absolute top-5 right-5 z-10 w-5 h-5 text-red-600 hover:text-red-700 transition-colors">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@ export default function RemoveListing() {
         </button>
 
         {/* Content */}
-        <div className="px-6 pt-16 pb-6 lg:transform lg:scale-[0.75] lg:origin-center">
+        <div className="px-6 pt-16 pb-6">
           {/* Delete Icon */}
           <div className="flex justify-center mb-8">
             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
