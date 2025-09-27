@@ -240,25 +240,6 @@ export default function AddAListing() {
             </div>
           </div>
 
-          {/* Text Content Section */}
-          <div className="w-full max-w-[1076px] mx-auto px-0 py-12">
-            <h2 className="text-2xl font-bold text-black font-albert mb-4">
-              Sell your vehicle online easily with Carzino.
-            </h2>
-
-            <div className="text-sm text-black font-albert leading-relaxed max-w-[1076px]">
-              <p className="mb-4">
-                Carzino makes it simple to sell your vehicle through a fast, and
-                convenient.
-              </p>
-              <p>
-                Just enter your car's VIN number or license plate, and Carzino
-                will automatically pull in your vehicle's make, model, and
-                essential details. From there, you can complete your listing and
-                start connecting with buyers.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </DashboardLayout>
