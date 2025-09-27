@@ -16,16 +16,14 @@ export default function RemoveListing() {
         <div className="px-6 pt-16 pb-6">
           {/* Delete Icon */}
           <div className="flex justify-center mb-8">
-            <div className="w-17 h-17 bg-red-600 rounded-full flex items-center justify-center p-3">
-              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="68" height="68" rx="34" fill="#E82121"/>
-                <path d="M51.25 22.4622C44.8675 21.8297 38.4467 21.5039 32.045 21.5039C28.25 21.5039 24.455 21.6956 20.66 22.0789L16.75 22.4622" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M27.291 20.5245L27.7127 18.0137C28.0193 16.1929 28.2493 14.832 31.4885 14.832H36.5102C39.7494 14.832 39.9985 16.2695 40.286 18.0329L40.7077 20.5245" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M47.1294 28.5195L45.8836 47.8204C45.6728 50.8295 45.5003 53.1679 40.1528 53.1679H27.8478C22.5003 53.1679 22.3278 50.8295 22.1169 47.8204L20.8711 28.5195" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M30.7988 42.625H37.1813" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M29.209 34.957H38.7923" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
+            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="68" height="68" rx="34" fill="#E82121"/>
+              <path d="M51.25 22.4622C44.8675 21.8297 38.4467 21.5039 32.045 21.5039C28.25 21.5039 24.455 21.6956 20.66 22.0789L16.75 22.4622" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M27.291 20.5245L27.7127 18.0137C28.0193 16.1929 28.2493 14.832 31.4885 14.832H36.5102C39.7494 14.832 39.9985 16.2695 40.286 18.0329L40.7077 20.5245" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M47.1294 28.5195L45.8836 47.8204C45.6728 50.8295 45.5003 53.1679 40.1528 53.1679H27.8478C22.5003 53.1679 22.3278 50.8295 22.1169 47.8204L20.8711 28.5195" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M30.7988 42.625H37.1813" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M29.209 34.957H38.7923" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </div>
 
           {/* Heading */}
