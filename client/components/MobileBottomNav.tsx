@@ -46,6 +46,7 @@ export function MobileBottomNav() {
     {
       path: "/dashboard",
       label: "Dashboard",
+      iconSrc: "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F5ab0176617cc435da285a060353736a8?format=webp&width=800",
       icon: (
         <svg
           width="28"
