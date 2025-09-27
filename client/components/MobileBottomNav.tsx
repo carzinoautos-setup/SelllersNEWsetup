@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation } from "react-router-dom";
 
