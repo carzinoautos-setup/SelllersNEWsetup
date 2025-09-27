@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation } from "react-router-dom";
 
@@ -8,6 +9,36 @@ export function MobileBottomNav() {
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  // Ensure the mobile nav reserves space at the bottom so content isn't hidden
+  useEffect(() => {
+    if (typeof window === "undefined" || typeof document === "undefined") return;
+    const NAV_HEIGHT_PX = 72; // approximate height of the nav bar
+    const mq = window.matchMedia("(max-width: 1023px)");
+    function applyPadding() {
+      if (mq.matches) {
+        // include safe area inset
+        document.body.style.paddingBottom = `calc(${NAV_HEIGHT_PX}px + env(safe-area-inset-bottom, 8px))`;
+      } else {
+        document.body.style.paddingBottom = "";
+      }
+    }
+    applyPadding();
+    try {
+      mq.addEventListener("change", applyPadding);
+    } catch (e) {
+      // fallback for older browsers
+      mq.addListener(applyPadding as any);
+    }
+    return () => {
+      try {
+        mq.removeEventListener("change", applyPadding);
+      } catch (e) {
+        mq.removeListener(applyPadding as any);
+      }
+      document.body.style.paddingBottom = "";
+    };
   }, []);
 
   if (!mounted || typeof document === "undefined") return null;
