@@ -1076,6 +1076,7 @@ export default function Vindecoder() {
                       minHeight: 289,
                       width: "100%",
                       position: "relative",
+                      marginBottom: "20px",
                       padding: 20,
                       fontWeight: 400,
                     }}
