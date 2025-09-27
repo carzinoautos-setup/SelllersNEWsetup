@@ -138,6 +138,7 @@ export function MobileBottomNav() {
               ? 'https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev'
               : '';
             const href = base ? `${base}${item.path}` : item.path;
+            const iconUrl = (typeof window !== 'undefined' && (window as any).__BUILDER_MOBILE_NAV_ICONS__?.[item.path]) || (item as any).iconSrc || null;
             return (
               <a
                 key={item.path}
@@ -148,7 +149,11 @@ export function MobileBottomNav() {
                 style={{ textDecoration: "none" }}
               >
                 <div className="w-7 h-7 flex items-center justify-center">
-                  {item.icon}
+                  {iconUrl ? (
+                    <img src={iconUrl} alt={item.label} className="w-6 h-6 object-contain" />
+                  ) : (
+                    item.icon
+                  )}
                 </div>
                 <span className="text-[11px] font-albert text-[#2E2D2D] font-normal leading-none">
                   {item.label}
