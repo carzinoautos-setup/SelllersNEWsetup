@@ -1131,6 +1131,10 @@ export default function Vindecoder() {
                       AI Get values
                     </label>
 
+                    <p style={{ color: "#050B20", marginTop: 12, fontFamily: "DM Sans", fontSize: 14, lineHeight: "20px" }}>
+                      Write a persuasive SEO-friendly description of this car for sale. Use the keywords: "car for sale", the year, make, model, trim, city, state, and location. Make the description sound natural and appealing for buyers. If feature fields are provided (such as navigation system, leather seats, sunroof, towing package, etc.), highlight them in the description to make the vehicle stand out. Keep the tone professional but engaging, and ensure the description is unique:
+                    </p>
+
                     <textarea
                       value={aiInput}
                       onChange={(e) => setAiInput(e.target.value)}
