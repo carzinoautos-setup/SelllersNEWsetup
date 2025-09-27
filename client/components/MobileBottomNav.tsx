@@ -81,23 +81,30 @@ export function MobileBottomNav() {
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
         >
-          {navItems.map((item) => (
-            <a
-              key={item.path}
-              href={item.path}
-              className={`flex flex-col items-center gap-1.5 text-center ${
-                location.pathname === item.path ? "opacity-100" : "opacity-60"
-              }`}
-              style={{ textDecoration: "none" }}
-            >
-              <div className="w-7 h-7 flex items-center justify-center">
-                {item.icon}
-              </div>
-              <span className="text-[11px] font-albert text-[#2E2D2D] font-normal leading-none">
-                {item.label}
-              </span>
-            </a>
-          ))}
+          {navItems.map((item) => {
+            // convert to absolute URL to deployed app when running in Builder preview
+            const base = typeof window !== 'undefined' && window.location.hostname.includes('projects.builder')
+              ? 'https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev'
+              : '';
+            const href = base ? `${base}${item.path}` : item.path;
+            return (
+              <a
+                key={item.path}
+                href={href}
+                className={`flex flex-col items-center gap-1.5 text-center ${
+                  location.pathname === item.path ? "opacity-100" : "opacity-60"
+                }`}
+                style={{ textDecoration: "none" }}
+              >
+                <div className="w-7 h-7 flex items-center justify-center">
+                  {item.icon}
+                </div>
+                <span className="text-[11px] font-albert text-[#2E2D2D] font-normal leading-none">
+                  {item.label}
+                </span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>
