@@ -1089,6 +1089,47 @@ export default function Vindecoder() {
                         lineHeight: "19.5px",
                       }}
                     >
+                      AI Get values
+                    </label>
+
+                    <div
+                      style={{
+                        color: "#050B20",
+                        fontFamily: "DM Sans",
+                        fontSize: 15,
+                        fontWeight: 400,
+                        lineHeight: "26px",
+                        marginTop: 20,
+                        minHeight: 200,
+                      }}
+                    >
+                      Ai Input data here
+                    </div>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <div
+                    style={{
+                      backgroundColor: "#ffffff",
+                      border: "1px solid rgba(178,178,178,1)",
+                      borderRadius: 12,
+                      minHeight: 289,
+                      width: "100%",
+                      position: "relative",
+                      padding: 20,
+                      fontWeight: 400,
+                    }}
+                  >
+                    <label
+                      style={{
+                        color: "#818181",
+                        display: "block",
+                        fontFamily: "DM Sans",
+                        fontSize: 13,
+                        lineHeight: "19.5px",
+                      }}
+                    >
                       Description
                     </label>
 
