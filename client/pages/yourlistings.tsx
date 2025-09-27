@@ -333,7 +333,7 @@ export default function YourListingsPage() {
                         </div>
                       </div>
 
-                      <div className="grid h-5 gap-2.5 self-stretch grid-cols-3">
+                      <div className="grid gap-2.5 self-stretch grid-cols-2">
                         <div className="inline-flex items-center gap-1">
                           <div className="text-[#696665] font-albert text-[12px] font-normal leading-[140%]">
                             Status: Active
