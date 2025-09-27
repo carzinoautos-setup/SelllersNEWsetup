@@ -84,7 +84,7 @@ export default function RemoveListingConfirmed() {
           {/* Action Buttons */}
           <div className="flex gap-6 mb-8 px-4">
             <button className="flex-1 h-14 bg-gray-600 hover:bg-gray-700 text-white rounded-xl font-medium transition-colors">
-              Cancel
+            test
             </button>
             <button className="flex-1 h-14 bg-red-700 hover:bg-red-800 text-white rounded-xl font-medium transition-colors">
               Delete
