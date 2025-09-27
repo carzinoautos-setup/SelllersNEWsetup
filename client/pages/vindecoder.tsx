@@ -1253,7 +1253,7 @@ export default function Vindecoder() {
                         minHeight: 200,
                       }}
                     >
-                      {aiDescription}
+                      {aiDescription || "AI suggested description"}
                     </div>
                   </div>
                 </div>
