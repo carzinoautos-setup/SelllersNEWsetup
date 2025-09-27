@@ -129,10 +129,37 @@ export default function EnterVehicleDetails2() {
     "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"
   ];
   const [state, setState] = useState("");
-  const cityOptions: string[] = [];
-  const zipOptions: string[] = [];
+  // dynamic city options are populated when a state is selected
+  const [cityOptions, setCityOptions] = useState<string[]>([]);
+  const [zipOptions, setZipOptions] = useState<string[]>([]);
   const [city, setCity] = useState("");
   const [zipCode, setZipCode] = useState("");
+
+  // Simple city map for common states (extend as needed)
+  const cityMap: Record<string, string[]> = {
+    California: ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Sacramento"],
+    Texas: ["Houston", "San Antonio", "Dallas", "Austin"],
+    Florida: ["Jacksonville", "Miami", "Tampa", "Orlando"],
+    "New York": ["New York", "Buffalo", "Rochester", "Albany"],
+    Illinois: ["Chicago", "Aurora", "Naperville"],
+    Pennsylvania: ["Philadelphia", "Pittsburgh", "Allentown"],
+    Ohio: ["Columbus", "Cleveland", "Cincinnati"],
+  };
+
+  React.useEffect(() => {
+    if (!state) {
+      setCityOptions([]);
+      setCity("");
+      setZipOptions([]);
+      setZipCode("");
+      return;
+    }
+    const options = cityMap[state] || [];
+    setCityOptions(options);
+    setCity("");
+    setZipOptions([]);
+    setZipCode("");
+  }, [state]);
 
   const toggleFeature = (feature: string) => {
     setSelectedFeatures((prev) => ({
