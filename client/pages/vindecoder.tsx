@@ -1195,9 +1195,20 @@ export default function Vindecoder() {
                       description is unique:
                     </p>
 
+                    {
+                      /* Prefix the textarea with the provided vehicle headline but keep aiInput as the editable body */
+                    }
                     <textarea
-                      value={aiInput}
-                      onChange={(e) => setAiInput(e.target.value)}
+                      value={"2018 BMW 530i xDrive\n\n" + aiInput}
+                      onChange={(e) => {
+                        const val = e.target.value;
+                        const prefix = "2018 BMW 530i xDrive\n\n";
+                        if (val.startsWith(prefix)) {
+                          setAiInput(val.slice(prefix.length));
+                        } else {
+                          setAiInput(val);
+                        }
+                      }}
                       rows={8}
                       style={{
                         color: "#050B20",
