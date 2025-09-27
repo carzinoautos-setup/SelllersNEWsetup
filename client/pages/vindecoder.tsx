@@ -1131,7 +1131,7 @@ export default function Vindecoder() {
                       AI suggested Description
                     </span>
                     <span className="text-[#090909] font-bold">- </span>
-                    <span className="text-[#E82121] font-bold">Step 3A</span>
+                    <span className="text-[#E82121] font-bold">Step 4a</span>
                   </h1>
                   <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
                     Check out the AI-generated, SEO-friendly description to help
