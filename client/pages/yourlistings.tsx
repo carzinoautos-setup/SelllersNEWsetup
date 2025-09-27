@@ -403,7 +403,7 @@ export default function YourListingsPage() {
                       </div>
                       <div className="inline-flex items-start gap-2.5 w-10 h-10">
                         <Link
-                          to="/enter-vehicle-details-2"
+                          to="/edit-listing"
                           className="w-10 h-10 rounded-2xl border border-[#E1E1E1] bg-white relative"
                         >
                           <div className="flex w-[18px] h-[18px] justify-center items-center absolute left-[11px] top-[11px]">
