@@ -75,12 +75,10 @@ export default function Production() {
                 <h2 className="text-lg font-medium text-[#24272C]">
                   POP UP Messages
                 </h2>
-                <Link
-                  to="/success-uploaded"
-                  className="text-sm text-[#1f2937] hover:underline"
-                >
-                  /success-uploaded
-                </Link>
+                <div className="text-sm text-[#1f2937]">
+                  <Link to="/success-uploaded" className="hover:underline block">/success-uploaded</Link>
+                  <Link to="/remove-listing" className="hover:underline block">/remove-listing</Link>
+                </div>
                 <div className="mt-2" />
               </section>
 
