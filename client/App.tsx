@@ -53,6 +53,7 @@ const App = () => (
           <Route path="/edit-listing" element={<EditListing />} />
           <Route path="/success-uploaded" element={<SuccessUploaded />} />
           <Route path="/remove-listing" element={<RemoveListing />} />
+          <Route path="/remove-listing-confirmed" element={<RemoveListingConfirmed />} />
           <Route path="/production" element={<Production />} />
           <Route path="/elements" element={<Elements />} />
           <Route path="/vindecoder" element={<Vindecoder />} />
