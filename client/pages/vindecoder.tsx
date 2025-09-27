@@ -245,6 +245,9 @@ export default function Vindecoder() {
 
     const combined = parts.join(", ");
     setAiInput(combined);
+    // Mirror into the AI Get values box (include headline prefix)
+    const prefix = "2018 BMW 530i xDrive\n\n";
+    setAiValues(prefix + combined);
   }, [
     mileage,
     engine,
