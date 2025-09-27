@@ -165,7 +165,7 @@ export function MobileBottomNav() {
                     item.icon
                   )}
                 </div>
-                <span className="text-[11px] font-albert text-[#2E2D2D] font-normal leading-none">
+                <span className="mobile-bottom-label text-[11px] font-albert text-[#2E2D2D] font-normal leading-none">
                   {item.label}
                 </span>
               </a>
