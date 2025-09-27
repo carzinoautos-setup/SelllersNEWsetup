@@ -334,7 +334,7 @@ export default function YourListingsPage() {
                           </div>
                           <div className="text-[#696665] font-albert text-[16px] sm:text-[12px] font-normal leading-[140%]">
                             <strong>
-                              <div className="font-bold"><span style={{ color: 'rgb(208, 2, 27)' }}>Repost Ad</span></div>
+                              <div className="font-bold"><span style={{ color: 'rgb(208, 2, 27)' }}>Change status: Inactive</span></div>
                             </strong>
                           </div>
                         </div>
