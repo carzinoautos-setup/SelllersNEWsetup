@@ -76,12 +76,12 @@ export default function ApplyCredits() {
                 Learn More
               </Link>
             </div>
-            <div className="text-red-600 text-lg font-light leading-6 mt-2">
-              <Link to="/yourlistings">
-                <b>See Listings</b>
-              </Link>
-            </div>
+            <div className="text-red-600 text-lg font-light leading-6 mt-2" />
           </div>
+
+              <div className="text-center mt-4 text-base sm:text-lg text-black font-light">
+                Get more details
+              </div>
         </div>
 
       </div>
