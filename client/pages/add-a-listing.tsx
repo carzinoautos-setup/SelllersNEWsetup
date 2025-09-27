@@ -54,7 +54,7 @@ export default function AddAListing() {
                   List and sell your car fast with
                 </div>
                 <h1 className="text-[20px] leading-[24px] font-bold text-[#24272C] font-albert mb-4">
-                  Carzino’s AI it will do the work for you.
+                  Carzino’s AI, it will do the work for you.
                 </h1>
 
                 <div className="flex flex-col relative h-auto my-[5px] mb-2">
