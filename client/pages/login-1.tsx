@@ -43,6 +43,7 @@ export default function Login1() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "50% 50%",
         backgroundSize: "cover",
+        backgroundColor: "rgba(0, 0, 0, 1)",
       }}
     >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
