@@ -1368,7 +1368,7 @@ export default function EditListing() {
                     <p className="text-[14px] text-black font-albert leading-[140%] max-w-[955px]">
                       Check out the AI-generated, SEO-friendly description to
                       help your listing get noticed online. Review, edit if
-                      needed, then click "Update Description."
+                      needed, then click "Use AI Description."
                     </p>
                     <div className="w-full h-px bg-[#B9B9B9] mt-6"></div>
                   </div>
@@ -1422,7 +1422,7 @@ export default function EditListing() {
                       }}
                       className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
                     >
-                      Update Description
+                      Use AI Description
                     </button>
                   </div>
                 </div>
