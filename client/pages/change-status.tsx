@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ChangeStatus() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 container-minw-0 min-w-0">
       {/* Delete Listing Modal */}
       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-[0_6px_10px_4px_rgba(0,0,0,0.15),0_2px_3px_0_rgba(0,0,0,0.30)] overflow-hidden lg:transform lg:scale-[0.7] lg:origin-center">
         {/* Close Button */}

@@ -15,7 +15,7 @@ export default function Stripe() {
   const [state, setState] = useState("");
 
   return (
-    <div className="w-full min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="w-full min-h-screen bg-gray-50 flex items-center justify-center p-4 container-minw-0 min-w-0">
       <div className="w-full max-w-6xl bg-white rounded-[20px] shadow-[0_0_100px_0_rgba(0,0,0,0.10)] overflow-hidden">
         <div className="flex flex-col lg:flex-row min-h-[800px]">
           {/* Left Side - Order Summary */}
