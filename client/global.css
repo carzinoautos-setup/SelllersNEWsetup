@@ -178,7 +178,7 @@ body {
 
 @media (max-width: 640px) {
   .add-listing-card {
-    margin-top: -40px; /* less overlap on small screens */
+    margin-top: 0; /* remove negative overlap on small screens to prevent keyboard shifting */
     padding-top: 6px;
   }
 }
