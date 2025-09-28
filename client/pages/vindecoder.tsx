@@ -1026,29 +1026,6 @@ export default function Vindecoder() {
             </div>
           </div>
 
-          {/* Step 3: Price and Description */}
-          <div className="mb-12">
-            {/* Header */}
-            <div className="mb-6">
-              <h1
-                className="text-[20px] font-semibold"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                <span className="text-[#090909]">Price and Description- </span>
-                <span className="text-[#E82121]">Step 3</span>
-              </h1>
-              <p
-                className="text-[14px] text-black leading-[140%] max-w-[955px]"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                Enter your sale price, then write a description that highlights
-                your car's features. Buyers want details, so be specific
-              </p>
-              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
-            </div>
-
-
-          </div>
 
           {/* AI Suggested Description - Step 3A */}
           {showAiDescription && (
@@ -1266,6 +1243,30 @@ export default function Vindecoder() {
               </div>
             </div>
           )}
+
+          {/* Step 3: Price and Description */}
+          <div className="mb-12">
+            {/* Header */}
+            <div className="mb-6">
+              <h1
+                className="text-[20px] font-semibold"
+                style={{ fontFamily: "Albert Sans" }}
+              >
+                <span className="text-[#090909]">Price and Description- </span>
+                <span className="text-[#E82121]">Step 3</span>
+              </h1>
+              <p
+                className="text-[14px] text-black leading-[140%] max-w-[955px]"
+                style={{ fontFamily: "Albert Sans" }}
+              >
+                Enter your sale price, then write a description that highlights
+                your car's features. Buyers want details, so be specific
+              </p>
+              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
+            </div>
+
+
+          </div>
 
           {/* Step 4: Photos */}
           <div className="mb-12">
