@@ -56,7 +56,7 @@ export default function Production() {
                   login stuff
                 </h2>
                 <div className="text-sm text-[#1f2937]">
-                  <p className="hover:underline block">/login-1</p>
+                  <Link to="/login-1" className="hover:underline block">/login-1</Link>
                 </div>
               </section>
 
