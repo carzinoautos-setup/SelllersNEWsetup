@@ -1460,7 +1460,7 @@ export default function Vindecoder() {
                   items={photos.map((p) => p.id)}
                   strategy={rectSortingStrategy}
                 >
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
                     {photos.map((photo, index) => (
                       <SortableThumbnail
                         key={photo.id}
