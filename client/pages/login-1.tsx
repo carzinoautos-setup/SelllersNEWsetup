@@ -346,13 +346,8 @@ export default function Login1() {
                   htmlFor="privacy"
                   className="text-sm text-gray-900 font-albert"
                 >
-                  I accept the privacy policy
+                  I accept the privacy policy, see policy.
                 </label>
-              </div>
-              <div className="flex items-center mt-2">
-                <div className="text-sm text-gray-900 font-albert ml-2">
-                  <strong></strong>View the privacy policy
-                </div>
               </div>
 
               {/* OR Divider */}
