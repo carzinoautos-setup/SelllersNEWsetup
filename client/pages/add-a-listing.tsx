@@ -58,7 +58,7 @@ export default function AddAListing() {
                 </h1>
 
                 <div className="flex flex-col relative h-auto my-[5px] mb-2">
-                  <p className="text-sm text-[#6B6B6B] mb-5">
+                  <p className="text-sm text-[#6B6B6B] mb-5 sm:mb-2">
                     Our AI-powered site will fill in your car’s make, model,
                     details, specs and even the description.
                   </p>
