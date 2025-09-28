@@ -55,19 +55,8 @@ export default function Production() {
                 <h2 className="text-lg font-medium text-[#24272C]">
                   login stuff
                 </h2>
-                <a
-                  href="https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev/vindecoder"
-                  className="text-sm text-[#1f2937] hover:underline"
-                >
-                  /vindecoder
-                </a>
-                <div className="mt-2">
-                  <a
-                    href="https://17a0f3d119a943be91f46c5b31c1b02b-da78dca3ef7a449f928f07305.fly.dev/edit-listing"
-                    className="text-sm text-[#1f2937] hover:underline"
-                  >
-                    /edit-listing
-                  </a>
+                <div className="text-sm text-[#1f2937]">
+                  <p className="hover:underline block">/login-1</p>
                 </div>
               </section>
 
