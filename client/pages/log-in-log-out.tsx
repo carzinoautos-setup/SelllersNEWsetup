@@ -31,42 +31,86 @@ export default function LogInLogOutPage() {
 
             {/* Form area */}
             <div className="mt-4">
-              <div className="relative mb-6">
-                <input
-                  className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
-                  defaultValue="creativelayer088"
-                  aria-label="Email or Username"
-                />
-                <label className="absolute left-4 top-2 text-xs text-gray-500">Email or Username</label>
-              </div>
+              {activeTab === "signin" ? (
+                <>
+                  <div className="relative mb-6">
+                    <input
+                      className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
+                      defaultValue="creativelayer088"
+                      aria-label="Email or Username"
+                    />
+                    <label className="absolute left-4 top-2 text-xs text-gray-500">Email or Username</label>
+                  </div>
 
-              <div className="relative mb-6">
-                <input
-                  className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
-                  defaultValue="********"
-                  type="password"
-                  aria-label="Password"
-                />
-                <label className="absolute left-4 top-2 text-xs text-gray-500">Password</label>
-              </div>
+                  <div className="relative mb-6">
+                    <input
+                      className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
+                      defaultValue="********"
+                      type="password"
+                      aria-label="Password"
+                    />
+                    <label className="absolute left-4 top-2 text-xs text-gray-500">Password</label>
+                  </div>
 
-              <div className="flex items-center justify-between mt-2 mb-6">
-                <div className="flex items-center">
-                  <input
-                    id="remember"
-                    type="checkbox"
-                    checked={rememberMe}
-                    onChange={(e) => setRememberMe(e.target.checked)}
-                    className="w-5 h-5 mr-3"
-                  />
-                  <label htmlFor="remember" className="text-sm text-[#111827]">Remember</label>
-                </div>
-                <div className="text-sm underline text-[#111827]">Forgotten password?</div>
-              </div>
+                  <div className="flex items-center justify-between mt-2 mb-6">
+                    <div className="flex items-center">
+                      <input
+                        id="remember"
+                        type="checkbox"
+                        checked={rememberMe}
+                        onChange={(e) => setRememberMe(e.target.checked)}
+                        className="w-5 h-5 mr-3"
+                      />
+                      <label htmlFor="remember" className="text-sm text-[#111827]">Remember</label>
+                    </div>
+                    <div className="text-sm underline text-[#111827]">Forgotten password?</div>
+                  </div>
 
-              <button className="w-full bg-[#DC2626] text-white rounded-lg py-4 font-medium mb-6">
-                Login
-              </button>
+                  <button className="w-full bg-[#DC2626] text-white rounded-lg py-4 font-medium mb-6">
+                    Login
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div className="relative mb-6">
+                    <input
+                      className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
+                      placeholder="Full name"
+                      aria-label="Full name"
+                    />
+                  </div>
+
+                  <div className="relative mb-6">
+                    <input
+                      className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
+                      placeholder="Email"
+                      aria-label="Email"
+                    />
+                  </div>
+
+                  <div className="relative mb-6">
+                    <input
+                      className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
+                      placeholder="Create password"
+                      type="password"
+                      aria-label="Create password"
+                    />
+                  </div>
+
+                  <div className="relative mb-6">
+                    <input
+                      className="w-full rounded-lg border border-gray-200 px-4 py-4 text-sm placeholder-transparent"
+                      placeholder="Confirm password"
+                      type="password"
+                      aria-label="Confirm password"
+                    />
+                  </div>
+
+                  <button className="w-full bg-[#DC2626] text-white rounded-lg py-4 font-medium mb-6">
+                    Register
+                  </button>
+                </>
+              )}
 
               {/* Divider */}
               <div className="flex items-center my-6">
