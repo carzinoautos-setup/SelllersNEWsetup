@@ -227,7 +227,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
                       : "text-white font-medium",
                   )}
                 >
-                  {item.name}
+                  {item.name === "Production" ? (<p className="m-0">Notes-Production</p>) : item.name}
                 </span>
                 {item.badge && (
                   <div className="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0">
