@@ -1,5 +1,8 @@
 import { useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { DashboardLayout } from "../components/DashboardLayout";
+import { useToast } from "@/hooks/use-toast";
 
 export default function ResetPage() {
   const [showOldPassword, setShowOldPassword] = useState(false);
