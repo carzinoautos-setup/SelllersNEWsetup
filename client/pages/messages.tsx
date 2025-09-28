@@ -43,7 +43,7 @@ export default function MessagesPage() {
               className={`lg:w-[444px] w-full max-w-full md:flex md:flex-col flex flex-col md:border-r md:border-[#EDEDED] border-none bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform min-w-0 box-border ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
             >
               {/* Search */}
-              <div className="p-4 md:p-[30px] pb-[10px]">
+              <div className="p-3 md:p-[20px] pb-2">
                 <div className="flex items-center gap-3 w-full h-[54px] px-4 md:px-[18px] border border-[#EDEDED] rounded-xl bg-white">
                   <svg
                     width="18"
@@ -72,11 +72,11 @@ export default function MessagesPage() {
               <div className="flex-1 px-4 md:px-[30px] pb-[10px] border-t border-[#EDEDED] overflow-y-auto">
                 <div className="space-y-0">
                   {/* Leslie Alexander */}
-                  <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/c041dc35be8bc315c45d97e5809f850ae3d3e137?width=120"
                       alt="Leslie Alexander"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -94,11 +94,11 @@ export default function MessagesPage() {
                   </div>
 
                   {/* Arlene McCoy - Active */}
-                  <div className="flex items-start gap-5 p-4 bg-[#F9FCFF] rounded-2xl cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 bg-[#F9FCFF] rounded-2xl cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120"
                       alt="Arlene McCoy"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -116,11 +116,11 @@ export default function MessagesPage() {
                   </div>
 
                   {/* Kristin Watson */}
-                  <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/f12eb2aeb8e6b90f247254903de54e5826193f01?width=120"
                       alt="Kristin Watson"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -138,11 +138,11 @@ export default function MessagesPage() {
                   </div>
 
                   {/* Cody Fisher */}
-                  <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/1cd22edc30b21b3a800653867a9c9791ebe8d27b?width=120"
                       alt="Cody Fisher"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -160,11 +160,11 @@ export default function MessagesPage() {
                   </div>
 
                   {/* Arlene McCoy (duplicate) */}
-                  <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/cdc8db175de79ce744da76369ab664cb9ad77b8c?width=120"
                       alt="Arlene McCoy"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -182,11 +182,11 @@ export default function MessagesPage() {
                   </div>
 
                   {/* Bessie Cooper */}
-                  <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/88524a91e17f572cfa76d84a10d99234f4c15b70?width=120"
                       alt="Bessie Cooper"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -204,11 +204,11 @@ export default function MessagesPage() {
                   </div>
 
                   {/* Savannah Nguyen */}
-                  <div className="flex items-start gap-5 p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
+                  <div className="flex items-start gap-4 p-3 md:gap-5 md:p-4 hover:bg-gray-50 rounded-lg cursor-pointer">
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/b878046b247eb0edd91adbacb82197e1cf7286d3?width=120"
                       alt="Savannah Nguyen"
-                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="sr-only"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -238,11 +238,11 @@ export default function MessagesPage() {
             {/* Main Chat Area */}
             <div className="flex-1 flex flex-col min-w-0 box-border">
               {/* Chat Header */}
-              <div className="flex items-center gap-5 h-[114px] px-4 md:px-[50px] py-[10px] border-b border-[#EDEDED]">
+              <div className="flex items-center gap-5 h-[90px] px-4 md:px-[30px] py-[8px] border-b border-[#EDEDED]">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120"
                   alt="Arlene McCoy"
-                  className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                  className="sr-only"
                 />
                 <div className="flex-1">
                   <h2 className="text-lg font-medium text-[#24272C] font-albert mb-1">
@@ -258,7 +258,7 @@ export default function MessagesPage() {
               </div>
 
               {/* Messages */}
-              <div className="flex-1 p-4 md:p-[50px] space-y-[30px] overflow-y-auto w-full box-border">
+              <div className="flex-1 p-3 md:p-[30px] space-y-[24px] overflow-y-auto w-full box-border">
                 {/* Outgoing Message 1 */}
                 <div className="flex flex-col items-end gap-[6px] ml-0">
                   <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[95%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words break-all whitespace-pre-wrap">
@@ -323,7 +323,7 @@ export default function MessagesPage() {
               </div>
 
               {/* Message Input */}
-              <div className="flex items-center gap-[10px] p-4 md:p-[30px] pt-0">
+              <div className="flex items-center gap-[8px] p-3 md:p-[20px] pt-0">
                 <div className="flex-1 flex items-center h-[52px] px-3 md:px-[18px] py-3 md:py-[12px] border border-[#EDEDED] rounded-xl bg-white">
                   <input
                     type="text"
