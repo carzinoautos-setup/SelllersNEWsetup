@@ -49,7 +49,7 @@ export default function AddAListing() {
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_65%] gap-6 items-stretch min-w-0">
             {/* LEFT: Card area */}
             <div className="flex items-start min-w-0 overflow-visible">
-              <div className="add-listing-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[640px] min-w-0 min-h-[320px] -mt-20 sm:-mt-8 md:mt-0 relative z-20 overflow-visible">
+              <div className="add-listing-card bg-white rounded-2xl shadow-lg w-full max-w-[640px] min-w-0 min-h-[320px] -mt-20 sm:-mt-8 md:mt-0 relative z-20 overflow-visible" style={{padding: '6px 32px 32px', marginBottom: 24}}>
                 <div className="flex flex-col relative mt-5 mb-2 sm:mt-5 xs:mt-1">
                   List and sell your car fast with
                 </div>
