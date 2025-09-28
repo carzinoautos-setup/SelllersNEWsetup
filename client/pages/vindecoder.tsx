@@ -1249,7 +1249,7 @@ export default function Vindecoder() {
             <div className="mb-6">
               <h1
                 className="text-[20px] font-semibold"
-                style={{ fontFamily: "Albert Sans" }}
+                style={{ fontFamily: "Albert Sans", marginTop: 20 }}
               >
                 <span className="text-[#090909]">Price and Description- </span>
                 <span className="text-[#E82121]">Step 4</span>
