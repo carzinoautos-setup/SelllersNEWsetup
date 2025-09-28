@@ -1310,7 +1310,13 @@ export default function Vindecoder() {
                         minHeight: 200,
                       }}
                     >
-                      {aiDescription || "AI suggested description"}
+                      <textarea
+                        value={aiDescription}
+                        onChange={(e) => setAiDescription(e.target.value)}
+                        rows={8}
+                        className="w-full text-[15px] font-albert text-[#050B20] leading-[26px] bg-transparent outline-none resize-vertical"
+                        placeholder="AI suggested description"
+                      />
                     </div>
                   </div>
                 </div>
