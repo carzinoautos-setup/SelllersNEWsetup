@@ -12,7 +12,7 @@ export function DashboardHeader({
   const navItems = ["Home", "Cars for Sale", "Trade in your Car", "Dealers"];
 
   const headerClasses = cn(
-    "flex items-center justify-between px-4 lg:px-[50px] lg:py-[22px] py-3 relative shadow-xl",
+    "flex items-center justify-between px-4 lg:px-[50px] lg:py-[22px] py-3 relative shadow-xl header-fixed-safe",
     // Mobile open -> dark header. Otherwise white background for tablet/desktop.
     mobileOpen
       ? "bg-black border-black text-white h-[76px] sm:bg-black sm:text-white"
@@ -94,7 +94,7 @@ export function DashboardHeader({
         data-builder-slot="header-icon"
         role="region"
         aria-label="Header design icon slot"
-        className="absolute left-4 top-1/2 transform translate-y-[-12px] flex items-center gap-2"
+        className="absolute left-4 top-4 flex items-center gap-2"
       >
         <div className="h-6 w-6" />
       </div>

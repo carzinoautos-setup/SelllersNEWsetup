@@ -150,6 +150,8 @@ body,
   button {
     font-size: 16px;
   }
+  /* ensure Tailwind text-sm maps to at least 16px on small screens */
+  .text-sm { font-size: 16px !important; line-height: 1.2 !important; }
 }
 
 /* Ensure root elements never expand beyond viewport and prevent visual-viewport horizontal drift */
@@ -164,6 +166,12 @@ html, body, #root {
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
+}
+
+/* Prevent transforms in header area which can cause visual-viewport drift on iOS */
+.header-fixed-safe, .header-fixed-safe * {
+  transform: none !important;
+  will-change: auto !important;
 }
 
 /* Ensure content containers use min-width 0 to avoid child overflow stretching */

@@ -63,7 +63,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   }, [mobileOpen, isMobile]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-white font-albert overflow-x-hidden">
+    <div className="flex flex-col min-h-screen bg-white font-albert overflow-x-hidden min-w-0">
       {!mobileOpen && <div className="w-full h-[9px] bg-[#DE0707]" />}
       {/* Full-width red top bar shown when menu is closed (non-sticky, part of header flow) */}
       {/* (rendered inside main content so it scrolls with the page) */}
