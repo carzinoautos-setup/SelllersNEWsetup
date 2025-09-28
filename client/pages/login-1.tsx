@@ -47,14 +47,14 @@ export default function Login1() {
       }}
     >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div className="px-8 py-5 sm:px-8" style={{boxShadow: "1px 1px 3px 10px rgba(0,0,0,1)"}}>
-          <img loading="lazy" alt="Carzino logo" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" className="block mx-auto mb-3" style={{width: 225, height: "auto", objectFit: "contain", paddingBottom: 24}} />
+        <div className="px-6 py-4 sm:px-6" style={{boxShadow: "1px 1px 3px 10px rgba(0,0,0,1)"}}>
+          <img loading="lazy" alt="Carzino logo" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" className="block mx-auto mb-2" style={{width: 225, height: "auto", objectFit: "contain", paddingBottom: 16}} />
           {/* Tabs */}
-          <div className="relative mb-8">
+          <div className="relative mb-6">
             <div className="flex space-x-8">
               <button
                 onClick={() => setActiveTab("signin")}
-                className={`pb-4 text-base font-medium font-albert transition-colors ${
+                className={`pb-3 text-base font-medium font-albert transition-colors ${
                   activeTab === "signin"
                     ? "text-gray-900 border-b-2 border-red-600"
                     : "text-gray-900"
@@ -64,7 +64,7 @@ export default function Login1() {
               </button>
               <button
                 onClick={() => setActiveTab("register")}
-                className={`pb-4 text-base font-medium font-albert transition-colors ${
+                className={`pb-3 text-base font-medium font-albert transition-colors ${
                   activeTab === "register"
                     ? "text-gray-900 border-b-2 border-red-600"
                     : "text-gray-900"
@@ -78,7 +78,7 @@ export default function Login1() {
 
           {/* Sign In Tab */}
           {activeTab === "signin" && (
-            <div className="space-y-6">
+            <div className="space-y-4">
               {forgotOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
                   <div
@@ -198,7 +198,7 @@ export default function Login1() {
               </div>
 
               {/* Login Button */}
-              <button className="w-full bg-red-600 text-white py-4 rounded-xl font-medium font-albert hover:bg-red-700 transition-colors flex items-center justify-center space-x-2">
+              <button className="w-full bg-red-600 text-white py-3 rounded-xl font-medium font-albert hover:bg-red-700 transition-colors flex items-center justify-center space-x-2">
                 <span>Login</span>
               </button>
 
@@ -217,7 +217,7 @@ export default function Login1() {
               </div>
 
               {/* Social Login Buttons */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 <button className="flex items-center justify-center space-x-2 py-3 px-4 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors">
                   <svg
                     width="20"
@@ -268,7 +268,7 @@ export default function Login1() {
 
           {/* Register Tab */}
           {activeTab === "register" && (
-            <div className="space-y-6">
+            <div className="space-y-4">
               {/* Username Input */}
               <div>
                 <div className="relative">
@@ -331,7 +331,7 @@ export default function Login1() {
 
 
               {/* Sign Up Button */}
-              <button className="w-full bg-red-600 text-white py-4 rounded-xl font-medium font-albert hover:bg-red-700 transition-colors flex items-center justify-center space-x-2">
+              <button className="w-full bg-red-600 text-white py-3 rounded-xl font-medium font-albert hover:bg-red-700 transition-colors flex items-center justify-center space-x-2">
                 <span>Sign UP</span>
               </button>
 
