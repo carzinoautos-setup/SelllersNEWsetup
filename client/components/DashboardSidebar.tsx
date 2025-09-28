@@ -50,7 +50,6 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
     { name: "Production", icon: EditIcon, active: false, path: "/production" },
-    { name: "Elements", icon: EditIcon, active: false, path: "/elements" },
   ];
 
   const location = useLocation();

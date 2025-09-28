@@ -19,7 +19,6 @@ import Messages from "./pages/messages";
 import AddAListing from "./pages/add-a-listing";
 import EditListing from "./pages/edit-listing";
 import Production from "./pages/production";
-import Elements from "./pages/elements";
 import Vindecoder from "./pages/vindecoder";
 import StartVindecoder from "./pages/start-vindecoder";
 import SuccessUploaded from "./pages/success-uploaded";
@@ -59,7 +58,6 @@ const App = () => (
             element={<RemoveListingConfirmed />}
           />
           <Route path="/production" element={<Production />} />
-          <Route path="/elements" element={<Elements />} />
           <Route path="/vindecoder" element={<Vindecoder />} />
           <Route path="/billing" element={<Billing />} />
           <Route path="/logout" element={<Logout />} />
