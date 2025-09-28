@@ -17,7 +17,6 @@ import Billing from "./pages/billing";
 import Logout from "./pages/logout";
 import Messages from "./pages/messages";
 import AddAListing from "./pages/add-a-listing";
-import EnterVehicleDetails2 from "./pages/enter-vehicle-details-2";
 import EditListing from "./pages/edit-listing";
 import Production from "./pages/production";
 import Elements from "./pages/elements";
@@ -49,10 +48,6 @@ const App = () => (
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/add-a-listing" element={<AddAListing />} />
           <Route path="/start-vindecoder" element={<StartVindecoder />} />
-          <Route
-            path="/enter-vehicle-details-2"
-            element={<EnterVehicleDetails2 />}
-          />
           <Route path="/edit-listing" element={<EditListing />} />
           <Route path="/apply-credits" element={<ApplyCredits />} />
           <Route path="/feature-mycar" element={<FeatureMycar />} />

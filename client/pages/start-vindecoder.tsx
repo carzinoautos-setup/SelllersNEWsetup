@@ -186,7 +186,7 @@ export default function StartVindecoder() {
                     </div>
                     <div className="mt-3 flex gap-3">
                       <Link
-                        to="/enter-vehicle-details-2"
+                        to="/edit-listing"
                         className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white flex items-center justify-center"
                       >
                         Create Your Ad

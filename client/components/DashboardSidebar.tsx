@@ -45,7 +45,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
       name: "Enter Vehicle Details",
       icon: EditIcon,
       active: false,
-      path: "/enter-vehicle-details-2",
+      path: "/edit-listing",
     },
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
