@@ -137,7 +137,7 @@ export default function Login1() {
                 </div>
                 <div className="relative flex justify-center">
                   <div className="bg-white px-4">
-                    <span className="text-gray-900 text-base font-albert">OR</span>
+                    <span className="text-gray-900 text-base font-albert">continue with</span>
                   </div>
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function Login1() {
                   <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
                     <path d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07C1.86 16.71 5.29 20.68 9.99 21.7V14.04H7.6v-2.97h2.39V9.41c0-2.37 1.41-3.68 3.57-3.68 1.03 0 2.11.18 2.11.18v2.32h-1.19c-1.17 0-1.53.72-1.53 1.46v1.75h2.6l-.42 2.97h-2.18v7.66c4.7-1.02 8.14-5 8.14-9.64z" fill="#1877F2" />
                   </svg>
-                  <span className="text-blue-600 text-sm font-albert">Continue Facebook</span>
+                  <span className="text-blue-600 text-sm font-albert">Facebook</span>
                 </button>
                 <button className="flex items-center justify-center space-x-2 py-3 px-4 border border-red-600 rounded-lg hover:bg-red-50 transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
@@ -157,7 +157,7 @@ export default function Login1() {
                     <path d="M8.215 13.997a4.01 4.01 0 0 1 0-2.56V9.08H4.83a8.22 8.22 0 0 0 0 5.88l3.385-1.04z" fill="#FBBC05"/>
                     <path d="M12.625 7.69c1.31 0 2.48.45 3.4 1.33l2.55-2.55C17.06 4.98 14.99 4 12.625 4a8.26 8.26 0 0 0-7.79 4.9l3.385 2.36C8.835 8.645 10.24 7.69 12.625 7.69z" fill="#EA4335"/>
                   </svg>
-                  <span className="text-black text-sm font-albert">Continue Google</span>
+                  <span className="text-black text-sm font-albert">Google</span>
                 </button>
               </div>
             </div>
@@ -280,7 +280,7 @@ export default function Login1() {
                 </div>
                 <div className="relative flex justify-center">
                   <div className="bg-white px-4">
-                    <span className="text-gray-900 text-base font-albert">OR</span>
+                    <span className="text-gray-900 text-base font-albert">continue with</span>
                   </div>
                 </div>
               </div>
@@ -291,7 +291,7 @@ export default function Login1() {
                   <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
                     <path d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07C1.86 16.71 5.29 20.68 9.99 21.7V14.04H7.6v-2.97h2.39V9.41c0-2.37 1.41-3.68 3.57-3.68 1.03 0 2.11.18 2.11.18v2.32h-1.19c-1.17 0-1.53.72-1.53 1.46v1.75h2.6l-.42 2.97h-2.18v7.66c4.7-1.02 8.14-5 8.14-9.64z" fill="#1877F2" />
                   </svg>
-                  <span className="text-blue-600 text-sm font-albert">Continue Facebook</span>
+                  <span className="text-blue-600 text-sm font-albert">Facebook</span>
                 </button>
                 <button className="flex items-center justify-center space-x-2 py-3 px-4 border border-red-600 rounded-lg hover:bg-red-50 transition-colors">
                   <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
@@ -300,7 +300,7 @@ export default function Login1() {
                     <path d="M8.215 13.997a4.01 4.01 0 0 1 0-2.56V9.08H4.83a8.22 8.22 0 0 0 0 5.88l3.385-1.04z" fill="#FBBC05"/>
                     <path d="M12.625 7.69c1.31 0 2.48.45 3.4 1.33l2.55-2.55C17.06 4.98 14.99 4 12.625 4a8.26 8.26 0 0 0-7.79 4.9l3.385 2.36C8.835 8.645 10.24 7.69 12.625 7.69z" fill="#EA4335"/>
                   </svg>
-                  <span className="text-black text-sm font-albert">Continue Google</span>
+                  <span className="text-black text-sm font-albert">Google</span>
                 </button>
               </div>
             </div>
