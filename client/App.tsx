@@ -30,6 +30,7 @@ import FeatureMycar from "./pages/feature-mycar";
 import ChangeStatus from "./pages/change-status";
 import RemoveListing from "./pages/remove-listing";
 import RemoveListingConfirmed from "./pages/remove-listing-confirmed";
+import Login1 from "./pages/login-1";
 
 const queryClient = new QueryClient();
 
@@ -69,6 +70,7 @@ const App = () => (
           <Route path="/billing" element={<Billing />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/messages" element={<Messages />} />
+          <Route path="/login-1" element={<Login1 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
