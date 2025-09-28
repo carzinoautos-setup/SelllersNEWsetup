@@ -377,7 +377,7 @@ export default function Login1() {
               </div>
 
               {/* Social Login Buttons */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 mt-2">
                 <button className="flex items-center justify-center space-x-2 py-3 px-4 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors">
                   <svg
                     width="20"
