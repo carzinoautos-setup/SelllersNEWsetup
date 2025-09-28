@@ -19,8 +19,30 @@ export default function Login1() {
     // Keep the modal open so users can resend if needed.
   }
 
+  const [bgImage, setBgImage] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    // Allow Builder or other tools to set the login background at runtime via window.__BUILDER_LOGIN_BG
+    if (typeof window !== "undefined") {
+      const w = window as any;
+      if (w.__BUILDER_LOGIN_BG) {
+        setBgImage(w.__BUILDER_LOGIN_BG);
+      }
+      // expose setter so Builder preview or dev tools can update the background dynamically
+      w.setLoginBg = (url: string | undefined) => setBgImage(url);
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert">
+    <div
+      className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert"
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : undefined,
+        backgroundSize: bgImage ? "cover" : undefined,
+        backgroundPosition: bgImage ? "center" : undefined,
+        backgroundRepeat: bgImage ? "no-repeat" : undefined,
+      }}
+    >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div className="px-8 py-5 sm:px-8">
           <img loading="lazy" alt="Carzino logo" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" style={{display: "block", width: "160px", height: "auto", objectFit: "contain", paddingBottom: "24px", margin: "0 auto 12px"}} />
