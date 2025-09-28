@@ -823,20 +823,21 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Select State */}
+                  {/* Enter City (moved from Column 2) */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Select State
+                      Enter City
                     </label>
-                    <Select
-                      options={stateOptions}
-                      value={stateValue}
-                      onChange={(v) => setStateValue(v)}
-                      placeholder="Select State"
-                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
+                    <input
+                      type="text"
+                      value={city}
+                      onChange={(e) => setCity(e.target.value)}
+                      placeholder="Enter City"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
+                      style={{ fontFamily: "Albert Sans" }}
                     />
                   </div>
                 </div>
@@ -911,19 +912,19 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Enter City */}
+                  {/* Enter Zip Code (moved from Column 3) */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Enter City
+                      Enter Zip Code
                     </label>
                     <input
                       type="text"
-                      value={city}
-                      onChange={(e) => setCity(e.target.value)}
-                      placeholder="Enter City"
+                      value={zipCode}
+                      onChange={(e) => setZipCode(e.target.value)}
+                      placeholder="Enter Zip Code"
                       className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
                       style={{ fontFamily: "Albert Sans" }}
                     />
@@ -983,21 +984,20 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Enter Zip Code */}
+                  {/* Select State (moved from Column 1) */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Enter Zip Code
+                      Select State
                     </label>
-                    <input
-                      type="text"
-                      value={zipCode}
-                      onChange={(e) => setZipCode(e.target.value)}
-                      placeholder="Enter Zip Code"
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
-                      style={{ fontFamily: "Albert Sans" }}
+                    <Select
+                      options={stateOptions}
+                      value={stateValue}
+                      onChange={(v) => setStateValue(v)}
+                      placeholder="Select State"
+                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
                     />
                   </div>
                 </div>
