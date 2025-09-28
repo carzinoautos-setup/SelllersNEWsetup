@@ -55,10 +55,15 @@ export default function Production() {
                   login stuff
                 </h2>
                 <div className="text-sm text-[#1f2937]">
-                  <Link to="/login-1" className="hover:underline block">
-                    /login-1
-                  </Link>
+                <div className="flex flex-col relative mt-5">
+                  <p>
+                    The login page is designed but still needs a little bit of work. We'll need to figure out how we're going to set this up.
+                  </p>
                 </div>
+                <Link to="/login-1" className="hover:underline block">
+                  /login-1
+                </Link>
+              </div>
               </section>
 
               <section className="p-4 border border-[#EDEDED] rounded-lg">
