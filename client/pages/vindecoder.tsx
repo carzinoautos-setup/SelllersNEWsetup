@@ -477,19 +477,19 @@ export default function Vindecoder() {
           <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 py-6">
             <div className="flex flex-wrap items-center gap-2 sm:gap-4">
               <span
-                className="text-[12px] font-bold text-[#090909] leading-[140%]"
+                className="text-[16px] font-bold text-[#090909] leading-[140%]"
                 style={{ fontFamily: "Albert Sans" }}
               >
                 Your listing:
               </span>
               <span
-                className="text-[12px] font-normal text-[#090909] leading-[140%]"
+                className="text-[16px] font-normal text-[#090909] leading-[140%]"
                 style={{ fontFamily: "Albert Sans" }}
               >
                 2018 BMW 530i xDrive
               </span>
               <span
-                className="text-[12px] font-normal text-black leading-[140%]"
+                className="text-[16px] font-normal text-black leading-[140%]"
                 style={{ fontFamily: "Albert Sans" }}
               >
                 Vin#: VA5768PSJ6789H1222
