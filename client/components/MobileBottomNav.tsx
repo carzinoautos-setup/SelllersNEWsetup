@@ -99,7 +99,7 @@ export function MobileBottomNav() {
   const nav = (
     <div
       ref={navRef}
-      className="fixed bottom-0 left-0 right-0 lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200 z-50"
+      className="fixed bottom-0 left-0 right-0 lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200 z-[1000]" style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
