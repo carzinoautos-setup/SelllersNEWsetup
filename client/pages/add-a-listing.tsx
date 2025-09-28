@@ -188,6 +188,9 @@ export default function AddAListing() {
                     <h3 className="text-xl font-semibold">
                       If this is your car, create your ad.
                     </h3>
+                    <div className="mt-2">
+                      <button onClick={handleTryAgain} className="text-sm text-[#24272C] underline">Start over</button>
+                    </div>
                     <div className="text-sm text-[#6B6B6B]">
                       2021 Honda Accord LX
                     </div>
