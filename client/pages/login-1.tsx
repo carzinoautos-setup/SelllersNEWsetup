@@ -41,7 +41,7 @@ export default function Login1() {
         minHeight: "703.2px",
         backgroundImage: `url(${bgImage || defaultBg})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundPosition: "50% 50%",
         backgroundSize: "cover",
       }}
     >
