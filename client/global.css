@@ -134,9 +134,22 @@
 
 /* Prevent horizontal scrollbar across the site (fix for thin slider bar) */
 html,
-body {
+body,
+#root {
   overflow-x: hidden !important;
   max-width: 100% !important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Prevent iOS from zooming inputs when focused by ensuring a minimum font-size on small screens */
+@media (max-width: 640px) {
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 16px;
+  }
 }
 
 /* Hide horizontal scrollbar visuals (webkit) */
