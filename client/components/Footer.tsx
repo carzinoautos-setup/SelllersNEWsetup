@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="left-0 w-screen relative">
+    <footer className="hidden sm:block left-0 w-screen relative">
       {/* Ensure left sidebar area matches footer background so they meet */}
       {/* Full-bleed promo bar */}
       <div className="w-full bg-[#f8f8f8]">
