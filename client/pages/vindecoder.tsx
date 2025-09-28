@@ -1296,7 +1296,7 @@ export default function Vindecoder() {
                         lineHeight: "19.5px",
                       }}
                     >
-                      Description
+                      Ai Description
                     </label>
 
                     <div
@@ -1324,7 +1324,7 @@ export default function Vindecoder() {
                     }}
                     className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
                   >
-                    Update Description
+                    Use AI Description
                   </button>
                 </div>
               </div>
