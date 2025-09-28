@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import VisualViewportGuard from "./VisualViewportGuard";
 import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardHeader } from "./DashboardHeader";
 import { EditProfileForm } from "./EditProfileForm";
@@ -64,6 +65,8 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
   return (
     <div className="flex flex-col min-h-screen bg-white font-albert overflow-x-hidden min-w-0">
+      {/* visual viewport guard to re-apply layout constraints when mobile keyboard opens */}
+      <VisualViewportGuard />
       {!mobileOpen && <div className="w-full h-[9px] bg-[#DE0707]" />}
       {/* Full-width red top bar shown when menu is closed (non-sticky, part of header flow) */}
       {/* (rendered inside main content so it scrolls with the page) */}

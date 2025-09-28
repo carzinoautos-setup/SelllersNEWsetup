@@ -1,4 +1,5 @@
 import React from "react";
+import VisualViewportGuard from "../components/VisualViewportGuard";
 
 export default function RemoveListingConfirmed() {
   return (

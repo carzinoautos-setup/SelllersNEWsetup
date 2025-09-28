@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import VisualViewportGuard from "../components/VisualViewportGuard";
 
 export default function LogInLogOutPage() {
   const [activeTab, setActiveTab] = useState("signin");
@@ -6,6 +7,7 @@ export default function LogInLogOutPage() {
 
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-4 lg:p-8 font-albert container-minw-0 min-w-0">
+      <VisualViewportGuard />
       <div className="w-full max-w-7xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
         {/* Left Panel - Login Form (updated to login-1 layout) */}
         <div className="flex-1 p-6 sm:p-8 lg:p-12 xl:p-16 flex flex-col justify-center">

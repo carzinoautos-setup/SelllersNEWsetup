@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import VisualViewportGuard from "../components/VisualViewportGuard";
 
 export default function SuccessUploaded() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-start sm:items-center justify-center pt-[50px] sm:pt-0 px-4 container-minw-0 min-w-0">
+      <VisualViewportGuard />
       {/* Main Success Modal */}
       <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden mx-auto md:transform md:scale-[0.7] md:origin-center lg:transform lg:scale-[0.6125] lg:origin-center">
         {/* Close Button */}
