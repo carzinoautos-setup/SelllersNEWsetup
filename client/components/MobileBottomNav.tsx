@@ -99,11 +99,11 @@ export function MobileBottomNav() {
   const nav = (
     <div
       ref={navRef}
-      className="lg:hidden bg-[#4A4A4A] sm:bg-[#FCFCFC] border-t border-gray-200"
+      className="lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200"
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4 bg-[#4A4A4A] sm:bg-transparent">
+      <div className="max-w-7xl mx-auto px-4 bg-black sm:bg-[#4A4A4A]">
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
