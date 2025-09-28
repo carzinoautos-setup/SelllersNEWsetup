@@ -65,7 +65,7 @@ export default function YourListingsPage() {
                 {/* Mobile sort select */}
                 <select
                   aria-label="Sort"
-                  className="ml-2 p-2 rounded-xl border border-[#EDEDED] bg-white text-sm sm:hidden"
+                  className="ml-2 px-3 py-2 rounded-xl border border-[#EDEDED] bg-white text-sm sm:hidden"
                 >
                   <option>Sort</option>
                   <option value="newest">Newest</option>
