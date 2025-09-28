@@ -1231,7 +1231,19 @@ export default function Vindecoder() {
                 <div className="mt-5 flex justify-start">
                   <button
                     onClick={() => {
-                      setDescription(aiDescription);
+                      const prefix = "2018 BMW 530i xDrive\n\n";
+                      let toSet = (aiDescription || "").trim();
+                      if (!toSet) {
+                        const raw = (aiValues || "").trim();
+                        if (raw.startsWith(prefix)) {
+                          toSet = raw.slice(prefix.length).trim();
+                        } else if (raw) {
+                          toSet = raw;
+                        } else {
+                          toSet = (aiInput || "").trim();
+                        }
+                      }
+                      setDescription(toSet);
                       setShowAiDescription(false);
                     }}
                     className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
