@@ -356,6 +356,11 @@ export default function Login1() {
                   I accept the privacy policy
                 </label>
               </div>
+              <div className="flex items-center mt-2">
+                <div className="text-sm text-gray-900 font-albert ml-2">
+                  View the privacy policy
+                </div>
+              </div>
 
               {/* OR Divider */}
               <div className="relative">
