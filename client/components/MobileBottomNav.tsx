@@ -99,11 +99,11 @@ export function MobileBottomNav() {
   const nav = (
     <div
       ref={navRef}
-      className="fixed bottom-0 left-0 right-0 lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200 z-[1000]" style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
+      className="lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200"
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4 bg-black sm:bg-[#4A4A4A] mb-[50px] sm:mb-0" style={{paddingBottom: 'env(safe-area-inset-bottom)', WebkitTouchCallout: 'none'}}>
+      <div className="max-w-7xl mx-auto px-4">
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
