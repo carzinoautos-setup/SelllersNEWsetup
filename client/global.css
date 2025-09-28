@@ -152,6 +152,25 @@ body,
   }
 }
 
+/* Ensure root elements never expand beyond viewport and prevent visual-viewport horizontal drift */
+html, body, #root {
+  width: 100% !important;
+  min-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Prevent header from using transforms or percentage widths that can expand when visual viewport changes */
+.header-fixed-safe {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ensure content containers use min-width 0 to avoid child overflow stretching */
+.container-minw-0 {
+  min-width: 0;
+}
+
 /* Hide horizontal scrollbar visuals (webkit) */
 ::-webkit-scrollbar {
   height: 0 !important;
