@@ -20,7 +20,7 @@ export default function Login1() {
   }
 
   const [bgImage, setBgImage] = useState<string | undefined>(undefined);
-  const defaultBg = "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd534e0e0d2774fe7acdb7292c1bf430b?format=webp";
+  const defaultBg = "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F820fa5b341f54c20832fbc5ec4adaeb1?format=webp";
 
   useEffect(() => {
     // Allow Builder or other tools to set the login background at runtime via window.__BUILDER_LOGIN_BG
