@@ -1420,16 +1420,10 @@ export default function EditListing() {
                       Use AI Description
                     </div>
                   </div>
-                  <div className="mt-5 flex justify-start">
-                    <button
-                      onClick={() => {
-                        setDescription(aiDescription);
-                        setShowAiDescription(false);
-                      }}
-                      className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
-                    >
+                  <div data-loc="client/pages/edit-listing.tsx:1423:19" style={{display: "flex", fontWeight: 400, justifyContent: "flex-start", marginTop: 20}}>
+                    <div data-loc="client/pages/edit-listing.tsx:1424:21" style={{display: "flex", alignItems: "center", backgroundColor: "rgb(232, 33, 33)", borderRadius: "14px", color: "rgb(255, 255, 255)", fontFamily: '"Albert Sans", -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Segoe UI", sans-serif', fontWeight: 500, gap: "10px", height: "50px", justifyContent: "center", textDecoration: "rgb(255, 255, 255)", width: "211px", borderColor: "rgba(0, 0, 0, 0)", padding: "16px 24px"}}>
                       Use AI Description
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
