@@ -111,16 +111,21 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           <div
             className={`flex-1 pb-24 lg:pb-0 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
           >
-            <img
-              loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3"
-              alt="vehicle"
-              className="flex sm:hidden w-full h-auto object-cover min-h-[20px] min-w-[20px]"
-              style={{
-                aspectRatio: "3.21",
-                objectPosition: "center",
-              }}
-            />
+            {(() => {
+              const path = typeof window !== 'undefined' ? window.location.pathname : '';
+              return path === '/add-a-listing' ? (
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fabc74d5a1dc944588f8ebbcf13d027d3?width=2000 2000w"
+                  alt="vehicle"
+                  className="flex sm:hidden w-full h-auto object-cover min-h-[20px] min-w-[20px]"
+                  style={{
+                    aspectRatio: "3.21",
+                    objectPosition: "center",
+                  }}
+                />
+              ) : null;
+            })()}
             {children}
           </div>
         </div>
