@@ -69,8 +69,6 @@ export default function BillingPage() {
         <div className="pt-8 px-4 sm:px-6 lg:px-8 w-full max-w-[1200px] mx-auto">
           <div className="flex flex-col xl:flex-row gap-8">
             <div className="flex-1">
-              <h2 className="text-[28px] font-albert font-medium text-[#050B20] mb-6">stripe design</h2>
-
               {/* Removed large Stripe checkout visual; keeping payment methods and invoices below */}
 
               <div className="bg-white border border-[#E1E1E1] rounded-2xl p-6 mb-6">
