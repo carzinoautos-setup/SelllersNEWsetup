@@ -103,7 +103,7 @@ export function MobileBottomNav() {
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4 bg-black sm:bg-[#4A4A4A]">
+      <div className="max-w-7xl mx-auto px-4 bg-black sm:bg-[#4A4A4A]" style={{paddingBottom: 'env(safe-area-inset-bottom)'}}>
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
