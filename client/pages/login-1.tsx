@@ -137,7 +137,7 @@ export default function Login1() {
                 </div>
                 <div className="relative flex justify-center">
                   <div className="bg-white px-4">
-                    <span className="text-gray-900 text-base font-albert">continue with</span>
+                    <span className="text-gray-900 text-base font-albert">Or continue with</span>
                   </div>
                 </div>
               </div>
@@ -280,7 +280,7 @@ export default function Login1() {
                 </div>
                 <div className="relative flex justify-center">
                   <div className="bg-white px-4">
-                    <span className="text-gray-900 text-base font-albert">continue with</span>
+                    <span className="text-gray-900 text-base font-albert">Or continue with</span>
                   </div>
                 </div>
               </div>
