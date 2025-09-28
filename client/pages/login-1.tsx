@@ -23,7 +23,7 @@ export default function Login1() {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert">
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div className="px-8 py-5 sm:px-8">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" style={{display: "block", aspectRatio: "100 / 1", fontWeight: "400", minHeight: "20px", minWidth: "20px", objectFit: "contain", paddingBottom: "40px", width: "50%", margin: "0 auto"}} />
+          <img loading="lazy" alt="Carzino logo" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" style={{display: "block", width: "160px", height: "auto", objectFit: "contain", paddingBottom: "24px", margin: "0 auto 12px"}} />
           {/* Tabs */}
           <div className="relative mb-8">
             <div className="flex space-x-8">
