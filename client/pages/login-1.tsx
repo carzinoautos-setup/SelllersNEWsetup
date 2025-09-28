@@ -304,38 +304,6 @@ export default function Login1() {
                 </div>
               </div>
 
-              {/* Account Type Radio Buttons */}
-              <div className="flex items-center space-x-8">
-                <div className="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    id="private"
-                    name="accountType"
-                    defaultChecked
-                    className="w-5 h-5 text-gray-900 border-gray-200 focus:ring-red-500"
-                  />
-                  <label
-                    htmlFor="private"
-                    className="text-sm text-gray-900 font-albert"
-                  >
-                    Private seller
-                  </label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    id="dealer"
-                    name="accountType"
-                    className="w-5 h-5 text-gray-900 border-gray-200 focus:ring-red-500"
-                  />
-                  <label
-                    htmlFor="dealer"
-                    className="text-sm text-gray-900 font-albert"
-                  >
-                    Dealer account
-                  </label>
-                </div>
-              </div>
 
               {/* Sign Up Button */}
               <button className="w-full bg-red-600 text-white py-4 rounded-xl font-medium font-albert hover:bg-red-700 transition-colors flex items-center justify-center space-x-2">
