@@ -1245,6 +1245,15 @@ export default function Vindecoder() {
                       }
                       setDescription(toSet);
                       setShowAiDescription(false);
+
+                      // Scroll to sale price and focus it
+                      setTimeout(() => {
+                        const el = document.getElementById("sale-price-input") as HTMLInputElement | null;
+                        if (el) {
+                          el.scrollIntoView({ behavior: "smooth", block: "center" });
+                          el.focus();
+                        }
+                      }, 150);
                     }}
                     className="flex justify-center items-center gap-2.5 px-6 py-4 h-[50px] bg-[#E82121] text-white rounded-[14px] font-albert font-medium text-[16px] w-[211px]"
                   >
@@ -1292,6 +1301,7 @@ export default function Vindecoder() {
                 </label>
                 <div className="relative">
                   <input
+                    id="sale-price-input"
                     type="text"
                     value={salePrice}
                     onChange={(e) => setSalePrice(e.target.value)}
