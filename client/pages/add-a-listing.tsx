@@ -44,7 +44,7 @@ export default function AddAListing() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] mt-8">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] mt-8 overflow-x-hidden">
           {/* TWO-COLUMN SECTION: LEFT = FORM CARD, RIGHT = IMAGE */}
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_65%] gap-6 items-stretch">
             {/* LEFT: Card area */}
