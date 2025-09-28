@@ -20,6 +20,7 @@ export default function Login1() {
   }
 
   const [bgImage, setBgImage] = useState<string | undefined>(undefined);
+  const defaultBg = "https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F27732df6ba234b13bdd0dc2565e2dfc5?format=webp";
 
   useEffect(() => {
     // Allow Builder or other tools to set the login background at runtime via window.__BUILDER_LOGIN_BG
@@ -35,12 +36,13 @@ export default function Login1() {
 
   return (
     <div
-      className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert"
+      className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert"
       style={{
-        backgroundImage: bgImage ? `url(${bgImage})` : undefined,
-        backgroundSize: bgImage ? "cover" : undefined,
-        backgroundPosition: bgImage ? "center" : undefined,
-        backgroundRepeat: bgImage ? "no-repeat" : undefined,
+        minHeight: "703.2px",
+        backgroundImage: `url(${bgImage || defaultBg})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
