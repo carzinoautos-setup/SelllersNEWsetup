@@ -294,8 +294,11 @@ export default function Login1() {
                   <span className="text-blue-600 text-sm font-albert">Continue Facebook</span>
                 </button>
                 <button className="flex items-center justify-center space-x-2 py-3 px-4 border border-red-600 rounded-lg hover:bg-red-50 transition-colors">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 0C3.1 0 0 3.1 0 0C0 10.9 3.1 14 7 14C10.9 14 14 10.9 14 7C14 3.1 10.9 0 7 0ZM7 12.8C3.7 12.8 1.2 10.3 1.2 7C1.2 3.7 3.7 1.2 7 1.2C10.3 1.2 12.8 3.7 12.8 7C12.8 10.3 10.3 12.8 7 12.8Z" fill="#000"/>
+                  <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
+                    <path d="M21.805 10.023h-9.18v3.952h5.267c-.226 1.2-.946 2.204-2.02 2.88v2.38h3.256c1.906-1.755 3.012-4.342 3.012-7.212 0-.654-.06-1.29-.335-1.95z" fill="#4285F4"/>
+                    <path d="M12.625 21.835c2.41 0 4.44-.8 5.92-2.174l-3.256-2.38c-.9.604-2.05.96-2.664.96-2.05 0-3.79-1.386-4.41-3.24H4.83v2.356C6.31 19.37 9.17 21.835 12.625 21.835z" fill="#34A853"/>
+                    <path d="M8.215 13.997a4.01 4.01 0 0 1 0-2.56V9.08H4.83a8.22 8.22 0 0 0 0 5.88l3.385-1.04z" fill="#FBBC05"/>
+                    <path d="M12.625 7.69c1.31 0 2.48.45 3.4 1.33l2.55-2.55C17.06 4.98 14.99 4 12.625 4a8.26 8.26 0 0 0-7.79 4.9l3.385 2.36C8.835 8.645 10.24 7.69 12.625 7.69z" fill="#EA4335"/>
                   </svg>
                   <span className="text-black text-sm font-albert">Continue Google</span>
                 </button>
