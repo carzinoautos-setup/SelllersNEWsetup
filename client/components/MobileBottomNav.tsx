@@ -99,11 +99,11 @@ export function MobileBottomNav() {
   const nav = (
     <div
       ref={navRef}
-      className="lg:hidden bg-[#FCFCFC] border-t border-gray-200"
+      className="lg:hidden bg-[#4A4A4A] sm:bg-[#FCFCFC] border-t border-gray-200"
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 bg-[#4A4A4A] sm:bg-transparent">
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
@@ -131,7 +131,7 @@ export function MobileBottomNav() {
                     item.icon
                   )}
                 </div>
-                <span className="mobile-bottom-label text-[11px] font-albert text-[#2E2D2D] font-normal leading-none">
+                <span className="mobile-bottom-label text-[11px] font-albert text-white sm:text-[#2E2D2D] font-normal leading-none">
                   {item.label}
                 </span>
               </a>
