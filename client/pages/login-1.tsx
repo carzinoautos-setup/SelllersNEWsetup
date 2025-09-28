@@ -22,7 +22,8 @@ export default function Login1() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert">
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div className="px-6 py-8 sm:px-8">
+        <div className="px-8 py-5 sm:px-8">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Ff65a6afdcb8f4c12ae5d8b3de8ce9355" style={{aspectRatio: "100", objectFit: "contain", objectPosition: "center", width: "50%", minHeight: "20px", minWidth: "20px", paddingBottom: "40px", margin: "0 auto"}} />
           {/* Tabs */}
           <div className="relative mb-8">
             <div className="flex space-x-8">
