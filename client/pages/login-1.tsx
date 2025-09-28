@@ -14,9 +14,9 @@ export default function Login1() {
 
   function submitForgot(e?: React.FormEvent) {
     e?.preventDefault();
+    // In a real app call API here to send the reset email.
     setForgotSent(true);
-    // In a real app call API here. Close after delay.
-    setTimeout(() => setForgotOpen(false), 2500);
+    // Keep the modal open so users can resend if needed.
   }
 
   return (
