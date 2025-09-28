@@ -99,7 +99,7 @@ export function MobileBottomNav() {
   const nav = (
     <div
       ref={navRef}
-      className="lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200"
+      className="fixed bottom-0 left-0 right-0 lg:hidden bg-black sm:bg-[#4A4A4A] border-t border-gray-200"
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
