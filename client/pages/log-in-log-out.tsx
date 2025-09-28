@@ -135,7 +135,7 @@ export default function LogInLogOutPage() {
         {/* Right Panel - Image */}
         <div className="flex-1 lg:min-h-[600px] xl:min-h-[700px] bg-cover bg-center bg-no-repeat">
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/e008421eeaaea6be985a6181a01b2a5d787d4e97?width=2772" 
+            src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fa1de347df2e14921b7b9b949cb60fd61" 
             alt="Women shopping"
             className="w-full h-full object-cover lg:min-h-[600px] xl:min-h-[700px]"
           />
