@@ -23,11 +23,16 @@ export default function Production() {
                 <h2 className="text-lg font-medium text-[#24272C]">
                   Payment gateway pages
                 </h2>
-                <p className="text-sm text-[#696665] mt-2">
-                  Add any unused pages or sections here for safekeeping. They
-                  will remain accessible from the design screen for quick edits
-                  and reuse.
-                </p>
+                <div className="text-sm text-[#696665] mt-2">
+                  <p>
+                    We are planning to use stripe as the payment gateway, so we are not sure if these pages will be needed.
+                  </p>
+                  <p>Checkout is similar to woocommerce</p>
+                  <p>Payments: Customer can add payment information</p>
+                  <p>
+                    <br />
+                  </p>
+                </div>
 
                 <div className="mt-4 flex flex-col gap-3">
                   <Link
