@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
 import { Select } from "../components/ui/select";
+import { Link } from "react-router-dom";
 
 // dnd-kit
 import {
@@ -1484,13 +1485,13 @@ export default function Vindecoder() {
           <div className="w-full bg-transparent py-6">
             <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-0 lg:px-0">
               <div className="flex justify-center sm:justify-start">
-                <button
-                  type="button"
+                <Link
+                  to="/yourlistings"
                   className="inline-flex items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
                   style={{ fontFamily: "Albert Sans" }}
                 >
                   Submit your listing
-                </button>
+                </Link>
               </div>
             </div>
           </div>
