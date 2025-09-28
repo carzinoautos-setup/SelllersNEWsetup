@@ -99,10 +99,10 @@ export default function Production() {
                 /vindecoder
               </Link>
               <div className="flex flex-col relative mt-5">
-                <p>
-                  The listing page is configured so that a user can either edit an existing listing or manually create a new one. At the top of this page the fields are slightly different compared to the VIN decoder page. Here it asks for details such as VIN number, year, make, and model, while the VIN decoder page does not require those fields to be entered in the same way.
-                </p>
-              </div>
+                  <p>
+                    <br />
+                  </p>
+                </div>
               <div className="mt-2">
                 <Link
                   to="/edit-listing"
