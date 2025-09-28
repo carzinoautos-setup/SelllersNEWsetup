@@ -1438,7 +1438,7 @@ export default function EditListing() {
                   <span className="text-[#090909]">
                     Price and Description-{" "}
                   </span>
-                  <span className="text-[#E82121]">Step 4</span>
+                  <span className="text-[#E82121]">Step 5</span>
                 </h1>
                 <p
                   className="text-[14px] text-black leading-[140%] max-w-[955px]"
