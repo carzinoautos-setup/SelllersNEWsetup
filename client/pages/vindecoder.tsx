@@ -376,7 +376,7 @@ export default function Vindecoder() {
         style={style}
         {...attributes}
         {...listeners}
-        className="relative w-28 h-28 rounded-[12px] overflow-hidden bg-gray-50"
+        className="relative w-28 sm:w-32 md:w-36 lg:w-44 aspect-square rounded-t-[12px] overflow-hidden bg-gray-50"
       >
         <img
           src={photo.url}
