@@ -1634,25 +1634,7 @@ export default function EditListing() {
                     <div className="flex justify-center sm:justify-start">
                       <button
                         type="button"
-                        onClick={() => {
-                          const payload = {
-                            mileage,
-                            engine,
-                            vehicleTrim,
-                            transmission,
-                            drivetrain,
-                            exteriorColor,
-                            interiorColor,
-                            salePrice,
-                            description,
-                            photos,
-                            selectedFeatures,
-                          };
-                          console.log("Submitting listing:", payload);
-                          alert("Listing submitted");
-                        }}
                         className="inline-flex items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
-                        style={{ fontFamily: "Albert Sans" }}
                       >
                         Submit your listing
                       </button>
