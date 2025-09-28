@@ -11,52 +11,6 @@ export function MobileBottomNav() {
     setMounted(true);
   }, []);
 
-  // Ensure the mobile nav reserves space at the bottom so content isn't hidden
-  React.useEffect(() => {
-    if (typeof window === "undefined" || typeof document === "undefined") return;
-
-    let navHeight = 72; // fallback
-    function updateNavHeight() {
-      try {
-        const el = navRef.current;
-        if (el) navHeight = Math.max(56, el.offsetHeight);
-      } catch (e) {
-        navHeight = 72;
-      }
-    }
-
-    const mq = window.matchMedia("(max-width: 1023px)");
-    function applyPadding() {
-      updateNavHeight();
-      if (mq.matches) {
-        // include safe area inset
-        document.body.style.paddingBottom = `calc(${navHeight}px + env(safe-area-inset-bottom, 8px))`;
-      } else {
-        document.body.style.paddingBottom = "";
-      }
-    }
-
-    applyPadding();
-    try {
-      mq.addEventListener("change", applyPadding);
-      window.addEventListener('resize', applyPadding);
-    } catch (e) {
-      // fallback for older browsers
-      mq.addListener(applyPadding as any);
-      window.addEventListener('resize', applyPadding);
-    }
-    return () => {
-      try {
-        mq.removeEventListener("change", applyPadding);
-      } catch (e) {
-        mq.removeListener(applyPadding as any);
-      }
-      try {
-        window.removeEventListener('resize', applyPadding);
-      } catch (e) {}
-      document.body.style.paddingBottom = "";
-    };
-  }, []);
 
   if (!mounted || typeof document === "undefined") return null;
 
@@ -145,18 +99,11 @@ export function MobileBottomNav() {
   const nav = (
     <div
       ref={navRef}
-      className="lg:hidden fixed left-0 right-0 bottom-0 z-[99999] bg-[#FCFCFC] border-t border-gray-200"
-      style={{ paddingBottom: "env(safe-area-inset-bottom, 8px)", position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 99999 }}
+      className="lg:hidden bg-[#FCFCFC] border-t border-gray-200"
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4 mobile-bottom-nav-inner">
-        <style>{` .mobile-bottom-nav-inner { background-color: rgb(253, 253, 253); }
-          @media (max-width: 640px) {
-            .mobile-bottom-nav-inner { background-color: rgba(0, 0, 0, 0.79); }
-            .mobile-bottom-nav-inner .mobile-bottom-label { color: rgba(255, 255, 255, 1) !important; }
-          }
-        `}</style>
+      <div className="max-w-7xl mx-auto px-4">
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
