@@ -103,7 +103,7 @@ export function MobileBottomNav() {
       role="navigation"
       aria-label="Mobile bottom navigation"
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 bg-black sm:bg-[#4A4A4A] mb-5 sm:mb-0 pb-[75px] sm:pb-0">
         <div
           className="flex justify-between items-center py-3"
           style={{ gap: 20 }}
