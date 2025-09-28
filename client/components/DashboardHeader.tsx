@@ -12,7 +12,7 @@ export function DashboardHeader({
   const navItems = ["Home", "Cars for Sale", "Trade in your Car", "Dealers"];
 
   const headerClasses = cn(
-    "flex items-center justify-between px-4 lg:px-[50px] lg:py-[22px] py-3 relative shadow-xl",
+    "flex items-center justify-between px-4 lg:px-[50px] lg:py-[22px] py-3 sticky top-0 z-50 shadow-xl bg-white/95 backdrop-blur-sm",
     // Mobile open -> dark header. Otherwise white background for tablet/desktop.
     mobileOpen
       ? "bg-black border-black text-white h-[76px] sm:bg-black sm:text-white"
