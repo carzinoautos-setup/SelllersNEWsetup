@@ -47,7 +47,7 @@ export default function YourListingsPage() {
                 <button
                   onClick={() => setShowMobileFilters(true)}
                   aria-label="Open filters"
-                  className="px-3 py-2 rounded-xl border border-[#EDEDED] bg-white"
+                  className="px-3 py-2 rounded-xl border border-[#EDEDED] bg-white h-10"
                 >
                   <svg
                     className="w-5 h-5"
