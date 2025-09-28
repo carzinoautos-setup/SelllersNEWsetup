@@ -40,7 +40,7 @@ export default function MessagesPage() {
           <div className="flex bg-white rounded-2xl border border-[#EDEDED] overflow-hidden overflow-x-hidden min-h-[500px] md:h-[700px] min-w-0 box-border">
             {/* Left Sidebar - User List */}
             <div
-              className={`lg:w-[444px] w-[85%] max-w-full md:flex md:flex-col flex flex-col md:border-r md:border-[#EDEDED] border-none bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform min-w-0 box-border ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
+              className={`lg:w-[444px] w-full max-w-full md:flex md:flex-col flex flex-col md:border-r md:border-[#EDEDED] border-none bg-white md:static fixed md:top-auto top-0 left-0 h-full md:h-auto z-40 transform transition-transform min-w-0 box-border ${showSidebar ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
             >
               {/* Search */}
               <div className="p-4 md:p-[30px] pb-[10px]">
@@ -76,7 +76,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/c041dc35be8bc315c45d97e5809f850ae3d3e137?width=120"
                       alt="Leslie Alexander"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -98,7 +98,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120"
                       alt="Arlene McCoy"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -120,7 +120,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/f12eb2aeb8e6b90f247254903de54e5826193f01?width=120"
                       alt="Kristin Watson"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -142,7 +142,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/1cd22edc30b21b3a800653867a9c9791ebe8d27b?width=120"
                       alt="Cody Fisher"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -164,7 +164,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/cdc8db175de79ce744da76369ab664cb9ad77b8c?width=120"
                       alt="Arlene McCoy"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -186,7 +186,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/88524a91e17f572cfa76d84a10d99234f4c15b70?width=120"
                       alt="Bessie Cooper"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -208,7 +208,7 @@ export default function MessagesPage() {
                     <img
                       src="https://api.builder.io/api/v1/image/assets/TEMP/b878046b247eb0edd91adbacb82197e1cf7286d3?width=120"
                       alt="Savannah Nguyen"
-                      className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                      className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                     />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-2">
@@ -242,7 +242,7 @@ export default function MessagesPage() {
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/fde1001b4c04e3ac145ecdfa13d70215d8daa73b?width=120"
                   alt="Arlene McCoy"
-                  className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
+                  className="hidden sm:block w-12 h-12 md:w-[60px] md:h-[60px] rounded-full object-cover"
                 />
                 <div className="flex-1">
                   <h2 className="text-lg font-medium text-[#24272C] font-albert mb-1">
