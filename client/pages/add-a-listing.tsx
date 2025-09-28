@@ -49,7 +49,7 @@ export default function AddAListing() {
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_65%] gap-6 items-stretch">
             {/* LEFT: Card area */}
             <div className="flex items-start">
-              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[640px] min-h-[320px] -mt-8 md:mt-0">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[640px] min-h-[320px] -mt-20 sm:-mt-8 md:mt-0 relative z-20">
                 <div className="flex flex-col relative mt-5 mb-2">
                   List and sell your car fast with
                 </div>
@@ -236,7 +236,7 @@ export default function AddAListing() {
 
             {/* RIGHT: Image area */}
             <div className="flex items-stretch">
-              <div className="w-full h-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center">
+              <div className="w-full h-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center relative z-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fa1de347df2e14921b7b9b949cb60fd61?format=webp"
                   alt="vehicle"
