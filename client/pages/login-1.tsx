@@ -2,6 +2,22 @@ import React, { useState } from "react";
 
 export default function Login1() {
   const [activeTab, setActiveTab] = useState("signin");
+  const [forgotOpen, setForgotOpen] = useState(false);
+  const [forgotEmail, setForgotEmail] = useState("");
+  const [forgotSent, setForgotSent] = useState(false);
+
+  function openForgot() {
+    setForgotEmail("");
+    setForgotSent(false);
+    setForgotOpen(true);
+  }
+
+  function submitForgot(e?: React.FormEvent) {
+    e?.preventDefault();
+    setForgotSent(true);
+    // In a real app call API here. Close after delay.
+    setTimeout(() => setForgotOpen(false), 2500);
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -37,6 +53,31 @@ export default function Login1() {
           {/* Sign In Tab */}
           {activeTab === "signin" && (
             <div className="space-y-6">
+              {forgotOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
+                  <div className="absolute inset-0 bg-black/40" onClick={() => setForgotOpen(false)} />
+                  <form onSubmit={submitForgot} className="relative bg-white rounded-xl shadow-xl w-full max-w-md p-6 z-10">
+                    <h3 className="text-lg font-semibold font-albert text-gray-900 mb-2">Reset your password</h3>
+                    <p className="text-sm text-gray-600 mb-4">Enter the email associated with your account and we'll send a password reset link.</p>
+                    <label className="block text-xs text-gray-500 mb-2 font-albert">Email address</label>
+                    <input
+                      type="email"
+                      required
+                      value={forgotEmail}
+                      onChange={(ev) => setForgotEmail(ev.target.value)}
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl mb-4 font-albert"
+                      placeholder="you@company.com"
+                    />
+                    <div className="flex items-center justify-end space-x-3">
+                      <button type="button" onClick={() => setForgotOpen(false)} className="px-4 py-2 rounded-lg border text-sm">Cancel</button>
+                      <button type="submit" className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm">Send reset link</button>
+                    </div>
+                    {forgotSent && (
+                      <div className="mt-4 text-sm text-green-600">If that email exists, we've sent a reset link.</div>
+                    )}
+                  </form>
+                </div>
+              )}
               {/* Email/Username Input */}
               <div>
                 <div className="relative">
@@ -79,9 +120,9 @@ export default function Login1() {
                     Remember
                   </label>
                 </div>
-                <a href="#" className="text-sm text-gray-900 underline font-albert">
+                <button onClick={openForgot} className="text-sm text-gray-900 underline font-albert">
                   Forgotten password?
-                </a>
+                </button>
               </div>
 
               {/* Login Button */}
