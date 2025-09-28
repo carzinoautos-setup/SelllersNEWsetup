@@ -168,3 +168,16 @@ body {
 
 /* Ensure overlay uses semi-transparent black at 25% */
 /* (already implemented via bg-black/25 utilities) */
+
+/* Add specific rules for add-a-listing card stacking and responsive margin */
+.add-listing-card {
+  margin-top: -80px; /* default large negative to pull card up */
+  position: relative;
+  z-index: 20;
+}
+
+@media (max-width: 640px) {
+  .add-listing-card {
+    margin-top: -40px; /* less overlap on small screens */
+  }
+}
