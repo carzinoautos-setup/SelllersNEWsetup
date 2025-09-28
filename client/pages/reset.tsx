@@ -140,6 +140,8 @@ export default function ResetPage() {
                         <input
                           type={showConfirmPassword ? "text" : "password"}
                           placeholder="Confirm password"
+                          value={confirmPassword}
+                          onChange={(e) => setConfirmPassword(e.target.value)}
                           className="w-full h-[56px] px-5 border border-[#D1D1D1] rounded-[12px] bg-white text-sm text-[#333333] font-albert outline-none focus:ring-2 focus:ring-[#E82121] focus:border-transparent transition"
                         />
                         <button
