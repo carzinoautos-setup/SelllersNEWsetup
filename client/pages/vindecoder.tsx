@@ -97,7 +97,7 @@ export default function Vindecoder() {
 
   // Step 3: Price and Description
   const [salePrice, setSalePrice] = useState("");
-  const [description, setDescription] = useState("Lorem Ipsum Dolar Sit Amet");
+  const [description, setDescription] = useState("");
   const [aiDescription, setAiDescription] = useState("");
   const [showAiDescription, setShowAiDescription] = useState(true);
 
@@ -1332,6 +1332,7 @@ export default function Vindecoder() {
                     <textarea
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
+                      placeholder="Enter your description"
                       rows={8}
                       style={{
                         display: "inline-block",
