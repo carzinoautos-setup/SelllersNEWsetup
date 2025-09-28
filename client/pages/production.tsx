@@ -68,22 +68,44 @@ export default function Production() {
 
               <section className="p-4 border border-[#EDEDED] rounded-lg">
                 <h2 className="text-lg font-medium text-[#24272C]">
-                  Design Elements
-                </h2>
+                Design Elements
+              </h2>
+              <div className="text-sm text-[#696665] mt-2">
+                <p>
+                  <strong>Setup Description:</strong>
+                </p>
+                <p>
+                  The VIN decoder page is built and the layout is in place, but the field mappings and the VIN decoder API have not been set up yet. Currently, the page works through manual input. When a user enters vehicle details into the form, those details are combined into a summary box at the bottom of the page. From there, the system is designed to trigger a call to OpenAI to generate a product description. When the user accepts the generated description, it applies that description directly to the product.
+                </p>
+                <p>
+                  <strong>Additional Notes:</strong>
+                </p>
+                <ul>
+                  <li>
+                    The OpenAI integration is not currently turned on, since we cannot expose our API key in this environment. It was working at one point during testing, but it is now disabled until a secure setup is ready.
+                  </li>
+                  <li>
+                    We also have an extra working copy of this page without the VIN decoder integration installed, which can be used for testing or fallback.
+                  </li>
+                </ul>
+                <p>
+                  <br />
+                </p>
+              </div>
+              <Link
+                to="/vindecoder"
+                className="text-sm text-[#1f2937] hover:underline"
+              >
+                /vindecoder
+              </Link>
+              <div className="mt-2">
                 <Link
-                  to="/vindecoder"
+                  to="/edit-listing"
                   className="text-sm text-[#1f2937] hover:underline"
                 >
-                  /vindecoder
+                  /edit-listing
                 </Link>
-                <div className="mt-2">
-                  <Link
-                    to="/edit-listing"
-                    className="text-sm text-[#1f2937] hover:underline"
-                  >
-                    /edit-listing
-                  </Link>
-                </div>
+              </div>
               </section>
 
               <section className="p-4 border border-[#EDEDED] rounded-lg">
