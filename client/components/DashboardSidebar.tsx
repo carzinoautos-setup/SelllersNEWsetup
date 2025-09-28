@@ -42,7 +42,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Reset Password", icon: EditIcon, active: false, path: "/reset" },
     { name: "Profile", icon: UserIcon, active: false, path: "/profile" },
     {
-      name: "Enter Vehicle Details",
+      name: "Edit Listing",
       icon: EditIcon,
       active: false,
       path: "/edit-listing",
