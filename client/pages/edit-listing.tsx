@@ -1634,7 +1634,7 @@ export default function EditListing() {
                     <div className="flex justify-center sm:justify-start">
                       <button
                         type="button"
-                        className="inline-flex items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
+                        className="inline-flex w-full sm:w-auto items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
                       >
                         Submit your listing
                       </button>
