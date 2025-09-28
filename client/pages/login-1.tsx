@@ -48,7 +48,7 @@ export default function Login1() {
     >
       <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div className="px-8 py-5 sm:px-8" style={{boxShadow: "1px 1px 3px 10px rgba(0,0,0,1)"}}>
-          <img loading="lazy" alt="Carzino logo" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" className="block mx-auto mb-3" style={{width: 160, height: "auto", objectFit: "contain", paddingBottom: 24}} />
+          <img loading="lazy" alt="Carzino logo" src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2F256405fe7d8844ee86146a84c6de93ba?format=webp&width=800" className="block mx-auto mb-3" style={{width: 225, height: "auto", objectFit: "contain", paddingBottom: 24}} />
           {/* Tabs */}
           <div className="relative mb-8">
             <div className="flex space-x-8">
