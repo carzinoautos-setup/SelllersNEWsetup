@@ -118,6 +118,17 @@ export default function Production() {
                   POP UP Messages
                 </h2>
                 <div className="text-sm text-[#1f2937]">
+                  <div className="flex flex-col relative mt-5">
+                    <p>
+                      Messages are intended to display as overlays when a user clicks on certain items on a page. The overlay will cover the entire page with a solid color background, using black at roughly 20% opacity so the page content is dimmed but still visible. This helps draw attention to the message while keeping the context of the page.
+                    </p>
+                    <p>
+                      <strong>Status:</strong>
+                    </p>
+                    <p>
+                      This feature is still in the design process and not finalized yet. Behavior and styling may change as the design is refined.
+                    </p>
+                  </div>
                   <Link
                     to="/success-uploaded"
                     className="hover:underline block"
