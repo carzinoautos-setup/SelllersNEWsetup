@@ -184,17 +184,17 @@ export default function AddAListing() {
                 )}
 
                 {flowState === "found" && (
-                  <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-1">
                     <h3 className="text-xl font-semibold">
                       If this is your car, create your ad.
                     </h3>
-                    <div className="mt-2">
+                    <div>
                       <button onClick={handleTryAgain} className="text-sm text-[#24272C] underline">Start over</button>
                     </div>
-                    <div className="text-sm text-[#6B6B6B]">
+                    <div className="text-sm text-[#6B6B6B]" style={{ lineHeight: '15px' }}>
                       2021 Honda Accord LX
                     </div>
-                    <div className="text-xs text-[#9A9A9A]">
+                    <div className="text-xs text-[#9A9A9A]" style={{ lineHeight: '15px' }}>
                       VIN: XXXXXXXXXXXXXXXX
                     </div>
                     <div className="mt-3 flex gap-3">
