@@ -31,6 +31,7 @@ import ChangeStatus from "./pages/change-status";
 import RemoveListing from "./pages/remove-listing";
 import RemoveListingConfirmed from "./pages/remove-listing-confirmed";
 import Login1 from "./pages/login-1";
+import LogInLogOut from "./pages/log-in-log-out";
 
 const queryClient = new QueryClient();
 
