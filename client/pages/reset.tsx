@@ -173,11 +173,48 @@ export default function ResetPage() {
 
                     {/* Submit button */}
                     <div className="pt-2">
+                      {error && (
+                        <div className="text-sm text-red-600 mb-2">{error}</div>
+                      )}
                       <button
                         type="button"
-                        className="w-[220px] h-[52px] px-[10px] py-[10px] bg-[#E82121] text-white rounded-[12px] text-base font-medium font-albert hover:bg-[#d11e1e] transition-colors"
+                        onClick={async () => {
+                          // client-side validations
+                          setError(null);
+                          if (!oldPassword) {
+                            setError('Please enter your old password.');
+                            toast({ title: 'Missing current password', description: 'Please enter your current password.' });
+                            return;
+                          }
+                          if (newPassword !== confirmPassword) {
+                            setError('New password and confirmation do not match.');
+                            toast({ title: 'Passwords do not match', description: 'Please ensure the new password and confirmation match.' });
+                            return;
+                          }
+                          if (!(hasNumber && hasLowercase && hasUppercase && hasMinLength)) {
+                            setError('Your new password does not meet the requirements.');
+                            toast({ title: 'Weak password', description: 'Please ensure your password meets all requirements.' });
+                            return;
+                          }
+
+                          setLoading(true);
+                          try {
+                            // TODO: replace with actual API call to change password
+                            await new Promise((res) => setTimeout(res, 800));
+                            toast({ title: 'Password changed', description: 'Your password has been reset, please log in again.' });
+                            setTimeout(() => navigate('/logout'), 800);
+                          } catch (err) {
+                            console.error(err);
+                            setError('An unexpected error occurred. Please try again.');
+                            toast({ title: 'Failed to change password', description: 'An error occurred while changing your password. Please try again.' });
+                          } finally {
+                            setLoading(false);
+                          }
+                        }}
+                        disabled={loading}
+                        className={`w-[220px] h-[52px] px-[10px] py-[10px] rounded-[12px] text-base font-medium font-albert transition-colors ${loading ? 'bg-gray-300 text-gray-700' : 'bg-[#E82121] text-white hover:bg-[#d11e1e]'}`}
                       >
-                        Change password
+                        {loading ? 'Changing...' : 'Change password'}
                       </button>
                     </div>
                   </div>
