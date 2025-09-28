@@ -1048,76 +1048,6 @@ export default function Vindecoder() {
             </div>
 
 
-            <div className="space-y-6">
-              {/* Sale Price */}
-              <div className="w-full max-w-full md:max-w-[318px]">
-                <label
-                  className="block text-[14px] font-medium text-[#24272C] mb-2"
-                  style={{ fontFamily: "Albert Sans" }}
-                >
-                  Sale Price
-                </label>
-                <div className="relative">
-                  <input
-                    type="text"
-                    value={salePrice}
-                    onChange={(e) => setSalePrice(e.target.value)}
-                    placeholder="$"
-                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  />
-                </div>
-              </div>
-
-              {/* Description */}
-              <div className="w-full max-w-[955px]">
-                <div className="relative">
-                  <div
-                    style={{
-                      backgroundColor: "#ffffff",
-                      border: "0.8px solid rgba(178,178,178,1)",
-                      borderRadius: 12,
-                      minHeight: 289,
-                      width: "100%",
-                      position: "relative",
-                      padding: 20,
-                      fontWeight: 400,
-                    }}
-                  >
-                    <label
-                      style={{
-                        color: "#818181",
-                        display: "block",
-                        fontFamily: "DM Sans",
-                        fontSize: 13,
-                        lineHeight: "19.5px",
-                      }}
-                    >
-                      Vehicle Description
-                    </label>
-
-                    <textarea
-                      value={description}
-                      onChange={(e) => setDescription(e.target.value)}
-                      rows={8}
-                      style={{
-                        display: "inline-block",
-                        backgroundColor: "transparent",
-                        color: "#050B20",
-                        outline: "rgba(0,0,0,0) solid 1.6px",
-                        outlineOffset: 2,
-                        resize: "none",
-                        width: "100%",
-                        fontFamily: "DM Sans",
-                        fontSize: 15,
-                        lineHeight: "26px",
-                        border: "none",
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* AI Suggested Description - Step 3A */}
@@ -1339,6 +1269,76 @@ export default function Vindecoder() {
 
           {/* Step 4: Photos */}
           <div className="mb-12">
+            <div className="space-y-6">
+              {/* Sale Price */}
+              <div className="w-full max-w-full md:max-w-[318px]">
+                <label
+                  className="block text-[14px] font-medium text-[#24272C] mb-2"
+                  style={{ fontFamily: "Albert Sans" }}
+                >
+                  Sale Price
+                </label>
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={salePrice}
+                    onChange={(e) => setSalePrice(e.target.value)}
+                    placeholder="$"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="w-full max-w-[955px]">
+                <div className="relative">
+                  <div
+                    style={{
+                      backgroundColor: "#ffffff",
+                      border: "0.8px solid rgba(178,178,178,1)",
+                      borderRadius: 12,
+                      minHeight: 289,
+                      position: "relative",
+                      width: "100%",
+                      padding: 20,
+                      fontWeight: 400,
+                    }}
+                  >
+                    <label
+                      style={{
+                        color: "#818181",
+                        display: "block",
+                        fontFamily: "DM Sans",
+                        fontSize: 13,
+                        lineHeight: "19.5px",
+                      }}
+                    >
+                      Vehicle Description
+                    </label>
+
+                    <textarea
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
+                      rows={8}
+                      style={{
+                        display: "inline-block",
+                        backgroundColor: "transparent",
+                        color: "#050B20",
+                        outline: "rgba(0,0,0,0) solid 1.6px",
+                        outlineOffset: 2,
+                        resize: "none",
+                        width: "100%",
+                        fontFamily: "DM Sans",
+                        fontSize: 15,
+                        lineHeight: "26px",
+                        border: "none",
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* Header */}
             <div className="mb-6">
               <h1
