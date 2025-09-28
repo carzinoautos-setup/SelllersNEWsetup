@@ -207,7 +207,7 @@ export default function Login1() {
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-gray-200" />
                 </div>
-                <div className="relative flex justify-center">
+                <div className="relative flex justify-center leading-4">
                   <div className="bg-white px-4">
                     <span className="text-gray-900 text-base font-albert">
                       Or continue with
@@ -355,7 +355,7 @@ export default function Login1() {
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-gray-200" />
                 </div>
-                <div className="relative flex justify-center">
+                <div className="relative flex justify-center leading-4">
                   <div className="bg-white px-4">
                     <span className="text-gray-900 text-base font-albert">
                       Or continue with
