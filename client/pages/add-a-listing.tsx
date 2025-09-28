@@ -44,9 +44,9 @@ export default function AddAListing() {
   return (
     <DashboardLayout>
       <div className="flex-1">
-        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] mt-8 overflow-x-hidden">
+        <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] mt-8 overflow-x-hidden min-w-0">
           {/* TWO-COLUMN SECTION: LEFT = FORM CARD, RIGHT = IMAGE */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_65%] gap-6 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_65%] gap-6 items-stretch min-w-0">
             {/* LEFT: Card area */}
             <div className="flex items-start min-w-0">
               <div className="add-listing-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg w-full max-w-[640px] min-w-0 min-h-[320px] -mt-20 sm:-mt-8 md:mt-0 relative z-20">
@@ -119,14 +119,14 @@ export default function AddAListing() {
                             value={licensePlate}
                             onChange={(e) => setLicensePlate(e.target.value)}
                             placeholder="Enter License Plate #"
-                            className="flex-1 text-sm text-[#24272C] bg-transparent outline-none font-inter"
+                            className="flex-1 text-sm text-[#24272C] bg-transparent outline-none font-inter min-w-0"
                           />
                         </div>
                         <div className="relative">
                           <select
                             value={selectedState}
                             onChange={(e) => setSelectedState(e.target.value)}
-                            className="h-12 w-full px-3 border border-[#EDEDED] rounded-[14px] bg-white text-sm text-[#24272C] font-inter outline-none appearance-none"
+                            className="h-12 w-full px-3 border border-[#EDEDED] rounded-[14px] bg-white text-sm text-[#24272C] font-inter outline-none appearance-none min-w-0"
                           >
                             <option value="">Select State</option>
                             <option value="CA">California</option>
@@ -146,14 +146,14 @@ export default function AddAListing() {
                             value={vin}
                             onChange={(e) => setVin(e.target.value)}
                             placeholder="Enter Vin #"
-                            className="flex-1 text-sm text-[#24272C] bg-transparent outline-none font-inter"
+                            className="flex-1 text-sm text-[#24272C] bg-transparent outline-none font-inter min-w-0"
                           />
                         </div>
                         <div className="relative">
                           <select
                             value={vinYear}
                             onChange={(e) => setVinYear(e.target.value)}
-                            className="h-12 w-full px-3 border border-[#EDEDED] rounded-[14px] bg-white text-sm text-[#24272C] font-inter outline-none appearance-none"
+                            className="h-12 w-full px-3 border border-[#EDEDED] rounded-[14px] bg-white text-sm text-[#24272C] font-inter outline-none appearance-none min-w-0"
                           >
                             <option value="">Enter Year</option>
                             <option>2023</option>
@@ -235,7 +235,7 @@ export default function AddAListing() {
             </div>
 
             {/* RIGHT: Image area */}
-            <div className="flex items-stretch">
+            <div className="flex items-stretch min-w-0">
               <div className="w-full h-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center relative z-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fa1de347df2e14921b7b9b949cb60fd61?format=webp"
