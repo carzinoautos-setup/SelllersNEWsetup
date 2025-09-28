@@ -1415,11 +1415,6 @@ export default function EditListing() {
                     </div>
                   </div>
 
-                  <div data-loc="client/pages/edit-listing.tsx:1418:19" style={{display: "flex", fontWeight: 400, justifyContent: "flex-start", marginTop: 20}}>
-                    <div data-loc="client/pages/edit-listing.tsx:1419:21" style={{display: "flex", alignItems: "center", backgroundColor: "rgb(232, 33, 33)", borderRadius: "14px", color: "rgb(255, 255, 255)", fontFamily: '"Albert Sans", -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Segoe UI", sans-serif', fontWeight: 500, gap: "10px", height: "50px", justifyContent: "center", textDecoration: "rgb(255, 255, 255)", width: "211px", borderColor: "rgba(0, 0, 0, 0)", padding: "16px 24px"}}>
-                      Use AI Description
-                    </div>
-                  </div>
                   <div data-loc="client/pages/edit-listing.tsx:1423:19" style={{display: "flex", fontWeight: 400, justifyContent: "flex-start", marginTop: 20}}>
                     <div data-loc="client/pages/edit-listing.tsx:1424:21" style={{display: "flex", alignItems: "center", backgroundColor: "rgb(232, 33, 33)", borderRadius: "14px", color: "rgb(255, 255, 255)", fontFamily: '"Albert Sans", -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Segoe UI", sans-serif', fontWeight: 500, gap: "10px", height: "50px", justifyContent: "center", textDecoration: "rgb(255, 255, 255)", width: "211px", borderColor: "rgba(0, 0, 0, 0)", padding: "16px 24px"}}>
                       Use AI Description
