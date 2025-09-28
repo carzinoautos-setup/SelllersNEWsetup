@@ -261,7 +261,7 @@ export default function MessagesPage() {
               <div className="flex-1 p-4 md:p-[50px] space-y-[30px] overflow-y-auto w-full box-border">
                 {/* Outgoing Message 1 */}
                 <div className="flex flex-col items-end gap-[6px] ml-0">
-                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[80%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words">
+                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[95%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words break-all whitespace-pre-wrap">
                     <p className="text-sm text-[#24272C] font-albert leading-relaxed">
                       Dear Mr Williamson,
                       <br />
@@ -289,7 +289,7 @@ export default function MessagesPage() {
                 <div className="flex flex-col gap-[6px]">
                   <div className="flex items-end gap-3">
                     <div className="w-[42px] h-[42px] rounded-full bg-gray-200 flex-shrink-0"></div>
-                    <div className="bg-[#F3F3F3] rounded-2xl rounded-bl-none p-[14px] max-w-[80%] md:max-w-[240px] break-words">
+                    <div className="bg-[#F3F3F3] rounded-2xl rounded-bl-none p-[14px] max-w-[95%] md:max-w-[240px] break-words break-all whitespace-pre-wrap">
                       <p className="text-sm text-[#696665] font-albert">Yes</p>
                     </div>
                   </div>
@@ -302,7 +302,7 @@ export default function MessagesPage() {
 
                 {/* Outgoing Message 2 */}
                 <div className="flex flex-col items-end gap-[6px] ml-0">
-                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[80%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words">
+                  <div className="bg-[rgba(195,219,243,0.06)] rounded-2xl rounded-br-none p-[14px] max-w-[95%] md:max-w-[60%] lg:max-w-[50%] ml-auto break-words break-all whitespace-pre-wrap">
                     <p className="text-sm text-[#24272C] font-albert leading-relaxed">
                       Dear Mr Williamson,
                       <br />
