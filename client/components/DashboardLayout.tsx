@@ -109,7 +109,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
           {/* Main Content Area */}
           <div
-            className={`flex-1 pb-32 lg:pb-0 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
+            className={`flex-1 pb-24 lg:pb-0 ${mobileOpen && isMobile ? "overflow-hidden" : "overflow-y-auto"}`}
           >
             {(() => {
               const path = typeof window !== 'undefined' ? window.location.pathname : '';
