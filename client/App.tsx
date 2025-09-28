@@ -72,6 +72,7 @@ const App = () => (
           <Route path="/logout" element={<Logout />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/login-1" element={<Login1 />} />
+          <Route path="/log-in-log-out" element={<LogInLogOut />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
