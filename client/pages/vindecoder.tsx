@@ -1352,7 +1352,7 @@ export default function Vindecoder() {
               </div>
             </div>
             {/* Header */}
-            <div className="mb-6">
+            <div className="mb-6" style={{ margin: "20px 0 24px" }}>
               <h1
                 className="text-[20px] font-semibold"
                 style={{ fontFamily: "Albert Sans" }}
