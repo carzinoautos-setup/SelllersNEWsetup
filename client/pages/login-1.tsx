@@ -73,7 +73,18 @@ export default function Login1() {
                       <button type="submit" className="px-4 py-2 bg-red-600 text-white rounded-lg text-sm">Send reset link</button>
                     </div>
                     {forgotSent && (
-                      <div className="mt-4 text-sm text-green-600">If that email exists, we've sent a reset link.</div>
+                      <div className="mt-4 text-sm text-green-600 space-y-2">
+                        <div>If that email exists, we've sent a reset link.</div>
+                        <div>
+                          <button
+                            type="button"
+                            onClick={(ev) => { ev.preventDefault(); submitForgot(); }}
+                            className="mt-2 px-3 py-1 bg-red-600 text-white rounded-md text-sm"
+                          >
+                            Resend reset link
+                          </button>
+                        </div>
+                      </div>
                     )}
                   </form>
                 </div>
