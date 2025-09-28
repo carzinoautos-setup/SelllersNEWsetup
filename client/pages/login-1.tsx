@@ -36,7 +36,7 @@ export default function Login1() {
 
   return (
     <div
-      className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-albert"
+      className="flex items-center justify-center pt-5 px-4 sm:px-6 lg:px-8 pb-12 font-albert"
       style={{
         minHeight: "703.2px",
         backgroundImage: `url(${bgImage || defaultBg})`,
