@@ -238,7 +238,10 @@ export function UsersProfileCard() {
       {/* New Figma Design Section */}
       <section
         className="bg-white rounded-lg mb-6 mx-auto"
-        style={{ border: "0.8px none rgb(178, 178, 178)", paddingBottom: "32px" }}
+        style={{
+          border: "0.8px none rgb(178, 178, 178)",
+          paddingBottom: "32px",
+        }}
       >
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left Content */}
@@ -323,7 +326,10 @@ export function UsersProfileCard() {
           {/* Right Content - Image Upload */}
           <div className="w-full md:w-[30%] flex flex-col items-center justify-center gap-2 mx-auto md:mx-0">
             <img
-              src={profileImage || "https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"}
+              src={
+                profileImage ||
+                "https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
+              }
               alt="Profile"
               className="w-[84px] h-[84px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
             />
@@ -341,7 +347,9 @@ export function UsersProfileCard() {
                 />
                 <button
                   type="button"
-                  onClick={() => fileInputRef.current && fileInputRef.current.click()}
+                  onClick={() =>
+                    fileInputRef.current && fileInputRef.current.click()
+                  }
                   className="bg-black rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] leading-[18px] font-medium"
                 >
                   {profileImage ? "Change Image" : "Choose file"}
