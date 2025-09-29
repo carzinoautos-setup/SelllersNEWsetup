@@ -43,6 +43,7 @@ export default function AddAListing() {
 
   return (
     <DashboardLayout>
+      <style>{`@media (max-width: 639px) { .add-listing-wrapper { margin-top: -35px !important; } } @media (min-width: 640px) { .add-listing-wrapper { margin-top: 0 !important; } }`}</style>
       <div className="flex-1">
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] overflow-x-hidden min-w-0 add-listing-wrapper">
           {/* TWO-COLUMN SECTION: LEFT = FORM CARD, RIGHT = IMAGE */}
