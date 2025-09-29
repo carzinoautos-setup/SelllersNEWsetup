@@ -9,6 +9,35 @@ export default function AddAListing() {
   const [vin, setVin] = useState("");
   const [vinYear, setVinYear] = useState("");
 
+  const leftCardRef = useRef<HTMLDivElement | null>(null);
+  const rightImageRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function syncHeights() {
+      if (!leftCardRef.current || !rightImageRef.current) return;
+      if (typeof window === "undefined") return;
+      const isDesktopOrTablet = window.innerWidth >= 640; // apply for tablet+ and desktop
+      if (isDesktopOrTablet) {
+        const leftRect = leftCardRef.current.getBoundingClientRect();
+        // set right container height to match left card content height (not shadow)
+        rightImageRef.current.style.height = `${Math.max(leftRect.height, 320)}px`;
+      } else {
+        rightImageRef.current.style.height = "auto";
+      }
+    }
+
+    syncHeights();
+    window.addEventListener("resize", syncHeights);
+    // also observe mutations in left card in case content changes
+    const ro = new MutationObserver(syncHeights);
+    if (leftCardRef.current) ro.observe(leftCardRef.current, { childList: true, subtree: true, characterData: true });
+
+    return () => {
+      window.removeEventListener("resize", syncHeights);
+      ro.disconnect();
+    };
+  }, [flowState]);
+
   // flowState: 'enter' | 'found' | 'notfound'
   const [flowState, setFlowState] = useState<"enter" | "found" | "notfound">(
     "enter",
@@ -50,7 +79,7 @@ export default function AddAListing() {
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[35%_65%] gap-6 items-stretch min-w-0">
             {/* LEFT: Card area */}
             <div className="flex items-start min-w-0 overflow-visible">
-              <div className="add-listing-card bg-white rounded-2xl shadow-lg w-full max-w-[640px] min-w-0 min-h-[320px] relative z-20 overflow-visible" style={{padding: '6px 32px 32px', marginBottom: 24}}>
+              <div ref={leftCardRef} className="add-listing-card bg-white rounded-2xl shadow-lg w-full max-w-[640px] min-w-0 min-h-[320px] relative z-20 overflow-visible" style={{padding: '6px 32px 32px', marginBottom: 24}}>
                 <div className="flex flex-col relative mt-5 mb-2 sm:mt-5 xs:mt-1">
                   List and sell your car fast with
                 </div>
@@ -240,7 +269,7 @@ export default function AddAListing() {
 
             {/* RIGHT: Image area */}
             <div className="flex items-stretch min-w-0">
-              <div className="w-full h-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center relative z-0">
+              <div ref={rightImageRef} className="w-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center relative z-0" style={{height: 'auto'}}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fa1de347df2e14921b7b9b949cb60fd61?format=webp"
                   alt="vehicle"
