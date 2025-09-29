@@ -72,7 +72,7 @@ export default function AddAListing() {
 
   return (
     <DashboardLayout>
-      <style>{`@media (max-width: 639px) { .add-listing-wrapper { margin-top: -35px !important; } .add-listing-card { margin-top: 0 !important; } } @media (min-width: 640px) { .add-listing-wrapper { margin-top: 0 !important; } .add-listing-card { margin-top: 20px !important; } }`}</style>
+      <style>{`@media (max-width: 639px) { .add-listing-wrapper { margin-top: -35px !important; } .add-listing-card { margin-top: 0 !important; } .add-listing-image { margin-top: 0 !important; } } @media (min-width: 640px) { .add-listing-wrapper { margin-top: 0 !important; } .add-listing-card { margin-top: 20px !important; } .add-listing-image { margin-top: 25px !important; } }`}</style>
       <div className="flex-1">
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-[60px] overflow-x-hidden min-w-0 add-listing-wrapper">
           {/* TWO-COLUMN SECTION: LEFT = FORM CARD, RIGHT = IMAGE */}
@@ -269,7 +269,7 @@ export default function AddAListing() {
 
             {/* RIGHT: Image area */}
             <div className="flex items-stretch min-w-0">
-              <div ref={rightImageRef} className="w-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center relative z-0" style={{height: 'auto'}}>
+              <div ref={rightImageRef} className="w-full rounded-2xl overflow-hidden bg-[#F3F4F6] flex items-center justify-center relative z-0 add-listing-image" style={{height: 'auto'}}>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fa1de347df2e14921b7b9b949cb60fd61?format=webp"
                   alt="vehicle"
