@@ -9,6 +9,11 @@ export default function AddAListing() {
   const [vin, setVin] = useState("");
   const [vinYear, setVinYear] = useState("");
 
+  // flowState: 'enter' | 'found' | 'notfound'
+  const [flowState, setFlowState] = useState<"enter" | "found" | "notfound">(
+    "enter",
+  );
+
   const leftCardRef = useRef<HTMLDivElement | null>(null);
   const rightImageRef = useRef<HTMLDivElement | null>(null);
 
@@ -37,11 +42,6 @@ export default function AddAListing() {
       ro.disconnect();
     };
   }, [flowState]);
-
-  // flowState: 'enter' | 'found' | 'notfound'
-  const [flowState, setFlowState] = useState<"enter" | "found" | "notfound">(
-    "enter",
-  );
 
   function handleGetDetails() {
     // UI-only logic to simulate results
