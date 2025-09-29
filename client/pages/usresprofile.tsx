@@ -248,7 +248,7 @@ export function UsersProfileCard() {
           <div className="w-full md:w-[70%] max-w-[725px]">
             <div className="flex flex-col mb-6">
               <h2 className="text-[24px] font-bold text-[#24272C] font-['Albert_Sans']">
-                Get Started with Carzino Revised
+                Your Profile
               </h2>
               <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
                 <span className="inline font-['Albert_Sans']">
