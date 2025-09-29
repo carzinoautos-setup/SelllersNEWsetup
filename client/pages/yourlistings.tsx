@@ -435,7 +435,7 @@ export default function YourListingsPage() {
                       to="/change-status"
                       className="flex w-[153px] h-[38px] p-2 px-[5px] justify-center items-center gap-1 rounded-[14px] border border-[#B9B9B9]"
                     >
-                      <div className="text-black font-albert text-[12px] font-medium leading-normal">
+                      <div className="text-black font-albert text-[11px] font-medium leading-normal">
                         Change Status
                       </div>
                     </Link>
