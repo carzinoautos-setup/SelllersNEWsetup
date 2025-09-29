@@ -368,7 +368,7 @@ export function UsersProfileCard() {
         style={{ border: "0.8px solid rgba(171,171,171,1)" }}
       >
         <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
-          Enter your Details
+          Profile Details
         </h3>
 
         <div>
