@@ -509,7 +509,7 @@ export default function VindecoderRev1() {
                 style={{ fontFamily: "Albert Sans" }}
               >
                 <span className="text-[#090909]">Basic Details- </span>
-                <span className="text-[#E82121]">Step 1 a0 test</span>
+                <span className="text-[#E82121]">Step 1&nbsp; test</span>
               </h1>
               <p
                 className="text-[14px] text-black leading-[140%] max-w-[955px]"
