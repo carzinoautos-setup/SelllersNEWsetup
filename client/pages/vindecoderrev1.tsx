@@ -232,6 +232,116 @@ function VehicleDetailsFormCopy() {
   );
 }
 
+function VehicleDetailsStep1() {
+  const [vin, setVin] = useState("");
+  const [model, setModel] = useState("");
+  const [isCertified, setIsCertified] = useState("");
+  const [exteriorColorLocal, setExteriorColorLocal] = useState("");
+  const [year, setYear] = useState("");
+  const [trim, setTrim] = useState("");
+  const [mileageLocal, setMileageLocal] = useState("");
+  const [titleStatusLocal, setTitleStatusLocal] = useState("");
+  const [makeLocal, setMakeLocal] = useState("");
+  const [conditionLocal, setConditionLocal] = useState("");
+  const [interiorColorLocal2, setInteriorColorLocal2] = useState("");
+  const [stock, setStock] = useState("");
+
+  const modelOptions = ["440 xDrive Coupe 2D", "Base", "Premium"];
+  const certifiedOptions = ["Yes", "No"];
+  const exteriorColorOptionsLocal = ["White", "Black", "Silver", "Red", "Blue"];
+  const yearOptionsLocal = ["2023", "2022", "2021", "2020"];
+  const titleStatusOptionsLocal = ["Clean", "Salvage", "Lien"];
+  const makeOptionsLocal = ["BMW", "Audi", "Toyota", "Ford"];
+  const conditionOptionsLocal = ["New", "Used", "Certified"];
+  const interiorColorOptionsLocal = ["Black", "Gray", "Beige", "Brown"];
+
+  return (
+    <div className="mb-12">
+      {/* Header */}
+      <div className="mb-6">
+        <h1 className="text-[20px] font-semibold" style={{ fontFamily: "Albert Sans" }}>
+          <span className="text-[#090909]">Vehicle Details- </span>
+          <span className="text-[#E82121]">Step 1</span>
+        </h1>
+        <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: "Albert Sans" }}>
+          Enter or edit your vehicle details
+        </p>
+        <div className="w-full h-[0.5px] bg-[#B9B9B9] my-6"></div>
+      </div>
+
+      <div className="bg-white rounded-2xl pb-[30px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Vin#</label>
+              <input type="text" value={vin} onChange={(e)=>setVin(e.target.value)} placeholder="Enter Vin#" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]" style={{ fontFamily: "Albert Sans" }} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Model</label>
+              <Select options={modelOptions} value={model} onChange={(v)=>setModel(v)} placeholder="Select Model" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Is certified</label>
+              <Select options={certifiedOptions} value={isCertified} onChange={(v)=>setIsCertified(v)} placeholder="Select one" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Exterior Color</label>
+              <Select options={exteriorColorOptionsLocal} value={exteriorColorLocal} onChange={(v)=>setExteriorColorLocal(v)} placeholder="Select color" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Year</label>
+              <Select options={yearOptionsLocal} value={year} onChange={(v)=>setYear(v)} placeholder="Enter Year" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Trim</label>
+              <input type="text" value={trim} onChange={(e)=>setTrim(e.target.value)} placeholder="Enter Trim" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]" style={{ fontFamily: "Albert Sans" }} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Mileage</label>
+              <input type="text" value={mileageLocal} onChange={(e)=>setMileageLocal(e.target.value)} placeholder="Enter Miles" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]" style={{ fontFamily: "Albert Sans" }} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Title Status</label>
+              <Select options={titleStatusOptionsLocal} value={titleStatusLocal} onChange={(v)=>setTitleStatusLocal(v)} placeholder="Select title status" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Make</label>
+              <Select options={makeOptionsLocal} value={makeLocal} onChange={(v)=>setMakeLocal(v)} placeholder="Select Make" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Condition</label>
+              <Select options={conditionOptionsLocal} value={conditionLocal} onChange={(v)=>setConditionLocal(v)} placeholder="Select Condition" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Interior Color</label>
+              <Select options={interiorColorOptionsLocal} value={interiorColorLocal2} onChange={(v)=>setInteriorColorLocal2(v)} placeholder="Select Color" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Stock#</label>
+              <input type="text" value={stock} onChange={(e)=>setStock(e.target.value)} placeholder="Enter Stock Number" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]" style={{ fontFamily: "Albert Sans" }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function VehicleDetailsStep2() {
   // Step 2A state variables
   const [bodyType, setBodyType] = useState("");
