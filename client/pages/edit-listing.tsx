@@ -989,20 +989,20 @@ export default function EditListing() {
                   </div>
 
                   {/* Select State (moved from Column 1) */}
-                  <div className="flex flex-col gap-2">
-                    <label
-                      className="text-[14px] font-medium text-[#24272C]"
-                      style={{ fontFamily: "Albert Sans" }}
-                    >
+                  <div data-loc="client/pages/edit-listing.tsx:992:19" $name="edit-listing" css={{display: "flex", flexDirection: "column", fontWeight: "400", gap: "8px"}}>
+                    <div data-loc="client/pages/edit-listing.tsx:993:21" $name="edit-listing" css={{color: "rgb(36, 39, 44)", display: "block", textDecoration: "rgb(36, 39, 44)", font: '500 14px/21px "Albert Sans" '}}>
                       Select State
-                    </label>
-                    <Select
-                      options={stateOptions}
-                      value={stateValue}
-                      onChange={(v) => setStateValue(v)}
-                      placeholder="Select State"
-                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
-                    />
+                    </div>
+                    <div data-loc="client/components/ui/select.tsx:44:5" $name="select" css={{backgroundColor: "rgb(255, 255, 255)", borderColor: "rgb(178, 178, 178)", borderRadius: "14px", borderWidth: "0.8px", color: "rgb(36, 39, 44)", fontSize: "14px", fontWeight: "400", height: "54px", lineHeight: "21px", outline: "rgba(0, 0, 0, 0) solid 1.6px", outlineOffset: "2px", outlineStyle: "solid", outlineWidth: "1.6px", position: "relative", textDecoration: "rgb(36, 39, 44)", width: "100%", padding: "0 18px"}}>
+                      <div role="button" tabIndex={0} aria-haspopup="listbox" aria-expanded={false} data-loc="client/components/ui/select.tsx:45:7" $name="select" css={{display: "flex", alignItems: "center", borderRadius: "12px", fontSize: "15px", fontWeight: "400", height: "100%", justifyContent: "space-between", lineHeight: "22.5px", textAlign: "left", width: "100%"}}>
+                        <div data-loc="client/components/ui/select.tsx:62:13" $name="select" css={{display: "flex", alignItems: "center", color: "rgb(156, 163, 175)", flexBasis: "0px", flexGrow: "1", fontSize: "14px", fontWeight: "400", height: "100%", lineHeight: "21px", overflowX: "hidden", overflowY: "hidden", textDecoration: "rgb(156, 163, 175)", textOverflow: "ellipsis", textWrap: "nowrap", whiteSpace: "nowrap"}}>
+                          Select State
+                        </div>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-loc="client/components/ui/select.tsx:101:9" $name="select" css={{display: "block", alignSelf: "center", color: "rgb(232, 33, 33)", fill: "none", fontWeight: "400", height: "16px", overflowClipMargin: "content-box", overflowX: "hidden", overflowY: "hidden", textDecoration: "rgb(232, 33, 33)", width: "16px"}}>
+                          <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" data-loc="client/components/ui/select.tsx:107:11" $name="select" css={{display: "inline", d: 'path("M 6 9 L 12 15 L 18 9")', fill: "none", fontWeight: "400", stroke: "rgb(232, 33, 33)", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "1.5px", transformOrigin: "0px 0px"}} />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
