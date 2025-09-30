@@ -488,7 +488,11 @@ export default function EditListing() {
                 className="text-[12px] font-normal text-[#090909] leading-[140%]"
                 style={{ fontFamily: "Albert Sans" }}
               >
-                Edit or add a listing
+                <p>
+                  <span style={{ fontSize: "12px" }}>
+                    Vehicle Name here a0([post_title] ) api response: vin.name
+                  </span>
+                </p>
               </span>
             </div>
           </div>
