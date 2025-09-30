@@ -816,9 +816,14 @@ export default function VindecoderRev1() {
           <VehicleDetailsStep2 />
 
           {/* Original Step 1 test header content retained */}
-            <div className="inline text-[#090909] font-semibold text-[20px]">
-              Vehicle Details-
-            </div>
+            <h1 style={{ fontFamily: "Albert Sans", fontWeight: 600, fontSize: "20px", lineHeight: "30px" }}>
+              <div className="inline text-[#090909] font-semibold">
+                Vehicle Feature-
+              </div>
+              <div className="inline text-[#E82121] font-semibold">
+                Step 3
+              </div>
+            </h1>
               <p
                 className="text-[14px] text-black leading-[140%] max-w-[955px]"
                 style={{ fontFamily: "Albert Sans" }}
