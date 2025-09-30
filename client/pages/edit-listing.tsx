@@ -490,7 +490,7 @@ export default function EditListing() {
               >
                 <p>
                   <span style={{ fontSize: "12px" }}>
-                    Vehicle Name here A0([post_title] ) api response: vin.name
+                    Vehicle Name here ([post_title] ) api response: vin.name
                   </span>
                 </p>
               </span>
