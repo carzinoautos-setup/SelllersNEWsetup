@@ -830,27 +830,7 @@ export default function VindecoderRev1() {
 
           {/* Step 2: Features */}
           <div className="mb-12">
-            {/* Header */}
-            <div className="mb-6">
-              <h1
-                className="text-[20px] font-semibold"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                <span className="text-[#090909]">Basic Details- </span>
-                <p>Step 2 old</p>
-              </h1>
-              <p
-                className="text-[14px] text-black leading-[140%] max-w-[955px]"
-                style={{ fontFamily: "Albert Sans" }}
-              >
-                Carzino makes it simple—we've pulled in your unit's features
-                automatically. All you need to do is confirm or adjust what's
-                here.
-              </p>
-              <div className="w-full h-[0.5px] bg-[#EDEDED] my-6"></div>
-            </div>
-
-            <VehicleDetailsFormCopy />
+              <VehicleDetailsFormCopy />
 
             {/* Features Grid */}
             <div className="bg-white rounded-2xl pl-[2px]">
