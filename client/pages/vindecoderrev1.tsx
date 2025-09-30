@@ -232,6 +232,154 @@ function VehicleDetailsFormCopy() {
   );
 }
 
+function VehicleDetailsStep2() {
+  // Step 2A state variables
+  const [bodyType, setBodyType] = useState("");
+  const [doors, setDoors] = useState("");
+  const [transmissionType, setTransmissionType] = useState("");
+  const [transmissionSpeed, setTransmissionSpeed] = useState("");
+  const [cylinders, setCylinders] = useState("");
+  const [engineSize, setEngineSize] = useState("");
+  const [driveTrain, setDriveTrain] = useState("");
+  const [fuelType, setFuelType] = useState("");
+  const [mpgCity, setMpgCity] = useState("");
+  const [mpgHwy, setMpgHwy] = useState("");
+  const [stateValue, setStateValue] = useState("");
+  const [listingStatus, setListingStatus] = useState("");
+  const [city, setCity] = useState("");
+  const [zipCode, setZipCode] = useState("");
+
+  // Step 2A options
+  const bodyTypeOptions = ["Sedan","SUV","Hatchback","Coupe","Convertible","Truck","Wagon"];
+  const doorsOptions = ["2","3","4","5"];
+  const transmissionSpeedOptions = ["3-Speed","4-Speed","5-Speed","6-Speed","7-Speed","8-Speed","9-Speed","10-Speed"];
+  const cylindersOptions = ["3","4","5","6","8","10","12"];
+  const engineSizeOptions = ["1.0L","1.4L","1.6L","1.8L","2.0L","2.4L","2.5L","3.0L","3.5L","4.0L","5.0L","6.0L","6.7L"];
+  const fuelTypeOptions = ["Gasoline","Diesel","Hybrid","Electric","Flex Fuel"];
+  const mpgOptions = ["15","20","25","30","35","40","45","50+"];
+  const stateOptions = ["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"];
+
+  return (
+    <div className="mb-12">
+      {/* Header */}
+      <div className="mb-6">
+        <h1 className="text-[20px] font-semibold" style={{ fontFamily: "Albert Sans" }}>
+          <span className="text-[#090909]">Vehicle Details- </span>
+          <span className="text-[#E82121]">Step 2</span>
+        </h1>
+        <p className="text-[14px] text-black leading-[140%] max-w-[955px]" style={{ fontFamily: "Albert Sans" }}>
+          Enter or edit your vehicle details
+        </p>
+        <div className="w-full h-[0.5px] bg-[#B9B9B9] my-6"></div>
+      </div>
+
+      {/* Form */}
+      <div className="bg-white rounded-2xl pb-[30px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Column 1 */}
+          <div className="flex flex-col gap-6">
+            {/* Body Type */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Body Type</label>
+              <Select options={bodyTypeOptions} value={bodyType} onChange={(v)=>setBodyType(v)} placeholder="Select Body Type" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Transmission speed */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Transmission speed</label>
+              <Select options={transmissionSpeedOptions} value={transmissionSpeed} onChange={(v)=>setTransmissionSpeed(v)} placeholder="Select speed" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Drive Train */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Drive Train</label>
+              <Select options={stateOptions /* placeholder */} value={driveTrain} onChange={(v)=>setDriveTrain(v)} placeholder="Select Drive Train" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Fuel Type */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Fuel Type</label>
+              <Select options={fuelTypeOptions} value={fuelType} onChange={(v)=>setFuelType(v)} placeholder="Select Fuel Type" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Select State */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Select State</label>
+              <Select options={stateOptions} value={stateValue} onChange={(v)=>setStateValue(v)} placeholder="Select State" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+          </div>
+
+          {/* Column 2 */}
+          <div className="flex flex-col gap-6">
+            {/* Doors */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Doors</label>
+              <Select options={doorsOptions} value={doors} onChange={(v)=>setDoors(v)} placeholder="Select" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Engine Size (Liters) */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Engine Size (Liters)</label>
+              <Select options={engineSizeOptions} value={engineSize} onChange={(v)=>setEngineSize(v)} placeholder="Select" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Cylinders */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Cylinders</label>
+              <Select options={cylindersOptions} value={cylinders} onChange={(v)=>setCylinders(v)} placeholder="Select Cylinders" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* MPG Gallon City */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>MPG Gallon City</label>
+              <Select options={mpgOptions} value={mpgCity} onChange={(v)=>setMpgCity(v)} placeholder="Select MPG City" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Enter City */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Enter City</label>
+              <input type="text" value={city} onChange={(e)=>setCity(e.target.value)} placeholder="Enter City" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]" style={{ fontFamily: "Albert Sans" }} />
+            </div>
+          </div>
+
+          {/* Column 3 */}
+          <div className="flex flex-col gap-6">
+            {/* Transmission */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Transmission</label>
+              <Select options={transmissionOptions /* placeholder */} value={transmissionType} onChange={(v)=>setTransmissionType(v)} placeholder="Select Transmission" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Engine Name */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Engine Name</label>
+              <Select options={engineSizeOptions} value={engineSize} onChange={(v)=>setEngineSize(v)} placeholder="Select" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Listing Status */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Listing Status</label>
+              <Select options={stateOptions /* placeholder */} value={listingStatus} onChange={(v)=>setListingStatus(v)} placeholder="Select status" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* MPG Gallon HWY */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>MPG Gallon HWY</label>
+              <Select options={mpgOptions} value={mpgHwy} onChange={(v)=>setMpgHwy(v)} placeholder="MPG Gallon HWY" className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`} />
+            </div>
+
+            {/* Enter Zip Code */}
+            <div className="flex flex-col gap-2">
+              <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Enter Zip Code</label>
+              <input type="text" value={zipCode} onChange={(e)=>setZipCode(e.target.value)} placeholder="Enter Zip Code" className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]" style={{ fontFamily: "Albert Sans" }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function VindecoderRev1() {
   // Step 1: Basic Details
   const [mileage, setMileage] = useState("");
@@ -743,7 +891,7 @@ export default function VindecoderRev1() {
 >
             <p>Basic Details- old</p>
           </h1>
-
+          <VehicleDetailsStep2 />
 
           {/* Original Step 1 test header content retained */}
               <p
