@@ -740,8 +740,8 @@ export default function VindecoderRev1() {
               <h1
             className="text-[20px] font-semibold"
             style={{ fontFamily: "Albert Sans" }}
-          >
-            <span className="text-[#090909]">Basic Details- </span>
+>
+            <p>Basic Details- old</p>
           </h1>
 
 
@@ -898,7 +898,7 @@ export default function VindecoderRev1() {
                 style={{ fontFamily: "Albert Sans" }}
               >
                 <span className="text-[#090909]">Basic Details- </span>
-                <span className="text-[#E82121]">Step 2</span>
+                <p>Step 2 old</p>
               </h1>
               <p
                 className="text-[14px] text-black leading-[140%] max-w-[955px]"
