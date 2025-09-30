@@ -1536,6 +1536,13 @@ export default function EditListing() {
 
             <div className="mb-12">
               <div className="mb-6">
+
+              <div style={{display: "flex", fontWeight: 400, justifyContent: "flex-start", marginTop: 20}}>
+                <button type="button" className="bg-[#E82121] text-white rounded-lg px-6 py-3 font-medium" style={{fontFamily: "Albert Sans"}}>
+                  Use AI Description
+                </button>
+              </div>
+
                 <h1
                   className="text-[20px] font-semibold"
                   style={{ fontFamily: "Albert Sans" }}
