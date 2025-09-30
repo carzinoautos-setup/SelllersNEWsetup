@@ -776,7 +776,7 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Transmission Speed */}
+                  {/* Transmission speed */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
@@ -810,38 +810,37 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* MPG Gallon HWY */}
+                  {/* Fuel Type */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      MPG Gallon HWY
+                      Fuel Type
                     </label>
                     <Select
-                      options={mpgOptions}
-                      value={mpgHwy}
-                      onChange={(v) => setMpgHwy(v)}
-                      placeholder="MPG Gallon HWY"
+                      options={fuelTypeOptions}
+                      value={fuelType}
+                      onChange={(v) => setFuelType(v)}
+                      placeholder="Select Fuel Type"
                       className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
                     />
                   </div>
 
-                  {/* Enter City (moved from Column 2) */}
+                  {/* Select State */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Enter City
+                      Select State
                     </label>
-                    <input
-                      type="text"
-                      value={city}
-                      onChange={(e) => setCity(e.target.value)}
-                      placeholder="Enter City"
-                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
-                      style={{ fontFamily: "Albert Sans" }}
+                    <Select
+                      options={stateOptions}
+                      value={stateValue}
+                      onChange={(v) => setStateValue(v)}
+                      placeholder="Select State"
+                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
                     />
                   </div>
                 </div>
@@ -865,6 +864,23 @@ export default function EditListing() {
                     />
                   </div>
 
+                  {/* Engine Size (Liters) */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Engine Size (Liters)
+                    </label>
+                    <Select
+                      options={engineSizeOptions}
+                      value={engineSize}
+                      onChange={(v) => setEngineSize(v)}
+                      placeholder="Select"
+                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
+                    />
+                  </div>
+
                   {/* Cylinders */}
                   <div className="flex flex-col gap-2">
                     <label
@@ -882,24 +898,7 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Fuel Type */}
-                  <div className="flex flex-col gap-2">
-                    <label
-                      className="text-[14px] font-medium text-[#24272C]"
-                      style={{ fontFamily: "Albert Sans" }}
-                    >
-                      Fuel Type
-                    </label>
-                    <Select
-                      options={fuelTypeOptions}
-                      value={fuelType}
-                      onChange={(v) => setFuelType(v)}
-                      placeholder="Select Fuel Type"
-                      className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
-                    />
-                  </div>
-
-                  {/* MPG City */}
+                  {/* MPG Gallon City */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
@@ -916,19 +915,19 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Enter Zip Code (moved from Column 3) */}
+                  {/* Enter City */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Enter Zip Code
+                      Enter City
                     </label>
                     <input
                       type="text"
-                      value={zipCode}
-                      onChange={(e) => setZipCode(e.target.value)}
-                      placeholder="Enter Zip Code"
+                      value={city}
+                      onChange={(e) => setCity(e.target.value)}
+                      placeholder="Enter City"
                       className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
                       style={{ fontFamily: "Albert Sans" }}
                     />
@@ -954,18 +953,18 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Engine Size (Liters) */}
+                  {/* Engine Name */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Engine Size (Liters)
+                      Engine Name
                     </label>
                     <Select
-                      options={engineSizeOptions}
-                      value={engineSize}
-                      onChange={(v) => setEngineSize(v)}
+                      options={engineOptions}
+                      value={engine}
+                      onChange={(v) => setEngine(v)}
                       placeholder="Select"
                       className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
                     />
@@ -988,20 +987,38 @@ export default function EditListing() {
                     />
                   </div>
 
-                  {/* Select State (moved from Column 1) */}
+                  {/* MPG Gallon HWY */}
                   <div className="flex flex-col gap-2">
                     <label
                       className="text-[14px] font-medium text-[#24272C]"
                       style={{ fontFamily: "Albert Sans" }}
                     >
-                      Select State
+                      MPG Gallon HWY
                     </label>
                     <Select
-                      options={stateOptions}
-                      value={stateValue}
-                      onChange={(v) => setStateValue(v)}
-                      placeholder="Select State"
+                      options={mpgOptions}
+                      value={mpgHwy}
+                      onChange={(v) => setMpgHwy(v)}
+                      placeholder="MPG Gallon HWY"
                       className={`w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0`}
+                    />
+                  </div>
+
+                  {/* Enter Zip Code */}
+                  <div className="flex flex-col gap-2">
+                    <label
+                      className="text-[14px] font-medium text-[#24272C]"
+                      style={{ fontFamily: "Albert Sans" }}
+                    >
+                      Enter Zip Code
+                    </label>
+                    <input
+                      type="text"
+                      value={zipCode}
+                      onChange={(e) => setZipCode(e.target.value)}
+                      placeholder="Enter Zip Code"
+                      className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121] placeholder:text-[#050B20]"
+                      style={{ fontFamily: "Albert Sans" }}
                     />
                   </div>
                 </div>
