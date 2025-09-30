@@ -1508,12 +1508,7 @@ export default function EditListing() {
                         Description
                       </label>
 
-                                        <div data-loc="client/pages/edit-listing.tsx:1418:19" style={{display: "flex", fontWeight: 400, justifyContent: "flex-start", marginTop: 20}}>
-                    <div data-loc="client/pages/edit-listing.tsx:1419:21" style={{display: "flex", alignItems: "center", backgroundColor: "rgb(232, 33, 33)", borderRadius: "14px", color: "rgb(255, 255, 255)", fontFamily: '"Albert Sans", -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Segoe UI", sans-serif', fontWeight: 500, gap: "10px", height: "50px", justifyContent: "center", textDecoration: "rgb(255, 255, 255)", width: "211px", padding: "16px 24px"}}>
-                      Use AI Description
-                    </div>
-                  </div>
-                      <textarea
+                                            <textarea
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         rows={8}
