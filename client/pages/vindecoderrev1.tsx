@@ -996,12 +996,7 @@ export default function VindecoderRev1() {
           <div className="mb-12">
             {/* Header */}
             <div className="mb-6">
-              <h1
-            className="text-[20px] font-semibold"
-            style={{ fontFamily: "Albert Sans" }}
-          >
-            <p>paste above</p>
-          </h1>
+              <h1 className="text-[20px] font-semibold" style={{ fontFamily: "Albert Sans" }} />
           <VehicleDetailsStep1 />
           <VehicleDetailsStep2 />
 
