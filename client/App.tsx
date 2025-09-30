@@ -20,6 +20,7 @@ import AddAListing from "./pages/add-a-listing";
 import EditListing from "./pages/edit-listing";
 import Production from "./pages/production";
 import Vindecoder from "./pages/vindecoder";
+import VindecoderRev1 from "./pages/vindecoderrev1";
 import StartVindecoder from "./pages/start-vindecoder";
 import SuccessUploaded from "./pages/success-uploaded";
 import ApplyCredits from "./pages/apply-credits";
@@ -60,6 +61,7 @@ const App = () => (
           />
           <Route path="/production" element={<Production />} />
           <Route path="/vindecoder" element={<Vindecoder />} />
+          <Route path="/vindecoderrev1" element={<VindecoderRev1 />} />
           <Route path="/billing" element={<Billing />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/messages" element={<Messages />} />
