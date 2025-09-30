@@ -245,6 +245,19 @@ export default function VindecoderRev1() {
   const [vehicleLocationCity, setVehicleLocationCity] = useState("");
   const [vehicleLocationZip, setVehicleLocationZip] = useState("");
 
+  // Rev1 additional fields (local to vindecoderrev1)
+  const [vinRev, setVinRev] = useState("");
+  const [modelRev, setModelRev] = useState("");
+  const [isCertifiedRev, setIsCertifiedRev] = useState("");
+  const [yearRev, setYearRev] = useState("");
+  const [trimRev, setTrimRev] = useState("");
+  const [mileageRev, setMileageRev] = useState("");
+  const [titleStatusRev, setTitleStatusRev] = useState("");
+  const [makeRev, setMakeRev] = useState("");
+  const [conditionRev, setConditionRev] = useState("");
+  const [interiorColorRev, setInteriorColorRev] = useState("");
+  const [stockRev, setStockRev] = useState("");
+
   // Step 2: Features
   const [selectedFeatures, setSelectedFeatures] = useState({
     // Features
@@ -405,6 +418,15 @@ export default function VindecoderRev1() {
     ? vehicleZipMap[vehicleLocationCity] || []
     : allZips.slice(0, 50);
   const interiorColorOptions = ["Black", "Gray", "Beige", "Brown"];
+
+  // Rev1 select options
+  const modelOptionsRev = ["440 xDrive Coupe 2D", "Base", "Premium"];
+  const certifiedOptionsRev = ["Yes", "No"];
+  const yearOptionsRev = ["2023", "2022", "2021", "2020"];
+  const titleStatusOptionsRev = ["Clean", "Salvage", "Lien"];
+  const makeOptionsRev = ["BMW", "Audi", "Toyota", "Ford"];
+  const conditionOptionsRev = ["New", "Used", "Certified"];
+  const interiorColorOptionsRev = ["Black", "Gray", "Beige", "Brown"];
 
   const toggleFeature = (feature: string) => {
     setSelectedFeatures((prev) => ({
@@ -735,152 +757,132 @@ export default function VindecoderRev1() {
             {/* Form */}
             <div className="bg-white">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {/* Row 1: Mileage + Engine */}
+                {/* Column 1 */}
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Mileage
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Vin#</label>
                   <input
                     type="text"
-                    value={mileage}
-                    onChange={(e) => setMileage(e.target.value)}
-                    placeholder="Enter mileage"
-                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    value={vinRev}
+                    onChange={(e) => setVinRev(e.target.value)}
+                    placeholder="Enter Vin#"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121]"
                     style={{ fontFamily: "Albert Sans" }}
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Engine
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Model</label>
                   <Select
-                    options={engineOptions}
-                    value={engine}
-                    onChange={(v) => setEngine(v)}
-                    placeholder="6.7 Liter"
-                    className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
-                  />
-                </div>
-
-                {/* Row 2: Vehicle Trim + Transmission */}
-                <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Vehicle Trim
-                  </label>
-                  <Select
-                    options={trimOptions}
-                    value={vehicleTrim}
-                    onChange={(v) => setVehicleTrim(v)}
-                    placeholder="440 xDrive Coupe 2D"
+                    options={modelOptionsRev}
+                    value={modelRev}
+                    onChange={(v) => setModelRev(v)}
+                    placeholder="Select Model"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Transmission
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Is certified</label>
                   <Select
-                    options={transmissionOptions}
-                    value={transmission}
-                    onChange={(v) => setTransmission(v)}
-                    placeholder="Select"
+                    options={certifiedOptionsRev}
+                    value={isCertifiedRev}
+                    onChange={(v) => setIsCertifiedRev(v)}
+                    placeholder="Select one"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Exterior Color
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Year</label>
                   <Select
-                    options={exteriorColorOptions}
-                    value={exteriorColor}
-                    onChange={(v) => setExteriorColor(v)}
-                    placeholder="Select"
+                    options={yearOptionsRev}
+                    value={yearRev}
+                    onChange={(v) => setYearRev(v)}
+                    placeholder="Enter Year"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Trim</label>
+                  <input
+                    type="text"
+                    value={trimRev}
+                    onChange={(e) => setTrimRev(e.target.value)}
+                    placeholder="Enter Trim"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121]"
                     style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Interior Color
-                  </label>
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Mileage</label>
+                  <input
+                    type="text"
+                    value={mileageRev}
+                    onChange={(e) => setMileageRev(e.target.value)}
+                    placeholder="Enter Miles"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Title Status</label>
                   <Select
-                    options={interiorColorOptions}
-                    value={interiorColor}
-                    onChange={(v) => setInteriorColor(v)}
-                    placeholder="Select"
+                    options={titleStatusOptionsRev}
+                    value={titleStatusRev}
+                    onChange={(v) => setTitleStatusRev(v)}
+                    placeholder="Select title status"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Vehicle Location State
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Make</label>
                   <Select
-                    options={vehicleLocationStateOptions}
-                    value={vehicleLocationState}
-                    onChange={(v) => setVehicleLocationState(v)}
-                    placeholder="Enter State"
+                    options={makeOptionsRev}
+                    value={makeRev}
+                    onChange={(v) => setMakeRev(v)}
+                    placeholder="Select Make"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Vehicle Location City
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Condition</label>
                   <Select
-                    options={vehicleLocationCityOptions}
-                    value={vehicleLocationCity}
-                    onChange={(v) => setVehicleLocationCity(v)}
-                    placeholder="Enter City"
+                    options={conditionOptionsRev}
+                    value={conditionRev}
+                    onChange={(v) => setConditionRev(v)}
+                    placeholder="Select Condition"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label
-                    className="text-[14px] font-medium text-[#24272C]"
-                    style={{ fontFamily: "Albert Sans" }}
-                  >
-                    Vehicle Location Zip
-                  </label>
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Interior Color</label>
                   <Select
-                    options={vehicleLocationZipOptions}
-                    value={vehicleLocationZip}
-                    onChange={(v) => setVehicleLocationZip(v)}
-                    placeholder="Enter Zip"
+                    options={interiorColorOptionsRev}
+                    value={interiorColorRev}
+                    onChange={(v) => setInteriorColorRev(v)}
+                    placeholder="Select Color"
                     className="w-full h-[54px] rounded-lg border border-[#B2B2B2] px-[18px] text-[14px] text-[#24272C] bg-white outline-none focus:border-[#E82121] focus:ring-0"
                   />
                 </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[14px] font-medium text-[#24272C]" style={{ fontFamily: "Albert Sans" }}>Stock#</label>
+                  <input
+                    type="text"
+                    value={stockRev}
+                    onChange={(e) => setStockRev(e.target.value)}
+                    placeholder="Enter Stock Number"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#050B20] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
+                </div>
+
               </div>
             </div>
           </div>
