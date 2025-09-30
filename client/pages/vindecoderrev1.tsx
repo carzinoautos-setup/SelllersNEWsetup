@@ -1002,6 +1002,7 @@ export default function VindecoderRev1() {
           >
             <p>paste above</p>
           </h1>
+          <VehicleDetailsStep1 />
           <VehicleDetailsStep2 />
 
           {/* Original Step 1 test header content retained */}
