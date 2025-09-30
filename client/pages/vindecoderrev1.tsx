@@ -890,7 +890,7 @@ export default function VindecoderRev1() {
             className="text-[20px] font-semibold"
             style={{ fontFamily: "Albert Sans" }}
           >
-            <span className="text-[#090909]">Basic Details- </span>
+            <p>paste above</p>
           </h1>
           <VehicleDetailsStep2 />
 
