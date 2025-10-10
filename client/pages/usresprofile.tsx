@@ -682,13 +682,62 @@ export function UsersProfileCard() {
                 <FieldLabel>
                   <div style={{ fontWeight: 500 }}>Show payments on all vehicles?</div>
                 </FieldLabel>
-                <input
-                  value={emailAlert1}
-                  onChange={(e) => setEmailAlert1(e.target.value)}
-                  placeholder=""
-                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
-                  style={{ fontFamily: "Albert Sans" }}
-                />
+                <div className="relative w-full" ref={showPaymentsRef}>
+                  <button
+                    type="button"
+                    onClick={() => setShowPaymentsOpen((v) => !v)}
+                    className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]"
+                    aria-haspopup="listbox"
+                    aria-expanded={showPaymentsOpen}
+                  >
+                    <span className="truncate flex-1 text-left">{showPayments}</span>
+                    <svg
+                      className="w-4 h-4 ml-2 text-[#CF0D0D]"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                        fill="#CF0D0D"
+                      />
+                    </svg>
+                  </button>
+
+                  {showPaymentsOpen && (
+                    <ul
+                      role="listbox"
+                      className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                      style={{
+                        left: 0,
+                        right: 0,
+                        top: "calc(100% + 8px)",
+                        boxSizing: "border-box",
+                      }}
+                    >
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setShowPayments("Yes");
+                          setShowPaymentsOpen(false);
+                        }}
+                      >
+                        Yes
+                      </li>
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setShowPayments("No");
+                          setShowPaymentsOpen(false);
+                        }}
+                      >
+                        No
+                      </li>
+                    </ul>
+                  )}
+                </div>
               </div>
 
               <div>
