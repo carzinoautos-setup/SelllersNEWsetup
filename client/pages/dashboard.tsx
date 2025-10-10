@@ -48,7 +48,7 @@ export default function Dashboard() {
                     <span>
                       emailhere@gmail.com
                       <br />
-                      253-000-0000
+                      <p>Account #: Add here</p>
                     </span>
                   </p>
                 </div>
