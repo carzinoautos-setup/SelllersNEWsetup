@@ -239,6 +239,7 @@ export function UsersProfileCard() {
     setLongitude("");
     setLatitude("");
     setProductFeedUrl("");
+    setEmailAlert1("");
   };
 
   return (
