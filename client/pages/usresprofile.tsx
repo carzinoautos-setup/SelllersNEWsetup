@@ -662,7 +662,7 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel>Email lead alerts user 1</FieldLabel>
+                <FieldLabel><p>Do you want payments to show on your vehicles?</p></FieldLabel>
                 <input
                   value={emailAlert1}
                   onChange={(e) => setEmailAlert1(e.target.value)}
