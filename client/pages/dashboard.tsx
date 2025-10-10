@@ -40,16 +40,14 @@ export default function Dashboard() {
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3">
                     Sellers Name
                   </h2>
-                  <p className="text-sm text-[#696665] mt-0.5 w-full">
+                  <div className="text-sm text-[#696665] mt-0.5 w-full">
                     <div style={{ fontWeight: 400 }}>Addrres Here</div>
-                    <span>Tacoma, Wa 98498</span>
-                    <br />
-                    <span>
-                      emailhere@gmail.com
-                      <br />
-                      <p>Account #: Add here</p>
-                    </span>
-                  </p>
+                    <div>Tacoma, Wa 98498</div>
+                    <div>
+                      <div>emailhere@gmail.com</div>
+                      <div>Account #: Add here</div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
