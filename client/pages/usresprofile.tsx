@@ -680,7 +680,9 @@ export function UsersProfileCard() {
 
               <div>
                 <FieldLabel>
-                  <div style={{ fontWeight: 500 }}>Show payments on all vehicles?</div>
+                  <div style={{ fontWeight: 500 }}>
+                    Show payments on all vehicles?
+                  </div>
                 </FieldLabel>
                 <div className="relative w-full" ref={showPaymentsRef}>
                   <button
@@ -690,7 +692,9 @@ export function UsersProfileCard() {
                     aria-haspopup="listbox"
                     aria-expanded={showPaymentsOpen}
                   >
-                    <span className="truncate flex-1 text-left">{showPayments}</span>
+                    <span className="truncate flex-1 text-left">
+                      {showPayments}
+                    </span>
                     <svg
                       className="w-4 h-4 ml-2 text-[#CF0D0D]"
                       viewBox="0 0 10 11"
@@ -741,7 +745,11 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Dealership website'}</span></FieldLabel>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Dealership website"}
+                  </span>
+                </FieldLabel>
                 <input
                   value={crmProvider}
                   onChange={(e) => setCrmProvider(e.target.value)}
@@ -752,7 +760,11 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Email lead alerts user 1'}</span></FieldLabel>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Email lead alerts user 1"}
+                  </span>
+                </FieldLabel>
                 <input
                   value={dealershipWebsite}
                   onChange={(e) => setDealershipWebsite(e.target.value)}
@@ -773,7 +785,11 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Email lead alerts user 3'}</span></FieldLabel>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Email lead alerts user 3"}
+                  </span>
+                </FieldLabel>
                 <input
                   value={crmAccount}
                   onChange={(e) => setCrmAccount(e.target.value)}
@@ -784,7 +800,11 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Dealerships CRM provider'}</span></FieldLabel>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Dealerships CRM provider"}
+                  </span>
+                </FieldLabel>
                 <input
                   value={websiteProvider}
                   onChange={(e) => setWebsiteProvider(e.target.value)}
@@ -795,7 +815,9 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'CRM Account # :'}</span></FieldLabel>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>{"CRM Account # :"}</span>
+                </FieldLabel>
                 <input
                   value={emailAlert3}
                   onChange={(e) => setEmailAlert3(e.target.value)}
@@ -827,16 +849,20 @@ export function UsersProfileCard() {
                 />
               </div>
 
-                        <div>
-                          <FieldLabel><span style={{whiteSpace: 'pre'}}>{' product Feed url'}</span></FieldLabel>
-                          <input
-                            placeholder=""
-                            value={productFeedUrl}
-                            onChange={(e) => setProductFeedUrl(e.target.value)}
-                            className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
-                            style={{ fontFamily: "Albert Sans" }}
-                          />
-                        </div>
+              <div>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {" product Feed url"}
+                  </span>
+                </FieldLabel>
+                <input
+                  placeholder=""
+                  value={productFeedUrl}
+                  onChange={(e) => setProductFeedUrl(e.target.value)}
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -948,14 +974,22 @@ export function UsersProfileCard() {
         <button
           type="button"
           className="flex items-center justify-center px-6 py-5 h-[51px] bg-[#CF0D0D] text-white rounded-xl font-medium transition-colors hover:bg-[#b60b0b] w-full sm:w-auto min-w-[161px]"
-          style={{ fontFamily: 'DM Sans', fontSize: '15px', lineHeight: '26px' }}
+          style={{
+            fontFamily: "DM Sans",
+            fontSize: "15px",
+            lineHeight: "26px",
+          }}
         >
           Save Profile
         </button>
         <button
           type="button"
           className="flex items-center justify-center px-6 py-5 h-[51px] bg-[#24272C] text-white rounded-xl font-medium transition-colors hover:bg-[#1a1d21] w-full sm:w-auto min-w-[162px]"
-          style={{ fontFamily: 'DM Sans', fontSize: '15px', lineHeight: '26px' }}
+          style={{
+            fontFamily: "DM Sans",
+            fontSize: "15px",
+            lineHeight: "26px",
+          }}
         >
           Delete account
         </button>
