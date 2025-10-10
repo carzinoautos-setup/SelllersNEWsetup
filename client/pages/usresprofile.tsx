@@ -768,8 +768,8 @@ export function UsersProfileCard() {
                           <FieldLabel><span style={{whiteSpace: 'pre'}}>{' product Feed url'}</span></FieldLabel>
                           <input
                             placeholder="Enter your inventory provider"
-                            value={websiteProvider}
-                            onChange={(e) => setWebsiteProvider(e.target.value)}
+                            value={productFeedUrl}
+                            onChange={(e) => setProductFeedUrl(e.target.value)}
                             className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
                             style={{ fontFamily: "Albert Sans" }}
                           />
