@@ -95,49 +95,53 @@ export default function AddAListing() {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="flex-1">
-                    <button
-                      type="button"
-                      onClick={() => setActiveTab("license")}
-                      className={`w-full h-12 rounded-[14px] ${activeTab === "license" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
-                    >
-                      <span
-                        className="text-base font-medium"
-                        style={{ font: "500 12px Albert Sans, sans-serif" }}
-                      >
-                        License Plate
-                      </span>
-                    </button>
-                    {activeTab === "license" && (
-                      <div className="mt-1 w-full flex justify-center">
-                        <svg
-                          width="11"
-                          height="5"
-                          viewBox="0 0 11 5"
-                          fill="none"
-                        />
+                {flowState !== "found" && (
+                  <>
+                    <div className="flex items-start gap-3 mb-4">
+                      <div className="flex-1">
+                        <button
+                          type="button"
+                          onClick={() => setActiveTab("license")}
+                          className={`w-full h-12 rounded-[14px] ${activeTab === "license" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
+                        >
+                          <span
+                            className="text-base font-medium"
+                            style={{ font: "500 12px Albert Sans, sans-serif" }}
+                          >
+                            License Plate
+                          </span>
+                        </button>
+                        {activeTab === "license" && (
+                          <div className="mt-1 w-full flex justify-center">
+                            <svg
+                              width="11"
+                              height="5"
+                              viewBox="0 0 11 5"
+                              fill="none"
+                            />
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
 
-                  <div className="flex-1">
-                    <button
-                      type="button"
-                      onClick={() => setActiveTab("vin")}
-                      className={`w-full h-12 rounded-[14px] ${activeTab === "vin" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
-                    >
-                      <span
-                        className="text-base font-medium"
-                        style={{ font: "500 12px Albert Sans, sans-serif" }}
-                      >
-                        By Vin #
-                      </span>
-                    </button>
-                  </div>
-                </div>
+                      <div className="flex-1">
+                        <button
+                          type="button"
+                          onClick={() => setActiveTab("vin")}
+                          className={`w-full h-12 rounded-[14px] ${activeTab === "vin" ? "bg-[#24272C] text-white" : "border border-[#24272C] text-[#24272C]"}`}
+                        >
+                          <span
+                            className="text-base font-medium"
+                            style={{ font: "500 12px Albert Sans, sans-serif" }}
+                          >
+                            By Vin #
+                          </span>
+                        </button>
+                      </div>
+                    </div>
 
-                {/* FLOW CONTENT */}
+                    {/* FLOW CONTENT */}
+                  </>
+                )}
                 {flowState === "enter" && (
                   <div className="flex flex-col gap-3">
                     {activeTab === "license" ? (
