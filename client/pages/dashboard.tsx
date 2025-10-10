@@ -41,6 +41,7 @@ export default function Dashboard() {
                     Sellers Name
                   </h2>
                   <p className="text-sm text-[#696665] mt-2.5 w-full">
+                    <div style={{ fontWeight: 400 }}>Addrres Here</div>
                     <span>Tacoma, Wa 98498</span>
                     <br />
                     <span>
