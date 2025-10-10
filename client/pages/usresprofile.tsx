@@ -673,7 +673,7 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel>Dealerships CRM provider</FieldLabel>
+                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Dealership website'}</span></FieldLabel>
                 <input
                   value={crmProvider}
                   onChange={(e) => setCrmProvider(e.target.value)}
@@ -684,7 +684,7 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel>Dealership website</FieldLabel>
+                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Email lead alerts user 1'}</span></FieldLabel>
                 <input
                   value={dealershipWebsite}
                   onChange={(e) => setDealershipWebsite(e.target.value)}
@@ -705,7 +705,7 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel>CRM Account #</FieldLabel>
+                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Email lead alerts user 3'}</span></FieldLabel>
                 <input
                   value={crmAccount}
                   onChange={(e) => setCrmAccount(e.target.value)}
@@ -716,7 +716,7 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel>XML or CSV vehicle Feed url</FieldLabel>
+                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'Dealerships CRM provider'}</span></FieldLabel>
                 <input
                   value={websiteProvider}
                   onChange={(e) => setWebsiteProvider(e.target.value)}
@@ -727,7 +727,7 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel>Email lead alerts user 3</FieldLabel>
+                <FieldLabel><span style={{whiteSpace: 'pre'}}>{'CRM Account # :'}</span></FieldLabel>
                 <input
                   value={emailAlert3}
                   onChange={(e) => setEmailAlert3(e.target.value)}
