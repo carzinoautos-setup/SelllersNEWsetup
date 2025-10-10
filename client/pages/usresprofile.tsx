@@ -102,7 +102,6 @@ export function UsersProfileCard() {
         setProductFeedUrl(data.productFeedUrl || "");
         setEmailAlert1(data.emailAlert1 || "");
         setEmailAlert2(data.emailAlert2 || "");
-        setEmailAlert3(data.emailAlert3 || "");
         setCrmProvider(data.crmProvider || "");
         setCrmAccount(data.crmAccount || "");
         setCrmEmail(data.crmEmail || "");
