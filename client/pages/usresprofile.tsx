@@ -175,6 +175,7 @@ export function UsersProfileCard() {
     dealershipWebsite,
     websiteProvider,
     productFeedUrl,
+    showPayments,
     emailAlert1,
     emailAlert2,
     emailAlert3,
