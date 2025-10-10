@@ -100,7 +100,6 @@ export function UsersProfileCard() {
         setDealershipWebsite(data.dealershipWebsite || "");
         setWebsiteProvider(data.websiteProvider || "");
         setProductFeedUrl(data.productFeedUrl || "");
-        setEmailAlert1(data.emailAlert1 || "");
         setEmailAlert2(data.emailAlert2 || "");
         setCrmProvider(data.crmProvider || "");
         setCrmAccount(data.crmAccount || "");
