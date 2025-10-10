@@ -26,7 +26,7 @@ export default function Dashboard() {
             >
               <div className="flex items-start gap-4">
                 <div className="w-full text-center">
-                  <div className="flex items-center justify-center -mt-5.5">
+                  <div className="flex items-center justify-center" style={{ marginTop: '-23px' }}>
                     <div className="w-24 h-24 rounded-full overflow-hidden">
                       <img
                         loading="lazy"
