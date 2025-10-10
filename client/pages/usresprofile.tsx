@@ -34,6 +34,9 @@ export function UsersProfileCard() {
 
   const [vehicleTypeOpen, setVehicleTypeOpen] = useState(false);
   const vehicleTypeRef = useRef<HTMLDivElement | null>(null);
+  const [showPayments, setShowPayments] = useState("Yes");
+  const [showPaymentsOpen, setShowPaymentsOpen] = useState(false);
+  const showPaymentsRef = useRef<HTMLDivElement | null>(null);
 
   const [listPhone, setListPhone] = useState(true);
   const [sellerPhone, setSellerPhone] = useState("");
