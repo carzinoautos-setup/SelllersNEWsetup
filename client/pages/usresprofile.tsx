@@ -217,6 +217,12 @@ export function UsersProfileCard() {
       ) {
         setVehicleTypeOpen(false);
       }
+      if (
+        showPaymentsRef.current &&
+        !(showPaymentsRef.current as any).contains(e.target)
+      ) {
+        setShowPaymentsOpen(false);
+      }
     }
     document.addEventListener("click", onDocClick);
     return () => document.removeEventListener("click", onDocClick);
