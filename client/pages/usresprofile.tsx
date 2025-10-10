@@ -252,6 +252,7 @@ export function UsersProfileCard() {
     setLatitude("");
     setProductFeedUrl("");
     setEmailAlert1("");
+    setShowPayments("Yes");
   };
 
   return (
