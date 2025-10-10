@@ -666,7 +666,9 @@ export function UsersProfileCard() {
               </div>
 
               <div>
-                <FieldLabel><p>Do you want payments to show on your vehicles?</p></FieldLabel>
+                <FieldLabel>
+                  <div style={{ fontWeight: 500 }}>Show payments on all vehicles?</div>
+                </FieldLabel>
                 <input
                   value={emailAlert1}
                   onChange={(e) => setEmailAlert1(e.target.value)}
