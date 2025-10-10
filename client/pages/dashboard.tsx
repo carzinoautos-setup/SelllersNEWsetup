@@ -40,7 +40,7 @@ export default function Dashboard() {
                   <h2 className="text-lg sm:text-2xl font-medium text-[#24272C] text-center mt-3">
                     Sellers Name
                   </h2>
-                  <p className="text-sm text-[#696665] w-full">
+                  <p className="text-sm text-[#696665] mt-2.5 w-full">
                     <span>Tacoma, Wa 98498</span>
                     <br />
                     <span>
