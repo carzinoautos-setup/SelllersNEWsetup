@@ -57,6 +57,7 @@ export function UsersProfileCard() {
   const [vehicleType, setVehicleType] = useState("");
   const [dealershipWebsite, setDealershipWebsite] = useState("");
   const [websiteProvider, setWebsiteProvider] = useState("");
+  const [productFeedUrl, setProductFeedUrl] = useState("");
   const [emailAlert1, setEmailAlert1] = useState("");
   const [emailAlert2, setEmailAlert2] = useState("");
   const [emailAlert3, setEmailAlert3] = useState("");
