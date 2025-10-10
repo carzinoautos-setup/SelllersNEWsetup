@@ -713,7 +713,7 @@ export function UsersProfileCard() {
                 <input
                   value={crmAccount}
                   onChange={(e) => setCrmAccount(e.target.value)}
-                  placeholder="Enter your Crm account #"
+                  placeholder=""
                   className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
                   style={{ fontFamily: "Albert Sans" }}
                 />
