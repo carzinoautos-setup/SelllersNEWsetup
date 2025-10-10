@@ -159,6 +159,7 @@ export function UsersProfileCard() {
     zip,
     emailLead,
     accountEmail,
+    accountNumber,
     sellerType,
     listPhone,
     sellerPhone,
