@@ -103,6 +103,7 @@ export function UsersProfileCard() {
         setDealershipWebsite(data.dealershipWebsite || "");
         setWebsiteProvider(data.websiteProvider || "");
         setProductFeedUrl(data.productFeedUrl || "");
+        setShowPayments(data.showPayments || "Yes");
         setEmailAlert2(data.emailAlert2 || "");
         setCrmProvider(data.crmProvider || "");
         setCrmAccount(data.crmAccount || "");
