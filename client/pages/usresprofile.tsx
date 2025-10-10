@@ -138,6 +138,7 @@ export function UsersProfileCard() {
       vehicleType,
       dealershipWebsite,
       websiteProvider,
+      productFeedUrl,
       emailAlert1,
       emailAlert2,
       emailAlert3,
