@@ -93,7 +93,7 @@ export default function YourListingsPage() {
               </div>
 
               {/* Filter Dropdowns */}
-              <div className="hidden md:flex md:flex-row gap-3 flex-1 min-w-0 flex-nowrap">
+              <div className="hidden md:flex md:flex-row gap-3 md:flex-1 min-w-0 flex-nowrap">
                 {/* Make Dropdown */}
                 <div className="relative flex items-center justify-between px-3 py-2 rounded-xl border border-[#EDEDED] bg-white min-w-0 flex-1">
                   <span className="text-[#696665] font-outfit text-sm font-normal leading-[140%]">
