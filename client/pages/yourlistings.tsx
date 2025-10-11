@@ -256,7 +256,7 @@ export default function YourListingsPage() {
           )}
 
           {/* Product Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12 px-[10px] sm:px-0">
             {/* Sample Car Listings - Replace with actual data */}
             {Array.from({ length: 8 }).map((_, index) => (
               <div key={index} className="flex flex-col">
