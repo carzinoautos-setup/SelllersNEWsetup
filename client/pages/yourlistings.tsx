@@ -75,7 +75,7 @@ export default function YourListingsPage() {
               </div>
 
               {/* Search Input (desktop) */}
-              <div className="hidden md:flex flex-1 relative items-center gap-3 px-3 py-2 rounded-xl border border-[#B6B6B6] bg-white min-w-0 flex-shrink-0">
+              <div className="hidden md:flex md:w-2/5 relative items-center gap-3 px-3 py-2 rounded-xl border border-[#B6B6B6] bg-white min-w-0">
                 <span className="text-[#5B5B5B] font-outfit text-base font-normal">
                   Search
                 </span>
