@@ -4,6 +4,14 @@ import { DashboardLayout } from "../components/DashboardLayout";
 
 export default function YourListingsPage() {
   const [showMobileFilters, setShowMobileFilters] = useState(false);
+  const [mobileSortOpen, setMobileSortOpen] = useState(false);
+  const [mobileSortValue, setMobileSortValue] = useState('sort');
+  const mobileSortOptions = [
+    { value: 'sort', label: 'Sort' },
+    { value: 'newest', label: 'Newest' },
+    { value: 'price_low', label: 'Price: Low to High' },
+    { value: 'price_high', label: 'Price: High to Low' },
+  ];
 
   return (
     <DashboardLayout>
@@ -66,16 +74,49 @@ export default function YourListingsPage() {
                   </div>
                 </div>
 
-                {/* Mobile sort select (full width below) */}
-                <select
-                  aria-label="Sort"
-                  className="w-full mt-2 px-3 py-2 rounded-xl border border-[#EDEDED] bg-white text-sm h-10"
+                {/* Mobile sort custom dropdown (full width below) */}
+                <div
+                  className="relative w-full mt-2"
+                  tabIndex={0}
+                  onBlur={() => setMobileSortOpen(false)}
                 >
-                  <option>Sort</option>
-                  <option value="newest">Newest</option>
-                  <option value="price_low">Price: Low to High</option>
-                  <option value="price_high">Price: High to Low</option>
-                </select>
+                  <button
+                    type="button"
+                    onClick={() => setMobileSortOpen((o) => !o)}
+                    className="w-full flex items-center justify-between px-3 py-2 rounded-xl border border-[#EDEDED] bg-white text-sm h-10"
+                    aria-haspopup="listbox"
+                    aria-expanded={mobileSortOpen}
+                  >
+                    <span className="text-[#333]">
+                      {mobileSortOptions.find((o) => o.value === mobileSortValue)?.label || 'Sort'}
+                    </span>
+                    <svg className="w-4 h-4 text-[#696665]" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 8l5 5 5-5" stroke="#696665" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </button>
+
+                  {mobileSortOpen && (
+                    <ul
+                      role="listbox"
+                      className="absolute left-0 top-full mt-2 w-full bg-white border border-[#EDEDED] rounded-lg shadow-lg z-50"
+                    >
+                      {mobileSortOptions.map((opt) => (
+                        <li
+                          key={opt.value}
+                          role="option"
+                          onMouseDown={() => {
+                            // onMouseDown used to prevent blur before click
+                            setMobileSortValue(opt.value);
+                            setMobileSortOpen(false);
+                          }}
+                          className="px-3 py-2 cursor-pointer hover:bg-gray-100"
+                        >
+                          {opt.label}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
 
               {/* Search Input (desktop) */}
