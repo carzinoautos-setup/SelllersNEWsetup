@@ -26,7 +26,10 @@ export default function Dashboard() {
             >
               <div className="flex items-start gap-4">
                 <div className="w-full text-center">
-                  <div className="flex items-center justify-center" style={{ marginTop: '-4px' }}>
+                  <div
+                    className="flex items-center justify-center"
+                    style={{ marginTop: "-4px" }}
+                  >
                     <div className="w-24 h-24 rounded-full overflow-hidden">
                       <img
                         loading="lazy"
@@ -41,7 +44,9 @@ export default function Dashboard() {
                     Sellers Name
                   </h2>
                   <div className="text-sm text-[#696665] mt-0.5 w-full">
-                    <div style={{ fontWeight: 400 }}><p>Addrress Here</p></div>
+                    <div style={{ fontWeight: 400 }}>
+                      <p>Addrress Here</p>
+                    </div>
                     <div>Tacoma, Wa 98498</div>
                     <div>
                       <div>emailhere@gmail.com</div>
