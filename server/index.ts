@@ -4,19 +4,51 @@ import "dotenv/config";
 import express from "express";
 
 // Try to instrument path-to-regexp using dynamic import (works in ESM)
+// NOTE: ESM module namespace objects are read-only in many environments. Attempt
+// to wrap the parse function only when it is safe; otherwise skip instrumentation.
 try {
   import("path-to-regexp")
     .then((ptre: any) => {
-      if (ptre && typeof ptre.parse === "function") {
-        const origParse = ptre.parse;
-        ptre.parse = function (...args: any[]) {
+      try {
+        // Obtain the parse function from either the namespace or default export
+        const candidateParse = ptre?.parse || ptre?.default?.parse || (typeof ptre === "function" ? ptre : null);
+        if (!candidateParse || typeof candidateParse !== "function") {
+          return;
+        }
+
+        // If the module namespace is writable for "parse", we can patch it.
+        const nsDesc = Object.getOwnPropertyDescriptor(ptre, "parse");
+        const defDesc = ptre?.default && Object.getOwnPropertyDescriptor(ptre.default, "parse");
+
+        if ((nsDesc && nsDesc.writable) || (defDesc && defDesc.writable)) {
+          const origParse = candidateParse;
+          const wrapper = function (...args: any[]) {
+            try {
+              console.log("PTRE parse:", args[0]);
+            } catch (e) {
+              // ignore logging errors
+            }
+            return origParse.apply(this, args);
+          };
+
           try {
-            console.log("PTRE parse:", args[0]);
+            if (nsDesc && nsDesc.writable) {
+              ptre.parse = wrapper;
+            } else if (ptre.default && defDesc && defDesc.writable) {
+              ptre.default.parse = wrapper;
+            } else {
+              console.warn("path-to-regexp parse exists but is not writable; skipping instrumentation");
+            }
           } catch (e) {
-            // ignore
+            // Some runtimes will throw when attempting to assign to an ESM namespace.
+            console.warn("Failed to assign wrapper to path-to-regexp.parse, skipping instrumentation", e);
           }
-          return origParse.apply(this, args);
-        };
+        } else {
+          // Namespace not writable — skip instrumentation to avoid throwing in startup.
+          console.warn("path-to-regexp.parse is not writable; skipping instrumentation");
+        }
+      } catch (errInner) {
+        console.error("path-to-regexp instrumentation error", errInner);
       }
     })
     .catch((e) => {
