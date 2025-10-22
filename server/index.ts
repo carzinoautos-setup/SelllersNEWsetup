@@ -11,14 +11,19 @@ try {
     .then((ptre: any) => {
       try {
         // Obtain the parse function from either the namespace or default export
-        const candidateParse = ptre?.parse || ptre?.default?.parse || (typeof ptre === "function" ? ptre : null);
+        const candidateParse =
+          ptre?.parse ||
+          ptre?.default?.parse ||
+          (typeof ptre === "function" ? ptre : null);
         if (!candidateParse || typeof candidateParse !== "function") {
           return;
         }
 
         // If the module namespace is writable for "parse", we can patch it.
         const nsDesc = Object.getOwnPropertyDescriptor(ptre, "parse");
-        const defDesc = ptre?.default && Object.getOwnPropertyDescriptor(ptre.default, "parse");
+        const defDesc =
+          ptre?.default &&
+          Object.getOwnPropertyDescriptor(ptre.default, "parse");
 
         if ((nsDesc && nsDesc.writable) || (defDesc && defDesc.writable)) {
           const origParse = candidateParse;
@@ -37,15 +42,22 @@ try {
             } else if (ptre.default && defDesc && defDesc.writable) {
               ptre.default.parse = wrapper;
             } else {
-              console.warn("path-to-regexp parse exists but is not writable; skipping instrumentation");
+              console.warn(
+                "path-to-regexp parse exists but is not writable; skipping instrumentation",
+              );
             }
           } catch (e) {
             // Some runtimes will throw when attempting to assign to an ESM namespace.
-            console.warn("Failed to assign wrapper to path-to-regexp.parse, skipping instrumentation", e);
+            console.warn(
+              "Failed to assign wrapper to path-to-regexp.parse, skipping instrumentation",
+              e,
+            );
           }
         } else {
           // Namespace not writable — skip instrumentation to avoid throwing in startup.
-          console.warn("path-to-regexp.parse is not writable; skipping instrumentation");
+          console.warn(
+            "path-to-regexp.parse is not writable; skipping instrumentation",
+          );
         }
       } catch (errInner) {
         console.error("path-to-regexp instrumentation error", errInner);
