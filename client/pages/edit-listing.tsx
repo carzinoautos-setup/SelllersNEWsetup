@@ -1435,7 +1435,6 @@ export default function EditListing() {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             )}
@@ -1508,7 +1507,7 @@ export default function EditListing() {
                         Description
                       </label>
 
-                                            <textarea
+                      <textarea
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         rows={8}
@@ -1532,16 +1531,24 @@ export default function EditListing() {
               </div>
             </div>
 
-
-
             <div className="mb-12">
               <div className="mb-6">
-
-              <div style={{display: "flex", fontWeight: 400, justifyContent: "flex-start", marginTop: 20}}>
-                <button type="button" className="bg-[#E82121] text-white rounded-lg px-6 py-3 font-medium" style={{fontFamily: "Albert Sans"}}>
-                  Use AI Description
-                </button>
-              </div>
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: 400,
+                    justifyContent: "flex-start",
+                    marginTop: 20,
+                  }}
+                >
+                  <button
+                    type="button"
+                    className="bg-[#E82121] text-white rounded-lg px-6 py-3 font-medium"
+                    style={{ fontFamily: "Albert Sans" }}
+                  >
+                    Use AI Description
+                  </button>
+                </div>
 
                 <h1
                   className="text-[20px] font-semibold"
