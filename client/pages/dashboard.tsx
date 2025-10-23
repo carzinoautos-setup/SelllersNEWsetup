@@ -7,7 +7,7 @@ export default function Dashboard() {
         <div className="w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-[32px] xl:px-[60px] py-8">
           <header className="flex flex-col items-center gap-1 sm:gap-6 mb-8">
             <h1 className="text-2xl sm:text-3xl lg:text-[30px] font-medium text-[#24272C] font-albert text-center">
-              Welcome to your Carzino account
+              <p>Welcome to your Carzino account test</p>
             </h1>
             <p className="text-sm text-[#696665] text-center max-w-2xl">
               Overview of your account and quick actions.
