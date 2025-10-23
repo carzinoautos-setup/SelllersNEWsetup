@@ -3,27 +3,23 @@ import "dotenv/config";
 // Instrument path-to-regexp to log patterns that cause parse errors
 import express from "express";
 
-// Try to instrument path-to-regexp using dynamic import (works in ESM)
+// Try to inspect path-to-regexp using dynamic import without mutating its exports
 try {
   import("path-to-regexp")
     .then((ptre: any) => {
-      if (ptre && typeof ptre.parse === "function") {
-        const origParse = ptre.parse;
-        ptre.parse = function (...args: any[]) {
-          try {
-            console.log("PTRE parse:", args[0]);
-          } catch (e) {
-            // ignore
-          }
-          return origParse.apply(this, args);
-        };
+      try {
+        if (ptre && typeof ptre.parse === "function") {
+          console.log("path-to-regexp parse() is available");
+        }
+      } catch (e) {
+        // ignore
       }
     })
     .catch((e) => {
       console.error("Failed dynamic import of path-to-regexp", e);
     });
 } catch (err) {
-  console.error("Failed to schedule path-to-regexp instrumentation", err);
+  console.error("Failed to schedule path-to-regexp import", err);
 }
 
 import cors from "cors";
