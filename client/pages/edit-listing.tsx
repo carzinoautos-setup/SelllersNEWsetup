@@ -514,7 +514,7 @@ export default function EditListing() {
                 className="text-[14px] text-black leading-[140%] max-w-[955px]"
                 style={{ fontFamily: "Albert Sans" }}
               >
-                Edit your vehicle details
+                <p>Edit your vehicle details test</p>
               </p>
               <div className="w-full h-[0.5px] bg-[#B9B9B9] my-6"></div>
             </div>
@@ -749,7 +749,7 @@ export default function EditListing() {
                 className="text-[14px] text-black leading-[140%] max-w-[955px]"
                 style={{ fontFamily: "Albert Sans" }}
               >
-                Edit your vehicle details
+                <p>Edit your vehicle details test</p>
               </p>
               <div className="w-full h-[0.5px] bg-[#B9B9B9] my-6"></div>
             </div>
