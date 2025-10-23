@@ -45,7 +45,7 @@ export default function Dashboard() {
                   </h2>
                   <div className="text-sm text-[#696665] mt-0.5 w-full">
                     <div style={{ fontWeight: 400 }}>
-                      <p>Addrress Here</p>
+                      <p>Address Here</p>
                     </div>
                     <div>Tacoma, Wa 98498</div>
                     <div>
