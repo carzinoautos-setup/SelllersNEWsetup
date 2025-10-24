@@ -1,9 +1,10 @@
+"use client";
 import * as React from "react";
 import { createPortal } from "react-dom";
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 
 export function MobileBottomNav() {
-  const location = useLocation();
+  const pathname = usePathname();
   const [mounted, setMounted] = React.useState(false);
   const navRef = React.useRef<HTMLDivElement | null>(null);
 
