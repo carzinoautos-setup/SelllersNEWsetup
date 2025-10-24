@@ -76,7 +76,7 @@ export default function FeatureMycar() {
           <div className="flex flex-col items-center gap-6 mb-8 px-4">
             <div className="flex items-center gap-6 w-full max-w-sm">
               <Link
-                to="/buy-credits"
+                href="/buy-credits"
                 className="flex-1 h-14 bg-gray-800 hover:bg-gray-900 text-white rounded-xl font-medium transition-colors flex items-center justify-center"
               >
                 <span className="text-xl font-normal">Buy Credits</span>
