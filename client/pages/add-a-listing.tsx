@@ -208,7 +208,7 @@ export default function AddAListing() {
 
                     <div className="w-full text-center mt-2">
                       <Link
-                        to="/edit-listing"
+                        href="/edit-listing"
                         className="text-sm text-[#24272C] underline"
                       >
                         Enter Info Manually
@@ -233,7 +233,7 @@ export default function AddAListing() {
                     </div>
                     <div className="mt-3 flex gap-3">
                       <Link
-                        to="/edit-listing"
+                        href="/edit-listing"
                         className="h-12 px-4 rounded-[14px] bg-[#E82121] text-white flex items-center justify-center"
                       >
                         Create Your Ad
@@ -260,7 +260,7 @@ export default function AddAListing() {
                         Try Again
                       </button>
                       <Link
-                        to="/edit-listing"
+                        href="/edit-listing"
                         className="h-12 px-4 rounded-[14px] bg-[#24272C] text-white flex items-center justify-center"
                       >
                         Enter Manually
