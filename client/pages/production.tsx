@@ -49,7 +49,7 @@ export default function Production() {
                   </Link>
                   <div className="flex flex-col relative mt-5">
                     <p className="text-sm font-medium text-[#24272C]">STRIPE SETUP</p>
-                    <Link to="/stripe" className="text-sm text-[#1f2937] hover:underline">/stripe</Link>
+                    <Link href="/stripe" className="text-sm text-[#1f2937] hover:underline">/stripe</Link>
                   </div>
                 </div>
               </section>
