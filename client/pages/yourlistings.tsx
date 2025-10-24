@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { DashboardLayout } from "../components/DashboardLayout";
 
 export default function YourListingsPage() {
