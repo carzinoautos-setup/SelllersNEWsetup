@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 "use client";
+import { useState, useEffect } from "react";
 import VisualViewportGuard from "./VisualViewportGuard";
 import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardHeader } from "./DashboardHeader";
