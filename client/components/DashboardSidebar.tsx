@@ -1,10 +1,12 @@
+"use client";
 import { cn } from "@/lib/utils";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface SidebarProps {
   className?: string;
 }
-
-import { Link, useLocation } from "react-router-dom";
 
 export function DashboardSidebar({ className }: SidebarProps) {
   const menuItems = [
