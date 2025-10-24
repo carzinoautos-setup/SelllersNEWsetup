@@ -54,7 +54,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
     { name: "Production", icon: EditIcon, active: false, path: "/production" },
   ];
 
-  const location = useLocation();
+  const pathname = usePathname();
 
   return (
     <div
