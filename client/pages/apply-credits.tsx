@@ -81,7 +81,7 @@ export default function ApplyCredits() {
                 Use 1 Credit
               </Link>
               <Link
-                to="/yourlistings"
+                href="/yourlistings"
                 className="px-6 py-2 rounded-[14px] border border-gray-300 text-gray-800"
               >
                 Learn More
