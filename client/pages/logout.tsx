@@ -16,7 +16,7 @@ export default function Logout() {
 
           <div className="flex justify-center gap-3">
             <Link
-              to="/"
+              href="/"
               className="inline-block px-6 py-3 bg-black text-white rounded-lg font-medium"
             >
               Return home
