@@ -121,7 +121,7 @@ export function MobileBottomNav() {
                 key={item.path}
                 href={href}
                 className={`flex flex-col items-center gap-1.5 text-center ${
-                  location.pathname === item.path ? "opacity-100" : "opacity-60"
+                  pathname === item.path ? "opacity-100" : "opacity-60"
                 }`}
                 style={{ textDecoration: "none" }}
               >
