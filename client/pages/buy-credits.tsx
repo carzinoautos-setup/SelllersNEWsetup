@@ -29,7 +29,7 @@ export default function BuyCredits() {
                 targeted exposure to serious car shoppers and optimized display
                 across desktop and mobile, your vehicle gets noticed quicker,
                 builds buyer trust, and sells faster—all at a cost-effective
-                rate that delivers strong value for every credit.
+                rate that delivers strong value for every credit. test
               </p>
             </div>
 
