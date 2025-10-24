@@ -36,7 +36,7 @@ export default function Production() {
 
                 <div className="mt-4 flex flex-col gap-3">
                   <Link
-                    to="/checkout"
+                    href="/checkout"
                     className="text-sm text-[#1f2937] hover:underline"
                   >
                     /checkout
