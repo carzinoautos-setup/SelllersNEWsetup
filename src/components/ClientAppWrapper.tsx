@@ -6,8 +6,8 @@ export default function ClientAppWrapper({ children }: { children: React.ReactNo
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    // Render children directly during SSR/hydration to avoid router usage on server
-    return <>{children}</>;
+    // Avoid rendering children on server to prevent react-router hooks running without a Router
+    return <div />;
   }
 
   // Dynamically require to avoid importing during SSR
