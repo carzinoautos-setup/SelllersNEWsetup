@@ -22,7 +22,7 @@ export default function Logout() {
               Return home
             </Link>
             <Link
-              to="/profile"
+              href="/profile"
               className="inline-block px-6 py-3 border border-[#E1E1E1] rounded-lg font-medium text-[#050B20]"
             >
               Sign in
