@@ -153,7 +153,7 @@ export default function SuccessUploaded() {
 
             {/* Listings */}
             <Link
-              to="/yourlistings"
+              href="/yourlistings"
               className="flex flex-col items-center gap-1 text-center"
             >
               <img
