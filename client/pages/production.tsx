@@ -42,7 +42,7 @@ export default function Production() {
                     /checkout
                   </Link>
                   <Link
-                    to="/billing"
+                    href="/billing"
                     className="text-sm text-[#1f2937] hover:underline"
                   >
                     /billing
