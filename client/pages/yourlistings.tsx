@@ -411,7 +411,7 @@ export default function YourListingsPage() {
                     <div className="flex w-[104px] items-center gap-1.5 mr-5">
                       <div className="flex w-12 items-start gap-2.5 h-10">
                         <Link
-                          to="/remove-listing"
+                          href="/remove-listing"
                           className="w-10 h-10 flex-shrink-0 rounded-2xl border border-[#E1E1E1] bg-[#F9FBFC] relative cursor-pointer"
                         >
                           <svg
