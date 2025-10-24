@@ -1,6 +1,6 @@
 import React from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function DesignableProduction() {
   return (
