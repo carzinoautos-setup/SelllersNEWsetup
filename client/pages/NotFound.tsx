@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 import VisualViewportGuard from "../components/VisualViewportGuard";
 import { useEffect } from "react";
 
