@@ -115,7 +115,7 @@ export default function SuccessUploaded() {
 
             {/* Messages */}
             <Link
-              to="/messages"
+              href="/messages"
               className="flex flex-col items-center gap-1 text-center"
             >
               <svg
