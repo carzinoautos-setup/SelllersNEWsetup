@@ -204,11 +204,11 @@ export function DashboardSidebar({ className }: SidebarProps) {
           <div className="space-y-2 px-2">
             {menuItems.map((item, index) => (
               <Link
-                to={item.path || "#"}
+                href={item.path || "#"}
                 key={index}
                 className={cn(
                   "flex items-center gap-3 px-4 py-2 rounded-[10px] transition-colors overflow-hidden",
-                  location.pathname === item.path
+                  pathname === item.path
                     ? "bg-main-color"
                     : "hover:bg-white/5",
                 )}
@@ -216,7 +216,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
                 <item.icon
                   className={cn(
                     "w-[22px] h-[22px] flex-shrink-0",
-                    location.pathname === item.path
+                    pathname === item.path
                       ? "text-white"
                       : "text-[rgba(255,255,255,0.85)]",
                   )}
@@ -224,7 +224,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
                 <span
                   className={cn(
                     "flex-1 text-sm font-albert truncate",
-                    location.pathname === item.path
+                    pathname === item.path
                       ? "text-white font-bold"
                       : "text-white font-medium",
                   )}
