@@ -3,14 +3,14 @@ import VisualViewportGuard from "../components/VisualViewportGuard";
 import { useEffect } from "react";
 
 const NotFound = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     console.error(
       "404 Error: User attempted to access non-existent route:",
-      location.pathname,
+      pathname,
     );
-  }, [location.pathname]);
+  }, [pathname]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 container-minw-0 min-w-0">
