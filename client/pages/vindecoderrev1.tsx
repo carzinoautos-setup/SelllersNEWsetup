@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { DashboardLayout } from "../components/DashboardLayout";
 import { Select } from "../components/ui/select";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 // dnd-kit
 import {
