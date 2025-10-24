@@ -1630,7 +1630,7 @@ export default function VindecoderRev1() {
             <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-0 lg:px-0">
               <div className="flex justify-center sm:justify-start">
                 <Link
-                  to="/yourlistings"
+                  href="/yourlistings"
                   className="inline-flex w-full sm:w-auto items-center justify-center px-6 py-3 bg-[#E82121] hover:bg-[#d41d1d] text-white rounded-[12px] font-semibold"
                   style={{ fontFamily: "Albert Sans" }}
                 >
