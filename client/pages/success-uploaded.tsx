@@ -83,7 +83,7 @@ export default function SuccessUploaded() {
           <div className="flex justify-center items-center gap-8 sm:gap-12">
             {/* Dashboard */}
             <Link
-              to="/dashboard"
+              href="/dashboard"
               className="flex flex-col items-center gap-1 text-center"
             >
               <svg
