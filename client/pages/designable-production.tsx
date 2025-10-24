@@ -43,7 +43,7 @@ export default function DesignableProduction() {
                     /payments
                   </Link>
                   <Link
-                    to="/billing"
+                    href="/billing"
                     className="text-sm text-[#1f2937] hover:underline"
                   >
                     /billing
