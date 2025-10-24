@@ -97,7 +97,7 @@ export default function Production() {
                 </p>
               </div>
               <Link
-                to="/vindecoder"
+                href="/vindecoder"
                 className="text-sm text-[#1f2937] hover:underline"
               >
                 /vindecoder
@@ -109,7 +109,7 @@ export default function Production() {
                 </div>
               <div className="mt-2">
                 <Link
-                  to="/edit-listing"
+                  href="/edit-listing"
                   className="text-sm text-[#1f2937] hover:underline"
                 >
                   /edit-listing
@@ -134,22 +134,22 @@ export default function Production() {
                     </p>
                   </div>
                   <Link
-                    to="/success-uploaded"
+                    href="/success-uploaded"
                     className="hover:underline block"
                   >
                     /success-uploaded
                   </Link>
-                  <Link to="/remove-listing" className="hover:underline block">
+                  <Link href="/remove-listing" className="hover:underline block">
                     /remove-listing
                   </Link>
                   <div className="flex flex-col relative mt-5">
-                    <Link to="/change-status" className="hover:underline block">
+                    <Link href="/change-status" className="hover:underline block">
                       /change-status
                     </Link>
-                    <Link to="/feature-mycar" className="hover:underline block">
+                    <Link href="/feature-mycar" className="hover:underline block">
                       /feature-mycar
                     </Link>
-                    <Link to="/apply-credits" className="hover:underline block">
+                    <Link href="/apply-credits" className="hover:underline block">
                       /apply-credits
                     </Link>
                   </div>
