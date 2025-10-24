@@ -67,7 +67,7 @@ export default function ChangeStatus() {
           <div className="text-center">
             <p className="text-sm text-black font-albert">
               To delete your ad go to{" "}
-              <Link to="/yourlistings" className="text-red-600 font-medium">
+              <Link href="/yourlistings" className="text-red-600 font-medium">
                 your listings page
               </Link>
               .
