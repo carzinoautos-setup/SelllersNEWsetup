@@ -71,7 +71,7 @@ export default function SuccessUploaded() {
               Your add was published
             </p>
             <div className="text-red-600 text-lg font-light leading-6 mt-2">
-              <Link to="/yourlistings">
+              <Link href="/yourlistings">
                 <b>See Listings</b>
               </Link>
             </div>
