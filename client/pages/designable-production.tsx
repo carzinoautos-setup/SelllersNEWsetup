@@ -31,13 +31,13 @@ export default function DesignableProduction() {
 
                 <div className="mt-4 flex flex-col gap-3">
                   <Link
-                    to="/checkout"
+                    href="/checkout"
                     className="text-sm text-[#1f2937] hover:underline"
                   >
                     /checkout
                   </Link>
                   <Link
-                    to="/payments"
+                    href="/payments"
                     className="text-sm text-[#1f2937] hover:underline"
                   >
                     /payments
@@ -56,14 +56,14 @@ export default function DesignableProduction() {
                   Design Elements
                 </h2>
                 <Link
-                  to="/vindecoder"
+                  href="/vindecoder"
                   className="text-sm text-[#1f2937] hover:underline"
                 >
                   /vindecoder
                 </Link>
                 <div className="mt-2">
                   <Link
-                    to="/edit-listing"
+                    href="/edit-listing"
                     className="text-sm text-[#1f2937] hover:underline"
                   >
                     /edit-listing
