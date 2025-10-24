@@ -166,7 +166,7 @@ export default function SuccessUploaded() {
 
             {/* Add Listing */}
             <Link
-              to="/add-a-listing"
+              href="/add-a-listing"
               className="flex flex-col items-center gap-1 text-center"
             >
               <svg
