@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/yourlistings";
+import Page from "@/pages/yourlistings";
 
 export default function YourListingsPage() {
   return <Page />;
