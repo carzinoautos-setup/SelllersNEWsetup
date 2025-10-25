@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { DashboardLayout } from "../components/DashboardLayout";
+import { DashboardLayout } from "@/components/DashboardLayout";
 
 export default function YourListingsPage() {
   const [showMobileFilters, setShowMobileFilters] = useState(false);
