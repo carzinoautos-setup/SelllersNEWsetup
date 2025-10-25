@@ -1,5 +1,5 @@
 import { usePathname } from "next/navigation";
-import VisualViewportGuard from "../components/VisualViewportGuard";
+import VisualViewportGuard from "@/components/VisualViewportGuard";
 import { useEffect } from "react";
 
 const NotFound = () => {
