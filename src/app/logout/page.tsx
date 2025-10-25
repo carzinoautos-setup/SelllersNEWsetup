@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/logout";
+import Page from "@/pages/logout";
 
 export default function LogoutPage() {
   return <Page />;
