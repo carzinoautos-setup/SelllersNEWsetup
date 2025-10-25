@@ -1,5 +1,5 @@
 import React from "react";
-import "../../client/global.css";
+import "@/styles/global.css";
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="fusion-extension-loaded">
