@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import VisualViewportGuard from "../components/VisualViewportGuard";
+import VisualViewportGuard from "@/components/VisualViewportGuard";
 
 export default function Stripe() {
   const [cardNumber, setCardNumber] = useState("");
