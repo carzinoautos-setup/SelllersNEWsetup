@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { DashboardLayout } from "../components/DashboardLayout";
+import { DashboardLayout } from "@/components/DashboardLayout";
 import Link from "next/link";
 
 export default function AddAListing() {
