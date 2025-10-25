@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/apply-credits";
+import Page from "@/pages/apply-credits";
 
 export default function ApplyCreditsPage() {
   return <Page />;
