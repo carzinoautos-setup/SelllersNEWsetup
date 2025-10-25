@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { DashboardLayout } from "../components/DashboardLayout";
-import { Select } from "../components/ui/select";
+import { DashboardLayout } from "@/components/DashboardLayout";
+import { Select } from "@/components/ui/select";
 import Link from "next/link";
 
 // dnd-kit
