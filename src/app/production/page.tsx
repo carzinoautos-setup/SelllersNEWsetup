@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/production";
+import Page from "@/pages/production";
 
 export default function ProductionPage() {
   return <Page />;
