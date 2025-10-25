@@ -1,5 +1,5 @@
 import React from "react";
-import VisualViewportGuard from "../components/VisualViewportGuard";
+import VisualViewportGuard from "@/components/VisualViewportGuard";
 
 export default function RemoveListing() {
   return (
