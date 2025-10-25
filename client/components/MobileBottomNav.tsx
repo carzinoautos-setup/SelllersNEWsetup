@@ -127,7 +127,7 @@ export function MobileBottomNav() {
               >
                 <div className="w-9 h-9 flex items-center justify-center">
                   {iconUrl ? (
-                    <img src={iconUrl} alt={item.label} className="w-6 h-6 object-contain" style={{ filter: 'invert(1) brightness(1.5)' }} />
+                    <img src={iconUrl} alt={typeof item.label === 'string' ? item.label : ''} className="w-6 h-6 object-contain" style={{ filter: 'invert(1) brightness(1.5)' }} />
                   ) : (
                     item.icon
                   )}
