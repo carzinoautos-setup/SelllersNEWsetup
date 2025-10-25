@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/usresprofile";
+import Page from "@/pages/usresprofile";
 
 export default function UsresProfilePage() {
   return <Page />;
