@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/reset";
+import Page from "@/pages/reset";
 
 export default function ResetPage() {
   return <Page />;
