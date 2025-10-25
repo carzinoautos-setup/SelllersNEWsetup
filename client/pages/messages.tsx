@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { DashboardLayout } from "../components/DashboardLayout";
+import { DashboardLayout } from "@/components/DashboardLayout";
 
 export default function MessagesPage() {
   const messages = [
