@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/feature-mycar";
+import Page from "@/pages/feature-mycar";
 
 export default function FeatureMyCarPage() {
   return <Page />;
