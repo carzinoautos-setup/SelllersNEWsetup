@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/userprofile";
+import Page from "@/pages/userprofile";
 
 export default function UserProfilePage() {
   return <Page />;
