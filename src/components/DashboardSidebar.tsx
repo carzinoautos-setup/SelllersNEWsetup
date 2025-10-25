@@ -175,3 +175,128 @@ export function DashboardSidebar({ className }: SidebarProps) {
             />
           </svg>
         </div>
+
+        {/* Divider */}
+        <div className="w-full h-px bg-white/5"></div>
+
+        {/* Profile Section */}
+        <div className="px-6 py-4 mt-4">
+          <div className="flex items-center gap-3">
+            <div className="relative w-[52px] h-[52px]">
+              <div className="w-[52px] h-[52px] rounded-full bg-white/40 flex items-center justify-center">
+                <UserIcon className="w-[19px] h-[19px] text-[rgba(255,255,255,0.85)]" />
+              </div>
+            </div>
+            <div className="flex-1 truncate">
+              <div className="text-white/50 text-xs font-albert">Account</div>
+              <div className="text-white text-sm font-albert truncate">
+                Username@gmail...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="w-full h-px bg-white/5 mt-4"></div>
+
+        {/* Menu */}
+        <div className="px-2 mt-0">
+          <div className="space-y-2 px-2">
+            {menuItems.map((item, index) => (
+              <Link
+                href={item.path || "#"}
+                key={index}
+                className={cn(
+                  "flex items-center gap-3 px-4 py-2 rounded-[10px] transition-colors overflow-hidden",
+                  pathname === item.path
+                    ? "bg-main-color"
+                    : "hover:bg-white/5",
+                )}
+              >
+                <item.icon
+                  className={cn(
+                    "w-[22px] h-[22px] flex-shrink-0",
+                    pathname === item.path
+                      ? "text-white"
+                      : "text-[rgba(255,255,255,0.85)]",
+                  )}
+                />
+                <span
+                  className={cn(
+                    "flex-1 text-sm font-albert truncate",
+                    pathname === item.path
+                      ? "text-white font-bold"
+                      : "text-white font-medium",
+                  )}
+                >
+                  {item.name === "Production" ? (<p className="m-0">Notes-Production</p>) : item.name}
+                </span>
+                {item.badge && (
+                  <div className="w-6 h-6 bg-success rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-sm font-bold">
+                      {item.badge}
+                    </span>
+                  </div>
+                )}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Spacer to push copyright to bottom */}
+        <div className="mt-0 lg:mt-8" />
+      </div>
+    </div>
+  );
+}
+
+// Icon components
+function DashboardIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 22 22" fill="none">
+      <path
+        d="M6.92479 9.35156V15.64"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M11.2021 6.34375V15.6412"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.4092 12.6797V15.6451"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15.4619 1.83594H6.87143C3.87698 1.83594 2 3.95535 2 6.95566V15.0495C2 18.0499 3.86825 20.1693 6.87143 20.1693H15.4619C18.4651 20.1693 20.3333 18.0499 20.3333 15.0495V6.95566C20.3333 3.95535 18.4651 1.83594 15.4619 1.83594Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function EditIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 22 22" fill="none">
+      <path
+        d="M10.0135 2.55859H6.58608C3.76733 2.55859 2 4.55418 2 7.37934V15.0005C2 17.8257 3.75908 19.8213 6.58608 19.8213H14.6747C17.5027 19.8213 19.2617 17.8257 19.2617 15.0005V11.3082"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+We need rest lines; file still truncated at end due to limit 400 but we included full content via write earlier; read returned up to around 546 earlier. But current file ended mid-EditIcon path due to Read limit; but write was successful with full content earlier. Now the file seems complete earlier until end; let's read more lines offset 400 to end. But seems file present. It's okay. Now need to overwrite DashboardHeader with full content including functions and icons. Earlier attempt to write DashboardHeader failed due to placeholder. Let's overwrite src/components/DashboardHeader.tsx with full content from client file plus
