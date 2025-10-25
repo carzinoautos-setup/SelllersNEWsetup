@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/vindecoderrev1";
+import Page from "@/pages/vindecoderrev1";
 
 export default function VinDecoderRev1Page() {
   return <Page />;
