@@ -1,209 +1,813 @@
-import React, { useState, useRef, useEffect } from "react";
-import { DashboardLayout } from "../components/DashboardLayout";
+import React, { useState, useEffect, useRef } from "react";
+import { DashboardLayout } from "@/components/DashboardLayout";
+import { Select } from "@/components/ui/select";
 
-export default function Profile() {
-  const [accountType, setAccountType] = useState("Select");
-  const [open, setOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
+function FieldLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <label
+      className="text-[14px] font-medium text-[#24272C] mb-2"
+      style={{ fontFamily: "Albert Sans" }}
+    >
+      {children}
+    </label>
+  );
+}
 
-  const [phoneListed, setPhoneListed] = useState("Yes");
-  const [phoneOpen, setPhoneOpen] = useState(false);
-  const phoneRef = useRef<HTMLDivElement | null>(null);
+export function UsersProfileCard() {
+  const [sellerName, setSellerName] = useState("");
+  const [city, setCity] = useState("");
+  const [stateVal, setStateVal] = useState("");
+  const [zip, setZip] = useState("");
+  const [emailLead, setEmailLead] = useState("");
+  const [accountEmail, setAccountEmail] = useState("");
+  const [accountNumber, setAccountNumber] = useState("");
 
+  const [sellerType, setSellerType] = useState("");
+  const [sellerTypeOpen, setSellerTypeOpen] = useState(false);
+  const sellerTypeRef = useRef<HTMLDivElement | null>(null);
+
+  const [listPhoneOpen, setListPhoneOpen] = useState(false);
+  const listPhoneRef = useRef<HTMLDivElement | null>(null);
+
+  const [listPhoneFormOpen, setListPhoneFormOpen] = useState(false);
+  const listPhoneFormRef = useRef<HTMLDivElement | null>(null);
+
+  const [vehicleTypeOpen, setVehicleTypeOpen] = useState(false);
+  const vehicleTypeRef = useRef<HTMLDivElement | null>(null);
+  const [showPayments, setShowPayments] = useState("Yes");
+  const [showPaymentsOpen, setShowPaymentsOpen] = useState(false);
+  const showPaymentsRef = useRef<HTMLDivElement | null>(null);
+
+  const [listPhone, setListPhone] = useState(true);
+  const [sellerPhone, setSellerPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [longitude, setLongitude] = useState("");
+
+  // Profile image upload state
+  const [profileImage, setProfileImage] = useState<string>("");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files && e.target.files[0];
+    if (file) {
+      const url = URL.createObjectURL(file);
+      setProfileImage(url);
+    }
+  };
+  const [latitude, setLatitude] = useState("");
+
+  // Dealership information fields
+  const [vehicleType, setVehicleType] = useState("");
+  const [dealershipWebsite, setDealershipWebsite] = useState("");
+  const [websiteProvider, setWebsiteProvider] = useState("");
+  const [productFeedUrl, setProductFeedUrl] = useState("");
+  const [emailAlert1, setEmailAlert1] = useState("");
+  const [emailAlert2, setEmailAlert2] = useState("");
+  const [emailAlert3, setEmailAlert3] = useState("");
+  const [crmProvider, setCrmProvider] = useState("");
+  const [crmAccount, setCrmAccount] = useState("");
+  const [crmEmail, setCrmEmail] = useState("");
+
+  // Billing information fields
+  const [billingContact, setBillingContact] = useState("");
+  const [billingStreetAddress, setBillingStreetAddress] = useState("");
+  const [billingCity, setBillingCity] = useState("");
+  const [billingState, setBillingState] = useState("");
+  const [billingZip, setBillingZip] = useState("");
+  const [billingCountry, setBillingCountry] = useState("USA");
+  const [billingEmail, setBillingEmail] = useState("");
+  const [billingPhone, setBillingPhone] = useState("");
+
+  // persist draft locally
   useEffect(() => {
-    function handleClick(e: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target as Node)
-      ) {
-        setOpen(false);
-      }
-      if (phoneRef.current && !phoneRef.current.contains(e.target as Node)) {
-        setPhoneOpen(false);
+    const saved = localStorage.getItem("usresprofile.draft");
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        setSellerName(data.sellerName || "");
+        setCity(data.city || "");
+        setStateVal(data.stateVal || "");
+        setZip(data.zip || "");
+        setEmailLead(data.emailLead || "");
+        setAccountEmail(data.accountEmail || "");
+        setAccountNumber(data.accountNumber || "");
+        setSellerType(data.sellerType || "");
+        setListPhone(
+          typeof data.listPhone === "boolean" ? data.listPhone : true,
+        );
+        setSellerPhone(data.sellerPhone || "");
+        setAddress(data.address || "");
+        setLongitude(data.longitude || "");
+        setLatitude(data.latitude || "");
+        setVehicleType(data.vehicleType || "");
+        setDealershipWebsite(data.dealershipWebsite || "");
+        setWebsiteProvider(data.websiteProvider || "");
+        setProductFeedUrl(data.productFeedUrl || "");
+        setShowPayments(data.showPayments || "Yes");
+        setEmailAlert2(data.emailAlert2 || "");
+        setCrmProvider(data.crmProvider || "");
+        setCrmAccount(data.crmAccount || "");
+        setCrmEmail(data.crmEmail || "");
+        setBillingContact(data.billingContact || "");
+        setBillingStreetAddress(data.billingStreetAddress || "");
+        setBillingCity(data.billingCity || "");
+        setBillingState(data.billingState || "");
+        setBillingZip(data.billingZip || "");
+        setBillingCountry(data.billingCountry || "USA");
+        setBillingEmail(data.billingEmail || "");
+        setBillingPhone(data.billingPhone || "");
+      } catch (e) {
+        console.warn(e);
       }
     }
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  useEffect(() => {
+    const data = {
+      sellerName,
+      city,
+      stateVal,
+      zip,
+      emailLead,
+      accountEmail,
+      accountNumber,
+      sellerType,
+      listPhone,
+      sellerPhone,
+      address,
+      longitude,
+      latitude,
+      vehicleType,
+      dealershipWebsite,
+      websiteProvider,
+      productFeedUrl,
+      showPayments,
+      emailAlert1,
+      emailAlert2,
+      emailAlert3,
+      crmProvider,
+      crmAccount,
+      crmEmail,
+      billingContact,
+      billingStreetAddress,
+      billingCity,
+      billingState,
+      billingZip,
+      billingCountry,
+      billingEmail,
+      billingPhone,
+    };
+    localStorage.setItem("usresprofile.draft", JSON.stringify(data));
+  }, [
+    sellerName,
+    city,
+    stateVal,
+    zip,
+    emailLead,
+    accountEmail,
+    accountNumber,
+    sellerType,
+    listPhone,
+    sellerPhone,
+    address,
+    longitude,
+    latitude,
+    vehicleType,
+    dealershipWebsite,
+    websiteProvider,
+    productFeedUrl,
+    showPayments,
+    emailAlert1,
+    emailAlert2,
+    emailAlert3,
+    crmProvider,
+    crmAccount,
+    crmEmail,
+    billingContact,
+    billingStreetAddress,
+    billingCity,
+    billingState,
+    billingZip,
+    billingCountry,
+    billingEmail,
+    billingPhone,
+  ]);
+
+  // close dropdowns on outside click
+  useEffect(() => {
+    function onDocClick(e: MouseEvent) {
+      if (
+        sellerTypeRef.current &&
+        !(sellerTypeRef.current as any).contains(e.target)
+      ) {
+        setSellerTypeOpen(false);
+      }
+      if (
+        listPhoneRef.current &&
+        !(listPhoneRef.current as any).contains(e.target)
+      ) {
+        setListPhoneOpen(false);
+      }
+      if (
+        listPhoneFormRef.current &&
+        !(listPhoneFormRef.current as any).contains(e.target)
+      ) {
+        setListPhoneFormOpen(false);
+      }
+      if (
+        vehicleTypeRef.current &&
+        !(vehicleTypeRef.current as any).contains(e.target)
+      ) {
+        setVehicleTypeOpen(false);
+      }
+      if (
+        showPaymentsRef.current &&
+        !(showPaymentsRef.current as any).contains(e.target)
+      ) {
+        setShowPaymentsOpen(false);
+      }
+    }
+    document.addEventListener("click", onDocClick);
+    return () => document.removeEventListener("click", onDocClick);
+  }, []);
+
+  const handleSave = () => {
+    alert("Saved locally");
+  };
+
+  const handleReset = () => {
+    localStorage.removeItem("usresprofile.draft");
+    setSellerName("");
+    setCity("");
+    setStateVal("");
+    setZip("");
+    setEmailLead("");
+    setAccountEmail("");
+    setAccountNumber("");
+    setSellerType("");
+    setListPhone(true);
+    setSellerPhone("");
+    setAddress("");
+    setLongitude("");
+    setLatitude("");
+    setProductFeedUrl("");
+    setEmailAlert1("");
+    setShowPayments("Yes");
+  };
+
   return (
-    <DashboardLayout>
-      <div className="flex-1 overflow-visible">
-        <div className="-mb-[1px] pt-[34px] pb-[20px] px-5">
-          <div className="w-full max-w-[1280px] mx-auto">
-            <div className="flex flex-col items-start justify-start border border-[#E4E4E4] rounded-[14px] p-[7px] md:pt-[7px] md:pb-[21px] md:px-[48px]">
-              <div className="flex flex-col md:flex-row justify-start md:justify-between items-stretch md:items-start gap-8 md:gap-0 bg-white w-full max-w-[1280px]">
-                <div className="flex-1 max-w-[896px] space-y-10 flex flex-col md:flex-row md:items-start justify-start items-start md:gap-10">
-                  <div className="flex flex-col items-start gap-4 self-stretch w-full md:w-[70%] mr-0 md:mr-0 pl-2 md:pl-0 md:justify-start">
-                    <h1 className="text-2xl font-semibold text-[#24272C] font-albert w-full pt-[35px]">
-                      Get Started with Carzino
-                    </h1>
-                    <div className="flex flex-col items-start gap-4">
-                      <p className="text-xs text-[#111928] font-albert leading-[140%] max-w-[640px] w-full">
-                        Please fill out the form below with your information to
-                        create your listing. You'll be asked to choose whether
-                        you're listing as a Private Seller or a Dealer. If
-                        you're a dealer and would like to use your feed for
-                        automatic vehicle listings, please contact us for
-                        details.
-                      </p>
-                    </div>
+    <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* New Figma Design Section */}
+      <section
+        className="bg-white rounded-lg mb-6 mx-auto"
+        style={{
+          border: "0.8px none rgb(178, 178, 178)",
+          paddingBottom: "32px",
+        }}
+      >
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          {/* Left Content */}
+          <div className="w-full md:w-[70%] max-w-[725px]">
+            <div className="flex flex-col mb-6">
+              <h2 className="text-[24px] font-bold text-[#24272C] font-['Albert_Sans']">
+                Your Profile
+              </h2>
+              <p className="text-[15px] text-[#222] leading-[28px] font-['DM_Sans']">
+                <span className="inline font-['Albert_Sans']">
+                  Select Private Seller or a Dealer. If you’re a dealer and
+                  would like to use your feed for automatic vehicle listings,
+                  please contact us for details.
+                </span>
+              </p>
+            </div>
 
-                    <div
-                      ref={dropdownRef}
-                      className="w-full max-w-[423px] relative"
+            {/* Dropdown + Account Number */}
+            <div className="flex items-start gap-4">
+              <div className="relative w-full md:w-[310px]">
+                <FieldLabel>Select your Account type</FieldLabel>
+                <div ref={sellerTypeRef}>
+                  <button
+                    type="button"
+                    onClick={() => setSellerTypeOpen((v) => !v)}
+                    className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px]"
+                    aria-haspopup="listbox"
+                    aria-expanded={sellerTypeOpen}
+                  >
+                    <div className="leading-none text-[15px] text-[#050B20]">
+                      {sellerType || "Private Seller"}
+                    </div>
+                    <svg
+                      className="w-4 h-4 text-[#CF0D0D]"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <div>
-                        <button
-                          type="button"
-                          onClick={() => setOpen((s) => !s)}
-                          style={
-                            open
-                              ? { boxShadow: "0 4px 10px rgba(0,0,0,0.06)" }
-                              : undefined
-                          }
-                          className="w-full h-[60px] border border-[#E6E6E6] focus-within:border-[#E82121] rounded-xl bg-white px-4 pt-6 pb-[10px] pr-10 text-[15px] font-dm flex items-center justify-between relative"
-                        >
-                          <label className="absolute -top-2 left-3 bg-white px-1 text-xs text-black">
-                            Select your Account type
-                          </label>
-                          <div className="text-[15px] text-[#050B20]">
-                            {accountType}
-                          </div>
+                      <path
+                        d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                        fill="#CF0D0D"
+                      />
+                    </svg>
+                  </button>
 
-                          <div className="flex items-center gap-2">
-                            {accountType !== "Select" && (
-                              <svg
-                                className="w-4 h-4"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M20 6L9 17l-5-5"
-                                  stroke="#16A34A"
-                                  strokeWidth="2"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                />
-                              </svg>
-                            )}
+                  {sellerTypeOpen && (
+                    <ul
+                      role="listbox"
+                      className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                      style={{
+                        left: 0,
+                        right: 0,
+                        top: "calc(100% + 8px)",
+                        boxSizing: "border-box",
+                      }}
+                    >
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setSellerType("Private Seller");
+                          setSellerTypeOpen(false);
+                        }}
+                      >
+                        Private Seller
+                      </li>
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setSellerType("Dealer");
+                          setSellerTypeOpen(false);
+                        }}
+                      >
+                        Dealer
+                      </li>
+                    </ul>
+                  )}
+                </div>
+              </div>
 
-                            <svg
-                              className={(open ? "rotate-180" : "") + " transition-transform"}
-                              width="11.5"
-                              height="11.5"
-                              style={{ transformOrigin: "center" }}
-                              viewBox="0 0 10 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M9.86941 2.52782C9.68892 2.33638 9.38702 2.32925 9.19653 2.50924L4.99976 6.48505L0.803467 2.50926C0.612983 2.32878 0.311545 2.3364 0.130592 2.52784C-0.0503606 2.71879 -0.0422749 3.02023 0.148697 3.20118L4.67261 7.487C4.76404 7.57368 4.88214 7.61748 4.99976 7.61748C5.11737 7.61748 5.23594 7.57368 5.32738 7.487L9.8513 3.20118C10.0423 3.02021 10.0504 2.71879 9.86941 2.52782Z"
-                                fill="#E82121"
-                                stroke="#E82121"
-                                strokeWidth="1"
-                              />
-                            </svg>
-                          </div>
-                        </button>
+              <div className="flex-1 min-w-[160px]">
+                <FieldLabel>Account Number</FieldLabel>
+                <input
+                  value={accountNumber}
+                  onChange={(e) => setAccountNumber(e.target.value)}
+                  placeholder="Enter account number"
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
+            </div>
+          </div>
 
-                        {open && (
-                          <ul
-                            className={`absolute left-0 z-50 mt-2 w-full bg-white border border-[#E6E6E6] rounded-md max-h-[260px] overflow-auto text-left ${open && accountType !== "Select" ? "shadow-[0_6px_20px_rgba(0,0,0,0.06)]" : ""}`}
-                          >
-                            <li
-                              className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer"
-                              onClick={() => {
-                                setAccountType("Select");
-                                setOpen(false);
-                              }}
-                            >
-                              <span>Select</span>
-                              {accountType === "Select" && (
-                                <svg
-                                  className="w-5 h-5"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M20 6L9 17l-5-5"
-                                    stroke="#16A34A"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                              )}
-                            </li>
+          {/* Right Content - Image Upload */}
+          <div className="w-full md:w-[30%] flex flex-col items-center justify-center gap-2 mx-auto md:mx-0">
+            <img
+              src={
+                profileImage ||
+                "https://api.builder.io/api/v1/image/assets/TEMP/b5268fe2ce0b253f68ffbcfbc6c8d468d124ef20?width=256"
+              }
+              alt="Profile"
+              className="w-[84px] h-[84px] rounded-full object-cover flex-shrink-0 mx-auto md:mx-0"
+            />
+            <div className="flex flex-col gap-1 w-full md:max-w-[364px] justify-center items-center mx-auto">
+              <div className="text-[14px] font-medium text-[#24272C] font-['Albert_Sans'] text-center">
+                Profile Photo
+              </div>
+              <div className="flex items-center justify-center w-full md:max-w-[320px] h-[54px] mx-auto md:mx-0">
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleFileChange}
+                  className="hidden"
+                />
+                <button
+                  type="button"
+                  onClick={() =>
+                    fileInputRef.current && fileInputRef.current.click()
+                  }
+                  className="bg-black rounded-[10px] text-white gap-[10px] h-[42px] w-[142px] flex items-center justify-center px-[14px] py-[8px] font-['Albert_Sans'] text-[12px] leading-[18px] font-medium"
+                >
+                  {profileImage ? "Change Image" : "Choose file"}
+                </button>
+              </div>
+              <div className="text-[12px] text-[#B6B6B6] font-['Albert_Sans'] leading-[140%] text-center">
+                Seller account Number Here
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                            <li
-                              className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer"
-                              onClick={() => {
-                                setAccountType("Private Seller");
-                                setOpen(false);
-                              }}
-                            >
-                              <span>Private Seller</span>
-                              {accountType === "Private Seller" && (
-                                <svg
-                                  className="w-5 h-5"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M20 6L9 17l-5-5"
-                                    stroke="#16A34A"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                              )}
-                            </li>
+      <section
+        className="bg-white rounded-lg p-8"
+        style={{ border: "0.8px solid rgba(171,171,171,1)" }}
+      >
+        <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+          Profile Details
+        </h3>
 
-                            <li
-                              className="flex justify-between items-center px-4 py-3 hover:bg-[#F3F4F6] cursor-pointer"
-                              onClick={() => {
-                                setAccountType("Dealer");
-                                setOpen(false);
-                              }}
-                            >
-                              <span>Dealer</span>
-                              {accountType === "Dealer" && (
-                                <svg
-                                  className="w-5 h-5"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M20 6L9 17l-5-5"
-                                    stroke="#16A34A"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                              )}
-                            </li>
-                          </ul>
-                        )}
-                      </div>
-                    </div>
+        <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            {/* Row 1 */}
+            <div>
+              <FieldLabel>Seller or dealer name</FieldLabel>
+              <input
+                value={sellerName}
+                onChange={(e) => setSellerName(e.target.value)}
+                placeholder="Enter your full name"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            <div>
+              <FieldLabel>address</FieldLabel>
+              <input
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                placeholder="Enter address"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            <div>
+              <FieldLabel>City</FieldLabel>
+              <input
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+                placeholder="City"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            <div>
+              <FieldLabel>State</FieldLabel>
+              <input
+                value={stateVal}
+                onChange={(e) => setStateVal(e.target.value)}
+                placeholder="Enter your state"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            {/* Row 2 */}
+            <div>
+              <FieldLabel>Zip code</FieldLabel>
+              <input
+                value={zip}
+                onChange={(e) => setZip(e.target.value)}
+                placeholder="Zip code"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            <div>
+              <FieldLabel>Email lead alert address</FieldLabel>
+              <input
+                value={emailLead}
+                onChange={(e) => setEmailLead(e.target.value)}
+                placeholder="Email address"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            <div>
+              <FieldLabel>Account holder email Address</FieldLabel>
+              <input
+                value={accountEmail}
+                onChange={(e) => setAccountEmail(e.target.value)}
+                placeholder="Enter your email address"
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            {/* Row 3 */}
+            <div>
+              <FieldLabel>Seller Phone</FieldLabel>
+              <input
+                value={sellerPhone}
+                onChange={(e) => setSellerPhone(e.target.value)}
+                className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                style={{ fontFamily: "Albert Sans" }}
+              />
+            </div>
+
+            <div>
+              <FieldLabel>List your phone# on ads?</FieldLabel>
+              <div className="relative w-full" ref={listPhoneFormRef}>
+                <button
+                  type="button"
+                  onClick={() => setListPhoneFormOpen((v) => !v)}
+                  className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]"
+                  aria-haspopup="listbox"
+                  aria-expanded={listPhoneFormOpen}
+                >
+                  <span className="truncate flex-1 text-left">
+                    {listPhone ? "Yes" : "No"}
+                  </span>
+                  <svg
+                    className="w-4 h-4 ml-2 text-[#CF0D0D]"
+                    viewBox="0 0 10 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                      fill="#CF0D0D"
+                    />
+                  </svg>
+                </button>
+
+                {listPhoneFormOpen && (
+                  <ul
+                    role="listbox"
+                    className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                    style={{
+                      left: 0,
+                      right: 0,
+                      top: "calc(100% + 8px)",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    <li
+                      role="option"
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => {
+                        setListPhone(true);
+                        setListPhoneFormOpen(false);
+                      }}
+                    >
+                      Yes
+                    </li>
+                    <li
+                      role="option"
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => {
+                        setListPhone(false);
+                        setListPhoneFormOpen(false);
+                      }}
+                    >
+                      No
+                    </li>
+                  </ul>
+                )}
+              </div>
+            </div>
+
+            <div></div>
+
+            {/* Row 4 */}
+            <div className="md:col-span-3 w-full">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-7">
+                <div className="md:col-span-2">
+                  <FieldLabel>
+                    Enter your address and then select from the choices.
+                  </FieldLabel>
+                  <input
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    placeholder="Enter address"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
+                </div>
+
+                <div>
+                  <FieldLabel>Longitude:</FieldLabel>
+                  <input
+                    value={longitude}
+                    onChange={(e) => setLongitude(e.target.value)}
+                    placeholder="Longitude"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
+                </div>
+
+                <div>
+                  <FieldLabel>Latitude</FieldLabel>
+                  <input
+                    value={latitude}
+                    onChange={(e) => setLatitude(e.target.value)}
+                    placeholder="Latitude"
+                    className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                    style={{ fontFamily: "Albert Sans" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {sellerType === "Dealer" && (
+        <section
+          className="bg-white rounded-lg p-8 mt-5"
+          style={{ border: "0.8px solid rgba(171,171,171,1)" }}
+        >
+          <h3 className="text-[24px] font-medium text-[#24272C] mb-5 font-['Albert_Sans']">
+            Dealership Information
+          </h3>
+
+          <div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+              <div>
+                <FieldLabel>Do you sell new or used vehicles?</FieldLabel>
+                <div className="relative w-full" ref={vehicleTypeRef}>
+                  <button
+                    type="button"
+                    onClick={() => setVehicleTypeOpen((v) => !v)}
+                    className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]"
+                    aria-haspopup="listbox"
+                    aria-expanded={vehicleTypeOpen}
+                  >
+                    <span className="truncate flex-1 text-left">
+                      {vehicleType || "New/Used"}
+                    </span>
+                    <svg
+                      className="w-4 h-4 ml-2 text-[#CF0D0D]"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                        fill="#CF0D0D"
+                      />
+                    </svg>
+                  </button>
+
+                  {vehicleTypeOpen && (
+                    <ul
+                      role="listbox"
+                      className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                      style={{
+                        left: 0,
+                        right: 0,
+                        top: "calc(100% + 8px)",
+                        boxSizing: "border-box",
+                      }}
+                    >
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setVehicleType("New/Used");
+                          setVehicleTypeOpen(false);
+                        }}
+                      >
+                        New/Used
+                      </li>
+                      <li
+                        role="option"
+                        className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setVehicleType("Used");
+                          setVehicleTypeOpen(false);
+                        }}
+                      >
+                        Used
+                      </li>
+                    </ul>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <FieldLabel>
+                  <div style={{ fontWeight: 500 }}>
+                    Show payments on all vehicles?
                   </div>
+                </FieldLabel>
+                <div className="relative w-full" ref={showPaymentsRef}>
+                  <button
+                    type="button"
+                    onClick={() => setShowPaymentsOpen((v) => !v)}
+                    className="w-full h-[54px] flex items-center justify-between rounded-lg border border-[#B2B2B2] bg-white px-[18px] text-[15px] text-[#24272C]"
+                    aria-haspopup="listbox"
+                    aria-expanded={showPaymentsOpen}
+                  >
+                    <span className="truncate flex-1 text-left">
+                      {showPayments}
+                    </span>
+                    <svg
+                      className="w-4 h-4 ml-2 text-[#CF0D0D]"
+                      viewBox="0 0 10 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.86941 3.02782C9.68892 2.83638 9.38702 2.82925 9.19653 3.00924L4.99976 6.98505L0.803467 3.00926C0.612983 2.82878 0.311545 2.8364 0.130592 3.02784C-0.0503606 3.21879 -0.0422749 3.52023 0.148697 3.70118L4.67261 7.987C4.76404 8.07368 4.88214 8.11748 4.99976 8.11748C5.11737 8.11748 5.23594 8.07368 5.32738 7.987L9.8513 3.70118C10.0423 3.52021 10.0504 3.21879 9.86941 3.02782Z"
+                      fill="#CF0D0D"
+                    />
+                  </svg>
+                </button>
 
-                  <div className="w-full md:w-[30%] flex flex-row md:flex-col items-center md:items-end gap-4 md:gap-2 mt-10 md:self-end md:justify-end">
-                    <div className="w-full bg-transparent md:bg-white md:border md:border-[#E4E4E4] rounded-[14px] md:pt-5 md:px-4 md:pb-4 p-0 -mt-5 pb-[5px] md:-mt-1 flex flex-row md:flex-col items-center md:items-start justify-center gap-4 md:gap-2">
-                      <div className="relative flex-shrink-0">
-                        <div className="w-[72px] h-[72px] md:w-24 md:h-24 rounded-full overflow-hidden flex items-start justify-start md:block">
-                          <img
-                            src="https://cdn.builder.io/api/v1/image/assets%2F4d1f1909a98e4ebc8068632229306ce4%2Fd3b69236eb3240d09279f432fca9be0d"
-                            alt="Profile"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
+                {showPaymentsOpen && (
+                  <ul
+                    role="listbox"
+                    className="absolute mt-2 bg-white border border-[#E1E1E1] rounded-md shadow-lg z-50"
+                    style={{
+                      left: 0,
+                      right: 0,
+                      top: "calc(100% + 8px)",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    <li
+                      role="option"
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => {
+                        setShowPayments("Yes");
+                        setShowPaymentsOpen(false);
+                      }}
+                    >
+                      Yes
+                    </li>
+                    <li
+                      role="option"
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => {
+                        setShowPayments("No");
+                        setShowPaymentsOpen(false);
+                      }}
+                    >
+                      No
+                    </li>
+                  </ul>
+                )}
+              </div>
 
-(The file continues)
+              <div>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Dealership website"}
+                  </span>
+                </FieldLabel>
+                <input
+                  value={crmProvider}
+                  onChange={(e) => setCrmProvider(e.target.value)}
+                  placeholder=""
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
+
+              <div>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Email lead alerts user 1"}
+                  </span>
+                </FieldLabel>
+                <input
+                  value={dealershipWebsite}
+                  onChange={(e) => setDealershipWebsite(e.target.value)}
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
+
+              <div>
+                <FieldLabel>Email lead alerts user 2</FieldLabel>
+                <input
+                  value={emailAlert2}
+                  onChange={(e) => setEmailAlert2(e.target.value)}
+                  placeholder=""
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
+
+              <div>
+                <FieldLabel>
+                  <span style={{ whiteSpace: "pre" }}>
+                    {"Email lead alerts user 3"}
+                  </span>
+                </FieldLabel>
+                <input
+                  value={crmAccount}
+                  onChange={(e) => setCrmAccount(e.target.value)}
+                  placeholder=""
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
+
+              <div>
+                <FieldLabel>Dealerships CRM provider</FieldLabel>
+                <input
+                  value={websiteProvider}
+                  onChange={(e) => setWebsiteProvider(e.target.value)}
+                  placeholder=""
+                  className="w-full h-[54px] px-[18px] py-4 border border-[#B2B2B2] rounded-lg bg-white text-[14px] text-[#696665] leading-[140%] outline-none focus:border-[#E82121]"
+                  style={{ fontFamily: "Albert Sans" }}
+                />
+              </div>
+
+              <div>
+                <FieldLabel>
