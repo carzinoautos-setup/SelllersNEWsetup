@@ -1,5 +1,5 @@
 "use client";
-import NotFound from "../../client/pages/NotFound";
+import NotFound from "@/pages/NotFound";
 
 export default function NotFoundPage() {
   return <NotFound />;
