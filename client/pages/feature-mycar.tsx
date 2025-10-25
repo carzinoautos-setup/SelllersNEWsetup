@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import VisualViewportGuard from "../components/VisualViewportGuard";
+import VisualViewportGuard from "@/components/VisualViewportGuard";
 
 export default function FeatureMycar() {
   return (
