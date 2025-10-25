@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/stripe";
+import Page from "@/pages/stripe";
 
 export default function StripePage() {
   return <Page />;
