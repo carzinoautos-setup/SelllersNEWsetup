@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { EditProfileForm } from "../components/EditProfileForm";
 import { VehicleDetailsForm } from "../components/VehicleDetailsForm";
-import { useToast } from "../hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 export default function UserProfile() {
   const [saving, setSaving] = useState(false);
