@@ -27,8 +27,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*",
-        "./client/*"
+        "./src/*"
       ],
       "@shared/*": [
         "./shared/*"
@@ -45,11 +44,8 @@
   },
   "include": [
     "src/**/*",
-    "client/**/*",
     "server/**/*",
     "shared/**/*",
-    "vite.config.ts",
-    "vite.config.server.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": [
