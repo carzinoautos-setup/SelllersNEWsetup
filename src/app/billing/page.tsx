@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/billing";
+import Page from "@/pages/billing";
 
 export default function BillingPage() {
   return <Page />;
