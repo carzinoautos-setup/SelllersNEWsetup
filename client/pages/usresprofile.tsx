@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { DashboardLayout } from "../components/DashboardLayout";
-import { Select } from "../components/ui/select";
+import { DashboardLayout } from "@/components/DashboardLayout";
+import { Select } from "@/components/ui/select";
 
 function FieldLabel({ children }: { children: React.ReactNode }) {
   return (
