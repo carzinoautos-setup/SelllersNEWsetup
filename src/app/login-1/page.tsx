@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/login-1";
+import Page from "@/pages/login-1";
 
 export default function Login1Page() {
   return <Page />;
