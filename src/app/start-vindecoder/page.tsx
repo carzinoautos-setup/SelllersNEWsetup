@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/start-vindecoder";
+import Page from "@/pages/start-vindecoder";
 
 export default function StartVinDecoderPage() {
   return <Page />;
