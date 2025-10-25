@@ -1,5 +1,5 @@
 "use client";
-import Page from "../../../client/pages/success-uploaded";
+import Page from "@/pages/success-uploaded";
 
 export default function SuccessUploadedPage() {
   return <Page />;
