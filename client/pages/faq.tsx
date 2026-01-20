@@ -162,14 +162,6 @@ const ContactForm = () => {
 };
 
 const FAQ = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const filteredFaqs = buyingFaqs.filter(
-    (faq) =>
-      faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      faq.answer.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   return (
     <DashboardLayout>
       <div className="flex flex-col min-h-screen">
