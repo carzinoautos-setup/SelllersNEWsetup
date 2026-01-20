@@ -264,6 +264,31 @@ const FAQ = () => {
               </div>
               <ContactForm />
             </div>
+
+            {/* Message Center Section */}
+            <div className="rounded-lg border border-main-color/20 bg-gradient-to-br from-main-color/5 to-transparent p-8 sm:p-10">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                <div className="flex-1 max-w-2xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-lg bg-main-color/10 p-2 text-main-color">
+                      <MessageSquare className="h-5 w-5" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-heading">Prefer instant chat?</h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Connect with our support team right away through our message center. Get quick answers and real-time assistance.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
+                  <a href="/messages">
+                    <Button className="bg-main-color hover:bg-main-color/90 gap-2 whitespace-nowrap">
+                      Open Message Center
+                      <ArrowRight className="h-4 w-4" />
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
