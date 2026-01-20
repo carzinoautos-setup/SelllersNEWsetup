@@ -174,9 +174,9 @@ const FAQ = () => {
     <DashboardLayout>
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-main-color/5 to-main-color/10 px-4 py-12 sm:py-16 lg:py-20">
+        <section className="bg-gradient-to-br from-muted/50 to-muted/30 px-4 py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-4xl text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-main-color/10 px-4 py-2">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-muted/50 px-4 py-2">
               <HelpCircle className="h-4 w-4 text-main-color" />
               <span className="text-sm font-medium text-main-color">Help Center</span>
             </div>
