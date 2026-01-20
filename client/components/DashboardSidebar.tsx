@@ -48,6 +48,7 @@ export function DashboardSidebar({ className }: SidebarProps) {
       path: "/edit-listing",
     },
     { name: "Help Center", icon: LifebuoyIcon, active: false, path: "/help" },
+    { name: "FAQ", icon: LifebuoyIcon, active: false, path: "/faq" },
     { name: "Logout", icon: LogoutIcon, active: false, path: "/logout" },
     { name: "Production", icon: EditIcon, active: false, path: "/production" },
   ];
