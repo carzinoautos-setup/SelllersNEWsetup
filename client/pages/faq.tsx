@@ -206,7 +206,7 @@ const FAQ = () => {
 
             {/* Quick Stats / Features */}
             <div className="grid gap-4 md:grid-cols-3">
-              <Card className="border-0 shadow-sm bg-gradient-to-br from-main-color/5 to-transparent">
+              <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
                 <CardContent className="pt-6 flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-main-color flex-shrink-0 mt-0.5" />
                   <div>
@@ -215,7 +215,7 @@ const FAQ = () => {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-0 shadow-sm bg-gradient-to-br from-main-color/5 to-transparent">
+              <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
                 <CardContent className="pt-6 flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-main-color flex-shrink-0 mt-0.5" />
                   <div>
@@ -224,7 +224,7 @@ const FAQ = () => {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="border-0 shadow-sm bg-gradient-to-br from-main-color/5 to-transparent">
+              <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
                 <CardContent className="pt-6 flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-main-color flex-shrink-0 mt-0.5" />
                   <div>
