@@ -217,42 +217,24 @@ const FAQ = () => {
 
             {/* FAQ Accordion */}
             <div className="space-y-6">
-              <div>
-                <h2 className="text-2xl font-bold text-heading mb-2">Frequently Asked Questions</h2>
-                <p className="text-muted-foreground">
-                  {filteredFaqs.length} question{filteredFaqs.length !== 1 ? "s" : ""} found
-                </p>
-              </div>
+              <h2 className="text-2xl font-bold text-heading">Frequently Asked Questions</h2>
 
-              {filteredFaqs.length > 0 ? (
-                <Accordion type="single" collapsible className="w-full space-y-3">
-                  {filteredFaqs.map((faq, index) => (
-                    <AccordionItem
-                      key={index}
-                      value={`item-${index}`}
-                      className="border rounded-lg px-4 bg-card hover:bg-card/80 transition-colors"
-                    >
-                      <AccordionTrigger className="py-4 text-left font-medium hover:text-main-color transition-colors">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="pb-4 text-muted-foreground">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              ) : (
-                <div className="text-center py-12">
-                  <p className="text-muted-foreground mb-4">No questions match your search.</p>
-                  <Button
-                    variant="outline"
-                    onClick={() => setSearchTerm("")}
-                    className="mx-auto"
+              <Accordion type="single" collapsible className="w-full space-y-3">
+                {buyingFaqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="border rounded-lg px-4 bg-card hover:bg-card/80 transition-colors"
                   >
-                    Clear search
-                  </Button>
-                </div>
-              )}
+                    <AccordionTrigger className="py-4 text-left font-medium hover:text-main-color transition-colors">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-4 text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
 
             {/* CTA Section */}
