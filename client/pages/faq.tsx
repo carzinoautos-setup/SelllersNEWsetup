@@ -276,7 +276,7 @@ const FAQ = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-main-color/10 to-main-color/5 px-6 py-12 sm:px-8 sm:py-16 border border-main-color/10">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-muted/40 to-muted/20 px-6 py-12 sm:px-8 sm:py-16 border border-muted/40">
               <div className="relative z-10 max-w-2xl">
                 <h3 className="text-2xl font-bold text-heading mb-2">Still looking for answers?</h3>
                 <p className="text-muted-foreground mb-6">
@@ -289,7 +289,7 @@ const FAQ = () => {
                   </Button>
                 </a>
               </div>
-              <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-main-color/5 -mr-20 -mt-20" />
+              <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-muted/30 -mr-20 -mt-20" />
             </div>
 
             {/* Contact Section */}
