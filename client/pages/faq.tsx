@@ -10,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { HelpCircle, Search, ArrowRight, CheckCircle2 } from "lucide-react";
+import { HelpCircle, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const buyingFaqs = [
   {
