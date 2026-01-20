@@ -184,18 +184,6 @@ const FAQ = () => {
         {/* Main Content */}
         <section className="flex-1 px-4 py-12 sm:py-16">
           <div className="mx-auto max-w-4xl space-y-12">
-            {/* Search Bar */}
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search FAQs..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-12 py-6 text-base"
-              />
-            </div>
-
             {/* Quick Stats / Features */}
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
