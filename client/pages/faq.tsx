@@ -153,7 +153,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <Button type="submit" className="bg-main-color hover:bg-main-color/90 w-full sm:w-auto">
+        <Button type="submit" className="bg-muted-foreground hover:bg-muted-foreground/80 text-white w-full sm:w-auto">
           Send Message
         </Button>
       </form>
@@ -169,8 +169,8 @@ const FAQ = () => {
         <section className="bg-gradient-to-br from-muted/50 to-muted/30 px-4 py-12 sm:py-16 lg:py-20">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-muted/50 px-4 py-2">
-              <HelpCircle className="h-4 w-4 text-main-color" />
-              <span className="text-sm font-medium text-main-color">Help Center</span>
+              <HelpCircle className="h-4 w-4 text-muted-foreground" />
+              <span className="text-sm font-medium text-muted-foreground">Help Center</span>
             </div>
             <h1 className="mb-4 text-4xl font-bold tracking-tight text-heading sm:text-5xl">
               How can we help?
@@ -188,7 +188,7 @@ const FAQ = () => {
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
                 <CardContent className="pt-6 flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-main-color flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-heading">Expert Guidance</p>
                     <p className="text-sm text-muted-foreground">Find reliable answers from our team</p>
@@ -197,7 +197,7 @@ const FAQ = () => {
               </Card>
               <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
                 <CardContent className="pt-6 flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-main-color flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-heading">Quick Answers</p>
                     <p className="text-sm text-muted-foreground">Get help instantly with our FAQs</p>
@@ -206,7 +206,7 @@ const FAQ = () => {
               </Card>
               <Card className="border-0 shadow-sm bg-gradient-to-br from-muted/40 to-transparent">
                 <CardContent className="pt-6 flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-main-color flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-heading">24/7 Support</p>
                     <p className="text-sm text-muted-foreground">Reach out anytime with your questions</p>
@@ -226,7 +226,7 @@ const FAQ = () => {
                     value={`item-${index}`}
                     className="border rounded-lg px-4 bg-card hover:bg-card/80 transition-colors"
                   >
-                    <AccordionTrigger className="py-4 text-left font-medium hover:text-main-color transition-colors">
+                    <AccordionTrigger className="py-4 text-left font-medium hover:text-muted-foreground transition-colors">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="pb-4 text-muted-foreground">
@@ -245,7 +245,7 @@ const FAQ = () => {
                   Didn't find what you need? Our support team is ready to help with any questions you might have.
                 </p>
                 <a href="#contact-form" className="inline-block">
-                  <Button className="bg-main-color hover:bg-main-color/90 gap-2">
+                  <Button className="bg-muted-foreground hover:bg-muted-foreground/80 text-white gap-2">
                     Get in Touch
                     <ArrowRight className="h-4 w-4" />
                   </Button>
@@ -266,11 +266,11 @@ const FAQ = () => {
             </div>
 
             {/* Message Center Section */}
-            <div className="rounded-lg border border-main-color/20 bg-gradient-to-br from-main-color/5 to-transparent p-8 sm:p-10">
+            <div className="rounded-lg border border-muted/40 bg-gradient-to-br from-muted/20 to-transparent p-8 sm:p-10">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
                 <div className="flex-1 max-w-2xl">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="rounded-lg bg-main-color/10 p-2 text-main-color">
+                    <div className="rounded-lg bg-muted/30 p-2 text-muted-foreground">
                       <MessageSquare className="h-5 w-5" />
                     </div>
                     <h3 className="text-lg font-semibold text-heading">Prefer instant chat?</h3>
@@ -281,7 +281,7 @@ const FAQ = () => {
                 </div>
                 <div className="flex-shrink-0">
                   <a href="/messages">
-                    <Button className="bg-main-color hover:bg-main-color/90 gap-2 whitespace-nowrap">
+                    <Button className="bg-muted-foreground hover:bg-muted-foreground/80 text-white gap-2 whitespace-nowrap">
                       Open Message Center
                       <ArrowRight className="h-4 w-4" />
                     </Button>
